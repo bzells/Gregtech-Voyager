@@ -1,0 +1,10 @@
+{
+	id: "49D065794F5E1DC7"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "gtceu:lv_miner" }
+		{ item: "kubejs:ulv_loot_bag" }
+	]
+	title: "bagorsteam"
+}

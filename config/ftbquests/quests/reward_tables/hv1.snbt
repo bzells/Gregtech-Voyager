@@ -1,0 +1,10 @@
+{
+	id: "11AF8443933F654E"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{ count: 4, item: "kubejs:hv_loot_bag" }
+		{ count: 2, item: "javd:portal_block" }
+	]
+	title: "hv1"
+}

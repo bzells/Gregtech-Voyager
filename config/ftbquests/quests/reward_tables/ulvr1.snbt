@@ -1,0 +1,10 @@
+{
+	id: "6C4F0EC45B56BF08"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 32, item: "kubejs:ulv_tech_coin" }
+		{ count: 8, item: "gtceu:vacuum_tube" }
+	]
+	title: "ulvr1"
+}

@@ -1,0 +1,38 @@
+{
+	id: "194E645D0AE1E32A"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "gtceu:tungsten_carbide_mining_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						Enchantability: 21
+						HarvestLevel: 4
+						MaxDamage: 3071
+						ToolSpeed: 28.0f
+					}
+					HideFlags: 2
+				}
+			}
+		}
+		{ count: 2, item: "kubejs:mv_loot_bag" }
+		{ count: 2, item: "gtceu:good_electronic_circuit" }
+		{ item: "gtceu:prospector.hv" }
+	]
+	title: "mvq2"
+}

@@ -1,0 +1,11 @@
+{
+	id: "5A7B526314ED32F6"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ item: "inventorypets:temp_sated_double_chest" }
+		{ item: "kubejs:hv_loot_bag" }
+		{ count: 32, item: "gtceu:stainless_steel_ingot" }
+	]
+	title: "hv4"
+}

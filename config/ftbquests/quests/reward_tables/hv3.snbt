@@ -1,0 +1,11 @@
+{
+	id: "384744FD7B40607D"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{ count: 4, item: "kubejs:hv_loot_bag" }
+		{ item: "gtceu:cleaning_maintenance_hatch" }
+		{ count: 16, item: "gtceu:advanced_integrated_circuit" }
+	]
+	title: "hv3"
+}

@@ -1,0 +1,11 @@
+{
+	chapter_groups: [
+		{ id: "3E515D2B3A8DFC29", title: "Progression" }
+		{ id: "56CB9B39C99BD841", title: "Magic" }
+		{ id: "1C5FD721B31C2E55", title: "Exploration" }
+		{ id: "1B8CEC3A96513F94", title: "Processing Lines" }
+		{ id: "592D4E6717B99983", title: "Shop" }
+		{ id: "1A9B1A8107510B65", title: "Tips and Tricks" }
+		{ id: "7B894DD3E7EF89B5", title: "Misc" }
+	]
+}

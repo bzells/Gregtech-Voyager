@@ -1,0 +1,12 @@
+{
+	id: "2B0F35241B793D20"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{ item: "kubejs:mv_loot_bag" }
+		{ count: 32, item: "kubejs:mv_tech_coin" }
+		{ count: 16, item: "gtceu:transistor" }
+		{ count: 16, item: "gtceu:basic_electronic_circuit" }
+	]
+	title: "mvq3"
+}

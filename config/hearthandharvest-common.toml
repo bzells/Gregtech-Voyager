@@ -1,0 +1,7 @@
+#Should the Wandering Trader sell the mods crops?
+wanderingTraderCrops = true
+#Base chance (0.0 - 1.0) per random tick for a Tree Tapper to increase sap when on a tappable block.
+#Higher values make sap fill faster.
+#Range: 0.0 ~ 1.0
+treeTapperBaseChance = 0.5
+

@@ -1,0 +1,14 @@
+{
+	id: "75DB2E219E8D668C"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "minecraft:pumpkin_seeds" }
+		{ item: "minecraft:melon_seeds" }
+		{ item: "minecraft:beetroot_seeds" }
+		{ item: "minecraft:torchflower_seeds" }
+		{ item: "farmersdelight:cabbage_seeds" }
+		{ item: "farmersdelight:tomato_seeds" }
+	]
+	title: "seed1"
+}

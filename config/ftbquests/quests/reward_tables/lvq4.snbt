@@ -1,0 +1,12 @@
+{
+	id: "7398CDF7108669B8"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 32, item: "gtceu:potin_large_fluid_pipe" }
+		{ count: 2, item: "gtceu:hp_steam_solar_boiler" }
+		{ count: 3, item: "gtceu:basic_electronic_circuit" }
+		{ count: 2, item: "kubejs:lv_loot_bag" }
+	]
+	title: "lvq4"
+}

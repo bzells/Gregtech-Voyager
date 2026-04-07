@@ -1,0 +1,11 @@
+{
+	id: "0B3D065589A94930"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ item: "gtceu:hv_energy_output_hatch" }
+		{ item: "kubejs:mv_loot_bag" }
+		{ item: "kubejs:mv_helper_computation_array" }
+	]
+	title: "mvq5"
+}

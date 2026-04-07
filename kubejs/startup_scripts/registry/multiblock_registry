@@ -1,0 +1,48 @@
+// GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
+
+//     event.create("steam_blast_furnace")
+//         .category("multiblock")
+//         // .setEUIO("in")
+//         .setMaxIOSize(2, 2, 2, 2)
+//         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+//         .setSound(GTSoundEntries.COMPUTATION); // keep one sound only
+
+// });
+
+// GTCEuStartupEvents.registry("gtceu:machine", event => {
+
+//     event.create("steam_blast_furnace", "multiblock")
+//         .rotationState(RotationState.NON_Y_AXIS)
+//         .recipeTypes("steam_blast_furnace")
+//         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+
+//         // base block appearance
+//         .appearanceBlock(() => new Block.getBlock("gtceu:firebricks"))
+
+//         .pattern(definition => FactoryBlockPattern.start()
+
+//             .aisle("ABA", "C@C", "BBB")
+//             .aisle("ABA", "C C", "BEB")
+//             .aisle("ABA", "CCC", "BBB")
+
+
+//             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+
+//             .where("A", Predicates.blocks("gtceu:steel_brick_casing")
+        
+//                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+//                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))) // make sure this is inside the .where, otherwise it will break shit
+
+//             .where("B", Predicates.blocks("gtceu:steel_firebox_casing"))
+//             .where("C", Predicates.blocks("gtceu:steel_machine_casing"))
+//             .where("E", Predicates.blocks("gtceu:lv_muffler_hatch"))
+//             .where(" ", Predicates.air())
+
+//             .build())
+
+//             .workableCasingModel(
+//             "gtceu:block/casings/steam/steel/side",
+//             "gtceu:block/multiblock/steam_blast_furnace"
+//         )
+
+// });

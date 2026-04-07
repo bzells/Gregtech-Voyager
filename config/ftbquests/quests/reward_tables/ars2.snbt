@@ -1,0 +1,10 @@
+{
+	id: "667346C280FBC668"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ item: "kubejs:ars_bag_2" }
+		{ count: 2, item: "ars_nouveau:drygmy_se" }
+	]
+	title: "ars2"
+}

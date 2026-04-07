@@ -1,0 +1,42 @@
+{
+  "material.gtceu.tin_silver_alloy": "Tin-Silver Alloy",
+  "material.gtceu.fluxed_electrum": "Fluxed Electrum",
+  "material.gtceu.source": "Source",
+  "material.gtceu.source_steel": "Source Steel",
+    "material.gtceu.shadow_steel": "Shadow Steel",
+  "material.gtceu.fluxed_cobalt_electrum": "Fluxed Cobalt Electrum",
+  "material.gtceu.aluminium_lithium_compound": "Aluminium-Lithium Compound",
+
+  "block.gtceu.steam_blast_furnace": "Steel Blast Furnace",
+  "gtceu.steam_blast_furnace": "Steel Blast Furnace",
+
+  "gtceu.helper_wheel": "Helper Wheel",
+
+  
+  "item.gtceu.metallic_mica_ingot": "Metallic Mica Ingot",
+  "item.gtceu.metallic_mica_nugget": "Metallic Mica Nugget",
+  "item.gtceu.metallic_mica_plate": "Metallic Mica Plate",
+  "item.gtceu.double.metallic_mica_plate": "Metallic Mica Plate",
+  "item.gtceu.metallic_mica_foil": "Metallic Mica Foil",
+  "item.gtceu.metallic_mica_dust": "Metallic Mica Dust",
+  "item.gtceu.small_metallic_mica_dust": "Small Metallic Mica Dust",
+  "item.gtceu.tiny_metallic_mica_dust": "Tiny Metallic Mica Dust",
+
+  "item.gtceu.metallic_mica_rod": "Metallic Mica Rod",
+  "item.gtceu.long_metallic_mica_rod": "Long Metallic Mica Rod",
+
+  "item.gtceu.metallic_mica_bolt": "Metallic Mica Bolt",
+  "item.gtceu.metallic_mica_screw": "Metallic Mica Screw",
+  "item.gtceu.metallic_mica_ring": "Metallic Mica Ring",
+
+  "item.gtceu.metallic_mica_wire": "Metallic Mica Wire",
+  "item.gtceu.fine_metallic_mica_wire": "Fine Metallic Mica Wire",
+
+  "item.gtceu.metallic_mica_gear": "Metallic Mica Gear",
+  "item.gtceu.small_metallic_mica_gear": "Small Metallic Mica Gear",
+
+  "item.gtceu.metallic_mica_frame": "Metallic Mica Frame"
+
+
+}
+ 

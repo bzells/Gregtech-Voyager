@@ -1,0 +1,13 @@
+{
+	id: "7701790FE034C63E"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ item: "ars_nouveau:glyph_glide" }
+		{ item: "ars_nouveau:glyph_intangible" }
+		{ item: "ars_nouveau:glyph_lightning" }
+		{ item: "ars_nouveau:glyph_blink" }
+		{ item: "kubejs:ars_bag_3" }
+	]
+	title: "ars4"
+}

@@ -1,0 +1,14 @@
+# automatic_disenchanting enables hoppers interactions with the block, default = false
+automatic_disenchanting = false
+ 
+# resets_repair_cost enables resetting the repair cost of items, default = true
+resets_repair_cost = true
+ 
+# requires_experience enables taking experience when disenchanting, default = true
+requires_experience = true
+ 
+# uses_points can be false to use levels instead, default = true
+uses_points = true
+ 
+# experience_cost how many experience points or levels to use for disenchanting, default = 25
+experience_cost = 25

@@ -1,0 +1,10 @@
+{
+	id: "0E11F9BD10CD869E"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ item: "kubejs:lv_loot_bag" }
+		{ item: "ars_nouveau:magebloom_crop" }
+	]
+	title: "seed2"
+}

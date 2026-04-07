@@ -1,0 +1,7 @@
+{
+	id: "07C255AF7C0F918A"
+	loot_size: 1
+	order_index: 23
+	rewards: [{ count: 2, item: "kubejs:hv_loot_bag" }]
+	title: "hv2"
+}

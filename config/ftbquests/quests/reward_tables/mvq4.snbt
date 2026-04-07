@@ -1,0 +1,20 @@
+{
+	id: "455A1851D9EF403D"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ item: "toms_storage:ts.wireless_terminal" }
+		{ count: 2, item: "kubejs:mv_loot_bag" }
+		{ item: "sophisticatedbackpacks:iron_backpack" }
+		{
+			item: {
+				Count: 1
+				id: "inventorypets:pet_ender_chest"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "mvq4"
+}

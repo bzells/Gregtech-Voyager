@@ -1,0 +1,11 @@
+{
+	id: "41AB599B96455644"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "gtceu:lv_super_tank" }
+		{ count: 2, item: "kubejs:lv_loot_bag" }
+		{ item: "gtceu:lv_pump" }
+	]
+	title: "lvq2"
+}

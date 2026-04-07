@@ -1,0 +1,46 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_twilight_forest"
+	group: "1C5FD721B31C2E55"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "79F3A42FBBC8FD99"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"The Twilight Forest has different ore veins from the overworld."
+			""
+			"These veins are named:"
+			""
+			"&aGreen&r"
+			"&1Blue&r"
+			"&4Red&r"
+			"&7Magnetite&r"
+			"&5Neodymium&r"
+			"&6Pitchblende&r"
+			"&bGem&r"
+			"Silver"
+			"&9Cobalt&r"
+			"&cChromite&r"
+			"&dSource&r"
+			""
+			"&lAll&r of these veins also have &odense&r variants, where the veins are bigger, and have more ore in them. Some are much more rare than others however."
+			""
+			"The colored veins include ores that are that color (mostly gems)"
+			""
+			"&4Plutonium&r can be found in &ldense&r &cred&r veins"
+		]
+		icon: "gtceu:raw_plutonium"
+		id: "51D341A8F9DA9EE8"
+		tasks: [{
+			id: "396E85086E02E8A5"
+			title: "Ores"
+			type: "checkmark"
+		}]
+		title: "Ore Veins"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "The Twilight Forest"
+}

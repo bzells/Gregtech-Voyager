@@ -1,0 +1,12 @@
+{
+	id: "5DBE12F102815F44"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 3, item: "gtceu:good_electronic_circuit" }
+		{ count: 32, item: "kubejs:mv_tech_coin" }
+		{ item: "kubejs:mv_helper_computation_array" }
+		{ item: "kubejs:mv_loot_bag" }
+	]
+	title: "mvq1"
+}

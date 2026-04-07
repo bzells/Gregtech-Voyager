@@ -1,0 +1,8 @@
+# render_block_particles should particles be rendered from the block?, default = true
+render_block_particles = true
+ 
+# render_experience_cost should the menu show Insufficient Experience display?, default = true
+render_experience_cost = true
+ 
+# render_table_item should the current item be displayed for automatic disenchanting?, default = true
+render_table_item = true

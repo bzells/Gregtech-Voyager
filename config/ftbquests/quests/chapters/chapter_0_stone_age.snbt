@@ -1,0 +1,608 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_0_stone_age"
+	group: "3E515D2B3A8DFC29"
+	icon: "tconstruct:crafting_station"
+	id: "67DB5F70C70DC0BC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7C46710EF18B9648"
+			size: 1.5d
+			tasks: [{
+				id: "0ED1C97CCBF691CA"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C46710EF18B9648"]
+			id: "7F23975179B70629"
+			tasks: [{
+				id: "3F19B0F03784B91A"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F23975179B70629"]
+			id: "2AE4CD36755CB4AD"
+			size: 0.75d
+			tasks: [{
+				id: "02EFD1068BED52D4"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7F23975179B70629"]
+			id: "32BCB293CF73DF87"
+			size: 0.75d
+			tasks: [{
+				id: "17867AFFB7FB6B5B"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7C46710EF18B9648"]
+			id: "79F5C09B1B3DFCC1"
+			tasks: [{
+				id: "4EC6C213A02601F8"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"79F5C09B1B3DFCC1"
+				"7F23975179B70629"
+			]
+			id: "4AA0AEEC31BD3EDA"
+			tasks: [{
+				id: "21847638489A7A8E"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79F5C09B1B3DFCC1"]
+			id: "1A9147331B7CC694"
+			tasks: [{
+				id: "6E520DE71B26C11C"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7C46710EF18B9648"]
+			id: "24AE545643722390"
+			tasks: [{
+				id: "75014E02D516529D"
+				item: "minecraft:chest"
+				tags: ["chests"]
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"24AE545643722390"
+				"79F5C09B1B3DFCC1"
+			]
+			id: "6C7E21FE242E1E58"
+			tasks: [{
+				id: "073E00198DDD1483"
+				item: "tconstruct:part_chest"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4AA0AEEC31BD3EDA"
+				"1A9147331B7CC694"
+			]
+			id: "0A7847B88DC2A1C6"
+			rewards: [{
+				id: "7790E811D2783DC5"
+				item: {
+					Count: 1
+					id: "tconstruct:tool_handle"
+					tag: {
+						Material: "tconstruct:necrotic_bone"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6C178E6A69816CBF"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22767A6C047EF41F"
+					item: {
+						Count: 1
+						id: "tconstruct:small_blade"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43F9F644C51743F6"
+					item: {
+						Count: 1
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A5F57565B107FB3"
+					item: {
+						Count: 1
+						id: "tconstruct:adze_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "437D1FF759A7E40C"
+			tasks: [{
+				id: "647B9EFD0E1B4E4C"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "6308FC66E5634361"
+			tasks: [{
+				id: "222DDA238DAD2944"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "204626D919EB46C0"
+			tasks: [{
+				id: "3F94D21E7848A43E"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"204626D919EB46C0"
+				"6308FC66E5634361"
+			]
+			id: "3A557C43CE0F534F"
+			tasks: [{
+				id: "0AD173CC7659443C"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["437D1FF759A7E40C"]
+			id: "3AD0418241AEA8AA"
+			tasks: [{
+				id: "6C96C9C00F65B5F7"
+				item: "tconstruct:seared_bricks"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3A557C43CE0F534F"
+				"3AD0418241AEA8AA"
+			]
+			id: "3ABEDA348136284C"
+			rewards: [{
+				id: "6FAEA69376D5694A"
+				item: "tconstruct:repair_kit_cast"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79AB12A9AE7B2BBF"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "28968F0B7A2EA5E3"
+					item: "tconstruct:seared_fuel_gauge"
+					type: "item"
+				}
+				{
+					id: "432DAC290FBCB2EE"
+					item: "tconstruct:seared_ingot_gauge"
+					type: "item"
+				}
+				{
+					id: "0C93F1ACD9458E01"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "63963DF44EAD5E78"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "3B2E26822B0380BB"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			id: "26A6C0E4B38F51B3"
+			tasks: [{
+				id: "02531C812AA9F65F"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26A6C0E4B38F51B3"]
+			id: "22A38B844EA1BE5B"
+			tasks: [
+				{
+					id: "3AD6C645AB9D85B0"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "1EFB4642018EBE46"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3ABEDA348136284C"]
+			id: "21517C495219BC6F"
+			size: 1.5d
+			tasks: [{
+				id: "27D9CF45EBFD1D9E"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["22A38B844EA1BE5B"]
+			id: "51EBA3EE740C75FB"
+			tasks: [{
+				id: "4C07BA626F713A93"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			title: "Creosote"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["51EBA3EE740C75FB"]
+			id: "2F4B6CBA03B8301B"
+			tasks: [{
+				id: "68D899463FFE5381"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2F4B6CBA03B8301B"]
+			id: "1A621A8431041B6B"
+			tasks: [{
+				id: "5DF028CD934C99C0"
+				item: "paraglider:paraglider"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["21517C495219BC6F"]
+			description: [
+				"In GT:V There are 3 ways of getting your tinkers anvil:"
+				""
+				"Pig Iron (The funny way)"
+				"Steel (The GT way)"
+				"Steeleaf (The cool way)"
+				""
+				"Any of the three work, and each of the three will take you on a different road of progression."
+			]
+			hide_dependent_lines: true
+			icon: "tconstruct:tinkers_anvil"
+			id: "559EBC87398D8C8D"
+			min_required_tasks: 1
+			tasks: [
+				{
+					count: 3L
+					id: "013FE21188D41D1B"
+					item: {
+						Count: 3
+						id: "tconstruct:large_plate"
+						tag: {
+							Material: "tconstruct:steeleaf"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3C209D78672D11FF"
+					item: {
+						Count: 3
+						id: "tconstruct:large_plate"
+						tag: {
+							Material: "tconstruct:steel"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4ECA65C03EFC91F2"
+					item: {
+						Count: 3
+						id: "tconstruct:large_plate"
+						tag: {
+							Material: "tconstruct:pig_iron"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3771EAA8DA93739F"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+			]
+			title: "Tinkers Anvil"
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["559EBC87398D8C8D"]
+			icon: {
+				Count: 1
+				id: "tconstruct:sledge_hammer"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:hepatizon"
+						"tconstruct:slimesteel"
+						"tconstruct:slimewood"
+						"tconstruct:hepatizon"
+					]
+					tic_modifiers: [
+						{
+							level: 3
+							name: "tconstruct:overslime"
+						}
+						{
+							level: 1
+							name: "tconstruct:overcast"
+						}
+						{
+							level: 1
+							name: "tconstruct:overgrowth"
+						}
+						{
+							level: 2
+							name: "tconstruct:smite"
+						}
+						{
+							level: 2
+							name: "tconstruct:momentum"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+						"tconstruct:mining_speed": 0.4f
+					}
+					tic_persistent: {
+						"tconstruct:overslime": 450
+					}
+					tic_stats: {
+						"tconstruct:attack_damage": 6.9187503f
+						"tconstruct:attack_speed": 0.7125f
+						"tconstruct:durability": 3960.0002f
+						"tconstruct:harvest_tier": "minecraft:netherite"
+						"tconstruct:mining_speed": 2.8f
+						"tconstruct:overslime": 450.0f
+					}
+					tic_upgrades: [{
+						level: 1
+						name: "tconstruct:overslime"
+					}]
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			id: "619989D41E8ED77D"
+			optional: true
+			rewards: [{
+				id: "018A3371D47FEAB0"
+				item: "artifacts:digging_claws"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "14DC52974028719D"
+					item: {
+						Count: 1
+						id: "tconstruct:sledge_hammer"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:hepatizon"
+								"tconstruct:slimesteel"
+								"tconstruct:slimewood"
+								"tconstruct:hepatizon"
+							]
+							tic_modifiers: [
+								{
+									level: 3
+									name: "tconstruct:overslime"
+								}
+								{
+									level: 1
+									name: "tconstruct:overcast"
+								}
+								{
+									level: 1
+									name: "tconstruct:overgrowth"
+								}
+								{
+									level: 2
+									name: "tconstruct:smite"
+								}
+								{
+									level: 2
+									name: "tconstruct:momentum"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:attack_damage": 1.35f
+								"tconstruct:durability": 4.0f
+								"tconstruct:mining_speed": 0.4f
+							}
+							tic_persistent: {
+								"tconstruct:overslime": 450
+							}
+							tic_stats: {
+								"tconstruct:attack_damage": 6.9187503f
+								"tconstruct:attack_speed": 0.7125f
+								"tconstruct:durability": 3960.0002f
+								"tconstruct:harvest_tier": "minecraft:netherite"
+								"tconstruct:mining_speed": 2.8f
+								"tconstruct:overslime": 450.0f
+							}
+							tic_upgrades: [{
+								level: 1
+								name: "tconstruct:overslime"
+							}]
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B51C367E64C7C71"
+					item: {
+						Count: 1
+						id: "tconstruct:large_plate"
+						tag: {
+							Material: "tconstruct:slimewood"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E6B34563410DABB"
+					item: {
+						Count: 1
+						id: "tconstruct:tough_handle"
+						tag: {
+							Material: "tconstruct:slimesteel"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74A8F4A6E8A6F39C"
+					item: {
+						Count: 1
+						id: "tconstruct:large_plate"
+						tag: {
+							Material: "tconstruct:hepatizon"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5001D6F15A918E5F"
+					item: {
+						Count: 1
+						id: "tconstruct:hammer_head"
+						tag: {
+							Material: "tconstruct:hepatizon"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The \"Slimer\""
+			x: 10.5d
+			y: 9.0d
+		}
+	]
+	title: "Chapter 0: Stone Age"
+}

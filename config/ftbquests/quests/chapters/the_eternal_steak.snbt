@@ -1,0 +1,280 @@
+{
+	autofocus_id: "0AABFB4F0E9EC365"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_eternal_steak"
+	group: "7B894DD3E7EF89B5"
+	icon: "artifacts:eternal_steak"
+	id: "60EF619DFE8369DB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "62B25AEA13F48FB3"
+			tasks: [{
+				count: 8L
+				id: "7C81900981D0C402"
+				item: "farmersdelight:wild_cabbages"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "5543857A0363FB9D"
+			tasks: [{
+				count: 8L
+				id: "76441E9C7F78A9BE"
+				item: "farmersdelight:wild_onions"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "3EAEDAC0F018D4B5"
+			tasks: [{
+				count: 8L
+				id: "64A2158DAFBB0BF8"
+				item: "farmersdelight:wild_tomatoes"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			id: "0D17B54D980A6177"
+			tasks: [{
+				count: 8L
+				id: "00792A92D8D6B0D0"
+				item: "farmersdelight:wild_carrots"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			id: "462B31A6AE61F757"
+			tasks: [{
+				count: 8L
+				id: "6A01AC82863882A4"
+				item: "farmersdelight:wild_potatoes"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			id: "0626E6A5252502FC"
+			tasks: [{
+				count: 8L
+				id: "1A0AE2F9BD73530A"
+				item: "farmersdelight:wild_beetroots"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			id: "12CD38B26251397F"
+			tasks: [{
+				count: 8L
+				id: "76F289F33776AE57"
+				item: "farmersdelight:wild_rice"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			id: "39940AC420D2355B"
+			tasks: [{
+				count: 8L
+				id: "7A75B2A69F26242F"
+				item: { Count: 8, id: "farmersdelight:vegetable_noodles" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "5564F2171E4E83B6"
+			tasks: [{
+				count: 8L
+				id: "66BC5648D26B5DC1"
+				item: { Count: 8, id: "farmersdelight:roasted_mutton_chops" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			id: "4697CA73E10008F7"
+			tasks: [{
+				count: 8L
+				id: "5B885A2FD5065552"
+				item: { Count: 8, id: "farmersdelight:mushroom_rice" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "6C42A6EF69B47034"
+			tasks: [{
+				count: 8L
+				id: "0E7FCCB5C19C8D37"
+				item: { Count: 8, id: "farmersdelight:pasta_with_mutton_chop" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "34467281F52CFBE6"
+			tasks: [{
+				count: 8L
+				id: "77025CF85BDE7FFB"
+				item: { Count: 8, id: "farmersdelight:pasta_with_meatballs" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "1FC69E550854D0DD"
+			tasks: [{
+				count: 8L
+				id: "798E7CB7DD39E670"
+				item: { Count: 8, id: "farmersdelight:bacon_and_eggs" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			id: "0876F03EB39C7C73"
+			tasks: [{
+				count: 8L
+				id: "5FC3C37AF3DE34FA"
+				item: { Count: 8, id: "farmersdelight:noodle_soup" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "7519358C3FCB2A04"
+			tasks: [{
+				id: "7B38B9E71A8C01A1"
+				item: "farmersdelight:shepherds_pie_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			id: "4F2321FF9956C463"
+			tasks: [{
+				id: "1453990157E8C122"
+				item: "farmersdelight:honey_glazed_ham_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "53EEC31B4FEF39F3"
+			tasks: [{
+				id: "4651127D1D0D48F2"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			id: "745860614DE0B06B"
+			tasks: [{
+				id: "6A8AE1BB52427752"
+				item: "farmersdelight:stuffed_pumpkin_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1FC69E550854D0DD"
+				"4697CA73E10008F7"
+				"0876F03EB39C7C73"
+				"34467281F52CFBE6"
+				"6C42A6EF69B47034"
+				"39940AC420D2355B"
+				"4F2321FF9956C463"
+				"53EEC31B4FEF39F3"
+				"5564F2171E4E83B6"
+				"62B25AEA13F48FB3"
+				"0D17B54D980A6177"
+				"5543857A0363FB9D"
+				"462B31A6AE61F757"
+				"12CD38B26251397F"
+				"0626E6A5252502FC"
+				"3EAEDAC0F018D4B5"
+			]
+			description: ["Can later be EBF'd to upgrade it"]
+			hide_dependency_lines: true
+			icon: "artifacts:everlasting_beef"
+			id: "0AABFB4F0E9EC365"
+			rewards: [
+				{
+					id: "64907C51B2E40D4B"
+					item: "artifacts:everlasting_beef"
+					type: "item"
+				}
+				{
+					id: "7A78D029DA56EF7C"
+					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "Yes, I got this idea from GT:NH."
+			tasks: [
+				{
+					count: 8L
+					id: "3C07DF7C9A89E4A8"
+					item: { Count: 8, id: "minecraft:bee_nest" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "61305D2B64E3AAF5"
+					item: "minecraft:honey_block"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "148418B9EA61F90D"
+					item: { Count: 8, id: "minecraft:honeycomb_block" }
+					type: "item"
+				}
+			]
+			title: "The Eternal Beef"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			id: "278E1CCD93142D37"
+			tasks: [{
+				id: "30B09BC89D4EBF56"
+				title: "NEVER worry about food again!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "The Eternal Steak"
+}

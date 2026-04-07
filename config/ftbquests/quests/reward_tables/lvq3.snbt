@@ -1,0 +1,11 @@
+{
+	id: "3B3D63A12AFC0923"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ item: "kubejs:lv_helper_computation_array" }
+		{ count: 8, item: "gtceu:basic_electronic_circuit" }
+		{ count: 2, item: "kubejs:lv_loot_bag" }
+	]
+	title: "lvq3"
+}

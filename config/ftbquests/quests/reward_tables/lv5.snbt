@@ -1,0 +1,11 @@
+{
+	id: "09AF597E97CBD686"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{ count: 16, item: "gtceu:endstone_chromite_ore" }
+		{ count: 32, item: "gtceu:endstone_mica_ore" }
+		{ count: 2, item: "kubejs:lv_loot_bag" }
+	]
+	title: "lv5"
+}

@@ -1,0 +1,12 @@
+{
+	id: "54953ACE06151475"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{ item: "ars_nouveau:thread_repairing" }
+		{ item: "kubejs:ars_bag_2" }
+		{ count: 32, item: "kubejs:mv_magic_coin" }
+		{ item: "ars_nouveau:ring_of_lesser_discount" }
+	]
+	title: "ars3"
+}

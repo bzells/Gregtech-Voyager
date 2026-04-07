@@ -1,0 +1,11 @@
+{
+	id: "69DC0E2F7346D0AD"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ item: "sophisticatedbackpacks:magnet_upgrade" }
+		{ item: "sophisticatedbackpacks:deposit_upgrade" }
+		{ item: "sophisticatedbackpacks:tank_upgrade" }
+	]
+	title: "lv6"
+}

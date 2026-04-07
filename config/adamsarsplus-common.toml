@@ -1,0 +1,97 @@
+
+["Configs for Adams Ars Plus"]
+	#does the domain glyph have a cooldown burnout?
+	doDomainBurnout = true
+	#does the spell efficiency glyph inflict mana exhaustion?
+	doDiscountBacklash = true
+	#maximum number of times spell efficiency can appear
+	#Range: 0 ~ 10
+	maxDiscount = 5
+	#maximum number of entities a domain can target every spell cast
+	#Range: 1 ~ 100
+	maxDomainEntities = 10
+	#include community spells for the mysterious mage entity?
+	doComMages = true
+	#access pool of possible mage spells from local device (true) or online file (false)?
+	doLocalMagePool = true
+	#Allow overworld mages that can mobgrief?
+	doMageGrief = true
+	#Have a cooldown on the leap glyph?
+	doLeapFatigue = true
+	#Dimensions where mages will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
+	dimensionBlacklist = []
+
+["Armor Configs"]
+	#Frost Max Mana per tier
+	#Range: 0 ~ 999
+	cadeMaxMana = 40
+	#Frost Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	cadeManaRegen = 2.0
+	#Frost Spell Damage per tier
+	#Range: 0 ~ 99
+	cadeSpellDamage = 1
+	#Frost Warding
+	#Range: 0 ~ 99
+	cadeWarding = 0
+	#FLAME Max Mana per tier
+	#Range: 0 ~ 999
+	RYANMaxMana = 35
+	#FLAME Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	RYANManaRegen = 1.5
+	#FLAME Spell Damage per tier
+	#Range: 0 ~ 99
+	RYANSpellDamage = 1
+	#FLAME Warding
+	#Range: 0 ~ 99
+	RYANWarding = 0
+	#EARTH Max Mana per tier
+	#Range: 0 ~ 999
+	NICKMaxMana = 30
+	#EARTH Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	NICKManaRegen = 1.0
+	#EARTH Spell Damage per tier
+	#Range: 0 ~ 99
+	NICKSpellDamage = 1
+	#EARTH Warding
+	#Range: 0 ~ 99
+	NICKWarding = 0
+	#LIGHTNING Max Mana per tier
+	#Range: 0 ~ 999
+	CAMMaxMana = 38
+	#LIGHTNING Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	CAMManaRegen = 2.5
+	#LIGHTNING Spell Damage per tier
+	#Range: 0 ~ 99
+	CAMSpellDamage = 1
+	#LIGHTNING Warding
+	#Range: 0 ~ 99
+	CAMWarding = 0
+	#HOLY Max Mana per tier
+	#Range: 0 ~ 999
+	MATTMaxMana = 30
+	#HOLY Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	MATTManaRegen = 1.0
+	#HOLY Spell Damage per tier
+	#Range: 0 ~ 99
+	MATTSpellDamage = 1
+	#HOLY Warding
+	#Range: 0 ~ 99
+	MATTWarding = 1
+	#VOID Max Mana per tier
+	#Range: 0 ~ 999
+	ADAMMaxMana = 50
+	#VOID Mana Regen per tier
+	#Range: 0.0 ~ 99.0
+	ADAMManaRegen = 4.0
+	#VOID Spell Damage per tier
+	#Range: 0 ~ 99
+	ADAMSpellDamage = 1
+	#VOID Warding
+	#Range: 0 ~ 99
+	ADAMWarding = 1
+

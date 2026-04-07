@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4_to_space_ev"
+	group: "3E515D2B3A8DFC29"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
+	id: "4F26DE9498F90D58"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Chapter 4: To Space! (EV)"
+}

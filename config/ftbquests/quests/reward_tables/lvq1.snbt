@@ -1,0 +1,11 @@
+{
+	id: "0F015719799C9DDB"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 8, item: "gtceu:lv_input_bus" }
+		{ count: 8, item: "gtceu:maintenance_hatch" }
+		{ item: "gtceu:prospector.lv" }
+	]
+	title: "lvq1"
+}

@@ -1,0 +1,1981 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_uhv_lv"
+	group: "3E515D2B3A8DFC29"
+	icon: "gtceu:lv_robot_arm"
+	id: "0A5B9618E3794CA4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependency_requirement: "one_completed"
+			id: "3E9637EB1EDEE1CF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19DF2026D86048CC"
+				table_id: 5318862731621572039L
+				type: "choice"
+			}]
+			subtitle: "Hint: Take the miner"
+			tasks: [
+				{
+					id: "337581DE75659A38"
+					item: "gtceu:lp_steam_solid_boiler"
+					type: "item"
+				}
+				{
+					id: "2CABD3D84FF18933"
+					item: "gtceu:lp_steam_liquid_boiler"
+					type: "item"
+				}
+				{
+					id: "3319CA667DF03AE4"
+					item: "gtceu:lp_steam_solar_boiler"
+					type: "item"
+				}
+			]
+			title: "Generating Steam"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E9637EB1EDEE1CF"]
+			icon: "gtceu:steel_plate"
+			id: "7A8CF6F1517B71D4"
+			rewards: [{
+				count: 4
+				id: "5D5A2D712B6E18E4"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F7DB0257983D1C8"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "Making Plates"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3E9637EB1EDEE1CF"]
+			id: "7CADFD8F0B99E78C"
+			rewards: [{
+				count: 4
+				id: "7803D74CA8BCE2DF"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3A193F429FD52705"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "3052D1B4D5017E4F"
+					item: "gtceu:firebrick"
+					type: "item"
+				}
+			]
+			title: "Firebricks"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7CADFD8F0B99E78C"
+				"21517C495219BC6F"
+			]
+			dependency_requirement: "one_completed"
+			id: "230EFA39D1DB3BE2"
+			rewards: [{
+				count: 8
+				id: "3A7F1BEC688DD1FE"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "66A71762395E6861"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1303C3BCD9076C53"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0BD1E33B6CC5E52E"
+				"4A1D4D949837DFC1"
+			]
+			id: "5AACBB49F0E61499"
+			rewards: [{
+				id: "2B61169C5EB2F90D"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "2A7A8B67CDE71A08"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3E9637EB1EDEE1CF"]
+			id: "69DDC7B4AFAAD126"
+			rewards: [{
+				count: 4
+				id: "103EC2222D589AE4"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B9C6B34C7431144"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "First Alloy Smelter"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["69DDC7B4AFAAD126"]
+			id: "58673AEDFBEA679C"
+			rewards: [{
+				count: 2
+				id: "57F708F439348EBB"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6AD48198A1C96C7A"
+				item: "gtceu:rubber_dust"
+				type: "item"
+			}]
+			title: "Rubber"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58673AEDFBEA679C"]
+			id: "4A1D4D949837DFC1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0EF63808F73427CA"
+					table_id: 7804472915765149448L
+					type: "choice"
+				}
+				{
+					id: "14A21A203DBE9B20"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2EF76719D623B7B7"
+					item: "gtceu:red_alloy_single_cable"
+					type: "item"
+				}
+				{
+					id: "11BBFDEAB6DC677E"
+					item: "gtceu:glass_tube"
+					type: "item"
+				}
+				{
+					id: "7C29C989ACD2D9ED"
+					item: "gtceu:resistor"
+					type: "item"
+				}
+				{
+					id: "2A3719025CE32475"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Circuit Parts"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["230EFA39D1DB3BE2"]
+			id: "0BD1E33B6CC5E52E"
+			rewards: [{
+				id: "1FA1A457C0B33BFC"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "440AF37E31109645"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			id: "71CC1ADC3B779D19"
+			rewards: [{
+				id: "6CCFE9AFAD7AC870"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "719ADE4E1DF4A977"
+				item: "gtceu:wrought_iron_nugget"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E9637EB1EDEE1CF"]
+			id: "2FF5A13BA30475E2"
+			rewards: [{
+				count: 4
+				id: "44ADC5C58CB03BEC"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77BF466D7F427A69"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "4E886F0D1651DBA2"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "26A2B40F3DE6B1D7"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62A1F0961AA439E8"
+					table_id: 3238365205241762905L
+					type: "choice"
+				}
+			]
+			size: 1.5d
+			subtitle: "Make steel and wrought iron much faster"
+			tasks: [
+				{
+					id: "29D563909017593F"
+					item: "gtceu:steam_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "3D5D793233D24283"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "50288D2DE7F4E7C5"
+					item: { Count: 9, id: "gtceu:steel_firebox_casing" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "052B06DB10485D70"
+					item: { Count: 6, id: "gtceu:steel_brick_casing" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "47EA91FA5AC0EFB5"
+					item: { Count: 7, id: "gtceu:steel_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 6.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5AACBB49F0E61499"]
+			id: "06AE6F8A4AF618B1"
+			rewards: [{
+				count: 2
+				id: "53F91651A79B724B"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AAF76F6614C3429"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7BA5CF6A4100EFE5"]
+			id: "357EE9A028D0CFD1"
+			rewards: [
+				{
+					count: 16
+					id: "7280C3CCA392482B"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "124BAFA5A5B3A0DC"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "70E72E7E3FAD9ABF"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			title: "Robot Arms I"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "743AAA9735AD4108"
+			rewards: [{
+				count: 2
+				id: "59DED57EE0071E2E"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "550674978DAA44DA"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["743AAA9735AD4108"]
+			id: "290EB65235B42D56"
+			rewards: [{
+				count: 4
+				id: "1C94B435147F7478"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B0D4DCA22BE88B2"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["743AAA9735AD4108"]
+			id: "71B21735D9A0C40B"
+			rewards: [{
+				count: 8
+				id: "12C03C609BDFC942"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6567233ED72AD3F6"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["743AAA9735AD4108"]
+			id: "7BA5CF6A4100EFE5"
+			rewards: [{
+				count: 4
+				id: "04FD8297CCCA471F"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56080E250BC709BC"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["743AAA9735AD4108"]
+			id: "315B88B1DFA45748"
+			rewards: [{
+				count: 8
+				id: "69CF63532DBE9F19"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22F6388463DE46EA"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			title: "Mixing!"
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["315B88B1DFA45748"]
+			id: "02E8A9B06DBB0EEC"
+			rewards: [{
+				count: 2
+				id: "002699C7111BDDD7"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0DF9E1E6B6E6C17E"
+					item: "gtceu:tin_silver_alloy_dust"
+					type: "item"
+				}
+				{
+					id: "07B05635886FFD65"
+					item: "gtceu:tin_silver_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "LV Superconductor"
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"357EE9A028D0CFD1"
+				"290EB65235B42D56"
+			]
+			id: "33E97EC2C3D18C53"
+			rewards: [
+				{
+					count: 16
+					id: "2C1EAA07EBCF4E95"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "1E3F761BBC58C01B"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0168EF69BBB7FE49"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"33E97EC2C3D18C53"
+				"357EE9A028D0CFD1"
+				"27AA692C785683AB"
+			]
+			id: "36DD012BFC93D136"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7D57A3DF1BB48BC2"
+					table_id: 4268677565679143203L
+					type: "choice"
+				}
+				{
+					count: 4
+					id: "273F6C9F277654DA"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "339CB22EE3402A43"
+				item: "gtceu:lv_helper_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "7950E263199E3E7A"
+			rewards: [{
+				count: 4
+				id: "77C53F11C15CE428"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C1A1E4420D7850E"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7950E263199E3E7A"]
+			id: "27AA692C785683AB"
+			rewards: [{
+				count: 2
+				id: "7F872C86987896CA"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06B967C13CB785D7"
+				item: "gtceu:tempered_glass"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["02E8A9B06DBB0EEC"]
+			id: "3ABA2A4C125EEA76"
+			rewards: [{
+				count: 8
+				id: "60353859E9C7F59D"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "572DA182B3190A9D"
+				item: "kubejs:lv_helper_computation_array"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3E9637EB1EDEE1CF"]
+			id: "43F884BF889990A0"
+			rewards: [{
+				count: 4
+				id: "25D3CC474995C19A"
+				item: "kubejs:ulv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "081FAAD0B118966A"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3ABA2A4C125EEA76"
+				"36DD012BFC93D136"
+				"38AD298A86D5A6A3"
+			]
+			id: "4EAE4C62E76742E3"
+			rewards: [{
+				count: 16
+				id: "7576D68D0A9D4C37"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0500308E41FD02D2"
+				item: "kubejs:brick_helper"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["71B21735D9A0C40B"]
+			dependency_requirement: "one_completed"
+			id: "38AD298A86D5A6A3"
+			rewards: [{
+				count: 16
+				id: "7EE1C2455F711A1D"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "06F2DCB4E66D5AB6"
+					item: "gtceu:lv_distillery"
+					type: "item"
+				}
+				{
+					id: "139070442098CB8E"
+					item: "gtceu:lv_brewery"
+					type: "item"
+				}
+				{
+					id: "12FFD070F36E4358"
+					item: "gtceu:lubricant_bucket"
+					type: "item"
+				}
+			]
+			title: "Lubricant"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "4BC563184E6FF379"
+			rewards: [{
+				id: "155088A8DF9AB6E5"
+				item: {
+					Count: 1
+					id: "gtceu:blue_steel_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							Enchantability: 33
+							HarvestLevel: 3
+							MaxDamage: 3071
+							ToolSpeed: 10.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7F85561E947C8750"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_pickaxe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41CCA36E94B21A35"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_shovel"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15FB8E64B4405EC8"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "522924BF0D52275D"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_sword"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 5.0f
+								AttackSpeed: -2.6000001f
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "1A497A719FC8ED48"
+			rewards: [{
+				id: "66AB61C6D3B99752"
+				item: {
+					Count: 1
+					id: "gtceu:blue_steel_wrench"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							Mode: 2b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							Enchantability: 33
+							HarvestLevel: 3
+							MaxDamage: 1023
+							ToolSpeed: 19.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "38BED6BD8D955B38"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A9E2D7B88FBA86B"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23511B1CAE5A6EA6"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D89ED40A2E18268"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wire_cutter"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FC978E2049C26EE"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "479E768D88BB8763"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5473877735560A21"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								HarvestLevel: 2
+								MaxDamage: 383
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, inclluding diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands"]
+			id: "19FC73434CC6BAE0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5281CAE96B1D3C46"
+				table_id: 4731974358258767428L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "0EA4C2224B8D5BF5"
+					item: "gtceu:oil_heavy_bucket"
+					type: "item"
+				}
+				{
+					id: "4140E3D00453059A"
+					item: "gtceu:fish_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "0F4B8945F253809E"
+					item: "gtceu:seed_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "4CD6B8417829BF73"
+					item: "gtceu:oil_medium_bucket"
+					type: "item"
+				}
+			]
+			title: "Oil"
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["19FC73434CC6BAE0"]
+			description: ["You will want a LOT of this. It is used for numerous electronic parts/components, and some coils."]
+			id: "3BBA83FABB7EC581"
+			rewards: [{
+				count: 2
+				id: "4BEE8747BC0BD85F"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "377DDE26CDEF28F0"
+				item: "gtceu:metallic_mica_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3BBA83FABB7EC581"
+				"33E97EC2C3D18C53"
+			]
+			id: "31DF1C9873F9ADFE"
+			rewards: [{
+				count: 2
+				id: "215AB24F641CCE28"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A7BAC256E917D8B"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"02E8A9B06DBB0EEC"
+				"3BBA83FABB7EC581"
+				"33E97EC2C3D18C53"
+			]
+			hide_dependency_lines: true
+			id: "55328A2C8446420D"
+			rewards: [{
+				count: 32
+				id: "664C5DE33AB140B8"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "4760C398E5B9C5DC"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3BBA83FABB7EC581"
+				"07B05635886FFD65"
+				"3985EA7CECAB6DA6"
+			]
+			id: "2FF3657687FACC38"
+			rewards: [{
+				count: 8
+				id: "3853AD2B6FC76688"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "06612055F6D08CC1"
+					item: "gtceu:phenolic_circuit_board"
+					type: "item"
+				}
+				{
+					id: "4A651F76574C5C71"
+					item: "gtceu:phenolic_printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"2FF3657687FACC38"
+				"31DF1C9873F9ADFE"
+			]
+			hide_dependent_lines: true
+			id: "0281D9126207274C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0ACE29EA4B13BCF9"
+					table_id: 4268677565679143203L
+					type: "choice"
+				}
+				{
+					count: 16
+					id: "378DEEE1DBDF17F9"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+			]
+			size: 2.5d
+			tasks: [{
+				id: "6BFD1BB50D8A1AA8"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["36DD012BFC93D136"]
+			id: "4E1532CE541BE46E"
+			rewards: [{
+				count: 16
+				id: "7D09EEF85387BA2E"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27B8C9B7BFEAC2F7"
+				item: "kubejs:track_runner_helper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"4E1532CE541BE46E"
+				"7C836F67248E2C86"
+			]
+			id: "6D3DFD8993872B7E"
+			rewards: [
+				{
+					count: 16
+					id: "19F66C2CA23CF520"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "12396F29D52DC0EB"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "57B637A951737593"
+				item: "gtceu:lv_helper_wheel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			id: "00F2F965410C7EC6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "125CAE3A2A068038"
+					table_id: 8492432244266067596L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22E072AFAA5456D0"
+					table_id: 1013865981561112222L
+					type: "choice"
+				}
+			]
+			subtitle: "You will need an energy hatch"
+			tasks: [{
+				id: "2A60B81248C6CEFA"
+				item: "gtceu:micro_farm"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["36DD012BFC93D136"]
+			id: "3CBB59A9F365E9EB"
+			rewards: [{
+				count: 16
+				id: "1F639EE27E31573C"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CF5FBAC62FE1018"
+				item: "kubejs:farmer_helper"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"00F2F965410C7EC6"
+				"4CA21D20310C7131"
+			]
+			id: "7C836F67248E2C86"
+			tasks: [{
+				id: "4AA609EFC37D896C"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["00F2F965410C7EC6"]
+			description: ["This multiblock can farm just about any crop, and if it's encompanied by a &eFarmer Helper&r, it will will self manage!"]
+			id: "43F89B5A13781FF3"
+			rewards: [{
+				id: "327229C15B6C5A1F"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			tasks: [{
+				id: "323C53376A91373A"
+				title: "The Micro Farm"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"3DDE2D93FC69CA9E"
+				"55328A2C8446420D"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "690273CD13294064"
+			rewards: [
+				{
+					count: 3
+					id: "098BB50A888C709F"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B6F329CF5345692"
+					table_id: 1081241152471735771L
+					type: "choice"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "09B598EF1BD4C2B4"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "13A0C77FCADB9E68"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					id: "122B70CE079C3B1E"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "7766E489FED4C0D7"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "79C4F73962186E88"
+					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3BBA83FABB7EC581"]
+			id: "3DDE2D93FC69CA9E"
+			rewards: [{
+				id: "69480F4673C17313"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "399BFE58A0CABFF6"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["690273CD13294064"]
+			id: "0E88D87F0D55FFB7"
+			rewards: [{
+				count: 8
+				id: "2C775EC7C1C551B7"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "64A28399F13249E9"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0281D9126207274C"
+				"36DD012BFC93D136"
+			]
+			id: "618752DB9A512A67"
+			rewards: [{
+				count: 16
+				id: "0F2602E201599562"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BF9EDCD69EF93E1"
+				item: "kubejs:lv_technician_helper"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5AACBB49F0E61499"]
+			id: "7242E4C0863EC9C6"
+			rewards: [{
+				count: 8
+				id: "1CB916B6F93A21D3"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "238E7567C3E38E29"
+				item: "gtceu:lv_super_chest"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0281D9126207274C"]
+			id: "0CEDA8F0D700A28F"
+			tasks: [{
+				id: "6A442A7EA7F024A2"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "11FDAE3572C9D2FC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5EAB5B4CC649B539"
+					table_id: 8329633971839592888L
+					type: "loot"
+				}
+				{
+					count: 16
+					id: "4D22CA534E026343"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "581E9AC680BBEEBF"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			id: "52D23A2C43DEEB17"
+			rewards: [{
+				count: 8
+				id: "305B3F0E9AE48646"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B0513E576DCF078"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			id: "4141DAE564518A83"
+			rewards: [{
+				count: 8
+				id: "0222DD7B586DF4C2"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "662613C304D6E1CD"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			id: "65D1ADB9B17D20A2"
+			rewards: [{
+				count: 8
+				id: "03480D728640CB76"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C4C8A68D20445C3"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			id: "713A48C50883E8FD"
+			rewards: [{
+				count: 8
+				id: "521F2E5E72676B56"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "38DF784ABBB3C241"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			id: "36DC7380E4AFD689"
+			rewards: [{
+				count: 8
+				id: "6795B760E5D802CD"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02A37795351C9701"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.5d
+		}
+		{
+			id: "7E19CBFEE37769B8"
+			rewards: [{
+				count: 8
+				id: "53821E0352F4085C"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FAAA4385AA00C31"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			id: "5BA9E9A17B6563A7"
+			rewards: [{
+				count: 8
+				id: "74751543002F61DC"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F31658AECF1D2D3"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.5d
+		}
+		{
+			id: "29F646237674A26E"
+			rewards: [{
+				count: 8
+				id: "2BDAFE52ED538445"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "088CB2905296F96C"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			id: "31FD65403041E389"
+			rewards: [{
+				count: 8
+				id: "4FE67E4D822D9B98"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45AB52820037E806"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			id: "73DD00B62EC30664"
+			rewards: [{
+				count: 8
+				id: "4596D9A8782DBADB"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F3A4AF73C6A3953"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.5d
+		}
+		{
+			id: "3E4416A49D1E8C7A"
+			rewards: [{
+				count: 8
+				id: "3246F912B9E8E795"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28A9E391D13BE141"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			id: "5934CFA380B9205B"
+			rewards: [{
+				count: 8
+				id: "05DC95E00E127576"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61DA8E4329AD8EE5"
+				item: "gtceu:lv_forge_hammer"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			id: "7624AE09621DD915"
+			rewards: [{
+				count: 8
+				id: "392C73344A41A6FF"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D931E6F6CD87AEA"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			id: "732633BA20A08D93"
+			rewards: [{
+				count: 8
+				id: "159795E359FF2451"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D3E709E2704F20D"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			id: "007C85FAF92BBF17"
+			rewards: [{
+				count: 8
+				id: "004B8CD380E118FB"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "341A3E4954E45FFC"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			id: "7AC6F324589DB685"
+			rewards: [{
+				count: 8
+				id: "54DCCE78F6E204BB"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22EBA9885D2A3AD6"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.5d
+		}
+		{
+			id: "20CDFCFF5A29015F"
+			rewards: [{
+				count: 8
+				id: "45763C56BE514A61"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EB03CABD49B35E2"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.5d
+		}
+		{
+			id: "07E1E80997831AC8"
+			rewards: [{
+				count: 8
+				id: "1FBF606F3AB947DF"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4192AE01DA004961"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.5d
+		}
+		{
+			id: "644D74D96E6F82A9"
+			rewards: [{
+				count: 8
+				id: "59699213F1EAC5B4"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2203EC872D0E099A"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["33FBFD1A3B3D8CE4"]
+			id: "155D20799D193ACB"
+			rewards: [
+				{
+					count: 8
+					id: "5B3E3198122437F4"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "0B0648DB1738B291"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
+			subtitle: "You may want 2 or 3 of these"
+			tasks: [{
+				id: "5EADFEFDA891BE5D"
+				item: "gtceu:lv_miner"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "33FBFD1A3B3D8CE4"
+			rewards: [{
+				count: 4
+				id: "5361DB49F18D5FD7"
+				item: "kubejs:lv_universal_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E3642AFBF892E34"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "10DEDC74896C18D7"
+			rewards: [{
+				count: 4
+				id: "085071C211599021"
+				item: "kubejs:lv_universal_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39B14F4E6A9B5FBC"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"33FBFD1A3B3D8CE4"
+				"10DEDC74896C18D7"
+			]
+			id: "22F3CBE1E9906408"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0320D08F91B07B9B"
+					table_id: 697874867513185926L
+					type: "choice"
+				}
+				{
+					count: 12
+					id: "7C72D8AC5A34F39A"
+					item: "kubejs:lv_universal_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0D9B1340AF4DA539"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"3599FF7BB1B89309"
+				"56A4ED92D5CAB949"
+			]
+			id: "3985EA7CECAB6DA6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "297638D5C7A06F9F"
+					table_id: 4268677565679143203L
+					type: "choice"
+				}
+				{
+					count: 16
+					id: "50FBB92283EFFB49"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EC52A0CC52C5595"
+				item: "gtceu:phenol_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 12.5d
+		}
+		{
+			id: "3599FF7BB1B89309"
+			rewards: [{
+				id: "3975903F2689A29B"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "19BEB0B8B13A1FF7"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["209F0E4D260B95F1"]
+			id: "56A4ED92D5CAB949"
+			rewards: [{
+				count: 4
+				id: "4744AE686CC3577F"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			subtitle: "LV Petrochem, yes"
+			tasks: [{
+				id: "75F33A477BA2536F"
+				item: "gtceu:heavy_fuel_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["2355FC6919A61D54"]
+			id: "209F0E4D260B95F1"
+			min_required_tasks: 1
+			rewards: [{
+				id: "6A0DF522C16008D0"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "690C144C626C0B71"
+					item: "gtceu:oil_bucket"
+					type: "item"
+				}
+				{
+					id: "07A8A87070296E11"
+					item: "gtceu:oil_heavy_bucket"
+					type: "item"
+				}
+				{
+					id: "1422AF2066C82AAB"
+					item: "gtceu:oil_medium_bucket"
+					type: "item"
+				}
+				{
+					id: "3170998FD268DEAF"
+					item: "gtceu:oil_light_bucket"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 14.5d
+		}
+		{
+			id: "2355FC6919A61D54"
+			rewards: [{
+				id: "09F3F74722269BD2"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75237A89DD8F851D"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 15.5d
+		}
+		{
+			id: "4CA21D20310C7131"
+			tasks: [{
+				id: "7F86A8DC056EEF52"
+				item: "gtceu:lv_forming_press"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["690273CD13294064"]
+			id: "5DAA6F703D07AB85"
+			rewards: [{
+				count: 4
+				id: "1F8D436F768617D8"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31E45D14D18339E4"
+				item: "gtceu:manganese_phosphide_ingot"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5DAA6F703D07AB85"]
+			id: "65459B91CB9A00B5"
+			rewards: [{
+				id: "70FFE2F4AD3D54BB"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "632286D52BAD7BB2"
+				item: "gtceu:lv_field_generator"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "6A9CB98290D5EFA4"
+			min_required_tasks: 1
+			rewards: [{
+				id: "7BEB7D0EF82F90F0"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "07F0883C7154F5AD"
+					item: "gtceu:lv_battery_buffer_4x"
+					type: "item"
+				}
+				{
+					id: "41262AF5E71BF18E"
+					item: "gtceu:lv_battery_buffer_8x"
+					type: "item"
+				}
+				{
+					id: "7558ED3F70C01F58"
+					item: "gtceu:lv_battery_buffer_16x"
+					type: "item"
+				}
+			]
+			title: "Battery Buffers"
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0BD1E33B6CC5E52E"]
+			id: "53B941D7A70A233A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0714584934C8D53E"
+					table_id: 7627987465819050157L
+					type: "choice"
+				}
+				{
+					count: 4
+					id: "3D33C08335982B90"
+					item: "kubejs:lv_universal_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "18CA2253649B1122"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+	]
+	title: "Chapter 1 (ULV, LV)"
+}
