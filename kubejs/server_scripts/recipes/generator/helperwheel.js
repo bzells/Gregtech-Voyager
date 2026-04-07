@@ -13,15 +13,15 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('gtceu:lv_helper_wheel', 1), // arg 1: output
         [
-            '   ',
-            ' A ', // arg 2: the shape (array of strings)
-            '   '
+            'DBD',
+            'CAC', // arg 2: the shape (array of strings)
+            'DBD'
         ],
         {
-            A: 'gtceu:clay_dust',
-            B: 'gtceu:quartz_sand_dust',  //arg 3: the mapping object
-            C: 'minecraft:bucket',
-            D: 'gtceu:stone_dust'
+            A: 'gtceu:lv_machine_hull',
+            B: '#gtceu:circuits/lv',  //arg 3: the mapping object
+            C: 'gtceu:tin_rotor',
+            D: 'gtceu:lv_electric_motor'
         }
     )
 
