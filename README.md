@@ -1,1 +1,1 @@
-# GT Beyond The Stars
+# GT Voyager
