@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = C:/Users/justi/curseforge/minecraft/Instances/GT Beyond The Stars/saves/Testing
-}
-
