@@ -507,6 +507,18 @@ event.recipes.gtceu.assembler('kubejs:kanthalcoil')
     .duration(30*20)
     .EUt(120);
 
+event.recipes.gtceu.assembler('kubejs:nichromecoil')
+    .itemInputs(
+        '8x gtceu:nichrome_double_wire',
+        '8x gtceu:stainless_steel_foil',
+        '16x gtceu:metallic_mica_foil',
+    )
+    // .notConsumable('kubejs:lv_technician_helper')
+    .itemOutputs('1x gtceu:nichrome_coil_block')
+    .inputFluids('#forge:aluminium 144')
+    .duration(30*20)
+    .EUt(480);
+
 // misc
 
 event.recipes.gtceu.assembler('kubejs:bricks')

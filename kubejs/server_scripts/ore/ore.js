@@ -489,9 +489,29 @@ GTCEuServerEvents.oreVeins(event => {
     
     // moon ores
     event.add("moon/bauxite", vein => {
-        vein.weight(20)
-        vein.density(1.0)
-        vein.clusterSize(25)
+        vein.weight(15)
+        vein.density(.3)
+        vein.clusterSize(35)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.cuboidVeinGenerator(generator => generator
+            // .top(b => b.mat(GTMaterials.Bauxite).size(1))
+            .top(b => b.mat('gtceu:bauxite').size(1))
+            .middle(b => b.mat(GTMaterials.Bauxite).size(3))
+            .bottom(b => b.mat(GTMaterials.Aluminium).size(2))
+            .spread(b => b.mat(GTMaterials.Bauxite))
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Bauxite)
+            .placement("above")
+        )
+    })
+
+    event.add("moon/ilmenite", vein => {
+        vein.weight(10)
+        vein.density(.3)
+        vein.clusterSize(35)
         vein.layer("moon")
         vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(0, 200)
@@ -499,11 +519,11 @@ GTCEuServerEvents.oreVeins(event => {
             // .top(b => b.mat(GTMaterials.Bauxite).size(1))
             .top(b => b.mat('gtceu:bauxite').size(1))
             .middle(b => b.mat(GTMaterials.Ilmenite).size(3))
-            .bottom(b => b.mat(GTMaterials.Aluminium).size(2))
+            .bottom(b => b.mat(GTMaterials.Ilmenite).size(2))
             .spread(b => b.mat(GTMaterials.Bauxite))
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Bauxite)
+            .surfaceRock(GTMaterials.Ilmenite)
             .placement("above")
         )
     })
