@@ -239,8 +239,8 @@
 		}
 		{
 			dependencies: [
-				"3A557C43CE0F534F"
 				"3AD0418241AEA8AA"
+				"2977381A674780EF"
 			]
 			id: "3ABEDA348136284C"
 			rewards: [{
@@ -281,7 +281,7 @@
 				}
 			]
 			x: 9.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			id: "26A6C0E4B38F51B3"
@@ -413,6 +413,11 @@
 				{
 					id: "3771EAA8DA93739F"
 					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					id: "4D60191EF765C81C"
+					item: "tconstruct:tinkers_anvil"
 					type: "item"
 				}
 			]
@@ -602,6 +607,17 @@
 			title: "The \"Slimer\""
 			x: 10.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["3A557C43CE0F534F"]
+			id: "2977381A674780EF"
+			tasks: [{
+				id: "266EFB11B60C83E4"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
 		}
 	]
 	title: "Chapter 0: Stone Age"

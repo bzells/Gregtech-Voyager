@@ -20,32 +20,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["1F92E7A4D7109CA0"]
-			id: "369E7991835FD4C7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3C2E67106824B8A9"
-					table_id: 6519895471055254262L
-					type: "choice"
-				}
-				{
-					count: 16
-					id: "7EE6C6D3124AB968"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			size: 1.5d
-			tasks: [{
-				id: "722857FFBF75E6A4"
-				item: "toms_storage:ts.crafting_terminal"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -0.75d
-		}
-		{
 			id: "17D94B0681899CD5"
 			rewards: [{
 				id: "1C38ECE103102330"

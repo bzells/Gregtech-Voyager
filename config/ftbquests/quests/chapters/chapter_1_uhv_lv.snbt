@@ -43,12 +43,19 @@
 			dependencies: ["3E9637EB1EDEE1CF"]
 			icon: "gtceu:steel_plate"
 			id: "7A8CF6F1517B71D4"
-			rewards: [{
-				count: 4
-				id: "5D5A2D712B6E18E4"
-				item: "kubejs:ulv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "5D5A2D712B6E18E4"
+					item: "kubejs:ulv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "08F6EBC50CCF10EB"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3F7DB0257983D1C8"
 				item: "gtceu:lp_steam_forge_hammer"
@@ -61,12 +68,19 @@
 		{
 			dependencies: ["3E9637EB1EDEE1CF"]
 			id: "7CADFD8F0B99E78C"
-			rewards: [{
-				count: 4
-				id: "7803D74CA8BCE2DF"
-				item: "kubejs:ulv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7803D74CA8BCE2DF"
+					item: "kubejs:ulv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "55402B9460EE830D"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "3A193F429FD52705"
@@ -89,13 +103,22 @@
 				"21517C495219BC6F"
 			]
 			dependency_requirement: "one_completed"
+			description: ["A great way of getting one of these fast is with the tinker's smeltery. Fireclay will give 2x the bricks in the smeltery."]
 			id: "230EFA39D1DB3BE2"
-			rewards: [{
-				count: 8
-				id: "3A7F1BEC688DD1FE"
-				item: "kubejs:ulv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "3A7F1BEC688DD1FE"
+					item: "kubejs:ulv_tech_coin"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "64C15451339768FE"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "66A71762395E6861"
@@ -135,12 +158,19 @@
 		{
 			dependencies: ["3E9637EB1EDEE1CF"]
 			id: "69DDC7B4AFAAD126"
-			rewards: [{
-				count: 4
-				id: "103EC2222D589AE4"
-				item: "kubejs:ulv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "103EC2222D589AE4"
+					item: "kubejs:ulv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "33443C2F25A3533D"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6B9C6B34C7431144"
 				item: "gtceu:lp_steam_alloy_smelter"
@@ -275,6 +305,12 @@
 					table_id: 3238365205241762905L
 					type: "choice"
 				}
+				{
+					count: 2
+					id: "1562BF8F7E4BA9DC"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
 			]
 			size: 1.5d
 			subtitle: "Make steel and wrought iron much faster"
@@ -314,12 +350,19 @@
 		{
 			dependencies: ["5AACBB49F0E61499"]
 			id: "06AE6F8A4AF618B1"
-			rewards: [{
-				count: 2
-				id: "53F91651A79B724B"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "53F91651A79B724B"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "13AF2CC5254A383E"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5AAF76F6614C3429"
 				item: "gtceu:lv_machine_hull"
@@ -559,12 +602,19 @@
 		{
 			dependencies: ["02E8A9B06DBB0EEC"]
 			id: "3ABA2A4C125EEA76"
-			rewards: [{
-				count: 8
-				id: "60353859E9C7F59D"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "60353859E9C7F59D"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "218E5B626C08C7C1"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "572DA182B3190A9D"
 				item: "kubejs:lv_helper_computation_array"
@@ -576,12 +626,19 @@
 		{
 			dependencies: ["3E9637EB1EDEE1CF"]
 			id: "43F884BF889990A0"
-			rewards: [{
-				count: 4
-				id: "25D3CC474995C19A"
-				item: "kubejs:ulv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "25D3CC474995C19A"
+					item: "kubejs:ulv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "65A20896DB940869"
+					item: "kubejs:ulv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "081FAAD0B118966A"
 				item: "gtceu:lp_steam_compressor"
@@ -589,28 +646,6 @@
 			}]
 			x: 5.0d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"3ABA2A4C125EEA76"
-				"36DD012BFC93D136"
-				"38AD298A86D5A6A3"
-			]
-			id: "4EAE4C62E76742E3"
-			rewards: [{
-				count: 16
-				id: "7576D68D0A9D4C37"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "0500308E41FD02D2"
-				item: "kubejs:brick_helper"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 12.0d
 		}
 		{
 			dependencies: ["71B21735D9A0C40B"]
@@ -944,7 +979,7 @@
 			y: 3.5d
 		}
 		{
-			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, inclluding diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands"]
+			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, inclluding diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands, and a good way of getting &2seed oil&r is with the micro farm with wheat"]
 			id: "19FC73434CC6BAE0"
 			min_required_tasks: 1
 			rewards: [{
@@ -976,7 +1011,7 @@
 				}
 			]
 			title: "Oil"
-			x: -5.5d
+			x: -6.0d
 			y: 8.0d
 		}
 		{
@@ -1099,21 +1134,31 @@
 			y: 11.25d
 		}
 		{
-			dependencies: ["36DD012BFC93D136"]
+			dependencies: [
+				"36DD012BFC93D136"
+				"3ABA2A4C125EEA76"
+			]
 			id: "4E1532CE541BE46E"
-			rewards: [{
-				count: 16
-				id: "7D09EEF85387BA2E"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "7D09EEF85387BA2E"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "727B3D938B963190"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "27B8C9B7BFEAC2F7"
 				item: "kubejs:track_runner_helper"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 14.5d
+			x: 3.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1130,9 +1175,8 @@
 					type: "item"
 				}
 				{
-					count: 16
-					id: "12396F29D52DC0EB"
-					item: "minecraft:cookie"
+					id: "00DB7020428B671B"
+					item: "kubejs:lv_loot_bag"
 					type: "item"
 				}
 			]
@@ -1141,8 +1185,8 @@
 				item: "gtceu:lv_helper_wheel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.5d
+			x: 3.0d
+			y: 14.5d
 		}
 		{
 			id: "00F2F965410C7EC6"
@@ -1170,21 +1214,31 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["36DD012BFC93D136"]
+			dependencies: [
+				"36DD012BFC93D136"
+				"3ABA2A4C125EEA76"
+			]
 			id: "3CBB59A9F365E9EB"
-			rewards: [{
-				count: 16
-				id: "1F639EE27E31573C"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "1F639EE27E31573C"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "4528FBDBF184693B"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1CF5FBAC62FE1018"
 				item: "kubejs:farmer_helper"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.5d
+			x: 3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1198,7 +1252,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 15.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["00F2F965410C7EC6"]
@@ -1291,12 +1345,19 @@
 		{
 			dependencies: ["690273CD13294064"]
 			id: "0E88D87F0D55FFB7"
-			rewards: [{
-				count: 8
-				id: "2C775EC7C1C551B7"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "2C775EC7C1C551B7"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "5988FEADC4AA5688"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "64A28399F13249E9"
@@ -1308,23 +1369,31 @@
 		}
 		{
 			dependencies: [
-				"0281D9126207274C"
 				"36DD012BFC93D136"
+				"3ABA2A4C125EEA76"
 			]
 			id: "618752DB9A512A67"
-			rewards: [{
-				count: 16
-				id: "0F2602E201599562"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0F2602E201599562"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0CAFC9C0F7A80EA9"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4BF9EDCD69EF93E1"
 				item: "kubejs:lv_technician_helper"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 14.5d
+			x: 3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["5AACBB49F0E61499"]
@@ -1346,6 +1415,11 @@
 		{
 			dependencies: ["0281D9126207274C"]
 			id: "0CEDA8F0D700A28F"
+			rewards: [{
+				id: "3ED687A6C6BC572B"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6A442A7EA7F024A2"
 				item: "gtceu:lv_circuit_assembler"
@@ -1444,6 +1518,8 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			hide_dependency_lines: true
 			id: "36DC7380E4AFD689"
 			rewards: [{
 				count: 8
@@ -1456,8 +1532,8 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 9.5d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
 			id: "7E19CBFEE37769B8"
@@ -1524,6 +1600,8 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			hide_dependency_lines: true
 			id: "73DD00B62EC30664"
 			rewards: [{
 				count: 8
@@ -1536,8 +1614,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.5d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			id: "3E4416A49D1E8C7A"
@@ -1652,6 +1730,8 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			hide_dependency_lines: true
 			id: "07E1E80997831AC8"
 			rewards: [{
 				count: 8
@@ -1664,10 +1744,12 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 8.5d
+			x: -4.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			hide_dependency_lines: true
 			id: "644D74D96E6F82A9"
 			rewards: [{
 				count: 8
@@ -1680,8 +1762,8 @@
 				item: "gtceu:lv_rock_crusher"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 9.5d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["33FBFD1A3B3D8CE4"]
@@ -1800,11 +1882,20 @@
 		}
 		{
 			id: "3599FF7BB1B89309"
-			rewards: [{
-				id: "3975903F2689A29B"
-				item: "kubejs:lv_loot_bag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7A973532F9047873"
+					item: "gtceu:steel_fluid_cell"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E5642A55851428B"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "19BEB0B8B13A1FF7"
 				item: "gtceu:lv_distillery"
@@ -1888,7 +1979,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 15.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["690273CD13294064"]
@@ -1981,6 +2072,12 @@
 		{
 			dependencies: ["06AE6F8A4AF618B1"]
 			id: "67BD9CD8C79F2DEF"
+			rewards: [{
+				count: 4
+				id: "662EE36692282635"
+				item: "kubejs:lv_tech_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2A6076158D00B458"
 				item: "industrialforegoing:machine_frame_pity"
@@ -1998,6 +2095,11 @@
 			]
 			hide_dependency_lines: true
 			id: "7C67C0AB24203FD5"
+			rewards: [{
+				id: "5DDF9E11025FA53E"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "65F4DF9873222E91"
 				item: "industrialforegoing:plant_gatherer"
@@ -2015,6 +2117,12 @@
 			description: ["Industrial foregoing is a great option for automatic wood. Be weary you will need a farmer helper for the plant gatherer, but it is very strong early."]
 			hide_dependency_lines: true
 			id: "1CCBD7F50F1BED5C"
+			rewards: [{
+				count: 8
+				id: "1A27A8431F88D8AA"
+				item: "kubejs:explorer_coin_1"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6705358AF28DA912"
 				item: "industrialforegoing:plant_sower"
@@ -2023,6 +2131,98 @@
 			title: "Tree Farms"
 			x: -3.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["644D74D96E6F82A9"]
+			id: "3E918E6AA934C32A"
+			subtitle: "You want a reward for this one?"
+			tasks: [{
+				id: "1BDDDE5CDD8A4842"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"7950E263199E3E7A"
+				"3E918E6AA934C32A"
+			]
+			id: "367202509EC4C7C0"
+			tasks: [{
+				id: "07D1792841E7158B"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"07E1E80997831AC8"
+				"367202509EC4C7C0"
+			]
+			id: "2599AA7F5442303C"
+			tasks: [{
+				id: "1D6143383E5A526E"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2599AA7F5442303C"
+				"36DC7380E4AFD689"
+			]
+			id: "1D63780F416777CE"
+			tasks: [{
+				id: "1C5182716517EB97"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1D63780F416777CE"
+				"73DD00B62EC30664"
+			]
+			id: "68D3B5E66CDC47DB"
+			rewards: [{
+				id: "1957AE1517938545"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C4AD3E217EEFBA5"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1D63780F416777CE"
+				"73DD00B62EC30664"
+			]
+			id: "6AE4EA9911416C6F"
+			rewards: [{
+				id: "036E049AB90A99B3"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F7B9C97E4486EA3"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
 		}
 	]
 	title: "Chapter 1 (ULV, LV)"

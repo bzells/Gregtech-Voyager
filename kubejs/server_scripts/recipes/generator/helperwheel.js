@@ -25,5 +25,20 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        Item.of('gtceu:mv_helper_wheel', 1), // arg 1: output
+        [
+            'DBD',
+            'CAC', // arg 2: the shape (array of strings)
+            'DBD'
+        ],
+        {
+            A: 'gtceu:mv_machine_hull',
+            B: '#gtceu:circuits/mv',  //arg 3: the mapping object
+            C: 'gtceu:bronze_rotor',
+            D: 'gtceu:mv_electric_motor'
+        }
+    )
+
 
 });

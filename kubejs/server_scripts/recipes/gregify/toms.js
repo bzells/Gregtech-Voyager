@@ -26,8 +26,8 @@ ServerEvents.recipes(event => {
         
     event.recipes.gtceu
         .assembler('kubejs:crafting_terminal')   // recipe ID
-        .itemInputs('8x #gtceu:circuits/hv', '1x gtceu:stainless_steel_frame', '2x gtceu:stainless_steel_gear', 'toms_storage:ts.storage_terminal',
-            '2x gtceu:double_silicon_plate', 'minecraft:crafting_table', 'minecraft:ender_eye'
+        .itemInputs('4x #gtceu:circuits/hv', '1x gtceu:stainless_steel_frame', '1x gtceu:stainless_steel_gear', 'toms_storage:ts.storage_terminal',
+            '2x gtceu:double_silicon_plate', 'minecraft:crafting_table', '8x gtceu:polyethylene_plate'
         )
         .circuit(32)
         .inputFluids("gtceu:lubricant 100")

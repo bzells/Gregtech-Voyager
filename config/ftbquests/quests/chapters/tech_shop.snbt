@@ -57,14 +57,14 @@
 			}]
 			tasks: [
 				{
-					count: 4L
+					count: 16L
 					id: "01D10F39FFD65E09"
-					item: { Count: 8, id: "kubejs:lv_tech_coin" }
+					item: "kubejs:lv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1200L
+					elapsedTime: 3600L
 					gameTime: "system"
 					id: "66B73E79984EE104"
 					type: "questsadditions:time"
@@ -89,13 +89,13 @@
 			}]
 			tasks: [
 				{
-					count: 4L
+					count: 32L
 					id: "6FC94F692627641E"
-					item: { Count: 8, id: "kubejs:lv_tech_coin" }
+					item: "kubejs:lv_tech_coin"
 					type: "item"
 				}
 				{
-					elapsedTime: 1200L
+					elapsedTime: 3600L
 					gameTime: "system"
 					id: "3E3207BE68B847A3"
 					type: "questsadditions:time"
@@ -153,14 +153,14 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 24L
 					id: "6ABF8D4754933EE1"
-					item: { Count: 4, id: "kubejs:mv_tech_coin" }
+					item: "kubejs:mv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1200L
+					elapsedTime: 3600L
 					id: "633A6B43983787C6"
 					type: "questsadditions:time"
 				}
@@ -180,14 +180,14 @@
 			}]
 			tasks: [
 				{
-					count: 4L
+					count: 8L
 					id: "5EE61F02D7EF877E"
-					item: { Count: 4, id: "kubejs:mv_tech_coin" }
+					item: "kubejs:mv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1200L
+					elapsedTime: 3600L
 					id: "30A53AA8258153E3"
 					type: "questsadditions:time"
 				}
@@ -207,14 +207,14 @@
 			}]
 			tasks: [
 				{
-					count: 4L
+					count: 8L
 					id: "4157A85023407AF1"
-					item: { Count: 4, id: "kubejs:mv_tech_coin" }
+					item: "kubejs:mv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1200L
+					elapsedTime: 3600L
 					id: "3B319E53A9361CED"
 					type: "questsadditions:time"
 				}
@@ -251,34 +251,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["290EB65235B42D56"]
-			icon: "gtceu:lv_conveyor_module"
-			id: "5BF44E0EC0FC56F9"
-			rewards: [{
-				count: 2
-				id: "59DD5BB7926A4360"
-				item: "gtceu:lv_conveyor_module"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 8L
-					id: "7F71F2AE8EE37D90"
-					item: { Count: 8, id: "kubejs:lv_tech_coin" }
-					type: "item"
-				}
-				{
-					disable_toast: true
-					elapsedTime: 1200L
-					id: "709D39F4A277AC38"
-					type: "questsadditions:time"
-				}
-			]
-			title: "LV Conveyor Module"
-			x: 5.5d
-			y: -3.0d
-		}
-		{
 			icon: "gtceu:glass_lens"
 			id: "4FC9D6366B7FA127"
 			rewards: [{
@@ -305,13 +277,12 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["23A24371FCAC67AE"]
-			icon: "gtceu:mv_conveyor_module"
+			icon: "gtceu:lv_conveyor_module"
 			id: "23F499484A79A4B5"
 			rewards: [{
 				count: 2
 				id: "1654E35BA14656D3"
-				item: "gtceu:mv_conveyor_module"
+				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
 			tasks: [
@@ -328,7 +299,7 @@
 					type: "questsadditions:time"
 				}
 			]
-			title: "MV Conveyor Module"
+			title: "LV Conveyor Module"
 			x: 4.5d
 			y: -1.0d
 		}
@@ -343,14 +314,14 @@
 			}]
 			tasks: [
 				{
-					count: 32L
+					count: 48L
 					id: "768A121CAA417D53"
-					item: { Count: 32, id: "kubejs:mv_tech_coin" }
+					item: "kubejs:mv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 1800L
+					elapsedTime: 3600L
 					id: "584F994D6A51E0AE"
 					type: "questsadditions:time"
 				}
@@ -382,7 +353,7 @@
 				}
 			]
 			title: "LV Battery"
-			x: 6.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -450,14 +421,14 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 24L
 					id: "7041B1F7133953DF"
-					item: { Count: 8, id: "kubejs:lv_tech_coin" }
+					item: "kubejs:lv_tech_coin"
 					type: "item"
 				}
 				{
 					disable_toast: true
-					elapsedTime: 600L
+					elapsedTime: 2400L
 					id: "53F18930A6F345FB"
 					type: "questsadditions:time"
 				}
