@@ -942,6 +942,14 @@
         "isSelected": true
       },
       {
+        "path": "config\\ftbquests\\quests\\reward_tables\\hv6.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\hv7.snbt",
+        "isSelected": true
+      },
+      {
         "path": "config\\ftbquests\\quests\\reward_tables\\lv5.snbt",
         "isSelected": true
       },
@@ -2098,6 +2106,10 @@
         "isSelected": true
       },
       {
+        "path": "config\\oculus.properties",
+        "isSelected": true
+      },
+      {
         "path": "config\\paraglider-common.toml",
         "isSelected": true
       },
@@ -2326,6 +2338,18 @@
         "isSelected": false
       },
       {
+        "path": "crash-reports\\crash-2026-04-10_23.29.08-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-04-11_02.28.29-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-04-11_03.08.57-client.txt",
+        "isSelected": false
+      },
+      {
         "path": "datapacks",
         "isSelected": true
       },
@@ -2379,6 +2403,14 @@
       },
       {
         "path": "ESM",
+        "isSelected": false
+      },
+      {
+        "path": "ESM\\GT setups",
+        "isSelected": false
+      },
+      {
+        "path": "ESM\\GT setups\\anchors.dat",
         "isSelected": false
       },
       {
@@ -2479,6 +2511,18 @@
       },
       {
         "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991",
+        "isSelected": false
+      },
+      {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\GT_setups_e177c80b-f8fc-4f02-b22a-deba4b09a215",
+        "isSelected": false
+      },
+      {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\GT_setups_e177c80b-f8fc-4f02-b22a-deba4b09a215\\gtceu",
+        "isSelected": false
+      },
+      {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\GT_setups_e177c80b-f8fc-4f02-b22a-deba4b09a215\\gtceu\\fluids.nbt",
         "isSelected": false
       },
       {
@@ -2662,6 +2706,42 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\industrialforegoing",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\base",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\base\\top.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\crop_recolector_back.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\crop_recolector_side.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\plant_sower_side.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\industrialforegoing\\textures\\block\\plant_sower_top.png",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs",
         "isSelected": true
       },
@@ -2750,6 +2830,18 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\overlay\\oven",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\overlay\\oven\\overlay_front.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\overlay\\oven\\overlay_front_active.png",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\block\\overlay\\helper_hatch.png",
         "isSelected": true
       },
@@ -2775,10 +2867,14 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\helpers\\grandma_helper.png",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\helpers\\hv_technician_helper.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helpers\\lcptr_helper.png",
         "isSelected": true
       },
       {
@@ -2815,7 +2911,27 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\bag_template.png",
-        "isSelected": false
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\baking_chocolate.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\baking_flour.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\butter.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\cacao_powder.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\cookie_dough.png",
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\ev_helper_computation_array.png",
@@ -2843,11 +2959,15 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\grandmas_baking_sheet.png",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\grandmas_cookies.png",
-        "isSelected": false
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\heart_of_gold.png",
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\hv_helper_computation_array.png",
@@ -2863,7 +2983,7 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\hv_technician_helper.png",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\hv_tech_coin.png",
@@ -2871,6 +2991,10 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\hv_universal_circuit.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\hv_universal_circuit.png.mcmeta",
         "isSelected": true
       },
       {
@@ -2910,6 +3034,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\lv_helper_computation_array.png.mcmeta",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\lv_loot_bag.png",
         "isSelected": true
       },
@@ -2923,6 +3051,10 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\lv_universal_circuit.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\lv_universal_circuit.png.mcmeta",
         "isSelected": true
       },
       {
@@ -2943,7 +3075,7 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\mv_ebf_helper.png",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\mv_helper_computation_array.png",
@@ -2966,11 +3098,27 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\mv_universal_circuit.png.mcmeta",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\mv_universal_coin.png",
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\roasted_cacao_beans.png",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\rocket_hull_plate.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\stone_bag.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\stone_bag_1.png",
         "isSelected": true
       },
       {
@@ -3035,7 +3183,7 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\voucher_template.png",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\zpm_helper_computation_array.png",
@@ -3094,6 +3242,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\data\\kubejs\\loot_tables\\stone_bag.json",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\data\\kubejs\\loot_tables\\ulv_loot_bag.json",
         "isSelected": true
       },
@@ -3130,6 +3282,14 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\server_scripts\\processing_lines",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\server_scripts\\processing_lines\\grandmascookies.js",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\server_scripts\\recipes",
         "isSelected": true
       },
@@ -3151,11 +3311,11 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\ae2",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\ae2\\remove.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\ars",
@@ -3179,15 +3339,15 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\industrialforegoing",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\industrialforegoing\\addons.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\industrialforegoing\\machines.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\occultism",
@@ -3199,19 +3359,19 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\tinkers",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\tinkers\\materials.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\tinkers\\smeltery.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\tinkers\\tables.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\ad_astra.js",
@@ -3219,15 +3379,15 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\backpacks.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\functionalstorage.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\misc.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gregify\\toms.js",
@@ -3355,7 +3515,7 @@
       },
       {
         "path": "kubejs\\startup_scripts\\registry\\multiblocks.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\startup_scripts\\worldgen",
@@ -3371,7 +3531,7 @@
       },
       {
         "path": "kubejs\\startup_scripts\\info.js",
-        "isSelected": false
+        "isSelected": true
       },
       {
         "path": "kubejs\\README.txt",
@@ -4094,6 +4254,146 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5A-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5A-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5A-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5B-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5B-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5B-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5B-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5C-0EA68.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5D-0EA68.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA57.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA58.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA59.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5A.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5B.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5C.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5D.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5E.zip",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA5F.zip",
         "isSelected": false
       },
@@ -4111,6 +4411,54 @@
       },
       {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5E-0EA68.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA57.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA58.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA59.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA5A.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA5B.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA5C.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA5D.zip",
         "isSelected": false
       },
       {
@@ -4138,6 +4486,38 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA5F-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA57.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA58.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA5C.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA5D.zip",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA5E.zip",
         "isSelected": false
       },
@@ -4155,6 +4535,122 @@
       },
       {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA60-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA5D.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA5E.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA61-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA66.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA62-0EA67.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA63-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA63-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA63-0EA64.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA63-0EA65.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_overworld\\0EA63-0EA66.zip",
         "isSelected": false
       },
       {
@@ -4206,6 +4702,14 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5B-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5B-0EA62.zip",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5C-0EA61.zip",
         "isSelected": false
       },
@@ -4235,6 +4739,30 @@
       },
       {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5E-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5F-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5F-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5F-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA60-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA60-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA60-0EA63.zip",
         "isSelected": false
       },
       {
@@ -4646,6 +5174,50 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\0EA5F-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\0EA5F-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\0EA60-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\0EA60-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\dimension.regions",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\minecraft_overworld\\waypoints.json",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\biome_map.txt",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\block_map.txt",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\f67e5149-19b5-47d5-bb23-43a365fa5e31\\dimensions.txt",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\client-config.snbt",
         "isSelected": false
       },
@@ -4983,6 +5555,78 @@
       },
       {
         "path": "logs\\2026-04-09-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-09-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-10-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-10-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-10-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-10-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-11-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-11-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-11-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-11-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-11-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-12-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-13-1.log.gz",
         "isSelected": false
       },
       {
@@ -5630,6 +6274,10 @@
         "isSelected": true
       },
       {
+        "path": "mods\\oculus-mc1.20.1-1.8.0.jar",
+        "isSelected": true
+      },
+      {
         "path": "mods\\Paraglider-forge-20.1.3.jar",
         "isSelected": true
       },
@@ -5847,6 +6495,1190 @@
       },
       {
         "path": "saves",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\advancements",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\advancements\\2119c4f3-0682-4a8b-9265-397015857991.json",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\adastra_planet_data.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\buildinggadgets2.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\citadel_world_data.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\Difficulty.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\disk_manager.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\evilcraft_GlobalCounterData.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\evilcraft_WorldSharedTanks.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\forestry_poboxes.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\gtceu_capes.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\gtceu_item_pipe_net.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\gtceu_world_id.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\gtcue_energy_net.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\gtcue_fluid_pipe_net.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\modonomicon_book_states.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\random_sequences.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\simplebackups.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\data\\TitaniumReward.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\datapacks",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM-1",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM-1\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM-1\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM-1\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM-1\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1\\data\\mfix_strongholds.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\DIM1\\data\\raids_end.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\adrastea_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\amalthea_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\deimos_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\jupiter_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\metis_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\neptune_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\phobos_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\saturn_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\thebe_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\adastraextra\\uranus_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\earth_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\earth_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\earth_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\earth_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\earth_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\glacio_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mars_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\mercury_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\moon_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus_orbit",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus_orbit\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus_orbit\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus_orbit\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ad_astra\\venus_orbit\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2\\spatial_storage",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2\\spatial_storage\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2\\spatial_storage\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2\\spatial_storage\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\ae2\\spatial_storage\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic\\dungeon",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic\\dungeon\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic\\dungeon\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic\\dungeon\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\bloodmagic\\dungeon\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd\\void",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd\\void\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd\\void\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd\\void\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\javd\\void\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest\\twilight_forest",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest\\twilight_forest\\data",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest\\twilight_forest\\data\\an_redstone_signals.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest\\twilight_forest\\data\\capabilities.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\dimensions\\twilightforest\\twilight_forest\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\EnderStorage",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\entities",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\entities\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\entities\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\entities\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\entities\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbchunks",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbchunks\\2119c4f3-0682-4a8b-9265-397015857991.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbquests",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbquests\\2119c4f3-0682-4a8b-9265-397015857991.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams\\party",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams\\player",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams\\player\\2119c4f3-0682-4a8b-9265-397015857991.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams\\server",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\ftbteams\\ftbteams.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\playerdata",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\playerdata\\2119c4f3-0682-4a8b-9265-397015857991.cosarmor",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\playerdata\\2119c4f3-0682-4a8b-9265-397015857991.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\playerdata\\2119c4f3-0682-4a8b-9265-397015857991.dat_old",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-1.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-2.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\poi\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-1.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-2.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.-2.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.0.-2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\region\\r.0.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\bhc-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\computercraft-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\corpse-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\curios-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\fastleafdecay-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\forestry-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\forge-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\framedblocks-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\ftbchunks-world.snbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\inventorysorter-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\jei-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\mantle-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\moredragoneggs-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\occultism-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\paraglider-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\productivetrees-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\simplebackups-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\solcarrot-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\sophisticatedbackpacks-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\theurgy-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\tinkerslevellingaddon-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\toms_storage-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\travelertoolbelt-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\serverconfig\\xptome-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\stats",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\stats\\2119c4f3-0682-4a8b-9265-397015857991.json",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\storage",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\storage\\ExtraQuests",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\storage\\ExtraQuests\\quest_timers.json",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\icon.png",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\kubejs_persistent_data.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\level.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\level.dat_old",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\session.lock",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\GT setups\\xaeromap.txt",
         "isSelected": false
       },
       {
@@ -13950,6 +15782,10 @@
         "isSelected": false
       },
       {
+        "path": "screenshots\\2026-04-12_18.42.58.png",
+        "isSelected": false
+      },
+      {
         "path": "shaderpacks",
         "isSelected": true
       },
@@ -13958,15 +15794,43 @@
         "isSelected": false
       },
       {
-        "path": "simplebackups\\New World11111111111_2026-04-08_16-00-45.zip",
+        "path": "simplebackups\\GT setups_2026-04-11_03-10-37.zip",
         "isSelected": false
       },
       {
-        "path": "simplebackups\\New World11111111111_2026-04-09_15-24-02.zip",
+        "path": "simplebackups\\GT setups_2026-04-11_15-48-19.zip",
         "isSelected": false
       },
       {
-        "path": "simplebackups\\New World11111111111_2026-04-09_21-52-56.zip",
+        "path": "simplebackups\\GT setups_2026-04-11_17-48-19.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-11_19-48-19.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-11_21-48-20.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-11_23-48-21.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-12_01-48-22.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-12_18-22-55.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-12_20-22-55.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\GT setups_2026-04-12_22-22-55.zip",
         "isSelected": false
       },
       {
@@ -13982,7 +15846,23 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\minimap\\GT setups",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\minimap\\GT setups\\config.txt",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\minimap\\Multiplayer_192.168.1.19",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\minimap\\Multiplayer_192.168.1.19\\dim%-1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\minimap\\Multiplayer_192.168.1.19\\dim%-1\\mw$-168370595_1.txt",
         "isSelected": false
       },
       {
@@ -14150,6 +16030,10 @@
         "isSelected": false
       },
       {
+        "path": "kubejs.zip",
+        "isSelected": false
+      },
+      {
         "path": "LICENSE",
         "isSelected": false
       },
@@ -14194,7 +16078,7 @@
         "isSelected": false
       }
     ],
-    "recommendedRam": 16512,
+    "recommendedRam": 8192,
     "enableRecommendedRam": true
   }
 }

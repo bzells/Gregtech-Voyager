@@ -59,9 +59,17 @@ ServerEvents.recipes(event => {
         
     event.recipes.gtceu
         .helper_assembler('kubejs:hv_technician_helper')   
-        .itemInputs('1x kubejs:hv_helper_computation_array', 'gtceu:stainless_steel_frame', '8x gtceu:blue_steel_plate', '2x gtceu:hv_robot_arm', '2x gtceu:hv_electric_motor', '2x gtceu:blue_steel_rod', '#gtceu:circuits/ev')
+        .itemInputs('1x kubejs:hv_helper_computation_array', 'gtceu:stainless_steel_frame', '8x gtceu:blue_steel_plate', '2x gtceu:hv_robot_arm', '2x gtceu:hv_electric_motor', '2x gtceu:stainless_steel_rod', '#gtceu:circuits/ev')
         .inputFluids("gtceu:soldering_alloy 1000")
         .itemOutputs('kubejs:hv_technician_helper')
+        .duration(2400)                               
+        .EUt(480)  
+
+    event.recipes.gtceu
+        .helper_assembler('kubejs:lcptr_helper')   
+        .itemInputs('1x kubejs:hv_helper_computation_array', 'gtceu:blue_steel_frame', '8x gtceu:blue_steel_plate', '2x gtceu:hv_robot_arm', '2x gtceu:hv_electric_motor', '2x gtceu:blue_steel_rod', 'kubejs:heart_of_gold')
+        .inputFluids("gtceu:soldering_alloy 1000")
+        .itemOutputs('kubejs:lcptr_helper')
         .duration(2400)                               
         .EUt(480)  
 
@@ -93,6 +101,21 @@ ServerEvents.recipes(event => {
             A: 'gtceu:mv_machine_hull',
             B: 'gtceu:mv_robot_arm',  //arg 3: the mapping object
             C: '#gtceu:circuits/mv',
+            D: 'gtceu:tempered_glass'
+        }
+    )
+
+    event.shaped(
+        Item.of('gtceu:hv_helper_assembler', 1), // arg 1: output
+        [
+            'DCD',
+            'BAB', // arg 2: the shape (array of strings)
+            'DCD'
+        ],
+        {
+            A: 'gtceu:hv_machine_hull',
+            B: 'gtceu:hv_robot_arm',  //arg 3: the mapping object
+            C: '#gtceu:circuits/hv',
             D: 'gtceu:tempered_glass'
         }
     )

@@ -2,11 +2,11 @@ ServerEvents.recipes(event => {
 
 
 event.remove({ output: 'gtceu:diode' })
-event.remove({output: 'gtceu:lv_energy_input_hatch'})
-event.remove({output: 'gtceu:mv_energy_input_hatch'})
-event.remove({output: 'gtceu:mv_energy_output_hatch'})
-event.remove({output: 'gtceu:hv_energy_input_hatch'})
-event.remove({output: 'gtceu:hv_energy_output_hatch'})
+event.remove({type: 'minecraft:crafting_shaped',output: 'gtceu:lv_energy_input_hatch'})
+event.remove({type: 'minecraft:crafting_shaped',output: 'gtceu:mv_energy_input_hatch'})
+event.remove({type: 'minecraft:crafting_shaped',output: 'gtceu:mv_energy_output_hatch'})
+event.remove({type: 'minecraft:crafting_shaped',output: 'gtceu:hv_energy_input_hatch'})
+event.remove({type: 'minecraft:crafting_shaped',output: 'gtceu:hv_energy_output_hatch'})
 event.remove({output: 'gtceu:phenolic_circuit_board'})
 event.remove({output: 'gtceu:cupronickel_coil_block'})
 event.remove({output: 'gtceu:kanthal_coil_block'})

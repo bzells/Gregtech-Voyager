@@ -651,6 +651,7 @@
 			dependencies: ["71B21735D9A0C40B"]
 			dependency_requirement: "one_completed"
 			id: "38AD298A86D5A6A3"
+			min_required_tasks: 2
 			rewards: [{
 				count: 16
 				id: "7EE1C2455F711A1D"
@@ -2150,6 +2151,7 @@
 				"3E918E6AA934C32A"
 			]
 			id: "367202509EC4C7C0"
+			subtitle: "cobble -> gravel -> sand -> glass"
 			tasks: [{
 				id: "07D1792841E7158B"
 				item: "minecraft:glass"

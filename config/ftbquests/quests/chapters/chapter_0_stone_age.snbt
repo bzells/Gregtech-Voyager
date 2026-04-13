@@ -10,6 +10,11 @@
 	quests: [
 		{
 			id: "7C46710EF18B9648"
+			rewards: [{
+				id: "2522C89859A8398B"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "0ED1C97CCBF691CA"
@@ -45,6 +50,11 @@
 		{
 			dependencies: ["7F23975179B70629"]
 			id: "32BCB293CF73DF87"
+			rewards: [{
+				id: "481EB568E4B0250B"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			size: 0.75d
 			tasks: [{
 				id: "17867AFFB7FB6B5B"
@@ -122,17 +132,24 @@
 				"1A9147331B7CC694"
 			]
 			id: "0A7847B88DC2A1C6"
-			rewards: [{
-				id: "7790E811D2783DC5"
-				item: {
-					Count: 1
-					id: "tconstruct:tool_handle"
-					tag: {
-						Material: "tconstruct:necrotic_bone"
+			rewards: [
+				{
+					id: "7790E811D2783DC5"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:necrotic_bone"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7009E449A840D91B"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6C178E6A69816CBF"
@@ -218,6 +235,11 @@
 				"6308FC66E5634361"
 			]
 			id: "3A557C43CE0F534F"
+			rewards: [{
+				id: "00831A7E71B386AA"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0AD173CC7659443C"
 				item: "gtceu:bronze_ingot"
@@ -229,6 +251,11 @@
 		{
 			dependencies: ["437D1FF759A7E40C"]
 			id: "3AD0418241AEA8AA"
+			rewards: [{
+				id: "227F49BAF65F6BC0"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C96C9C00F65B5F7"
 				item: "tconstruct:seared_bricks"
@@ -296,6 +323,11 @@
 		{
 			dependencies: ["26A6C0E4B38F51B3"]
 			id: "22A38B844EA1BE5B"
+			rewards: [{
+				id: "3C9A6150631FA25E"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3AD6C645AB9D85B0"
@@ -315,6 +347,12 @@
 		{
 			dependencies: ["3ABEDA348136284C"]
 			id: "21517C495219BC6F"
+			rewards: [{
+				count: 3
+				id: "4A3BE2BDF3839DE5"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "27D9CF45EBFD1D9E"
@@ -327,6 +365,11 @@
 		{
 			dependencies: ["22A38B844EA1BE5B"]
 			id: "51EBA3EE740C75FB"
+			rewards: [{
+				id: "48B428DFC7BBA973"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4C07BA626F713A93"
 				item: "gtceu:creosote_bucket"
@@ -373,6 +416,11 @@
 			icon: "tconstruct:tinkers_anvil"
 			id: "559EBC87398D8C8D"
 			min_required_tasks: 1
+			rewards: [{
+				id: "3B2242CDE56C2113"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 3L

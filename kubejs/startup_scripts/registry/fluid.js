@@ -29,6 +29,11 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0x75281a)
     .displayName('Molten Fireclay')
     .noBlock() 
+
+  event.create('melted_butter')
+    .thickTexture(0xffec60)
+    .bucketColor(0xffec60)
+    .displayName('Melted Butter')
     
 //   // Fluid with custom textures
 //   event.create('strawberry_cream')

@@ -228,12 +228,19 @@
 		{
 			dependencies: ["690273CD13294064"]
 			id: "48C0F2B5DB6E97D2"
-			rewards: [{
-				count: 8
-				id: "1269516470566CE1"
-				item: "kubejs:mv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "1269516470566CE1"
+					item: "kubejs:mv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "76A769465F17F286"
+					item: "kubejs:mv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "61C968B49F2F1EEB"
 				item: "gtceu:silicon_boule"
@@ -263,6 +270,7 @@
 			dependencies: [
 				"583BA3292A2FA4F5"
 				"23A24371FCAC67AE"
+				"6C2E3E62EA0D4713"
 			]
 			id: "0D1153B4D44B8F8D"
 			rewards: [{
@@ -575,12 +583,19 @@
 				"0D44846DABCDC859"
 			]
 			id: "232AD76F7F57C394"
-			rewards: [{
-				count: 8
-				id: "6D261447B144E363"
-				item: "kubejs:mv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "6D261447B144E363"
+					item: "kubejs:mv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "1DCC7924AEEF5F98"
+					item: "kubejs:mv_loot_bag"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "7A128243D9D516EA"
@@ -836,37 +851,6 @@
 			y: 17.0d
 		}
 		{
-			dependencies: [
-				"5CC5ADCAD31EA149"
-				"1D82153A32B07B53"
-				"661BEFA48E8C17D8"
-			]
-			id: "129D9924C2493480"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "53A5AA3DC6D49A78"
-					table_id: 809810472448117040L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "17D08EFFCCA4BD99"
-					item: "kubejs:mv_tech_coin"
-					type: "item"
-				}
-			]
-			subtitle: "You're paying them... right?"
-			tasks: [{
-				id: "2F22E4992EBCB63D"
-				item: "gtceu:large_helper_wheel"
-				type: "item"
-			}]
-			title: "Large Helper Wheel"
-			x: -4.5d
-			y: 20.5d
-		}
-		{
 			dependencies: ["162ADBB59373CE46"]
 			id: "2BD6409F69F9C1D7"
 			rewards: [
@@ -966,8 +950,8 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 18.0d
+			x: -2.25d
+			y: 19.5d
 		}
 		{
 			dependencies: ["583BA3292A2FA4F5"]
@@ -1168,7 +1152,7 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 18.5d
 		}
 		{
@@ -1186,8 +1170,8 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 19.5d
+			x: -6.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["245AD5E4251E8B62"]
@@ -1578,8 +1562,8 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 20.5d
+			x: -5.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["583BA3292A2FA4F5"]
@@ -1744,6 +1728,12 @@
 				"0D1153B4D44B8F8D"
 			]
 			id: "0D44846DABCDC859"
+			rewards: [{
+				count: 4
+				id: "5F30D38FA6956264"
+				item: "kubejs:mv_tech_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B27FC21E2E15CBA"
 				item: "gtceu:ulpic_chip"
@@ -1821,6 +1811,48 @@
 			}]
 			x: 8.5d
 			y: 18.0d
+		}
+		{
+			dependencies: [
+				"672BD4D74611D496"
+				"583BA3292A2FA4F5"
+			]
+			hide_dependency_lines: true
+			id: "46FBB9CD0D83DD13"
+			rewards: [{
+				count: 4
+				id: "2BE939CD70D89B8D"
+				item: "kubejs:mv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56797A4B054D1308"
+				item: "gtceu:mv_helper_wheel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"2A2117C45131B7EC"
+				"09D5898F5C216853"
+			]
+			hide_dependency_lines: true
+			id: "6C2E3E62EA0D4713"
+			rewards: [{
+				id: "56ED0800551AA131"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2DAF53F9C1714DFF"
+				item: { Count: 4, id: "gtceu:vanadium_steel_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
 		}
 	]
 	title: "Chapter 2 (MV)"

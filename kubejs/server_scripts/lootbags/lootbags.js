@@ -33,6 +33,45 @@ LootJS.modifiers(event => {
         ]);
 
     event
+        .addLootTableModifier("kubejs:stone_bag")
+        .addWeightedLoot([
+            Item.of("minecraft:cauldron").withChance(3/100*100),
+            Item.of("minecraft:piston").withChance(1/100*100),
+            Item.of("gtceu:iron_gear").withChance(3/100*100),
+            Item.of("gtceu:glass_tube").withChance(8/100*100),
+            Item.of("gtceu:wooden_tank_valve").withChance(1/100*100),
+            Item.of("gtceu:industrial_tnt").withChance(1/100*100),
+            Item.of("gtceu:rubber_sapling").withChance(5/100*100),
+            Item.of("gtceu:pump_deck").withChance(2),
+            Item.of("farmersdelight:rice_panicle").withChance(3),
+            Item.of("farmersdelight:steak_and_potatoes").withChance(2),
+            Item.of("farmersdelight:chicken_soup").withChance(1),
+            Item.of("minecraft:mangrove_propagule").withChance(2),
+            Item.of("minecraft:pointed_dripstone").withChance(4),
+            Item.of("minecraft:campfire").withChance(1),
+            Item.of("minecraft:cake").withChance(1),
+            Item.of("minecraft:slime_ball").withChance(8),
+            Item.of("minecraft:book").withChance(12),
+            Item.of("farmersdelight:canvas").withChance(4),
+            Item.of("farmersdelight:netherite_knife").withChance(1),
+            Item.of("farmersdelight:basket").withChance(2),
+            Item.of("farmersdelight:cutting_board").withChance(2),
+            Item.of("farmersdelight:skillet").withChance(2),
+            Item.of("farmersdelight:stove").withChance(2),
+            Item.of("farmersdelight:cooking_pot").withChance(2),
+            Item.of("farmersdelight:fried_egg").withChance(1),
+            Item.of("farmersdelight:shepherds_pie").withChance(1),
+            Item.of("farmersdelight:ratatouille").withChance(1),
+            Item.of("naturescompass:naturescompass").withChance(.15),
+            Item.of("functionalstorage:oak_1").withChance(2),
+            Item.of("functionalstorage:oak_2").withChance(2),
+            Item.of("functionalstorage:oak_4").withChance(2),
+            Item.of("minecraft:bricks").withChance(4),
+            Item.of("2x tconstruct:seared_bricks").withChance(4),
+            Item.of("8x gtceu:bronze_ingot").withChance(8),
+        ]);
+
+    event
         .addLootTableModifier("kubejs:ulv_loot_bag")
         .addWeightedLoot([
             Item.of("minecraft:cauldron").withChance(3/100*100),
@@ -185,6 +224,7 @@ LootJS.modifiers(event => {
             Item.of("bhc:red_heart").withChance(1),
             Item.of("2x toms_storage:ts.inventory_connector").withChance(1),
             Item.of("2x minecraft:ender_pearl").withChance(8),
+            Item.of("1x kubejs:track_runner_helper").withChance(2),
         ]);
 
         event
@@ -194,10 +234,10 @@ LootJS.modifiers(event => {
             Item.of("2x gtceu:hv_conveyor_module").withChance(12/100*100),
             Item.of("2x gtceu:hv_electric_pump").withChance(8/100*100),
             Item.of("3x gtceu:hv_electric_motor").withChance(12/100*100),
-            Item.of("1x gtceu:hv_fluid_regulator").withChance(6/100*100),
+            Item.of("1x gtceu:hv_fluid_regulator").withChance(8/100*100),
             Item.of("3x gtceu:hv_electric_piston").withChance(12/100*100),
-            Item.of("2x gtceu:hv_robot_arm").withChance(6/100*100),
-            Item.of("1x gtceu:hv_emitter").withChance(4/100*100),
+            Item.of("2x gtceu:hv_robot_arm").withChance(8/100*100),
+            Item.of("1x gtceu:hv_emitter").withChance(6/100*100),
             Item.of("1x gtceu:hv_field_generator").withChance(.25/100*100),
             Item.of("1x gtceu:hv_sensor").withChance(4/100*100),
             Item.of("2x gtceu:hv_output_hatch").withChance(3/100*100),
@@ -220,7 +260,7 @@ LootJS.modifiers(event => {
             Item.of("gtceu:hv_super_chest").withChance(.5),
             Item.of("gtceu:hv_super_tank").withChance(.5),
             Item.of("kubejs:hv_loot_bag").withChance(2),
-            Item.of("gtceu:hv_energy_input_hatch").withChance(.5),
+            Item.of("gtceu:hv_energy_input_hatch").withChance(.25),
             Item.of("gtceu:hv_energy_output_hatch").withChance(.5),
             Item.of("gtceu:hv_miner").withChance(.25),
             Item.of("gtceu:hv_pump").withChance(.25),
@@ -236,9 +276,27 @@ LootJS.modifiers(event => {
             Item.of("bhc:red_heart").withChance(1),
             Item.of("2x toms_storage:ts.inventory_connector").withChance(1),
             Item.of("2x minecraft:ender_eye").withChance(.5),
+            Item.of("1x kubejs:heart_of_gold").withChance(.5),
         ]);
 
 });
+
+ItemEvents.rightClicked('kubejs:stone_bag', event => {
+    const player = event.player;
+
+    for (let i = 0; i < rollDropTimes(); i++) {
+        event.server.runCommandSilent(
+            `/loot give ${player.username} loot kubejs:stone_bag` //LOL!!!
+        );
+
+    }
+        event.server.runCommandSilent(
+            `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
+        );
+    event.item.shrink(1);
+
+});
+
 ItemEvents.rightClicked('kubejs:ulv_loot_bag', event => {
     const player = event.player;
 

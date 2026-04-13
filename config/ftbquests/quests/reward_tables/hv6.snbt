@@ -1,0 +1,11 @@
+{
+	id: "59B5391F526268E4"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ count: 3, item: "kubejs:hv_loot_bag" }
+		{ count: 10, item: "kubejs:hv_universal_circuit" }
+		{ item: "kubejs:mv_ebf_helper" }
+	]
+	title: "hv6"
+}

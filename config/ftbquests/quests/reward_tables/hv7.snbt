@@ -1,0 +1,11 @@
+{
+	id: "17D86029E39A650F"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ item: "kubejs:lcptr_helper" }
+		{ count: 2, item: "kubejs:hv_loot_bag" }
+		{ count: 2, item: "kubejs:heart_of_gold" }
+	]
+	title: "hv7"
+}

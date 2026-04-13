@@ -35,7 +35,15 @@
   "item.gtceu.metallic_mica_gear": "Metallic Mica Gear",
   "item.gtceu.small_metallic_mica_gear": "Small Metallic Mica Gear",
 
-  "item.gtceu.metallic_mica_frame": "Metallic Mica Frame"
+  "item.gtceu.metallic_mica_frame": "Metallic Mica Frame",
+  "block.gtceu.large_helper_wheel": "Large Helper Wheel",
+  "block.gtceu.micro_farm": "Micro Farm",
+
+  "gtceu.large_helper_wheel": "Large Helper Wheel",
+  "gtceu.micro_farm": "Micro Farm",
+  "gtceu.helper_assembler": "Helper Assembler",
+  "gtceu.oven": "Oven"
+
 
 
 }

@@ -1,16 +1,16 @@
 
 
 ServerEvents.recipes(event => {
+
+
+    
     event.recipes.gtceu
         .large_helper_wheel('kubejs:large_helper_wheel')   // recipe ID
-        .itemInputs([{item: 'minecraft:cookie'}])
-        .inputFluids("minecraft:water 1000")
-        .notConsumable('kubejs:track_runner_helper')
-        .notConsumable('kubejs:track_runner_helper')
-        .notConsumable('kubejs:track_runner_helper')
-        .notConsumable('kubejs:track_runner_helper')
-        .duration(200)                                 // in ticks
-        .EUt(-128 * 4)                                // EU produced total]
+        .itemInputs([{item: 'kubejs:grandmas_cookie'}])
+        .inputFluids("kubejs:melted_butter 100")
+        .notConsumable('kubejs:lcptr_helper')
+        .duration(500)                                 // in ticks
+        .EUt(-128 * 6)     
 
 
     event.shaped(
@@ -21,10 +21,10 @@ ServerEvents.recipes(event => {
             'CBC'
         ],
         {
-            A: 'gtceu:mv_machine_hull',
-            B: 'gtceu:fluxed_electrum_rotor',  //arg 3: the mapping object
+            A: 'gtceu:hv_machine_hull',
+            B: 'gtceu:fluxed_cobalt_electrum_rotor',  //arg 3: the mapping object
             C: 'gtceu:stainless_steel_plate',
-            D: '#gtceu:circuits/hv'
+            D: '#gtceu:circuits/ev'
         }
     )
 

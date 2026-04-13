@@ -379,80 +379,80 @@ event.recipes.gtceu.assembler('kubejs:smd_inductor_helper')
 
 // energy hatches
 
-event.recipes.gtceu.assembler('kubejs:lv_energy_hatch')
-    .itemInputs(
-        '1x gtceu:lv_machine_hull',
-        '1x gtceu:lv_voltage_coil',
-        '32x gtceu:metallic_mica_foil',
-        '2x gtceu:tin_silver_alloy_single_wire'
-    )
-    .itemOutputs('1x gtceu:lv_energy_input_hatch')
-    .duration(200)
-    .EUt(30);
+// event.recipes.gtceu.assembler('kubejs:lv_energy_hatch')
+//     .itemInputs(
+//         '1x gtceu:lv_machine_hull',
+//         '1x gtceu:lv_voltage_coil',
+//         '32x gtceu:metallic_mica_foil',
+//         '2x gtceu:tin_silver_alloy_single_wire'
+//     )
+//     .itemOutputs('1x gtceu:lv_energy_input_hatch')
+//     .duration(200)
+//     .EUt(30);
 
-event.recipes.gtceu.assembler('kubejs:mv_energy_hatch')
-    .itemInputs(
-        '1x gtceu:mv_machine_hull',
-        '1x gtceu:mv_voltage_coil',
-        '32x gtceu:metallic_mica_foil',
-        '2x gtceu:fluxed_electrum_single_wire',
-        '2x gtceu:ulpic_chip',
-    )
-    .itemOutputs('1x gtceu:mv_energy_input_hatch')
-    .duration(200)
-    .EUt(120);
+// event.recipes.gtceu.assembler('kubejs:mv_energy_hatch')
+//     .itemInputs(
+//         '1x gtceu:mv_machine_hull',
+//         '1x gtceu:mv_voltage_coil',
+//         '32x gtceu:metallic_mica_foil',
+//         '2x gtceu:fluxed_electrum_single_wire',
+//         '2x gtceu:ulpic_chip',
+//     )
+//     .itemOutputs('1x gtceu:mv_energy_input_hatch')
+//     .duration(200)
+//     .EUt(120);
 
-event.recipes.gtceu.assembler('kubejs:mv_dynamo_hatch')
-    .itemInputs(
-        '1x gtceu:mv_machine_hull',
-        '1x gtceu:mv_voltage_coil',
-        '32x gtceu:metallic_mica_foil',
-        '2x gtceu:fluxed_electrum_single_wire',
-        '2x gtceu:ulpic_chip',
-        '2x gtceu:copper_spring'
-    )
-    .itemOutputs('1x gtceu:mv_energy_output_hatch')
-    .duration(200)
-    .EUt(120);
+// event.recipes.gtceu.assembler('kubejs:mv_dynamo_hatch')
+//     .itemInputs(
+//         '1x gtceu:mv_machine_hull',
+//         '1x gtceu:mv_voltage_coil',
+//         '32x gtceu:metallic_mica_foil',
+//         '2x gtceu:fluxed_electrum_single_wire',
+//         '2x gtceu:ulpic_chip',
+//         '2x gtceu:copper_spring'
+//     )
+//     .itemOutputs('1x gtceu:mv_energy_output_hatch')
+//     .duration(200)
+//     .EUt(120);
 
-event.recipes.gtceu.assembler('kubejs:hv_energy_hatch')
-    .itemInputs(
-        '1x gtceu:hv_machine_hull',
-        '1x gtceu:hv_voltage_coil',
-        '32x gtceu:metallic_mica_foil',
-        '2x gtceu:fluxed_cobalt_electrum_single_wire'
-    )
-    .itemOutputs('1x gtceu:hv_energy_input_hatch')
-    .inputFluids("gtceu:sodium_potassium 1000")
-    .duration(200)
-    .EUt(496);
+// event.recipes.gtceu.assembler('kubejs:hv_energy_hatch')
+//     .itemInputs(
+//         '1x gtceu:hv_machine_hull',
+//         '1x gtceu:hv_voltage_coil',
+//         '32x gtceu:metallic_mica_foil',
+//         '2x gtceu:fluxed_cobalt_electrum_single_wire'
+//     )
+//     .itemOutputs('1x gtceu:hv_energy_input_hatch')
+//     .inputFluids("gtceu:sodium_potassium 1000")
+//     .duration(200)
+//     .EUt(496);
 
-event.recipes.gtceu.assembler('kubejs:hv_dynamo_hatch')
-    .itemInputs(
-        '1x gtceu:hv_machine_hull',
-        '1x gtceu:hv_voltage_coil',
-        '32x gtceu:metallic_mica_foil',
-        '2x gtceu:fluxed_cobalt_electrum_single_wire',
-        '1x gtceu:lpic_chip',
-        '2x gtceu:copper_spring'
-    )
-    .itemOutputs('1x gtceu:hv_energy_output_hatch')
-    .duration(200)
-    .EUt(496);
+// event.recipes.gtceu.assembler('kubejs:hv_dynamo_hatch')
+//     .itemInputs(
+//         '1x gtceu:hv_machine_hull',
+//         '1x gtceu:hv_voltage_coil',
+//         '32x gtceu:metallic_mica_foil',
+//         '2x gtceu:fluxed_cobalt_electrum_single_wire',
+//         '1x gtceu:lpic_chip',
+//         '2x gtceu:copper_spring'
+//     )
+//     .itemOutputs('1x gtceu:hv_energy_output_hatch')
+//     .duration(200)
+//     .EUt(496);
 
 
-event.recipes.gtceu.assembler('kubejs:lv_energy_hatch_helper')
-    .itemInputs(
-        '1x gtceu:lv_machine_hull',
-        '1x gtceu:lv_voltage_coil',
-        '16x gtceu:metallic_mica_foil',
-        '1x gtceu:tin_silver_alloy_single_wire'
-    )
-    .circuit(32)
-    .notConsumable('kubejs:lv_technician_helper')
-    .itemOutputs('1x gtceu:lv_energy_input_hatch')
-    .duration(100)
-    .EUt(15);
+// event.recipes.gtceu.assembler('kubejs:lv_energy_hatch_helper')
+//     .itemInputs(
+//         '1x gtceu:lv_machine_hull',
+//         '1x gtceu:lv_voltage_coil',
+//         '16x gtceu:metallic_mica_foil',
+//         '1x gtceu:tin_silver_alloy_single_wire'
+//     )
+//     .circuit(32)
+//     .notConsumable('kubejs:lv_technician_helper')
+//     .itemOutputs('1x gtceu:lv_energy_input_hatch')
+//     .duration(100)
+//     .EUt(15);
 
 
 

@@ -190,6 +190,12 @@
 					item: "kubejs:hv_tech_coin"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "496C3F51FE371604"
+					table_id: 6464135646849165540L
+					type: "choice"
+				}
 			]
 			tasks: [{
 				id: "137D9008F551868A"
@@ -1167,12 +1173,19 @@
 				"63D67E10B4494C80"
 			]
 			id: "69C1442BCE92FCBB"
-			rewards: [{
-				count: 8
-				id: "7E12D7520614D98F"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7E12D7520614D98F"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "302A1DA5394214DE"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6262B5B63A189AD5"
 				item: { Count: 64, id: "gtceu:micro_processor" }
@@ -1184,12 +1197,19 @@
 		{
 			dependencies: ["69C1442BCE92FCBB"]
 			id: "0F6BB4ACCE711A16"
-			rewards: [{
-				count: 8
-				id: "1675C7447416908E"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "1675C7447416908E"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "40895982458813D7"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "46B418BC5091F673"
 				item: "gtceu:micro_processor_assembly"
@@ -1266,6 +1286,7 @@
 			y: 13.0d
 		}
 		{
+			dependencies: ["51CE1B1FED4E18A4"]
 			id: "58C9723B7460B8FB"
 			rewards: [{
 				id: "3BADF80F82DD7121"
@@ -1698,7 +1719,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1A410F31A03BC182"]
+			dependencies: [
+				"1A410F31A03BC182"
+				"7AFFB11728B9B7B1"
+			]
 			id: "7A51215D55BF770C"
 			rewards: [{
 				count: 16
@@ -1722,12 +1746,19 @@
 			description: ["Reduces time of certain &6HV&r EBF recipes by &l15%&r"]
 			hide_dependency_lines: true
 			id: "08E1303A178FEC07"
-			rewards: [{
-				count: 16
-				id: "79371F248AE9B2A1"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "79371F248AE9B2A1"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "088BB5E8AA148C1C"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+			]
 			subtitle: "You're gonna want this.... trust me"
 			tasks: [{
 				id: "378DC176A02BCEDB"
@@ -1838,6 +1869,163 @@
 			}]
 			x: -3.5d
 			y: 16.5d
+		}
+		{
+			id: "51CE1B1FED4E18A4"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "30024DC79DCFABF5"
+					item: "gtceu:polyethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "0F2BF3157F55C904"
+					item: "gtceu:polyvinyl_chloride_bucket"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"1A410F31A03BC182"
+				"1F46FBC207B0C846"
+			]
+			id: "6A2B19D5462B5966"
+			rewards: [{
+				id: "19CBF9FBEEEADE2B"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64A7AA26D99A742F"
+				item: "kubejs:grandma_helper"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4AB3DCDAD9146A14"
+				"33FB8CD5B1804E88"
+				"6DAEA8AAC3AB9B85"
+			]
+			hide_dependency_lines: true
+			id: "1F46FBC207B0C846"
+			rewards: [{
+				id: "35FF469949C7B56B"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48A21209D179A2EE"
+				item: "kubejs:heart_of_gold"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			id: "33FB8CD5B1804E88"
+			tasks: [{
+				id: "740F3E53E0BD665B"
+				item: "gtceu:rose_gold_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7AFFB11728B9B7B1"
+				"1F46FBC207B0C846"
+			]
+			id: "6D93BFC5D02B22D0"
+			rewards: [{
+				id: "0932C836ADB9C212"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35CD3C2DD28255BA"
+				item: "kubejs:lcptr_helper"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6D93BFC5D02B22D0"
+				"4AB3DCDAD9146A14"
+				"666FFA22AA04D004"
+				"7B853D6D4BC03B8C"
+			]
+			description: ["The LHW (Large helper wheel) is a superb option for power while in &6HV&r. It generates 1.5 Amps of HV Power using Grandma's Cookies and an LCPTR Helper. A few of these will get your power needs up until &dEV&r with ease."]
+			hide_dependency_lines: true
+			id: "5DFC5C683D8CDCE2"
+			rewards: [
+				{
+					id: "4AB1B32672DD53F4"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A471FA91EB21221"
+					table_id: 1718228990870316303L
+					type: "choice"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "1303FCAA591DE511"
+				item: "gtceu:large_helper_wheel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2BF84CEDD48C23D9"
+				"6A2B19D5462B5966"
+			]
+			id: "7B853D6D4BC03B8C"
+			rewards: [
+				{
+					id: "7A214BD76A687EA4"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					id: "2CD3443AC7D94CFA"
+					item: "kubejs:heart_of_gold"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "7E642321C6CCB534"
+				item: { Count: 64, id: "kubejs:grandmas_cookie" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			id: "2BF84CEDD48C23D9"
+			tasks: [{
+				id: "3E2147CFAD3C9760"
+				item: "kubejs:grandmas_baking_sheet"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.5d
 		}
 	]
 	title: "Chapter 3 (HV)"

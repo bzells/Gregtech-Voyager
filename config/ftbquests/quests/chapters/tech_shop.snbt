@@ -574,6 +574,32 @@
 			x: 1.5d
 			y: -5.0d
 		}
+		{
+			icon: "kubejs:ulv_loot_bag"
+			id: "39147292CC64C6DB"
+			rewards: [{
+				id: "34E1AB0267886316"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "26F7E8E31C04139E"
+					item: { Count: 8, id: "kubejs:ulv_tech_coin" }
+					type: "item"
+				}
+				{
+					elapsedTime: 1200L
+					gameTime: "system"
+					id: "2442DB7184DBDD4D"
+					type: "questsadditions:time"
+				}
+			]
+			title: "ULV Loot Bag"
+			x: 2.5d
+			y: -5.0d
+		}
 	]
 	title: "Tech Shop"
 }

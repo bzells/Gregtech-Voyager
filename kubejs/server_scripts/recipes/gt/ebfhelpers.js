@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electric_blast_furnace("kubejs:fluxed_cobalt_electrum_helper")
         .itemInputs("gtceu:fluxed_cobalt_electrum_dust")
         .itemOutputs("gtceu:fluxed_cobalt_electrum_ingot")
-        .notConsumable('kubejs:lv_ebf_helper')
+        .notConsumable('kubejs:mv_ebf_helper')
         .circuit(3)
         .duration(.85 * (20 * 66)) 
         .EUt(480 * .85)

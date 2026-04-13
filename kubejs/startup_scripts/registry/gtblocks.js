@@ -10,12 +10,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')                                
         .setMaxIOSize(9, 2, 1, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT);
+
+    event.create('oven')
+        .category('simple')                        // category shown in JEI/REI
+        .setEUIO('in')                                
+        .setMaxIOSize(9, 9, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT);
 });
 
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create('helper_wheel', 'generator')
-        // .tiers(GTValues.LV, GTValues.MV, GTValues.HV)
+        .tiers(GTValues.LV, GTValues.MV)
         .tankScalingFunction(tier => tier * 1600)
         .definition((tier, builder) =>
             builder
@@ -32,6 +38,17 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .langValue(`${GTValues.VLVH[tier]} Helper Assembler`)
             .recipeType('helper_assembler')
             .workableTieredHullModel("kubejs:block/overlay/helper_assembler")
+            
+    )
+
+    event.create('oven', 'simple')
+    .tiers(GTValues.LV, GTValues.MV, GTValues.HV)
+    .tankScalingFunction(tier => tier * 1600)
+    .definition((tier, builder) =>
+        builder
+            .langValue(`${GTValues.VLVH[tier]} Oven`)
+            .recipeType('oven')
+            .workableTieredHullModel("kubejs:block/overlay/oven")
             
     )
 });

@@ -23,7 +23,7 @@
 			"&bGem&r"
 			"Silver"
 			"&9Cobalt&r"
-			"&cChromite&r"
+			"&7Nickel&r"
 			"&dSource&r"
 			""
 			"&lAll&r of these veins also have &odense&r variants, where the veins are bigger, and have more ore in them. Some are much more rare than others however."
@@ -31,6 +31,8 @@
 			"The colored veins include ores that are that color (mostly gems)"
 			""
 			"&4Plutonium&r can be found in &ldense&r &cred&r veins"
+			""
+			"&cChromite&r can be found in &ldense&r &7Nickel&r veins"
 		]
 		icon: "gtceu:raw_plutonium"
 		id: "51D341A8F9DA9EE8"

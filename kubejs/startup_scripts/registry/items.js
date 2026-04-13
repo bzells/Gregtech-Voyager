@@ -22,7 +22,7 @@ StartupEvents.registry('item', event => {
 
     function register_helper_item(name)
     {
-        event.create(name + '_helper').texture('kubejs:item/helpers/' + name + '_helper').maxStackSize(1).rarity('uncommon').tag('kubejs:helpers');
+        event.create(name + '_helper').texture('kubejs:item/helpers/' + name + '_helper').maxStackSize(4).rarity('uncommon').tag('kubejs:helpers');
     }
 
     function register_tiered_helper_item(tier, name)
@@ -31,8 +31,7 @@ StartupEvents.registry('item', event => {
         const formattedName = name
             .toLowerCase()
             .replace(/\b\w/g, char => char.toUpperCase());
-            event.create(tier + '_' + name + '_helper').texture('kubejs:item/helpers/' + tier + '_' + name + '_helper').maxStackSize(1).rarity('uncommon').displayName(tier.toUpperCase() + " " + formattedName + ' Helper')
-            .tag('forge:technician_helpers')
+            event.create(tier + '_' + name + '_helper').texture('kubejs:item/helpers/' + tier + '_' + name + '_helper').maxStackSize(4).rarity('uncommon').displayName(tier.toUpperCase() + " " + formattedName + ' Helper')
             .tag('forge:helpers')
     }
 
@@ -81,6 +80,8 @@ StartupEvents.registry('item', event => {
     register_bag(2, 'ars')
     register_bag(3, 'ars')
 
+    event.create('stone_bag').texture('kubejs:item/stone_bag').displayName('Stone Bag');
+
 
     tiers.forEach(tier => register_magic_coin(tier));
     tiers.forEach(tier => register_universal_coin(tier));
@@ -93,6 +94,20 @@ StartupEvents.registry('item', event => {
     // cookies
 
     event.create('grandmas_baking_sheet').texture('kubejs:item/grandmas_baking_sheet').maxStackSize(1).displayName('Grandma\'s Super Durable Baking Sheet');
+    event.create('baking_chocolate').texture('kubejs:item/baking_chocolate').displayName('Baking Chocolate');
+    event.create('baking_flour').texture('kubejs:item/baking_flour').displayName('Baking Flour');
+    event.create('cacao_powder').texture('kubejs:item/cacao_powder').displayName('Cacao Powder');
+    event.create('butter').texture('kubejs:item/butter').displayName('Butter');
+    event.create('roasted_cacao_beans').texture('kubejs:item/roasted_cacao_beans').displayName('Roasted Cacao Beans');
+    event.create('cookie_dough').texture('kubejs:item/cookie_dough').displayName('Cookie Dough');
+
+    event.create('heart_of_gold').texture('kubejs:item/heart_of_gold').displayName('Heart of Gold');
+
+    
+
+    event.create('lcptr_helper').texture('kubejs:item/helpers/lcptr_helper').maxStackSize(1).displayName('Large Cookie-Powered Track Runner Helper').tooltip(
+        "Runs on Grandma\'s cookies"
+    );
 
     event.create('grandmas_cookie').texture('kubejs:item/grandmas_cookies').displayName('Grandma\'s cookies').food(food => {
     food
