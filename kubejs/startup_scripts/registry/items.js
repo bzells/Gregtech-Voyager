@@ -5,6 +5,8 @@ StartupEvents.registry('item', event => {
 
     const tiers = ['ulv', 'lv','mv','hv','ev','iv','luv','zpm','uv','uhv','uev','uiv','max'];
 
+    const allTiers = ['stone', 'ulv', 'lv','mv','hv','ev','iv','luv','zpm','uv','uhv','uev','uiv','max'];
+
     function register_universal_circuit(energy_tier)
     {
         event.create(energy_tier + '_universal_circuit').texture('kubejs:item/' + energy_tier + '_universal_circuit').displayName(energy_tier.toUpperCase() + ' Universal Circuit')
@@ -72,6 +74,11 @@ StartupEvents.registry('item', event => {
     function register_bag(level, name)
     {
         event.create(name + '_bag_' + level).texture('kubejs:item/' + name + '_bag_' + level).displayName(name.toUpperCase() + ' Bag ' + level).tooltip("Not yet implemented");
+    }
+
+    function register_voucher(tier)
+    {
+        event.create(tier + '_voucher').texture('kubejs:item/' + tier + '_voucher').displayName(tier.toUpperCase() + ' Voucher').tooltip("Can be claimed for loot rewards");
     }
 
     

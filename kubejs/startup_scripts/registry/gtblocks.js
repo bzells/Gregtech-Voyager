@@ -16,6 +16,12 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')                                
         .setMaxIOSize(9, 9, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT);
+
+    event.create('voucher_claimer')
+        .category('simple')                        // category shown in JEI/REI
+        .setEUIO('in')                                
+        .setMaxIOSize(1, 9, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT);
 });
 
 
@@ -48,6 +54,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         builder
             .langValue(`${GTValues.VLVH[tier]} Oven`)
             .recipeType('oven')
+            .workableTieredHullModel("kubejs:block/overlay/oven")
+            
+    )
+
+    event.create('voucher_claimer', 'simple')
+    .tiers(GTValues.LV, GTValues.MV, GTValues.HV)
+    .definition((tier, builder) =>
+        builder
+            .langValue(`${GTValues.VLVH[tier]} Voucher Claimer`)
+            .recipeType('voucher_claimer')
             .workableTieredHullModel("kubejs:block/overlay/oven")
             
     )
