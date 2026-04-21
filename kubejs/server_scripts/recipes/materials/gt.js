@@ -38,6 +38,8 @@ ServerEvents.recipes(event => {
     create_mixer_recipe('metallic_mica_fishoil',['1x gtceu:silver_dust', '3x gtceu:mica_dust'], ['gtceu:fish_oil 800'], ['4x gtceu:metallic_mica_dust'], voltTier('lv'), 600);
     create_mixer_recipe('metallic_mica_seedoil',['1x gtceu:silver_dust', '3x gtceu:mica_dust'], ['gtceu:seed_oil 200'], ['4x gtceu:metallic_mica_dust'], voltTier('lv'), 600);
 
+    create_mixer_recipe('fluix_dust',['1x minecraft:redstone', '1x gtceu:nether_quartz_dust', '1x gtceu:certus_quartz_dust'], ['minecraft:water 1000'], ['3x ae2:fluix_dust'], voltTier('ev'), 600);
+
     create_mixer_recipe('fluxed_electrum_mix',['3x gtceu:electrum_dust', '3x minecraft:redstone', '2x minecraft:glowstone_dust', '1x gtceu:chromium_dust'], [], ['5x gtceu:fluxed_electrum_dust'], voltTier('mv'), 300);
 
     create_mixer_recipe('fluxed_cobalt_electrum_mix',['3x gtceu:fluxed_electrum_dust', '2x gtceu:cobalt_dust', '1x gtceu:ruby_dust'], [], ['6x gtceu:fluxed_cobalt_electrum_dust'], voltTier('hv'), 300);

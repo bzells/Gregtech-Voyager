@@ -11,25 +11,56 @@
 	id: "4F26DE9498F90D58"
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		description: ["You will need &4rutile&r to start your journey into &dEV&r"]
-		id: "084337D3DABDD960"
-		min_required_tasks: 1
-		tasks: [
-			{
-				id: "69B84F5EF9FD72DE"
-				item: "gtceu:raw_bauxite"
+	quests: [
+		{
+			description: [
+				"You will need &4rutile&r to start your journey into &dEV&r"
+				""
+				"You can get rutile from Ilmenite or Bauxite. Both of which are found on the moon. At first, processing it will be slow (and not very rewarding), but after your first few pieces of &dTitanium&r, your production will grow exponentially."
+			]
+			id: "084337D3DABDD960"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "69B84F5EF9FD72DE"
+					item: "gtceu:raw_bauxite"
+					type: "item"
+				}
+				{
+					id: "47A7892A75FB1DA9"
+					item: "gtceu:raw_ilmenite"
+					type: "item"
+				}
+				{
+					id: "443ADF0E4641E64E"
+					item: "gtceu:rutile_dust"
+					type: "item"
+				}
+			]
+			title: "Rutile"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4F055147E759F7BD"
+			tasks: [{
+				id: "7446CC45A8747A7C"
+				item: "gtceu:refined_fluxed_electrum_ingot"
 				type: "item"
-			}
-			{
-				id: "47A7892A75FB1DA9"
-				item: "gtceu:raw_ilmenite"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			id: "307B3D1F044D7B30"
+			tasks: [{
+				id: "5569D0326F0EF715"
+				item: "gtceu:titanium_ingot"
 				type: "item"
-			}
-		]
-		title: "Rutile"
-		x: 0.0d
-		y: 0.0d
-	}]
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
 	title: "Chapter 4: To Space! (EV)"
 }
