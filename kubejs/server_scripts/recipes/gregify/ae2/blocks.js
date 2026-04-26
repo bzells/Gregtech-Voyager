@@ -153,6 +153,13 @@ ServerEvents.recipes(event => {
         .duration(100)                                 
         .EUt(30)
 
+    event.recipes.gtceu
+        .alloy_smelter('kubejs:quartz_glass') 
+        .itemInputs('2x gtceu:glass_dust', '2x gtceu:certus_quartz_dust')
+        .itemOutputs('ae2:quartz_glass')
+        .duration(100)                                 
+        .EUt(30)
+
     event.shaped(
         Item.of('ae2:energy_acceptor', 1), 
         [
@@ -232,6 +239,70 @@ ServerEvents.recipes(event => {
             'ae2:fluix_crystal',
             'ae2:level_emitter'
         ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:certus_quartz_cutting_knife', 1),
+        [
+            'gtceu:certus_quartz',
+            'minecraft:stick',
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:nether_quartz_cutting_knife', 1),
+        [
+            'gtceu:nether_quartz',
+            'minecraft:stick',
+        ]
+    )
+
+    const colors = ['white', 'light_gray', 'gray', 'black', 'brown', 'red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink']
+
+    colors.forEach(color =>
+        {
+        event.recipes.gtceu
+            .chemical_bath('kubejs:cable_' + color) 
+            .itemInputs('ae2:fluix_glass_cable')
+            .inputFluids('gtceu:' + color + '_dye 18')
+            .itemOutputs('ae2:' + color + '_glass_cable')
+            .duration(10)                                 
+            .EUt(8)
+
+        event.recipes.gtceu
+            .chemical_bath('kubejs:cable_covered' + color) 
+            .itemInputs('ae2:fluix_covered_cable')
+            .inputFluids('gtceu:' + color + '_dye 18')
+            .itemOutputs('ae2:' + color + '_covered_cable')
+            .duration(10)                                 
+            .EUt(8)
+
+        event.recipes.gtceu
+            .chemical_bath('kubejs:cable_smart' + color) 
+            .itemInputs('ae2:fluix_smart_cable')
+            .inputFluids('gtceu:' + color + '_dye 18')
+            .itemOutputs('ae2:' + color + '_smart_cable')
+            .duration(10)                                 
+            .EUt(8)
+
+        event.recipes.gtceu
+            .chemical_bath('kubejs:cable_covered_dense' + color) 
+            .itemInputs('ae2:fluix_covered_dense_cable')
+            .inputFluids('gtceu:' + color + '_dye 18')
+            .itemOutputs('ae2:' + color + '_covered_dense_cable')
+            .duration(10)                                 
+            .EUt(8)
+
+        event.recipes.gtceu
+            .chemical_bath('kubejs:cable_smart_dense' + color) 
+            .itemInputs('ae2:fluix_smart_dense_cable')
+            .inputFluids('gtceu:' + color + '_dye 18')
+            .itemOutputs('ae2:' + color + '_smart_dense_cable')
+            .duration(10)                                 
+            .EUt(8)
+        }
+
+        
     )
 
 });

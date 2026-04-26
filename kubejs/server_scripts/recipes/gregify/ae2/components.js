@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu
         .assembler('kubejs:256k_component')  
         .itemInputs('ae2:engineering_processor', '8x gtceu:fine_refined_fluxed_electrum_wire', '3x ae2:cell_component_64k', '2x #gtceu:circuits/iv')
-        .itemOutputs('1x ae2:cell_component_64k')
+        .itemOutputs('1x ae2:cell_component_256k')
         .duration(800)                                 
         .EUt(8000)
 
@@ -381,6 +381,20 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x ae2:fluid_storage_cell_256k')
         .duration(100)                                 
         .EUt(120)
+
+    event.shaped(
+        Item.of('ae2:memory_card', 1), 
+        [
+            ' B ',
+            'BAB', 
+            'EEE'
+        ],
+        {
+            A: 'ae2:logic_processor',
+            B: 'gtceu:iron_plate',
+            E: 'gtceu:fine_gold_wire'
+        }
+    )
 
 
 });

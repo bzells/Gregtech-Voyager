@@ -6,3 +6,5 @@
 - Loot bags can no longer be found in loot chests, now they are vouchers
 - Seared bricks now require a mold to match with other GT brick recipes
 - Fixed bug where loot bags wouldn't drop items if you had a full inventory
+- Nerfed TF ore veins
+- HV+ Progression
