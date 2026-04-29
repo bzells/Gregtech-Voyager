@@ -70,4 +70,14 @@ ServerEvents.recipes(event => {
         ],
         100
     );
+
+    event.remove({id: 'tconstruct:smeltery/alloys/molten_rose_gold'})
+    tconstruct_alloy(
+        {fluid: 'tconstruct:molten_rose_gold', amount: 5*90},
+        [
+            { fluid: 'tconstruct:molten_copper', amount: 90},
+            { fluid: 'tconstruct:molten_gold', amount: 90*4}
+        ],
+        550
+    );
 });
