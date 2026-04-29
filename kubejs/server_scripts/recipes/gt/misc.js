@@ -39,11 +39,13 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:firebrick')
         .EUt(2)
         .itemOutputs('gtceu:firebricks')
+        .duration(10*20)
 
     event.recipes.gtceu.compressor("kubejs:bricks")
         .itemInputs('4x minecraft:brick')
         .EUt(2)
         .itemOutputs('minecraft:bricks')
+        .duration(10*20)
 
     event.recipes.gtceu.macerator("kubejs:treated_wood_pulp")
         .itemInputs('1x gtceu:treated_wood_planks')

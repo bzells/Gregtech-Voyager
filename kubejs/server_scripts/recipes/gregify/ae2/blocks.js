@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('ae2:certus_quartz_cutting_knife', 1),
         [
-            'gtceu:certus_quartz',
+            'gtceu:certus_quartz_gem',
             'minecraft:stick',
         ]
     )
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('ae2:nether_quartz_cutting_knife', 1),
         [
-            'gtceu:nether_quartz',
+            'minecraft:quartz',
             'minecraft:stick',
         ]
     )

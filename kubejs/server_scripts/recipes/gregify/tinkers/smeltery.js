@@ -70,4 +70,7 @@ ServerEvents.recipes(event => {
         ],
         100
     );
+
+    event.remove({id: 'tconstruct:smeltery/alloys/molten_rose_gold'})
+
 });
