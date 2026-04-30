@@ -50,5 +50,8 @@ ServerEvents.recipes(event => {
 
     // refined_fluxed_electrum
 
+    // Smelting and blasting recipes for tin-silver alloy ingots
+    event.recipes.smelting('gtceu:tin_silver_alloy_ingot', 'gtceu:tin_silver_alloy_dust');
+    event.recipes.blasting('gtceu:tin_silver_alloy_ingot', 'gtceu:tin_silver_alloy_dust');
 
 });
