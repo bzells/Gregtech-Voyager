@@ -25,6 +25,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ars_nouveau:novice_spell_book' }) // tdl upgrades
     event.remove({ id: 'ars_nouveau:scribes_table' })
 
+    event.replaceInput( {input: 'ars_nouveau:source_gem'},'ars_nouveau:source_gem','#forge:gems/source') //stops recipes from breaking, can be changed back if needed
+
     event.recipes.gtceu.extractor('kubejs:magebloom_oil')
         .itemInputs(
             '1x ars_nouveau:magebloom',
