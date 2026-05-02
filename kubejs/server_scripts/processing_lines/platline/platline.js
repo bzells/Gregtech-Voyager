@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
-event.remove({input: ['gtceu:iridium_metal_residue_dust', 'gtceu:platinum_group_sludge_dust', 'gtceu:rarest_metal_mixture_dust']})
+event.remove({input: 'gtceu:iridium_metal_residue_dust'}) 
+event.remove({output: 'gtceu:iridium_metal_residue_dust'}) // none of these fucking work and i have no idea why
+event.remove({input: 'gtceu:platinum_group_sludge_dust'})
+event.remove({input: 'gtceu:rarest_metal_mixture_dust'})
+event.remove({output: 'gtceu:rarest_metal_mixture_dust'})
     /**
      * Create a lcr recipe
      * @param {*} name - recipe name (dont include kubejs:)
@@ -95,7 +99,7 @@ event.remove({input: ['gtceu:iridium_metal_residue_dust', 'gtceu:platinum_group_
 
     // iridium
     create_recipe_lcr('dewatered_iridium_metal_residue', '5x gtceu:iridium_metal_residue_dust', 'kubejs:dewatering_fluid 2000',
-          ['4x gtceu:dewatered_iridium_metal_residue_dust', 'gtceu:platinum_sludge_residue_dust'], [], 200, 120
+          ['4x gtceu:dewatered_iridium_metal_residue_dust', 'gtceu:platinum_sludge_residue_dust'], [], 80, 120
     )
 
     create_recipe_lcr('impure_iridium', ['4x gtceu:dewatered_iridium_metal_residue_dust'], ['gtceu:phosphoric_acid 2000'], ['3x gtceu:impure_iridium_metal_dust', 'gtceu:tiny_zinc_dust', '2x gtceu:tiny_barium_dust'],
@@ -112,7 +116,7 @@ event.remove({input: ['gtceu:iridium_metal_residue_dust', 'gtceu:platinum_group_
       ['5x gtceu:iridium_metal_residue_dust'],
       ['gtceu:acidic_shiny_metal_mixture 2000', 'gtceu:hydrogen 3000'], 20, 7680
     )
-    create_recipe_centrifuge('impure_shiny_metal_mixture', [], ['gtceu:acidic_shiny_metal_mixture 2000', 'gtceu:sulfuric_acid 1000'], [],
+    create_recipe_lcr('impure_shiny_metal_mixture', [], ['gtceu:acidic_shiny_metal_mixture 2000', 'gtceu:sulfuric_acid 1000'], [],
       ['gtceu:hydrogen 2000', 'gtceu:impure_shiny_metal_mixture 1000'], 10, 1980
     )
 
