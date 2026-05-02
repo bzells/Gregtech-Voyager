@@ -40,6 +40,15 @@ StartupEvents.registry('fluid', event => {
     .bucketColor(0xfdff9e)
     .displayName('Blasting Gas')
     .noBlock() 
+  
+  event.create('dewatering_fluid')
+    .thickTexture(0x731f3c)
+    .bucketColor(0x731f3c)
+    .displayName('Dewatering Fluid')
+    .noBlock() 
+
+
+
     
 //   // Fluid with custom textures
 //   event.create('strawberry_cream')

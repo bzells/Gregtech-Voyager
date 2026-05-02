@@ -2022,7 +2022,7 @@
 			description: [
 				"There are multiple ways of getting &4Plutonium&r. One of which is through &2Uranium&r."
 				""
-				"You will need a &6HV&r Centrifuge, and a some fluorine."
+				"You will need a &6HV&r Centrifuge, and some fluorine."
 				""
 				"One thing to note is that &lall&r of the fluorine used in this process is recycled."
 			]
@@ -2122,6 +2122,28 @@
 			}]
 			x: -3.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["4AB3DCDAD9146A14"]
+			id: "7A6735668D8A60E0"
+			tasks: [{
+				id: "47332143D519C9B4"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4AB3DCDAD9146A14"]
+			id: "51156AB1F4E23479"
+			tasks: [{
+				id: "69403B5F5ABBFC05"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 13.0d
 		}
 	]
 	title: "Chapter 3 (HV)"

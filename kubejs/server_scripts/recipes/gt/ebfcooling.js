@@ -60,6 +60,8 @@ ServerEvents.recipes(event => {
     }
 
 
+    // if someone wants to PR and clean this code using the new function, please do 😂
+
     event.recipes.gtceu.electric_blast_furnace("kubejs:everlasting_steak_ebf")
         .itemInputs("artifacts:everlasting_beef")
         .itemOutputs("artifacts:eternal_steak")

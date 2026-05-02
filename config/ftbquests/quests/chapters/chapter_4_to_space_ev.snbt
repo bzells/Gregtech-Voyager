@@ -51,7 +51,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -74,8 +74,8 @@
 				item: "kubejs:blasting_gas_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -90,8 +90,8 @@
 				type: "item"
 			}]
 			title: "EV Superconductor"
-			x: 7.0d
-			y: 4.5d
+			x: 9.75d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -104,8 +104,8 @@
 				item: "kubejs:refined_fluxed_electrum_crystal"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.0d
+			x: 8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["50EE25EAC7C546FC"]
@@ -152,7 +152,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 3.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -177,14 +177,26 @@
 		{
 			description: ["Acetylene is pretty much *just another hydrocarbon*. You can either get it through petrochem, or a 3/4-step processing line."]
 			id: "326C8D8399063A93"
+			min_required_tasks: 1
 			subtitle: "Check processing lines chapter to see more"
-			tasks: [{
-				id: "76C8FF9E1678E019"
-				item: "gtceu:acetylene_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 4.5d
+			tasks: [
+				{
+					id: "76C8FF9E1678E019"
+					item: "gtceu:acetylene_bucket"
+					type: "item"
+				}
+				{
+					id: "127A7D6A57E25D42"
+					item: "gtceu:lpg_bucket"
+					type: "item"
+				}
+				{
+					id: "6BD8EB7384152C80"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["307B3D1F044D7B30"]
@@ -195,7 +207,7 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
@@ -237,8 +249,8 @@
 				item: "gtceu:ev_electric_piston"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -266,8 +278,8 @@
 				item: "gtceu:ev_conveyor_module"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 1.5d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4DEE1F3E73302493"]
@@ -278,8 +290,8 @@
 				item: "gtceu:ev_electric_pump"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0F995931300B2323"]
@@ -289,8 +301,8 @@
 				item: "gtceu:ev_fluid_regulator"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -304,8 +316,8 @@
 				item: "gtceu:ev_sensor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -319,8 +331,8 @@
 				item: "gtceu:ev_emitter"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -348,20 +360,21 @@
 				item: "gtceu:ilmenite_slurry_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.0d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["32F8AB8BF51222B5"]
 			description: ["Desh-line is it's own thing, but for now you can get some of it as a byproduct from ilmenite processing."]
+			hide_dependent_lines: true
 			id: "766A7AFB2AE2F098"
 			tasks: [{
 				id: "3AB53C314B849474"
 				item: "gtceu:desh_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -374,8 +387,8 @@
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			id: "3D1665D6742E7DDC"
@@ -384,8 +397,8 @@
 				item: "gtceu:ultimet_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.0d
+			x: 4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3D1665D6742E7DDC"]
@@ -395,8 +408,8 @@
 				item: "gtceu:ev_cutter"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.0d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["139CE36CAFC02F4F"]
@@ -413,8 +426,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 9.0d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7BD63E2D4B804A69"]
@@ -424,8 +437,8 @@
 				item: "gtceu:ev_voltage_coil"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -439,19 +452,22 @@
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 9.0d
+			x: 8.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6D599070FCBCD71C"]
+			dependencies: [
+				"6D599070FCBCD71C"
+				"766A7AFB2AE2F098"
+			]
 			id: "6154764CC312BD4E"
 			tasks: [{
 				id: "31D3CF5F051A8E1E"
 				item: "gtceu:desh_ingot"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 8.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -466,18 +482,164 @@
 				item: { Count: 16, id: "kubejs:desh_coil_block" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 8.5d
+			y: 4.5d
 		}
 		{
-			id: "310532CFE6FBAACA"
+			dependencies: ["51FA7C2C0374BDAB"]
+			hide_dependency_lines: true
+			id: "525AB3C856187597"
 			tasks: [{
-				id: "1A616615D58CC053"
-				title: "upgraded mica"
-				type: "checkmark"
+				id: "21A71DC302324838"
+				item: "gtceu:tungsten_dust"
+				type: "item"
 			}]
-			x: 8.5d
-			y: 6.0d
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"1E76B42857AC04C9"
+				"525AB3C856187597"
+				"0DE67CA0A8DD130A"
+			]
+			id: "0CF9F8DAD18EC2DD"
+			tasks: [{
+				id: "1D67866AE085BF29"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4DEE1F3E73302493"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "0DE67CA0A8DD130A"
+			tasks: [{
+				id: "1439D3A9B6506A6D"
+				item: "gtceu:ev_mixer"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.5d
+		}
+		{
+			id: "231A80D860E922CD"
+			tasks: [{
+				id: "071E856D965D1B44"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["231A80D860E922CD"]
+			id: "565C3E282730B949"
+			tasks: [{
+				id: "764D4A8B3DBAAB66"
+				item: "gtceu:epoxy_circuit_board"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["565C3E282730B949"]
+			id: "2A37700FA1504390"
+			tasks: [{
+				id: "65C617DB2D7D6CCA"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.5d
+		}
+		{
+			id: "020C339205F62BE1"
+			tasks: [
+				{
+					id: "4F1FDBDA10A62BD9"
+					item: "gtceu:nano_cpu_wafer"
+					type: "item"
+				}
+				{
+					id: "36C25B620B45175F"
+					item: "gtceu:nano_cpu_chip"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"020C339205F62BE1"
+				"2A37700FA1504390"
+				"4EA8D5772612E022"
+			]
+			id: "193AEA6982472A2E"
+			tasks: [{
+				id: "63BA99C14FA680E5"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["193AEA6982472A2E"]
+			id: "1A121CDED7D9E534"
+			tasks: [{
+				id: "1E180187D143F5F8"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1A121CDED7D9E534"
+				"6EB67BA7F00DC419"
+			]
+			id: "6677CE6FD7F727F1"
+			tasks: [{
+				id: "6798C73B894AF37D"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 9.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6677CE6FD7F727F1"]
+			id: "5D1E251B9F28C8B4"
+			size: 1.5d
+			tasks: [{
+				id: "53655FBF94387C7A"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"591742EF37E96F38"
+				"5943DC5F54ED9F40"
+				"1CA9601A2A5F56A4"
+			]
+			id: "4EA8D5772612E022"
+			tasks: [{
+				id: "44A286304E952A59"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

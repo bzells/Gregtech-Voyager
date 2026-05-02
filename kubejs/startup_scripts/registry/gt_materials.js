@@ -231,6 +231,7 @@ register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'
 
 register_dust('fluxed_titanium_electrum_compound', '', '0x2c2e16');
 
+
 register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xbfcdd6', 32, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_cobalt_electrum', [], true, '0x006387', 512, 1, [0, null, voltTier('lv'), 0]);
@@ -243,6 +244,25 @@ register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4
 // register_superconductor('sculk_corrupted_hyperdense_neutronic_superelectrum', true, '0x1a595e', 8388608, 512, [11880, 'highest', voltTier('uev'), 1]);
 // register_superconductor('atomically_perfected_metallic_royal_honey', true, '0xff6a00', 33554432, 4096, [11880, 'highest', voltTier('uiv'), 1]);
 // register_superconductor('exposed_metallic_dark_royal_honey', true, '0xff6a00', 134217728, 8192, [11880, 'highest', voltTier('uxv'), 1]);
+
+// platline
+register_dust('dewatered_iridium_metal_residue', '', '0x094235');
+register_dust('impure_iridium_metal', '', '0x094235');
+
+register_fluid('acidic_shiny_metal_mixture','0x4f6cab', [])
+register_fluid('impure_shiny_metal_mixture','0x3f6cbc', [])
+register_dust('shiny_metallic_residue', '', '0x3b4724');
+
+register_fluid('sulfuric_rhodium_sludge','0x6c367a', [])
+register_fluid('acidic_ruthenium_solution','0x3a333d', [])
+register_dust('impure_rhodium_sludge','0x3a333d', [])
+
+register_dust('plat_palladium_metal_residue','0x1f333c', [])
+register_fluid('sulfuric_plat-palladium_metal_solution','0x3a333d', [])
+
+register_fluid('sulfuric_kerosene','0xaaa22f', [])
+register_fluid('kerosene','0x00000f', ['12x carbon 26x hydrogen'])
+
 
 
 /*

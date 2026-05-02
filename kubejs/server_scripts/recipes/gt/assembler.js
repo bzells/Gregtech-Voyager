@@ -523,7 +523,7 @@ event.recipes.gtceu.assembler('kubejs:deshcoil')
     .itemInputs(
         '8x gtceu:desh_double_wire',
         '8x gtceu:vanadium_steel_foil',
-        '16x gtceu:metallic_mica_foil',
+        '32x gtceu:polytetrafluoroethylene_foil',
     )
     // .notConsumable('kubejs:lv_technician_helper')
     .itemOutputs('1x kubejs:desh_coil_block')
