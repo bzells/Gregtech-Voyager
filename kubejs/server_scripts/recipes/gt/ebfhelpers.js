@@ -1,5 +1,22 @@
 ServerEvents.recipes(event => {
 
+
+    function add_helper_recipe(name, input, fluid, output, helper, ogtime, ogeut, temp)
+    {
+       event.recipes.gtceu.electric_blast_furnace("kubejs:" + name + '_' + helper)
+        .itemInputs(input)
+        .notConsumable('kubejs:' + helper)
+        .itemOutputs(output)
+        .inputFluids(fluid)
+        .circuit(3)
+        .duration((ogtime * 20)*.85) // 60 sec
+        .EUt(ogeut * .85)
+        .blastFurnaceTemp(temp); 
+    }
+
+    add_helper_recipe('iridium', 'gtceu:iridium_dust', 'gtceu:argon 50', 'gtceu:hot_iridium_ingot', 'hv_ebf_helper', 36.85, 7680, 4500)
+    add_helper_recipe('titanium', '2x gtceu:magnesium_dust', 'gtceu:titanium_tetrachloride 800', ['gtceu:hot_titanium_ingot', '5x gtceu:magnesium_chloride_dust'], 'mv_ebf_helper', 40, 480, 2141)
+
     event.recipes.gtceu.electric_blast_furnace("kubejs:aluminum_helper")
         .itemInputs("gtceu:aluminium_dust")
         .notConsumable('kubejs:lv_ebf_helper')

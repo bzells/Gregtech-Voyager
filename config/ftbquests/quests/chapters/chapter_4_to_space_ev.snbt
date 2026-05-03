@@ -44,6 +44,7 @@
 		}
 		{
 			dependencies: ["37CD9E855B60C87D"]
+			description: ["If you didn't know, the &6HV&r ebf helper makes titanium a lot faster. Make one"]
 			id: "307B3D1F044D7B30"
 			size: 2.0d
 			tasks: [{
@@ -474,7 +475,9 @@
 				"7BD63E2D4B804A69"
 				"6154764CC312BD4E"
 				"6EB67BA7F00DC419"
+				"525AB3C856187597"
 			]
+			hide_dependent_lines: true
 			id: "1E76B42857AC04C9"
 			tasks: [{
 				count: 16L
@@ -494,8 +497,8 @@
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 5.5d
+			x: 11.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -509,8 +512,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 4.5d
+			x: 11.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4DEE1F3E73302493"]
@@ -522,8 +525,8 @@
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 4.5d
+			x: 12.0d
+			y: 5.5d
 		}
 		{
 			id: "231A80D860E922CD"
@@ -640,6 +643,132 @@
 			}]
 			x: 3.5d
 			y: 9.0d
+		}
+		{
+			description: [
+				"Neodymium"
+				"Ilmenite"
+				"Bauxite"
+				"Tungstate"
+				"Bornite"
+			]
+			icon: "gtceu:raw_ilmenite"
+			id: "652839F632E42BF0"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "1409DD4CEE93C428"
+				type: "checkmark"
+			}]
+			title: "New Helper Multiblock"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7BD63E2D4B804A69"
+				"5D1E251B9F28C8B4"
+				"5943DC5F54ED9F40"
+				"6154764CC312BD4E"
+			]
+			hide_dependency_lines: true
+			id: "6DF19110DCF8CB62"
+			size: 1.5d
+			tasks: [{
+				id: "589DF1B5A69720C1"
+				item: "gtceu:large_helper_factory"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7BD63E2D4B804A69"
+				"6EB67BA7F00DC419"
+			]
+			hide_dependency_lines: true
+			id: "66D61F15E0CAD74A"
+			tasks: [{
+				id: "797C1CCFF810CDD6"
+				item: "kubejs:ev_helper_computation_array"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["66D61F15E0CAD74A"]
+			description: [
+				"Increases yield of plastic and epoxy circuit board recipes by 1.5x while also reducing the time it takes to craft."
+				""
+				"Note: You have to use an LCR to use this helper, as a single-block chemical reactor does not have the item slot for this helper to go."
+			]
+			id: "19A453F951604D8D"
+			tasks: [{
+				id: "5BB30C8CF37F3862"
+				item: "kubejs:ev_technician_helper"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"66D61F15E0CAD74A"
+				"6154764CC312BD4E"
+				"6EB67BA7F00DC419"
+			]
+			description: [
+				"Reduces time of certain &dEV/IV&r EBF recipes by &l15%&r"
+				""
+				"NOTE: Recipe must use the gas required to speed up the base recipe."
+			]
+			hide_dependency_lines: true
+			id: "49A011D6C4410155"
+			tasks: [{
+				id: "7638DABA4BACB901"
+				item: "kubejs:hv_ebf_helper"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"5D1E251B9F28C8B4"
+				"66D61F15E0CAD74A"
+			]
+			description: [
+				"The &bbasic chemist helper&r is the &dEV&r tier chemistry helper."
+				""
+				"What exactly does he help out with? &l&dEV&r &lProcessing Lines&r including:"
+				""
+				"&ePlat-line&r (increases yield of PGS processing)"
+				"&6Desh-line&r (decreases time needed for desh processing, and increases yield)"
+				"&aRefined-Fluxed-Electrum&r (increases yield of crystals from compound)"
+				""
+				"It also reduces EU/t by 15-33% depending on the recipe"
+			]
+			id: "6E325CF121E77BE5"
+			tasks: [{
+				id: "394967A2068BD56C"
+				item: "kubejs:basic_chemist_helper"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			id: "70E27B7B4AECA72C"
+			tasks: [{
+				id: "5BF0D8EA01710C35"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			title: "Plat-line"
+			x: 8.5d
+			y: 14.0d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

@@ -3,7 +3,10 @@ event.remove({input: 'gtceu:iridium_metal_residue_dust'})
 event.remove({output: 'gtceu:iridium_metal_residue_dust'}) // none of these fucking work and i have no idea why
 event.remove({input: 'gtceu:platinum_group_sludge_dust'})
 event.remove({input: 'gtceu:rarest_metal_mixture_dust'})
+event.remove({input: 'gtceu:inert_metal_mixture_dust'})
 event.remove({output: 'gtceu:rarest_metal_mixture_dust'})
+event.remove({output: 'gtceu:rhodium_sulfate' })
+event.remove({output: 'gtceu:ruthenium_tetroxide' })
     /**
      * Create a lcr recipe
      * @param {*} name - recipe name (dont include kubejs:)
@@ -85,7 +88,7 @@ event.remove({output: 'gtceu:rarest_metal_mixture_dust'})
     create_recipe_centrifuge('pgs', '6x gtceu:platinum_group_sludge_dust', 'gtceu:aqua_regia 900'
       , ['3x gtceu:rarest_metal_mixture_dust', '3x gtceu:inert_metal_mixture_dust', '2x gtceu:platinum_sludge_residue_dust', 
         '8x gtceu:plat_palladium_metal_residue_dust'],
-        [], 40, 480 * .66, 'basic_chemist_helper'
+        [], 30, 480 * .66, 'basic_chemist_helper'
     )
 
     create_recipe_lcr('dewatering_fluid', ['2x gtceu:barium_dust', 'gtceu:zinc_dust'], 'gtceu:kerosene 2000',
@@ -107,7 +110,7 @@ event.remove({output: 'gtceu:rarest_metal_mixture_dust'})
     )
 
     create_recipe_centrifuge('iridium_chloride', ['3x gtceu:impure_iridium_metal_dust'], [], ['2x gtceu:iridium_chloride_dust', 'gtceu:platinum_sludge_residue_dust', '2x gtceu:phosphorus_dust'],
-      ['gtceu:oxygen 5000'], 10, 30
+      ['gtceu:oxygen 5000'], 40, 120
     )
 
 
@@ -117,13 +120,48 @@ event.remove({output: 'gtceu:rarest_metal_mixture_dust'})
       ['gtceu:acidic_shiny_metal_mixture 2000', 'gtceu:hydrogen 3000'], 20, 7680
     )
     create_recipe_lcr('impure_shiny_metal_mixture', [], ['gtceu:acidic_shiny_metal_mixture 2000', 'gtceu:sulfuric_acid 1000'], [],
-      ['gtceu:hydrogen 2000', 'gtceu:impure_shiny_metal_mixture 1000'], 10, 1980
+      ['gtceu:hydrogen 2000', 'gtceu:impure_shiny_metal_mixture 1000'], 10, 480
     )
 
     create_recipe_lcr('acidic_osmium_solution', [], ['gtceu:impure_shiny_metal_mixture 1000', 'gtceu:distilled_water 2000'], 
       ['gtceu:sulfur_dust'],
-      ['gtceu:acidic_osmium_solution 1000', 'gtceu:oxygen 4000'], 20, 120
+      ['gtceu:acidic_osmium_solution 1000', 'gtceu:oxygen 4000'], 40, 480
     )
+
+    // plat and palladium
+    create_recipe_lcr('sulfuric_plat_palladium_residue', ['6x gtceu:plat_palladium_metal_residue_dust'], ['gtceu:sulfuric_acid 1000, minecraft:water 1000'], 
+      [],
+      ['gtceu:sulfuric_plat-palladium_metal_solution 2000'], 20, 120
+    )
+    create_recipe_centrifuge('palladium_and_platinum', [], ['gtceu:sulfuric_plat-palladium_metal_solution 2000'], ['2x gtceu:palladium_dust', '2x gtceu:platinum_dust'],
+      ['gtceu:diluted_sulfuric_acid 1000'], 10, 30
+    )
+
+    // ruthenium/rhodium
+    create_recipe_lcr('sulfuric_inert_metal_solution', ['6x gtceu:inert_metal_mixture_dust'], ['gtceu:sulfuric_acid 1500'], 
+      [],
+      ['gtceu:sulfuric_inert_metal_solution 1000', 'gtceu:hydrogen 1000'], 20, 1980
+    )
+
+
+    create_recipe_centrifuge('sulfuric_inert_metal_solution_processing', [], ['gtceu:sulfuric_inert_metal_solution 1000'], [],
+      ['gtceu:acidic_ruthenium_solution 1000', 'gtceu:sulfuric_rhodium_solution 750'], 20, 480
+    )
+
+    create_recipe_lcr('ruthen_tetroxide', ['gtceu:calcium_hydroxide_dust'], ['gtceu:acidic_ruthenium_solution 1000'], 
+      ['5x gtceu:ruthenium_tetroxide_dust', 'gtceu:calcium_dust'],
+      ['minecraft:water 2000', 'gtceu:sulfur_trioxide 1000'], 5, 120
+    )
+
+    create_recipe_lcr('impure_rhodium_sludge', ['gtceu:calcium_hydroxide_dust'], ['gtceu:sulfuric_rhodium_solution 1000'], 
+      ['3x gtceu:impure_rhodium_sludge_dust'],
+      [], 5, 120
+    )
+
+    create_recipe_centrifuge('rhodium_sulfate', ['9x gtceu:impure_rhodium_sludge_dust'], ['gtceu:oxygen 1000', 'gtceu:distilled_water 1000'], [],
+      ['gtceu:rhodium_sulfate 1000', 'minecraft:water 2000'], 10, 120
+    )
+
 
     
 

@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
 
-    event.remove({output: ["gtceu:nano_processor", "gtceu:nano_processor_assembly", "gtceu:nano_processor_computer", "gtceu:nano_processor_mainframe",
-        "gtceu:micro_processor_mainframe"
-    ]})
+    event.remove({ output: "gtceu:nano_processor" })
+    event.remove({ output: "gtceu:nano_processor_assembly" })
+    event.remove({ output: "gtceu:nano_processor_computer" })
+    event.remove({ output: "gtceu:nano_processor_mainframe" })
+    event.remove({ output: "gtceu:micro_processor_mainframe" })
 
     event.recipes.gtceu.circuit_assembler("kubejs:ev_t1")
         .itemInputs("gtceu:plastic_printed_circuit_board", "2x gtceu:micro_processor_assembly", "4x #gtceu:diodes", "4x gtceu:ram_chip", "16x gtceu:fine_fluxed_electrum_wire", "32x gtceu:fluxed_cobalt_electrum_bolt")
@@ -138,7 +140,7 @@ ServerEvents.recipes(event => {
     )
 
     // epoxy board circuits
-    circuit_assembler_recipe('nano_processor', 'gtceu:nano_processor', "low", 
+    circuit_assembler_recipe('nano_processor', '2x gtceu:nano_processor', "low", 
         'gtceu:epoxy_printed_circuit_board', 
         ['gtceu:smd_resistor', 'gtceu:smd_capacitor', 'gtceu:smd_transistor'],
         'gtceu:nano_cpu_chip', 'low', 'fluxed_cobalt_electrum', 
@@ -146,7 +148,7 @@ ServerEvents.recipes(event => {
         600, 10
     )
 
-    circuit_assembler_recipe('nano_processor_assembly','gtceu:nano_processor_assembly', "low", 
+    circuit_assembler_recipe('nano_processor_assembly','2x gtceu:nano_processor_assembly', "low", 
         'gtceu:epoxy_printed_circuit_board', 
         ['gtceu:nano_processor', 'gtceu:smd_inductor', 'gtceu:smd_capacitor'],
         'gtceu:ram_chip', 'mid', 'fluxed_cobalt_electrum',

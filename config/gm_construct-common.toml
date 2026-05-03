@@ -1,0 +1,67 @@
+
+#Configuration related to material recipe generation
+["Recipe Integration"]
+	generateMeltingAndCastingRecipes = false
+	generateExtruderRecipes = true
+	generateFluidSolidificationRecipes = false
+
+#Configuration related to material modification.
+["Material Modification"]
+	#Disable generating tinker's material information for the following GT materials.
+	ignoredGTMaterials = ["bronze", "cobalt", "copper", "diamond", "flint", "invar", "iron", "netherite", "polybenzimidazole", "polyethylene", "polytetrafluoroethylene", "rose_gold", "rubber", "steel", "silicone_rubber", "styrene_butadiene_rubber", "wood"]
+	#Generate plate shields for GT materials.
+	generatePlateShield = true
+
+#Configuration related to global modifiers.
+["Global Modifiers"]
+
+	#Configuration related to head global modifiers
+	["Global Modifiers"."Head Global Modifiers"]
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalHeadDurabilityModifier = 1.0
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalHeadMiningSpeedModifier = 1.0
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalHeadAttackDamageModifier = 1.0
+
+	#Configuration related to limb global modifiers
+	["Global Modifiers"."Limb Global Modifiers"]
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalLimbDurabilityModifier = 1.0
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalLimbDrawSpeedModifier = 0.001
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalLimbVelocityModifier = 4.9E-324
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalLimbAccuracyModifier = 4.9E-324
+
+	#Configuration related to grip global modifiers
+	["Global Modifiers"."Grip Global Modifiers"]
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalGripDurabilityModifier = 0.2
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalGripAccuracyModifier = 0.16
+		#Range: 4.9E-324 ~ 1.7976931348623157E308
+		globalMeleeDamageModifier = 1.5
+
+	#Configuration related to handle global modifiers
+	["Global Modifiers"."Handle Global Modifiers"]
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalHandleDurabilityModifier = 1.0
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalHandleMiningSpeedModifier = 1.0
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalHandleAttackDamageModifier = 1.0
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalHandleAttackSpeedModifier = 1.0
+
+	#Configuration related to armor global modifiers
+	["Global Modifiers"."Armor Global Modifiers"]
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalArmorDurabilityModifier = 0.15
+
+	#Configuration related to shield global modifiers
+	["Global Modifiers"."Shield Global Modifiers"]
+		#Range: 0.1 ~ 1.7976931348623157E308
+		globalShieldDurabilityModifier = 1.0
+

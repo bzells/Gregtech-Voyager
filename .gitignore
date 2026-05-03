@@ -47,3 +47,4 @@ usernamecache.json
 *.zip
 config/oculus.properties
 /journeymap
+config/oculus.properties

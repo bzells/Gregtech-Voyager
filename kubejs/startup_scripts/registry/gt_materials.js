@@ -250,14 +250,15 @@ register_dust('dewatered_iridium_metal_residue', '', '0x094235');
 register_dust('impure_iridium_metal', '', '0x094235');
 
 register_fluid('acidic_shiny_metal_mixture','0x4f6cab', [])
-register_fluid('impure_shiny_metal_mixture','0x3f6cbc', [])
+register_fluid('impure_shiny_metal_mixture','0x3f6faf', [])
 register_dust('shiny_metallic_residue', '', '0x3b4724');
 
-register_fluid('sulfuric_rhodium_sludge','0x6c367a', [])
+register_fluid('sulfuric_rhodium_solution','0x6c367a', [])
+register_fluid('sulfuric_inert_metal_solution','0x1d367a', [])
 register_fluid('acidic_ruthenium_solution','0x3a333d', [])
-register_dust('impure_rhodium_sludge','0x3a333d', [])
+register_dust('impure_rhodium_sludge','0x3a111a', [])
 
-register_dust('plat_palladium_metal_residue','0x1f333c', [])
+register_dust('plat_palladium_metal_residue','0xabad74', [])
 register_fluid('sulfuric_plat-palladium_metal_solution','0x3a333d', [])
 
 register_fluid('sulfuric_kerosene','0xaaa22f', [])

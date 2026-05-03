@@ -154,6 +154,18 @@
 			x: -2.0d
 			y: 3.0d
 		}
+		{
+			icon: "kubejs:basic_chemist_helper"
+			id: "51B563F3401870A1"
+			size: 1.5d
+			tasks: [{
+				id: "7A4A9F2CB10CEC5D"
+				type: "checkmark"
+			}]
+			title: "Helpers"
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	title: "Welcome to GregTech: Voyager"
 }

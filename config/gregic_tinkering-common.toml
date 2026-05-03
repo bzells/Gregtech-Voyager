@@ -1,0 +1,13 @@
+#How quickly air ticks from the Air Tank modifier recharges per tick.
+#Range: > 1
+air_tank_recharge_rate = 10
+#How many air ticks are consumed per melee attack.
+#Range: > 0
+air_consumed_per_attack = 25
+#Chance per level out of 10000 for the Ore Grinder modifier to produce a dust.
+#Range: 1 ~ 10000
+dust_loot_chance = 500
+#Size of the dust item produced by the dust loot.
+#Allowed Values: NORMAL, SMALL, TINY
+dust_loot_dust_item_size = "SMALL"
+

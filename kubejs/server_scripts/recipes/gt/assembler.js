@@ -39,6 +39,19 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(480);
 
+    event.recipes.gtceu.assembler('kubejs:ev_helper_computation_array')
+        .itemInputs(
+            '3x #gtceu:circuits/ev',
+            '1x #gtceu:circuits/hv',
+            '1x gtceu:titanium_plate',
+            '4x gtceu:titanium_bolt',
+            '16x gtceu:fine_refined_fluxed_electrum_wire'
+        )
+        .itemOutputs('1x kubejs:ev_helper_computation_array')
+        .inputFluids("gtceu:soldering_alloy 1000")
+        .duration(1200)
+        .EUt(1980);
+
 
 
         // diodes
@@ -522,7 +535,7 @@ event.recipes.gtceu.assembler('kubejs:nichromecoil')
 event.recipes.gtceu.assembler('kubejs:deshcoil')
     .itemInputs(
         '8x gtceu:desh_double_wire',
-        '8x gtceu:vanadium_steel_foil',
+        '8x gtceu:tungsten_carbide_foil',
         '32x gtceu:polytetrafluoroethylene_foil',
     )
     // .notConsumable('kubejs:lv_technician_helper')

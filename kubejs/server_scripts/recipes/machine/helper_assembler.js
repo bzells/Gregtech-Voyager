@@ -73,6 +73,30 @@ ServerEvents.recipes(event => {
         .duration(2400)                               
         .EUt(480)  
 
+    event.recipes.gtceu
+        .helper_assembler('kubejs:hv_ebf_helper')   
+        .itemInputs('2x kubejs:ev_helper_computation_array', 'gtceu:titanium_frame', '8x gtceu:refined_fluxed_electrum_double_wire', '2x gtceu:ev_robot_arm', '2x gtceu:ev_electric_motor', '2x gtceu:titanium_rod')
+        .inputFluids("gtceu:soldering_alloy 1000")
+        .itemOutputs('kubejs:hv_ebf_helper')
+        .duration(20 * 120)                               
+        .EUt(1980)  
+
+    event.recipes.gtceu
+        .helper_assembler('kubejs:ev_technician_helper')   
+        .itemInputs('1x kubejs:ev_helper_computation_array', 'gtceu:titanium_frame', '8x gtceu:titanium_carbide_plate', '2x gtceu:ev_robot_arm', '2x gtceu:ev_electric_motor', '2x gtceu:titanium_rod', '#gtceu:circuits/iv')
+        .inputFluids("gtceu:epoxy 1000")
+        .itemOutputs('kubejs:ev_technician_helper')
+        .duration(2400)                               
+        .EUt(1980) 
+
+    event.recipes.gtceu
+        .helper_assembler('kubejs:basic_chemist_helper')   
+        .itemInputs('3x kubejs:ev_helper_computation_array', 'gtceu:iridium_frame', '8x gtceu:iridium_plate', '2x gtceu:ev_robot_arm', '2x gtceu:ev_electric_motor', '2x gtceu:titanium_rod', '#gtceu:circuits/luv')
+        .inputFluids("gtceu:epoxy 1000")
+        .itemOutputs('kubejs:basic_chemist_helper')
+        .duration(2400)                               
+        .EUt(1980) 
+
 
 
     event.shaped(
@@ -119,6 +143,13 @@ ServerEvents.recipes(event => {
             D: 'gtceu:tempered_glass'
         }
     )
+
+    event.recipes.gtceu
+        .assembler('kubejs:helper_factory')   
+        .itemInputs('16x gtceu:titanium_gear', '4x #gtceu:circuits/luv', '4x gtceu:desh_frame', '4x gtceu:ev_robot_arm', '4x gtceu:ev_electric_motor', '4x gtceu:ev_conveyor_module', '2x gtceu:titanium_rod', 'gtceu:ev_machine_hull')
+        .itemOutputs('gtceu:large_helper_factory')
+        .duration(2400)                               
+        .EUt(1980) 
 
 
 });

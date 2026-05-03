@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
 
         .pattern(definition => FactoryBlockPattern.start()
-                    // front  - moves by layer facing you
+
             .aisle("AAAAA", "BBBBB")
             .aisle("ACCCA", "B   B")
             .aisle("ACCCA", "B D B")
@@ -137,5 +137,42 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "kubejs:block/overlay/helper_wheel"
         )
 
+
+        event.create("large_helper_factory", "multiblock")
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("helper_assembler")
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+
+        // base block appearance
+        // .appearanceBlock('gtceu:clean_machine_casing')
+
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("AABBBBBAA", "AABDDDBAA", "AABBBBBAA", "AA     AA")
+            .aisle("AABBBBBAA", "ACCCCCCCA", "AEBBBBBEA", "AA     AA")
+            .aisle("AABB@BBAA", "AABDDDBAA", "AABBBBBAA", "AA     AA")
+
+
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+
+            .where("A", Predicates.blocks("gtceu:clean_machine_casing")
+        
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(8).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(8).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(8).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))  // make sure this is inside the .where, otherwise it will break shit
+
+            .where("B", Predicates.blocks("gtceu:stable_machine_casing"))
+            .where("C", Predicates.blocks("gtceu:titanium_gearbox"))
+            .where("D", Predicates.blocks("gtceu:laminated_glass"))
+            .where("E", Predicates.blocks("gtceu:titanium_pipe_casing"))
+            .where(" ", Predicates.air())
+
+            .build())
+
+            .workableCasingModel(
+            "gtceu:block/stable_machine_casing",       
+            "kubejs:block/multiblock/large_helper_assembler"
+        )
     
 });

@@ -946,6 +946,16 @@
 			x: 4.0d
 			y: 1.0d
 		}
+		{
+			id: "09E450DE0A6F98C7"
+			tasks: [{
+				id: "38F17BD7CB6012CB"
+				type: "checkmark"
+			}]
+			title: "Gregeric Tinkering"
+			x: -5.5d
+			y: 2.0d
+		}
 	]
 	title: "Chapter 0: Stone Age"
 }
