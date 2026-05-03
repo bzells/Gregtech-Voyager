@@ -1,4 +1,3 @@
-
 ServerEvents.recipes(event => {
 
     event.shaped(
@@ -74,8 +73,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('1x ae2:fluix_covered_cable')
         .duration(50)                                 
         .EUt(480)
-
-    //
 
     event.recipes.gtceu
         .assembler('kubejs:fluix_covered_dense_cable') 
@@ -305,11 +302,6 @@ ServerEvents.recipes(event => {
 
     )
 
-    // ================================================================
-    // AE2 TIER 1 — EV / TITANIUM: CRAFTING NETWORK MACHINES
-    // ================================================================
-
-    // --- Charger (MV tier — needed early to charge certus quartz) ---
     event.shaped(
         Item.of('ae2:charger', 1),
         [
@@ -324,7 +316,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Inscriber (EV tier — presses printed circuits/processors) ---
     event.shaped(
         Item.of('ae2:inscriber', 1),
         [
@@ -340,7 +331,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- ME Terminal ---
     event.shaped(
         Item.of('ae2:terminal', 1),
         [
@@ -357,7 +347,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Crafting Terminal (upgrade from ME Terminal) ---
     event.shapeless(
         Item.of('ae2:crafting_terminal', 1),
         [
@@ -367,7 +356,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // --- Pattern Encoding Terminal (upgrade from ME Terminal) ---
     event.shapeless(
         Item.of('ae2:pattern_encoding_terminal', 1),
         [
@@ -377,7 +365,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    // --- Wireless Access Point ---
     event.shaped(
         Item.of('ae2:wireless_access_point', 1),
         [
@@ -393,7 +380,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Wireless Receiver (GT assembler — intermediate for wireless terminal) ---
     event.recipes.gtceu
         .assembler('kubejs:wireless_receiver')
         .itemInputs(
@@ -406,7 +392,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(1980)
 
-    // --- Wireless Terminal (vanilla pattern: receiver → terminal → dense_energy_cell) ---
     event.shaped(
         Item.of('ae2:wireless_terminal', 1),
         [
@@ -421,7 +406,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Pattern Provider ---
     event.shaped(
         Item.of('ae2:pattern_provider', 1),
         [
@@ -438,7 +422,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Molecular Assembler ---
     event.recipes.gtceu
         .assembler('kubejs:molecular_assembler')
         .itemInputs(
@@ -453,7 +436,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1980)
 
-    // --- Crafting CPU: Unit (base multiblock component) ---
     event.shaped(
         Item.of('ae2:crafting_unit', 1),
         [
@@ -468,43 +450,41 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // --- Crafting CPU: Storage (assembler tier scales with storage size) ---
     event.recipes.gtceu
         .assembler('kubejs:1k_crafting_storage')
         .itemInputs('ae2:crafting_unit', 'ae2:cell_component_1k')
         .itemOutputs('ae2:1k_crafting_storage')
         .duration(200)
-        .EUt(480)   // HV
+        .EUt(480)
 
     event.recipes.gtceu
         .assembler('kubejs:4k_crafting_storage')
         .itemInputs('ae2:crafting_unit', 'ae2:cell_component_4k')
         .itemOutputs('ae2:4k_crafting_storage')
         .duration(200)
-        .EUt(1920)  // EV
+        .EUt(1920)
 
     event.recipes.gtceu
         .assembler('kubejs:16k_crafting_storage')
         .itemInputs('ae2:crafting_unit', 'ae2:cell_component_16k')
         .itemOutputs('ae2:16k_crafting_storage')
         .duration(200)
-        .EUt(7680)  // IV
+        .EUt(7680)
 
     event.recipes.gtceu
         .assembler('kubejs:64k_crafting_storage')
         .itemInputs('ae2:crafting_unit', 'ae2:cell_component_64k')
         .itemOutputs('ae2:64k_crafting_storage')
         .duration(200)
-        .EUt(30720) // LuV
+        .EUt(30720)
 
     event.recipes.gtceu
         .assembler('kubejs:256k_crafting_storage')
         .itemInputs('ae2:crafting_unit', 'ae2:cell_component_256k')
         .itemOutputs('ae2:256k_crafting_storage')
         .duration(200)
-        .EUt(30720) // LuV
+        .EUt(30720)
 
-    // --- Crafting CPU: Monitor (assembler — depth 2, uses crafting_unit) ---
     event.recipes.gtceu
         .assembler('kubejs:crafting_monitor')
         .itemInputs(
@@ -517,7 +497,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(480)
 
-    // --- Crafting CPU: Accelerator (2x output — more speed per CPU) ---
     event.recipes.gtceu
         .assembler('kubejs:crafting_accelerator')
         .itemInputs(
@@ -529,7 +508,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(1980)
 
-    // --- ME Chest ---
     event.recipes.gtceu
         .assembler('kubejs:me_chest')
         .itemInputs(
@@ -543,7 +521,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(480)
 
-    // --- IO Port ---
     event.recipes.gtceu
         .assembler('kubejs:io_port')
         .itemInputs(
