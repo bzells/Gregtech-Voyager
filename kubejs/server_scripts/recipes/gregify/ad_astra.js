@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
     .itemInputs(
         '36x gtceu:double_desh_plate',
         '32x gtceu:lunarium_foil',
-        '32x gtceu:carbon_fiber_mesh',
+        '16x gtceu:osmium_foil',
         '24x gtceu:steel_bolt'
     )
     // .notConsumable('kubejs:lv_technician_helper')
@@ -291,8 +291,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('kubejs:desh_rocket_nose')
     .itemInputs(
         '6x kubejs:desh_rocket_hull_plate',
-        '2x gtceu:iv_sensor',
-        '2x gtceu:iv_field_generator',
+        'kubejs:desh_interplanetary_coordinatal_calculator',
         '16x #gtceu:circuits/luv',
         '24x gtceu:lunarium_foil'
     )
@@ -304,7 +303,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('kubejs:desh_rocket_fin')
     .itemInputs(
         '4x kubejs:desh_rocket_hull_plate',
-        '32x gtceu:double_titanium_plate',
+        '32x gtceu:double_iridium_plate',
         '32x gtceu:lunarium_foil'
     )
     .itemOutputs('kubejs:desh_rocket_fin')
@@ -320,6 +319,20 @@ ServerEvents.recipes(event => {
     )
     .itemOutputs('ad_astra:desh_tank')
     .inputFluids("gtceu:polybenzimidazole 1000")
+    .duration(20*60*5)
+    .EUt(1980);
+
+    event.recipes.gtceu.assembler('kubejs:desh_interplanetary_coordinatal_calculator')
+    .itemInputs(
+        '4x gtceu:iv_sensor',
+        '4x gtceu:iv_emitter',
+        '4x gtceu:ev_field_generator',
+        '4x #gtceu:circuits/luv',
+        '2x gtceu:double_desh_plate',
+        '32x gtceu:fine_refined_fluxed_electrum_wire'
+    )
+    .itemOutputs('kubejs:desh_interplanetary_coordinatal_calculator')
+    .inputFluids("gtceu:soldering_alloy 1000")
     .duration(20*60*5)
     .EUt(1980);
 });

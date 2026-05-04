@@ -517,7 +517,7 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 4.5d
 		}
 		{
@@ -530,7 +530,7 @@
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: 5.5d
 		}
 		{
@@ -907,8 +907,8 @@
 				item: "gtceu:ev_large_miner"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 7.5d
+			x: 12.0d
+			y: 6.5d
 		}
 		{
 			id: "63D43519195DF6F5"
@@ -945,6 +945,125 @@
 				type: "item"
 			}]
 			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"04BD5101521DF8BC"
+				"0D398D8FE47F9B67"
+			]
+			id: "762CECEC6B87394B"
+			tasks: [{
+				id: "6E8D2D8DE546DDCF"
+				item: "kubejs:desh_rocket_hull_plate"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["762CECEC6B87394B"]
+			id: "73CEC180BC19B0FA"
+			tasks: [{
+				id: "158442B1B7E2AD4F"
+				item: "kubejs:desh_rocket_fin"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 12.5d
+		}
+		{
+			id: "021E59556554686B"
+			tasks: [{
+				id: "61BB15D5C531C012"
+				item: "kubejs:desh_rocket_nose_cone"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["762CECEC6B87394B"]
+			id: "35E68CACC30F3911"
+			tasks: [{
+				id: "0B2CB15DB3BE76DE"
+				item: "ad_astra:desh_tank"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["762CECEC6B87394B"]
+			id: "306558EE1954AAFB"
+			tasks: [{
+				id: "5508B27F3E410239"
+				item: "ad_astra:desh_engine"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 12.5d
+		}
+		{
+			id: "29D74386F91EF48E"
+			tasks: [{
+				id: "4DF489E75BFB6970"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["29D74386F91EF48E"]
+			id: "6004CF7904CD2F8D"
+			tasks: [{
+				id: "5EE26845D57BBBF3"
+				item: "gtceu:quantum_star"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 5.5d
+		}
+		{
+			id: "6E3917BFB3097501"
+			tasks: [{
+				id: "34A1FC9A92E4DCD7"
+				item: "gtceu:iv_field_generator"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			id: "5852659183FD39DB"
+			tasks: [{
+				id: "6403A34E783FFE5E"
+				item: "gtceu:iv_sensor"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 6.5d
+		}
+		{
+			id: "7AC853BA719D957B"
+			tasks: [{
+				id: "009DF593A842841A"
+				item: "gtceu:samarium_iron_arsenic_oxide_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0CF9F8DAD18EC2DD"]
+			id: "742D80F21B781452"
+			tasks: [{
+				id: "2CF5201454153EC6"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 15.0d
 			y: 4.5d
 		}
 	]
