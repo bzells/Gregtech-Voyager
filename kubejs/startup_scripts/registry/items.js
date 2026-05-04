@@ -99,8 +99,12 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_voucher(tier));
 
     event.create('rocket_hull_plate').texture('kubejs:item/rocket_hull_plate').maxStackSize(16).displayName('Rocket Hull Plate');
+    event.create('desh_rocket_hull_plate').texture('kubejs:item/desh_rocket_hull_plate').maxStackSize(16).displayName('Desh Rocket Hull Plate');
+    event.create('desh_rocket_fin').texture('kubejs:item/desh_rocket_fin').maxStackSize(16).displayName('Desh Rocket Fin');
+    event.create('desh_rocket_nose_cone').texture('kubejs:item/desh_rocket_nose_cone').maxStackSize(16).displayName('Desh Rocket Nose Cone');
 
 
+    
     event.create('compressed_grout').texture('kubejs:item/compressed_grout').displayName('Compressed Grout');
 
 
