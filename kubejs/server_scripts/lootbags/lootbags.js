@@ -269,6 +269,42 @@ LootJS.modifiers(event => {
             Item.of("1x kubejs:heart_of_gold").withChance(.15),
         ]);
 
+    event
+        .addLootTableModifier("kubejs:ev_loot_bag")
+        .addWeightedLoot([
+            Item.of("1x gtceu:nano_processor_assembly").withChance(4),
+            Item.of("1x gtceu:ev_conveyor_module").withChance(2/100*100),
+            Item.of("1x gtceu:ev_electric_pump").withChance(2/100*100),
+            Item.of("2x gtceu:ev_electric_motor").withChance(4/100*100),
+            Item.of("1x gtceu:ev_fluid_regulator").withChance(2/100*100),
+            Item.of("1x gtceu:ev_electric_piston").withChance(4/100*100),
+            Item.of("1x gtceu:ev_robot_arm").withChance(2/100*100),
+            Item.of("1x gtceu:hv_emitter").withChance(1/100*100),
+            Item.of("1x gtceu:ev_sensor").withChance(1/100*100),
+            Item.of("1x gtceu:ev_output_hatch").withChance(1/100*100),
+            Item.of("1x gtceu:ev_input_hatch").withChance(1/100*100),
+            Item.of("1x gtceu:ev_input_bus").withChance(1/100*100),
+            Item.of("gtceu:ev_output_bus").withChance(1/100*100),
+            Item.of("8x kubejs:ev_universal_coin").withChance(75),
+            Item.of("gtceu:ev_vanadium_battery").withChance(1/100*100),
+            Item.of("1x kubejs:ev_helper_computation_array").withChance(.5/100*100),
+            Item.of("4x gtceu:titanium_carbide_ingot").withChance(3/100*100),
+            Item.of({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:fortune", lvl: 5}]}}).withChance(.25),
+            Item.of({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "apotheosis:life_mending", lvl: 3}]}}).withChance(.25),
+            Item.of({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:looting", lvl: 5}]}}).withChance(.25),
+            Item.of("gtceu:ev_super_chest").withChance(.75),
+            Item.of("gtceu:mv_super_tank").withChance(3),
+            Item.of("kubejs:ev_loot_bag").withChance(2),
+            Item.of("gtceu:hv_solar_panel").withChance(.15),
+            Item.of("gtceu:ev_power_unit").withChance(1),
+            Item.of("gtceu:machine_controller_cover").withChance(2),
+            Item.of("gtceu:ender_restone_link_cover").withChance(2),
+            Item.of("gtceu:refined_fluxed_electrum_hex_wire").withChance(3),
+            Item.of("3x gtceu:titanium_fluid_cell").withChance(8),
+            Item.of("bhc:red_heart").withChance(1),
+            Item.of("2x minecraft:nether_star").withChance(.5),
+        ]);
+
 });
 
 ItemEvents.rightClicked('kubejs:stone_bag', event => {

@@ -20,6 +20,11 @@
 			]
 			id: "084337D3DABDD960"
 			min_required_tasks: 1
+			rewards: [{
+				id: "4F054B9359F5BC3F"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [
 				{
@@ -46,6 +51,11 @@
 			dependencies: ["37CD9E855B60C87D"]
 			description: ["If you didn't know, the &6HV&r ebf helper makes titanium a lot faster. Make one"]
 			id: "307B3D1F044D7B30"
+			rewards: [{
+				id: "29D83386D8D273CC"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "5569D0326F0EF715"
@@ -58,6 +68,11 @@
 		{
 			dependencies: ["084337D3DABDD960"]
 			id: "37CD9E855B60C87D"
+			rewards: [{
+				id: "1D892F7C3000F209"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3A078B02F41405A5"
 				item: "gtceu:titanium_tetrachloride_bucket"
@@ -69,6 +84,11 @@
 		{
 			dependencies: ["326C8D8399063A93"]
 			id: "6ACFB73F20BF2828"
+			rewards: [{
+				id: "173B0B7B863A124C"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			subtitle: "Better than nitrogen"
 			tasks: [{
 				id: "50C1AB2A376BEBE4"
@@ -85,6 +105,11 @@
 			]
 			hide_dependent_lines: true
 			id: "6EB67BA7F00DC419"
+			rewards: [{
+				id: "21A0D6154ABBBE7A"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "4FE2969202BEB308"
@@ -101,6 +126,11 @@
 				"34ED22791B767607"
 			]
 			id: "4B16F35B8A109539"
+			rewards: [{
+				id: "5A2362E97687BCDA"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "68E72576F73A6982"
 				item: "kubejs:refined_fluxed_electrum_crystal"
@@ -112,6 +142,11 @@
 		{
 			dependencies: ["50EE25EAC7C546FC"]
 			id: "244F259B3F4613E1"
+			rewards: [{
+				id: "49E4312A3A0EFB99"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7708B016E5C0CEEC"
 				item: "kubejs:crystalline_titanium_electrum"
@@ -126,6 +161,11 @@
 				"6C021E9E2CDE5EFF"
 			]
 			id: "50EE25EAC7C546FC"
+			rewards: [{
+				id: "7A0B6CB52318A741"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "70C5217881700D86"
 				item: "gtceu:fluxed_titanium_electrum_compound_dust"
@@ -158,13 +198,17 @@
 		}
 		{
 			description: [
-				"Neodymium"
-				"Ilmenite"
-				"Bauxite"
-				"Bornite"
-				"Lunite"
-				"Socochalamite"
-				"Glunite"
+				"There are a good chunk of ores that spawn on the moon. Some are &omoon exclusive&r and are needed for &dEV+&r progression."
+				""
+				"&5Neodymium&r"
+				"&0Ilmenite&r - &drutile/titanium&r"
+				"&eBauxite&r - &drutile/titanium&r"
+				"&6Bornite - used for platinum group sludge&r"
+				"&1Lunite&r - best ore for desh group sludge&r"
+				"&9Socochalamite&r"
+				"&eGlunite - good source of glowstone&r"
+				"&8Magnetite&r"
+				"&cChromium&r"
 			]
 			icon: "gtceu:raw_ilmenite"
 			id: "1DB10F87357C83A2"
@@ -204,13 +248,27 @@
 		}
 		{
 			dependencies: ["307B3D1F044D7B30"]
+			description: [
+				"&dEV&r is the age of processing lines. Be prepared to make a LOT of LCRs."
+				"While it may seem daunting right now, when you hit &9IV&r you will be able to upgrade all of your"
+				"processing lines, without having to make many more."
+				""
+				"To help accomadate all of the logistics needed to create all of your processing lines, you now have access to &3AE2&r. I suggest setting up your AE2 system first thing."
+			]
 			id: "591742EF37E96F38"
+			rewards: [{
+				count: 4
+				id: "44054FDD1CDBC85A"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "1D1DFE37C273C2EB"
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
+			title: "Welcome to EV!"
 			x: 3.5d
 			y: 3.0d
 		}
@@ -237,6 +295,11 @@
 		{
 			dependencies: ["307B3D1F044D7B30"]
 			id: "4DEE1F3E73302493"
+			rewards: [{
+				id: "2F4017A2EF06CD20"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "17F60803FC379F03"
 				item: "gtceu:ev_electric_motor"
@@ -248,6 +311,11 @@
 		{
 			dependencies: ["4DEE1F3E73302493"]
 			id: "4B732822A3B224E7"
+			rewards: [{
+				id: "1CA160BE2B799F93"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "194CC653899D6B24"
 				item: "gtceu:ev_electric_piston"
@@ -263,6 +331,11 @@
 			]
 			hide_dependent_lines: true
 			id: "5943DC5F54ED9F40"
+			rewards: [{
+				id: "30E8AAB7696D278C"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "0D97E85C02CEA132"
@@ -277,6 +350,11 @@
 			dependencies: ["4DEE1F3E73302493"]
 			hide_dependent_lines: true
 			id: "1CA9601A2A5F56A4"
+			rewards: [{
+				id: "617D9475457C7281"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33421A7579FD27CA"
 				item: "gtceu:ev_conveyor_module"
@@ -289,6 +367,11 @@
 			dependencies: ["4DEE1F3E73302493"]
 			hide_dependent_lines: true
 			id: "0F995931300B2323"
+			rewards: [{
+				id: "23FF7BC6EDA51D40"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "62B0A76C139FA992"
 				item: "gtceu:ev_electric_pump"
@@ -300,6 +383,11 @@
 		{
 			dependencies: ["0F995931300B2323"]
 			id: "4C8F0DE2550B5EFC"
+			rewards: [{
+				id: "29A52277D8A9BEE8"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0182E9F3001C264B"
 				item: "gtceu:ev_fluid_regulator"
@@ -315,6 +403,11 @@
 			]
 			hide_dependency_lines: true
 			id: "1D18348492546BAE"
+			rewards: [{
+				id: "601A7CFC4C099564"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "355C6F37464B0550"
 				item: "gtceu:ev_sensor"
@@ -330,6 +423,11 @@
 			]
 			hide_dependency_lines: true
 			id: "28DAF2CF9571AF5A"
+			rewards: [{
+				id: "46AA05B7381600CD"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "409AA7F5361E16BE"
 				item: "gtceu:ev_emitter"
@@ -345,6 +443,12 @@
 				"0F995931300B2323"
 			]
 			id: "51FA7C2C0374BDAB"
+			rewards: [{
+				count: 4
+				id: "7CC6B59A8A3B2963"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			subtitle: "Better rutile processing"
 			tasks: [{
 				id: "4FB1450B2F9E9363"
@@ -358,6 +462,11 @@
 			dependencies: ["51FA7C2C0374BDAB"]
 			description: ["Now that you have an &dEV&r chemical bath, you can get WAAAY more titanium from your ilmenite. You can also get some useful biproducts like tantalum, and Desh"]
 			id: "32F8AB8BF51222B5"
+			rewards: [{
+				id: "1100638FF09E5DF6"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			subtitle: "Do this."
 			tasks: [{
 				id: "6D199EFBF313D7DC"
@@ -372,6 +481,11 @@
 			description: ["Desh-line is it's own thing, but for now you can get some of it as a byproduct from ilmenite processing."]
 			hide_dependent_lines: true
 			id: "766A7AFB2AE2F098"
+			rewards: [{
+				id: "41B2F1FF30B36BD2"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3AB53C314B849474"
 				item: "gtceu:desh_dust"
@@ -386,6 +500,11 @@
 				"5943DC5F54ED9F40"
 			]
 			id: "7BD63E2D4B804A69"
+			rewards: [{
+				id: "468743507E2C1C6D"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B6009F4C61E4886"
 				item: "gtceu:ev_assembler"
@@ -395,7 +514,13 @@
 			y: 4.5d
 		}
 		{
+			hide_dependent_lines: true
 			id: "3D1665D6742E7DDC"
+			rewards: [{
+				id: "5AD4490F8C1715AB"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6DF341BD7E76DAAF"
 				item: "gtceu:ultimet_ingot"
@@ -407,6 +532,11 @@
 		{
 			dependencies: ["3D1665D6742E7DDC"]
 			id: "139CE36CAFC02F4F"
+			rewards: [{
+				id: "0FD2C4E6473F9B16"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "418DF5B6F31426B5"
 				item: "gtceu:ev_cutter"
@@ -418,6 +548,11 @@
 		{
 			dependencies: ["139CE36CAFC02F4F"]
 			id: "38EFAAD003E697C7"
+			rewards: [{
+				id: "095700EFE4133AEB"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "08570EA92C5A4F68"
@@ -431,11 +566,16 @@
 				}
 			]
 			x: 5.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7BD63E2D4B804A69"]
 			id: "71436BF1CBD569ED"
+			rewards: [{
+				id: "7F00051C54058EAE"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B588B60D6ABEB52"
 				item: "gtceu:ev_voltage_coil"
@@ -449,7 +589,13 @@
 				"71436BF1CBD569ED"
 				"38EFAAD003E697C7"
 			]
+			description: ["Be ready to overclock a lot of LCRs..."]
 			id: "6D599070FCBCD71C"
+			rewards: [{
+				id: "50FC83BB1C92F775"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "7FFFE276707FDE34"
@@ -457,21 +603,27 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"6D599070FCBCD71C"
 				"766A7AFB2AE2F098"
 			]
+			hide_dependent_lines: true
 			id: "6154764CC312BD4E"
+			rewards: [{
+				id: "6FB75062983DBB64"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "31D3CF5F051A8E1E"
 				item: "gtceu:desh_ingot"
 				type: "item"
 			}]
 			x: 8.5d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -481,6 +633,11 @@
 			]
 			hide_dependent_lines: true
 			id: "1E76B42857AC04C9"
+			rewards: [{
+				id: "599AAC71E1FBC41C"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				count: 16L
 				id: "0E2BA59A4321FB4F"
@@ -497,13 +654,18 @@
 			]
 			hide_dependency_lines: true
 			id: "525AB3C856187597"
+			rewards: [{
+				id: "3A524EAF2D22A961"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "21A71DC302324838"
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 4.5d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -511,13 +673,19 @@
 				"525AB3C856187597"
 				"0DE67CA0A8DD130A"
 			]
+			hide_dependent_lines: true
 			id: "0CF9F8DAD18EC2DD"
+			rewards: [{
+				id: "6B626FBD1C20C190"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D67866AE085BF29"
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 10.0d
 			y: 4.5d
 		}
 		{
@@ -525,16 +693,28 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "0DE67CA0A8DD130A"
+			rewards: [{
+				id: "2CBD25C3A3EBADFB"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1439D3A9B6506A6D"
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
 			x: 10.0d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
+			dependencies: ["307B3D1F044D7B30"]
+			hide_dependency_lines: true
 			id: "231A80D860E922CD"
+			rewards: [{
+				id: "24D7785026B1850C"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "071E856D965D1B44"
 				item: "gtceu:epoxy_bucket"
@@ -546,6 +726,11 @@
 		{
 			dependencies: ["231A80D860E922CD"]
 			id: "565C3E282730B949"
+			rewards: [{
+				id: "23B69722848B3343"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "764D4A8B3DBAAB66"
 				item: "gtceu:epoxy_circuit_board"
@@ -557,6 +742,11 @@
 		{
 			dependencies: ["565C3E282730B949"]
 			id: "2A37700FA1504390"
+			rewards: [{
+				id: "75CA48EA35C91AF8"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "65C617DB2D7D6CCA"
 				item: "gtceu:epoxy_printed_circuit_board"
@@ -589,6 +779,12 @@
 				"4EA8D5772612E022"
 			]
 			id: "193AEA6982472A2E"
+			rewards: [{
+				count: 4
+				id: "12013CC1B030D55C"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "63BA99C14FA680E5"
 				item: "gtceu:nano_processor"
@@ -600,6 +796,12 @@
 		{
 			dependencies: ["193AEA6982472A2E"]
 			id: "1A121CDED7D9E534"
+			rewards: [{
+				count: 4
+				id: "37631080946FD66B"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E180187D143F5F8"
 				item: "gtceu:nano_processor_assembly"
@@ -614,6 +816,11 @@
 				"6EB67BA7F00DC419"
 			]
 			id: "6677CE6FD7F727F1"
+			rewards: [{
+				id: "6E944F364A9A59D6"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6798C73B894AF37D"
 				item: "gtceu:nano_processor_computer"
@@ -623,8 +830,16 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6677CE6FD7F727F1"]
+			dependencies: [
+				"6677CE6FD7F727F1"
+				"6154764CC312BD4E"
+			]
 			id: "5D1E251B9F28C8B4"
+			rewards: [{
+				id: "086BCB98C7E11A7B"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "53655FBF94387C7A"
@@ -642,6 +857,12 @@
 				"555CAC081A3AE5B0"
 			]
 			id: "4EA8D5772612E022"
+			rewards: [{
+				count: 2
+				id: "17DEC6D286291D88"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "44A286304E952A59"
 				item: "gtceu:ev_circuit_assembler"
@@ -652,13 +873,19 @@
 		}
 		{
 			description: [
-				"Neodymium"
-				"Ilmenite"
-				"Bauxite"
-				"Tungstate"
-				"Bornite"
+				"Since there are numerous processing lines in this chapter, you have access to stronger machines designed to make the process a LOT faster. They can also help with ore processing."
+				""
+				"You have large multiblocks for the following machines:"
+				""
+				"&6Centrifuge&r"
+				"&9Electrolyzer&r"
+				"&4Macerator&r"
+				""
+				"These multiblocks aren't quite as strong as the &9IV+&r ones, but they are much much stronger than singleblocks."
+				""
+				"They can batch recipes (process ALL of an input at once), and have &l&eperfect overclocking&r. They are similar to multis found in &1Star Technology&r. That being said, they can also only have one energy hatch, and only &8normal maintenance&r hatches."
 			]
-			icon: "gtceu:raw_ilmenite"
+			icon: "gtceu:cube_macerator"
 			id: "652839F632E42BF0"
 			shape: "octagon"
 			size: 2.0d
@@ -666,7 +893,7 @@
 				id: "1409DD4CEE93C428"
 				type: "checkmark"
 			}]
-			title: "New Helper Multiblock"
+			title: "Machine Multiblocks"
 			x: 4.0d
 			y: -4.0d
 		}
@@ -680,6 +907,12 @@
 			]
 			hide_dependency_lines: true
 			id: "6DF19110DCF8CB62"
+			rewards: [{
+				count: 2
+				id: "7C9628E471B59607"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "589DF1B5A69720C1"
@@ -716,6 +949,11 @@
 			]
 			hide_dependency_lines: true
 			id: "19A453F951604D8D"
+			rewards: [{
+				id: "37FE124124F49796"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BB30C8CF37F3862"
 				item: "kubejs:ev_technician_helper"
@@ -738,6 +976,11 @@
 			]
 			hide_dependency_lines: true
 			id: "49A011D6C4410155"
+			rewards: [{
+				id: "4B19D17DFFB2FA1F"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7638DABA4BACB901"
 				item: "kubejs:hv_ebf_helper"
@@ -766,6 +1009,12 @@
 			]
 			hide_dependency_lines: true
 			id: "6E325CF121E77BE5"
+			rewards: [{
+				count: 2
+				id: "3423BC5234C3A7A6"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "394967A2068BD56C"
 				item: "kubejs:basic_chemist_helper"
@@ -776,7 +1025,17 @@
 		}
 		{
 			dependencies: ["6D599070FCBCD71C"]
+			description: [
+				"I would recommend completing &eplat-line&r before &6desh-line&r so that you can make the &basic chemist helper&r for desh and plat line."
+				""
+				"For more information on &eplat-line&r, see the &nProcessing Lines Chapter&r"
+			]
 			id: "70E27B7B4AECA72C"
+			rewards: [{
+				id: "68ECDBD365C9C7AD"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "5BF0D8EA01710C35"
@@ -785,11 +1044,21 @@
 			}]
 			title: "Plat-line"
 			x: 10.5d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6D599070FCBCD71C"]
+			description: [
+				"I would recommend completing &eplat-line&r before &6desh-line&r so that you can make the &basic chemist helper&r for desh and plat line."
+				""
+				"For more information on &eplat-line&r, see the &nProcessing Lines Chapter&r"
+			]
 			id: "34CBE97EDD370F39"
+			rewards: [{
+				id: "570583CEBEDC4B12"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "2690530B4BC7A3FF"
@@ -798,11 +1067,17 @@
 			}]
 			title: "Desh-line"
 			x: 10.5d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["70E27B7B4AECA72C"]
 			id: "0D398D8FE47F9B67"
+			rewards: [{
+				count: 3
+				id: "00A4D4B452E06C89"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7D01647CDE5BC77E"
@@ -837,11 +1112,17 @@
 			]
 			title: "Platinum Line Byproducts"
 			x: 12.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["34CBE97EDD370F39"]
 			id: "04BD5101521DF8BC"
+			rewards: [{
+				count: 3
+				id: "72C9A70BA2E7D7F3"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "183D1A0E20465A0B"
@@ -866,11 +1147,16 @@
 			]
 			title: "Desh-line Byproducts"
 			x: 12.0d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["4CDFDD7B54850B8E"]
 			id: "0536C639840A0927"
+			rewards: [{
+				id: "162DBB3386A4C549"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "31146B32A15DBC65"
 				item: "gtceu:laminated_glass"
@@ -881,6 +1167,11 @@
 		}
 		{
 			id: "4CDFDD7B54850B8E"
+			rewards: [{
+				id: "03D8A9C33A75C255"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "79128C4F5D349DF2"
 				item: "gtceu:polyvinyl_butyral_bucket"
@@ -902,17 +1193,45 @@
 		{
 			dependencies: ["04BD5101521DF8BC"]
 			id: "6777009AD5019D17"
+			rewards: [{
+				id: "1581133088BD8E49"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2BCA8653AA67D3D5"
 				item: "gtceu:ev_large_miner"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.5d
+			x: 13.5d
+			y: 7.5d
 		}
 		{
+			dependencies: [
+				"306558EE1954AAFB"
+				"73CEC180BC19B0FA"
+				"762CECEC6B87394B"
+				"021E59556554686B"
+				"35E68CACC30F3911"
+			]
+			hide_dependency_lines: true
 			id: "63D43519195DF6F5"
+			rewards: [
+				{
+					count: 4
+					id: "15D66B4868DAFE3E"
+					item: "kubejs:ev_loot_bag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E6F8AEEF484D250"
+					table_id: 5335890956226663218L
+					type: "choice"
+				}
+			]
 			size: 3.0d
+			subtitle: "To Mars and IV!"
 			tasks: [{
 				id: "30272E3C5796D062"
 				item: {
@@ -922,23 +1241,34 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["1E76B42857AC04C9"]
 			id: "142689E8442A48E2"
+			rewards: [{
+				id: "3B8A7A00538A1A56"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2FA5D0679E5E79D2"
 				item: "gtceu:uranium_triplatinum_ingot"
 				type: "item"
 			}]
 			x: 11.0d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7BD63E2D4B804A69"]
 			id: "74668576E35DB45A"
+			rewards: [{
+				count: 8
+				id: "01AE9567C73CD378"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33EB07DAA43B9BAF"
 				item: "gtceu:hv_fluid_drilling_rig"
@@ -953,118 +1283,399 @@
 				"0D398D8FE47F9B67"
 			]
 			id: "762CECEC6B87394B"
+			rewards: [{
+				id: "1371AC4F7C3DF118"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
+				count: 6L
 				id: "6E8D2D8DE546DDCF"
 				item: "kubejs:desh_rocket_hull_plate"
 				type: "item"
 			}]
 			x: 12.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
-			dependencies: ["762CECEC6B87394B"]
+			dependencies: [
+				"762CECEC6B87394B"
+				"267BE42AF6304F3E"
+			]
 			id: "73CEC180BC19B0FA"
+			rewards: [{
+				id: "7ABB4521CB31CBC5"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
+				count: 4L
 				id: "158442B1B7E2AD4F"
 				item: "kubejs:desh_rocket_fin"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 12.5d
+			x: 13.0d
+			y: 13.0d
 		}
 		{
+			dependencies: [
+				"24C6B399C73932EA"
+				"762CECEC6B87394B"
+				"5D1E251B9F28C8B4"
+			]
+			hide_dependency_lines: true
 			id: "021E59556554686B"
+			rewards: [{
+				count: 2
+				id: "7FCE22A08DDE01CE"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "61BB15D5C531C012"
 				item: "kubejs:desh_rocket_nose_cone"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 11.0d
+			x: 14.0d
+			y: 13.5d
 		}
 		{
-			dependencies: ["762CECEC6B87394B"]
+			dependencies: [
+				"762CECEC6B87394B"
+				"267BE42AF6304F3E"
+			]
 			id: "35E68CACC30F3911"
+			rewards: [{
+				id: "597DC1C9E4AB785C"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
+				count: 2L
 				id: "0B2CB15DB3BE76DE"
 				item: "ad_astra:desh_tank"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 12.5d
+			x: 11.0d
+			y: 13.0d
 		}
 		{
-			dependencies: ["762CECEC6B87394B"]
+			dependencies: [
+				"762CECEC6B87394B"
+				"267BE42AF6304F3E"
+			]
 			id: "306558EE1954AAFB"
+			rewards: [{
+				id: "200A63A35D8AAC22"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5508B27F3E410239"
 				item: "ad_astra:desh_engine"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 12.5d
+			x: 12.0d
+			y: 13.0d
 		}
 		{
 			id: "29D74386F91EF48E"
+			rewards: [{
+				id: "248D53CB75833D69"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4DF489E75BFB6970"
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 5.5d
+			x: 15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["29D74386F91EF48E"]
 			id: "6004CF7904CD2F8D"
+			rewards: [{
+				id: "293D9772FE45235E"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EE26845D57BBBF3"
 				item: "gtceu:quantum_star"
 				type: "item"
 			}]
 			x: 15.0d
-			y: 5.5d
+			y: 9.0d
 		}
 		{
+			dependencies: [
+				"142689E8442A48E2"
+				"29D74386F91EF48E"
+			]
 			id: "6E3917BFB3097501"
-			tasks: [{
-				id: "34A1FC9A92E4DCD7"
-				item: "gtceu:iv_field_generator"
+			rewards: [{
+				id: "772B4990CA27E9A7"
+				item: "kubejs:ev_loot_bag"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 6.5d
+			tasks: [{
+				id: "34A1FC9A92E4DCD7"
+				item: "gtceu:ev_field_generator"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
 		}
 		{
+			dependencies: [
+				"0CF9F8DAD18EC2DD"
+				"6004CF7904CD2F8D"
+				"0D398D8FE47F9B67"
+			]
 			id: "5852659183FD39DB"
+			rewards: [{
+				id: "6CA29ACFB5F8876F"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6403A34E783FFE5E"
 				item: "gtceu:iv_sensor"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 6.5d
+			x: 13.5d
+			y: 9.0d
 		}
 		{
-			id: "7AC853BA719D957B"
+			dependencies: [
+				"5852659183FD39DB"
+				"3F87D3EBB5E3BBC4"
+				"6EB67BA7F00DC419"
+			]
+			id: "24C6B399C73932EA"
+			rewards: [{
+				id: "0DE60B8ACE73B0D9"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
-				id: "009DF593A842841A"
-				item: "gtceu:samarium_iron_arsenic_oxide_ingot"
+				id: "039664C12C10A087"
+				item: "kubejs:desh_interplanetary_coordinatal_calculator"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"6004CF7904CD2F8D"
+				"0D398D8FE47F9B67"
+			]
+			hide_dependent_lines: true
+			id: "3F87D3EBB5E3BBC4"
+			rewards: [{
+				id: "356B853B10B7A54D"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CDFA3139F57F787"
+				item: "gtceu:iv_emitter"
 				type: "item"
 			}]
 			x: 13.5d
-			y: 7.5d
+			y: 11.0d
 		}
 		{
-			dependencies: ["0CF9F8DAD18EC2DD"]
-			id: "742D80F21B781452"
+			dependencies: ["63D43519195DF6F5"]
+			icon: "ad_astra:mars_globe"
+			id: "63F0E8466487E7F8"
+			size: 1.5d
 			tasks: [{
-				id: "2CF5201454153EC6"
-				item: "gtceu:hssg_ingot"
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_globe"
+				id: "0E40612D7BB1F8B4"
+				type: "dimension"
+			}]
+			title: "Go to Mars!"
+			x: 12.0d
+			y: 17.5d
+		}
+		{
+			description: ["Coming soon..."]
+			id: "75544A32DE6F9959"
+			tasks: [{
+				id: "1B066215F1219899"
+				title: "Nether star looping"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "267BE42AF6304F3E"
+			tasks: [{
+				id: "2E378B03F51F5607"
+				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 4.5d
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"3D1665D6742E7DDC"
+				"6154764CC312BD4E"
+				"5E70676DB159EED3"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"These multiblocks aren't quite as strong as the &9IV+&r ones, but they are much much stronger than singleblocks."
+				""
+				"They can batch recipes (process ALL of an input at once), and have &l&eperfect overclocking&r. They are similar to multis found in &1Star Technology&r. That being said, they can also only have one energy hatch, and only &8normal maintenance&r hatches."
+				""
+				"In future, these will be nerfed to only use the 2A hatches. But for now, have fun while it lasts"
+				""
+				"&8&o- GregTech: Voyager Dev Team"
+			]
+			id: "25C99D6AAE7C5436"
+			rewards: [{
+				count: 3
+				id: "0E261DDF67EF5734"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "46FB61DF6AC076C5"
+					item: "gtceu:cube_centrifuge"
+					type: "item"
+				}
+				{
+					id: "475E597813D8F3C1"
+					item: "gtceu:cube_electrolyzer"
+					type: "item"
+				}
+				{
+					id: "74D6D7E3DD504DFB"
+					item: "gtceu:cube_macerator"
+					type: "item"
+				}
+			]
+			title: "Cube Multis"
+			x: 8.5d
+			y: 10.625d
+		}
+		{
+			dependencies: ["0DE67CA0A8DD130A"]
+			hide_dependent_lines: true
+			id: "5E70676DB159EED3"
+			rewards: [{
+				id: "79510A5EC9FB43DA"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BFFE80BD23C97F0"
+				item: "gtceu:titanium_carbide_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"591742EF37E96F38"
+				"4DEE1F3E73302493"
+				"4B732822A3B224E7"
+			]
+			hide_dependency_lines: true
+			id: "2836DB836258EF96"
+			tasks: [{
+				id: "7062D80157C61A25"
+				item: "gtceu:ev_rock_crusher"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2836DB836258EF96"]
+			id: "6322E522CE0513D3"
+			tasks: [{
+				id: "051EB9B9D256BD09"
+				title: "Deepslate Processing"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["591742EF37E96F38"]
+			description: [
+				"If you went the &0benzene&r route in &bMV&r/&eHV&r, this power generation option may be for you. With some &6Desh rotors&r, you can pump out a very healthy amount of EU/t with &dEV&r/&9IV&r rotor holders"
+				""
+				"With &dEV&r rotor holders and &6Desh rotors&r, a LGT will produce &l&b12,288 EU/t&r&r at full speed."
+				""
+				"&1Lunarium rotors&r will produce &l&b8,192 EU/t&r&r with &dEV&r rotor holders, but only consume &l2/3&r the fuel compared to the &6Desh rotors&r."
+			]
+			hide_dependency_lines: true
+			id: "74932E28380BF605"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3A418D9640B7BAFD"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6154764CC312BD4E"]
+			description: ["High power output, okay efficiency"]
+			id: "0054A10402380212"
+			tasks: [{
+				id: "4BC56D7D57DAEBF0"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:desh"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["04BD5101521DF8BC"]
+			description: ["Good power output, great efficiency"]
+			hide_dependency_lines: true
+			id: "5DFA276CAE4788F9"
+			tasks: [{
+				id: "323C500B095FBAA6"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:lunarium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 13.0d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

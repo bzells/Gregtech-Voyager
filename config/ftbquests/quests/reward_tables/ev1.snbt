@@ -1,0 +1,26 @@
+{
+	id: "4A0CE48DCE1C1332"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "inventorypets:pet_house"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "inventorypets:pet_sun"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "ev1"
+}

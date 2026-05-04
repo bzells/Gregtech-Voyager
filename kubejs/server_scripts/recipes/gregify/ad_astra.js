@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
         'gtceu:large_combustion_engine'
     )
     .itemOutputs('ad_astra:desh_engine')
-    .inputFluids("gtceu:polybenzimidazole 1000")
+    .inputFluids("gtceu:styrene_butadiene_rubber 1000")
     .duration(20*60*3)
     .EUt(1980);
 
@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
         '24x gtceu:lunarium_foil'
     )
     .itemOutputs('kubejs:desh_rocket_nose_cone')
-    .inputFluids("gtceu:polybenzimidazole 1000")
+    .inputFluids("gtceu:styrene_butadiene_rubber 1000")
     .duration(20*60*5)
     .EUt(1980);
 
@@ -307,7 +307,7 @@ ServerEvents.recipes(event => {
         '32x gtceu:lunarium_foil'
     )
     .itemOutputs('kubejs:desh_rocket_fin')
-    .inputFluids("gtceu:polybenzimidazole 1000")
+    .inputFluids("gtceu:styrene_butadiene_rubber 1000")
     .duration(20*60*5)
     .EUt(1980);
 
@@ -318,7 +318,7 @@ ServerEvents.recipes(event => {
         '32x gtceu:lunarium_foil'
     )
     .itemOutputs('ad_astra:desh_tank')
-    .inputFluids("gtceu:polybenzimidazole 1000")
+    .inputFluids("gtceu:styrene_butadiene_rubber 1000")
     .duration(20*60*5)
     .EUt(1980);
 

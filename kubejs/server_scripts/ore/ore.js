@@ -490,15 +490,15 @@ GTCEuServerEvents.oreVeins(event => {
     // moon ores
     event.add("moon/bauxite", vein => {
         vein.weight(15)
-        vein.density(.3)
-        vein.clusterSize(35)
+        vein.density(.8)
+        vein.clusterSize(50)
         vein.layer("moon")
         vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(0, 200)
         vein.cuboidVeinGenerator(generator => generator
             // .top(b => b.mat(GTMaterials.Bauxite).size(1))
-            .top(b => b.mat('gtceu:bauxite').size(1))
-            .middle(b => b.mat(GTMaterials.Bauxite).size(3))
+            .top(b => b.mat('gtceu:bauxite').size(5))
+            .middle(b => b.mat(GTMaterials.Bauxite).size(5))
             .bottom(b => b.mat(GTMaterials.Aluminium).size(2))
             .spread(b => b.mat(GTMaterials.Bauxite))
         )
@@ -509,21 +509,157 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     event.add("moon/ilmenite", vein => {
-        vein.weight(10)
-        vein.density(.3)
-        vein.clusterSize(35)
+        vein.weight(15)
+        vein.density(.8)
+        vein.clusterSize(55)
         vein.layer("moon")
         vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(0, 200)
         vein.cuboidVeinGenerator(generator => generator
             // .top(b => b.mat(GTMaterials.Bauxite).size(1))
-            .top(b => b.mat('gtceu:bauxite').size(1))
-            .middle(b => b.mat(GTMaterials.Ilmenite).size(3))
-            .bottom(b => b.mat(GTMaterials.Ilmenite).size(2))
+            .top(b => b.mat('gtceu:bauxite').size(5))
+            .middle(b => b.mat(GTMaterials.Ilmenite).size(5))
+            .bottom(b => b.mat(GTMaterials.Ilmenite).size(7))
             .spread(b => b.mat(GTMaterials.Bauxite))
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Ilmenite)
+            .placement("above")
+        )
+    })
+
+    event.add("moon/neodymium", vein => { 
+        vein.weight(25)
+        vein.density(.8)
+        vein.clusterSize(45)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.cuboidVeinGenerator(generator => generator
+            .top(b => b.mat(GTMaterials.Neodymium).size(5))
+            .middle(b => b.mat(GTMaterials.Bastnasite).size(3))
+            .bottom(b => b.mat(GTMaterials.Monazite).size(2))
+            .spread(b => b.mat(GTMaterials.Neodymium))
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Neodymium)
+            .placement("above")
+        )
+    })
+
+    event.add("moon/glunite", vein => { 
+        vein.weight(30)
+        vein.density(.3)
+        vein.clusterSize(30)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat('gtceu:glunite').size(1, 2))
+                .layer(l => l.weight(3).mat('gtceu:lapis').size(1, 4))
+                .layer(l => l.weight(3).mat('gtceu:glunite').size(1, 2))
+                .layer(l => l.weight(2).mat('gtceu:lunite').size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock('gtceu:glunite')
+            .placement("above")
+        )
+    })
+
+    event.add("moon/chromite", vein => { 
+        vein.weight(10)
+        vein.density(.3)
+        vein.clusterSize(30)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat('gtceu:magnetite').size(1, 2))
+                .layer(l => l.weight(3).mat('gtceu:chromite').size(1, 4))
+                .layer(l => l.weight(3).mat('gtceu:gold').size(1, 2))
+                .layer(l => l.weight(2).mat('gtceu:chromite').size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock('gtceu:glunite')
+            .placement("above")
+        )
+    })
+    event.add("moon/dense/magnetite", vein => {
+        vein.weight(20)
+        vein.density(1)
+        vein.clusterSize(50)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(-45, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat('gtceu:magnetite').size(3, 4))
+                .layer(l => l.weight(3).mat('gtceu:vanadium_magnetite').size(1, 4))
+                .layer(l => l.weight(3).mat('gtceu:gold').size(3, 4))
+                .layer(l => l.weight(2).mat('gtceu:silver').size(2, 4))
+            )
+        )
+    })
+
+    event.add("moon/magnesite", vein => {
+        vein.weight(20)
+        vein.density(.3)
+        vein.clusterSize(40)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(-45, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat('gtceu:iron').size(1, 2))
+                .layer(l => l.weight(3).mat('gtceu:magnesite').size(1, 4))
+                .layer(l => l.weight(3).mat('gtceu:calcite').size(1, 3))
+                .layer(l => l.weight(2).mat('gtceu:bentonite').size(1, 3))
+            )
+        )
+    })
+
+    event.add("moon/bornite", vein => { 
+        vein.weight(15)
+        vein.density(.3)
+        vein.clusterSize(30)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat('gtceu:platinum').size(1, 2))
+                .layer(l => l.weight(2).mat('gtceu:bornite').size(1, 1))
+                .layer(l => l.weight(1).mat('gtceu:bornite').size(1, 1))
+                .layer(l => l.weight(2).mat('gtceu:platinum').size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock('gtceu:bornite')
+            .placement("above")
+        )
+    })
+
+    event.add("moon/socochalamite", vein => { 
+        vein.weight(25)
+        vein.density(.3)
+        vein.clusterSize(30)
+        vein.layer("moon")
+        vein.dimensions("ad_astra:moon")
+        vein.heightRangeUniform(0, 200)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat('gtceu:socochalamite').size(1, 2))
+                .layer(l => l.weight(3).mat('gtceu:amethyst').size(1, 2))
+                .layer(l => l.weight(3).mat('gtceu:socochalamite').size(1, 2))
+                .layer(l => l.weight(2).mat('gtceu:glunite').size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock('gtceu:socochalamite')
             .placement("above")
         )
     })

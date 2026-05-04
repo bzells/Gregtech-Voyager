@@ -18,6 +18,17 @@
   "material.gtceu.impure_rhodium_sludge": "Impure Rhoduim Sludge",
   "material.gtceu.plat_palladium_metal_residue": "Plat-Palladium Metal Residue",
   "material.gtceu.sulfuric_plat-palladium_metal_solution": "Sulfuric Plat-Palladium Metal Solution",
+  "material.gtceu.socochalamite": "Socochalamite",
+  "material.gtceu.lunite": "Lunite",
+  "material.gtceu.glunite": "GLunite",
+  "material.gtceu.desh_group_sludge": "Desh Group Sludge",
+  "material.gtceu.lunar_metal_residue": "Lunar Metal Residue",
+  "material.gtceu.dense_metal_mixture": "Dense Metal Mixture",
+  "material.gtceu.sulfuric_lunar_metal_residue": "Sulfuric Lunar Metal Residue",
+  "material.gtceu.lunarium_metal_sludge": "Lunarium Metal Sludge",
+  "material.gtceu.dewatered_lunarium_metal_mixture": "Dewatered Lunarium Metal Mixture",
+  "material.gtceu.impure_lunarium": "Impure Lunarium",
+  "material.gtceu.lunarium": "Lunarium",
 
   "material.gtceu.acetylene": "Acetylene",
   "material.gtceu.calcium_carbide": "Calcium Carbide",
@@ -27,6 +38,9 @@
 
   "material.gtceu.ilmenite_residue": "Ilmenite Residue",
   "block.gtceu.steam_blast_furnace": "Steel Blast Furnace",
+  "block.gtceu.cube_centrifuge": "Cube Centrifuge",
+  "block.gtceu.cube_macerator": "Cube Macerator",
+  "block.gtceu.cube_electrolyzer": "Cube Electrolyzer",
   "gtceu.steam_blast_furnace": "Steel Blast Furnace",
 
   "gtceu.helper_wheel": "Helper Wheel",

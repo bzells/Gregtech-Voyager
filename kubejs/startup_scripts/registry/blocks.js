@@ -1,10 +1,28 @@
 StartupEvents.registry('block', event => {
-    event.create('desh_lamp') // Create a new block
-        .displayName('Desh Lamp') // Set a custom name
-        .soundType('metal') // Set a material (affects the sounds and some properties)
-        .hardness(1) // Set hardness (affects mining time)
-        .resistance(10) // Set resistance (to explosions, etc)
-        .requiresTool(true) // Requires a tool or it won't drop (see tags below)
-        .tagBlock('my_namespace:my_other_tag') // Tag the block with `#my_namespace:my_other_tag`
-        .tagBlock('minecraft:mineable/wrench') // or a pickaxe
+    event.create('durable_desh_casing')
+        .textureAll('kubejs:block/casing/durable_desh_casing')
+        .hardness(2)
+        .resistance(3)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock('mineable/wrench')
+
+    event.create('firm_ultimet_casing')
+        .textureAll('kubejs:block/casing/firm_ultimet_casing')
+        .hardness(2)
+        .resistance(3)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock('mineable/wrench')
+
+    event.create('stout_titanium_carbide_casing')
+        .textureAll('kubejs:block/casing/stout_titanium_carbide_casing')
+        .hardness(2)
+        .resistance(3)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock('mineable/wrench')
 })

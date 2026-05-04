@@ -105,7 +105,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         // .recipeModifiers([GTRecipeModifiers.PERFECT_OC])
 
         // base block appearance
-        .appearanceBlock(() => new Block.getBlock("gtceu:treated_wood_planks"))
+        .appearanceBlock(() => Block.getBlock("gtceu:treated_wood_planks"))
 
         .pattern(definition => FactoryBlockPattern.start()
 
@@ -144,7 +144,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
 
         // base block appearance
-        // .appearanceBlock('gtceu:clean_machine_casing')
+        .appearanceBlock(() => Block.getBlock('gtceu:clean_machine_casing'))
 
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("AABBBBBAA", "AABDDDBAA", "AABBBBBAA", "AA     AA")
