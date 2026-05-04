@@ -83,6 +83,7 @@
 				"6ACFB73F20BF2828"
 				"4B16F35B8A109539"
 			]
+			hide_dependent_lines: true
 			id: "6EB67BA7F00DC419"
 			size: 1.5d
 			tasks: [{
@@ -160,8 +161,10 @@
 				"Neodymium"
 				"Ilmenite"
 				"Bauxite"
-				"Tungstate"
 				"Bornite"
+				"Lunite"
+				"Socochalamite"
+				"Glunite"
 			]
 			icon: "gtceu:raw_ilmenite"
 			id: "1DB10F87357C83A2"
@@ -474,7 +477,6 @@
 			dependencies: [
 				"7BD63E2D4B804A69"
 				"6154764CC312BD4E"
-				"6EB67BA7F00DC419"
 				"525AB3C856187597"
 			]
 			hide_dependent_lines: true
@@ -515,8 +517,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 5.5d
+			x: 12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4DEE1F3E73302493"]
@@ -538,8 +540,8 @@
 				item: "gtceu:epoxy_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 10.5d
+			x: 1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["231A80D860E922CD"]
@@ -549,8 +551,8 @@
 				item: "gtceu:epoxy_circuit_board"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.5d
+			x: 1.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["565C3E282730B949"]
@@ -560,8 +562,8 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.5d
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			id: "020C339205F62BE1"
@@ -577,8 +579,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 10.5d
+			x: 2.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -592,7 +594,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 2.0d
 			y: 9.0d
 		}
 		{
@@ -603,8 +605,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.0d
+			x: 3.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -617,8 +619,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 9.75d
-			y: 9.0d
+			x: 4.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6677CE6FD7F727F1"]
@@ -629,14 +631,15 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 9.0d
+			x: 6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
 				"591742EF37E96F38"
 				"5943DC5F54ED9F40"
 				"1CA9601A2A5F56A4"
+				"555CAC081A3AE5B0"
 			]
 			id: "4EA8D5772612E022"
 			tasks: [{
@@ -673,6 +676,7 @@
 				"5D1E251B9F28C8B4"
 				"5943DC5F54ED9F40"
 				"6154764CC312BD4E"
+				"0536C639840A0927"
 			]
 			hide_dependency_lines: true
 			id: "6DF19110DCF8CB62"
@@ -682,8 +686,8 @@
 				item: "gtceu:large_helper_factory"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 9.0d
+			x: -1.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -697,30 +701,35 @@
 				item: "kubejs:ev_helper_computation_array"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 10.5d
+			x: 0.0d
+			y: 9.5d
 		}
 		{
-			dependencies: ["66D61F15E0CAD74A"]
+			dependencies: [
+				"66D61F15E0CAD74A"
+				"6DF19110DCF8CB62"
+			]
 			description: [
 				"Increases yield of plastic and epoxy circuit board recipes by 1.5x while also reducing the time it takes to craft."
 				""
 				"Note: You have to use an LCR to use this helper, as a single-block chemical reactor does not have the item slot for this helper to go."
 			]
+			hide_dependency_lines: true
 			id: "19A453F951604D8D"
 			tasks: [{
 				id: "5BB30C8CF37F3862"
 				item: "kubejs:ev_technician_helper"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 11.5d
+			x: -3.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
 				"66D61F15E0CAD74A"
 				"6154764CC312BD4E"
 				"6EB67BA7F00DC419"
+				"6DF19110DCF8CB62"
 			]
 			description: [
 				"Reduces time of certain &dEV/IV&r EBF recipes by &l15%&r"
@@ -734,14 +743,15 @@
 				item: "kubejs:hv_ebf_helper"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 11.5d
+			x: -3.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
 				"5D1E251B9F28C8B4"
 				"66D61F15E0CAD74A"
-				"70E27B7B4AECA72C"
+				"0D398D8FE47F9B67"
+				"6DF19110DCF8CB62"
 			]
 			description: [
 				"The &bbasic chemist helper&r is the &dEV&r tier chemistry helper."
@@ -754,48 +764,188 @@
 				""
 				"It also reduces EU/t by 15-33% depending on the recipe"
 			]
+			hide_dependency_lines: true
 			id: "6E325CF121E77BE5"
 			tasks: [{
 				id: "394967A2068BD56C"
 				item: "kubejs:basic_chemist_helper"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 11.5d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["6D599070FCBCD71C"]
 			id: "70E27B7B4AECA72C"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "5BF0D8EA01710C35"
 				item: "gtceu:platinum_group_sludge_dust"
 				type: "item"
 			}]
 			title: "Plat-line"
-			x: 10.0d
-			y: 14.0d
+			x: 10.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["6D599070FCBCD71C"]
 			id: "34CBE97EDD370F39"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "2690530B4BC7A3FF"
 				item: "gtceu:desh_group_sludge_dust"
 				type: "item"
 			}]
 			title: "Desh-line"
-			x: 8.0d
-			y: 14.0d
+			x: 10.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["70E27B7B4AECA72C"]
 			id: "0D398D8FE47F9B67"
-			tasks: [{
-				id: "53EA80EB05E70D93"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7D01647CDE5BC77E"
+					item: "gtceu:osmium_dust"
+					type: "item"
+				}
+				{
+					id: "370C961A75B39F9E"
+					item: "gtceu:iridium_dust"
+					type: "item"
+				}
+				{
+					id: "32816D8F8A1160D6"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+				{
+					id: "109EE8A1868FDDD2"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "3A27D906188F202F"
+					item: "gtceu:palladium_dust"
+					type: "item"
+				}
+				{
+					id: "4C6540BA32D5646A"
+					item: "gtceu:platinum_dust"
+					type: "item"
+				}
+			]
 			title: "Platinum Line Byproducts"
-			x: 10.0d
-			y: 15.5d
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["34CBE97EDD370F39"]
+			id: "04BD5101521DF8BC"
+			tasks: [
+				{
+					id: "183D1A0E20465A0B"
+					item: "gtceu:desh_dust"
+					type: "item"
+				}
+				{
+					id: "51439B97BB1C5485"
+					item: "gtceu:titanium_dust"
+					type: "item"
+				}
+				{
+					id: "30B0C73C38462048"
+					item: "gtceu:tungsten_dust"
+					type: "item"
+				}
+				{
+					id: "2BB9F479DBF26834"
+					item: "gtceu:lunarium_dust"
+					type: "item"
+				}
+			]
+			title: "Desh-line Byproducts"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4CDFDD7B54850B8E"]
+			id: "0536C639840A0927"
+			tasks: [{
+				id: "31146B32A15DBC65"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			id: "4CDFDD7B54850B8E"
+			tasks: [{
+				id: "79128C4F5D349DF2"
+				item: "gtceu:polyvinyl_butyral_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			id: "555CAC081A3AE5B0"
+			tasks: [{
+				id: "0B333A3F80F9FEBE"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["04BD5101521DF8BC"]
+			id: "6777009AD5019D17"
+			tasks: [{
+				id: "2BCA8653AA67D3D5"
+				item: "gtceu:ev_large_miner"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			id: "63D43519195DF6F5"
+			size: 3.0d
+			tasks: [{
+				id: "30272E3C5796D062"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["1E76B42857AC04C9"]
+			id: "142689E8442A48E2"
+			tasks: [{
+				id: "2FA5D0679E5E79D2"
+				item: "gtceu:uranium_triplatinum_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7BD63E2D4B804A69"]
+			id: "74668576E35DB45A"
+			tasks: [{
+				id: "33EB07DAA43B9BAF"
+				item: "gtceu:hv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"
