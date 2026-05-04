@@ -311,4 +311,15 @@ ServerEvents.recipes(event => {
     .inputFluids("gtceu:polybenzimidazole 1000")
     .duration(20*60*5)
     .EUt(1980);
+
+    event.recipes.gtceu.assembler('kubejs:desh_tank')
+    .itemInputs(
+        '4x kubejs:desh_rocket_hull_plate',
+        '32x gtceu:titanium_fluid_cell',
+        '32x gtceu:lunarium_foil'
+    )
+    .itemOutputs('ad_astra:desh_tank')
+    .inputFluids("gtceu:polybenzimidazole 1000")
+    .duration(20*60*5)
+    .EUt(1980);
 });
