@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create('helper_wheel', 'generator')
-        .tiers(GTValues.LV, GTValues.MV)
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV)
         .tankScalingFunction(tier => tier * 1600)
         .definition((tier, builder) =>
             builder
