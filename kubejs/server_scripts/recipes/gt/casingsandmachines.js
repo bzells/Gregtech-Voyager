@@ -26,6 +26,16 @@ ServerEvents.recipes(event => {
             .duration(30)
             .EUt(16);
 
+        event.recipes.gtceu.assembler('kubejs:radiation_proof_lead_casing')
+            .itemInputs(
+                '6x gtceu:lead_plate',
+                '1x gtceu:titanium_frame',
+            )
+            .circuit(6)
+            .itemOutputs('2x kubejs:radiation_proof_lead_casing')
+            .duration(30)
+            .EUt(16);
+
     // fuck it ill put these here too
 
     function cube_multi(mat, output)
@@ -48,4 +58,5 @@ ServerEvents.recipes(event => {
     cube_multi('desh', 'centrifuge')
     cube_multi('titanium_carbide', 'macerator')
     cube_multi('ultimet', 'electrolyzer')
+    cube_multi('lead', 'oven')
 });
