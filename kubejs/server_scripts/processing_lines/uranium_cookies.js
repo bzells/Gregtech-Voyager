@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         {
             event.recipes.gtceu.mixer('kubejs:' + output)
             .itemInputs(ingredientsItem)
-            .itemOutputs(output)
+            .itemOutputs('kubejs:' + output)
             .chancedInput(bakingsheet[0], bakingsheet[1])
             .notConsumable('kubejs:' + grandma + '_grandma_helper')
             .duration(time * 20)
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         }
         else
         {
-           event.recipes.gtceu.mixer('kubejs:' + output)
+           event.recipes.gtceu.mixer('kubejs:better_' + output)
             .itemInputs(ingredientsItem, bakingsheet)
             .itemOutputs(output)
             .notConsumable('kubejs:' + grandma + '_grandma_helper')
