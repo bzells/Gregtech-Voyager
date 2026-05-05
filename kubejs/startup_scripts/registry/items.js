@@ -118,12 +118,30 @@ StartupEvents.registry('item', event => {
     event.create('roasted_cacao_beans').texture('kubejs:item/roasted_cacao_beans').displayName('Roasted Cacao Beans');
     event.create('cookie_dough').texture('kubejs:item/cookie_dough').displayName('Cookie Dough');
 
+    event.create('uranium_cookie_dough').texture('kubejs:item/uranium_cookie_dough').displayName('§aUltra-Calorie Dense Uranium Cookie Dough');
+
     event.create('heart_of_gold').texture('kubejs:item/heart_of_gold').displayName('Heart of Gold');
 
+    event.create('grandmas_uranium_cookies').texture('kubejs:item/grandmas_uranium_cookies').displayName('§aGrandma\'s Ultra-Calorie Dense Uranium Cookies').food(food => {
+    food
+      .hunger(8)
+      .saturation(6) // This value does not directly translate to saturation points gained
+      // The real value can be assumed to be:
+      // min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+      .effect('minecraft:speed', 600, 0, 1)
+      .alwaysEdible() // Like golden apples
+      .fastToEat() // Like dried kelp
+      .tooltip(
+        "§2Contains millions of calories. Optimal for bulking."
+      )
+      .eaten(ctx => {
+        ctx.player.tell(Text.gold('Grandma thanks you for eating her cookies! She invites you over for more.'))
+      });
+    });
     
 
     event.create('lcptr_helper').texture('kubejs:item/helpers/lcptr_helper').maxStackSize(1).displayName('Large Cookie-Powered Track Runner Helper').tooltip(
-        "Runs on Grandma\'s cookies"
+        "Has the digestive capacity to consume millions of calories in a short amount of time"
     );
 
     event.create('grandmas_cookie').texture('kubejs:item/grandmas_cookies').displayName('Grandma\'s cookies').food(food => {

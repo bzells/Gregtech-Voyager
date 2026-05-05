@@ -21,10 +21,10 @@ ServerEvents.recipes(event => {
             'CBC'
         ],
         {
-            A: 'gtceu:hv_machine_hull',
-            B: 'gtceu:fluxed_cobalt_electrum_rotor',  //arg 3: the mapping object
-            C: 'gtceu:stainless_steel_plate',
-            D: '#gtceu:circuits/ev'
+            A: 'gtceu:ev_machine_hull',
+            B: 'gtceu:refined_fluxed_electrum_rotor',  //arg 3: the mapping object
+            C: 'gtceu:titanium_plate',
+            D: '#gtceu:circuits/iv'
         }
     )
 

@@ -347,6 +347,10 @@ register_dust('lunarium_metal_sludge', ['lunarium', 'water'], '0x360d1c', no_dec
 register_dust('dewatered_lunarium_metal_mixture', ['lunarium', 'desh', 'titanium', '3x glowstone', '2x gold', '2x carbon', '3x hydrogen', 'zinc', 'barium'], '0x657e9c', no_decomp)
 register_dust('impure_lunarium', ['lunarium', 'desh', '1x carbon', 'calcium'], '0x7fa9b0', electrolyze)
 
+// misc
+
+register_fluid('uranium_ethanol_solution','0x91e600', ['uranium_235', 'ethanol'], no_decomp)
+
 /*
     Materials are in-game items or fluids. They can be dusts, ingots, gems, fluids and all their derivatives.
     To make a new material(NOTE: to add a material that is present on the periodic table, but 
