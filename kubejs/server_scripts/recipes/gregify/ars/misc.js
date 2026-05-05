@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.recipes.ars_nouveau.enchanting_apparatus(
         ['minecraft:creeper_head', 'minecraft:tnt', 'minecraft:tnt', 'minecraft:tnt',
-            'tconstruct:pig_iron_ingot', 'tconstruct:hapatizon_ingot'
+            'tconstruct:pig_iron_ingot', 'tconstruct:hepatizon_ingot'
         ], // input items
         'kubejs:heart_of_destruction', // reagent
         'inventorypets:pet_creeper', // output

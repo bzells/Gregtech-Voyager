@@ -111,6 +111,7 @@ StartupEvents.registry('item', event => {
     // cookies
 
     event.create('grandmas_baking_sheet').texture('kubejs:item/grandmas_baking_sheet').maxStackSize(1).displayName('Grandma\'s Super Durable Baking Sheet');
+    event.create('grandmas_tungsten_baking_sheet').texture('kubejs:item/grandmas_tungsten_baking_sheet').maxStackSize(1).displayName('Grandma\'s Super Durable Radiation Proof Baking Sheet');
     event.create('baking_chocolate').texture('kubejs:item/baking_chocolate').displayName('Baking Chocolate');
     event.create('baking_flour').texture('kubejs:item/baking_flour').displayName('Baking Flour');
     event.create('cacao_powder').texture('kubejs:item/cacao_powder').displayName('Cacao Powder');
@@ -168,7 +169,7 @@ StartupEvents.registry('item', event => {
 
 
     // misc
-    event.create('explosive_heart').texture('kubejs:item/explosive_heart').displayName('Explosive Heart');
+    event.create('explosive_heart').texture('kubejs:item/explosive_heart').displayName('Explosive Heart').tooltip('§8Rare Creeper Drop');
     event.create('heart_of_destruction').texture('kubejs:item/heart_of_destruction').displayName('Heart of Destruction');
 
 })

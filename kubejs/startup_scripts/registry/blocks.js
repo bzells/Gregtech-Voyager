@@ -1,28 +1,18 @@
 StartupEvents.registry('block', event => {
-    event.create('durable_desh_casing')
-        .textureAll('kubejs:block/casing/durable_desh_casing')
-        .hardness(2)
-        .resistance(3)
-        .lightLevel(0)
-        .soundType('metal')
-        .requiresTool(true)
-        .tagBlock('mineable/wrench')
 
-    event.create('firm_ultimet_casing')
-        .textureAll('kubejs:block/casing/firm_ultimet_casing')
+    function casing(name)
+    {
+        event.create(`${name}_casing`)
+        .textureAll(`kubejs:block/casing/${name}_casing`)
         .hardness(2)
         .resistance(3)
         .lightLevel(0)
         .soundType('metal')
         .requiresTool(true)
         .tagBlock('mineable/wrench')
-
-    event.create('stout_titanium_carbide_casing')
-        .textureAll('kubejs:block/casing/stout_titanium_carbide_casing')
-        .hardness(2)
-        .resistance(3)
-        .lightLevel(0)
-        .soundType('metal')
-        .requiresTool(true)
-        .tagBlock('mineable/wrench')
+    }
+    casing('durable_desh');
+    casing('firm_ultimet');
+    casing('stout_titanium_carbide');
+    casing('radiation_proof_lead');
 })
