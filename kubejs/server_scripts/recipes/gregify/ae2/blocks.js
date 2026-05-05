@@ -303,35 +303,6 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        Item.of('ae2:charger', 1),
-        [
-            'ACA',
-            'CBC',
-            'ACA'
-        ],
-        {
-            A: 'ae2:certus_quartz_crystal',
-            B: 'gtceu:mv_machine_hull',
-            C: 'gtceu:aluminium_plate'
-        }
-    )
-
-    event.shaped(
-        Item.of('ae2:inscriber', 1),
-        [
-            'ABA',
-            'CDC',
-            'ABA'
-        ],
-        {
-            A: 'gtceu:titanium_plate',
-            B: 'ae2:engineering_processor',
-            C: 'gtceu:ev_machine_hull',
-            D: 'gtceu:ev_electric_piston'
-        }
-    )
-
-    event.shaped(
         Item.of('ae2:terminal', 1),
         [
             'ABA',
@@ -377,32 +348,6 @@ ServerEvents.recipes(event => {
             B: 'ae2:engineering_processor',
             C: 'gtceu:ev_machine_hull',
             D: 'gtceu:titanium_plate'
-        }
-    )
-
-    event.recipes.gtceu
-        .assembler('kubejs:wireless_receiver')
-        .itemInputs(
-            'ae2:engineering_processor',
-            '2x ae2:fluix_crystal',
-            '4x gtceu:titanium_plate',
-            '#gtceu:circuits/ev'
-        )
-        .itemOutputs('ae2:wireless_receiver')
-        .duration(200)
-        .EUt(1980)
-
-    event.shaped(
-        Item.of('ae2:wireless_terminal', 1),
-        [
-            ' A ',
-            ' B ',
-            ' C '
-        ],
-        {
-            A: 'ae2:wireless_receiver',
-            B: 'ae2:terminal',
-            C: 'ae2:dense_energy_cell'
         }
     )
 
