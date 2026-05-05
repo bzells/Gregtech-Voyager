@@ -27,9 +27,9 @@ ServerEvents.recipes(event => {
     {
 
             event.recipes.gtceu.oven('kubejs:' + output + '_' + bakingsheet)
-            .itemInputs(ingredientsItem, 'kubejs:' + bakingsheet)
+            .itemInputs(ingredientsItem,)
             .itemOutputs(count + 'x kubejs:' + output)
-            .notConsumable('kubejs:' + grandma + '_grandma_helper')
+            .notConsumable('kubejs:' + grandma + '_grandma_helper', 'kubejs:' + bakingsheet)
             .duration(time * 20)
             .EUt(eut);
 

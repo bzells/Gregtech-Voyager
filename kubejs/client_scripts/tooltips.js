@@ -11,7 +11,7 @@ ItemEvents.tooltip(event => {
 
   function rectangleTooltip(name)
   {
-    event.add(`gtceu:power_rectangle_${name}`, '\n§r§4Can only have one dynamo hatch')
+    event.add(`gtceu:power_rectangle_${name}`, '§r§4Can only have one dynamo hatch')
   }
 
   function addHelperTooltip(helper, text)
@@ -19,10 +19,10 @@ ItemEvents.tooltip(event => {
     event.add(`kubejs:${helper}_helper`, `§4${text}`)
   }
 
-  event.add(`gtceu:power_rectangle_helper_calorie_converter`, '§6\n§6Can run helper calorie conversion recipes\n§7Can run normal helper wheel recipes')
+  event.add(`gtceu:power_rectangle_helper_calorie_converter`, '§6\n§6Can run helper calorie conversion recipes')
   rectangleTooltip('helper_calorie_converter')
 
-  addHelperTooltip('hungry', 'Can consume a LOT of calories')
+  addHelperTooltip('hungry', 'Can consume a LOT of calories\n')
 
   cubeTooltip('macerator');
   cubeTooltip('electrolyzer')

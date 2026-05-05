@@ -16,12 +16,23 @@ ServerEvents.recipes(event => {
         }
     )
 
+    function calorie_conversion(cookie, helper, output, time, eut)
+    {
+        event.recipes.gtceu.helper_calorie_conversion("kubejs:grandmas_" + cookie)
+                .itemInputs("kubejs:grandmas_" + cookie)
+                .notConsumable("kubejs:"+ helper +"_helper")
+                .itemOutputs(output)
+                .inputFluids("minecraft:water 4000")
+                .outputFluids('gtceu:steam 8000')
+                .duration(20 * time)
+                .EUt(-eut)
+    }
 
-    event.recipes.gtceu.helper_calorie_conversion("kubejs:radioactive_cookies")
-        .notConsumable("minecraft:sugar_cane")
-        .notConsumable(Item.of("kubejs:hungry_helper", '{conversionRate:1.5}'))
-        .itemOutputs('minecraft:sugar_cane')
-        .inputFluids("minecraft:water 1000")
-        .duration(100)
-        .EUt(-2)
+    calorie_conversion('uranium_cookies', 'hungry', 'gtceu:thorium_dust', 15, 8192)
+    calorie_conversion('uranium_cookies', 'lcptr', 'gtceu:thorium_dust', 60, 2048)
+
+    calorie_conversion('cookies', 'hungry', 'gtceu:carbon_dust', 3.75, 2048)
+    calorie_conversion('cookies', 'lcptr', 'gtceu:carbon_dust', 15, 1024)
+
+    
 })
