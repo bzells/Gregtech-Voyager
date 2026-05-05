@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
         .EUt(eut) 
     }
 
-    helper('radiation_resistant_grandma', 1980, ['kubejs:grandma_helper', '2x kubejs:ev_helper_computation_array', '64x gtceu:double_thorium_plate', '16x gtceu:rad_away_pill', '32x gtceu:stainless_steel_foil'], 'gtceu:plutonium_239 1000')
+    helper('radiation_resistant_grandma', 1980, ['kubejs:grandma_helper', '2x kubejs:ev_helper_computation_array', '64x gtceu:double_thorium_plate', '16x gtceu:rad_away_pill', '32x gtceu:stainless_steel_foil'], 'gtceu:plutonium 1000')
     helper('hungry', 1980, ['12x kubejs:radiation_proof_lead_casing', '2x gtceu:refined_fluxed_electrum_frame', 'kubejs:ev_helper_computation_array','kubejs:ev_stomach_unit', '2x gtceu:ev_robot_arm', '5x gtceu:titanium_drill_head', 'gtceu:ev_electric_motor', '2x gtceu:refined_fluxed_electrum_rod', '2x #gtceu:circuits/iv'],
         'gtceu:yttrium 1000'
     )
