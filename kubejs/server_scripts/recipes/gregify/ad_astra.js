@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
     .itemInputs(
         '36x gtceu:double_desh_plate',
         '32x gtceu:lunarium_foil',
-        '16x gtceu:osmium_foil',
+        '16x gtceu:ruthenium_foil',
         '24x gtceu:steel_bolt'
     )
     // .notConsumable('kubejs:lv_technician_helper')
