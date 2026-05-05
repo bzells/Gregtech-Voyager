@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
     function calorie_conversion(cookie, helper, output, time, eut)
     {
-        event.recipes.gtceu.helper_calorie_conversion("kubejs:grandmas_" + cookie)
+        event.recipes.gtceu.helper_calorie_conversion("kubejs:grandmas_" + cookie + "_" + helper)
                 .itemInputs("kubejs:grandmas_" + cookie)
                 .notConsumable("kubejs:"+ helper +"_helper")
                 .itemOutputs(output)
@@ -31,8 +31,8 @@ ServerEvents.recipes(event => {
     calorie_conversion('uranium_cookies', 'hungry', 'gtceu:thorium_dust', 15, 8192)
     calorie_conversion('uranium_cookies', 'lcptr', 'gtceu:thorium_dust', 60, 2048)
 
-    calorie_conversion('cookies', 'hungry', 'gtceu:carbon_dust', 3.75, 2048)
-    calorie_conversion('cookies', 'lcptr', 'gtceu:carbon_dust', 15, 1024)
+    calorie_conversion('cookie', 'hungry', 'gtceu:carbon_dust', 3.75, 2048)
+    calorie_conversion('cookie', 'lcptr', 'gtceu:carbon_dust', 15, 1024)
 
     
 })
