@@ -151,5 +151,29 @@ ServerEvents.recipes(event => {
         .duration(2400)                               
         .EUt(1980) 
 
+    event.recipes.gtceu
+        .assembler('kubejs:ev_stomach_unit')   
+        .itemInputs('16x gtceu:titanium_plate', '4x #gtceu:circuits/ev', '4x gtceu:ptfe_pipe_casing')
+        .itemOutputs('kubejs:ev_stomach_unit')
+        .inputFluids('gtceu:fluoroantimonic_acid 1000')
+        .duration(200)                               
+        .EUt(1980) 
+
+
+    function helper(helper, eut, items, fluid)
+    {
+        event.recipes.gtceu
+        .helper_assembler(`kubejs:${helper}_helper`)   
+        .itemInputs(items)
+        .inputFluids(fluid)
+        .itemOutputs(`kubejs:${helper}_helper`)
+        .duration(2400)                               
+        .EUt(eut) 
+    }
+
+    helper('radiation_resistant_grandma', 1980, ['kubejs:grandma_helper', '2x kubejs:ev_helper_computation_array', '64x gtceu:double_thorium_plate', '16x gtceu:rad_away_pill', '32x stainless_steel_foil'], 'gtceu:plutonium_239 1000')
+    helper('hungry', 1980, ['12x kubejs:radiation_proof_lead_casing', '2x gtceu:refined_fluxed_electrum_frame', 'kubejs:ev_helper_computation_array','kubejs:ev_stomach_unit', '2x gtceu:ev_robot_arm', '5x gtceu:titanium_drill_head', 'gtceu:ev_electric_motor', '2x gtceu:refined_fluxed_electrum_rod', '2x #gtceu:circuits/iv'],
+        'gtceu:yttrium 1000'
+    )
 
 });

@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casing/durable_desh_casing_ctm"
+    }
+}
