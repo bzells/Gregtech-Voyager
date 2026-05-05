@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_loot_bag(tier));
     tiers.forEach(tier => register_universal_circuit(tier));
 
-    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'basic_chemist']
+    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'basic_chemist', 'radiation_resistant_grandma']
 
     function register_helper_item(name)
     {
@@ -165,5 +165,10 @@ StartupEvents.registry('item', event => {
     event.create('crystalline_titanium_electrum').texture('kubejs:item/crystalline_titanium_electrum').displayName('Crystalline Titanium Electrum').tooltip('§4Pure Capacitance');
 //refined_fluxed_electrum_crystal
     event.create('refined_fluxed_electrum_crystal').texture('kubejs:item/refined_fluxed_electrum_crystal').displayName('Refined Fluxed Electrum Crystal').tooltip('§eRefined Capacitance');
+
+
+    // misc
+    event.create('explosive_heart').texture('kubejs:item/explosive_heart').displayName('Explosive Heart');
+    event.create('heart_of_destruction').texture('kubejs:item/heart_of_destruction').displayName('Heart of Destruction');
 
 })
