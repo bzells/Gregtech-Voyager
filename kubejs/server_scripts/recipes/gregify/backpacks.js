@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         ).modifyResult((grid, result) => {
         let bp = grid.find('sophisticatedbackpacks:iron_backpack')
         let nbt = bp.nbt
-        return result.withNBT(nbt)
+        return result.withNBT(nbt + ',inventorySlots:81')
      })
      
 
