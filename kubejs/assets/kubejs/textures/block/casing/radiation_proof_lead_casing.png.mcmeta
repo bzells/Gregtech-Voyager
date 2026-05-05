@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "gtceu:block/casings/gcym/radiation_proof_lead_casing_ctm"
+        "connection": "kubejs:block/casing/radiation_proof_lead_casing_ctm"
     }
 }
