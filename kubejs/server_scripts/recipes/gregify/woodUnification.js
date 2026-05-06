@@ -132,6 +132,48 @@ ServerEvents.recipes(event => {
 			.EUt(4)
 	}
 
+	function slabRecipe(input) {
+		let mod = input.replace(/:.*/, '')
+		let pref = ''
+		let wood = input.replace('_planks', '')
+		let planks = [wood + '_planks', wood + '_fireproof_planks']
+
+		if (mod != 'minecraft') pref = mod+'_'
+		if (mod == 'minecraft') planks = [wood + '_planks', wood.replace('minecraft', 'forestry') + '_fireproof_planks']
+		if (mod == 'tconstruct') wood = input
+		
+		console.log(input)
+		event.remove({type: "minecraft:crafting_shaped",output:`${wood}_slab`})
+
+		event.recipes.gtceu.shaped((Item.of(wood+'_slab', 2)),
+			[
+				'AB'
+			],
+			{
+				A: '#forge:tools/saws',
+				B: planks
+			}
+		).id(`gtceu:shaped/${pref + wood.replace(/.*:/,'')+'_slab'}_saw`)
+
+		cuttingfluid.forEach(cuttingfluid => {
+			if (cuttingfluid[0] != 'lubricant') {
+				event.recipes.gtceu.cutter(`gtceu:${pref+wood.replace(/.*:/,'')+'_slab'}_${cuttingfluid[0]}`)
+					.itemInputs(Ingredient.of([planks[0], planks[1]],1))
+					.inputFluids(cuttingfluid[1] + ' ' + cuttingfluid[2])
+					.itemOutputs(Item.of(wood+'_slab', 2))
+					.EUt(7)
+					.duration(cuttingfluid[3] * 20)
+			} else {
+				event.recipes.gtceu.cutter(`gtceu:${pref + wood.replace(/.*:/,'')+'_slab'}`)
+					.itemInputs(Ingredient.of([planks[0],planks[1]], 1))
+					.inputFluids(cuttingfluid[1] + ' ' + cuttingfluid[2])
+					.itemOutputs(Item.of(wood+ '_slab', 2))
+					.EUt(7)
+					.duration(cuttingfluid[3] * 20)
+			}
+		})
+
+	}
 
 	event.remove({type:'minecraft:crafting_shapeless',output:'minecraft:oak_planks',mod:'vinery'}) //Nuclear Option, This wouldn't work correctly the other ways I tried
 	event.remove({type:'minecraft:crafting_shapeless',output:'vinery:dark_cherry_planks'})
@@ -151,7 +193,7 @@ ServerEvents.recipes(event => {
 		event.shapeless(Item.of(outputIS.id, 2), logtype[0]).id(r.getId())
 		sawShaped(output,logtype[0],mod,itemName)
 		if (mod != 'minecraft') cuttingMachine(output,logtype[0],itemName,mod)
-		if (`${output}` == `${output}`.replace('_fireproof','')) {doorRecipe(`${output}`); trapdoorRecipe(`${output}`)}
+		if (`${output}` == `${output}`.replace('_fireproof','')) {doorRecipe(`${output}`); trapdoorRecipe(`${output}`); slabRecipe(`${output}`)}
 
 
 	})
