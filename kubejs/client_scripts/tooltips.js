@@ -19,7 +19,9 @@ ItemEvents.tooltip(event => {
     event.add(`kubejs:${helper}_helper`, `§4${text}`)
   }
 
-  event.add(`gtceu:power_rectangle_helper_calorie_converter`, '§6\n§6Can run helper calorie conversion recipes')
+  event.add(`gtceu:power_rectangle_helper_calorie_converter`, '\n§6Can run helper calorie conversion recipes')
+
+  event.add(`gtceu:titanite_blast_furnace`, '§6Has perfect overclock (regardless of coil temperature)§r\n§6Can use 4x parallel hatches§r\n')
   rectangleTooltip('helper_calorie_converter')
 
   addHelperTooltip('hungry', 'Can consume a LOT of calories\n')

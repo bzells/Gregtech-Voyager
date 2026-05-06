@@ -50,6 +50,21 @@ ServerEvents.recipes(event => {
     }
 
 
+    event.shaped(
+        Item.of('gtceu:alloy_blast_smelter', 1), // arg 1: output
+        [
+            'ADA',
+            'CBC', // arg 2: the shape (array of strings)
+            'ADA'
+        ],
+        {
+            A: 'gtceu:double_ostrum_plate',
+            B: 'gtceu:iv_alloy_smelter',  //arg 3: the mapping object
+            C: 'gtceu:uranium_triplatinum_double_wire',
+            D: '#gtceu:circuits/luv'
+        }
+    )
+
 
 });
 

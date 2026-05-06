@@ -47,6 +47,12 @@ StartupEvents.registry('fluid', event => {
     .displayName('Dewatering Fluid')
     .noBlock() 
 
+  event.create('dissolved_martian_mineral_solution')
+    .thickTexture(0x735057)
+    .bucketColor(0x735057)
+    .displayName('Dissolved Martian Mineral Solution')
+    .noBlock() 
+
     
 
 

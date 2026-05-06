@@ -221,5 +221,33 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
             .workableCasingModel(`kubejs:block/casing/ostrum_casing`,
             `gtceu:block/machines/electrolyzer`);
+
+
+             // core mod incoming!!
+
+        // event.create('titanite_blast_furnace', 'multiblock')
+        // .rotationState(RotationState.NON_Y_AXIS)
+        // .recipeType('electric_blast_furnace')
+        // .machine((holder) => new $CoiledMulti(holder))
+        // .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
+        // .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
+        // .pattern(definition => FactoryBlockPattern.start()
+        //     .aisle('AAA', 'CCC', 'CCC', 'AAA') 
+        //     .aisle('AAA', 'C C', 'C C', 'AMA') 
+        //     .aisle('A@A', 'CCC', 'CCC', 'APA') 
+        //     .where('A', Predicates.blocks('kubejs:titanite_casing')
+        //         .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+        //         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+        //         .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+        //         .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+        //         .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
+        //         .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+        //     .where('C', Predicates.heatingCoils())
+        //     .where('M', Predicates.abilities(PartAbility.MUFFLER))
+        //     .where('M', Predicates.blocks('gtceu:iv_parallel_hatch'))
+        //     .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+        //     .build())
+        // .workableCasingModel('kubejs:block/casing/titanite_casing',
+        //     'kubejs:block/multiblock/titanite_blast_furnace');
     
 });

@@ -105,6 +105,8 @@ StartupEvents.registry('item', event => {
     event.create('desh_interplanetary_coordinatal_calculator').texture('kubejs:item/desh_interplanetary_coordinatal_calculator').maxStackSize(16).displayName('Desh Interplanetary Coordinatal Calculator');
 
     event.create('martian_scrap').texture('kubejs:item/martian_scrap').displayName('Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
+    event.create('shredded_martian_scrap').texture('kubejs:item/shredded_martian_scrap').displayName('Shredded Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
+    
     event.create('martian_contract').texture('kubejs:item/martian_contract').displayName('Martian Trade Contract').tooltip('§4Place inside of a celestial post box to recieve shipments\n§r');
     event.create('martian_shipment_t1').texture('kubejs:item/martian_shipment_t1').displayName('Martian Shipment').tooltip('§7Tier 1 Shipment\n§4Contains scrap from martian junkyards\n§r');
     event.create('martian_shipment_t2').texture('kubejs:item/martian_shipment_t2').displayName('Martian Shipment').tooltip('§bTier 2 Shipment\n§4Contains unsythesized martian compounds\n§r');
