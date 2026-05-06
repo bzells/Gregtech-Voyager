@@ -2,6 +2,12 @@
 	id: "218904DDC5F2F3BC"
 	loot_size: 1
 	order_index: 29
-	rewards: [ ]
+	rewards: [
+		{ count: 3, item: "kubejs:ev_loot_bag" }
+		{ item: "kubejs:basic_chemist_helper" }
+		{ item: "gtceu:cleaning_maintenance_hatch" }
+		{ count: 2, item: "gtceu:me_input_hatch" }
+		{ count: 4, item: "gtceu:me_input_bus" }
+	]
 	title: "ev2"
 }

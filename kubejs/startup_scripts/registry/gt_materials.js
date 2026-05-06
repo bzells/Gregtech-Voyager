@@ -86,8 +86,8 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('lunite').setFormula('(Ds)2W(Si)2O4');
     GTMaterials.get('glowstone').setFormula('(Si(FeS2)5(CrAl2O3)Hg3)Au');
     GTMaterials.get('lunarium').setFormula('Lt');
-    GTMaterials.get('titanite').setFormula('Tx');
-
+    GTMaterials.get('titanite').setFormula('T*');
+    GTMaterials.get('ostrum').setFormula('Ot');
 
 });
 
@@ -338,7 +338,7 @@ register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xf
 
 // mars ores
 register_ore_gem('titanichite', ['5x tungsten', '2x titanite', '5x fluorine'], '0xff0055', [no_decomp], [])
-
+register_ore_metal('ostrite', ['3x oxygen', '12x chlorine', '8x ostrum'], '0xc785a2', [electrolyze]);
 
 // desh line
 register_dust('desh_group_sludge',[],'0x331305', no_decomp)
@@ -352,6 +352,8 @@ register_dust('dense_metal_mixture', ['lunarium', 'tungsten', 'water', '4x oxyge
 register_dust('lunarium_metal_sludge', ['lunarium', 'water'], '0x360d1c', no_decomp)
 register_dust('dewatered_lunarium_metal_mixture', ['lunarium', 'desh', 'titanium', '3x glowstone', '2x gold', '2x carbon', '3x hydrogen', 'zinc', 'barium'], '0x657e9c', no_decomp)
 register_dust('impure_lunarium', ['lunarium', 'desh', '1x carbon', 'calcium'], '0x7fa9b0', electrolyze)
+
+// titanite
 
 // misc
 

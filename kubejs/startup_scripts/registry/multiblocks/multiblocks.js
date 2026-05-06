@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         // .setEUIO("in")
         .setMaxIOSize(4, 1, 2, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setSound(GTSoundEntries.COMPUTATION); // keep one sound only
+        .setSound(GTSoundEntries.FURNACE); // keep one sound only
 
     event.create("micro_farm")
         .category("multiblock")
@@ -18,7 +18,14 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         // .setEUIO("in")
         .setMaxIOSize(5, 1, 1, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setSound(GTSoundEntries.COMPUTATION); // keep one sound only
+        .setSound(GTSoundEntries.COMPUTATION);
+
+    event.create("celestial_post_box")
+        .category("multiblock")
+        // .setEUIO("in")
+        .setMaxIOSize(9, 9, 4, 4)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+        .setSound(GTSoundEntries.COMPUTATION);
 
 });
 
@@ -174,5 +181,45 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/stable_machine_casing",       
             "kubejs:block/multiblock/large_helper_assembler"
         )
+
+    event.create("celestial_post_box", "multiblock")
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("celestial_post_box")
+        // .recipeModifiers([GTRecipeModifiers.PERFECT_OC])
+
+        // base block appearance
+        .appearanceBlock(() => Block.getBlock("kubejs:ostrum_casing"))
+
+        .pattern(definition => FactoryBlockPattern.start()
+
+            .aisle("AAAAA", "ABBBA", "ABBBA", "ABBBA", "AAAAA")
+            .aisle("ABBBA", "TECET", "TECET", "TECET", "ACCCA")
+            .aisle("ABBBA", "TCDCT", "TCDCT", "TCDCT", "ACCCA")
+            .aisle("ABBBA", "TECET", "TECET", "TECET", "ACCCA")
+            .aisle("AA@AA", "ATTTA", "ATTTA", "ATTTA", "AAAAA")
+
+
+
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+
+            .where("A", Predicates.blocks("kubejs:ostrum_casing")
+        
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))  // make sure this is inside the .where, otherwise it will break shit
+
+            .where("B", Predicates.blocks("gtceu:assembly_line_grating"))
+            .where("T", Predicates.blocks("gtceu:laminated_glass"))
+            .where("C", Predicates.blocks("gtceu:high_power_casing"))
+            .where("D", Predicates.blocks("gtceu:lunarium_block"))
+            .where("E", Predicates.blocks("gtceu:assembly_line_unit"))
+
+            .where(" ", Predicates.air())
+
+            .build())
+
+            .workableCasingModel(`kubejs:block/casing/ostrum_casing`,
+            `gtceu:block/machines/electrolyzer`);
     
 });

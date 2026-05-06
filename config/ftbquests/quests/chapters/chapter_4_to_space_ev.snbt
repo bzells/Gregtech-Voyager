@@ -159,6 +159,7 @@
 			dependencies: [
 				"307B3D1F044D7B30"
 				"6C021E9E2CDE5EFF"
+				"0DE67CA0A8DD130A"
 			]
 			id: "50EE25EAC7C546FC"
 			rewards: [{
@@ -514,7 +515,6 @@
 			y: 4.5d
 		}
 		{
-			hide_dependent_lines: true
 			id: "3D1665D6742E7DDC"
 			rewards: [{
 				id: "5AD4490F8C1715AB"
@@ -526,8 +526,8 @@
 				item: "gtceu:ultimet_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.5d
+			x: 6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3D1665D6742E7DDC"]
@@ -542,8 +542,8 @@
 				item: "gtceu:ev_cutter"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["139CE36CAFC02F4F"]
@@ -565,7 +565,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 7.0d
 			y: 9.0d
 		}
 		{
@@ -582,7 +582,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -660,12 +660,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "21A71DC302324838"
-				item: "gtceu:tungsten_dust"
+				id: "33E06AF3F5461812"
+				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.0d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -685,8 +685,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.5d
+			x: 7.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4DEE1F3E73302493"]
@@ -703,8 +703,8 @@
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			x: 9.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["307B3D1F044D7B30"]
@@ -720,8 +720,8 @@
 				item: "gtceu:epoxy_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["231A80D860E922CD"]
@@ -737,7 +737,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["565C3E282730B949"]
@@ -753,7 +753,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			id: "020C339205F62BE1"
@@ -770,7 +770,7 @@
 				}
 			]
 			x: 2.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -790,8 +790,8 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 9.0d
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["193AEA6982472A2E"]
@@ -807,8 +807,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 10.5d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -826,7 +826,7 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 10.5d
 		}
 		{
@@ -846,7 +846,7 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 10.5d
 		}
 		{
@@ -869,7 +869,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			description: [
@@ -880,6 +880,7 @@
 				"&6Centrifuge&r"
 				"&9Electrolyzer&r"
 				"&4Macerator&r"
+				"&5Oven&r"
 				""
 				"These multiblocks aren't quite as strong as the &9IV+&r ones, but they are much much stronger than singleblocks."
 				""
@@ -905,6 +906,7 @@
 				"6154764CC312BD4E"
 				"0536C639840A0927"
 			]
+			description: ["Can run helper assembler recipes &dEV+"]
 			hide_dependency_lines: true
 			id: "6DF19110DCF8CB62"
 			rewards: [{
@@ -929,6 +931,12 @@
 			]
 			hide_dependency_lines: true
 			id: "66D61F15E0CAD74A"
+			rewards: [{
+				count: 2
+				id: "7C85603CCE2D1D88"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "797C1CCFF810CDD6"
 				item: "kubejs:ev_helper_computation_array"
@@ -1026,7 +1034,7 @@
 		{
 			dependencies: ["6D599070FCBCD71C"]
 			description: [
-				"I would recommend completing &eplat-line&r before &6desh-line&r so that you can make the &basic chemist helper&r for desh and plat line."
+				"I would recommend completing &eplat-line&r before &6desh-line&r so that you can make the &bbasic chemist helper&r for desh and plat line."
 				""
 				"For more information on &eplat-line&r, see the &nProcessing Lines Chapter&r"
 			]
@@ -1177,8 +1185,8 @@
 				item: "gtceu:polyvinyl_butyral_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: -3.0d
+			y: 11.5d
 		}
 		{
 			id: "555CAC081A3AE5B0"
@@ -1188,7 +1196,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["04BD5101521DF8BC"]
@@ -1257,8 +1265,8 @@
 				item: "gtceu:uranium_triplatinum_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 7.0d
+			x: 9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7BD63E2D4B804A69"]
@@ -1391,7 +1399,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["29D74386F91EF48E"]
@@ -1426,7 +1434,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1504,15 +1512,17 @@
 			y: 17.5d
 		}
 		{
+			dependencies: ["29D74386F91EF48E"]
 			description: ["Coming soon..."]
 			id: "75544A32DE6F9959"
+			subtitle: "Not yet implemented"
 			tasks: [{
 				id: "1B066215F1219899"
 				title: "Nether star looping"
 				type: "checkmark"
 			}]
 			x: 16.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			hide_dependent_lines: true
@@ -1568,8 +1578,8 @@
 				}
 			]
 			title: "Cube Multis"
-			x: 8.5d
-			y: 10.625d
+			x: 6.0d
+			y: 11.875d
 		}
 		{
 			dependencies: ["0DE67CA0A8DD130A"]
@@ -1585,8 +1595,8 @@
 				item: "gtceu:titanium_carbide_ingot"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 7.0d
+			x: 9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1626,6 +1636,11 @@
 			]
 			hide_dependency_lines: true
 			id: "74932E28380BF605"
+			rewards: [{
+				id: "22D53C663F8C2B0E"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1633,13 +1648,19 @@
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 13.0d
+			x: -1.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["6154764CC312BD4E"]
 			description: ["High power output, okay efficiency"]
 			id: "0054A10402380212"
+			rewards: [{
+				count: 4
+				id: "31095B2C37B13365"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BC56D7D57DAEBF0"
 				item: {
@@ -1653,14 +1674,20 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 13.0d
+			x: 0.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["04BD5101521DF8BC"]
 			description: ["Good power output, great efficiency"]
 			hide_dependency_lines: true
 			id: "5DFA276CAE4788F9"
+			rewards: [{
+				count: 4
+				id: "07F9F485720288BE"
+				item: "kubejs:ev_universal_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "323C500B095FBAA6"
 				item: {
@@ -1674,8 +1701,240 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: 13.0d
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"307B3D1F044D7B30"
+				"4FE2969202BEB308"
+			]
+			description: [
+				"The &o&5Large Helper Calorie Converter&r is the next step up from the Large Helper Wheel."
+				""
+				"Depending on the cookie and the helper eating the cookies, this thing can generate up to 1A &9IV&r (which is really good at this point in the game). While you will need more than 1A of &9IV&r, these generators are cheaper than making &6desh&r and &1lunarium&r rotors."
+				""
+				"Additionally, if you make &aGrandma's Ultra-Calorie Dense Uranium Cookies&r, you can power exactly &l4&r LHCCs at once (given you keep the oven stocked with uranium cookie dough)."
+				""
+				"The downside to these is that uranium cookies are obviously more expensive than benzene."
+				""
+				"&o&8(Little tip: you can wallshare input buses so you don't have to make as many hungry helpers)&r&r"
+			]
+			hide_dependency_lines: true
+			id: "2C802A28F7E04EB9"
+			rewards: [{
+				id: "61E6E9FC9CC9C2B2"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "43117C991E250A87"
+				item: "gtceu:power_rectangle_helper_calorie_converter"
+				type: "item"
+			}]
+			title: "Large Helper Calorie Converter"
+			x: -1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6D93BFC5D02B22D0"]
+			description: [
+				"Remember this fella? Feel like he didn't do much in &6HV&r? Turns out he is &4&lextremely efficient&r at turning calories into EU inside of a &oHelper Calorie Converter&r."
+				""
+				""
+				"The &bLCPTR Helper&r consumes calories at a &l&cvery slow rate&r. This also means he can convert the calories into more EU than a &2Hungry helper&r can. This option is similar to the &1lunarium rotors&r in the LGT (except it is actually cheaper than the alternative)."
+				""
+				"&aGrandma's Ultra-Calorie Dense Uranium Cookies&r however, while they may take more time to set up, require less progression than &6desh rotors&r and &1lunarium rotors&r."
+				""
+				"You can optionally also use &6Grandma's Cookies&r for less EU/t if you don't have the infrastructure to set up anything else."
+			]
+			id: "0036488735CD2DFE"
+			tasks: [{
+				id: "6BD8D4EA30FAD7FB"
+				item: "kubejs:lcptr_helper"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"4FE2969202BEB308"
+				"66D61F15E0CAD74A"
+			]
+			description: [
+				"Did you wonder why the oven and &oHelper Calorie Converter&r took radiation proof casings?"
+				""
+				"Him. He is why."
+				""
+				"The &2Hungry Helper&r consumes calories at an &l&calarming rate&r. This also means he can convert the calories into EU faster than a LCPTR helper can. This option is similar to the &6desh rotors&r in the LGT."
+				""
+				"&aGrandma's Ultra-Calorie Dense Uranium Cookies&r however, while they may take more time to set up, require less progression than &6desh rotors&r and &1lunarium rotors&r."
+				""
+				"You can optionally also use &6Grandma's Cookies&r for less EU/t if you don't have the infrastructure to set up anything else."
+			]
+			id: "7D98A160A7C451FC"
+			rewards: [{
+				id: "1F63D019BF000769"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7332538B82B562E4"
+				item: "kubejs:hungry_helper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["68740E4834A99581"]
+			id: "6D9ED1720FC44C3D"
+			rewards: [{
+				id: "551FAD13E8D5DEDF"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A7103949276C8AA"
+				item: "kubejs:grandmas_uranium_cookies"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7C59AB67C9EA3C41"]
+			id: "68740E4834A99581"
+			rewards: [{
+				id: "20E95C040EC91910"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "677DF334D963BE16"
+				item: "kubejs:radiation_resistant_grandma_helper"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			description: ["&dRad-away&r SUCKS to craft, but when you do eventually craft it you use very little of it. You wont need to worry about this being a bottleneck"]
+			id: "7C59AB67C9EA3C41"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77BE351AF341C04F"
+					table_id: 2416468025616298940L
+					type: "choice"
+				}
+				{
+					count: 16
+					id: "5FE7024B8ADE7084"
+					item: "kubejs:ev_universal_coin"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "74711153F1F8D307"
+				item: "gtceu:rad_away_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"Since there are numerous processing lines in this chapter, you have access to stronger generators designed to make the process a LOT faster."
+				""
+				"You have the following generator multiblocks:"
+				""
+				"&4Gas Turbine&r"
+				"&5Helper Calorie Conversion&r"
+				"&dLarge Combustion Engine&r"
+				""
+				"These multiblocks scale really well, and you may end up keeping them for a long time as they are easily upgradable."
+			]
+			icon: "gtceu:power_rectangle_helper_calorie_converter"
+			id: "44FFD6BD6CCFAE73"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "796F6483E1B4C8F9"
+				type: "checkmark"
+			}]
+			title: "Generator Multiblocks"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"307B3D1F044D7B30"
+				"3D1665D6742E7DDC"
+			]
+			hide_dependency_lines: true
+			id: "471E3F741E80A754"
+			rewards: [{
+				id: "0F4E66C118B50FDB"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A28F5D56D89A114"
+				item: "gtceu:ev_rotor_holder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["591742EF37E96F38"]
+			description: [
+				"If you went the &0oil&r route in &bMV&r/&eHV&r, this power generation option may be for you. With some &6High-Octane Gasoline&r, you can pump out a very healthy amount of EU/t without the need for rotors or helpers."
+				""
+				"A LCE will produce &l&b6,144 EU/t&r&r with &6High-Octane Gasoline&r"
+				""
+				"This power option requires the least amount of progression, but may require better infrastructure."
+			]
+			hide_dependency_lines: true
+			id: "7C7539ED31D794CC"
+			rewards: [{
+				id: "510C00EE5DB8F0F1"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5227276E57CBFE67"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 17.0d
+		}
+		{
+			id: "1EE23E3806DA5B98"
+			tasks: [{
+				id: "70AB20931D420E42"
+				item: "gtceu:lubricant_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 17.0d
+		}
+		{
+			id: "6F5179D18BC64940"
+			tasks: [{
+				id: "691F18BF9B6187F5"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 17.0d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

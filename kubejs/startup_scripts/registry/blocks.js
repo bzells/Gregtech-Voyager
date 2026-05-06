@@ -16,4 +16,5 @@ StartupEvents.registry('block', event => {
     casing('stout_titanium_carbide');
     casing('radiation_proof_lead');
     casing('titanite');
+    casing('ostrum')
 })
