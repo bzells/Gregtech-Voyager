@@ -3,7 +3,7 @@ const vanillaWood = ['oak','birch','dark_oak','jungle','mangrove','spruce','acac
 
 
 ServerEvents.tags('item', event => {
-	console.log(global.forestryTrapdoors)
+
 	//I hate it when mods don't tag things properly
 	event.add('minecraft:oak_logs',['vinery:apple_log','vinery:apple_wood'])
 	event.add('vinery:dark_cherry_logs',['vinery:dark_cherry_log','vinery:dark_cherry_wood','vinery:stripped_dark_cherry_log','vinery:stripped_dark_cherry_wood'])
