@@ -22,7 +22,7 @@ function radio(radio, i_nbt, i_message, direction)
             item.setNbt(newNbt)
         })
     }
-    if (i_nbt == 999) {
+    if (i_nbt == 24) {
         player.tell(text)
         player.tell(Text.yellow('Transmission ended.'))
     }
@@ -57,4 +57,4 @@ radio('celestial', 20, 'Captain: Perfect! Now in order for us to be able to find
 radio('celestial', 21, 'You: I\'m sure I can make something. How far out are you guys?', 'out');
 radio('celestial', 22, 'Captain: Currently, we are only a few star systems away from you. Some lunarium should extend your signal far enough that we can reach it.\nOh, and be ready for big shipments. You will need a post box.', 'in');
 radio('celestial', 23, 'Captain: Note this however, the ᒷリℸ ̣ ᒷ∷!¡∷╎ᓭᒷ will be too far away to hear this radio once we depart our current station, but shipments should still come. In future, you will need a better radio...', 'in');
-radio('celestial', 999, 'Captain: Note this however, the ᒷリℸ ̣ ᒷ∷!¡∷╎ᓭᒷ will be too far away to hear this radio once we depart our current station, but shipments should still come. In future, you will need a better radio...\nSo that we know it\'s you, send us this radio in your postbox.', 'in');
+radio('celestial', 24, 'Captain: Note this however, the ᒷリℸ ̣ ᒷ∷!¡∷╎ᓭᒷ will be too far away to hear this radio once we depart our current station, but shipments should still come. In future, you will need a better radio...\nSo that we know it\'s you, send us this radio in your postbox.', 'in');
