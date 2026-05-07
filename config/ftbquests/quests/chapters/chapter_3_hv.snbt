@@ -2145,6 +2145,17 @@
 			x: -2.5d
 			y: 13.0d
 		}
+		{
+			dependencies: ["6DAEA8AAC3AB9B85"]
+			id: "58FC812A56D1A85A"
+			tasks: [{
+				id: "7F4F3BF9F5A4F299"
+				item: "gtceu:hv_helper_wheel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
 	]
 	title: "Chapter 3 (HV)"
 }

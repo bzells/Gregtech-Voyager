@@ -14,8 +14,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["58BF847DADB89C2E"]
@@ -25,8 +25,8 @@
 				item: "gtceu:ostrum_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			id: "35A76EF5228154C7"
@@ -35,11 +35,14 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["35A76EF5228154C7"]
+			dependencies: [
+				"35A76EF5228154C7"
+				"1B77A654DE3A1013"
+			]
 			id: "58BF847DADB89C2E"
 			tasks: [{
 				count: 16L
@@ -47,8 +50,8 @@
 				item: { Count: 16, id: "gtceu:hssg_coil_block" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7A3CD112368FA9B2"]
@@ -58,18 +61,22 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["47732A84A5E27361"]
+			dependencies: [
+				"47732A84A5E27361"
+				"1D5E8B2CAF0DF4F6"
+			]
 			id: "3FC7349DA77FEC82"
 			tasks: [{
 				id: "2506B3265C31CACB"
 				item: "kubejs:celestial_radio"
 				type: "item"
 			}]
-			x: 1.0d
+			title: "First contact"
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -80,7 +87,8 @@
 				item: "gtceu:celestial_post_box"
 				type: "item"
 			}]
-			x: 2.0d
+			title: "Recieving Mail From the Stars"
+			x: 1.5d
 			y: 4.0d
 		}
 		{
@@ -92,14 +100,11 @@
 				item: "kubejs:martian_contract"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"56CB165B0476514F"
-				"21DB09C311B39958"
-			]
+			dependencies: ["21DB09C311B39958"]
 			id: "0075D9B5562B916C"
 			tasks: [{
 				id: "44555325D4583346"
@@ -107,10 +112,10 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["0075D9B5562B916C"]
+			dependencies: ["41361FD7A092EE72"]
 			hide_dependency_lines: false
 			id: "6EE539D525D3D685"
 			tasks: [{
@@ -119,8 +124,8 @@
 				type: "item"
 			}]
 			title: "Martian Scrap Recovery"
-			x: 5.5d
-			y: 7.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6EE539D525D3D685"]
@@ -130,11 +135,15 @@
 				item: "gtceu:titanite_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.5d
+			x: 3.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["6EE539D525D3D685"]
+			dependencies: [
+				"58BF847DADB89C2E"
+				"63B247C41E648F01"
+				"0B188F4A4A842A60"
+			]
 			id: "3FB4F231181DD428"
 			size: 2.0d
 			tasks: [{
@@ -143,8 +152,8 @@
 				type: "item"
 			}]
 			title: "IV Superconductor"
-			x: 2.0d
-			y: 7.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["56CB165B0476514F"]
@@ -154,8 +163,430 @@
 				item: "kubejs:martian_shipment_t1"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 3.5d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1EA011566D0AF90B"
+				"168C4348743D0603"
+			]
+			id: "63B247C41E648F01"
+			tasks: [{
+				id: "6E6BAE4A52F62993"
+				item: "gtceu:iv_mixer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6EE539D525D3D685"
+				"217C34D6507A431D"
+			]
+			id: "5BC888D3C0918F81"
+			tasks: [{
+				id: "5504EBDE2C2A3FA7"
+				item: "kubejs:titanichite_bud"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["78BD9D87CBFA6428"]
+			id: "217C34D6507A431D"
+			tasks: [{
+				id: "22039234ACCF0CBF"
+				item: "gtceu:lunarium_growth_slurry_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5BC888D3C0918F81"]
+			id: "0B188F4A4A842A60"
+			tasks: [{
+				id: "7A30FF7C53E86F72"
+				item: "gtceu:raw_titanichite"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			id: "78BD9D87CBFA6428"
+			tasks: [{
+				id: "0510ADECCCFE6605"
+				item: "gtceu:lunarium_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0075D9B5562B916C"]
+			id: "41361FD7A092EE72"
+			tasks: [{
+				id: "2EB83C1E4CD1D5DB"
+				item: "kubejs:shredded_martian_scrap"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			id: "1D5E8B2CAF0DF4F6"
+			tasks: [
+				{
+					id: "6322AB9969017544"
+					item: "gtceu:qbit_cpu_chip"
+					type: "item"
+				}
+				{
+					id: "33588C9E9A6CEDBC"
+					item: "gtceu:qbit_cpu_wafer"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["47732A84A5E27361"]
+			description: [
+				"With &dostrum&r, you can now craft the &n&l&6Alloy Blast Smelter&r&r&r."
+				""
+				"This machine is needed in order to make the specialized alloys for making &9IV&r tier multiblocks."
+				""
+				"These multiblocks can use &lparallel control hatches&r, increasing their speed exponentially"
+			]
+			id: "11ED1C714EE1EB79"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0270706DF4320E46"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			title: "Better Multiblocks"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"50A265E32ADDD82E"
+				"11ED1C714EE1EB79"
+			]
+			hide_dependency_lines: true
+			id: "5A6CCE713C1D1143"
+			tasks: [{
+				id: "17211AB8D4B14FF6"
+				item: "gtceu:iv_parallel_hatch"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A3CD112368FA9B2"]
+			hide_dependent_lines: true
+			id: "168C4348743D0603"
+			tasks: [{
+				id: "1EFC0A4378EF1A74"
+				item: "gtceu:iv_electric_motor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["168C4348743D0603"]
+			id: "4DEDB2FEC0301981"
+			tasks: [{
+				id: "2F9DADDBED4A7F18"
+				item: "gtceu:iv_electric_piston"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["168C4348743D0603"]
+			id: "2EB2BB50C19871AC"
+			tasks: [{
+				id: "34DAF358ADD889C5"
+				item: "gtceu:iv_conveyor_module"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["168C4348743D0603"]
+			id: "3946B4656F40DFFF"
+			tasks: [{
+				id: "69E21DBD29B054A6"
+				item: "gtceu:iv_electric_pump"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3946B4656F40DFFF"]
+			id: "0BB8A768F511811B"
+			tasks: [{
+				id: "1BC3827F512E5444"
+				item: "gtceu:iv_fluid_regulator"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4DEDB2FEC0301981"]
+			id: "1B5DC7564288B03C"
+			size: 1.5d
+			tasks: [{
+				id: "08229CC10FB48066"
+				item: "gtceu:iv_robot_arm"
+				type: "item"
+			}]
+			title: "Robot Arms V"
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A3CD112368FA9B2"]
+			id: "7579D9C01E78063B"
+			tasks: [{
+				id: "1B48BA6F31327B3E"
+				item: "gtceu:iv_sensor"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A3CD112368FA9B2"]
+			id: "4AC0B5EB045CD69D"
+			tasks: [{
+				id: "4EF511E7B8D6C08B"
+				item: "gtceu:iv_emitter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7A3CD112368FA9B2"
+				"22B362A5FB14A87D"
+			]
+			id: "7764E1FF769BDCB6"
+			tasks: [{
+				id: "405D2FF70673D446"
+				item: "gtceu:iv_field_generator"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["58BF847DADB89C2E"]
+			hide_dependency_lines: true
+			id: "22B362A5FB14A87D"
+			tasks: [{
+				id: "7F40904C8C97C332"
+				item: "gtceu:samarium_iron_arsenic_oxide_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1B5DC7564288B03C"
+				"1EA011566D0AF90B"
+			]
+			id: "245D7901EBA2C1ED"
+			tasks: [{
+				id: "1B77A654DE3A1013"
+				item: "gtceu:iv_assembler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"495DFB75E94690EC"
+				"3FB4F231181DD428"
+				"044B5E4FBBD3C277"
+			]
+			id: "64B5D866D92BA6C4"
+			size: 1.5d
+			tasks: [{
+				id: "712BC1582949481A"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"035114E7CCF01DD8"
+				"50A265E32ADDD82E"
+			]
+			id: "495DFB75E94690EC"
+			size: 1.25d
+			tasks: [{
+				id: "3BECEEFB467D267A"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6F737FFF848A5BFF"]
+			id: "035114E7CCF01DD8"
+			tasks: [{
+				id: "5CDC513216006EE3"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1D5E8B2CAF0DF4F6"
+				"66DD18C6B3536413"
+			]
+			id: "6F737FFF848A5BFF"
+			tasks: [{
+				id: "6C522534CF28188E"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1EA011566D0AF90B"
+				"1B5DC7564288B03C"
+				"4AC0B5EB045CD69D"
+			]
+			hide_dependency_lines: true
+			id: "66DD18C6B3536413"
+			size: 1.5d
+			tasks: [{
+				id: "0366A52CAF0FF5BA"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			id: "4D9DF7430F006DC1"
+			tasks: [{
+				id: "51C65A36A05BBC52"
+				item: "gtceu:indium_gallium_phosphide_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6C8A122B8F413A39"
+				"4D9DF7430F006DC1"
+			]
+			id: "66A7E0D8339F7542"
+			tasks: [
+				{
+					id: "611A5052C538E28C"
+					item: "gtceu:hpic_wafer"
+					type: "item"
+				}
+				{
+					id: "61FAEF5DF3A48696"
+					item: "gtceu:hpic_chip"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2EB2BB50C19871AC"
+				"168C4348743D0603"
+				"1EA011566D0AF90B"
+			]
+			hide_dependency_lines: true
+			id: "6C8A122B8F413A39"
+			tasks: [{
+				id: "59E48D36F0417734"
+				item: "gtceu:iv_cutter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"245D7901EBA2C1ED"
+				"3EB2AED9E53B3F2F"
+			]
+			id: "044B5E4FBBD3C277"
+			tasks: [
+				{
+					id: "4B2F44FCD2432A5F"
+					item: "gtceu:advanced_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "0E7E20344890A6BE"
+					item: "gtceu:advanced_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "512B3ABBCA52F019"
+					item: "gtceu:advanced_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "3CAAD7A85927500D"
+					item: "gtceu:advanced_smd_diode"
+					type: "item"
+				}
+				{
+					id: "335E293212424D44"
+					item: "gtceu:advanced_smd_inductor"
+					type: "item"
+				}
+			]
+			title: "Advanced SMDs"
+			x: -3.5d
+			y: 7.5d
+		}
+		{
+			id: "3EB2AED9E53B3F2F"
+			tasks: [{
+				id: "59093C052E082EA8"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.0d
 		}
 	]
 	title: "Chapter 5: Age of Infrastructure (IV)"
