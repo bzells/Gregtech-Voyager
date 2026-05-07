@@ -177,6 +177,7 @@ StartupEvents.registry('item', event => {
     event.create('crystalline_titanium_electrum').texture('kubejs:item/crystalline_titanium_electrum').displayName('Crystalline Titanium Electrum').tooltip('§4Pure Capacitance');
 //refined_fluxed_electrum_crystal
     event.create('refined_fluxed_electrum_crystal').texture('kubejs:item/refined_fluxed_electrum_crystal').displayName('Refined Fluxed Electrum Crystal').tooltip('§eRefined Capacitance');
+    event.create('titanichite_bud').texture('kubejs:item/titanichite_spores').displayName('Titanichite Spores').tooltip('§eGlimmering Capacitance');
 
 
     // misc

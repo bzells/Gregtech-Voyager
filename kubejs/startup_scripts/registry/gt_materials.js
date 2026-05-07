@@ -303,7 +303,7 @@ register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xb
 register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_cobalt_electrum', [], true, '0x006387', 512, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4, [3600, 'mid', voltTier('ev'), 20*64]);
-register_superconductor('titanite_alloy',['2x titanite', '2x hssg', 'lunarium', '2x titanium', '3x fluxed_electrum', 'fluorine', 'electrotine'], true, '0xff1284', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
+register_superconductor('titanite_alloy',['4x titanite', '2x tungsten', '3x lunarium', '2x graphene', '3x refined_fluxed_electrum', '2x fluorine', 'electrotine'], true, '0xff1284', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
 // register_superconductor('desh_rhodium_infused_refined_electrum', true, '0xf57040', 32768, 8, [7200, 'high', voltTier('luv'), 1]);
 // register_superconductor('perfected_electrum', true, '0xfffef7', 131072, 64, [9001, 'high', voltTier('zpm'), 1]);
 // register_superconductor('trilectrum', true, '0xe3527d', 524288, 64, [10080, 'higher', voltTier('uv'), 1]);
@@ -311,7 +311,8 @@ register_superconductor('titanite_alloy',['2x titanite', '2x hssg', 'lunarium', 
 // register_superconductor('sculk_corrupted_hyperdense_neutronic_superelectrum', true, '0x1a595e', 8388608, 512, [11880, 'highest', voltTier('uev'), 1]);
 // register_superconductor('atomically_perfected_metallic_royal_honey', true, '0xff6a00', 33554432, 4096, [11880, 'highest', voltTier('uiv'), 1]);
 // register_superconductor('exposed_metallic_dark_royal_honey', true, '0xff6a00', 134217728, 8192, [11880, 'highest', voltTier('uxv'), 1]);
-
+// titanite alloy
+register_fluid('lunarium_growth_slurry','0x1fff1a', ['3x lunarium', '4x chlorine', '2x fluorine', '1x carbon'], no_decomp)
 // platline
 register_dust('dewatered_iridium_metal_residue', [], '0x094235', no_decomp);
 register_dust('impure_iridium_metal', [], '0x094235', no_decomp);
@@ -337,7 +338,7 @@ register_ore_gem('socochalamite', ['2x amethyst', '1x rutile', '4x glowstone', '
 register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xffbf00', [electrolyze], [])
 
 // mars ores
-register_ore_gem('titanichite', ['5x tungsten', '2x titanite', '5x fluorine'], '0xff0055', [no_decomp], [])
+register_ore_gem('titanichite', ['2x titanite', 'fluorine'], '0xff0055', [no_decomp], [])
 register_ore_metal('ostrite', ['3x oxygen', '12x chlorine', '8x ostrum'], '0xc785a2', [electrolyze]);
 
 // desh line
