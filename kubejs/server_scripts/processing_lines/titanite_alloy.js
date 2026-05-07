@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         .duration(60 * 20) 
         .EUt(480) 
 
-    create_recipe_lcr('titanichite', ['kubejs:titanichite_bud', '4x kubejs:crystalline_titanium_electrum'], 'gtceu:uranium_238 1000', '4x gtceu:raw_titanichite', [], 45, 7680)
+    create_recipe_lcr('titanichite', ['kubejs:titanichite_bud', '4x kubejs:crystalline_titanium_electrum'], 'gtceu:uranium 1000', '4x gtceu:raw_titanichite', [], 45, 7680)
 
 
     create_mixer_recipe('titanite_alloy', ['4x gtceu:titanichite_dust', '2x gtceu:tungsten_dust', '2x gtceu:graphene_dust', 'gtceu:electrotine_dust'], [], '9x gtceu:titanite_alloy_dust', [], 7680, 9*5)
