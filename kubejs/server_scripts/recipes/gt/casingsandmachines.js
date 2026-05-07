@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
 
     casing_recipe('desh', 'durable_desh')
     casing_recipe('ultimet', 'firm_ultimet')
+    casing_recipe('ostrum', 'ostrum')
     event.recipes.gtceu.assembler('kubejs:stout_titanium_carbide_casing')
             .itemInputs(
                 '6x gtceu:titanium_carbide_plate',
