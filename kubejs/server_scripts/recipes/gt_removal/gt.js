@@ -49,4 +49,11 @@ event.replaceInput(
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
+event.replaceInput(
+  { output: 'gtceu:power_substation' }, // Arg 1: the filter
+  '#gtceu:circuits/luv',            // Arg 2: the item to replace
+  '#gtceu:circuits/zpm'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
 })

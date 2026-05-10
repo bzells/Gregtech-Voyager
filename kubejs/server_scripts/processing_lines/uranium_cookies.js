@@ -88,6 +88,10 @@ ServerEvents.recipes(event => {
         '12x kubejs:uranium_cookie_dough', [], 3.6 * 9 * .66, 1520, 'basic_chemist_helper'
     )
 
+    create_recipe_lcr('radioactive_cookie_dough_bulk_adv', ['8x kubejs:cookie_dough', 'gtceu:rad_away_dust'], ['gtceu:glycerol 333', 'gtceu:uranium_ethanol_solution 33'],
+        '16x kubejs:uranium_cookie_dough', [], 3.6 * 9 * .33, 1280, 'advanced_chemist_helper'
+    )
+
     oven('grandmas_uranium_cookies', 16, '16x kubejs:uranium_cookie_dough', 'grandmas_baking_sheet', 'radiation_resistant', 1980, 60)
     oven('grandmas_uranium_cookies', 32, '32x kubejs:uranium_cookie_dough', 'grandmas_tungsten_baking_sheet', 'radiation_resistant', 1520, 60 *.66)
 

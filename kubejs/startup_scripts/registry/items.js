@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_loot_bag(tier));
     tiers.forEach(tier => register_universal_circuit(tier));
 
-    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'basic_chemist', 'advanced_chemist', 'radiation_resistant_grandma', 'hungry']
+    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'radiation_resistant_grandma', 'hungry', 'hungry_hungry', 'embassy', 'basic_chemist', 'advanced_chemist']
 
     function register_helper_item(name)
     {

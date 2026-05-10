@@ -14,11 +14,22 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu
         .large_chemical_reactor('kubejs:crystalline_titanium_electrum_helper')   // recipe ID
         .itemInputs('3x gtceu:fluxed_titanium_electrum_compound_dust')
+        .circuit(3)
         .notConsumable('kubejs:basic_chemist_helper')
         .inputFluids("gtceu:fluorine 850")
         .itemOutputs('12x kubejs:crystalline_titanium_electrum')
         .duration(400 * .66)                                 // in ticks
         .EUt(1924 * .85) 
+
+    event.recipes.gtceu
+        .large_chemical_reactor('kubejs:crystalline_titanium_electrum_helper_adv')   // recipe ID
+        .itemInputs('2x gtceu:fluxed_titanium_electrum_compound_dust')
+        .notConsumable('kubejs:advanced_chemist_helper')
+        .circuit(3)
+        .inputFluids("gtceu:fluorine 425")
+        .itemOutputs('16x kubejs:crystalline_titanium_electrum')
+        .duration(400 * .33)                                 // in ticks
+        .EUt(1924 * .66) 
         
     event.recipes.gtceu
         .chemical_bath('kubejs:refined_fluxed_electrum_crystal')   // recipe ID

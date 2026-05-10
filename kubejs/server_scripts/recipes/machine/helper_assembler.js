@@ -159,6 +159,14 @@ ServerEvents.recipes(event => {
         .duration(200)                               
         .EUt(1980) 
 
+    event.recipes.gtceu
+        .assembler('kubejs:iv_stomach_unit')   
+        .itemInputs('16x gtceu:polybenzimidazole_plate', '4x #gtceu:circuits/iv', '4x gtceu:ptfe_pipe_casing', '2x gtceu:iv_field_generator')
+        .itemOutputs('kubejs:ev_stomach_unit')
+        .inputFluids('gtceu:fluoroantimonic_acid 1000')
+        .duration(200)                               
+        .EUt(1980) 
+
 
     function helper(helper, eut, items, fluid)
     {
@@ -175,5 +183,15 @@ ServerEvents.recipes(event => {
     helper('hungry', 1980, ['12x kubejs:radiation_proof_lead_casing', '2x gtceu:refined_fluxed_electrum_frame', 'kubejs:ev_helper_computation_array','kubejs:ev_stomach_unit', '2x gtceu:ev_robot_arm', '5x gtceu:titanium_drill_head', 'gtceu:ev_electric_motor', '2x gtceu:refined_fluxed_electrum_rod', '2x #gtceu:circuits/iv'],
         'gtceu:yttrium 1000'
     )
+    helper('hungry_hungry', 7860, ['12x kubejs:titanite_casing', '2x gtceu:titanite_alloy_frame', 'kubejs:iv_helper_computation_array','2x kubejs:iv_stomach_unit', '2x gtceu:iv_robot_arm', '5x gtceu:tungsten_carbide_drill_head', 'gtceu:iv_electric_motor', '2x gtceu:titanite_alloy_rod', '2x #gtceu:circuits/luv'],
+        'gtceu:plutonium_241 1000'
+    )
+    helper('ev_ebf', 7680, 
+        ['2x kubejs:iv_helper_computation_array', 'gtceu:tungsten_steel_frame', '8x gtceu:titanite_alloy_double_wire', '2x gtceu:iv_robot_arm', '2x gtceu:iv_electric_motor', '2x gtceu:tungsten_steel_rod'], 'gtceu:soldering_alloy 1000')
+
+    helper('embassy', 7680, ['4x #gtceu:circuits/zpm', '16x gtceu:lunarium_frame', '4x kubejs:iv_helper_computation_array', 'kubejs:celestial_radio', '8x gtceu:iv_sensor', '8x gtceu:iv_emitter', '64x gtceu:fine_titanite_alloy_wire', 'gtceu:luv_robot_arm'], 'gtceu:soldering_alloy 1000')
+
+    helper('advanced_chemist', 7680, ['4x #gtceu:circuits/zpm', '16x gtceu:titanite_alloy_frame', '4x kubejs:iv_helper_computation_array', '2x gtceu:luv_robot_arm', '2x gtceu:luv_electric_motor', '2x gtceu:titanite_alloy_rod'], 'gtceu:soldering_alloy 1000')
+    helper('iv_technician', 7680, ['1x kubejs:iv_helper_computation_array', 'gtceu:tungsten_steel_frame', '8x gtceu:titanite_plate', '2x gtceu:iv_robot_arm', '2x gtceu:iv_electric_motor', '2x gtceu:titanite_rod', '#gtceu:circuits/iv'], 'gtceu:soldering_alloy 1000')
 
 });

@@ -93,6 +93,12 @@ event.remove({output: 'gtceu:ruthenium_tetroxide' })
         [], 30, 480 * .66, 'basic_chemist_helper'
     )
 
+    create_recipe_centrifuge('pgs_adv', '4x gtceu:platinum_group_sludge_dust', 'gtceu:aqua_regia 600'
+      , ['5x gtceu:rarest_metal_mixture_dust', '5x gtceu:inert_metal_mixture_dust', '6x gtceu:platinum_sludge_residue_dust', 
+        '12x gtceu:plat_palladium_metal_residue_dust'],
+        [], 30, 480 * .33, 'advanced_chemist_helper'
+    )
+
     create_recipe_lcr('dewatering_fluid', ['2x gtceu:barium_dust', 'gtceu:zinc_dust'], 'gtceu:kerosene 2000',
         [], 'kubejs:dewatering_fluid 5000', 40, 480
     )

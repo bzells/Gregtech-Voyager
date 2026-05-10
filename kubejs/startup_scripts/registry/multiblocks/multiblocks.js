@@ -27,6 +27,13 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setSound(GTSoundEntries.COMPUTATION);
 
+    event.create("helper_software_installation_unit")
+        .category("multiblock")
+        // .setEUIO("in")
+        .setMaxIOSize(6, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+        .setSound(GTSoundEntries.COMPUTATION);
+
 });
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -205,6 +212,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("A", Predicates.blocks("kubejs:ostrum_casing")
         
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))  // make sure this is inside the .where, otherwise it will break shit
@@ -222,13 +230,49 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .workableCasingModel(`kubejs:block/casing/ostrum_casing`,
             `gtceu:block/machines/electrolyzer`);
 
+    event.create("helper_software_installation_unit", "multiblock")
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("helper_software_installation_unit")
+        // .recipeModifiers([GTRecipeModifiers.PERFECT_OC])
+
+        // base block appearance
+        .appearanceBlock(() => Block.getBlock("kubejs:ostrum_casing"))
+
+        .pattern(definition => FactoryBlockPattern.start()
+
+            .aisle("AAAAA", "TCCCT", "TCCCT", "AAAAA")
+            .aisle("AAAAA", "TDDDT", "TDDDT", "AAAAA")
+            .aisle("AA@AA", "TCCCT", "TCCCT", "AAAAA")
+
+
+
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+
+            .where("A", Predicates.blocks("kubejs:ostrum_casing")
+        
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))  // make sure this is inside the .where, otherwise it will break shit
+
+            .where("T", Predicates.blocks("gtceu:computer_heat_vent"))
+            .where("C", Predicates.blocks("gtceu:computer_casing"))
+            .where("D", Predicates.blocks("gtceu:high_power_casing"))
+
+            .where(" ", Predicates.air())
+
+            .build())
+
+            .workableCasingModel(`kubejs:block/casing/ostrum_casing`,
+            `kubejs:block/multiblock/helper_software_installation_unit`);
+
 
              // core mod incoming!!
 
         // event.create('titanite_blast_furnace', 'multiblock')
         // .rotationState(RotationState.NON_Y_AXIS)
         // .recipeType('electric_blast_furnace')
-        // .machine((holder) => new $CoiledMulti(holder))
         // .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
         // .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         // .pattern(definition => FactoryBlockPattern.start()
