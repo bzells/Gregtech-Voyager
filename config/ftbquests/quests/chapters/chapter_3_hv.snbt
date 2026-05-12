@@ -3,7 +3,11 @@
 	default_quest_shape: ""
 	filename: "chapter_3_hv"
 	group: "3E515D2B3A8DFC29"
-	icon: "gtceu:hv_robot_arm"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_1_rocket"
+		tag: { }
+	}
 	id: "56DF01AB75C1C354"
 	order_index: 4
 	quest_links: [ ]
@@ -2058,7 +2062,12 @@
 			y: 4.0d
 		}
 		{
-			description: ["An &ookay&r way of getting &4Plutonium&r is by finding a &ldense &4red vein&r in the Twilight Forest. They are quite rare, but do exist."]
+			description: [
+				"An &ookay&r way of getting &4Plutonium&r is by finding a &ldense &4red vein&r in the Twilight Forest. They are quite rare, but do exist."
+				""
+				"You can also go to the &dend&r at your own risk. You will find &4Plutonium&r there."
+				"&7(keep in mind you need to get 12 different eyes to go to the end)"
+			]
 			id: "5FC52AE8F8378647"
 			tasks: [{
 				id: "438176C5B0E36858"

@@ -34,6 +34,13 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setSound(GTSoundEntries.COMPUTATION);
 
+    event.create("atmospheric_collector")
+        .category("multiblock")
+        // .setEUIO("in")
+        .setMaxIOSize(1, 1, 0, 1)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+        .setSound(GTSoundEntries.ARC);
+
 });
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -295,5 +302,45 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingModel('kubejs:block/casing/titanite_casing',
             'kubejs:block/multiblock/titanite_blast_furnace');
+
+
+    event.create('atmospheric_collector', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('atmospheric_collector')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(() => Block.getBlock("gtceu:clean_machine_casing"))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('     AAAAAAAAAAAAAAA    ', '     AAAAA     AAAAA    ', '     AAA         AAA    ', '     AA           AA    ', '     AA           AA    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA    RRRRR    ATGGG', '     A  RR     RR  A GGG', '     A R         R A    ', '     A R         R A    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '      AR         RA     ', '      AR         RA     ', '       ARR     RRA      ', '        AARRRRRAA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAATGGG', 'NNNNNA             A GGG', '     A    FFFFF    ATGGG', '     A  FFFFFFFFF  A    ', '     A  FFFFFFFFF  A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '      A FFFFFFFFF A     ', '      A FFFFFFFFF A     ', '       A  FFFFF  A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA             ATGGG', '     A             A GGG', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('     AAAAAAAAAAAAAAA    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA    ', 'NNNNNA             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA    ', 'NNNNNA             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA             ATGGG', '     A             A GGG', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('     AAAAAAAAAAAAAAATGGG', '     A             A GGG', '     A             ATGGG', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA             ATGGG', '     A             A GGG', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA    ', 'NNNNNA             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA    ', 'NNNNNA             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('     AAAAAAAAAAAAAAA    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA             ATGGG', '     A             A GGG', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAATGGG', 'NNNNNA             A GGG', '     A    FFFFF    ATGGG', '     A  FFFFFFFFF  A    ', '     A  FFFFFFFFF  A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '     A FFFFFFFFFFF A    ', '      A FFFFFFFFF A     ', '      A FFFFFFFFF A     ', '       A  FFFFF  A      ', '        AA     AA       ', '          AAAAA         ') 
+            .aisle('NNNNNAAAAAAAAAAAAAAA GGG', 'NNNNNA    RRRRR    ATG@G', '     A  RR     RR  A GGG', '     A R         R A    ', '     A R         R A    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '     AR           RA    ', '      AR         RA     ', '      AR         RA     ', '       ARR     RRA      ', '        AARRRRRAA       ', '          AAAAA         ') 
+            .aisle('     AAAAAAAAAAAAAAA    ', '     AAAAA     AAAAA    ', '     AAA         AAA    ', '     AA           AA    ', '     AA           AA    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
+            .where('A', Predicates.blocks('gtceu:clean_machine_casing'))
+            .where('N', Predicates.blocks('gtceu:nonconducting_casing')
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))
+            .where('T', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('G', Predicates.blocks('gtceu:corrosion_proof_casing')
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(16).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(16).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+            .where('F', Predicates.blocks('kubejs:atmospheric_filter_casing'))
+            .where('R', Predicates.blocks('gtceu:robust_machine_casing'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .build())
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+            'gtceu:block/machines/gas_collector');
     
 });

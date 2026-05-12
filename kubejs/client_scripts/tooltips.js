@@ -22,6 +22,8 @@ ItemEvents.tooltip(event => {
   event.add(`gtceu:power_rectangle_helper_calorie_converter`, '\n§6Can run helper calorie conversion recipes')
 
   event.add(`gtceu:titanite_blast_furnace`, '§6Has perfect overclock (regardless of coil temperature)§r\n§6Can use 4x parallel hatches§r\n§4Can only use ONE IV energy hatch§r\nNOTE: In future this multiblock will be changed to use GT Coil mechanics.')
+  event.add(`gtceu:atmospheric_collector`, '§6Collects gas and dust from the surrounding atmosphere and freezes it§r\n§6Can use parallel hatches§r')
+  
   rectangleTooltip('helper_calorie_converter')
 
   addHelperTooltip('hungry', 'Can consume a LOT of calories')

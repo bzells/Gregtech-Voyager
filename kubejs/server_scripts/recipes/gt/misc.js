@@ -1,4 +1,18 @@
 ServerEvents.recipes(event => {
+
+    const mcTiers = ['wooden', 'stone', 'iron', 'gold', 'diamond', 'netherite']
+    function removeTools(tier)
+    {
+        event.remove({output : `minecraft:${tier}_pickaxe`})
+        event.remove({output : `minecraft:${tier}_axe`})
+        event.remove({output : `minecraft:${tier}_shovel`})
+        event.remove({output : `minecraft:${tier}_sword`})
+        event.remove({output : `minecraft:${tier}_hoe`})
+    }
+
+    mcTiers.forEach(tier => removeTools(tier));
+
+
     event.recipes.gtceu.rock_breaker("kubejs:obisidan_redstone")
         .itemInputs("minecraft:redstone")
         .itemOutputs("minecraft:obsidian")

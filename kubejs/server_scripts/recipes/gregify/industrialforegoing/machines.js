@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
                     B: '#gtceu:circuits/lv',
                     // E: 'minecraft:bucket',
                     F: 'gtceu:bronze_plate',
-                    G: 'minecraft:iron_hoe'
+                    G: '#forge:seeds'
                 }
     );
 

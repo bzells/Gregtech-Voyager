@@ -266,6 +266,17 @@ function register_fluid(name, color, ingredients, flags)
     });
 }
 
+function register_gas(name, color, ingredients, flags)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .gas()
+            .components(ingredients)
+            .color(color)
+            .flags(flags)
+    });
+}
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('aluminium_lithium_compound')
         .ingot()
@@ -341,6 +352,8 @@ register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xf
 register_ore_gem('titanichite', ['2x titanite', 'fluorine'], '0xff0055', [no_decomp], [])
 register_ore_metal('ostrite', ['3x oxygen', '12x chlorine', '8x ostrum'], '0xc785a2', [electrolyze]);
 
+register_dust('martian_sand', [], '0x732a22', no_decomp)
+
 // desh line
 register_dust('desh_group_sludge',[],'0x331305', no_decomp)
 register_nosmelt_elem_metal('lunarium', [], true, '0x000d61', [4500, 'mid', voltTier('iv'), 20*64], [200, 500, 1, 100000], voltTier('iv'))
@@ -359,6 +372,9 @@ register_dust('impure_lunarium', ['lunarium', 'desh', '1x carbon', 'calcium'], '
 // misc
 
 register_fluid('uranium_ethanol_solution','0x91e600', ['uranium_235', 'ethanol'], no_decomp)
+
+register_gas('martian_air', '0x4a140e', [], [no_decomp])
+register_fluid('liquid_martian_air', '0x732a22', [], [no_decomp])
 
 /*
     Materials are in-game items or fluids. They can be dusts, ingots, gems, fluids and all their derivatives.

@@ -336,18 +336,46 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    // event.shaped(
+    //     Item.of('ae2:wireless_access_point', 1),
+    //     [
+    //         'DAD',
+    //         'BCB',
+    //         'DAD'
+    //     ],
+    //     {
+    //         A: 'ae2:fluix_glass_cable',
+    //         B: 'ae2:engineering_processor',
+    //         C: 'gtceu:ev_machine_hull',
+    //         D: 'gtceu:titanium_plate'
+    //     }
+    // )
+
     event.shaped(
-        Item.of('ae2:wireless_access_point', 1),
+        Item.of('ae2:storage_monitor', 4),
         [
-            'DAD',
-            'BCB',
-            'DAD'
+            ' A ',
+            ' CB',
+            ' A '
         ],
         {
             A: 'ae2:fluix_glass_cable',
-            B: 'ae2:engineering_processor',
-            C: 'gtceu:ev_machine_hull',
-            D: 'gtceu:titanium_plate'
+            B: 'ae2:calculation_processor',
+            C: 'gtceu:computer_monitor_cover',
+        }
+    )
+
+    event.shaped(
+        Item.of('ae2:cell_workbench', 1),
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],
+        {
+            A: 'gtceu:steel_plate',
+            B: 'ae2:calculation_processor',
+            C: 'ae2:item_cell_housing',
         }
     )
 

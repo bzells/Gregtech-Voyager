@@ -44,18 +44,4 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7680)
 
-    event.recipes.gtceu
-        .assembler('kubejs:circuit_cutter')
-        .itemInputs(
-            'gtceu:iv_machine_hull',
-            '4x gtceu:platinum_plate',
-            'ae2:engineering_processor',
-            'gtceu:iv_robot_arm',
-            'gtceu:iv_sensor',
-            '2x #gtceu:circuits/iv'
-        )
-        .itemOutputs('expatternprovider:circuit_cutter')
-        .duration(200)
-        .EUt(7680)
-
 });

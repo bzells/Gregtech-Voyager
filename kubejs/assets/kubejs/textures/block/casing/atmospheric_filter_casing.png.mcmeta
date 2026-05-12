@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casing/atmospheric_filter_casing_ctm"
+    }
+}

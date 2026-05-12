@@ -5,7 +5,7 @@
 	group: "3E515D2B3A8DFC29"
 	icon: {
 		Count: 1
-		id: "ad_astra:tier_1_rocket"
+		id: "ad_astra:tier_2_rocket"
 		tag: { }
 	}
 	id: "4F26DE9498F90D58"

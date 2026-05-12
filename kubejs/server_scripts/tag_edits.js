@@ -15,6 +15,15 @@ ServerEvents.tags('item', event => {
 
   event.remove('forge:ingots/steel', ['ad_astra:steel_ingot', 'tconstruct:steel_ingot'])
 
+  function circuit(tier)
+  {
+      event.add(`gtceu:circuits/${tier}`, `kubejs:${tier}_universal_circuit`)
+  }
+
+  const tiers = ['ulv', 'lv','mv','hv','ev','iv','luv','zpm','uv','uhv','uev','uiv','max'];
+
+  tiers.forEach(tier => circuit(tier));
+
 })
 
 ServerEvents.tags('fluid', event => {

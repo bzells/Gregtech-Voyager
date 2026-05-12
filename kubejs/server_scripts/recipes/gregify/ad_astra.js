@@ -307,6 +307,10 @@ ServerEvents.recipes(event => {
         '16x gtceu:ruthenium_foil',
         '24x gtceu:steel_bolt'
     )
+    .itemOutputs('kubejs:desh_rocket_hull_plate')
+    .inputFluids('gtceu:soldering_alloy 2000')
+    .duration(20 * 90)
+    .EUt(1980);
 
     event.recipes.gtceu.assembler('kubejs:titanite_rocket_hull')
     .itemInputs(

@@ -276,6 +276,28 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        Item.of('ae2:color_applicator', 1), 
+        [
+            '   ',
+            'BAD', 
+            '   '
+        ],
+        {
+            A: 'gtceu:empty_spray_can',
+            B: 'ae2:cell_component_1k',
+            C: 'gtceu:fine_fluxed_cobalt_electrum_wire',
+            D: 'gtceu:aluminium_plate'
+        }
+    )
+
+     event.recipes.gtceu
+        .assembler('kubejs:pattern')  
+        .itemInputs('3x ae2:quartz_glass', '8x gtceu:fine_fluxed_electrum_wire', '1x gtceu:desh_plate', '#gtceu:circuits/hv')
+        .itemOutputs('8x ae2:blank_pattern')
+        .duration(100)                                 
+        .EUt(7680)
+
 
     event.recipes.gtceu
         .assembler('kubejs:1k_component')  

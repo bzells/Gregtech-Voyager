@@ -945,8 +945,8 @@
 				item: "gtceu:helper_software_installation_unit"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 7.5d
+			x: -12.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7D03DD080C4A9C7F"]
@@ -967,8 +967,8 @@
 				item: "kubejs:ev_ebf_helper"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 6.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1007,8 +1007,8 @@
 				item: "kubejs:iv_technician_helper"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 9.5d
+			x: -9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7764E1FF769BDCB6"]
@@ -1034,8 +1034,8 @@
 				item: "kubejs:hungry_hungry_helper"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 5.5d
+			x: -9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1187,8 +1187,8 @@
 				type: "item"
 			}]
 			title: "Better Blasting"
-			x: -7.5d
-			y: 12.0d
+			x: -12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1EA011566D0AF90B"]
@@ -1220,6 +1220,13 @@
 			y: 16.5d
 		}
 		{
+			dependencies: [
+				"6768D4CD80D3E8AE"
+				"6355712EF473596B"
+				"2597FEAE670B7E8C"
+				"0BAE4AAE70DB71F2"
+				"0DC7B262CFD55FB5"
+			]
 			id: "57273F946436DC4C"
 			size: 3.0d
 			tasks: [{
@@ -1231,8 +1238,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 9.0d
+			x: -9.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["3FB4F231181DD428"]
@@ -1244,8 +1251,8 @@
 				item: { Count: 6, id: "kubejs:titanite_rocket_hull_plate" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 6.5d
+			x: -9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1260,8 +1267,8 @@
 				item: { Count: 5, id: "kubejs:titanite_rocket_fin" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.0d
+			x: -10.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1276,8 +1283,8 @@
 				item: "kubejs:titanite_rocket_nose_cone"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			x: -8.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1291,8 +1298,8 @@
 				item: "ad_astra:ostrum_engine"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 7.5d
+			x: -11.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1306,13 +1313,17 @@
 				item: "ad_astra:ostrum_tank"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 7.5d
+			x: -7.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
 				"436220F63DCFFB5D"
 				"3FB4F231181DD428"
+				"62F0A9F0D43C6A93"
+				"018E2CADB624481A"
+				"64B5D866D92BA6C4"
+				"7764E1FF769BDCB6"
 			]
 			hide_dependency_lines: true
 			id: "528A7767F9189242"
@@ -1321,8 +1332,30 @@
 				item: "kubejs:titanite_interplanetary_coordinatal_calculator"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 6.0d
+			x: -7.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["436220F63DCFFB5D"]
+			id: "62F0A9F0D43C6A93"
+			tasks: [{
+				id: "54FCD7BE1B2E3FE1"
+				item: "gtceu:luv_emitter"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["436220F63DCFFB5D"]
+			id: "018E2CADB624481A"
+			tasks: [{
+				id: "13710DC84A76EE2D"
+				item: "gtceu:luv_sensor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 9.5d
 		}
 	]
 	title: "Chapter 5: Age of Infrastructure (IV)"

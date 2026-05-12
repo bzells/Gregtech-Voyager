@@ -8,6 +8,19 @@ ServerEvents.recipes(event => {
 
     // event.remove({ type: "gtceu:circuit_assembler" })
 
+    const tiers = ['ulv', 'lv','mv','hv','ev','iv','luv','zpm','uv','uhv','uev','uiv','max'];
+
+    function univ_circuit(tier)
+    {
+        event.recipes.gtceu.polarizer(`kubejs:${tier}_universal_circuit`)
+        .itemInputs(`#gtceu:circuits/${tier}`)
+        .itemOutputs(`kubejs:${tier}_universal_circuit`)
+        .duration(1) 
+        .EUt(1)
+    }
+
+    tiers.forEach(tier => univ_circuit(tier));
+
     event.recipes.gtceu.circuit_assembler("kubejs:ev_t1")
         .itemInputs("gtceu:plastic_printed_circuit_board", "2x gtceu:micro_processor_assembly", "4x #gtceu:diodes", "4x gtceu:ram_chip", "16x gtceu:fine_fluxed_electrum_wire", "32x gtceu:fluxed_cobalt_electrum_bolt")
         .itemOutputs("gtceu:micro_processor_computer")

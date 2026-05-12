@@ -246,14 +246,11 @@ ServerEvents.recipes(event => {
         Item.of('sophisticatedbackpacks:advanced_tool_swapper_upgrade', 1), // arg 1: output
         [
             ' B ',
-            'FEC', // arg 2: the shape (array of strings)
-            ' D '
+            ' E ', // arg 2: the shape (array of strings)
+            '   '
         ],
         {
-            B: 'minecraft:iron_pickaxe',
-            C: 'minecraft:iron_axe',
-            D: 'minecraft:iron_shovel',
-            F: 'minecraft:iron_sword',
+            B: 'gtceu:iron_wrench',
             E: 'sophisticatedbackpacks:upgrade_base',
         }
     );
