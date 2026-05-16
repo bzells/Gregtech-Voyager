@@ -1,3 +1,4 @@
+//priority: 1000
 StartupEvents.registry('item', event => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   // If you want a custom item model, you can create one in Blockbench and put it in kubejs/assets/kubejs/models/item/test_item.json
@@ -79,9 +80,95 @@ StartupEvents.registry('item', event => {
     function register_voucher(tier)
     {
         event.create(tier + '_voucher').texture('kubejs:item/' + tier + '_voucher').displayName(tier.toUpperCase() + ' Voucher').tooltip("Can be claimed for loot rewards");
+		console.log('Created voucher for ' + tier)
     }
 
-    
+
+	//const tiers = [ulv, lv, mv, hv, ev, iv, luv, zpm, uv, uhv, uev, uiv, max] //NOT NEEDED
+
+	const tierData = { //This is so dumb that this works, pulled from the GTMaterial stack, check if the material has a .color in the ElementMaterials.java, PrimaryMaterials.java, or SecondaryMaterials on the GTCEU github
+		ulv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		lv: { colorPrimary: '#ffc370', colorSecondary: '#806752', colorExtra: '' },
+		mv: { colorPrimary: '#8cb4c9', colorSecondary: '#0756ac9c', colorExtra: '' },
+		hv: { colorPrimary: '#ededfd', colorSecondary: '#19191d', colorExtra: '' },
+		ev: { colorPrimary: '#ed8eea', colorSecondary: '#ff64bc', colorExtra: '' },
+		iv: { colorPrimary: '#687ece', colorSecondary: '#03192f', colorExtra: '' },
+		luv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		zpm: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		uv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		uhv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		uev: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		uiv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },
+		max: { colorPrimary: '', colorSecondary: '', colorExtra: '' }
+	}
+
+	//IMPORTANT: Secondary textures need some transparency to blend with the primary. See item/helper_computation_array/* for examples
+
+
+
+
+	/**
+	* @param {String}tier Is voltage tier
+	* @param {String}colorPrimary Is the brightest color of the tier casing ingot
+	* @param {String}colorExtra Is the Mid color of tier casing ingot
+	* @param {String}colorSecondary Is the Dark color of tier casing ingot
+	**/
+	function helperComputationCreation(tier, colorPrimary, colorSecondary) {
+		if (colorPrimary.match(/#[A-Fa-f0-9]{6,8}/) && colorSecondary.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_helper_computation_array`)
+				.textureJson({ layer0: 'kubejs:item/helper_computation_array/base', layer1: 'kubejs:item/helper_computation_array/color_primary', layer2: 'kubejs:item/helper_computation_array/color_secondary'})
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase()+' Helper Computation Array')
+		} else {
+			colorPrimary = '#FFFFFF'
+			colorSecondary = '#505050'
+			event.create(`${tier}_helper_computation_array`)
+				.textureJson({ layer0: 'kubejs:item/helper_computation_array/base', layer1: 'kubejs:item/helper_computation_array/color_primary', layer2: 'kubejs:item/helper_computation_array/color_secondary'})
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase() + ' Helper Computation Array')
+
+		}
+	}
+
+	function voucherCreation(tier, colorPrimary, colorSecondary) {
+		if (colorPrimary.match(/#[A-Fa-f0-9]{6,8}/) && colorSecondary.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_voucher`)
+				.textureJson({ layer0: 'kubejs:item/voucher/base', layer1: 'kubejs:item/voucher/color_primary', layer2: 'kubejs:item/voucher/color_secondary', layer3: 'kubejs:item/voucher/dark' })
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase() + ' Helper Computation Array')
+		} else {
+			colorPrimary = '#FFFFFF'
+			colorSecondary = '#505050'
+			event.create(`${tier}_voucher`)
+				.textureJson({ layer0: 'kubejs:item/voucher/base', layer1: 'kubejs:item/voucher/color_primary', layer2: 'kubejs:item/voucher/color_secondary', layer3: 'kubejs:item/voucher/dark' })
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase() + ' Helper Computation Array')
+
+		}
+	}
+/*
+	event.create('testing_helper_array')
+		.textureJson({layer0:'kubejs:item/helper_computation_array/base',layer1:'kubejs:item/helper_computation_array/change',layer2:'kubejs:item/helper_computation_array/color_secondary'})
+		.color(1,tierData.iv.colorPrimary)
+		.color(2,tierData.iv.colorSecondary)
+*/
+
+
+
+
+
+
+	//Add the restructured function here
+
+	for (let key in tierData) {
+		let keyf = tierData[key]
+		helperComputationCreation(key, keyf.colorPrimary, keyf.colorSecondary)
+	}
+
 
     
 
@@ -95,7 +182,7 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_magic_coin(tier));
     tiers.forEach(tier => register_universal_coin(tier));
     tiers.forEach(tier => register_tech_coin(tier));
-    tiers.forEach(tier => register_computation_array(tier));
+    //tiers.forEach(tier => register_computation_array(tier));
     tiers.forEach(tier => register_voucher(tier));
 
     event.create('rocket_hull_plate').texture('kubejs:item/rocket_hull_plate').maxStackSize(16).displayName('Rocket Hull Plate');
