@@ -134,6 +134,7 @@
 		}
 		{
 			dependencies: ["6EE539D525D3D685"]
+			description: ["&e&b"]
 			id: "50A265E32ADDD82E"
 			tasks: [{
 				id: "7ADC44D29E1292BE"
@@ -475,6 +476,7 @@
 			dependencies: [
 				"1D5E8B2CAF0DF4F6"
 				"66DD18C6B3536413"
+				"6302DE04901E29D5"
 			]
 			id: "6F737FFF848A5BFF"
 			tasks: [{
@@ -1041,6 +1043,7 @@
 			dependencies: [
 				"436220F63DCFFB5D"
 				"08A96C5C32906F28"
+				"42BC4E3F67D12EC6"
 			]
 			id: "15C88C01C7723480"
 			tasks: [{
@@ -1052,7 +1055,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["436220F63DCFFB5D"]
+			dependencies: [
+				"436220F63DCFFB5D"
+				"42BC4E3F67D12EC6"
+			]
 			id: "5B7B2720BBCF9C1E"
 			tasks: [{
 				id: "646887A65558028D"
@@ -1099,7 +1105,10 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["5B7B2720BBCF9C1E"]
+			dependencies: [
+				"5B7B2720BBCF9C1E"
+				"42BC4E3F67D12EC6"
+			]
 			id: "08A96C5C32906F28"
 			tasks: [{
 				id: "1B7D7EA08CD47777"
@@ -1336,7 +1345,10 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["436220F63DCFFB5D"]
+			dependencies: [
+				"436220F63DCFFB5D"
+				"42BC4E3F67D12EC6"
+			]
 			id: "62F0A9F0D43C6A93"
 			tasks: [{
 				id: "54FCD7BE1B2E3FE1"
@@ -1347,7 +1359,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["436220F63DCFFB5D"]
+			dependencies: [
+				"436220F63DCFFB5D"
+				"42BC4E3F67D12EC6"
+			]
 			id: "018E2CADB624481A"
 			tasks: [{
 				id: "13710DC84A76EE2D"
@@ -1356,6 +1371,27 @@
 			}]
 			x: -8.5d
 			y: 9.5d
+		}
+		{
+			hide_dependent_lines: true
+			id: "42BC4E3F67D12EC6"
+			tasks: [{
+				id: "1BE819D47DE5FFCA"
+				item: "gtceu:ev_scanner"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			id: "6302DE04901E29D5"
+			tasks: [{
+				id: "26C842B67B002C46"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.5d
 		}
 	]
 	title: "Chapter 5: Age of Infrastructure (IV)"

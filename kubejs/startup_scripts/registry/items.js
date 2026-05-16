@@ -185,9 +185,14 @@ StartupEvents.registry('item', event => {
     event.create('refined_fluxed_electrum_crystal').texture('kubejs:item/refined_fluxed_electrum_crystal').displayName('Refined Fluxed Electrum Crystal').tooltip('§eRefined Capacitance');
     event.create('titanichite_bud').texture('kubejs:item/titanichite_bud').displayName('Titanichite Bud').tooltip('§eGlimmering Capacitance');
 
+    // perfect electrum
+    event.create('atomic_lattice').texture('kubejs:item/atomic_lattice').displayName('Atomic Lattice').tooltip('§eActs as a mold for atoms to fill');
 
     // misc
     event.create('explosive_heart').texture('kubejs:item/explosive_heart').displayName('Explosive Heart').tooltip('§8Rare Creeper Drop');
     event.create('heart_of_destruction').texture('kubejs:item/heart_of_destruction').displayName('Heart of Destruction');
+
+    // venus
+    event.create('venus_capsule').texture('kubejs:item/venus_capsule').displayName('§6Sandy Capsule').tooltip('§8What is inside?');
 
 })

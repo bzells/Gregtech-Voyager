@@ -41,6 +41,13 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setSound(GTSoundEntries.ARC);
 
+    event.create("beam_of_teus")
+        .category("multiblock")
+        // .setEUIO("in")
+        .setMaxIOSize(3, 2, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+        .setSound(GTSoundEntries.ARC);
+
 });
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -83,7 +90,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("micro_farm", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("micro_farm")
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
 
         // base block appearance
         .appearanceBlock(GTBlocks.TREATED_WOOD_PLANK)
@@ -192,14 +199,14 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
 
             .workableCasingModel(
-            "gtceu:block/stable_machine_casing",       
+            "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",       
             "kubejs:block/multiblock/large_helper_assembler"
         )
 
     event.create("celestial_post_box", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("celestial_post_box")
-        // .recipeModifiers([GTRecipeModifiers.PERFECT_OC])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
 
         // base block appearance
         .appearanceBlock(() => Block.getBlock("kubejs:ostrum_casing"))
@@ -240,7 +247,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("helper_software_installation_unit", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("helper_software_installation_unit")
-        // .recipeModifiers([GTRecipeModifiers.PERFECT_OC])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
 
         // base block appearance
         .appearanceBlock(() => Block.getBlock("kubejs:ostrum_casing"))
@@ -280,7 +287,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create('titanite_blast_furnace', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('electric_blast_furnace')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock("kubejs:titanite_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AAA', 'CCC', 'CCC', 'AAA') 
@@ -307,7 +314,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create('atmospheric_collector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('atmospheric_collector')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock("gtceu:clean_machine_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     AAAAAAAAAAAAAAA    ', '     AAAAA     AAAAA    ', '     AAA         AAA    ', '     AA           AA    ', '     AA           AA    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '     A             A    ', '      A           A     ', '      A           A     ', '       A         A      ', '        AA     AA       ', '          AAAAA         ') 
@@ -335,7 +342,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(16).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(16).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setExactLimit(1)))
             .where('F', Predicates.blocks('kubejs:atmospheric_filter_casing'))
             .where('R', Predicates.blocks('gtceu:robust_machine_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
@@ -343,4 +351,33 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
             'gtceu:block/machines/gas_collector');
     
+
+    event.create('beam_of_teus', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('beam_of_teus')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .appearanceBlock(() => Block.getBlock("kubejs:titanite_casing"))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle(' AAAAA ', '  AGA  ', '  AGA  ', '  AGA  ', '  AGA  ', ' AAAAA ', '       ', '       ') 
+            .aisle('AHHHHHA', ' G   G ', ' G   G ', ' G   G ', ' G   G ', 'AA   AA', ' AAHAA ', '  AAA  ') 
+            .aisle('AHLLLHA', 'A     A', 'A     A', 'A     A', 'A     A', 'A     A', ' A   A ', ' AAAAA ') 
+            .aisle('AHLLLHA', 'A     A', 'A     A', 'A     A', 'A     A', 'A     A', ' H   H ', ' AATAA ') 
+            .aisle('AHLLLHA', 'A     A', 'A     A', 'A     A', 'A     A', 'A     A', ' A   A ', ' AAAAA ') 
+            .aisle('AHHHHHA', ' G   G ', ' G   G ', ' G   G ', ' G   G ', 'AA   AA', ' AAHAA ', '  AAA  ') 
+            .aisle(' AA@AA ', '  AGA  ', '  AGA  ', '  AGA  ', '  AGA  ', ' AAAAA ', '       ', '       ') 
+            .where('A', Predicates.blocks('kubejs:titanite_casing')
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+            .where('H', Predicates.blocks('gtceu:heat_vent'))
+            .where('L', Predicates.blocks('gtceu:laser_safe_engraving_casing'))
+            .where('G', Predicates.blocks('gtceu:laminated_glass'))
+            .where('T', Predicates.blocks('kubejs:teus_beam_block'))
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .build())
+        .workableCasingModel('kubejs:block/casing/titanite_casing',
+            'kubejs:block/multiblock/titanite_blast_furnace');
 });

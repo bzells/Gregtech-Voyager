@@ -29,12 +29,17 @@
   "material.gtceu.dewatered_lunarium_metal_mixture": "Dewatered Lunarium Metal Mixture",
   "material.gtceu.impure_lunarium": "Impure Lunarium",
   "material.gtceu.lunarium": "Lunarium",
+  "material.gtceu.titanite": "Titanite",
+  "material.gtceu.titanite_alloy": "§dTitanite Alloy",
 
   "material.gtceu.acetylene": "Acetylene",
   "material.gtceu.calcium_carbide": "Calcium Carbide",
-    "material.gtceu.desh": "Desh",
+  "material.gtceu.desh": "Desh",
   "material.gtceu.ilmenite_slurry": "Ilmenite Slurry",
   "material.gtceu.desh_oxide": "Desh Oxide",
+
+  "material.gtceu.lunarium_growth_slurry": "Lunarium Grown Slurry",
+  "material.gtceu.uranium_ethanol_solution": "Uranium Ethanol Solution",
 
   "material.gtceu.ilmenite_residue": "Ilmenite Residue",
   "block.gtceu.steam_blast_furnace": "Steel Blast Furnace",
@@ -42,9 +47,16 @@
   "block.gtceu.cube_macerator": "Cube Macerator",
   "block.gtceu.cube_electrolyzer": "Cube Electrolyzer",
   "block.gtceu.cube_oven": "Cube Oven",
+  "block.gtceu.large_helper_factory": "Large Helper Factory",
   "gtceu.steam_blast_furnace": "Steel Blast Furnace",
-
+  "gtceu.large_helper_factory": "Large Helper Factory",
   "gtceu.helper_wheel": "Helper Wheel",
+  "block.gtceu.titanite_blast_furnace": "Titanite Foundry",
+  "block.gtceu.celestial_post_box": "Celestial Post Box",
+  "gtceu.celestial_post_box": "Celestial Post Box",
+  "block.gtceu.helper_software_installation_unit": "Helper Software Installation Unit",
+  "block.gtceu.power_rectangle_helper_calorie_converter": "Large Helper Calorie Converter",
+  "gtceu.helper_software_installation_unit": "Helper Software Installation Unit",
 
   
   "item.gtceu.metallic_mica_ingot": "Metallic Mica Ingot",

@@ -18,4 +18,18 @@ StartupEvents.registry('block', event => {
     casing('titanite');
     casing('ostrum');
     casing('atmospheric_filter');
+
+    function metalblock(name)
+    {
+        event.create(name)
+        .textureAll(`kubejs:block/${name}`)
+        .hardness(2)
+        .resistance(3)
+        .lightLevel(0)
+        .soundType('metal')
+        .requiresTool(true)
+        .tagBlock('mineable/wrench')
+    }
+
+    metalblock('teus_beam_block')
 })

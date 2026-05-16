@@ -86,8 +86,13 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('lunite').setFormula('(Ds)2W(Si)2O4');
     GTMaterials.get('glowstone').setFormula('(Si(FeS2)5(CrAl2O3)Hg3)Au');
     GTMaterials.get('lunarium').setFormula('Lt');
-    GTMaterials.get('titanite').setFormula('T*');
+    GTMaterials.get('titanite').setFormula('Tt');
     GTMaterials.get('ostrum').setFormula('Ot');
+    GTMaterials.get('perfected_electrum').setFormula('*Au**Ag*');
+    GTMaterials.get('calorite').setFormula('Rc');
+    GTMaterials.get('calorite_carbide').setFormula('Rc4C2');
+    GTMaterials.get('industrial_perfected_electrum').setFormula('(*Au**Ag*)5(C2Rc4)');
+    
 
 });
 
@@ -119,6 +124,7 @@ function register_superconductor(name, ingredients, ebf, color, volts, amp, blas
         const mat = event.create(name)
             .ingot()
             .dust()
+            .fluid()
             .components(ingredients)
             .color(color)
             .iconSet('shiny')
@@ -138,6 +144,7 @@ function register_metal(name, ingredients, ebf, color, blasting)
         const mat = event.create(name)
             .ingot()
             .dust()
+            .fluid()
             .components(ingredients)
             .color(color)
             .iconSet('metallic')
@@ -187,6 +194,7 @@ function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genroto
         const mat = event.create(name)
             .ingot()
             .dust()
+            .fluid()
             .components(ingredients)
             .color(color)
             .iconSet('metallic')
@@ -211,6 +219,7 @@ function register_nosmelt_elem_metal(name, ingredients, ebf, color, blasting, ge
         const mat = event.create(name)
             .ingot()
             .dust()
+            .fluid()
             .element(GTElements.get(name))
             .color(color)
             .iconSet('metallic')
@@ -297,14 +306,20 @@ register_fluid('ilmenite_slurry','0x1a1818', [], no_decomp)
 register_fluid('ilmenite_residue','0x1a1616', [], no_decomp)
 
 register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff', electrolyze)
+register_dust('calorite_carbide', ['4x calorite', '2x carbon'], '0x3d304d', no_decomp)
 
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
 
 register_nosmelt_elem_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
+register_nosmelt_elem_metal('calorite', [], true, '0xa10030', [3600, 'mid', voltTier('ev'), 20*64], false, voltTier('zpm'));
 register_dust('desh_dioxide', ['desh', '2x oxygen'], '0xff4000', electrolyze); 
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
 register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'), 1800])
+
+register_metal('perfected_electrum_base', [], false, '0x5f692a', [])
+
+register_nosmelt_metal('industrial_perfected_electrum', [], true, '0xf5ffdb', [3600, 'mid', voltTier('ev'), 20*64], [600, 600, 1, 1000000], voltTier('zpm'))
 
 register_dust('fluxed_titanium_electrum_compound', [], '0x2c2e16', no_decomp);
 register_nosmelt_elem_metal('titanite', [], true, '0x75008c', [5400, 'mid', voltTier('iv'), 20*64], [450, 450, 1, 1000000], voltTier('luv'))
@@ -315,14 +330,9 @@ register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null
 register_superconductor('fluxed_cobalt_electrum', [], true, '0x006387', 512, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4, [3600, 'mid', voltTier('ev'), 20*64]);
 register_superconductor('titanite_alloy',['4x titanite', '2x tungsten', '3x lunarium', '2x graphene', '3x refined_fluxed_electrum', '2x fluorine', 'electrotine'], true, '0xff1284', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
-// register_superconductor('desh_rhodium_infused_refined_electrum', true, '0xf57040', 32768, 8, [7200, 'high', voltTier('luv'), 1]);
-// register_superconductor('perfected_electrum', true, '0xfffef7', 131072, 64, [9001, 'high', voltTier('zpm'), 1]);
-// register_superconductor('trilectrum', true, '0xe3527d', 524288, 64, [10080, 'higher', voltTier('uv'), 1]);
-// register_superconductor('hyperdense_neutronic_superelectrum', true, '0xffffff', 2097152, 256, [11880, 'higher', voltTier('uhv'), 1]);
-// register_superconductor('sculk_corrupted_hyperdense_neutronic_superelectrum', true, '0x1a595e', 8388608, 512, [11880, 'highest', voltTier('uev'), 1]);
-// register_superconductor('atomically_perfected_metallic_royal_honey', true, '0xff6a00', 33554432, 4096, [11880, 'highest', voltTier('uiv'), 1]);
-// register_superconductor('exposed_metallic_dark_royal_honey', true, '0xff6a00', 134217728, 8192, [11880, 'highest', voltTier('uxv'), 1]);
-// titanite alloy
+register_superconductor('perfected_electrum', [], true, '0xfffef7', 32768, 8, [7200, 'high', voltTier('luv'), 1]);
+
+
 register_fluid('lunarium_growth_slurry','0x1fff1a', ['3x lunarium', '4x chlorine', '2x fluorine', '1x carbon'], no_decomp)
 // platline
 register_dust('dewatered_iridium_metal_residue', [], '0x094235', no_decomp);

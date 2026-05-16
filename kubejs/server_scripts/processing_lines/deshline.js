@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     create_recipe_centrifuge('dsg_processing', '5x gtceu:desh_group_sludge_dust', 'gtceu:aqua_regia 600', ['8x gtceu:lunar_metal_residue_dust', '7x gtceu:dense_metal_mixture_dust'], [], 20, 390, 'basic_chemist_helper')
 
 
-    create_recipe_centrifuge('dsg_processing_adv', '4x gtceu:desh_group_sludge_dust', 'gtceu:aqua_regia 300', ['12x gtceu:lunar_metal_residue_dust', '10x gtceu:dense_metal_mixture_dust'], [], 15, 120, 'basic_chemist_helper')
+    create_recipe_centrifuge('dsg_processing_adv', '4x gtceu:desh_group_sludge_dust', 'gtceu:aqua_regia 300', ['12x gtceu:lunar_metal_residue_dust', '10x gtceu:dense_metal_mixture_dust'], [], 15, 120, 'advanced_chemist_helper')
 
 
     create_recipe_lcr('lunarium_metal_sludge', ['7x gtceu:dense_metal_mixture_dust', '2x gtceu:calcium_hydroxide_dust'], [], ['5x gtceu:lunarium_metal_sludge_dust', '7x gtceu:tungstic_acid_dust'], 'gtceu:hydrogen 2000', 15, 7680)

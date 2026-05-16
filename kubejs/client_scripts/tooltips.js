@@ -28,6 +28,8 @@ ItemEvents.tooltip(event => {
 
   addHelperTooltip('hungry', 'Can consume a LOT of calories')
 
+  event.add(`gtceu:perfected_electrum_ingot`, '§bCold to the touch')
+  event.add(`kubejs:teus_beam_block`, '§7Fabricated by Teus, of clan GitHubbus Contributus of planet Venus')
   cubeTooltip('macerator');
   cubeTooltip('electrolyzer')
   cubeTooltip('oven');
