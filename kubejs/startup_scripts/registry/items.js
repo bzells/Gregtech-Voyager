@@ -19,7 +19,7 @@ StartupEvents.registry('item', event => {
     }
     
     tiers.forEach(tier => register_loot_bag(tier));
-    tiers.forEach(tier => register_universal_circuit(tier));
+    //tiers.forEach(tier => register_universal_circuit(tier));
 
     const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'radiation_resistant_grandma', 'hungry', 'hungry_hungry', 'embassy', 'basic_chemist', 'advanced_chemist']
 
@@ -86,13 +86,13 @@ StartupEvents.registry('item', event => {
 	//const tiers = [ulv, lv, mv, hv, ev, iv, luv, zpm, uv, uhv, uev, uiv, max] //PROBABLY NOT NEEDED
 
 	const tierData = { //This is so dumb that this works, pulled from the GTMaterial stack, check if the material has a .color in the ElementMaterials.java, PrimaryMaterials.java, or SecondaryMaterials on the GTCEU github
-		ulv: { colorPrimary: '#bcbcbc', colorSecondary: '#521c0b', colorExtra: '' },	//Wrought Iron
-		lv: { colorPrimary: '#ffc370', colorSecondary: '#806752', colorExtra: '' },   //Bronze, can add secondary ingot coloring for steel, as long as it's still in the lv object
-		mv: { colorPrimary: '#8cb4c9', colorSecondary: '#0756ac9c', colorExtra: '' }, //Aluminium
-		hv: { colorPrimary: '#ededfd', colorSecondary: '#19191d', colorExtra: '' },   //Stainless
-		ev: { colorPrimary: '#ed8eea', colorSecondary: '#ff64bc', colorExtra: '' },	//Titanium
-		iv: { colorPrimary: '#687ece', colorSecondary: '#03192f', colorExtra: '' },	//Tungsten Steel
-		luv: { colorPrimary: '#d1d1d1', colorSecondary: '#000000', colorExtra: '' },	//Rhodium Plated Palladium
+		ulv: { colorPrimary: '#bcbcbc', colorSecondary: '#521c0b', colorExtra: '#AA0000' },	//Wrought Iron
+		lv: { colorPrimary: '#ffc370', colorSecondary: '#806752', colorExtra: '#fd9e3f' },	//Bronze, can add secondary ingot coloring for steel, as long as it's still in the lv object
+		mv: { colorPrimary: '#8cb4c9', colorSecondary: '#0756ac9c', colorExtra: '#8ec9e9' },	//Aluminium
+		hv: { colorPrimary: '#ededfd', colorSecondary: '#19191d', colorExtra: '#d0d31b' },	//Stainless
+		ev: { colorPrimary: '#ed8eea', colorSecondary: '#ff64bc', colorExtra: '#ed8eea' },	//Titanium
+		iv: { colorPrimary: '#687ece', colorSecondary: '#03192f', colorExtra: '#5040e6' },	//Tungsten Steel
+		luv: { colorPrimary: '#d1d1d1', colorSecondary: '#000000', colorExtra: '#48d660' },	//Rhodium Plated Palladium
 		zpm: { colorPrimary: '#323232', colorSecondary: '#301131', colorExtra: '' },	//Naquahda Alloy
 		uv: { colorPrimary: '#578062', colorSecondary: '#308030F0', colorExtra: '' },	//Darmstadium at Home, I'm not making a radioactive texture set overlay as part of the functions
 		uhv: { colorPrimary: '#FFFFFF', colorSecondary: '#000000', colorExtra: '' },	//Neutronium
@@ -149,12 +149,25 @@ StartupEvents.registry('item', event => {
 				.tooltip("Can be claimed for loot rewards")
 		}
 	}
-/*
-	event.create('testing_helper_array')
-		.textureJson({layer0:'kubejs:item/helper_computation_array/base',layer1:'kubejs:item/helper_computation_array/change',layer2:'kubejs:item/helper_computation_array/color_secondary'})
-		.color(1,tierData.iv.colorPrimary)
-		.color(2,tierData.iv.colorSecondary)
-*/
+
+	function universalCircuitCreation(tier, colorExtra) {
+		if (colorExtra.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_universal_circuit`)
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/base', layer1: 'kubejs:item/universal_circuit/lights', layer2:'kubejs:item/universal_circuit/flare' })
+				.color(1, colorExtra)
+				.displayName(tier.toUpperCase() + ' Universal Circuit')
+		} else {
+			colorExtra = '#FFFFFF'
+			event.create(`${tier}_universal_circuit`)
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/base', layer1: 'kubejs:item/universal_circuit/lights', layer2: 'kubejs:item/universal_circuit/flare' })
+				.color(1, colorExtra)
+				.displayName(tier.toUpperCase() + ' Universal Circuit')
+		}
+	}
+
+
+//Test Circuit
+//	universalCircuitCreation('test',tierData.lv.colorExtra)
 
 
 
@@ -165,6 +178,8 @@ StartupEvents.registry('item', event => {
 
 	for (let key in tierData) { helperComputationCreation(key, tierData[key].colorPrimary, tierData[key].colorSecondary) }
 	for (let key in tierData) { voucherCreation(key, tierData[key].colorPrimary, tierData[key].colorSecondary) }
+	for (let key in tierData) { universalCircuitCreation(key, tierData[key].colorExtra) }
+
 	
 
     
