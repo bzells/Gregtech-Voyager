@@ -6,6 +6,390 @@
 	id: "4F3954708077CDB3"
 	order_index: 7
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["57273F946436DC4C"]
+			id: "63DB1FDEEDD33BD3"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "234B154CD1936E24"
+				type: "dimension"
+			}]
+			title: "Sulfuric Hell Awaits"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63DB1FDEEDD33BD3"]
+			description: ["In the &6Venus Wastelands&r, you may find tall blackstone towers with an unknown purpose. Scanning some of the technology found in them will give you some of their lost knowledge."]
+			id: "4F90C8C104390038"
+			subtitle: "Within the wastelands, an ancient technology remains"
+			tasks: [{
+				icon: "minecraft:polished_blackstone"
+				id: "2A6B3AFC92F3D00F"
+				structure: "kubejs:venus_obelisk"
+				title: "Find an ancient obelisk"
+				type: "structure"
+			}]
+			title: "Remnants of the Sands"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F90C8C104390038"]
+			description: ["Within the obelisks, you find technology capable of creating beams of plasma so hot, they deprecate into a degenerate form of matter in-between light and matter. Safe to say, these aliens had it figured out. Only certain materials work. Researching this block inside of a scanner will grant you it's secrets."]
+			id: "3B7BDED395E1A9E1"
+			tasks: [{
+				id: "2EB65D8C0E2C26B2"
+				item: "kubejs:ruined_beam_block"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F90C8C104390038"]
+			description: [
+				"Left behind from the ancient civilization are &6capsules&r eroded in the sand. They may contain secrets to their technology"
+				""
+				"&7(Dig inside an obelisk and you will find chests with loot. That is where you can find these)&r"
+			]
+			id: "35CE7A47723495CC"
+			tasks: [{
+				id: "72A0605FFBE172DD"
+				item: "kubejs:venus_capsule"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["35CE7A47723495CC"]
+			description: ["Inside of &6sandy capsules&r, you may find some ancient, broken down technology. "]
+			id: "4391A585C3AFAE5C"
+			tasks: [
+				{
+					id: "4E519ABFF538663F"
+					item: "kubejs:eroded_light_refractor"
+					type: "item"
+				}
+				{
+					id: "6E0C38018967F57A"
+					item: "kubejs:eroded_atomic_magnet"
+					type: "item"
+				}
+				{
+					id: "36135FCFC23ED237"
+					item: "kubejs:eroded_dial_device"
+					type: "item"
+				}
+				{
+					id: "6489FB8C850B9196"
+					item: "kubejs:eroded_bio_filter"
+					type: "item"
+				}
+			]
+			title: "Secrets of the sands"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "26FF13E27F3A8265"
+			tasks: [{
+				id: "608BF047DC035D8F"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["26FF13E27F3A8265"]
+			id: "38DA5B714A573E78"
+			size: 1.5d
+			tasks: [{
+				id: "2731C796DF5117A0"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: 4.25d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"38DA5B714A573E78"
+				"32AAC816CA82DA84"
+				"56806B204816C344"
+			]
+			id: "17F28FDEFF797273"
+			tasks: [{
+				id: "4BDABD3CEAC64FD9"
+				item: "gtceu:luv_scanner"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3B7BDED395E1A9E1"
+				"17F28FDEFF797273"
+				"6A8DF50092428AE0"
+				"02985E1D7E8A2570"
+			]
+			id: "67F739703BB20F3B"
+			tasks: [{
+				id: "57B2A06E88F29291"
+				item: "kubejs:teus_beam_block"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4391A585C3AFAE5C"
+				"17F28FDEFF797273"
+				"02985E1D7E8A2570"
+			]
+			id: "6A8DF50092428AE0"
+			tasks: [{
+				id: "40C6FD89D4448D1A"
+				item: "kubejs:light_refractor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"67F739703BB20F3B"
+				"02985E1D7E8A2570"
+			]
+			id: "45BB502B1D42EEC3"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "29024044EBFDE98A"
+				item: "gtceu:beam_of_teus"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D121082AC61755B"]
+			id: "02985E1D7E8A2570"
+			tasks: [{
+				id: "50078FDB0BC3EFCA"
+				item: "gtceu:calorite_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			id: "7D121082AC61755B"
+			tasks: [{
+				id: "6F181EACE6567B51"
+				item: "gtceu:venus_sand_dust"
+				type: "item"
+			}]
+			title: "Venus Sand Processing"
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"45BB502B1D42EEC3"
+				"6777E1E70A5D9FD3"
+				"37AD8E087B73E6DB"
+			]
+			id: "0B2EB745BF840C33"
+			size: 2.0d
+			tasks: [{
+				id: "116ED09AE1063DAA"
+				item: "gtceu:perfected_electrum_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5390BED72C58EECD"
+				"3D9FF11995473371"
+			]
+			id: "6777E1E70A5D9FD3"
+			tasks: [{
+				id: "29324CFDABD1103A"
+				item: "kubejs:atomic_lattice"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4391A585C3AFAE5C"
+				"17F28FDEFF797273"
+			]
+			hide_dependency_lines: true
+			id: "5390BED72C58EECD"
+			tasks: [{
+				id: "794F94FE39A1F5D5"
+				item: "kubejs:atomic_magnet"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			id: "37AD8E087B73E6DB"
+			tasks: [{
+				id: "019C3C01B74A2E6D"
+				item: "gtceu:perfected_electrum_base_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"38DA5B714A573E78"
+				"45C67D9F6A457403"
+				"32AAC816CA82DA84"
+			]
+			hide_dependency_lines: true
+			id: "3D9FF11995473371"
+			tasks: [{
+				id: "0A1AB9DE4BDE1E98"
+				item: "gtceu:luv_laser_engraver"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			id: "7C26CF7C1A4D467A"
+			tasks: [{
+				id: "6C01DEDD9B802BBE"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7C26CF7C1A4D467A"
+				"436220F63DCFFB5D"
+			]
+			id: "4B6F10C03DB9370B"
+			tasks: [{
+				id: "09A5B6995D89E46C"
+				item: "gtceu:luv_electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4B6F10C03DB9370B"]
+			id: "45C67D9F6A457403"
+			tasks: [{
+				id: "7E5B9FF959D0A31B"
+				item: "gtceu:luv_electric_piston"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4B6F10C03DB9370B"]
+			id: "7DF5406E8388F787"
+			tasks: [{
+				id: "46C0A8B90420B4DB"
+				item: "gtceu:luv_conveyor_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4B6F10C03DB9370B"]
+			id: "328C412386210DB5"
+			tasks: [{
+				id: "3F0FD6BB79241357"
+				item: "gtceu:luv_electric_pump"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["328C412386210DB5"]
+			id: "4207A8C9C2E62EAA"
+			tasks: [{
+				id: "2FA46254E4037FBA"
+				item: "gtceu:luv_fluid_regulator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"45C67D9F6A457403"
+				"4B6F10C03DB9370B"
+			]
+			id: "299E4ADF7D20CBB1"
+			tasks: [{
+				id: "503A0497DDC0168A"
+				item: "gtceu:luv_robot_arm"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4B6F10C03DB9370B"]
+			hide_dependent_lines: true
+			id: "32AAC816CA82DA84"
+			tasks: [{
+				id: "37687B60C3B5EE6E"
+				item: "gtceu:luv_emitter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B6F10C03DB9370B"]
+			hide_dependent_lines: true
+			id: "56806B204816C344"
+			tasks: [{
+				id: "72FCB2E6E3783F5D"
+				item: "gtceu:luv_sensor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["32AAC816CA82DA84"]
+			id: "2A2C22CF76B677BB"
+			tasks: [{
+				id: "16B6BA5D97D66E59"
+				item: "gtceu:luv_field_generator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+	]
 	title: "Chapter 6: Discovery (LuV)"
 }

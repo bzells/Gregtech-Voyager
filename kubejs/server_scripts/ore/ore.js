@@ -162,12 +162,16 @@ GTCEuServerEvents.oreVeins(event => {
     oreVein3('plutonium', 'mars', 'ad_astra', 10, 0.4, 30, -64, 200, ['uraninite', 'plutonium', 'uraninite'], true)
     oreVein4('electrotine', 'mars', 'ad_astra', 35, 0.9, 30, -64, 200, ['electrotine', 'gold', 'redstone', 'silver'], false)
     oreVein4('cooperite', 'mars', 'ad_astra', 15, 0.4, 40, -64, 200, ['cooperite', 'cooperite', 'platinum', 'palladium'], true) 
+    oreVein3('dalumite', 'mars', 'ad_astra', 15, 0.3, 45, -64, 100, ['dalumite', 'ilmenite', 'graphite'], true)
+
+    // venus ores
+    
 
 
     // overworld ores
 
     event.add("overworld/mica", vein => {
-        vein.weight(10)
+        vein.weight(5)
         vein.density(.3)
         vein.clusterSize(45)
         vein.layer("stone")

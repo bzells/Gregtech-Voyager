@@ -38,6 +38,9 @@ ServerEvents.recipes(event => {
     create_mixer_recipe('metallic_mica_fishoil',['1x gtceu:silver_dust', '3x gtceu:mica_dust'], ['gtceu:fish_oil 800'], ['4x gtceu:metallic_mica_dust'], voltTier('lv'), 600);
     create_mixer_recipe('metallic_mica_seedoil',['1x gtceu:silver_dust', '3x gtceu:mica_dust'], ['gtceu:seed_oil 200'], ['4x gtceu:metallic_mica_dust'], voltTier('lv'), 600);
 
+    create_mixer_recipe('industrial_perfected_electrum', ['5x gtceu:perfected_electrum_dust', '2x gtceu:calorite_carbide_dust'], 'gtceu:yttrium 100', '7x gtceu:industrial_perfected_electrum_dust', voltTier('luv'), 20*7*9);
+    create_mixer_recipe('calorite_barbide_dust', ['4x gtceu:calorite_dust', '2x gtceu:graphene_dust'], [], '6x gtceu:calorite_carbide_dust', voltTier('luv'), 20*6*5);
+
     create_mixer_recipe('fluix_dust',['1x minecraft:redstone', '1x gtceu:nether_quartz_dust', '1x gtceu:certus_quartz_dust'], ['minecraft:water 1000'], ['3x ae2:fluix_dust'], voltTier('ev'), 100);
 
     create_mixer_recipe('fluxed_electrum_mix',['3x gtceu:electrum_dust', '3x minecraft:redstone', '2x minecraft:glowstone_dust', '1x gtceu:chromium_dust'], [], ['5x gtceu:fluxed_electrum_dust'], voltTier('mv'), 300);

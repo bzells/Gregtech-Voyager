@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("beam_of_teus")
         .category("multiblock")
         // .setEUIO("in")
-        .setMaxIOSize(3, 2, 1, 0)
+        .setMaxIOSize(3, 2, 1, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setSound(GTSoundEntries.ARC);
 
@@ -370,8 +370,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))
             .where('H', Predicates.blocks('gtceu:heat_vent'))
             .where('L', Predicates.blocks('gtceu:laser_safe_engraving_casing'))
             .where('G', Predicates.blocks('gtceu:laminated_glass'))

@@ -286,6 +286,17 @@ function register_gas(name, color, ingredients, flags)
     });
 }
 
+function register_plasma(name, color, ingredients, flags)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .plasma()
+            .components(ingredients)
+            .color(color)
+            .flags(flags)
+    });
+}
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('aluminium_lithium_compound')
         .ingot()
@@ -311,7 +322,7 @@ register_dust('calorite_carbide', ['4x calorite', '2x carbon'], '0x3d304d', no_d
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
 
 register_nosmelt_elem_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
-register_nosmelt_elem_metal('calorite', [], true, '0xa10030', [3600, 'mid', voltTier('ev'), 20*64], false, voltTier('zpm'));
+
 register_dust('desh_dioxide', ['desh', '2x oxygen'], '0xff4000', electrolyze); 
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
@@ -361,6 +372,7 @@ register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xf
 // mars ores
 register_ore_gem('titanichite', ['2x titanite', 'fluorine'], '0xff0055', [no_decomp], [])
 register_ore_metal('ostrite', ['3x oxygen', '12x chlorine', '8x ostrum'], '0xc785a2', [electrolyze]);
+register_ore_metal('dalumite', ['3x oxygen', '8x desh'], '0xad7600', [electrolyze]);
 
 register_dust('martian_sand', [], '0x732a22', no_decomp)
 
@@ -380,6 +392,13 @@ register_dust('impure_lunarium', ['lunarium', 'desh', '1x carbon', 'calcium'], '
 // titanite
 
 // misc
+
+// venus
+register_dust('venus_sand', [], '0xb38930', no_decomp)
+register_nosmelt_elem_metal('calorite', [], true, '0xa10030', [3600, 'mid', voltTier('ev'), 20*64], false, voltTier('zpm'));
+register_plasma('degenerate_electrum_light_matter', '0xfffef7', 'electrum', no_decomp)
+register_gas('venus_air', '0xb3721d', [], [no_decomp])
+register_fluid('liquid_venus_air', '0xcf892d', [], [no_decomp])
 
 register_fluid('uranium_ethanol_solution','0x91e600', ['uranium_235', 'ethanol'], no_decomp)
 

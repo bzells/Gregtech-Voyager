@@ -32,4 +32,5 @@ StartupEvents.registry('block', event => {
     }
 
     metalblock('teus_beam_block')
+    metalblock('ruined_beam_block')
 })

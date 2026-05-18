@@ -149,6 +149,9 @@ ServerEvents.recipes(event => {
     ebf_recipe('titanite', 55*20, 8000, 5200, 'kubejs:blasting_gas', 'ev', true)
     ebf_recipe('titanite_alloy', 80*20, 8000, 5200, 'gtceu:rocket_fuel', 'ev', true)
     ebf_recipe('ostrum', 46*20, 7860, 4300, 'kubejs:blasting_gas', 'ev', true)
+    ebf_recipe('calorite', 120*20, 7860 * 4, 5300, 'gtceu:rocket_fuel', 'iv', true)
+    ebf_recipe('perfected_electrum', 200*20, 7860*4, 6100, 'gtceu:rocket_fuel', 'iv', true)
+    ebf_recipe('industrial_perfected_electrum', 150*20, 7860*4, 6100, 'gtceu:rocket_fuel', 'iv', true)
 
 
 });

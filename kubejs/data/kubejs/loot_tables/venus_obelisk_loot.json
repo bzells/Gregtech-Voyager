@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 15,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:venus_capsule",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ev_voucher",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:iv_voucher",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:luv_voucher",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:tiny_perfected_electrum_dust",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:small_perfected_electrum_dust",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:venus_sand_dust",
+          "weight": 55,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 28
+            }
+          ]
+        }
+      ],
+      "functions": [],
+      "conditions": []
+    }
+  ]
+}

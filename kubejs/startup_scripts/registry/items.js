@@ -195,4 +195,15 @@ StartupEvents.registry('item', event => {
     // venus
     event.create('venus_capsule').texture('kubejs:item/venus_capsule').displayName('§6Sandy Capsule').tooltip('§8What is inside?');
 
+    function ancient_tech(name, dn)
+    {
+        event.create(`eroded_${name}`).texture(`kubejs:item/eroded_${name}`).displayName(`§6Eroded §r${dn}`).tooltip('§8Ancient secrets yet to be discovered');
+        event.create(`${name}`).texture(`kubejs:item/${name}`).displayName(`${dn}`).tooltip('§8Ancient secrets revealed');
+    }
+
+    ancient_tech('light_refractor', 'Light Refractor');
+    ancient_tech('atomic_magnet', 'Atomic Magnet');
+    ancient_tech('dial_device', 'Dial Device');
+    ancient_tech('bio_filter', 'Bio Filter');
+
 })
