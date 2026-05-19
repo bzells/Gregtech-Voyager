@@ -1,3 +1,5 @@
+//priority: 1000
+
 StartupEvents.registry('item', event => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   // If you want a custom item model, you can create one in Blockbench and put it in kubejs/assets/kubejs/models/item/test_item.json
@@ -18,7 +20,7 @@ StartupEvents.registry('item', event => {
     }
     
     tiers.forEach(tier => register_loot_bag(tier));
-    tiers.forEach(tier => register_universal_circuit(tier));
+    //tiers.forEach(tier => register_universal_circuit(tier));
 
     const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'radiation_resistant_grandma', 'hungry', 'hungry_hungry', 'embassy', 'basic_chemist', 'advanced_chemist']
 
@@ -81,7 +83,103 @@ StartupEvents.registry('item', event => {
         event.create(tier + '_voucher').texture('kubejs:item/' + tier + '_voucher').displayName(tier.toUpperCase() + ' Voucher').tooltip("Can be claimed for loot rewards");
     }
 
-    
+
+	//const tiers = [ulv, lv, mv, hv, ev, iv, luv, zpm, uv, uhv, uev, uiv, max] //PROBABLY NOT NEEDED
+
+	const tierData = { //This is so dumb that this works, pulled from the GTMaterial stack, check if the material has a .color in the ElementMaterials.java, PrimaryMaterials.java, or SecondaryMaterials on the GTCEU github
+		ulv: { colorPrimary: '#bcbcbc', colorSecondary: '#521c0b', colorExtra: '#AA0000' },	//Wrought Iron
+		lv: { colorPrimary: '#ffc370', colorSecondary: '#806752', colorExtra: '#fd9e3f' },	//Bronze, can add secondary ingot coloring for steel, as long as it's still in the lv object
+		mv: { colorPrimary: '#8cb4c9', colorSecondary: '#0756ac9c', colorExtra: '#8ec9e9' },	//Aluminium
+		hv: { colorPrimary: '#ededfd', colorSecondary: '#19191d', colorExtra: '#d0d31b' },	//Stainless
+		ev: { colorPrimary: '#ed8eea', colorSecondary: '#ff64bc', colorExtra: '#ed8eea' },	//Titanium
+		iv: { colorPrimary: '#687ece', colorSecondary: '#03192f', colorExtra: '#5040e6' },	//Tungsten Steel
+		luv: { colorPrimary: '#d1d1d1', colorSecondary: '#000000', colorExtra: '#48d660' },	//Rhodium Plated Palladium
+		zpm: { colorPrimary: '#323232', colorSecondary: '#301131', colorExtra: '' },	//Naquahda Alloy
+		uv: { colorPrimary: '#578062', colorSecondary: '#308030F0', colorExtra: '' },	//Darmstadium at Home, I'm not making a radioactive texture set overlay as part of the functions
+		uhv: { colorPrimary: '#FFFFFF', colorSecondary: '#000000', colorExtra: '' },	//Neutronium
+		uev: { colorPrimary: '', colorSecondary: '', colorExtra: '' },	//NYI
+		uiv: { colorPrimary: '', colorSecondary: '', colorExtra: '' },	//NYI
+		max: { colorPrimary: '', colorSecondary: '', colorExtra: '' }	//NYI
+	}
+
+	//IMPORTANT: Secondary textures need some transparency to blend with the primary. See item/helper_computation_array/* for examples
+
+
+
+
+	/**
+	* @param {String}tier Is voltage tier
+	* @param {String}colorPrimary Is the primary color of the tier ingot
+	* @param {String}colorSecondary Is the secondary/edge color of the tier ingot
+	**/
+	function helperComputationCreation(tier, colorPrimary, colorSecondary) {
+		if (colorPrimary.match(/#[A-Fa-f0-9]{6,8}/) && colorSecondary.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_helper_computation_array`)
+				.textureJson({ layer0: 'kubejs:item/helper_computation_array/base', layer1: 'kubejs:item/helper_computation_array/color_primary', layer2: 'kubejs:item/helper_computation_array/color_secondary'})
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase()+' Helper Computation Array')
+		} else {
+			colorPrimary = '#FFFFFF'
+			colorSecondary = '#505050'
+			event.create(`${tier}_helper_computation_array`)
+				.textureJson({ layer0: 'kubejs:item/helper_computation_array/base', layer1: 'kubejs:item/helper_computation_array/color_primary', layer2: 'kubejs:item/helper_computation_array/color_secondary'})
+				.color(1, colorPrimary)
+				.color(2, colorSecondary)
+				.displayName(tier.toUpperCase() + ' Helper Computation Array')
+
+		}
+	}
+
+	function voucherCreation(tier, colorPrimary, colorSecondary) {
+		if (colorPrimary.match(/#[A-Fa-f0-9]{6,8}/) && colorSecondary.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_voucher`)
+				.textureJson({ layer0: 'kubejs:item/voucher/color_primary', layer1: 'kubejs:item/voucher/color_secondary' })
+				.color(0, colorPrimary)
+				.color(1, colorSecondary)
+				.displayName(tier.toUpperCase() + ' Voucher')
+				.tooltip("Can be claimed for loot rewards")
+		} else {
+			event.create(`${tier}_voucher`)
+				.textureJson({ layer0: 'kubejs:item/voucher/color_primary', layer1: 'kubejs:item/voucher/color_secondary' })
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) // This saves so much time closing/reopening lol
+				.displayName(tier.toUpperCase() + ' Voucher')
+				.tooltip("Can be claimed for loot rewards")
+		}
+	}
+
+	function universalCircuitCreation(tier, colorExtra) {
+		if (colorExtra.match(/#[A-Fa-f0-9]{6,8}/)) {
+			event.create(`${tier}_universal_circuit`)
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/circuit_base', layer1: 'kubejs:item/universal_circuit/circuit_overlay' })
+				.color(1, colorExtra)
+				.displayName(tier.toUpperCase() + ' Universal Circuit')
+		} else {
+			event.create(`${tier}_universal_circuit`)
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/circuit_base', layer1: 'kubejs:item/universal_circuit/circuit_overlay' })
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) //Testin
+				.displayName(tier.toUpperCase() + ' Universal Circuit')
+				
+				
+		}
+	}
+
+
+//Test Circuit
+//	universalCircuitCreation('test',tierData.lv.colorExtra)
+
+
+
+
+
+
+	//Add the restructured function in a copy of this
+
+	for (let key in tierData) { helperComputationCreation(key, tierData[key].colorPrimary, tierData[key].colorSecondary) }
+	for (let key in tierData) { voucherCreation(key, tierData[key].colorPrimary, tierData[key].colorSecondary) }
+	for (let key in tierData) { universalCircuitCreation(key, tierData[key].colorExtra) }
+
+	
 
     
 
@@ -95,8 +193,8 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_magic_coin(tier));
     tiers.forEach(tier => register_universal_coin(tier));
     tiers.forEach(tier => register_tech_coin(tier));
-    tiers.forEach(tier => register_computation_array(tier));
-    tiers.forEach(tier => register_voucher(tier));
+    //tiers.forEach(tier => register_computation_array(tier));
+    //tiers.forEach(tier => register_voucher(tier));
 
     event.create('rocket_hull_plate').texture('kubejs:item/rocket_hull_plate').maxStackSize(16).displayName('Rocket Hull Plate');
     event.create('desh_rocket_hull_plate').texture('kubejs:item/desh_rocket_hull_plate').maxStackSize(16).displayName('Desh Rocket Hull Plate');

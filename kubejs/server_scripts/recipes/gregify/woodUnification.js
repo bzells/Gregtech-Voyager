@@ -142,7 +142,6 @@ ServerEvents.recipes(event => {
 		if (mod == 'minecraft') planks = [wood + '_planks', wood.replace('minecraft', 'forestry') + '_fireproof_planks']
 		if (mod == 'tconstruct') wood = input
 		
-		console.log(input)
 		event.remove({type: "minecraft:crafting_shaped",output:`${wood}_slab`})
 
 		event.recipes.gtceu.shaped((Item.of(wood+'_slab', 2)),
@@ -198,3 +197,5 @@ ServerEvents.recipes(event => {
 
 	})
 })
+
+ForestryEvents
