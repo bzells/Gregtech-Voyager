@@ -18,13 +18,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", (event) => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setSound(GTSoundEntries.CHEMICAL)
 
-    // event
-    //     .create("celestial_post_box")
-    //     .category("multiblock")
-    //     // .setEUIO("in")
-    //     .setMaxIOSize(9, 9, 4, 4)
-    //     .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-    //     .setSound(GTSoundEntries.COMPUTATION)
+
 
     event
         .create("helper_software_installation_unit")
@@ -223,6 +217,42 @@ GTCEuStartupEvents.registry("gtceu:machine", (event) => {
         )
 
         .workableCasingModel(`voyagercore:block/casing/ostrum_casing`, `kubejs:block/multiblock/helper_software_installation_unit`)
+
+
+        event
+        .create("large_dehumidifier", "multiblock")
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("large_dehumidifier")
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+
+        // base block appearance
+        .appearanceBlock(() => Block.getBlock("gtceu:lv_machine_casing"))
+
+        .pattern((definition) =>
+            FactoryBlockPattern.start()
+
+                .aisle("AAA", "AAA", "AAA")
+                .aisle("AAA", "A A", "AAA")
+                .aisle("AAA", "A@A", "AAA")
+
+                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+
+                .where(
+                    "A",
+                    Predicates.blocks("gtceu:lv_machine_casing")
+
+                        .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                        .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
+                        .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(1))
+                        .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
+                ) // make sure this is inside the .where, otherwise it will break shit
+
+                .where(" ", Predicates.air())
+
+                .build()
+        )
+
+        .workableCasingModel(`gtceu:block/casings/voltage/lv/bottom`, `gtceu:block/machines/air_scrubber`)
 
     // core mod incoming!!
 

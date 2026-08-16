@@ -1871,7 +1871,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1915,6 +1915,7 @@
 				"759B3B1DFB793555"
 				"419A5B81DA99E1A0"
 			]
+			description: ["Note: Some recipes may still be missing"]
 			id: "6A6C0D6366381F30"
 			tasks: [{
 				id: "0756E9543DBBA2C6"
@@ -1923,29 +1924,29 @@
 			}]
 			title: "IO, IO, wait a minute... This is Industrial Foregoing!"
 			x: 6.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
 			id: "6CF825DD7145FF7A"
 			tasks: [{
 				id: "7827EE6435B41D36"
 				item: "industrialforegoing:block_breaker"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
 			id: "0145040DE1A2A5F9"
 			tasks: [{
 				id: "71982A9857893412"
 				item: "industrialforegoing:block_placer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1955,8 +1956,8 @@
 				item: "industrialforegoing:plant_fertilizer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1967,29 +1968,18 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["3A539B27DF71BBA7"]
-			id: "6B5C44C6A519A57D"
-			tasks: [{
-				id: "0F73023A3422863F"
-				item: "industrialforegoing:enchantment_sorter"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
 			id: "125CC82C035B8C09"
 			tasks: [{
 				id: "60A7A93E203B4E56"
 				item: "industrialforegoing:animal_rancher"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1999,8 +1989,8 @@
 				item: "industrialforegoing:animal_feeder"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -2010,8 +2000,8 @@
 				item: "industrialforegoing:animal_baby_separator"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0F580A8CF3E4400A"]
@@ -2106,8 +2096,8 @@
 				item: "industrialforegoing:pink_slime"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6A066106E82E9C31"]

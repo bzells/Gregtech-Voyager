@@ -86,6 +86,8 @@
 
     "material.gtceu.ilmenite_residue": "Ilmenite Residue",
     "block.gtceu.steam_blast_furnace": "Steel Blast Furnace",
+    "block.gtceu.large_dehumidifier": "Large Dehumidifier",
+    "gtceu.large_dehumidifier": "Large Dehumidifier",
     "block.gtceu.cube_centrifuge": "Cube Centrifuge",
     "block.gtceu.cube_macerator": "Cube Macerator",
     "block.gtceu.cube_electrolyzer": "Cube Electrolyzer",

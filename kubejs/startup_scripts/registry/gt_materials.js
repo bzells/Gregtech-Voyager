@@ -481,8 +481,6 @@ register_dust("lunarium_metal_sludge", ["lunarium", "water"], "0x360d1c", no_dec
 register_dust("dewatered_lunarium_metal_mixture", ["lunarium", "desh", "titanium", "3x glowstone", "2x gold", "2x carbon", "3x hydrogen", "zinc", "barium"], "0x657e9c", no_decomp)
 register_dust("impure_lunarium", ["lunarium", "desh", "1x carbon", "calcium"], "0x7fa9b0", electrolyze)
 
-register_nosmelt_metal("test", [], true, "0xffffff", [3600, "mid", voltTier("ev"), 20 * 64], [901, 601, 1, 1000000], voltTier("zpm"))
-
 abs_mat_sec("martian-composite", "0xbd0921", "0xa30054")
 
 // titanite

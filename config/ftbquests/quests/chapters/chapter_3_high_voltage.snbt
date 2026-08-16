@@ -2299,7 +2299,16 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["2FC046CA926EC302"]
+			dependencies: [
+				"2FC046CA926EC302"
+				"3A539B27DF71BBA7"
+			]
+			description: [
+				"Please note:"
+				"Currently there aren't many questlines/descriptions to help guide you thru some of these quests/mods. The enchanting Industrial Foregoing machines need Ars, and Apotheosis. Until the questlines have been made, you are unfortunately on your own. Please read the wikis for the mods, as they help a lot."
+				""
+				"They are also very popular mods, so finding help online should be very easy."
+			]
 			id: "27DE983E37D01A68"
 			tasks: [{
 				id: "19EDF028ECE20580"
@@ -2374,17 +2383,6 @@
 			}]
 			x: 4.5d
 			y: -10.5d
-		}
-		{
-			dependencies: ["27DE983E37D01A68"]
-			id: "490E0F9C40F7D0D0"
-			tasks: [{
-				id: "0B64A6FC12EA30C4"
-				item: "industrialforegoing:enchantment_sorter"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -11.0d
 		}
 		{
 			dependencies: ["2BCF2E87DEF9B7B7"]
