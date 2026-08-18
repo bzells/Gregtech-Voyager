@@ -112,23 +112,18 @@
 			}]
 			size: 1.25d
 			subtitle: "Can't use a nuclear power plant yet"
-			tasks: [
-				{
-					id: "126ACE72A2C937D9"
-					item: "gtceu:lp_steam_solid_boiler"
-					type: "item"
+			tasks: [{
+				id: "126ACE72A2C937D9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lp_steam_solid_boiler)item(gtceu:lp_steam_liquid_boiler)item(gtceu:lp_steam_solar_boiler))"
+					}
 				}
-				{
-					id: "58919CCC39DEEEED"
-					item: "gtceu:lp_steam_liquid_boiler"
-					type: "item"
-				}
-				{
-					id: "770A14CD70696DE4"
-					item: "gtceu:lp_steam_solar_boiler"
-					type: "item"
-				}
-			]
+				title: "Any Low Pressure Boiler"
+				type: "item"
+			}]
 			title: "Actually making steam"
 			x: -24.375d
 			y: 3.75d
@@ -453,23 +448,18 @@
 				type: "item"
 			}]
 			subtitle: "These make a lot of steam"
-			tasks: [
-				{
-					id: "5F48CB4192C530B1"
-					item: "gtceu:hp_steam_solid_boiler"
-					type: "item"
+			tasks: [{
+				id: "5F48CB4192C530B1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hp_steam_solid_boiler)item(gtceu:hp_steam_liquid_boiler)item(gtceu:hp_steam_solar_boiler))"
+					}
 				}
-				{
-					id: "3C3F961A2FF83EE1"
-					item: "gtceu:hp_steam_liquid_boiler"
-					type: "item"
-				}
-				{
-					id: "202F76808F1A9F67"
-					item: "gtceu:hp_steam_solar_boiler"
-					type: "item"
-				}
-			]
+				title: "Any High Pressure Boiler"
+				type: "item"
+			}]
 			title: "High pressure steam producers"
 			x: -22.5d
 			y: 9.5d
@@ -1095,3 +1085,4 @@
 	]
 	title: "Chapter 0.5: Ultra Low Voltage (Ft. Steam)"
 }
+

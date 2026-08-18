@@ -1689,12 +1689,14 @@
 			tasks: [
 				{
 					id: "5CA697295D6E9A35"
-					item: "gtceu:iron_iii_chloride_bucket"
-					type: "item"
-				}
-				{
-					id: "7C035786472ED5D3"
-					item: "gtceu:sodium_persulfate_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_iii_chloride_bucket)item(gtceu:sodium_persulfate_bucket))"
+						}
+					}
+					title: "Etching Fluids"
 					type: "item"
 				}
 				{
@@ -1714,17 +1716,14 @@
 			tasks: [
 				{
 					id: "6F0DC19A66BEC200"
-					item: "gtceu:polyethylene_plate"
-					type: "item"
-				}
-				{
-					id: "499B787B67C2D804"
-					item: "gtceu:polyvinyl_chloride_plate"
-					type: "item"
-				}
-				{
-					id: "0E0EAB41AEC0A2B9"
-					item: "gtceu:polytetrafluoroethylene_plate"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:polyethylene_plate)item(gtceu:polyvinyl_chloride_plate)item(gtceu:polytetrafluoroethylene_plate))"
+						}
+					}
+					title: "Plastic Sheets"
 					type: "item"
 				}
 				{
