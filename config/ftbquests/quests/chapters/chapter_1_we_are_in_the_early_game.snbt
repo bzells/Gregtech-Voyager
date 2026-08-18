@@ -1063,23 +1063,18 @@
 				}
 			]
 			subtitle: "Storing all that power you're making"
-			tasks: [
-				{
-					id: "28A919F6FCAC5507"
-					item: "gtceu:lv_sodium_battery"
-					type: "item"
+			tasks: [{
+				id: "28A919F6FCAC5507"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_sodium_battery)item(gtceu:lv_lithium_battery)item(gtceu:lv_cadmium_battery))"
+					}
 				}
-				{
-					id: "39489CD2A7C452A4"
-					item: "gtceu:lv_cadmium_battery"
-					type: "item"
-				}
-				{
-					id: "118BB468C8076A5F"
-					item: "gtceu:lv_lithium_battery"
-					type: "item"
-				}
-			]
+				title: "Any LV Battery"
+				type: "item"
+			}]
 			title: "Batteries"
 			x: -8.0d
 			y: 0.0d

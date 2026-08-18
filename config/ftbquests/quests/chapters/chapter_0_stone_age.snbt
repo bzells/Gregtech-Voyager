@@ -465,36 +465,13 @@
 					count: 3L
 					id: "013FE21188D41D1B"
 					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Material: "tconstruct:steeleaf"
+							"ftbfiltersystem:filter": "and(item(tconstruct:large_plate)or(nbt(fuzzy:{Material:\"tconstruct:steeleaf\"})nbt(fuzzy:{Material:\"tconstruct:pig_iron\"})nbt(fuzzy:{Material:\"tconstruct:steel\"})))"
 						}
 					}
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "3C209D78672D11FF"
-					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
-						tag: {
-							Material: "tconstruct:steel"
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "4ECA65C03EFC91F2"
-					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
-						tag: {
-							Material: "tconstruct:pig_iron"
-						}
-					}
+					title: "Tinker's Anvil Material"
 					type: "item"
 				}
 				{

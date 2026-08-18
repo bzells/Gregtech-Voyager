@@ -565,33 +565,18 @@
 				"3DD3B066C45A77B5"
 			]
 			id: "044B5E4FBBD3C277"
-			tasks: [
-				{
-					id: "4B2F44FCD2432A5F"
-					item: "gtceu:advanced_smd_transistor"
-					type: "item"
+			tasks: [{
+				id: "4B2F44FCD2432A5F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:advanced_smd_transistor)item(gtceu:advanced_smd_resistor)item(gtceu:advanced_smd_capacitor)item(gtceu:advanced_smd_diode)item(gtceu:advanced_smd_inductor))"
+					}
 				}
-				{
-					id: "0E7E20344890A6BE"
-					item: "gtceu:advanced_smd_resistor"
-					type: "item"
-				}
-				{
-					id: "512B3ABBCA52F019"
-					item: "gtceu:advanced_smd_capacitor"
-					type: "item"
-				}
-				{
-					id: "3CAAD7A85927500D"
-					item: "gtceu:advanced_smd_diode"
-					type: "item"
-				}
-				{
-					id: "335E293212424D44"
-					item: "gtceu:advanced_smd_inductor"
-					type: "item"
-				}
-			]
+				title: "Any Advanced SMDs"
+				type: "item"
+			}]
 			title: "Advanced SMDs"
 			x: -3.5d
 			y: 9.0d
