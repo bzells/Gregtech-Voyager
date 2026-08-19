@@ -48,6 +48,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "May assist in your dragon 'issues'"
 			tasks: [
 				{
 					id: "3EF4A977A13F5164"
@@ -173,7 +174,7 @@
 					type: "choice"
 				}
 			]
-			subtitle: "It's not op, promise"
+			subtitle: "WILL take care of your dragon issues."
 			tasks: [{
 				count: 2L
 				id: "1B6C44628943BBFE"
@@ -189,6 +190,17 @@
 			title: "THE Bow Upgrade"
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["6C7312B3BC744D7F"]
+			id: "20279A7120522426"
+			tasks: [{
+				id: "7F800BE4975688A2"
+				item: "iceandfire:dragonbone_arrow"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
 		}
 	]
 	title: "Mobs are hard"

@@ -1,0 +1,27 @@
+{
+	id: "48445C3171D2033D"
+	loot_size: 1
+	order_index: 39
+	rewards: [
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "tconstruct:bow_limb"
+				tag: {
+					Material: "gm_construct:carbon"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "tconstruct:pick_head"
+				tag: {
+					Material: "gm_construct:pearlic_steel"
+				}
+			}
+		}
+	]
+	title: "ulvbow"
+}

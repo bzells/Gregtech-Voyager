@@ -1,4 +1,4 @@
-import { recipe_mixer } from "../00_util/recipeUtils"
+import { recipe_mixer } from "../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
     // event.recipes.gtceu

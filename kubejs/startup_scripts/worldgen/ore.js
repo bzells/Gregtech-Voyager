@@ -147,7 +147,7 @@ WorldgenEvents.remove((event) => {
             "iceandfire:silver_ore",
             "occultism:silver_ore",
             "iceandfire:deepslate_silver_ore",
-            "occultism:deepslate_silver_ore"
+            "occultism:silver_ore_deepslate"
         ]
     })
 })
@@ -178,7 +178,7 @@ WorldgenEvents.remove((event) => {
             "iceandfire:silver_ore",
             "occultism:silver_ore",
             "iceandfire:deepslate_silver_ore",
-            "occultism:deepslate_silver_ore"
+            "occultism:silver_ore_deepslate"
         ]
     })
 })

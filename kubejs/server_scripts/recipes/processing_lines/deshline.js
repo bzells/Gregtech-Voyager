@@ -1,4 +1,4 @@
-import { recipe_centrifuge, recipe_electrolyzer, recipe_lcr } from "../00_util/recipeUtils"
+import { recipe_centrifuge, recipe_electrolyzer, recipe_lcr } from "../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
     event.remove({ input: "" })

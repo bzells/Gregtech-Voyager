@@ -156,6 +156,7 @@ ServerEvents.recipes((event) => {
                 `2x gtceu:${tier}_field_generator`
             )
             .itemOutputs(`voyagercore:${tier}_output_helper_module`)
+            .EUt(tiermap[tier])
             .duration(20 * 30)
     }
 

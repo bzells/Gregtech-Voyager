@@ -85,21 +85,21 @@
 			}]
 			tasks: [
 				{
-					count: 32L
-					id: "6FC94F692627641E"
-					item: "kubejs:lv_tech_coin"
-					type: "item"
-				}
-				{
 					elapsedTime: 3600L
 					gameTime: "system"
 					id: "3E3207BE68B847A3"
 					type: "questsadditions:time"
 				}
+				{
+					count: 32L
+					id: "7F14DCE51E421CAA"
+					item: { Count: 32, id: "kubejs:mv_tech_coin" }
+					type: "item"
+				}
 			]
 			title: "Diodes"
-			x: 1.5d
-			y: -3.0d
+			x: 8.5d
+			y: -1.0d
 		}
 		{
 			id: "1DDD0658D64E2ACB"
@@ -242,7 +242,7 @@
 				}
 			]
 			title: "Tempered Glass"
-			x: 4.5d
+			x: 3.5d
 			y: -3.0d
 		}
 		{
@@ -347,7 +347,7 @@
 				}
 			]
 			title: "LV Battery"
-			x: 5.5d
+			x: 4.5d
 			y: -3.0d
 		}
 		{
@@ -400,7 +400,7 @@
 				}
 			]
 			title: "Glass Tubes"
-			x: 2.5d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -427,7 +427,7 @@
 				}
 			]
 			title: "Resin Printed Circuit Boards"
-			x: 3.5d
+			x: 2.5d
 			y: -3.0d
 		}
 		{

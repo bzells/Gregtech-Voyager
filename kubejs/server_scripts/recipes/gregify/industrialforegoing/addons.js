@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:mobimprisonment")
-        .itemInputs("1x #gtceu:circuits/hv", "4x gtceu:polyethylene_plate", "1x gtceu:source_lens")
+        .itemInputs("1x #gtceu:circuits/mv", "4x gtceu:polyethylene_plate", "1x gtceu:pearlic_steel_plate")
         .itemOutputs("1x industrialforegoing:mob_imprisonment_tool")
         .duration(300)
         .EUt(120)

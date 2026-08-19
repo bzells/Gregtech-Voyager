@@ -232,11 +232,13 @@
 				{
 					id: "64907C51B2E40D4B"
 					item: "artifacts:everlasting_beef"
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A78D029DA56EF7C"
 					item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+					team_reward: false
 					type: "item"
 				}
 			]

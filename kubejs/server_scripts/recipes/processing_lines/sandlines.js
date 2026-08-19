@@ -1,4 +1,4 @@
-import { recipe_centrifuge, recipe_macerator } from "../00_util/recipeUtils"
+import { recipe_centrifuge, recipe_macerator } from "../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
     /**

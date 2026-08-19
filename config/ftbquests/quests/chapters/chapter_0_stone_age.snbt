@@ -192,6 +192,12 @@
 					item: "kubejs:stone_bag"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "60A314C5B0C7BB44"
+					table_id: 5207388436579877693L
+					type: "choice"
+				}
 			]
 			subtitle: "Becuase we're too cool for stone tools"
 			tasks: [
@@ -298,11 +304,18 @@
 				"2977381A674780EF"
 			]
 			id: "3ABEDA348136284C"
-			rewards: [{
-				id: "6FAEA69376D5694A"
-				item: "tconstruct:repair_kit_cast"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6FAEA69376D5694A"
+					item: "tconstruct:repair_kit_cast"
+					type: "item"
+				}
+				{
+					id: "7876AEE10A951D5A"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+			]
 			subtitle: "For cooking things into molten metals"
 			tasks: [
 				{
@@ -452,36 +465,13 @@
 					count: 3L
 					id: "013FE21188D41D1B"
 					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Material: "tconstruct:steeleaf"
+							"ftbfiltersystem:filter": "and(item(tconstruct:large_plate)or(nbt(fuzzy:{Material:\"tconstruct:steeleaf\"})nbt(fuzzy:{Material:\"tconstruct:pig_iron\"})nbt(fuzzy:{Material:\"tconstruct:steel\"})))"
 						}
 					}
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "3C209D78672D11FF"
-					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
-						tag: {
-							Material: "tconstruct:steel"
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "4ECA65C03EFC91F2"
-					item: {
-						Count: 3
-						id: "tconstruct:large_plate"
-						tag: {
-							Material: "tconstruct:pig_iron"
-						}
-					}
+					title: "Tinker's Anvil Material"
 					type: "item"
 				}
 				{
@@ -643,6 +633,7 @@
 							Material: "tconstruct:slimewood"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -654,6 +645,7 @@
 							Material: "tconstruct:slimesteel"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -665,6 +657,7 @@
 							Material: "tconstruct:hepatizon"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -676,6 +669,7 @@
 							Material: "tconstruct:hepatizon"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]
@@ -687,6 +681,11 @@
 			dependencies: ["3A557C43CE0F534F"]
 			description: ["You will need 2 bronze drums to make the entire smeltery"]
 			id: "2977381A674780EF"
+			rewards: [{
+				id: "5D34531E62E3C570"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			subtitle: "Fluid storage that isn't in increments of a bucket"
 			tasks: [{
 				count: 2L
@@ -1054,6 +1053,11 @@
 		{
 			dependencies: ["1A807CCA515A0B94"]
 			id: "1E86B791EF8D2C10"
+			rewards: [{
+				id: "6333E0643D207079"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			subtitle: "This one's gregified too"
 			tasks: [{
 				count: 16L
@@ -1067,6 +1071,11 @@
 		{
 			dependencies: ["2F4B6CBA03B8301B"]
 			id: "0A5968194E7F4714"
+			rewards: [{
+				id: "1E2FB487F3D8C6FF"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76640CA06DB23C9C"
 				item: "comforts:sleeping_bag_white"

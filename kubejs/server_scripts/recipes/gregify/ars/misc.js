@@ -16,6 +16,14 @@ ServerEvents.recipes((event) => {
     )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
+        ["minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "tconstruct:queens_slime_ingot", "gtceu:source_steel_ingot"], // input items
+        "kubejs:raw_beef", // reagent
+        "inventorypets:pet_magma_cube", // output
+        10000, // source cost
+        true // keep nbt of reagent, think like a smithing recipe
+    )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
         ["ars_nouveau:fire_essence", "apotheosis:gem_dust", "gtceu:sculk_dust"], // input items
         "kubejs:explosive_heart", // reagent
         "kubejs:heart_of_destruction", // output

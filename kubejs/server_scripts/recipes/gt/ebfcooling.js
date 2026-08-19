@@ -128,6 +128,8 @@ ServerEvents.recipes((event) => {
     ebf_recipe_ingot("energetic_alloy", 20 * 120, 120, 2700, 'gtceu:oxygen', false)
     ebf_recipe_hot_ingot("energetic_pearlic_alloy", 20 * 120, 480, 3600, 'gtceu:oxygen', false)
 
+    
+
     event.recipes.gtceu
         .electric_blast_furnace("kubejs:everlasting_steak_ebf")
         .itemInputs("artifacts:everlasting_beef")

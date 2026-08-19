@@ -158,3 +158,33 @@ global.recipe_assembler = function(event, output, inputItems, inputFluids, eut, 
         .duration(duration * 20)
         .EUt(eut)
 }
+
+global.recipe_assembler_with_id = function(event, rId, output, inputItems, inputFluids, eut, duration) {
+    event.recipes.gtceu
+        .assembler(`kubejs:${parse_item_with_ns(output)}_${rId}_assembler`)
+        .itemInputs(inputItems)
+        .inputFluids(inputFluids)
+        .itemOutputs(output)
+        .duration(duration * 20)
+        .EUt(eut)
+}
+
+global.recipe_circuit_assembler = function(event, output, inputItems, inputFluids, eut, duration) {
+    event.recipes.gtceu
+        .circuit_assembler(`kubejs:${parse_item_with_ns(output)}_circuit_assembler`)
+        .itemInputs(inputItems)
+        .inputFluids(inputFluids)
+        .itemOutputs(output)
+        .duration(duration * 20)
+        .EUt(eut)
+}
+
+global.recipe_circuit_assembler_with_id = function(event, rId, output, inputItems, inputFluids, eut, duration) {
+    event.recipes.gtceu
+        .circuit_assembler(`kubejs:${parse_item_with_ns(output)}_${rId}_circuit_assembler`)
+        .itemInputs(inputItems)
+        .inputFluids(inputFluids)
+        .itemOutputs(output)
+        .duration(duration * 20)
+        .EUt(eut)
+}

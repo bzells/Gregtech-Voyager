@@ -11,7 +11,7 @@
 	#Display holiday messages during startup (default:true)
 	showHolidayMessages = true
 	#Are pets required to eat food (default:true)
-	petsMustEat = true
+	petsMustEat = false
 	#Pets eat rarer items (default:false)
 	petsEatWholeItems = false
 	#Turn off all dungeons (default:false)

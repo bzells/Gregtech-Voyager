@@ -1,4 +1,4 @@
-import { recipe_mixer, recipe_electrolyzer, recipe_lcr, recipe_chem_plant, recipe_centrifuge, recipe_distillation } from "../00_util/recipeUtils"
+import { recipe_mixer, recipe_electrolyzer, recipe_lcr, recipe_chem_plant, recipe_centrifuge, recipe_distillation } from "../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
     event.remove({ input: "gtceu:iridium_metal_residue_dust" })

@@ -1024,6 +1024,7 @@
 				"2AE88B3B3356EFF3"
 				"2DE64A0F27847F54"
 			]
+			icon: "gtceu:ethylene_bucket"
 			id: "49F17D4469082171"
 			min_required_tasks: 1
 			rewards: [{
@@ -1033,11 +1034,17 @@
 				type: "item"
 			}]
 			subtitle: "You don't need to do this yet, but PLEASE passive this"
-			tasks: [{
-				id: "794E07DB1F0BC94B"
-				item: "gtceu:ethylene_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "794E07DB1F0BC94B"
+					item: "gtceu:ethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "48B5618A98576D4A"
+					type: "checkmark"
+				}
+			]
 			x: -9.0d
 			y: 0.5d
 		}
@@ -1168,7 +1175,9 @@
 		}
 		{
 			dependencies: ["7B351CBB336D5129"]
+			icon: "gtceu:ethanol_bucket"
 			id: "2AE88B3B3356EFF3"
+			min_required_tasks: 1
 			optional: true
 			rewards: [{
 				count: 8
@@ -1177,17 +1186,25 @@
 				type: "item"
 			}]
 			subtitle: "Don't use fermented biomass for this please"
-			tasks: [{
-				id: "3B52384194F1F5FC"
-				item: "gtceu:ethanol_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3B52384194F1F5FC"
+					item: "gtceu:ethanol_bucket"
+					type: "item"
+				}
+				{
+					id: "498DBFC0D770AA11"
+					type: "checkmark"
+				}
+			]
 			x: -8.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["540D3841076D1667"]
+			icon: "gtceu:biomass_bucket"
 			id: "7B351CBB336D5129"
+			min_required_tasks: 1
 			optional: true
 			rewards: [{
 				count: 8
@@ -1196,11 +1213,17 @@
 				type: "item"
 			}]
 			subtitle: "Made of plants"
-			tasks: [{
-				id: "1BEB15230B211168"
-				item: "gtceu:biomass_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1BEB15230B211168"
+					item: "gtceu:biomass_bucket"
+					type: "item"
+				}
+				{
+					id: "290D76A7FC14255C"
+					type: "checkmark"
+				}
+			]
 			x: -8.0d
 			y: -0.5d
 		}
@@ -1229,7 +1252,9 @@
 		}
 		{
 			dependencies: ["6ECAE141D27C5E82"]
+			icon: "gtceu:oil_bucket"
 			id: "088A47A6F8B2E1EC"
+			min_required_tasks: 1
 			optional: true
 			rewards: [{
 				count: 8
@@ -1238,11 +1263,17 @@
 				type: "item"
 			}]
 			subtitle: "Black gold. 'Nuff said"
-			tasks: [{
-				id: "0FEF9A0E76F9CB56"
-				item: "gtceu:oil_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0FEF9A0E76F9CB56"
+					item: "gtceu:oil_bucket"
+					type: "item"
+				}
+				{
+					id: "0E667B04449A3B87"
+					type: "checkmark"
+				}
+			]
 			x: -10.0d
 			y: 0.5d
 		}
@@ -1705,11 +1736,16 @@
 			y: 4.5d
 		}
 		{
+			description: [
+				"Since Industrial Foregoing doesn't use GTCEu's native EU energy system, you will need to craft converters to power these machines. That or place a generator right on top of a machine. Your call."
+				""
+				"&7&oCurrently, to transfer RF/FE around... you need to use LaserIO&r"
+			]
+			icon: "gtceu:ulv_1a_energy_converter"
 			id: "723C5F19797DC4E3"
 			tasks: [{
-				id: "299A031FEC228D1B"
-				item: "gtceu:lv_4a_energy_converter"
-				type: "item"
+				id: "27584238FFFAC1FF"
+				type: "checkmark"
 			}]
 			title: "RF Converters"
 			x: 2.5d
@@ -1805,7 +1841,7 @@
 				item: "gtceu:pearlic_steel_ingot"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -16.5d
 			y: 2.0d
 		}
 		{
@@ -1835,10 +1871,14 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["6A066106E82E9C31"]
+			dependencies: [
+				"4BD922E5CE685F22"
+				"4E64B4B02EEBDB80"
+			]
+			hide_dependency_lines: true
 			id: "0F580A8CF3E4400A"
 			rewards: [
 				{
@@ -1875,6 +1915,7 @@
 				"759B3B1DFB793555"
 				"419A5B81DA99E1A0"
 			]
+			description: ["Note: Some recipes may still be missing"]
 			id: "6A6C0D6366381F30"
 			tasks: [{
 				id: "0756E9543DBBA2C6"
@@ -1883,29 +1924,29 @@
 			}]
 			title: "IO, IO, wait a minute... This is Industrial Foregoing!"
 			x: 6.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
 			id: "6CF825DD7145FF7A"
 			tasks: [{
 				id: "7827EE6435B41D36"
 				item: "industrialforegoing:block_breaker"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
 			id: "0145040DE1A2A5F9"
 			tasks: [{
 				id: "71982A9857893412"
 				item: "industrialforegoing:block_placer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1915,8 +1956,8 @@
 				item: "industrialforegoing:plant_fertilizer"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1927,29 +1968,19 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["3A539B27DF71BBA7"]
-			id: "6B5C44C6A519A57D"
-			tasks: [{
-				id: "0F73023A3422863F"
-				item: "industrialforegoing:enchantment_sorter"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["6A6C0D6366381F30"]
+			dependencies: ["759B3B1DFB793555"]
+			description: ["The animal rancher is a really good way of getting milk early. Alternatively, look at the cow pet."]
 			id: "125CC82C035B8C09"
 			tasks: [{
 				id: "60A7A93E203B4E56"
 				item: "industrialforegoing:animal_rancher"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1959,8 +1990,8 @@
 				item: "industrialforegoing:animal_feeder"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6A6C0D6366381F30"]
@@ -1970,8 +2001,8 @@
 				item: "industrialforegoing:animal_baby_separator"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 3.0d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0F580A8CF3E4400A"]
@@ -2066,8 +2097,41 @@
 				item: "industrialforegoing:pink_slime"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6A066106E82E9C31"]
+			id: "4E64B4B02EEBDB80"
+			tasks: [{
+				id: "754D976B544206CB"
+				item: "laserio:laser_connector"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A066106E82E9C31"]
+			id: "47DBE874D3841A1B"
+			tasks: [{
+				id: "04C0CF8855564EC9"
+				item: "itemcollectors:basic_collector"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47DBE874D3841A1B"]
+			id: "4F50A6F59D48BEF3"
+			tasks: [{
+				id: "74259E24E2C04B6E"
+				item: "itemcollectors:advanced_collector"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 0.0d
 		}
 	]
 	title: "Chapter 2: Medium Voltage"

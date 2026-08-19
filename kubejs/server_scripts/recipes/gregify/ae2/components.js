@@ -163,8 +163,8 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:acceleration_card")
-        .itemInputs("2x ae2:advanced_card", "ae2:calculation_processor", "ae2:fluix_crystal")
-        .itemOutputs("2x ae2:speed_card")
+        .itemInputs("2x ae2:advanced_card", "ae2:calculation_processor", "ae2:fluix_crystal", "ae2:cell_component_16k")
+        .itemOutputs("4x ae2:speed_card")
         .duration(40)
         .EUt(1925)
 

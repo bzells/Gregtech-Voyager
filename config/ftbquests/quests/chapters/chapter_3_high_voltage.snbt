@@ -11,6 +11,19 @@
 		{
 			dependencies: ["6A65D57C567806CB"]
 			id: "6D52ADE672CA40EE"
+			rewards: [
+				{
+					id: "445C7AA79DC92A9E"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3D4C254216105BB0"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "Oh boy, finally! I'ma get to move on the ground"
 			tasks: [{
@@ -25,7 +38,20 @@
 		{
 			dependencies: ["6A65D57C567806CB"]
 			id: "2D57D4AE7CCA8A96"
-			size: 2.0d
+			rewards: [
+				{
+					count: 16
+					id: "2A0C564E2FA44CEC"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "19BEB34B467A5D5C"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+			]
+			size: 1.0d
 			subtitle: "More white steel"
 			tasks: [{
 				count: 32L
@@ -33,15 +59,18 @@
 				item: { Count: 32, id: "gtceu:stainless_steel_ingot" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"6D52ADE672CA40EE"
-				"2D57D4AE7CCA8A96"
-			]
+			dependencies: ["2D57D4AE7CCA8A96"]
 			id: "24BC12D99CBA36F5"
+			rewards: [{
+				count: 16
+				id: "2A7367165B0AA289"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Haha, SPIN SPIN!"
 			tasks: [{
 				id: "66C2DFD3475EF2D9"
@@ -54,6 +83,12 @@
 		{
 			dependencies: ["24BC12D99CBA36F5"]
 			id: "4E3AE7AFD9647171"
+			rewards: [{
+				count: 16
+				id: "43A780A8C3D2F900"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Haha, PUSH PUSH!!"
 			tasks: [{
 				id: "35B45ACCBCD7DB93"
@@ -66,6 +101,11 @@
 		{
 			dependencies: ["24BC12D99CBA36F5"]
 			id: "5EBF23DF26D245F8"
+			rewards: [{
+				id: "3E5D0F0FF7419A05"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "pump."
 			tasks: [{
 				id: "5B878B7DFF7DEFBB"
@@ -78,6 +118,12 @@
 		{
 			dependencies: ["24BC12D99CBA36F5"]
 			id: "603010CEBF20D6EA"
+			rewards: [{
+				count: 8
+				id: "6D838CEB56C7A16D"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Haha, CONVEY CONVEY!!"
 			tasks: [{
 				id: "421836881362B97E"
@@ -90,6 +136,19 @@
 		{
 			dependencies: ["4E3AE7AFD9647171"]
 			id: "1CEA4D97B26FBE16"
+			rewards: [
+				{
+					id: "4861918A1BA09117"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "54FBB7CCD50DE16A"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Haha, ARM ARM!!"
 			tasks: [{
 				id: "27EBFE500B4B0EFD"
@@ -103,8 +162,29 @@
 			dependencies: [
 				"1CEA4D97B26FBE16"
 				"603010CEBF20D6EA"
+				"2BCF2E87DEF9B7B7"
 			]
 			id: "6E68356E319A0B43"
+			rewards: [
+				{
+					count: 16
+					id: "7074B72AB9902F98"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "69F815DD4BA2A84C"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3A415800F76A3EFE"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "Goated Assembler"
 			tasks: [{
@@ -116,8 +196,35 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1CEA4D97B26FBE16"]
+			dependencies: [
+				"1CEA4D97B26FBE16"
+				"2BCF2E87DEF9B7B7"
+			]
 			id: "15641EDDE751887F"
+			rewards: [
+				{
+					count: 16
+					id: "1289A73E62B96F8B"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "72E30B54B06DEEB0"
+					item: "voyagercore:mv_basic_helper_module"
+					type: "item"
+				}
+				{
+					id: "4A352E97997A4EE3"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2CC8A41C794007AE"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Maybe the true advanced helper assembler was the friends we made along the way"
 			tasks: [{
 				id: "633405CA840F5D02"
@@ -128,8 +235,24 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["24BC12D99CBA36F5"]
+			dependencies: [
+				"24BC12D99CBA36F5"
+				"2BCF2E87DEF9B7B7"
+			]
 			id: "1DAB52504FD2C584"
+			rewards: [
+				{
+					id: "583284AED1B423FA"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "71DBF9F97D579382"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Spinning with a purpose™"
 			tasks: [{
 				id: "2ED7E3CE4B48381D"
@@ -187,6 +310,12 @@
 				"52BDFD2A8FC3FC07"
 			]
 			id: "47B86AAAB18C918E"
+			rewards: [{
+				count: 8
+				id: "3DF0611FBE5AFDA2"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "YOU'RE BLUE NOW! THAT'S MY ATTACK."
 			tasks: [{
 				id: "0740DB43E61FA776"
@@ -202,6 +331,11 @@
 				"603010CEBF20D6EA"
 			]
 			id: "39291F81113CEAED"
+			rewards: [{
+				id: "01CD6251864E59BA"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "These are nice"
 			tasks: [
 				{
@@ -279,6 +413,19 @@
 			]
 			hide_dependency_lines: false
 			id: "6164D33ACEB4E515"
+			rewards: [
+				{
+					id: "351E5D5853E33342"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3B1C4D1D0075D95A"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Freakin' SWEET"
 			tasks: [{
@@ -340,6 +487,19 @@
 		{
 			dependencies: ["2AE7DA758A20BE61"]
 			id: "7AC35E786081D712"
+			rewards: [
+				{
+					id: "6EB88DD643BD7473"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "06FAB60B0FD3B673"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "It's almost like it's in some king of ADVANCED CUTTER II"
 			tasks: [{
 				id: "05EC042C7E730D49"
@@ -373,6 +533,12 @@
 				"3D72D9E5632CF26E"
 			]
 			id: "6F52F7999CD4DDEB"
+			rewards: [{
+				count: 8
+				id: "0F088A9EDC2C7FD7"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Stands for Low Power Integrated Cip"
 			tasks: [{
 				id: "11BF18DFAFD585A2"
@@ -385,6 +551,12 @@
 		{
 			dependencies: ["60EE20B7892B97D1"]
 			id: "3D72D9E5632CF26E"
+			rewards: [{
+				count: 4
+				id: "7F78D8B35415F796"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "🥊 You chibis SUCK!!"
 			tasks: [{
 				id: "14458B64F552FF52"
@@ -397,6 +569,12 @@
 		{
 			dependencies: ["3104D9631DC6C740"]
 			id: "3899D5A329039714"
+			rewards: [{
+				count: 8
+				id: "30858626570F231D"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "This one is only good on jets"
 			tasks: [{
 				id: "72ACB68B147CB892"
@@ -409,6 +587,12 @@
 		{
 			dependencies: ["3104D9631DC6C740"]
 			id: "4F367E1F9CD2499E"
+			rewards: [{
+				count: 8
+				id: "460F230B0321A20D"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "I can sense your GENOCIDES"
 			tasks: [{
 				id: "2B0D18B20EFC8554"
@@ -421,6 +605,19 @@
 		{
 			dependencies: ["4F367E1F9CD2499E"]
 			id: "20EFCBB37D265410"
+			rewards: [
+				{
+					id: "6FA1D770812DB1C8"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6B61B4FCA884F33D"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "For when MV automatic mining is too slow"
 			tasks: [{
 				id: "6BF4286577EFC9C8"
@@ -436,6 +633,12 @@
 				"3899D5A329039714"
 			]
 			id: "452A1A4D09AE9A5D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B867E4C7C6DA6D2"
+				table_id: 3235919158687634669L
+				type: "choice"
+			}]
 			subtitle: "No more manual prospecting"
 			tasks: [{
 				id: "4A7B158AFA6FEF79"
@@ -464,9 +667,23 @@
 			dependencies: [
 				"5EBF23DF26D245F8"
 				"603010CEBF20D6EA"
+				"2BCF2E87DEF9B7B7"
 			]
 			hide_dependency_lines: true
 			id: "60EE20B7892B97D1"
+			rewards: [
+				{
+					id: "732D6E8B9824386B"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "594B60A38AFC1770"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Not for cooling ingots this time"
 			tasks: [{
 				id: "7EBE115DE8CC9B44"
@@ -483,6 +700,18 @@
 				"3104D9631DC6C740"
 			]
 			id: "2AB966A472430D8C"
+			rewards: [
+				{
+					id: "4BE1F49D55DA1571"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					id: "19D21DA748882030"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Ender Eye 2: Electric Boogaloo"
 			tasks: [{
 				id: "21816A2E50A856AF"
@@ -493,9 +722,25 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["24BC12D99CBA36F5"]
+			dependencies: [
+				"24BC12D99CBA36F5"
+				"2BCF2E87DEF9B7B7"
+			]
 			hide_dependency_lines: true
 			id: "41578D04D4DD0F75"
+			rewards: [
+				{
+					count: 32
+					id: "13C78CF951765975"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+				{
+					id: "5795189D05532EA6"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Fun times coming!!"
 			tasks: [{
@@ -512,6 +757,20 @@
 				"370207DDA3814F70"
 			]
 			id: "02C13DE221613C60"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B898544C3C6F5F5"
+					table_id: 6519895471055254262L
+					type: "choice"
+				}
+				{
+					count: 32
+					id: "6631229B3D94E03D"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "I LOVE FRANK'S CIRCUITS!!"
 			tasks: [{
@@ -525,8 +784,22 @@
 		{
 			dependencies: ["1DAB52504FD2C584"]
 			id: "477F006BF784C7E4"
+			rewards: [
+				{
+					id: "3DE16E1B3E14F77C"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "625E27DF6C4D2891"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Electrum 3.0"
 			tasks: [{
+				count: 16L
 				id: "7FD662E3AD15C480"
 				item: "gtceu:fluxed_cobalt_electrum_ingot"
 				type: "item"
@@ -541,6 +814,19 @@
 				"6F52F7999CD4DDEB"
 			]
 			id: "69300B12EF8F4E2A"
+			rewards: [
+				{
+					id: "32C676977C81D0B5"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "189294E00492DF45"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Time for EV LCR's and EBF's!"
 			tasks: [{
@@ -554,6 +840,12 @@
 		{
 			dependencies: ["75BCB22E498512DF"]
 			id: "63882A36B041A9DC"
+			rewards: [{
+				count: 4
+				id: "6C046716991FF965"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "What could this be?"
 			tasks: [{
 				id: "0A1BE9E07FBE520A"
@@ -566,6 +858,12 @@
 		{
 			dependencies: ["26A5CE4E66F9CE59"]
 			id: "04B424B6183B1CB1"
+			rewards: [{
+				count: 4
+				id: "52A8B3147BF7B595"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Kinda 'spensive"
 			tasks: [{
 				id: "231128AB1D23FB01"
@@ -578,6 +876,11 @@
 		{
 			dependencies: ["52BDFD2A8FC3FC07"]
 			id: "26A5CE4E66F9CE59"
+			rewards: [{
+				id: "0C3B58CD3C32AA31"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "One steel, Two steel, White steel, Black steel"
 			tasks: [{
 				id: "0D30B21D288F7F1B"
@@ -618,6 +921,19 @@
 		{
 			dependencies: ["126E181B4D235782"]
 			id: "0B60D1876EDA1164"
+			rewards: [
+				{
+					id: "669E3A8A184C8C61"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1B808425DCD6C184"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "AKA, go to hell"
 			tasks: [{
 				id: "6AD6E8292379404B"
@@ -630,6 +946,19 @@
 		{
 			dependencies: ["0B60D1876EDA1164"]
 			id: "59EC433F2CFDAB44"
+			rewards: [
+				{
+					id: "0D81C9CEB78F077F"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4D04DEF4CA0E1ECA"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "You need LOTS of these"
@@ -659,6 +988,19 @@
 				"49826526BFC9255D"
 			]
 			id: "7E4802F4F9362BE2"
+			rewards: [
+				{
+					id: "235097AC2F9326F9"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "122A9993BB12A460"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "#WheatleyPortal2Moment"
 			tasks: [{
 				id: "7AD926A96853B024"
@@ -687,6 +1029,18 @@
 		{
 			dependencies: ["02C13DE221613C60"]
 			id: "09B6469ED6468EEA"
+			rewards: [
+				{
+					id: "5E496BF3D578FFD9"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					id: "7CFCCC580A7D38D5"
+					item: "voyagercore:mv_helper_module"
+					type: "item"
+				}
+			]
 			size: 2.0d
 			subtitle: "Big 'ol box of aluminium"
 			tasks: [{
@@ -698,8 +1052,30 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["02C13DE221613C60"]
+			dependencies: [
+				"02C13DE221613C60"
+				"2BCF2E87DEF9B7B7"
+			]
 			id: "0D58ACA0BF5E20A1"
+			rewards: [
+				{
+					count: 32
+					id: "5FEAB7BBEAF955DF"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "33EC3ECE464965ED"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2408C51017E5CB06"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "Hope you were making lots of stainless steel!"
 			tasks: [{
@@ -711,7 +1087,10 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["02C13DE221613C60"]
+			dependencies: [
+				"02C13DE221613C60"
+				"2BCF2E87DEF9B7B7"
+			]
 			id: "004A7D51567107F6"
 			subtitle: "Again, make this"
 			tasks: [{
@@ -726,6 +1105,25 @@
 			dependencies: ["02C13DE221613C60"]
 			hide_dependent_lines: true
 			id: "6F52CAEE5B38FA90"
+			rewards: [
+				{
+					count: 16
+					id: "02FECAD7CB0673AE"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "2D5973A96339B7F8"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "073ABA0FCCE394DD"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Didn't think it would go all the way to IV, huh?"
 			tasks: [{
 				id: "117256C519E2A09F"
@@ -741,6 +1139,19 @@
 				"7EB09327FA89F0D6"
 			]
 			id: "5E9CC61CA2932088"
+			rewards: [
+				{
+					id: "0C2EF49B10D982A8"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1B87F71C87316CE3"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "227614E9FCB39286"
@@ -797,6 +1208,19 @@
 			dependencies: ["3899D5A329039714"]
 			hide_dependency_lines: true
 			id: "25488B3C27058233"
+			rewards: [
+				{
+					id: "203E7E8D58088B02"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B114685FBB627AF"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5406730CDFE4168C"
 				item: "gtceu:hv_laser_engraver"
@@ -910,6 +1334,11 @@
 		{
 			dependencies: ["76E569E3B854F262"]
 			id: "574386206F34395C"
+			rewards: [{
+				id: "724B3CE6BF7C6147"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "John Rover"
 			tasks: [{
 				id: "7FCF1DAA47C482CD"
@@ -929,6 +1358,11 @@
 				"1300B26B375C3285"
 			]
 			id: "4A9B78D38C9215C8"
+			rewards: [{
+				id: "5F6821FDD2CFF415"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "Lots and Lots of fluid storage"
 			tasks: [{
 				count: 2L
@@ -943,6 +1377,11 @@
 			dependencies: ["0B60D1876EDA1164"]
 			hide_dependency_lines: true
 			id: "1300B26B375C3285"
+			rewards: [{
+				id: "189599AF63A5E6A9"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "Hermetic? I hardly know her!"
 			tasks: [{
 				id: "6DFA7F60ED951CFD"
@@ -1131,6 +1570,19 @@
 				"7528E0932559B4F9"
 			]
 			id: "370207DDA3814F70"
+			rewards: [
+				{
+					id: "037594C1F75A294E"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3540FB183D589052"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "uh..uhm.. yum yum circuit??"
 			tasks: [{
 				id: "09A3A186E0953965"
@@ -1162,6 +1614,11 @@
 				"3AB1AE77374AC93A"
 			]
 			id: "3B6273B804A6A5AB"
+			rewards: [{
+				id: "77391BE155ACD374"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "'MV circuits at a cheap price !? !?' 'Satisfactory'"
 			tasks: [{
 				id: "179EC89EDE4A6A94"
@@ -1189,6 +1646,11 @@
 		{
 			dependencies: ["6C1EBC69D1A4FC21"]
 			id: "3AB1AE77374AC93A"
+			rewards: [{
+				id: "780AEF70DE88FD2C"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			subtitle: "What are the socioeconomic ramifactions of it turning green?"
 			tasks: [{
 				id: "5872B8D442698D3B"
@@ -1204,6 +1666,12 @@
 				"366A9AEB94BC7BBB"
 			]
 			id: "6C1EBC69D1A4FC21"
+			rewards: [{
+				count: 8
+				id: "307FD456528F56CA"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "Microplastics, yummy."
 			tasks: [{
 				id: "2BFACF198ABC3227"
@@ -1221,12 +1689,14 @@
 			tasks: [
 				{
 					id: "5CA697295D6E9A35"
-					item: "gtceu:iron_iii_chloride_bucket"
-					type: "item"
-				}
-				{
-					id: "7C035786472ED5D3"
-					item: "gtceu:sodium_persulfate_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:iron_iii_chloride_bucket)item(gtceu:sodium_persulfate_bucket))"
+						}
+					}
+					title: "Etching Fluids"
 					type: "item"
 				}
 				{
@@ -1246,17 +1716,14 @@
 			tasks: [
 				{
 					id: "6F0DC19A66BEC200"
-					item: "gtceu:polyethylene_plate"
-					type: "item"
-				}
-				{
-					id: "499B787B67C2D804"
-					item: "gtceu:polyvinyl_chloride_plate"
-					type: "item"
-				}
-				{
-					id: "0E0EAB41AEC0A2B9"
-					item: "gtceu:polytetrafluoroethylene_plate"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:polyethylene_plate)item(gtceu:polyvinyl_chloride_plate)item(gtceu:polytetrafluoroethylene_plate))"
+						}
+					}
+					title: "Plastic Sheets"
 					type: "item"
 				}
 				{
@@ -1269,7 +1736,10 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["13C87727AE1B10DA"]
+			dependencies: [
+				"13C87727AE1B10DA"
+				"6D52ADE672CA40EE"
+			]
 			id: "5BEA805F4E9F26F0"
 			subtitle: "You should have made this already."
 			tasks: [{
@@ -1283,6 +1753,12 @@
 		{
 			dependencies: ["5EBF23DF26D245F8"]
 			id: "4096940C1B57987A"
+			rewards: [{
+				count: 4
+				id: "458FF85741441C48"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5482EB7EDAD36FAC"
 				item: "gtceu:infinite_water_cover"
@@ -1408,6 +1884,12 @@
 		{
 			dependencies: ["3AB1AE77374AC93A"]
 			id: "14A7460833DDD30B"
+			rewards: [{
+				count: 8
+				id: "7545E3225E7D6BFB"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "about a 7 year old circuit"
 			tasks: [{
 				id: "2628C3470FF2D157"
@@ -1423,6 +1905,12 @@
 				"6B750A6E1125C412"
 			]
 			id: "2284F4835DA315FA"
+			rewards: [{
+				count: 8
+				id: "5BE1558A60606822"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			subtitle: "'lil baby circuit"
 			tasks: [{
 				id: "2667B40D8178B480"
@@ -1500,6 +1988,20 @@
 				"3899D5A329039714"
 			]
 			id: "4CFCDA131CC5888F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59FE52B39C6A9308"
+					table_id: 1718228990870316303L
+					type: "choice"
+				}
+				{
+					count: 32
+					id: "008916E9BFED8C58"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [
@@ -1530,6 +2032,11 @@
 			]
 			hide_dependency_lines: true
 			id: "13FCD3511A8A2970"
+			rewards: [{
+				id: "19088E4B9729D35D"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7075238D6C49833C"
 				item: "voyagercore:hv_efficiency_helper_module"
@@ -1542,7 +2049,21 @@
 			dependencies: ["6164D33ACEB4E515"]
 			hide_dependent_lines: true
 			id: "2C28AD52F3ECAFD2"
+			rewards: [
+				{
+					id: "1CA4CADF31081294"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6883D02317B98AB9"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
+				count: 16L
 				id: "1E78C089EE4D758B"
 				item: "gtceu:niobium_nitride_ingot"
 				type: "item"
@@ -1556,6 +2077,11 @@
 				"4CFCDA131CC5888F"
 			]
 			id: "6473C71B3C7203A8"
+			rewards: [{
+				id: "42D4EA58ED81D1E8"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27585E32C5D4AEF1"
 				item: "voyagercore:hv_speed_helper_module"
@@ -1570,6 +2096,11 @@
 				"4CFCDA131CC5888F"
 			]
 			id: "63D902D751FE8D07"
+			rewards: [{
+				id: "712F269ABCF2AD0F"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7AC9033EA7F0373D"
 				item: "voyagercore:hv_basic_helper_module"
@@ -1582,6 +2113,12 @@
 			dependencies: ["69300B12EF8F4E2A"]
 			hide_dependent_lines: true
 			id: "1B3A152821B0B2D2"
+			rewards: [{
+				count: 4
+				id: "2C5E47FA530F2C63"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "362D8A821D88B36D"
 				item: "gtceu:nichrome_ingot"
@@ -1596,6 +2133,11 @@
 				"4CFCDA131CC5888F"
 			]
 			id: "5577065B4783780E"
+			rewards: [{
+				id: "5F4A772C3E88C3DB"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D4A59AC644501B7"
 				item: "voyagercore:hv_parallel_helper_module"
@@ -1610,6 +2152,11 @@
 				"6F52CAEE5B38FA90"
 			]
 			id: "4ACE0308C4E722C9"
+			rewards: [{
+				id: "7B593F5052A17160"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2B1FCC871E59CC5F"
 				item: "voyagercore:hv_output_helper_module"
@@ -1624,6 +2171,19 @@
 				"2AE7DA758A20BE61"
 			]
 			id: "1534FF61E3073987"
+			rewards: [
+				{
+					id: "21AECF897A8F3005"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "670F52E97275A2AC"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [
@@ -1651,9 +2211,29 @@
 			dependencies: [
 				"1CEA4D97B26FBE16"
 				"477F006BF784C7E4"
+				"2BCF2E87DEF9B7B7"
 			]
 			hide_dependency_lines: true
 			id: "53E1E1523013DC56"
+			rewards: [
+				{
+					id: "54E12ABF5DA9425C"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7693D8AF1BD05487"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6BDE2735A68C9DBF"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4592329106D06321"
 				item: "gtceu:hv_helper_factory"
@@ -1668,6 +2248,19 @@
 				"1B3A152821B0B2D2"
 			]
 			id: "06664D37742C6F43"
+			rewards: [
+				{
+					id: "3E710CD4CAE15018"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "70525FFD890D8261"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1681,8 +2274,22 @@
 		{
 			dependencies: ["6164D33ACEB4E515"]
 			id: "2FC046CA926EC302"
+			rewards: [
+				{
+					id: "06FD8B16E0357C04"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5D41FDB267FEEE7A"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Great for swords"
 			tasks: [{
+				count: 16L
 				id: "02B65A272E563DEF"
 				item: "gtceu:energetic_pearlic_alloy_ingot"
 				type: "item"
@@ -1691,7 +2298,16 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["2FC046CA926EC302"]
+			dependencies: [
+				"2FC046CA926EC302"
+				"3A539B27DF71BBA7"
+			]
+			description: [
+				"Please note:"
+				"Currently there aren't many questlines/descriptions to help guide you thru some of these quests/mods. The enchanting Industrial Foregoing machines need Ars, and Apotheosis. Until the questlines have been made, you are unfortunately on your own. Please read the wikis for the mods, as they help a lot."
+				""
+				"They are also very popular mods, so finding help online should be very easy."
+			]
 			id: "27DE983E37D01A68"
 			tasks: [{
 				id: "19EDF028ECE20580"
@@ -1768,15 +2384,51 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["27DE983E37D01A68"]
-			id: "490E0F9C40F7D0D0"
+			dependencies: ["2BCF2E87DEF9B7B7"]
+			description: ["The easiest way to get Chromium in HV is from electrolyzing ruby. Ruby can be found in redstone veins in the nether, and overworld."]
+			id: "7784A6593BD9B1BE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "162AD1708BE01A64"
+					table_id: 1663651340796491003L
+					type: "loot"
+				}
+				{
+					count: 8
+					id: "4054EEA422E06B65"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "0B64A6FC12EA30C4"
-				item: "industrialforegoing:enchantment_sorter"
+				count: 192L
+				id: "30397790C82B53D8"
+				item: { Count: 16, id: "gtceu:ruby_dust" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -11.0d
+			title: "How do I get more chromium?"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A65D57C567806CB"]
+			hide_dependent_lines: true
+			id: "2BCF2E87DEF9B7B7"
+			rewards: [{
+				id: "24793E4E4AB0C6FC"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "53FAD5764DFD5FEF"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
 		}
 	]
 	title: "Chapter 3: High Voltage"

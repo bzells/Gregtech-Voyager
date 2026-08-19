@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .chemical_bath("kubejs:source_magebloom")
         .itemInputs("1x gtceu:lazurite_gem")
-        .itemOutputs("ars_nouveau:source_gem")
+        .itemOutputs("#forge:gems/source")
         .inputFluids("kubejs:magebloom_oil 100")
         .outputFluids("kubejs:mana_residue 20")
         .duration(200)
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .chemical_bath("kubejs:source_magebloom_amethyst")
         .itemInputs("2x minecraft:amethyst_shard")
-        .itemOutputs("ars_nouveau:source_gem")
+        .itemOutputs("#forge:gems/source")
         .inputFluids("kubejs:magebloom_oil 50")
         .outputFluids("kubejs:mana_residue 20")
         .duration(100)
@@ -79,13 +79,13 @@ ServerEvents.recipes((event) => {
 
     event.recipes.ars_nouveau.imbuement(
         "gtceu:lazurite_gem", // input item
-        "ars_nouveau:source_gem", // output
+        "#forge:gems/source", // output
         500, // source cost
         []
     )
     event.recipes.ars_nouveau.imbuement(
         "minecraft:amethyst_shard", // input item
-        "ars_nouveau:source_gem", // output
+        "#forge:gems/source", // output
         250, // source cost
         []
     )
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:source_jar")
-        .itemInputs("4x gtceu:rose_gold_plate", "1x gtceu:rose_gold_ring", "1x ars_nouveau:source_gem", "4x ars_nouveau:archwood_planks", "4x gtceu:glass_plate")
+        .itemInputs("4x gtceu:rose_gold_plate", "1x gtceu:rose_gold_ring", "1x #forge:gems/source", "4x ars_nouveau:archwood_planks", "4x gtceu:glass_plate")
         // .notConsumable('kubejs:lv_technician_helper')
         .itemOutputs("1x ars_nouveau:source_jar")
         .duration(100)
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:arcane_pedestal")
-        .itemInputs("4x gtceu:long_rose_gold_rod", "1x ars_nouveau:source_gem", "4x ars_nouveau:sourcestone", "4x gtceu:gold_screw")
+        .itemInputs("4x gtceu:long_rose_gold_rod", "1x #forge:gems/source", "4x ars_nouveau:sourcestone", "4x gtceu:gold_screw")
         // .notConsumable('kubejs:lv_technician_helper')
         .itemOutputs("ars_nouveau:arcane_pedestal")
         .duration(100)
@@ -144,6 +144,33 @@ ServerEvents.recipes((event) => {
         .itemOutputs("ars_nouveau:scribes_table")
         .duration(300)
         .EUt(120)
+
+    const armorparts = ['helmet', 'chestplate', 'leggings', 'boots']
+
+    armorparts.forEach(part =>
+        {
+            event.recipes.ars_nouveau.enchanting_apparatus(
+            [
+                "gtceu:source_steel_plate",
+                "gtceu:source_steel_plate",
+                "gtceu:source_steel_plate",
+                "gtceu:source_steel_plate",
+                "gtceu:source_gem",
+                "gtceu:source_gem",
+                "gtceu:source_gem",
+                "gtceu:source_gem"
+            ], // input items
+                `minecraft:iron_${part}`, // reagent
+                `kubejs:source_steel_${part}`, // output
+                500, // source cost
+                true // keep nbt of reagent, think like a smithing recipe
+            )
+        }
+    )
+
+    
+
+    
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         [

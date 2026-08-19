@@ -1,0 +1,11 @@
+{
+	id: "17167A147E46F4FB"
+	loot_size: 1
+	order_index: 38
+	rewards: [
+		{ count: 16, item: "gtceu:chromium_dust" }
+		{ count: 64, item: "gtceu:raw_ruby" }
+		{ item: "kubejs:hv_loot_bag" }
+	]
+	title: "hvruby"
+}

@@ -1,0 +1,130 @@
+
+#Spatial Tools Compatible - Configuration.
+#For every config entry that defines a limit, -1 means no limit.
+[features]
+	#Whether portable spatial tools consume energy at all.
+	#Set to false and every tool works for free, ignoring its own cost settings.
+	usePower = true
+
+	#Energy upgrade items accepted by portable spatial tools.
+	#Put item registry names here, for example:
+	#- ae2:energy_card
+	#- minecraft:stick
+	#Every valid item in this list can be inserted into energy upgrade slots.
+	#Crafting upgrade slot is not affected by this list.
+	[features.energyUpgrades]
+		#List of item registry names accepted as energy upgrades.
+		items = ["ae2:energy_card"]
+
+	#Portable spatial storage feature.
+	#Portable spatial storage can cut structures from the world,
+	#rotate or flip them, and then paste them back,
+	#while preserving block NBT and other metadata.
+	[features.portableSpatialStorage]
+		#Base AE cost factor for cutting or pasting one block.
+		#The final cost is: base cost * block distance * energy cost multiplier.
+		#Range: > 0
+		cost = 1
+		#Multiplier applied to the distance-based AE cost.
+		#Final cost is: base cost * block distance * this multiplier.
+		#Set to 0 to disable energy cost for this gadget.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		energyCostMultiplier = 1.0
+		#Base internal power capacity for portable spatial storage.
+		#Each energy upgrade adds this amount once more to the item's
+		#internal energy storage.
+		#Range: > 0
+		baseInternalPowerCapacity = 200000
+		#Maximum allowed structure size for portable spatial storage.
+		#-1 means no limit.
+		#Range: > -1
+		maxStructureSize = -1
+
+	#Portable spatial cloner feature.
+	#Portable spatial cloner can copy structures from the world,
+	#rotate or flip them, and then paste them back,
+	#while preserving machine settings. It works with AE2 cables and parts.
+	[features.portableSpatialCloner]
+		#Base AE cost factor for copying or pasting one block.
+		#The final cost is: base cost * block distance * energy cost multiplier.
+		#Range: > 0
+		cost = 1
+		#Multiplier applied to the distance-based AE cost.
+		#Final cost is: base cost * block distance * this multiplier.
+		#Set to 0 to disable energy cost for this gadget.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		energyCostMultiplier = 1.0
+		#Base internal power capacity for portable spatial cloner.
+		#Each energy upgrade adds this amount once more to the item's
+		#internal energy storage.
+		#Range: > 0
+		baseInternalPowerCapacity = 200000
+		#Maximum allowed structure size for portable spatial cloner.
+		#-1 means no limit.
+		#Range: > -1
+		maxStructureSize = -1
+
+	#Portable spatial replacer feature.
+	#Replaces all connected same-type blocks within radius with the chosen target block.
+	[features.portableSpatialReplacer]
+		#Base AE cost factor for replacing one block.
+		#The final cost is: base cost * replaced blocks * energy cost multiplier.
+		#Range: > 0
+		cost = 1
+		#Multiplier applied to the block-count based AE cost.
+		#Set to 0 to disable energy cost for this gadget.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		energyCostMultiplier = 1.0
+		#Base internal power capacity for portable spatial replacer.
+		#Each energy upgrade adds this amount once more to the item's
+		#internal energy storage.
+		#Range: > 0
+		baseInternalPowerCapacity = 200000
+		#Hard cap on how many blocks the replacer can replace in one operation.
+		#Prevents accidental mass-replacement on large servers.
+		#Range: > 0
+		maxBlocks = 1024
+		#Blocks the replacer refuses to replace.
+		#Every entry is a boolean expression over block ids and block tags:
+		#- plain id: minecraft:bedrock
+		#- tag: #forge:ores
+		#- glob: gtceu:*_casing
+		#- operators: ! (not), & (and), | (or), ^ (xor), parentheses
+		#Example: "#forge:ores/* & !minecraft:coal_ore"
+		#A block is blacklisted when any entry matches it.
+		blacklist = ["#forge:ores", "#forge:raw_materials"]
+
+	#Portable spatial piper feature.
+	#Builds the chosen block along a route made of axis aligned segments.
+	[features.portableSpatialPiper]
+		#Base AE cost factor for building one block.
+		#The final cost is: base cost * built blocks * energy cost multiplier.
+		#Range: > 0
+		cost = 1
+		#Multiplier applied to the block-count based AE cost.
+		#Set to 0 to disable energy cost for this gadget.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		energyCostMultiplier = 1.0
+		#Base internal power capacity for portable spatial piper.
+		#Each energy upgrade adds this amount once more to the item's
+		#internal energy storage.
+		#Range: > 0
+		baseInternalPowerCapacity = 200000
+		#Hard cap on how many blocks a single piper route can contain.
+		#Route points that would exceed this cap are rejected.
+		#Range: > 0
+		maxBlocks = 1024
+
+	#Portable spatial tool feature.
+	#Portable spatial tool is all four gadgets in one item.
+	#Its mode is picked in the context menu, and energy and
+	#energy upgrades are shared between all modes.
+	[features.portableSpatialTool]
+		#Base internal power capacity for portable spatial tool.
+		#Each energy upgrade adds this amount once more to the item's
+		#internal energy storage.
+		#Capped at the largest baseInternalPowerCapacity of the four gadgets,
+		#so the capacity never depends on the selected mode.
+		#Range: > 0
+		baseInternalPowerCapacity = 200000
+

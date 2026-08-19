@@ -245,6 +245,21 @@ ServerEvents.recipes((event) => {
     )
 
     event.shaped(
+        Item.of("voyagercore:grandmas_stovetop_oven", 1), // arg 1: output
+        [
+            "DDD",
+            "DBD", // arg 2: the shape (array of strings)
+            "FEF"
+        ],
+        {
+            B: "voyagercore:ev_oven_helper_recipe_module", //arg 3: the mapping object
+            D: "gtceu:titanium_plate",
+            E: "gtceu:ev_electric_furnace",
+            F: "#gtceu:circuits/ev"
+        }
+    )
+
+    event.shaped(
         Item.of("voyagercore:helper_factory", 1), // arg 1: output
         [
             "DED",
@@ -277,6 +292,40 @@ ServerEvents.recipes((event) => {
         }
     )
 
+    const tier_gear_map =
+    {
+        "mv": "vanadium_steel",
+        "hv": "red_steel"
+    }
+
+    const tier_wire_map =
+    {
+        "mv": "fluxed_electrum",
+        "hv": "fluxed_cobalt_electrum"
+    }
+
+    function singleblock_ha(tier)
+    {
+        event.shaped(
+        Item.of(`gtceu:${tier}_helper_assembler`, 1), // arg 1: output
+            [
+                "DED",
+                "CBC", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:${tier}_machine_hull`, //arg 3: the mapping object
+                C: `gtceu:${tier}_robot_arm`,
+                D: `#gtceu:circuits/${tier}`,
+                E: `gtceu:${tier_gear_map[tier]}_gear`,
+                F: `gtceu:fine_${tier_wire_map[tier]}_wire`
+            }
+        )
+    }
+
+    singleblock_ha('mv')
+    singleblock_ha('hv')
+
     event.recipes.gtceu
         .canner("kubejs:ev_precise_robot_arm_box")
         .itemInputs("1x gtceu:ev_machine_hull", "4x gtceu:ev_robot_arm")
@@ -299,4 +348,55 @@ ServerEvents.recipes((event) => {
             F: "gtceu:iv_sensor"
         }
     )
+
+    function steam_multi(machine)
+    {
+        event.shaped(
+            Item.of(`voyagercore:large_steam_${machine}`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:hp_steam_${machine}`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
+    }
+
+    const steammultis = ['forge_hammer', 'compressor']
+
+    steammultis.forEach(m => steam_multi(m))
+
+    event.shaped(
+            Item.of(`voyagercore:large_steam_centrifuge`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:steel_frame`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
+
+    event.shaped(
+            Item.of(`voyagercore:large_steam_ore_washer`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:bronze_frame`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
 })
+
+

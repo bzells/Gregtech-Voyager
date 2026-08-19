@@ -12,13 +12,13 @@
 		"Generate Dragon Cave Chance" = 180
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Roost Chance" = 360
+		"Generate Dragon Roost Chance" = 180
 		#1 out of this number chance per block that gold will generate in dragon lairs.
 		#Range: 1 ~ 10000
 		"Dragon Den Gold Amount" = 4
 		#Ratio of Stone(this number) to Ores in Dragon Caves
 		#Range: 1 ~ 10000
-		"Dragon Cave Ore Ratio" = 45
+		"Dragon Cave Ore Ratio" = 1000
 
 	[Generation.Structures-Features]
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn.
@@ -26,7 +26,7 @@
 		"Dangerous World Gen Dist From Spawn" = 800
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 		#Range: 1 ~ 10000
-		"Dangerous World Gen Dist Seperation" = 300
+		"Dangerous World Gen Dist Seperation" = 600
 		#Whether to generate glacier biomes or not
 		"Generate Glaciers" = true
 		#Glacier Spawn Weight. Higher number = more common
@@ -107,7 +107,7 @@
 		"Explosive Dragon Breath" = false
 		#How many blocks away can dragons spot potential prey. Note that increasing this could cause lag.
 		#Range: 1 ~ 10000
-		"Dragon Target Search Length" = 128
+		"Dragon Target Search Length" = 64
 		#How many blocks away can dragons wander from their defined "home" position.
 		#Range: 1 ~ 10000
 		"Dragon Wander From Home Distance" = 40
@@ -291,7 +291,7 @@
 	[Mobs.SeaSerpents]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Sea Serpent Chance" = 250
+		"Spawn Sea Serpent Chance" = 50
 		#Whether or not sea serpents can break weak blocks in their way
 		"Sea Serpent Griefing" = true
 		#Default sea serpent health, this is scaled to the sea serpent's particular size

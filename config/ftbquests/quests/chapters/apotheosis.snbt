@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apotheosis"
+	group: "56CB9B39C99BD841"
+	icon: "apotheosis:ender_library"
+	id: "7CF5C2EBE75FD88C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Apotheosis"
+}

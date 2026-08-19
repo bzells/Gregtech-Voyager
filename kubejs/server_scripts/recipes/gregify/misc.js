@@ -3,6 +3,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "framedblocks:framed_cube" })
 
     event.remove({output: "hangglider:glider_wing"})
+    event.remove({output: "vinery:straw_hat"})
     event.remove({output:"hangglider:glider_framework"})
     event.remove({mod: "comforts"})
     event.remove({output: "#minecraft:wool_carpets", mod: "minecraft", type: "crafting_shaped"})
@@ -66,6 +67,24 @@ ServerEvents.recipes((event) => {
             A: "gtceu:wood_screw",
             C: "minecraft:stick",
             D: "#minecraft:planks"
+        }
+    )
+
+
+    event.remove({mod: "shrink"})
+
+    event.shaped(
+        Item.of("shrink:shrinking_device", 1), // arg 1: output
+        [
+            "ACA",
+            "BDB", // arg 2: the shape (array of strings)
+            "ACA"
+        ],
+        {
+            A: "gtceu:pearlic_steel_plate",
+            B: "gtceu:ender_eye_plate",
+            C: "#gtceu:circuits/mv",
+            D: "#minecraft:buttons"
         }
     )
 })

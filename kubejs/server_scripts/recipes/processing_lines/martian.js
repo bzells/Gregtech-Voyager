@@ -1,4 +1,4 @@
-import { recipe_centrifuge, recipe_chem_plant, recipe_lcr, recipe_radiation_chamber } from "../00_util/recipeUtils"
+import { recipe_centrifuge, recipe_chem_plant, recipe_lcr, recipe_radiation_chamber } from "../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
     /**

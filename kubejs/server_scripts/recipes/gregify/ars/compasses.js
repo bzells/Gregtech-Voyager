@@ -6,4 +6,12 @@ ServerEvents.recipes((event) => {
         2000, // source cost
         true // keep nbt of reagent, think like a smithing recipe
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ["gtceu:source_lens", "minecraft:sculk", "gtceu:steel_screw", "gtceu:steel_screw"], // input items
+        "naturescompass:naturescompass", // reagent
+        "explorerscompass:explorerscompass", // output
+        8000, // source cost
+        true // keep nbt of reagent, think like a smithing recipe
+    )
 })

@@ -15,7 +15,7 @@
 	#access pool of possible mage spells from local device (true) or online file (false)?
 	doLocalMagePool = true
 	#Allow overworld mages that can mobgrief?
-	doMageGrief = true
+	doMageGrief = false
 	#Have a cooldown on the leap glyph?
 	doLeapFatigue = true
 	#Dimensions where mages will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
