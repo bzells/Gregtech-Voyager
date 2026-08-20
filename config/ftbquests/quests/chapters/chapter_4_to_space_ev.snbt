@@ -29,12 +29,14 @@
 			tasks: [
 				{
 					id: "69B84F5EF9FD72DE"
-					item: "gtceu:raw_bauxite"
-					type: "item"
-				}
-				{
-					id: "47A7892A75FB1DA9"
-					item: "gtceu:raw_ilmenite"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:raw_bauxite)item(gtceu:raw_ilmenite))"
+						}
+					}
+					title: "Any Rutile Ore"
 					type: "item"
 				}
 				{
@@ -2047,23 +2049,18 @@
 		{
 			dependencies: ["396E16AC6204F73A"]
 			id: "740BCEB32F933294"
-			tasks: [
-				{
-					id: "207FC68EB4A23D87"
-					item: "voyagercore:ev_basic_helper_module"
-					type: "item"
+			tasks: [{
+				id: "207FC68EB4A23D87"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(voyagercore:ev_basic_helper_module)item(voyagercore:ev_speed_helper_module)item(voyagercore:ev_efficiency_helper_module))"
+					}
 				}
-				{
-					id: "36E49FF9632CC493"
-					item: "voyagercore:ev_efficiency_helper_module"
-					type: "item"
-				}
-				{
-					id: "10DA36C2E1EBAA02"
-					item: "voyagercore:ev_speed_helper_module"
-					type: "item"
-				}
-			]
+				title: "Any Generic EV Helper Module"
+				type: "item"
+			}]
 			title: "Generic Modules EV"
 			x: 5.5d
 			y: 16.0d
@@ -2166,3 +2163,4 @@
 	]
 	title: "Chapter 4: To Space! (EV)"
 }
+

@@ -1972,6 +1972,7 @@
 		}
 		{
 			dependencies: ["759B3B1DFB793555"]
+			description: ["The animal rancher is a really good way of getting milk early. Alternatively, look at the cow pet."]
 			id: "125CC82C035B8C09"
 			tasks: [{
 				id: "60A7A93E203B4E56"

@@ -85,7 +85,7 @@ ServerEvents.recipes((event) => {
 
     if_machine(if_ns("mob_duplicator"), advanced_frame, "gtceu:quantum_star", '#gtceu:circuits/ev', 'gtceu:hv_field_generator', "minecraft:spawner", "gtceu:energetic_pearlic_alloy_gear")
     
-    if_machine(if_ns("mechanical_dirt"), 8, advanced_frame, "gtceu:hv_conveyor_module", '#gtceu:circuits/ev', 'gtceu:hv_field_generator', "#forge:heads", "gtceu:energetic_alloy_gear")
+    if_machine_c(if_ns("mechanical_dirt"), 8, advanced_frame, "gtceu:hv_conveyor_module", '#gtceu:circuits/ev', 'gtceu:hv_field_generator', "#forge:heads", "gtceu:energetic_alloy_gear")
     
 
     enchantment_altar_ars(

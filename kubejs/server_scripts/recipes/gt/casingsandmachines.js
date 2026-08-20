@@ -348,4 +348,55 @@ ServerEvents.recipes((event) => {
             F: "gtceu:iv_sensor"
         }
     )
+
+    function steam_multi(machine)
+    {
+        event.shaped(
+            Item.of(`voyagercore:large_steam_${machine}`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:hp_steam_${machine}`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
+    }
+
+    const steammultis = ['forge_hammer', 'compressor']
+
+    steammultis.forEach(m => steam_multi(m))
+
+    event.shaped(
+            Item.of(`voyagercore:large_steam_centrifuge`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:steel_frame`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
+
+    event.shaped(
+            Item.of(`voyagercore:large_steam_ore_washer`, 1), // arg 1: output
+            [
+                "FEF",
+                "FBF", // arg 2: the shape (array of strings)
+                "FEF"
+            ],
+            {
+                B: `gtceu:bronze_frame`, //arg 3: the mapping object
+                E: "gtceu:potin_gear",
+                F: "gtceu:steam_machine_casing"
+            }
+        )
 })
+
+

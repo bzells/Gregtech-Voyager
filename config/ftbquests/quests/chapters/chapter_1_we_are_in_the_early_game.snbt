@@ -618,7 +618,7 @@
 			dependencies: ["587504389A9E26C9"]
 			description: ["Making plates 1-1"]
 			id: "38C7260BD10F0446"
-			subtitle: "That one guy from Futurarama"
+			subtitle: "That one guy from Futurama"
 			tasks: [{
 				id: "27A2B71D46233D7A"
 				item: "gtceu:lv_bender"
@@ -1063,23 +1063,18 @@
 				}
 			]
 			subtitle: "Storing all that power you're making"
-			tasks: [
-				{
-					id: "28A919F6FCAC5507"
-					item: "gtceu:lv_sodium_battery"
-					type: "item"
+			tasks: [{
+				id: "28A919F6FCAC5507"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_sodium_battery)item(gtceu:lv_lithium_battery)item(gtceu:lv_cadmium_battery))"
+					}
 				}
-				{
-					id: "39489CD2A7C452A4"
-					item: "gtceu:lv_cadmium_battery"
-					type: "item"
-				}
-				{
-					id: "118BB468C8076A5F"
-					item: "gtceu:lv_lithium_battery"
-					type: "item"
-				}
-			]
+				title: "Any LV Battery"
+				type: "item"
+			}]
 			title: "Batteries"
 			x: -8.0d
 			y: 0.0d
@@ -1343,6 +1338,18 @@
 			}]
 			x: -2.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["62EE454BE9E8329E"]
+			description: ["This multiblock makes water out of energy instead of steam (like the pump deck you are likely still using)"]
+			id: "1C5FA1CD3C83C554"
+			tasks: [{
+				id: "54E8A5D3900196B4"
+				item: "gtceu:large_dehumidifier"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
 		}
 	]
 	title: "Chapter 1: Low Voltage"
