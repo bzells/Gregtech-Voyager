@@ -29,22 +29,6 @@ StartupEvents.registry("item", (event) => {
             .tag("kubejs:helpers")
     }
 
-    function register_tiered_helper_item(tier, name) {
-        const formattedName = name.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase())
-        event
-            .create(tier + "_" + name + "_helper")
-            .texture("kubejs:item/helpers/" + tier + "_" + name + "_helper")
-            .maxStackSize(4)
-            .rarity("uncommon")
-            .displayName(tier.toUpperCase() + " " + formattedName + " Helper")
-            .tag("forge:helpers")
-    }
-
-    tiers.forEach((tier) => register_tiered_helper_item(tier, "technician"))
-    tiers.forEach((tier) => register_tiered_helper_item(tier, "ebf"))
-
-    helpers.forEach((name) => register_helper_item(name))
-
     function register_universal_coin(tier) {
         event
             .create(tier + "_universal_coin")

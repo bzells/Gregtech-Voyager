@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
         event,
         "high_stress_lubricant",
         ["gtceu:gallium_dust"],
-        ["gtceu:kerosene 2000", "kubejs:phospho_indium_molybdenum_binded_lubricant 1000"],
+        ["kubejs:dewatering_fluid 2000", "kubejs:phospho_indium_molybdenum_binded_lubricant 1000"],
         [],
         ["voyagercore:high_stress_lubricant 3000"],
         10,

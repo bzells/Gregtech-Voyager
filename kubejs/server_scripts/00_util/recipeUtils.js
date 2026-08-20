@@ -19,7 +19,6 @@ global.recipe_centrifuge = function(event, name, inputItems, inputFluids, output
         event.recipes.gtceu
             .centrifuge("kubejs:centrifuge_helper_" + name)
             .itemInputs(inputItems)
-            .notConsumable("kubejs:" + helper)
             .itemOutputs(outputItems)
             .inputFluids(inputFluids)
             .circuit(3)
@@ -36,6 +35,18 @@ global.recipe_centrifuge = function(event, name, inputItems, inputFluids, output
             .duration(duration * 20)
             .EUt(eut)
     }
+}
+
+global.recipe_thermal_centrifuge = function(event, name, inputItems, outputItems, outputFluids, duration, eut) {
+
+        event.recipes.gtceu
+            .thermal_centrifuge("kubejs:centrifuge_" + name)
+            .itemInputs(inputItems)
+            .itemOutputs(outputItems)
+            .outputFluids(outputFluids)
+            .duration(duration * 20)
+            .EUt(eut)
+    
 }
 
 global.recipe_electrolyzer = function(event, name, inputItems, inputFluids, outputItems, outputFluids, duration, eut) {
@@ -155,6 +166,17 @@ global.recipe_assembler = function(event, output, inputItems, inputFluids, eut, 
         .itemInputs(inputItems)
         .inputFluids(inputFluids)
         .itemOutputs(output)
+        .duration(duration * 20)
+        .EUt(eut)
+}
+
+global.recipe_assembler_with_circuit_num = function(event, output, inputItems, inputFluids, eut, duration, circuitnum) {
+    event.recipes.gtceu
+        .assembler(`kubejs:${parse_item_with_ns(output)}_assembler`)
+        .itemInputs(inputItems)
+        .inputFluids(inputFluids)
+        .itemOutputs(output)
+        .circuit(circuitnum)
         .duration(duration * 20)
         .EUt(eut)
 }

@@ -1748,8 +1748,8 @@
 				type: "checkmark"
 			}]
 			title: "RF Converters"
-			x: 2.5d
-			y: 5.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -2132,6 +2132,31 @@
 			}]
 			x: -16.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4BFF7E28298F7F53"]
+			id: "06D7D901646952AD"
+			tasks: [{
+				id: "5B790001D9492820"
+				item: "gtceu:large_dehumidifier"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6A066106E82E9C31"
+				"11B9A1F5618D8C68"
+			]
+			id: "5F61C3C50BA61320"
+			tasks: [{
+				id: "2D8BF4CA45EE4C99"
+				item: "travelanchors:travel_anchor"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 2.0d
 		}
 	]
 	title: "Chapter 2: Medium Voltage"

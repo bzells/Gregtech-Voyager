@@ -1339,18 +1339,6 @@
 			x: -2.5d
 			y: 4.0d
 		}
-		{
-			dependencies: ["62EE454BE9E8329E"]
-			description: ["This multiblock makes water out of energy instead of steam (like the pump deck you are likely still using)"]
-			id: "1C5FA1CD3C83C554"
-			tasks: [{
-				id: "54E8A5D3900196B4"
-				item: "gtceu:large_dehumidifier"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -4.0d
-		}
 	]
 	title: "Chapter 1: Low Voltage"
 }

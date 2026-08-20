@@ -29,12 +29,21 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6C7312B3BC744D7F"]
+			dependencies: [
+				"6C7312B3BC744D7F"
+				"26A5CE4E66F9CE59"
+				"6E68356E319A0B43"
+			]
 			description: [
 				"If you haven't realized yet--these are extremely OP... There's also a certain questline that"
 				"shows you how to make a very OP bow... What would happen if you combined these two?"
 			]
 			id: "567E374FFC82089A"
+			rewards: [{
+				id: "53E5B4D09F427C10"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "0D7E0DB2AA98DFBC"

@@ -220,6 +220,7 @@
 					type: "item"
 				}
 			]
+			title: "Baby Infusion"
 			x: 7.5d
 			y: 3.5d
 		}
