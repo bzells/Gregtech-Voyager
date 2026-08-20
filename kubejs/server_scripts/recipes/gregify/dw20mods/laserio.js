@@ -45,16 +45,16 @@ ServerEvents.recipes((event) => {
         [], 120, 20)
 
 
-    global.recipe_assembler(event, '2x laserio:card_item', 
-        ['1x gtceu:pearlic_steel_plate','gtceu:electrum_large_item_pipe', '2x laserio:logic_chip'],
+    global.recipe_assembler(event, '1x laserio:card_item', 
+        ['1x gtceu:pearlic_steel_plate','gtceu:electrum_normal_item_pipe', '1x laserio:logic_chip'],
         [], 120, 20)
 
-    global.recipe_assembler(event, '2x laserio:card_fluid', 
-        ['1x gtceu:energetic_alloy_plate','gtceu:polytetrafluoroethylene_large_fluid_pipe', '2x laserio:logic_chip'],
+    global.recipe_assembler(event, '1x laserio:card_fluid', 
+        ['1x gtceu:energetic_alloy_plate','gtceu:polytetrafluoroethylene_normal_fluid_pipe', '1x laserio:logic_chip'],
         [], 120, 20)
 
-    global.recipe_assembler(event, '8x laserio:card_redstone', 
-        ['1x gtceu:redstone_plate','minecraft:repeater', '2x laserio:logic_chip'],
+    global.recipe_assembler(event, '1x laserio:card_redstone', 
+        ['1x gtceu:redstone_plate','minecraft:repeater', '1x laserio:logic_chip'],
         [], 120, 20)
 
     global.recipe_assembler(event, '4x laserio:filter_basic', 

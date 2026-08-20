@@ -717,7 +717,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["72BCD56BAC6F1E57"]
 			id: "01C94BA5CADFA830"
 			rewards: [{
 				id: "6DD0D1B3A3A0A236"
@@ -1614,52 +1613,6 @@
 			}]
 			x: -6.0d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"7A2ABD419B2FB9E0"
-				"62201BC7050CB208"
-				"6A65D57C567806CB"
-				"3F19DD981F340045"
-			]
-			description: ["Note: If your multiblock has a helper holder installed, it &l&cwill not run recipes&r unless there is a helper in it. If you do not want/cannot use a helper for a recipe, remove the helper holder."]
-			hide_dependency_lines: true
-			id: "42EE53E235AE139A"
-			rewards: [{
-				id: "23D0C3C316E8055D"
-				item: "kubejs:mv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "77F61F0A0D828B55"
-				item: "voyagercore:helper_holder"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"42EE53E235AE139A"
-				"5C5282F7F08E9520"
-				"3F19DD981F340045"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Currently &o&7(as of 0.4A/Pre-Beta)&r&r, the &bMV Helpers&r can only be used to help with &eEBF&r recipes. Because of this, you unlock a helper variant of te &eEBF&r."]
-			hide_dependency_lines: true
-			id: "356A5D0CB68CEB41"
-			rewards: [{
-				id: "2A7A4FEC5C730A0B"
-				item: "kubejs:mv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E2EA442BD134EEA"
-				item: "voyagercore:helper_electric_blast_furnace"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
 		}
 		{
 			dependencies: [

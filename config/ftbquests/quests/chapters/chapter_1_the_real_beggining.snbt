@@ -100,7 +100,7 @@
 		{
 			dependencies: [
 				"4CA574760EF63553"
-				"1AA68223242ECD8C"
+				"09DCF85E9679FFE3"
 			]
 			description: ["Steam is produced using boilers. These allow you to.. boil water. There are three types of boilers: &l&0the solid boiler&r, which burns solid fuels, like charcoal and coal coal, &l&1the liquid boiler&r, which burns liquids like creosote and lava, and &lthe solar boiler&r, which uses the &l&o&epower of the sun&r to boil water."]
 			id: "694D21DD359391F9"
@@ -129,48 +129,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["22A38B844EA1BE5B"]
-			description: ["You need water for all of your steam machines. This multiblock, thankfully, will make water for free!"]
-			icon: "gtceu:primitive_pump"
-			id: "1AA68223242ECD8C"
-			rewards: [{
-				count: 2
-				id: "714F0ACE91BC1A79"
-				item: "kubejs:ulv_loot_bag"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Sadly no ULV pump"
-			tasks: [
-				{
-					id: "4672BC6EAAEC085F"
-					item: "gtceu:primitive_pump"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "38694340DABE66E7"
-					item: { Count: 10, id: "gtceu:treated_wood_frame" }
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "508B4C8CCCBF8213"
-					item: { Count: 10, id: "gtceu:pump_deck" }
-					type: "item"
-				}
-				{
-					id: "61E9FA13ACD1324C"
-					item: "gtceu:pump_hatch"
-					type: "item"
-				}
-			]
-			x: -26.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1AA68223242ECD8C"]
 			description: [
 				"When it comes to moving fluids, you need to use Gregtech pipes. These have various variables to them, but the most important right now are the &l&cheat capacity&r and the &l&o&bfluid transfer rate.&r The pipe you should for water should be treated wood, and use bronze for the steam for now."
 				""
@@ -183,8 +141,8 @@
 				title: "Pipes?"
 				type: "checkmark"
 			}]
-			x: -27.5d
-			y: 3.5d
+			x: -25.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["694D21DD359391F9"]
@@ -1005,65 +963,6 @@
 			}]
 			x: -28.5d
 			y: 12.5d
-		}
-		{
-			dependencies: ["12EEF6CEEB33CB25"]
-			id: "17B4A2B310307830"
-			optional: true
-			rewards: [
-				{
-					count: 16
-					id: "5F3CA9495FF895BC"
-					item: "kubejs:lv_tech_coin"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "77FBF66BD9292C4C"
-					table_id: 3238365205241762905L
-					type: "choice"
-				}
-				{
-					count: 2
-					id: "20E4408F9617CCE6"
-					item: "kubejs:lv_loot_bag"
-					type: "item"
-				}
-			]
-			size: 1.5d
-			subtitle: "True speed for Wrought Iron and Steel"
-			tasks: [
-				{
-					id: "0D76BA82B50D0A04"
-					item: "gtceu:steam_blast_furnace"
-					type: "item"
-				}
-				{
-					id: "0390F53BB2D39915"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "204679EE678FDDC5"
-					item: { Count: 9, id: "gtceu:steel_firebox_casing" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "2C2EC55BA471C2B2"
-					item: { Count: 6, id: "gtceu:steel_brick_casing" }
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "2EC1892334079221"
-					item: { Count: 7, id: "gtceu:steel_machine_casing" }
-					type: "item"
-				}
-			]
-			x: -25.5d
-			y: 12.0d
 		}
 		{
 			dependencies: ["182D72912E295B5F"]

@@ -1,12 +1,635 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
+	default_quest_size: 1.5d
 	filename: "multiblocks"
 	group: "6D0B610876588986"
 	icon: "gtceu:electric_blast_furnace"
 	id: "277F47730D454C3B"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "5751BF977670DE62"
+			tasks: [{
+				id: "2F5AB46F78FF0D6D"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "0CA272EB1D683FE9"
+			tasks: [{
+				id: "6222A8FE4BE728F8"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "542B24356396496A"
+			tasks: [{
+				id: "23021A54A2B5BC0B"
+				item: "voyagercore:large_steam_centrifuge"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "3665E9EC7145DF8A"
+			tasks: [{
+				id: "04A5ADB8CA748671"
+				item: "voyagercore:large_steam_ore_washer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "64CE494400BFFB6E"
+			tasks: [{
+				id: "0FB92D3CBCCB422E"
+				item: "voyagercore:large_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ADC6B75C5EC21E1"]
+			id: "757C442DDD40166C"
+			tasks: [{
+				id: "316B139A5A3C3507"
+				item: "voyagercore:large_steam_compressor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["694D21DD359391F9"]
+			description: [
+				"Once you unlock steam, it might be a good idea to invest in the &6large steam multis&r. They are much faster than the single block counterparts, up until ~HV (depending on what you want to do)."
+				""
+				"The only caveat is that you need to actually &omake&r steam fast enough. Check out the &6large steam boilers&r for this task."
+				""
+				"All of the large steam multis use 64mb/t of steam"
+			]
+			id: "2ADC6B75C5EC21E1"
+			subtitle: "A good invesment"
+			tasks: [{
+				id: "08F323BB249D4C52"
+				title: "Steam Multis"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B4A6B9B95DFA2B4"]
+			description: ["Once you unlock LV circuits, you can make the large steam boiler. A multiblock capable of generating plenty of steam for your steam multi needs. Alternatively, you can also use it for power, but you will find that very difficult post LV."]
+			id: "240D4873FD7C0CF5"
+			subtitle: "To meet your steam needs"
+			tasks: [{
+				id: "5E37D1704967BE2A"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"3AD0418241AEA8AA"
+				"2977381A674780EF"
+			]
+			description: ["While you &ocan&r alloy with the smeltery, avoid it when possible. It is slooooooow"]
+			id: "46BADDE42CE44AC6"
+			rewards: [
+				{
+					id: "0C661E97FE6A3448"
+					item: "tconstruct:repair_kit_cast"
+					type: "item"
+				}
+				{
+					id: "3AAF8D3633CEFA1A"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+			]
+			subtitle: "For cooking things into molten metals"
+			tasks: [
+				{
+					id: "48A8D26AF7B076E4"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "2298884BC9E84E6C"
+					item: "tconstruct:seared_fuel_gauge"
+					type: "item"
+				}
+				{
+					id: "79394F42D9DD3E05"
+					item: "tconstruct:seared_ingot_gauge"
+					type: "item"
+				}
+				{
+					id: "5271F28B1D096339"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "29BE652C1E4DFDC7"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "7EAB030798C790F4"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "71867DB0E9CD587D"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "149E31B8D839A2BD"
+					item: { Count: 15, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			title: "Basic Smeltery Parts"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26A6C0E4B38F51B3"]
+			description: ["&l&3Lore:&r&o One GTNH player got gaslit into making 576 Coke ovens in LV, the record until Three in the \"Hermitcraft of modded minecraft,\" Project Singularity, made 577, where the record still stands."]
+			id: "08FA16D1594E31A3"
+			rewards: [{
+				id: "4A2DCBF7497696BB"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
+			subtitle: "1 out of 576"
+			tasks: [
+				{
+					id: "41AA581AF891E670"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "673C73A5587E3E6F"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F4B6CBA03B8301B"]
+			description: ["You need water for all of your steam machines. This multiblock, thankfully, will make water for free!"]
+			icon: "gtceu:primitive_pump"
+			id: "1B6F66097A1441D5"
+			rewards: [{
+				count: 2
+				id: "3D4963CD7F63D5D1"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Sadly no ULV pump"
+			tasks: [
+				{
+					id: "15B0D445539A37EB"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "54732A573E14E13B"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7B7DF83620D99243"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					id: "66442F73EE2E4EDB"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["12EEF6CEEB33CB25"]
+			description: ["The steel blast furnace is literally just a better PBF. It needs a lot of steel however. I recommend making this as soon as possible, that way you have a mountain of steel. The best part? It's free to run! No steam or power required."]
+			id: "7D64CBAAD71D45C2"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "7325DAF69BA99A7C"
+					item: "kubejs:lv_tech_coin"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "640986ACFA28B4D5"
+					table_id: 3238365205241762905L
+					type: "choice"
+				}
+				{
+					count: 2
+					id: "6713DF7866D7F198"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "True speed for Wrought Iron and Steel"
+			tasks: [
+				{
+					id: "699051E8661433B4"
+					item: "gtceu:steam_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "63B13F58753F41EA"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2A21EBCF36C1E2C0"
+					item: { Count: 9, id: "gtceu:steel_firebox_casing" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "67CC788EE66D6D77"
+					item: { Count: 6, id: "gtceu:steel_brick_casing" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "6189DE6F619D2BEF"
+					item: { Count: 7, id: "gtceu:steel_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1C9401B5A201EB20"
+				"36D4232DE4BA28DD"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "6A449602F2C3179B"
+			rewards: [
+				{
+					count: 3
+					id: "2993195AF00688A6"
+					item: "kubejs:lv_loot_bag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F4FE4A794EC07AB"
+					table_id: 1081241152471735771L
+					type: "choice"
+				}
+			]
+			subtitle: "The first REAL (electric) greg multi"
+			tasks: [
+				{
+					id: "734702953D6610C0"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1AAB3CC12272B1B4"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					id: "5D6C10F2F471CEF2"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "7CFF0C3EC7BCD990"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "749DB2033BF987E7"
+					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5C5282F7F08E9520"
+				"3F19DD981F340045"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Currently &o&7(as of 0.4A/Pre-Beta)&r&r, the &bMV Helpers&r can only be used to help with &eEBF&r recipes. Because of this, you unlock a helper variant of te &eEBF&r."]
+			hide_dependency_lines: true
+			id: "1D8A11D926A71642"
+			rewards: [{
+				id: "0BD75B42B6052486"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27502705D3BD8E64"
+				item: "voyagercore:helper_electric_blast_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3FB4F231181DD428"
+				"2475AF86E29B26F3"
+				"50A265E32ADDD82E"
+				"7764E1FF769BDCB6"
+				"56E64E745168F87B"
+			]
+			description: [
+				"The &6Magmatic Foundry&r is your next tier of EBF. This is going to be super useful for on-demand blasting."
+				""
+				""
+				"It has a normal &eEBF Overclocks&r, but also &l&6Heat Boosting&r."
+				""
+				"For more information about modifiers, go to the &nModifiers&r tab in your questbook. It will also say on the machine controller."
+				""
+				"The description under the &6Magmatic Foundry&r describes &l&6heat boosting."
+			]
+			hide_dependency_lines: true
+			id: "6892E316470A03E2"
+			subtitle: "To meet all of your autocrafting needs"
+			tasks: [
+				{
+					id: "6DB77F9B9A8972E5"
+					item: "voyagercore:magmatic_foundry"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "64353FDF6C77EE96"
+					item: { Count: 35, id: "voyagercore:foundry_casing" }
+					type: "item"
+				}
+			]
+			title: "Better Blasting"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7A2ABD419B2FB9E0"
+				"62201BC7050CB208"
+				"6A65D57C567806CB"
+				"3F19DD981F340045"
+			]
+			description: ["Note: If your multiblock has a helper holder installed, it &l&cwill not run recipes&r unless there is a helper in it. If you do not want/cannot use a helper for a recipe, remove the helper holder."]
+			hide_dependency_lines: true
+			id: "19E8699E7C2137AB"
+			rewards: [{
+				id: "7535BEE59C43C1DB"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68FDF005372F73BE"
+				item: "voyagercore:helper_holder"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B60D1876EDA1164"]
+			id: "31A4540027367CFC"
+			rewards: [
+				{
+					id: "0F366A30FD1B307E"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "73A9784F754F7C57"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
+			subtitle: "You need LOTS of these"
+			tasks: [{
+				id: "41CB58DFC640567A"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 12.75d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"02C13DE221613C60"
+				"2BCF2E87DEF9B7B7"
+			]
+			id: "12750FC8B33B77E6"
+			rewards: [
+				{
+					count: 32
+					id: "269461492FB697E7"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "61944CF128B4DF12"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "355BB56035B90EBD"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "Hope you were making lots of stainless steel!"
+			tasks: [{
+				id: "3E3E1F58325410F6"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02C13DE221613C60"]
+			id: "3CE2A2F735D857F6"
+			rewards: [
+				{
+					id: "3A07DFF2CE1E1C5A"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					id: "1C32B6DD142DA208"
+					item: "voyagercore:mv_helper_module"
+					type: "item"
+				}
+			]
+			subtitle: "Big 'ol box of aluminium"
+			tasks: [{
+				id: "4B4C5328A5544F40"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"47B86AAAB18C918E"
+				"1B3A152821B0B2D2"
+			]
+			description: ["The SMD Assembler is the best use-case for specialized helpers in HV (and the only one). Not only do you need this multiblock for the better SMD recipes, you can output boost them with helpers."]
+			id: "4B4789D2ABE743A6"
+			rewards: [
+				{
+					id: "69F3CBB4F9BCC134"
+					item: "kubejs:hv_loot_bag"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "22A8F0EE51E72635"
+					item: "kubejs:hv_tech_coin"
+					type: "item"
+				}
+			]
+			subtitle: "You want this."
+			tasks: [{
+				id: "5DA383D81BBD8419"
+				item: "voyagercore:smd_assembler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			id: "7EF565596170D5FA"
+			tasks: [{
+				id: "4E36F85BDF1E48BC"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			id: "59463A90D25421D5"
+			tasks: [{
+				id: "1A2A6C16093542F9"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			id: "3AB6AD5173650569"
+			tasks: [{
+				id: "5FCC17EEE8CB724B"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			id: "6E607027256D662B"
+			tasks: [{
+				id: "0D3CBCB05B500B8D"
+				item: "kubejs:desh_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			id: "34C0D4AD1772D508"
+			tasks: [{
+				id: "1524516C0869337B"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			id: "7ED137FCFD3B6A37"
+			tasks: [{
+				id: "67B0BFB68858CCFA"
+				item: "kubejs:titanite_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			id: "243B2053FCB4512D"
+			tasks: [{
+				id: "586290490F18B221"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 13.5d
+		}
+		{
+			id: "3C607DF80F8DAC8F"
+			tasks: [{
+				id: "539F236D0491F5C5"
+				item: "kubejs:industrial_perfected_electrum_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+	]
 	title: "Multiblocks"
 }

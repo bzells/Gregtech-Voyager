@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "mobs_are_hard"
 	group: "1A9B1A8107510B65"
-	icon: "minecraft:creeper_head"
+	icon: "ad_astra:earth_globe"
 	id: "5E70D151076F8F17"
 	order_index: 0
 	quest_links: [ ]
@@ -311,7 +311,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["229AADEA4EC8D22D"]
+			dependencies: [
+				"229AADEA4EC8D22D"
+				"44332F1E57E89B1C"
+			]
 			id: "2CB852566D968704"
 			tasks: [{
 				id: "7D88829AC41BBFB8"
@@ -378,6 +381,85 @@
 			x: 4.5d
 			y: 1.5d
 		}
+		{
+			dependencies: [
+				"0D398D8FE47F9B67"
+				"7764E1FF769BDCB6"
+			]
+			description: ["This counts as a valid space suit for all planets"]
+			id: "78F9D800A91FB29F"
+			subtitle: "Basically Iron Man at this point"
+			tasks: [
+				{
+					id: "38A231CDA6544364"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "129C14CD1A91C02B"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "689D5E755330FA5E"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "475932068687AFD2"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_boots"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Swaggingly swagged out"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"78F9D800A91FB29F"
+				"436220F63DCFFB5D"
+				"2A2C22CF76B677BB"
+			]
+			id: "31889C98B2C83EF8"
+			subtitle: "Is there such a thing as too fast?"
+			tasks: [{
+				id: "292DD6EBAFA7F4AB"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["33C546237694B2C1"]
+			description: ["Combined with the hang glider, you will be able to explore with ease"]
+			id: "44332F1E57E89B1C"
+			subtitle: "Easy flight"
+			tasks: [{
+				id: "1C4142BAC4E7CE0E"
+				item: {
+					Count: 1
+					id: "gtceu:electric_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
 	]
-	title: "Mobs are hard"
+	title: "The World vs You"
 }

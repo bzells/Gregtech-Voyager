@@ -409,7 +409,6 @@
 		{
 			dependencies: [
 				"6E68356E319A0B43"
-				"09B6469ED6468EEA"
 				"1B3A152821B0B2D2"
 			]
 			hide_dependency_lines: false
@@ -945,34 +944,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["0B60D1876EDA1164"]
-			id: "59EC433F2CFDAB44"
-			rewards: [
-				{
-					id: "0D81C9CEB78F077F"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "4D04DEF4CA0E1ECA"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "You need LOTS of these"
-			tasks: [{
-				id: "4153B33DAC894357"
-				item: "gtceu:large_chemical_reactor"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["59EC433F2CFDAB44"]
+			dependencies: ["31A4540027367CFC"]
 			id: "6284704349652601"
 			subtitle: "Remeber kids, radiation is only fun in gregtech!"
 			tasks: [{
@@ -980,8 +952,8 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.5d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1012,10 +984,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"09B6469ED6468EEA"
-				"6164D33ACEB4E515"
-			]
+			dependencies: ["6164D33ACEB4E515"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "49826526BFC9255D"
@@ -1026,66 +995,6 @@
 			}]
 			x: 11.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["02C13DE221613C60"]
-			id: "09B6469ED6468EEA"
-			rewards: [
-				{
-					id: "5E496BF3D578FFD9"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					id: "7CFCCC580A7D38D5"
-					item: "voyagercore:mv_helper_module"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Big 'ol box of aluminium"
-			tasks: [{
-				id: "6408D2D3E8E95071"
-				item: "gtceu:vacuum_freezer"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"02C13DE221613C60"
-				"2BCF2E87DEF9B7B7"
-			]
-			id: "0D58ACA0BF5E20A1"
-			rewards: [
-				{
-					count: 32
-					id: "5FEAB7BBEAF955DF"
-					item: "gtceu:stainless_steel_ingot"
-					type: "item"
-				}
-				{
-					id: "33EC3ECE464965ED"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2408C51017E5CB06"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			size: 1.5d
-			subtitle: "Hope you were making lots of stainless steel!"
-			tasks: [{
-				id: "7CCF6FD50E3BD019"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -2116,7 +2025,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["69300B12EF8F4E2A"]
+			dependencies: [
+				"69300B12EF8F4E2A"
+				"3CE2A2F735D857F6"
+			]
 			hide_dependent_lines: true
 			id: "1B3A152821B0B2D2"
 			rewards: [{
@@ -2247,35 +2159,6 @@
 			}]
 			x: -1.5d
 			y: 2.5d
-		}
-		{
-			dependencies: [
-				"47B86AAAB18C918E"
-				"1B3A152821B0B2D2"
-			]
-			id: "06664D37742C6F43"
-			rewards: [
-				{
-					id: "3E710CD4CAE15018"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "70525FFD890D8261"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "3FDB1F86B5F39BEB"
-				item: "voyagercore:smd_assembler"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
 		}
 		{
 			dependencies: [

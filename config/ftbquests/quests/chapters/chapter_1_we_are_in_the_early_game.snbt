@@ -920,62 +920,9 @@
 		}
 		{
 			dependencies: [
+				"6A449602F2C3179B"
 				"1C9401B5A201EB20"
-				"36D4232DE4BA28DD"
 			]
-			icon: "gtceu:electric_blast_furnace"
-			id: "72BCD56BAC6F1E57"
-			rewards: [
-				{
-					count: 3
-					id: "702DC132F4B4E28F"
-					item: "kubejs:lv_loot_bag"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "6934BF05EA92FCF1"
-					table_id: 1081241152471735771L
-					type: "choice"
-				}
-			]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "The first REAL (electric) greg multi"
-			tasks: [
-				{
-					id: "42AE82B1C04420A9"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "129712B8AA8B26B7"
-					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-					type: "item"
-				}
-				{
-					id: "35017824D99474BE"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "5CCA39A4AE65ED90"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "39D56AE83FFFC8AC"
-					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
-					type: "item"
-				}
-			]
-			x: -5.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["72BCD56BAC6F1E57"]
 			id: "26BAFB93E377E732"
 			rewards: [
 				{
@@ -997,11 +944,14 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.5d
+			x: -3.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["72BCD56BAC6F1E57"]
+			dependencies: [
+				"6A449602F2C3179B"
+				"1C9401B5A201EB20"
+			]
 			id: "37C6124D8DD83E0B"
 			rewards: [{
 				count: 4
@@ -1015,8 +965,8 @@
 				item: "gtceu:manganese_phosphide_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.0d
+			x: -5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["37C6124D8DD83E0B"]
@@ -1032,8 +982,8 @@
 				item: "gtceu:lv_field_generator"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.5d
+			x: -6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["24A776CF80BFF58E"]
