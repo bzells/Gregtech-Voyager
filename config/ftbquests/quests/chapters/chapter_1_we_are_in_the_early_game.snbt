@@ -437,23 +437,6 @@
 		}
 		{
 			dependencies: [
-				"095C4EB93E50A623"
-				"09FEF2154F49CB7E"
-				"6471E39226FE3104"
-			]
-			id: "1C9401B5A201EB20"
-			subtitle: "Cupro + Nickel + Coil + Block"
-			tasks: [{
-				count: 16L
-				id: "53E66DBFD83A04B5"
-				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
 				"3EB5A2410C65114B"
 				"4C8C810C15E86954"
 			]
@@ -506,7 +489,7 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -523,8 +506,8 @@
 				item: "gtceu:tempered_glass"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5CD3D0225E984D8A"]
@@ -652,8 +635,8 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.0d
+			x: -8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
@@ -915,13 +898,15 @@
 				item: "gtceu:lv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: 4.0d
 		}
 		{
 			dependencies: [
 				"6A449602F2C3179B"
-				"1C9401B5A201EB20"
+				"01C576E6E5C28CDD"
+				"1741DA9BF1B2E658"
+				"36D4232DE4BA28DD"
 			]
 			id: "26BAFB93E377E732"
 			rewards: [
@@ -944,13 +929,15 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.5d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"6A449602F2C3179B"
-				"1C9401B5A201EB20"
+				"01C576E6E5C28CDD"
+				"1741DA9BF1B2E658"
+				"36D4232DE4BA28DD"
 			]
 			id: "37C6124D8DD83E0B"
 			rewards: [{
@@ -965,7 +952,7 @@
 				item: "gtceu:manganese_phosphide_ingot"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 5.5d
 		}
 		{
@@ -982,8 +969,8 @@
 				item: "gtceu:lv_field_generator"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["24A776CF80BFF58E"]
@@ -1198,6 +1185,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["62EE454BE9E8329E"]
+			hide_dependency_lines: true
 			id: "4F7BAD7DB45BA530"
 			rewards: [
 				{
@@ -1288,6 +1277,18 @@
 			}]
 			x: -2.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6471E39226FE3104"]
+			id: "01C576E6E5C28CDD"
+			tasks: [{
+				count: 16L
+				id: "71143ADE297D8908"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 1: Low Voltage"

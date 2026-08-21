@@ -7,6 +7,8 @@ gtceu/
 
 logs/
 
+*chesttracker/
+
 local/
 
 saves/
@@ -68,3 +70,4 @@ kubejs/config/probejs.json
 
 /config/spark/tmp
 config/aether-client.toml
+/chesttracker

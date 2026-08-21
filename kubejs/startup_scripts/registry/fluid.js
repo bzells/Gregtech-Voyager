@@ -39,6 +39,13 @@ StartupEvents.registry("fluid", (event) => {
 
     event.create("phospho_indium_molybdenum_binded_lubricant").thinTexture(0x82698c).bucketColor(0x82698c).displayName("Phospho-Indium-Molybdenum Binded Lubricant").noBlock()
 
+
+    event.create("jungle_wood_vinegar").thickTexture(0xaeb372).bucketColor(0xaeb372).displayName("Jungle Wood Vinegar").noBlock()
+    event.create("cacao_residue").thickTexture(0x40281b).bucketColor(0x40281b).displayName("Cacao Wood Residue").noBlock()
+    event.create("dirty_cacao_milk").thickTexture(0xffead4).bucketColor(0xffead4).displayName("Dirty Cacao Milk").noBlock()
+    event.create("cacao_milk").thinTexture(0xffead4).bucketColor(0xffead4).displayName("Cacao Milk").noBlock()
+    event.create("tempered_cacao").thickTexture(0x3b2106).bucketColor(0x3b2106).displayName("Tempered Cacao").noBlock()
+
     //   // Fluid with custom textures
     //   event.create('strawberry_cream')
     //     .displayName('Strawberry Cream')

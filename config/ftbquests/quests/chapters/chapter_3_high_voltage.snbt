@@ -306,10 +306,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"52BDFD2A8FC3FC07"
-			]
+			dependencies: ["52BDFD2A8FC3FC07"]
 			id: "47B86AAAB18C918E"
 			rewards: [{
 				count: 8
@@ -510,10 +507,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"4C1ED02854ED8430"
-			]
+			dependencies: ["4C1ED02854ED8430"]
 			hide_dependent_lines: true
 			id: "2AE7DA758A20BE61"
 			subtitle: "YOU'RE RED NOW!! THAT'S MY ATTACK."
@@ -1101,10 +1095,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"4C1ED02854ED8430"
-			]
+			dependencies: ["4C1ED02854ED8430"]
 			id: "4F93C828FE0E9EF4"
 			tasks: [{
 				id: "4FF016B466AFCE1C"

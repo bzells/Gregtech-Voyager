@@ -301,10 +301,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"1C9401B5A201EB20"
-				"36D4232DE4BA28DD"
-			]
+			dependencies: ["36D4232DE4BA28DD"]
 			icon: "gtceu:electric_blast_furnace"
 			id: "6A449602F2C3179B"
 			rewards: [
@@ -459,7 +456,7 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: 12.75d
+			x: 11.0d
 			y: 6.0d
 		}
 		{
@@ -494,7 +491,7 @@
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 6.0d
 		}
 		{
@@ -518,7 +515,7 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
-			x: 5.25d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -551,26 +548,7 @@
 			y: 7.5d
 		}
 		{
-			id: "7EF565596170D5FA"
-			tasks: [{
-				id: "4E36F85BDF1E48BC"
-				item: "gtceu:cupronickel_coil_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 6.0d
-		}
-		{
-			id: "59463A90D25421D5"
-			tasks: [{
-				id: "1A2A6C16093542F9"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 7.5d
-		}
-		{
+			dependencies: ["02F4E464E92B48E2"]
 			id: "3AB6AD5173650569"
 			tasks: [{
 				id: "5FCC17EEE8CB724B"
@@ -581,6 +559,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["3AB6AD5173650569"]
 			id: "6E607027256D662B"
 			tasks: [{
 				id: "0D3CBCB05B500B8D"
@@ -591,26 +570,7 @@
 			y: 10.5d
 		}
 		{
-			id: "34C0D4AD1772D508"
-			tasks: [{
-				id: "1524516C0869337B"
-				item: "gtceu:hssg_coil_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 12.0d
-		}
-		{
-			id: "7ED137FCFD3B6A37"
-			tasks: [{
-				id: "67B0BFB68858CCFA"
-				item: "kubejs:titanite_coil_block"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 12.0d
-		}
-		{
+			dependencies: ["742F75D87BD1D358"]
 			id: "243B2053FCB4512D"
 			tasks: [{
 				id: "586290490F18B221"
@@ -621,6 +581,7 @@
 			y: 13.5d
 		}
 		{
+			dependencies: ["243B2053FCB4512D"]
 			id: "3C607DF80F8DAC8F"
 			tasks: [{
 				id: "539F236D0491F5C5"
@@ -629,6 +590,177 @@
 			}]
 			x: 0.0d
 			y: 13.5d
+		}
+		{
+			dependencies: [
+				"095C4EB93E50A623"
+				"09FEF2154F49CB7E"
+				"6471E39226FE3104"
+			]
+			id: "1741DA9BF1B2E658"
+			subtitle: "Cupro + Nickel + Coil + Block"
+			tasks: [{
+				count: 16L
+				id: "43328ED82E2A9971"
+				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"538EC8442BCC6589"
+				"31ECA53434A3F674"
+				"1741DA9BF1B2E658"
+			]
+			id: "02F4E464E92B48E2"
+			rewards: [{
+				count: 2
+				id: "4C36A707FFAD25A2"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			subtitle: "How long did these take?"
+			tasks: [{
+				count: 16L
+				id: "34044DAB9ABDD5D2"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3FB4F231181DD428"
+				"50A265E32ADDD82E"
+				"7764E1FF769BDCB6"
+				"56E64E745168F87B"
+				"3AC668253B538B4C"
+				"3CE2A2F735D857F6"
+			]
+			description: [
+				"The &bEverfrost Chiller&r is your next tier of Vacuum Freezer. This is going to be super useful for on-demand blasting/cooling."
+				""
+				""
+				"It has a normal &eOverclocks&r, but also &l&6Basic Boosting&r."
+				""
+				"For more information about modifiers, go to the &nModifiers&r tab in your questbook. It will also say on the machine controller."
+				""
+				"The description under the &bEverfrost Chiller&r describes &l&6basic boosting."
+			]
+			id: "6F040A6C78374E19"
+			subtitle: "To meet all of your autocrafting needs"
+			tasks: [
+				{
+					id: "3ECB279E13011B0C"
+					item: "voyagercore:everfrost_chiller"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "607FF98D3088326B"
+					item: "voyagercore:frost_conducting_casing"
+					type: "item"
+				}
+			]
+			title: "Better Freezing"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"50A265E32ADDD82E"
+				"3FB4F231181DD428"
+				"742F75D87BD1D358"
+			]
+			id: "7E275BBECE2F4D9D"
+			tasks: [{
+				id: "155AA1C97381446C"
+				item: "kubejs:titanite_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"35A76EF5228154C7"
+				"1B77A654DE3A1013"
+				"245D7901EBA2C1ED"
+				"6E607027256D662B"
+			]
+			id: "742F75D87BD1D358"
+			tasks: [{
+				count: 16L
+				id: "26588DA1333DE47E"
+				item: { Count: 16, id: "gtceu:hssg_coil_block" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["47732A84A5E27361"]
+			description: [
+				"With &dostrum&r, you can now craft the &n&l&6Alloy Blast Smelter&r&r&r."
+				""
+				"This machine is needed in order to make the specialized alloys for making &9IV&r tier multiblocks."
+				""
+				"These multiblocks can use &lparallel control hatches&r, increasing their speed exponentially"
+			]
+			id: "10BB04C7B18C512D"
+			tasks: [{
+				id: "118F36B566F34283"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			title: "Better Multiblocks"
+			x: -5.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["04BD5101521DF8BC"]
+			id: "7BE5F13A58F88327"
+			rewards: [{
+				id: "4B4674C4E9739B59"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "38ED9913F29BC9BB"
+				item: "gtceu:ev_large_miner"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1EA011566D0AF90B"]
+			id: "2C9A9524E9926DBB"
+			tasks: [{
+				id: "71FA193B8674DC7A"
+				item: "gtceu:iv_large_miner"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"168C4348743D0603"
+				"267BE42AF6304F3E"
+				"31A4540027367CFC"
+			]
+			id: "31C79E799A0256B2"
+			tasks: [{
+				id: "58662A84E90E45C1"
+				item: "voyagercore:chemical_plant"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
 		}
 	]
 	title: "Multiblocks"

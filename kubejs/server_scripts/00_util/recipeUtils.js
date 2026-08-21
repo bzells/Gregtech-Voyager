@@ -60,11 +60,32 @@ global.recipe_electrolyzer = function(event, name, inputItems, inputFluids, outp
         .EUt(eut)
 }
 
+global.recipe_pyrolyse_oven = function(event, name, inputItems, inputFluids, outputItems, outputFluids, duration, eut, circuit) {
+    event.recipes.gtceu
+        .pyrolyse_oven("kubejs:pyrolyze_oven" + name)
+        .itemInputs(inputItems)
+        .itemOutputs(outputItems)
+        .inputFluids(inputFluids)
+        .outputFluids(outputFluids)
+        .circuit(circuit)
+        .duration(duration * 20)
+        .EUt(eut)
+}
+
 global.recipe_fluid_solidifier = function(event, name, inputFluids, outputItems, duration, eut) {
     event.recipes.gtceu
         .fluid_solidifier("kubejs:fluid_solidifier_" + name)
         .itemOutputs(outputItems)
         .inputFluids(inputFluids)
+        .duration(duration * 20)
+        .EUt(eut)
+}
+
+global.recipe_fluid_heater = function(event, name, inputFluids, outputFluids, duration, eut) {
+    event.recipes.gtceu
+        .fluid_heater("kubejs:fluid_heater_" + name)
+        .inputFluids(inputFluids)
+        .outputFluids(outputFluids)
         .duration(duration * 20)
         .EUt(eut)
 }
@@ -105,10 +126,10 @@ global.recipe_mixer = function(event, name, ingredientsItem, fluidIngredients, i
         .EUt(eut)
 }
 
-global.recipe_distillation = function(event, input, amt, itemOutput, fluidOutputs, eut, time) {
+global.recipe_distillation = function(event, name, input, itemOutput, fluidOutputs, eut, time) {
     event.recipes.gtceu
-        .distillation_tower(`kubejs:${input}_distilling`)
-        .inputFluids(`kubejs:${input} ${amt}`)
+        .distillation_tower(`kubejs:${name}_distillation_tower`)
+        .inputFluids(`${input}`)
         .outputFluids(fluidOutputs)
         .itemOutputs(itemOutput)
         .duration(time * 20)
