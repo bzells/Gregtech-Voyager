@@ -1,0 +1,12 @@
+{
+    "modifier.voyagercore": {
+        "dragon_looting": "#5aad64",
+        "dragon_looting.dragonsteel_ice": "#5baff3",
+        "dragon_looting.dragonsteel_fire": "#f35b75",
+        "dragon_strength": "#5aad64"
+    },
+    "material.gm_construct": {
+        "dragonsteel_fire": "#f35b75",
+        "dragonsteel_ice": "#5baff3"
+    }
+}
