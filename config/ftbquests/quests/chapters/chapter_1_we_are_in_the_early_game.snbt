@@ -877,7 +877,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "When manually mining is to slow"
+			subtitle: "When manually mining is too slow"
 			tasks: [{
 				id: "607810ABFE6F3058"
 				item: "gtceu:lv_miner"

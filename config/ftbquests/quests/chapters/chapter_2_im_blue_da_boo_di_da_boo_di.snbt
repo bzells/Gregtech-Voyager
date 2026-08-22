@@ -831,7 +831,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [

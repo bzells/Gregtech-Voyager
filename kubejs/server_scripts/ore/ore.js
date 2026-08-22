@@ -1,6 +1,7 @@
 const WorldGenLayers = Java.loadClass("com.gregtechceu.gtceu.api.data.worldgen.WorldGenLayers")
 GTCEuServerEvents.oreVeins((event) => {
     event.remove("gtceu:bauxite_vein")
+    event.remove("gtceu:ilmenite_vein")
     event.remove("gtceu:mica_vein")
     event.remove("gtceu:naquadah_vein")
     event.remove("gtceu:scheelite_vein")
