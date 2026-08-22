@@ -13,7 +13,13 @@ GTCEuStartupEvents.materialModification((_event) => {
     GTMaterials.get("industrial_perfected_electrum").setFormula("(*Au**Ag*)5(C2Rc4)")
     GTMaterials.get("sulfuria").setFormula("*S*")
 
-    // 	TagPrefix.gem["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem'))
-    // 	TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem_block'))
-    // 	TagPrefix.block.modifyMaterialAmount(GTMaterialRegistry.getMaterial('source'),4)
+    TagPrefix.gem["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem'))
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem_block'))
+    TagPrefix.block.modifyMaterialAmount(GTMaterialRegistry.getMaterial('source'),4)
+
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_fire'), () => Item.getItem("iceandfire:dragonsteel_fire_block"))
+    TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_fire'), () => Item.getItem('iceandfire:dragonsteel_fire_ingot'))
+
+    TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_ice'), () => Item.getItem('iceandfire:dragonsteel_ice_ingot'))
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_ice'), () => Item.getItem("iceandfire:dragonsteel_ice_block"))
 })
