@@ -258,13 +258,13 @@
 	"Health Increase Multiplier" = 0.25
 	#Health will be multiplied by at maximum this. Set to 0 means no limit
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Max Health Increase" = 2.0
+	"Max Health Increase" = 4.0
 	#Round health to the nearest x. Set to 0 to disable
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Round HP" = 0.5
 	#Damage will be multiplied by 1 + difficulty*0.008*x. Set to 0 to disable
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Damage Increase Multiplier" = 0.25
+	"Damage Increase Multiplier" = 1.25
 	#Damage will be multiplied by at maximum this. Set to 0 means no limit
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Max Damage Increase" = 2.0

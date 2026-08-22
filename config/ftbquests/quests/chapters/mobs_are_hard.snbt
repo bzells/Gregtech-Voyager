@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mobs_are_hard"
-	group: "6D0B610876588986"
-	icon: "minecraft:creeper_head"
+	group: "1A9B1A8107510B65"
+	icon: "ad_astra:earth_globe"
 	id: "5E70D151076F8F17"
-	order_index: 5
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -192,7 +192,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6C7312B3BC744D7F"]
+			dependencies: [
+				"6E68356E319A0B43"
+				"57B0B0A0BE443100"
+			]
 			id: "20279A7120522426"
 			tasks: [{
 				id: "7F800BE4975688A2"
@@ -200,8 +203,263 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"18316B459C9B6944"
+				"674B6183CEB82483"
+				"229AADEA4EC8D22D"
+				"6E68356E319A0B43"
+				"795A8A980827C3EB"
+			]
+			description: ["This also counts as a space suit (For Tier 1-2 planets)"]
+			id: "090847AD04846A63"
+			rewards: [{
+				id: "0110784C20BA9E10"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:space_breathing"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Carbon... man?"
+			tasks: [
+				{
+					id: "727F2BF7D8033378"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "07A9C95413B701D8"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_chestplate"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "261076A1685EDCB2"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_leggings"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "665734442149656C"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_boots"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Swagged out, teched out"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["364FFCF1ED869B0A"]
+			id: "18316B459C9B6944"
+			subtitle: "If you know, you know"
+			tasks: [{
+				id: "51A9DB121B47F491"
+				item: {
+					Count: 1
+					id: "gtceu:nightvision_goggles"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Night vision, EV Circuit Free!"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2AB7BA3F4FC21970"
+				"090847AD04846A63"
+				"2CB852566D968704"
+			]
+			id: "15CAB95DCB892E5A"
+			subtitle: "A good option for flight"
+			tasks: [{
+				id: "5CBB45C688A79DCD"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_nanomuscle_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Swagged out, but in the air"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"229AADEA4EC8D22D"
+				"44332F1E57E89B1C"
+			]
+			id: "2CB852566D968704"
+			tasks: [{
+				id: "7D88829AC41BBFB8"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_electric_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57B0B0A0BE443100"]
+			id: "795A8A980827C3EB"
+			tasks: [
+				{
+					id: "6E695BE681BFF1B9"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D69652A9D824C59"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "534D7BD7ECB70BC1"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FE5B9955AF50499"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Swagged out, black out"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0D398D8FE47F9B67"
+				"7764E1FF769BDCB6"
+			]
+			description: ["This counts as a valid space suit for all planets"]
+			id: "78F9D800A91FB29F"
+			subtitle: "Basically Iron Man at this point"
+			tasks: [
+				{
+					id: "38A231CDA6544364"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "129C14CD1A91C02B"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "689D5E755330FA5E"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "475932068687AFD2"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_boots"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Swaggingly swagged out"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"78F9D800A91FB29F"
+				"436220F63DCFFB5D"
+				"2A2C22CF76B677BB"
+			]
+			id: "31889C98B2C83EF8"
+			subtitle: "Is there such a thing as too fast?"
+			tasks: [{
+				id: "292DD6EBAFA7F4AB"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["33C546237694B2C1"]
+			description: ["Combined with the hang glider, you will be able to explore with ease"]
+			id: "44332F1E57E89B1C"
+			subtitle: "Easy flight"
+			tasks: [{
+				id: "1C4142BAC4E7CE0E"
+				item: {
+					Count: 1
+					id: "gtceu:electric_jetpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
 		}
 	]
-	title: "Mobs are hard"
+	title: "The World vs You"
 }

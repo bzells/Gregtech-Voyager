@@ -34,15 +34,23 @@ ServerEvents.recipes((event) => {
         "plat_line"
     )
 
-    global.recipe_lcr(event, "dewatering_fluid", ["2x gtceu:barium_dust", "gtceu:zinc_dust"], ["gtceu:kerosene 2000"], [], ["kubejs:dewatering_fluid 5000"], 40, 480)
+    global.recipe_lcr(event, "dewatering_fluid", ["2x gtceu:barium_dust", "gtceu:zinc_dust"], ["gtceu:butane 250"], [], ["kubejs:dewatering_fluid 5000"], 40, 480)
     // iridium
-    global.recipe_lcr(
-        event,
-        "dewatered_iridium_metal_residue",
-        ["5x gtceu:iridium_metal_residue_dust"],
-        ["kubejs:dewatering_fluid 2000"],
+    // global.recipe_lcr(
+    //     event,
+    //     "dewatered_iridium_metal_residue",
+    //     ["5x gtceu:iridium_metal_residue_dust"],
+    //     ["kubejs:dewatering_fluid 2000"],
+    //       
+    //     [],
+    //     80,
+    //     120
+    // )
+
+    global.recipe_centrifuge(event, "dewatered_iridium_metal_residue",
+        ["5x gtceu:iridium_metal_residue_dust"], ["gtceu:iron_iii_chloride 250"],
         ["4x gtceu:dewatered_iridium_metal_residue_dust", "gtceu:platinum_sludge_residue_dust"],
-        [],
+        ["minecraft:water 2000"],
         80,
         120
     )
@@ -52,7 +60,7 @@ ServerEvents.recipes((event) => {
         "impure_iridium",
         ["4x gtceu:dewatered_iridium_metal_residue_dust"],
         ["gtceu:phosphoric_acid 2000"],
-        ["3x gtceu:impure_iridium_metal_dust", "gtceu:tiny_zinc_dust", "2x gtceu:tiny_barium_dust"],
+        ["3x gtceu:impure_iridium_metal_dust", "gtceu:small_iron_dust"],
         [],
         5,
         30
@@ -64,7 +72,7 @@ ServerEvents.recipes((event) => {
         ["3x gtceu:impure_iridium_metal_dust"],
         [],
         ["2x gtceu:iridium_chloride_dust", "gtceu:platinum_sludge_residue_dust", "2x gtceu:phosphorus_dust"],
-        ["gtceu:oxygen 5000"],
+        ["gtceu:oxygen 5000", "gtceu:chlorine 750"],
         40,
         120
     )

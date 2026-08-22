@@ -437,23 +437,6 @@
 		}
 		{
 			dependencies: [
-				"095C4EB93E50A623"
-				"09FEF2154F49CB7E"
-				"6471E39226FE3104"
-			]
-			id: "1C9401B5A201EB20"
-			subtitle: "Cupro + Nickel + Coil + Block"
-			tasks: [{
-				count: 16L
-				id: "53E66DBFD83A04B5"
-				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
 				"3EB5A2410C65114B"
 				"4C8C810C15E86954"
 			]
@@ -506,7 +489,7 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -523,8 +506,8 @@
 				item: "gtceu:tempered_glass"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5CD3D0225E984D8A"]
@@ -652,8 +635,8 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.0d
+			x: -8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
@@ -894,7 +877,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "When manually mining is to slow"
+			subtitle: "When manually mining is too slow"
 			tasks: [{
 				id: "607810ABFE6F3058"
 				item: "gtceu:lv_miner"
@@ -915,67 +898,16 @@
 				item: "gtceu:lv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: 4.0d
 		}
 		{
 			dependencies: [
-				"1C9401B5A201EB20"
+				"6A449602F2C3179B"
+				"01C576E6E5C28CDD"
+				"1741DA9BF1B2E658"
 				"36D4232DE4BA28DD"
 			]
-			icon: "gtceu:electric_blast_furnace"
-			id: "72BCD56BAC6F1E57"
-			rewards: [
-				{
-					count: 3
-					id: "702DC132F4B4E28F"
-					item: "kubejs:lv_loot_bag"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "6934BF05EA92FCF1"
-					table_id: 1081241152471735771L
-					type: "choice"
-				}
-			]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "The first REAL (electric) greg multi"
-			tasks: [
-				{
-					id: "42AE82B1C04420A9"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "129712B8AA8B26B7"
-					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
-					type: "item"
-				}
-				{
-					id: "35017824D99474BE"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "5CCA39A4AE65ED90"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "39D56AE83FFFC8AC"
-					item: { Count: 12, id: "gtceu:heatproof_machine_casing" }
-					type: "item"
-				}
-			]
-			x: -5.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["72BCD56BAC6F1E57"]
 			id: "26BAFB93E377E732"
 			rewards: [
 				{
@@ -998,10 +930,15 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["72BCD56BAC6F1E57"]
+			dependencies: [
+				"6A449602F2C3179B"
+				"01C576E6E5C28CDD"
+				"1741DA9BF1B2E658"
+				"36D4232DE4BA28DD"
+			]
 			id: "37C6124D8DD83E0B"
 			rewards: [{
 				count: 4
@@ -1015,8 +952,8 @@
 				item: "gtceu:manganese_phosphide_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.0d
+			x: -6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["37C6124D8DD83E0B"]
@@ -1032,8 +969,8 @@
 				item: "gtceu:lv_field_generator"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.5d
+			x: -6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["24A776CF80BFF58E"]
@@ -1248,6 +1185,8 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["62EE454BE9E8329E"]
+			hide_dependency_lines: true
 			id: "4F7BAD7DB45BA530"
 			rewards: [
 				{
@@ -1340,16 +1279,16 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["62EE454BE9E8329E"]
-			description: ["This multiblock makes water out of energy instead of steam (like the pump deck you are likely still using)"]
-			id: "1C5FA1CD3C83C554"
+			dependencies: ["6471E39226FE3104"]
+			id: "01C576E6E5C28CDD"
 			tasks: [{
-				id: "54E8A5D3900196B4"
-				item: "gtceu:large_dehumidifier"
+				count: 16L
+				id: "71143ADE297D8908"
+				item: "gtceu:cupronickel_ingot"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: -3.5d
+			y: 4.5d
 		}
 	]
 	title: "Chapter 1: Low Voltage"

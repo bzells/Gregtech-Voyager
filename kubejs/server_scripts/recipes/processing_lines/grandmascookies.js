@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
         .duration(200) // in ticks
         .EUt(16)
 
-    global.recipe_mixer(event, "baking_chocolate", ["kubejs:cacao_powder", "minecraft:sugar"], ["minecraft:milk 1000"], ["4x kubejs:baking_chocolate"], [], 30, 200)
+    global.recipe_mixer(event, "baking_chocolate", ["kubejs:cacao_powder", "minecraft:sugar"], ["minecraft:milk 1000"], ["4x kubejs:baking_chocolate"], [], 30, 10)
 
     global.recipe_mixer(
         event,
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
         ["16x kubejs:cookie_dough"],
         [],
         120,
-        16 * 20
+        16
     )
 
     event.recipes.gtceu

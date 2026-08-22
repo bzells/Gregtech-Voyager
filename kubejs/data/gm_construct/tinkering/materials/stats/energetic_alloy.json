@@ -3,7 +3,7 @@
     "tconstruct:limb": {
       "durability": 760,
       "draw_speed": 0.25,
-      "velocity": 16.0,
+      "velocity": 4.0,
       "accuracy": 0.5
     },
     "tconstruct:handle": {

@@ -1079,22 +1079,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["04BD5101521DF8BC"]
-			id: "6777009AD5019D17"
-			rewards: [{
-				id: "1581133088BD8E49"
-				item: "kubejs:ev_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2BCA8653AA67D3D5"
-				item: "gtceu:ev_large_miner"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 7.5d
-		}
-		{
 			dependencies: [
 				"306558EE1954AAFB"
 				"73CEC180BC19B0FA"
@@ -2163,4 +2147,3 @@
 	]
 	title: "Chapter 4: To Space! (EV)"
 }
-
