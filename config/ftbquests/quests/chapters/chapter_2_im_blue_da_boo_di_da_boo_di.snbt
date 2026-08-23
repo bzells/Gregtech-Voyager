@@ -717,7 +717,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["72BCD56BAC6F1E57"]
 			id: "01C94BA5CADFA830"
 			rewards: [{
 				id: "6DD0D1B3A3A0A236"
@@ -832,34 +831,13 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"538EC8442BCC6589"
-				"31ECA53434A3F674"
-			]
-			id: "0A90A77024E6430C"
-			rewards: [{
-				count: 2
-				id: "3DE72588512B1389"
-				item: "kubejs:mv_loot_bag"
-				type: "item"
-			}]
-			subtitle: "How long did these take?"
-			tasks: [{
-				count: 16L
-				id: "094E36401DF24B3C"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"0A90A77024E6430C"
 				"654CD3417DA4DA1D"
+				"02F4E464E92B48E2"
+				"31ECA53434A3F674"
 			]
 			id: "4BD922E5CE685F22"
 			rewards: [{
@@ -874,7 +852,7 @@
 				item: "gtceu:silicon_ingot"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -892,13 +870,14 @@
 				item: "gtceu:transistor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
-				"0A90A77024E6430C"
 				"654CD3417DA4DA1D"
+				"02F4E464E92B48E2"
+				"31ECA53434A3F674"
 			]
 			id: "3778C068660FCD61"
 			rewards: [{
@@ -913,8 +892,8 @@
 				item: "gtceu:black_bronze_ingot"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.5d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1617,52 +1596,6 @@
 		}
 		{
 			dependencies: [
-				"7A2ABD419B2FB9E0"
-				"62201BC7050CB208"
-				"6A65D57C567806CB"
-				"3F19DD981F340045"
-			]
-			description: ["Note: If your multiblock has a helper holder installed, it &l&cwill not run recipes&r unless there is a helper in it. If you do not want/cannot use a helper for a recipe, remove the helper holder."]
-			hide_dependency_lines: true
-			id: "42EE53E235AE139A"
-			rewards: [{
-				id: "23D0C3C316E8055D"
-				item: "kubejs:mv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "77F61F0A0D828B55"
-				item: "voyagercore:helper_holder"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"42EE53E235AE139A"
-				"5C5282F7F08E9520"
-				"3F19DD981F340045"
-			]
-			dependency_requirement: "one_completed"
-			description: ["Currently &o&7(as of 0.4A/Pre-Beta)&r&r, the &bMV Helpers&r can only be used to help with &eEBF&r recipes. Because of this, you unlock a helper variant of te &eEBF&r."]
-			hide_dependency_lines: true
-			id: "356A5D0CB68CEB41"
-			rewards: [{
-				id: "2A7A4FEC5C730A0B"
-				item: "kubejs:mv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E2EA442BD134EEA"
-				item: "voyagercore:helper_electric_blast_furnace"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
 				"5036ABCE601C92A6"
 				"419A5B81DA99E1A0"
 			]
@@ -1696,7 +1629,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1748,8 +1681,8 @@
 				type: "checkmark"
 			}]
 			title: "RF Converters"
-			x: 2.5d
-			y: 5.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1846,8 +1779,8 @@
 		}
 		{
 			dependencies: [
-				"0A90A77024E6430C"
 				"5B8348AB4F45374A"
+				"02F4E464E92B48E2"
 			]
 			hide_dependency_lines: true
 			id: "674B6183CEB82483"
@@ -2132,6 +2065,31 @@
 			}]
 			x: -16.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4BFF7E28298F7F53"]
+			id: "06D7D901646952AD"
+			tasks: [{
+				id: "5B790001D9492820"
+				item: "gtceu:large_dehumidifier"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6A066106E82E9C31"
+				"11B9A1F5618D8C68"
+			]
+			id: "5F61C3C50BA61320"
+			tasks: [{
+				id: "2D8BF4CA45EE4C99"
+				item: "travelanchors:travel_anchor"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 2.0d
 		}
 	]
 	title: "Chapter 2: Medium Voltage"

@@ -299,65 +299,16 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"3AD0418241AEA8AA"
-				"2977381A674780EF"
-			]
-			id: "3ABEDA348136284C"
-			rewards: [
-				{
-					id: "6FAEA69376D5694A"
-					item: "tconstruct:repair_kit_cast"
-					type: "item"
-				}
-				{
-					id: "7876AEE10A951D5A"
-					item: "kubejs:stone_bag"
-					type: "item"
-				}
-			]
-			subtitle: "For cooking things into molten metals"
-			tasks: [
-				{
-					id: "79AB12A9AE7B2BBF"
-					item: "tconstruct:seared_melter"
-					type: "item"
-				}
-				{
-					id: "28968F0B7A2EA5E3"
-					item: "tconstruct:seared_fuel_gauge"
-					type: "item"
-				}
-				{
-					id: "432DAC290FBCB2EE"
-					item: "tconstruct:seared_ingot_gauge"
-					type: "item"
-				}
-				{
-					id: "0C93F1ACD9458E01"
-					item: "tconstruct:seared_table"
-					type: "item"
-				}
-				{
-					id: "63963DF44EAD5E78"
-					item: "tconstruct:seared_faucet"
-					type: "item"
-				}
-				{
-					id: "3B2E26822B0380BB"
-					item: "tconstruct:seared_basin"
-					type: "item"
-				}
-			]
-			title: "Basic Smeltery Parts"
-			x: 6.5d
-			y: 5.0d
-		}
-		{
 			dependencies: ["1A807CCA515A0B94"]
 			id: "26A6C0E4B38F51B3"
+			rewards: [{
+				id: "22B1DAE74032AA91"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
 			subtitle: "Brick type #3"
 			tasks: [{
+				count: 100L
 				id: "02531C812AA9F65F"
 				item: "gtceu:coke_oven_brick"
 				type: "item"
@@ -366,52 +317,10 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["26A6C0E4B38F51B3"]
-			description: ["&l&3Lore:&r&o One GTNH player got gaslit into making 576 Coke ovens in LV, the record until Three in the \"Hermitcraft of modded minecraft,\" Project Singularity, made 577, where the record still stands."]
-			id: "22A38B844EA1BE5B"
-			rewards: [{
-				id: "3C9A6150631FA25E"
-				item: "kubejs:stone_bag"
-				type: "item"
-			}]
-			subtitle: "1 out of 576"
-			tasks: [
-				{
-					id: "3AD6C645AB9D85B0"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-				{
-					count: 25L
-					id: "1EFB4642018EBE46"
-					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
-					type: "item"
-				}
+			dependencies: [
+				"26A6C0E4B38F51B3"
+				"08FA16D1594E31A3"
 			]
-			x: 0.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["3ABEDA348136284C"]
-			id: "21517C495219BC6F"
-			rewards: [{
-				count: 3
-				id: "4A3BE2BDF3839DE5"
-				item: "kubejs:stone_bag"
-				type: "item"
-			}]
-			size: 1.5d
-			subtitle: "Making the big boy, huh?"
-			tasks: [{
-				id: "27D9CF45EBFD1D9E"
-				item: "tconstruct:smeltery_controller"
-				type: "item"
-			}]
-			x: 8.25d
-			y: 4.5d
-		}
-		{
-			dependencies: ["22A38B844EA1BE5B"]
 			id: "51EBA3EE740C75FB"
 			rewards: [{
 				id: "48B428DFC7BBA973"
@@ -425,7 +334,7 @@
 				type: "item"
 			}]
 			title: "Creosote"
-			x: -1.0d
+			x: -0.5d
 			y: 5.5d
 		}
 		{
@@ -441,7 +350,10 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["3ABEDA348136284C"]
+			dependencies: [
+				"3AD0418241AEA8AA"
+				"46BADDE42CE44AC6"
+			]
 			description: [
 				"In GT:V There are 3 ways of getting your tinkers anvil:"
 				""
@@ -487,7 +399,7 @@
 			]
 			title: "Tinkers Anvil"
 			x: 6.5d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["559EBC87398D8C8D"]
@@ -674,8 +586,8 @@
 				}
 			]
 			title: "The \"Slimer\""
-			x: 8.0d
-			y: 6.5d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3A557C43CE0F534F"]
@@ -770,19 +682,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3ABEDA348136284C"]
-			description: ["Now that you have a smeltery, some alloys no longer need a mortar to craft - Bronze being a great example."]
-			id: "434B8B61662C96C1"
-			subtitle: "Molten bronze is my favorite drink"
-			tasks: [{
-				id: "3E486B0EA597851C"
-				title: "Easier Bronze"
-				type: "checkmark"
-			}]
-			x: 7.5d
-			y: 5.5d
-		}
-		{
 			dependencies: ["2F4B6CBA03B8301B"]
 			id: "1282177A7209F2D6"
 			rewards: [{
@@ -811,6 +710,12 @@
 			dependencies: ["7F23975179B70629"]
 			description: ["If you were expecting a chill and easy night, I have bad news for you. Mobs are not only a lot stronger, they are often spawned in with weapons, and other items. Be weary of the ender pearling creeper."]
 			id: "008A757AD8AEB6E7"
+			rewards: [{
+				count: 4
+				id: "4E5C0C7B68214074"
+				item: "farmersdelight:bacon_sandwich"
+				type: "item"
+			}]
 			subtitle: "This is for going Honk Shoo in record amounts of time"
 			tasks: [{
 				id: "2FA8299AE752ACB0"

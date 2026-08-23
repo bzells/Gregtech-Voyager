@@ -1,11 +1,5 @@
 ServerEvents.recipes((event) => {
-    event.recipes.gtceu
-        .helper_wheel("kubejs:track_runner_helper") // recipe ID
-        .itemInputs([{ item: "minecraft:cookie" }])
-        .inputFluids("minecraft:water 100")
-        .notConsumable('kubejs:track_runner_helper')
-        .duration(40)                                 // in ticks
-        .EUt(-32)      
+    
         
     // event.recipes.gtceu
     //     .helper_wheel('kubejs:track_runner_helper_gma_cookies')   

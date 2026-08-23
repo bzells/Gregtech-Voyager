@@ -13,6 +13,13 @@ ServerEvents.recipes((event) => {
 
     global.recipe_centrifuge(event, "dsg_processing", ["6x gtceu:desh_group_sludge_dust"], ["gtceu:aqua_regia 800"], ["6x gtceu:lunar_metal_residue_dust", "4x gtceu:dense_metal_mixture_dust"], [], 30, 480)
 
+    global.recipe_chem_plant(event, "dsg_processing",
+        ["6x gtceu:desh_group_sludge_dust"],
+        ["gtceu:aqua_regia 800"],
+        ["8x gtceu:lunar_metal_residue_dust", "6x gtceu:dense_metal_mixture_dust"],
+        [], 30, 480, 4500, "desh_line"
+    )
+
     global.recipe_lcr(
         event,
         "lunarium_metal_sludge",
@@ -23,11 +30,19 @@ ServerEvents.recipes((event) => {
         15,
         7680
     )
-    global.recipe_lcr(
-        event,
+    // global.recipe_lcr(
+    //     event,
+    //     "dewatered_lunarium_metal_mixture",
+    //     ["5x gtceu:lunarium_metal_sludge_dust"],
+    //     ["kubejs:dewatering_fluid 4000"],
+    //     ["3x gtceu:dewatered_lunarium_metal_mixture_dust"],
+    //     ["minecraft:water 2000"],
+    //     40,
+    //     1980
+    // )
+    global.recipe_lcr(event,
         "dewatered_lunarium_metal_mixture",
-        ["5x gtceu:lunarium_metal_sludge_dust"],
-        ["kubejs:dewatering_fluid 4000"],
+        ["5x gtceu:lunarium_metal_sludge_dust"], ['gtceu:iron_iii_chloride 250'],
         ["3x gtceu:dewatered_lunarium_metal_mixture_dust"],
         ["minecraft:water 2000"],
         40,
@@ -36,10 +51,10 @@ ServerEvents.recipes((event) => {
     global.recipe_centrifuge(
         event,
         "impure_lunarium",
-        ["8x gtceu:dewatered_lunarium_metal_mixture_dust"],
+        ["6x gtceu:dewatered_lunarium_metal_mixture_dust"],
         [],
-        ["3x gtceu:impure_lunarium_dust", "1x gtceu:carbon_dust", "2x gtceu:small_zinc_dust", "gtceu:barium_dust", "gtceu:lunar_metal_residue_dust"],
-        ["gtceu:hydrogen 3000"],
+        ["3x gtceu:impure_lunarium_dust", "1x gtceu:carbon_dust", "gtceu:lunar_metal_residue_dust", "2x gtceu:small_iron_dust"],
+        ["gtceu:hydrogen 3000", "gtceu:chlorine 1500"],
         30,
         120
     )

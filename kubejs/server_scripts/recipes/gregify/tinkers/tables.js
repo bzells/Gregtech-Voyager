@@ -69,12 +69,11 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.shaped(
         Item.of("tconstruct:crafting_station"),
         [
-            " S ",
+            "   ",
             " P ",
             " T "
         ],
         {
-            S: "#forge:tools/saws",
             P: "tconstruct:pattern",
             T: "minecraft:crafting_table"
         }

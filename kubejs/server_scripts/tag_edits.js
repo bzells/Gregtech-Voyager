@@ -18,7 +18,34 @@ ServerEvents.tags("item", (event) => {
     {
         event.remove(`forge:rods/${mat}`, `ad_astra:${mat}_rod`)
     }
+    function add_space_suit_tag(part)
+    {
+        event.add("ad_astra:space_suit_items", `${part}`)
+    }
+    function add_netherite_space_suit_tag(part)
+    {
+        event.add("ad_astra:netherite_space_suit_items", `${part}`)
+    }
+    function add_iaf_ingot_tag(element)
+    {
+        event.add(`forge:ingots/dragonsteel_${element}`,`iceandfire:dragonsteel_${element}_ingot`)
+        event.remove(`forge:ingots/dragonsteel_${element}`, `gtceu:dragonsteel_${element}_ingot`)
+    }
+    const iafelements = ['fire', 'ice', 'lightning']
 
+    iafelements.forEach(elem => add_iaf_ingot_tag(elem))
+
+    const nanomuscle_suit = ["gtceu:nanomuscle_helmet", "gtceu:nanomuscle_chestplate", "gtceu:advanced_nanomuscle_chestplate", "gtceu:nanomuscle_leggings", "gtceu:nanomuscle_boots",]
+    const quark_suit = ["gtceu:quarktech_helmet", "gtceu:quarktech_chestplate", "gtceu:advanced_quarktech_chestplate", "gtceu:quarktech_leggings", "gtceu:quarktech_boots",]
+
+    nanomuscle_suit.forEach(part => add_space_suit_tag(part))
+
+    quark_suit.forEach(part => 
+        {
+            add_space_suit_tag(part)
+            add_netherite_space_suit_tag(part)
+        }
+    )
 
     const ad_astra_mat_list = ['iron', 'steel', 'desh', 'ostrum', 'calorite']
 

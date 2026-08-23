@@ -253,6 +253,7 @@
 					type: "item"
 				}
 			]
+			size: 1.25d
 			subtitle: "Spinning with a purpose™"
 			tasks: [{
 				id: "2ED7E3CE4B48381D"
@@ -305,10 +306,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"52BDFD2A8FC3FC07"
-			]
+			dependencies: ["52BDFD2A8FC3FC07"]
 			id: "47B86AAAB18C918E"
 			rewards: [{
 				count: 8
@@ -408,7 +406,6 @@
 		{
 			dependencies: [
 				"6E68356E319A0B43"
-				"09B6469ED6468EEA"
 				"1B3A152821B0B2D2"
 			]
 			hide_dependency_lines: false
@@ -510,10 +507,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"4C1ED02854ED8430"
-			]
+			dependencies: ["4C1ED02854ED8430"]
 			hide_dependent_lines: true
 			id: "2AE7DA758A20BE61"
 			subtitle: "YOU'RE RED NOW!! THAT'S MY ATTACK."
@@ -778,7 +772,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: 5.25d
+			x: 5.75d
 			y: -6.0d
 		}
 		{
@@ -944,34 +938,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["0B60D1876EDA1164"]
-			id: "59EC433F2CFDAB44"
-			rewards: [
-				{
-					id: "0D81C9CEB78F077F"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "4D04DEF4CA0E1ECA"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "You need LOTS of these"
-			tasks: [{
-				id: "4153B33DAC894357"
-				item: "gtceu:large_chemical_reactor"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["59EC433F2CFDAB44"]
+			dependencies: ["31A4540027367CFC"]
 			id: "6284704349652601"
 			subtitle: "Remeber kids, radiation is only fun in gregtech!"
 			tasks: [{
@@ -979,8 +946,8 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 0.5d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1011,10 +978,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"09B6469ED6468EEA"
-				"6164D33ACEB4E515"
-			]
+			dependencies: ["6164D33ACEB4E515"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "49826526BFC9255D"
@@ -1025,66 +989,6 @@
 			}]
 			x: 11.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["02C13DE221613C60"]
-			id: "09B6469ED6468EEA"
-			rewards: [
-				{
-					id: "5E496BF3D578FFD9"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					id: "7CFCCC580A7D38D5"
-					item: "voyagercore:mv_helper_module"
-					type: "item"
-				}
-			]
-			size: 2.0d
-			subtitle: "Big 'ol box of aluminium"
-			tasks: [{
-				id: "6408D2D3E8E95071"
-				item: "gtceu:vacuum_freezer"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"02C13DE221613C60"
-				"2BCF2E87DEF9B7B7"
-			]
-			id: "0D58ACA0BF5E20A1"
-			rewards: [
-				{
-					count: 32
-					id: "5FEAB7BBEAF955DF"
-					item: "gtceu:stainless_steel_ingot"
-					type: "item"
-				}
-				{
-					id: "33EC3ECE464965ED"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2408C51017E5CB06"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			size: 1.5d
-			subtitle: "Hope you were making lots of stainless steel!"
-			tasks: [{
-				id: "7CCF6FD50E3BD019"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1098,7 +1002,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -1130,7 +1034,7 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: -5.0d
 		}
 		{
@@ -1191,10 +1095,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"0A90A77024E6430C"
-				"4C1ED02854ED8430"
-			]
+			dependencies: ["4C1ED02854ED8430"]
 			id: "4F93C828FE0E9EF4"
 			tasks: [{
 				id: "4FF016B466AFCE1C"
@@ -1246,6 +1147,7 @@
 				"5E9CC61CA2932088"
 				"0ADD7EB03BFB24D6"
 				"4A9B78D38C9215C8"
+				"4E9076620B19A87B"
 			]
 			id: "67479BD12C126B51"
 			rewards: [{
@@ -1408,11 +1310,8 @@
 			dependencies: [
 				"67479BD12C126B51"
 				"7A11C3062B307765"
-				"52773A6748E751F1"
-				"2653AEA886B4F3CF"
-				"5AAB10E67B85E3B1"
-				"2D1E5E64951C7EFB"
 			]
+			description: ["You must make a space suit, or a nano suit + Space Breathing enchantment to survive on other planets"]
 			id: "538B8A7C45672E07"
 			rewards: [
 				{
@@ -1448,6 +1347,8 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["26A5CE4E66F9CE59"]
+			hide_dependency_lines: true
 			id: "7A11C3062B307765"
 			rewards: [{
 				id: "4663161313787E50"
@@ -1461,108 +1362,8 @@
 				item: "ad_astra:launch_pad"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 6.25d
-		}
-		{
-			hide_dependency_lines: true
-			id: "52773A6748E751F1"
-			rewards: [{
-				count: 8
-				id: "24655D5A4AFCF19D"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "You can finally finish your olimar cosplay"
-			tasks: [{
-				id: "03F6C7DC3FC64457"
-				item: {
-					Count: 1
-					id: "ad_astra:space_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 1"
-			x: 0.5d
-			y: 3.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "2653AEA886B4F3CF"
-			rewards: [{
-				count: 8
-				id: "419B5B0DE07DA565"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "No shirt, no shoes, no service"
-			tasks: [{
-				id: "5FB70F4156D51D18"
-				item: {
-					Count: 1
-					id: "ad_astra:space_suit"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 2"
-			x: 0.5d
-			y: 4.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "5AAB10E67B85E3B1"
-			rewards: [{
-				count: 8
-				id: "2C6387CC47E8E815"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "Everyone's laughing until you put pants on"
-			tasks: [{
-				id: "2916E06B75A1F858"
-				item: {
-					Count: 1
-					id: "ad_astra:space_pants"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 3"
-			x: 1.0d
-			y: 5.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "2D1E5E64951C7EFB"
-			rewards: [{
-				count: 8
-				id: "44849FE738A4AF77"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "-0.5 stars because Omni-Man showed his feet"
-			tasks: [{
-				id: "0EF06A1525418ACF"
-				item: {
-					Count: 1
-					id: "ad_astra:space_boots"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 4"
-			x: 2.0d
-			y: 6.0d
+			x: 0.75d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -1740,6 +1541,7 @@
 				"13C87727AE1B10DA"
 				"6D52ADE672CA40EE"
 			]
+			hide_dependency_lines: true
 			id: "5BEA805F4E9F26F0"
 			subtitle: "You should have made this already."
 			tasks: [{
@@ -2068,8 +1870,8 @@
 				item: "gtceu:niobium_nitride_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.0d
+			x: 0.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -2110,7 +1912,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["69300B12EF8F4E2A"]
+			dependencies: [
+				"69300B12EF8F4E2A"
+				"3CE2A2F735D857F6"
+			]
 			hide_dependent_lines: true
 			id: "1B3A152821B0B2D2"
 			rewards: [{
@@ -2244,35 +2049,9 @@
 		}
 		{
 			dependencies: [
-				"47B86AAAB18C918E"
-				"1B3A152821B0B2D2"
+				"6164D33ACEB4E515"
+				"1DAB52504FD2C584"
 			]
-			id: "06664D37742C6F43"
-			rewards: [
-				{
-					id: "3E710CD4CAE15018"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "70525FFD890D8261"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "3FDB1F86B5F39BEB"
-				item: "voyagercore:smd_assembler"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6164D33ACEB4E515"]
 			id: "2FC046CA926EC302"
 			rewards: [
 				{
@@ -2294,8 +2073,8 @@
 				item: "gtceu:energetic_pearlic_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -8.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -2314,8 +2093,8 @@
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -9.0d
+			x: 3.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["27DE983E37D01A68"]
@@ -2325,8 +2104,8 @@
 				item: "industrialforegoing:mechanical_dirt"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -9.5d
+			x: 4.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4CFCDA131CC5888F"]
@@ -2347,8 +2126,8 @@
 				item: "industrialforegoing:mob_crusher"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -10.0d
+			x: 3.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["27DE983E37D01A68"]
@@ -2358,8 +2137,8 @@
 				item: "industrialforegoing:enchantment_factory"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -9.5d
+			x: 2.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["27DE983E37D01A68"]
@@ -2369,8 +2148,8 @@
 				item: "industrialforegoing:enchantment_extractor"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.5d
+			x: 2.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["27DE983E37D01A68"]
@@ -2380,8 +2159,8 @@
 				item: "industrialforegoing:enchantment_applicator"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -10.5d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["2BCF2E87DEF9B7B7"]
@@ -2429,6 +2208,62 @@
 			}]
 			x: 1.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["27DE983E37D01A68"]
+			id: "1253D7656F8BED96"
+			tasks: [{
+				id: "39B67F9F16AA9354"
+				item: "industrialforegoing:mob_duplicator"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5EBF23DF26D245F8"]
+			id: "76EC6508F7D01ED0"
+			tasks: [{
+				id: "42C21FD638A5DB0B"
+				item: "gtceu:hv_autoclave"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["76EC6508F7D01ED0"]
+			id: "229AADEA4EC8D22D"
+			tasks: [{
+				id: "2BFF12E983AC9B46"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DAB52504FD2C584"]
+			id: "57B0B0A0BE443100"
+			tasks: [{
+				id: "3AEFD96199B9AD8F"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["41578D04D4DD0F75"]
+			hide_dependency_lines: true
+			id: "4E9076620B19A87B"
+			tasks: [{
+				id: "0F95ACD09C94BF5B"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
 		}
 	]
 	title: "Chapter 3: High Voltage"

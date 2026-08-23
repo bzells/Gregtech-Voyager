@@ -80,6 +80,10 @@ const blast_furnace_triple = GTMaterialFlags.BLAST_FURNACE_CALCITE_TRIPLE
 const no_abs_recipe = GTMaterialFlags.DISABLE_ALLOY_BLAST
 const not_alloy = GTMaterialFlags.DISABLE_ALLOY_PROPERTY
 
+// Needed for Tool Properties?
+Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey');
+Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ToolProperty');
+
 // super conductor
 
 const voltageTable = {
@@ -528,6 +532,24 @@ register_dust("dilithium", [], "0xffa6e9", no_decomp, "0xffcff3")
 
 // component polymer
 register_fluid("component_polymer", "0xc9bd9b", ["1x epoxy", "2x carbon", "1x borosilicate_glass"], no_decomp)
+
+// IaF Ingots/Materials
+
+GTCEuStartupEvents.registry("gtceu:material", (event) => {
+    event.create("dragonsteel_fire")
+        .ingot()
+        .iconSet("metallic")
+        .color("0xf35b75") // "#f35b75"
+        .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
+        .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5).build())
+
+    event.create("dragonsteel_ice")
+        .ingot()
+        .iconSet("metallic")
+        .color("0x5baff3") // "#5baff3"
+        .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
+        .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5).build())
+})
 
 /*
     Materials are in-game items or fluids. They can be dusts, ingots, gems, fluids and all their derivatives.

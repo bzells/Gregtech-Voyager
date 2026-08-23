@@ -128,7 +128,24 @@ ServerEvents.recipes((event) => {
     ebf_recipe_ingot("energetic_alloy", 20 * 120, 120, 2700, 'gtceu:oxygen', false)
     ebf_recipe_hot_ingot("energetic_pearlic_alloy", 20 * 120, 480, 3600, 'gtceu:oxygen', false)
 
-    
+    event.recipes.gtceu
+        .electric_blast_furnace("kubejs:netherite")
+        .itemInputs("gtceu:netherite_dust")
+        .itemOutputs("minecraft:netherite_ingot")
+        .duration(20 * 120) 
+        .EUt(480)
+        .circuit(1)
+        .blastFurnaceTemp(2700)
+
+    event.recipes.gtceu
+        .electric_blast_furnace("kubejs:netherite_nitrogen")
+        .itemInputs("gtceu:netherite_dust")
+        .itemOutputs("minecraft:netherite_ingot")
+        .inputFluids("gtceu:nitrogen 1000")
+        .duration(20 * 120 * .66) 
+        .EUt(480)
+        .circuit(2)
+        .blastFurnaceTemp(2700)
 
     event.recipes.gtceu
         .electric_blast_furnace("kubejs:everlasting_steak_ebf")

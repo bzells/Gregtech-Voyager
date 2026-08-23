@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0DE67CA0A8DD130A"]
 			id: "7A3CD112368FA9B2"
 			tasks: [{
 				id: "06C2F4EF1900E7FB"
@@ -19,10 +20,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"58BF847DADB89C2E"
-				"185E7D62706F17F6"
-			]
+			dependencies: ["185E7D62706F17F6"]
 			id: "47732A84A5E27361"
 			tasks: [{
 				id: "36BEA7E6F730BC8B"
@@ -33,30 +31,15 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["0DE67CA0A8DD130A"]
 			id: "35A76EF5228154C7"
 			tasks: [{
 				id: "74E07289626CC79F"
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -0.5d
-		}
-		{
-			dependencies: [
-				"35A76EF5228154C7"
-				"1B77A654DE3A1013"
-				"245D7901EBA2C1ED"
-			]
-			id: "58BF847DADB89C2E"
-			tasks: [{
-				count: 16L
-				id: "419B6E13844823AC"
-				item: { Count: 16, id: "gtceu:hssg_coil_block" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 1.5d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A3CD112368FA9B2"]
@@ -122,7 +105,7 @@
 				item: "kubejs:martian_scrap"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 4.0d
 		}
 		{
@@ -135,11 +118,14 @@
 				type: "item"
 			}]
 			title: "Martian Scrap Recovery"
-			x: 5.5d
-			y: 8.0d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6EE539D525D3D685"]
+			dependencies: [
+				"6EE539D525D3D685"
+				"35A76EF5228154C7"
+			]
 			description: ["&e&b"]
 			id: "50A265E32ADDD82E"
 			tasks: [{
@@ -147,15 +133,15 @@
 				item: "gtceu:titanite_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.0d
+			x: -0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
-				"58BF847DADB89C2E"
 				"63B247C41E648F01"
 				"0B188F4A4A842A60"
 				"2C22C31B13F71CD0"
+				"35A76EF5228154C7"
 			]
 			id: "3FB4F231181DD428"
 			size: 2.0d
@@ -204,8 +190,8 @@
 				item: "kubejs:titanichite_bud"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["78BD9D87CBFA6428"]
@@ -215,8 +201,8 @@
 				item: "gtceu:lunarium_growth_slurry_bucket"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5BC888D3C0918F81"]
@@ -226,8 +212,8 @@
 				item: "gtceu:raw_titanichite"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 6.0d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["04BD5101521DF8BC"]
@@ -237,8 +223,8 @@
 				item: "gtceu:lunarium_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.5d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0075D9B5562B916C"]
@@ -248,8 +234,8 @@
 				item: "kubejs:shredded_martian_scrap"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 8.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			id: "1D5E8B2CAF0DF4F6"
@@ -269,31 +255,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["47732A84A5E27361"]
-			description: [
-				"With &dostrum&r, you can now craft the &n&l&6Alloy Blast Smelter&r&r&r."
-				""
-				"This machine is needed in order to make the specialized alloys for making &9IV&r tier multiblocks."
-				""
-				"These multiblocks can use &lparallel control hatches&r, increasing their speed exponentially"
-			]
-			id: "11ED1C714EE1EB79"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "0270706DF4320E46"
-				item: "gtceu:alloy_blast_smelter"
-				type: "item"
-			}]
-			title: "Better Multiblocks"
-			x: 5.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"50A265E32ADDD82E"
-				"11ED1C714EE1EB79"
-			]
+			dependencies: ["50A265E32ADDD82E"]
 			hide_dependency_lines: true
 			id: "5A6CCE713C1D1143"
 			tasks: [{
@@ -411,7 +373,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["58BF847DADB89C2E"]
 			hide_dependency_lines: true
 			id: "22B362A5FB14A87D"
 			tasks: [{
@@ -507,8 +468,8 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			x: 2.25d
-			y: 10.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			id: "4D9DF7430F006DC1"
@@ -605,7 +566,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["58BF847DADB89C2E"]
 			hide_dependency_lines: true
 			id: "082E8F0976BDC50C"
 			tasks: [{
@@ -617,7 +577,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["58BF847DADB89C2E"]
 			hide_dependency_lines: true
 			id: "3DD3B066C45A77B5"
 			tasks: [{
@@ -629,17 +588,17 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["0DE67CA0A8DD130A"]
 			id: "2C22C31B13F71CD0"
 			tasks: [{
 				id: "2F421AFF28D2C730"
 				item: "gtceu:graphene_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "1983345351D79A2C"
 			tasks: [{
 				id: "7838FCBC80771C3B"
@@ -650,7 +609,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "0F46C9C904761DE0"
 			tasks: [{
 				id: "5A3ED0F9381CF84B"
@@ -661,7 +619,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "1CF7A5737E20A75A"
 			tasks: [{
 				id: "3EFC9F244650CF56"
@@ -672,7 +629,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "2CA444FC1101E359"
 			tasks: [{
 				id: "6F405079A6835CDD"
@@ -683,7 +639,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "538311143E810360"
 			tasks: [{
 				id: "1108CA585AF9D0EF"
@@ -694,7 +649,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "0721F040EF0BABBC"
 			tasks: [{
 				id: "2E0D50DF647BC789"
@@ -705,10 +659,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"11ED1C714EE1EB79"
-				"51E5DD3A4B30CF75"
-			]
+			dependencies: ["51E5DD3A4B30CF75"]
 			id: "19473E74C4EA8908"
 			tasks: [{
 				id: "17369DEA35D65AA7"
@@ -719,7 +670,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "7453F685657AEA21"
 			tasks: [{
 				id: "2D44C6B293DE1D8D"
@@ -730,7 +680,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "37C9985E0E148504"
 			tasks: [{
 				id: "2C0153674F5EC865"
@@ -741,7 +690,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "448F2E25C98FE3AA"
 			tasks: [{
 				id: "5DBF3651FE6725EE"
@@ -752,7 +700,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "4B521248EBF32858"
 			tasks: [{
 				id: "722DC5B03F1CEE04"
@@ -763,7 +710,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "73937BE0B3BAD60C"
 			tasks: [{
 				id: "2F0BA9CE707F0C71"
@@ -774,7 +720,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "40F4F86D313CE00D"
 			tasks: [{
 				id: "178FD1FC03C7E98B"
@@ -785,7 +730,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "79744A2E61069D82"
 			tasks: [{
 				id: "6748FFC8BE085BD0"
@@ -796,7 +740,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "7DF7E3987B51243C"
 			tasks: [{
 				id: "740FE1145463F679"
@@ -807,7 +750,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "4AFA44A848DABF57"
 			tasks: [{
 				id: "610BCD57F8E828BE"
@@ -818,7 +760,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "632A9956CDFD5CBD"
 			tasks: [{
 				id: "0D4EAB4126A96B37"
@@ -829,7 +770,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "371C25A1A8CEF738"
 			tasks: [{
 				id: "06AEEAFDF5C50383"
@@ -840,7 +780,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "54B228457660A666"
 			tasks: [{
 				id: "0D1217412206CD37"
@@ -851,7 +790,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["11ED1C714EE1EB79"]
 			id: "3917D2C387784C35"
 			tasks: [{
 				id: "5251014FDB5EBFC0"
@@ -1038,60 +976,6 @@
 		}
 		{
 			dependencies: [
-				"3FB4F231181DD428"
-				"2475AF86E29B26F3"
-				"50A265E32ADDD82E"
-				"7764E1FF769BDCB6"
-				"56E64E745168F87B"
-			]
-			description: [
-				"The &6Magmatic Foundry&r is your next tier of EBF. This is going to be super useful for on-demand blasting."
-				""
-				""
-				"It has a normal &eEBF Overclocks&r, but also &l&6Heat Boosting&r."
-				""
-				"For more information about modifiers, go to the &nModifiers&r tab in your questbook. It will also say on the machine controller."
-				""
-				"The description under the &6Magmatic Foundry&r describes &l&6heat boosting."
-			]
-			hide_dependency_lines: true
-			id: "319C5A7733086A0D"
-			shape: "gear"
-			size: 2.0d
-			subtitle: "To meet all of your autocrafting needs"
-			tasks: [
-				{
-					id: "37CF9306E4C3DB78"
-					item: "voyagercore:magmatic_foundry"
-					type: "item"
-				}
-				{
-					count: 35L
-					id: "4C2047B1FA47810F"
-					item: { Count: 35, id: "voyagercore:foundry_casing" }
-					type: "item"
-				}
-			]
-			title: "Better Blasting"
-			x: 3.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["1EA011566D0AF90B"]
-			hide_dependency_lines: true
-			id: "09D0717AD16E84FB"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "3E111D2B92B17BA4"
-				item: "gtceu:iv_large_miner"
-				type: "item"
-			}]
-			x: -9.75d
-			y: 5.25d
-		}
-		{
-			dependencies: [
 				"35A76EF5228154C7"
 				"1EA011566D0AF90B"
 			]
@@ -1112,10 +996,6 @@
 				"2597FEAE670B7E8C"
 				"0BAE4AAE70DB71F2"
 				"0DC7B262CFD55FB5"
-				"4DDA4D6B442E88B9"
-				"7B3081714D2F0978"
-				"49B15AD0941BEE9F"
-				"6A1DDF4D3C428FFD"
 			]
 			description: ["Congratulations! You have reached the end of &d0.4a.pb Gregtech: Voyager!&r Stay updated on future pack updates in the discord!"]
 			id: "57273F946436DC4C"
@@ -1266,8 +1146,8 @@
 				}
 			]
 			title: "Martian Sand Processing"
-			x: 3.5d
-			y: 10.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1280,7 +1160,7 @@
 				item: "gtceu:titanex-879-htb_ingot"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.0d
 			y: 10.0d
 		}
 		{
@@ -1292,13 +1172,13 @@
 				item: "gtceu:radiation_chamber"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"6EE539D525D3D685"
-				"11ED1C714EE1EB79"
+				"10BB04C7B18C512D"
 			]
 			id: "5417BBFB6E67273E"
 			tasks: [{
@@ -1306,11 +1186,14 @@
 				item: "gtceu:titanex-594-hta_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 6.0d
+			x: 7.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["014935D33AD9697A"]
+			dependencies: [
+				"014935D33AD9697A"
+				"31C79E799A0256B2"
+			]
 			id: "17B8AC9F71D82B41"
 			subtitle: "The ultimate alloying assistant"
 			tasks: [{
@@ -1320,7 +1203,7 @@
 			}]
 			title: "High-Temp Binding Agent S"
 			x: 6.0d
-			y: 11.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["48A67162760139FC"]
@@ -1346,8 +1229,8 @@
 				item: "voyagercore:pyrotheum_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 11.5d
+			x: 3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1376,8 +1259,8 @@
 				item: "gtceu:aluminex_202_a_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 14.0d
+			x: 6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1397,46 +1280,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"3FB4F231181DD428"
-				"50A265E32ADDD82E"
-				"7764E1FF769BDCB6"
-				"56E64E745168F87B"
-				"3AC668253B538B4C"
-			]
-			description: [
-				"The &bEverfrost Chiller&r is your next tier of Vacuum Freezer. This is going to be super useful for on-demand blasting/cooling."
-				""
-				""
-				"It has a normal &eOverclocks&r, but also &l&6Basic Boosting&r."
-				""
-				"For more information about modifiers, go to the &nModifiers&r tab in your questbook. It will also say on the machine controller."
-				""
-				"The description under the &bEverfrost Chiller&r describes &l&6basic boosting."
-			]
-			hide_dependency_lines: true
-			id: "28EC5A1E23929B2F"
-			shape: "gear"
-			size: 2.0d
-			subtitle: "To meet all of your autocrafting needs"
-			tasks: [
-				{
-					id: "4A8DC4FA7082D283"
-					item: "voyagercore:everfrost_chiller"
-					type: "item"
-				}
-				{
-					count: 35L
-					id: "3DA24CA3AF0A7698"
-					item: "voyagercore:frost_conducting_casing"
-					type: "item"
-				}
-			]
-			title: "Better Freezing"
-			x: 5.0d
-			y: 16.0d
-		}
-		{
 			dependencies: ["014935D33AD9697A"]
 			id: "3AC668253B538B4C"
 			tasks: [{
@@ -1444,26 +1287,10 @@
 				item: "voyagercore:cryotheum_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 11.5d
+			x: 4.5d
+			y: 10.0d
 		}
 		{
-			dependencies: [
-				"50A265E32ADDD82E"
-				"3FB4F231181DD428"
-			]
-			hide_dependency_lines: true
-			id: "4A3F739F237D619A"
-			tasks: [{
-				id: "1D5C6AFA2DE3C1C3"
-				item: "kubejs:titanite_coil_block"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["1588F681D9664CFC"]
 			hide_dependency_lines: true
 			id: "5336212D1C3B588F"
 			tasks: [{
@@ -1476,7 +1303,6 @@
 		}
 		{
 			dependencies: [
-				"4A3F739F237D619A"
 				"48A67162760139FC"
 				"5417BBFB6E67273E"
 			]
@@ -1489,8 +1315,8 @@
 				item: "gtceu:titanex-901-htc_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 6.0d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1503,8 +1329,8 @@
 				item: "gtceu:martian-composite_ingot"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 12.0d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			description: ["If you haven't already, you may want to set up an array of multiple ABS's. Some of the chains get long for titanex, so it's a good idea to pipeline it as much as possible."]
@@ -1527,70 +1353,6 @@
 			}]
 			x: 1.5d
 			y: 0.5d
-		}
-		{
-			id: "4DDA4D6B442E88B9"
-			tasks: [{
-				id: "412327C7A2F0A7E1"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -11.5d
-			y: 11.5d
-		}
-		{
-			id: "7B3081714D2F0978"
-			tasks: [{
-				id: "43469E44DD919568"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_suit"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -11.0d
-			y: 12.5d
-		}
-		{
-			id: "49B15AD0941BEE9F"
-			tasks: [{
-				id: "40BD0D558050D0FC"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_pants"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -10.0d
-			y: 13.0d
-		}
-		{
-			id: "6A1DDF4D3C428FFD"
-			tasks: [{
-				id: "5CA73673F873E13D"
-				item: {
-					Count: 1
-					id: "ad_astra:space_boots"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -9.0d
-			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1638,22 +1400,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"168C4348743D0603"
-				"267BE42AF6304F3E"
-			]
-			id: "1588F681D9664CFC"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "0033F68170483840"
-				item: "voyagercore:chemical_plant"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 6.0d
-		}
-		{
 			id: "4D85363D39882AC2"
 			subtitle: "Not yet implemented"
 			tasks: [{
@@ -1665,7 +1411,6 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["1588F681D9664CFC"]
 			hide_dependency_lines: true
 			id: "5DE49F90D38DDA01"
 			tasks: [{
