@@ -46,8 +46,8 @@ ServerEvents.recipes((event) => {
     function make_processor(name, circuit_tier, bolt_mat) {
         event.recipes.gtceu
             .circuit_assembler("kubejs:" + name)
-            .itemInputs("2x ae2:printed_" + name, "1x #gtceu:circuits/" + circuit_tier, "4x gtceu:ram_chip", "4x gtceu:" + bolt_mat + "_bolt", "ae2:printed_silicon")
-            .itemOutputs("2x ae2:" + name)
+            .itemInputs("2x ae2:printed_" + name, "1x #gtceu:circuits/" + circuit_tier, "4x gtceu:ram_chip", "2x gtceu:" + bolt_mat + "_bolt", "ae2:printed_silicon")
+            .itemOutputs("4x ae2:" + name)
             .inputFluids("#forge:soldering_alloy 144")
             .duration(20 * 10)
             .EUt(480)

@@ -18,7 +18,20 @@
 				""
 				"If you are new to GregTech, I recommend reading some of the other information provided on this quest chapter."
 			]
-			icon: "kubejs:mv_ebf_helper"
+			icon: {
+				Count: 1
+				id: "voyagercore:hungry_paramount_helper"
+				tag: {
+					paramount_helper_data: {
+						current_xp: 0L
+						eat_time_mod: 1.0f
+						eut_gen_mod: 1.0f
+						level: 1
+						level_up_xp: 256L
+						max_module_count: 3
+					}
+				}
+			}
 			id: "2BFDEF40D7FE786D"
 			size: 2.0d
 			tasks: [{
@@ -155,7 +168,7 @@
 			y: 3.0d
 		}
 		{
-			icon: "kubejs:basic_chemist_helper"
+			icon: "voyagercore:ev_specialized_helper"
 			id: "51B563F3401870A1"
 			size: 1.5d
 			tasks: [{

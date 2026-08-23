@@ -100,7 +100,7 @@
 		{
 			dependencies: [
 				"4CA574760EF63553"
-				"1AA68223242ECD8C"
+				"09DCF85E9679FFE3"
 			]
 			description: ["Steam is produced using boilers. These allow you to.. boil water. There are three types of boilers: &l&0the solid boiler&r, which burns solid fuels, like charcoal and coal coal, &l&1the liquid boiler&r, which burns liquids like creosote and lava, and &lthe solar boiler&r, which uses the &l&o&epower of the sun&r to boil water."]
 			id: "694D21DD359391F9"
@@ -129,48 +129,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["22A38B844EA1BE5B"]
-			description: ["You need water for all of your steam machines. This multiblock, thankfully, will make water for free!"]
-			icon: "gtceu:primitive_pump"
-			id: "1AA68223242ECD8C"
-			rewards: [{
-				count: 2
-				id: "714F0ACE91BC1A79"
-				item: "kubejs:ulv_loot_bag"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "Sadly no ULV pump"
-			tasks: [
-				{
-					id: "4672BC6EAAEC085F"
-					item: "gtceu:primitive_pump"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "38694340DABE66E7"
-					item: { Count: 10, id: "gtceu:treated_wood_frame" }
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "508B4C8CCCBF8213"
-					item: { Count: 10, id: "gtceu:pump_deck" }
-					type: "item"
-				}
-				{
-					id: "61E9FA13ACD1324C"
-					item: "gtceu:pump_hatch"
-					type: "item"
-				}
-			]
-			x: -26.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1AA68223242ECD8C"]
 			description: [
 				"When it comes to moving fluids, you need to use Gregtech pipes. These have various variables to them, but the most important right now are the &l&cheat capacity&r and the &l&o&bfluid transfer rate.&r The pipe you should for water should be treated wood, and use bronze for the steam for now."
 				""
@@ -183,8 +141,8 @@
 				title: "Pipes?"
 				type: "checkmark"
 			}]
-			x: -27.5d
-			y: 3.5d
+			x: -25.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["694D21DD359391F9"]
@@ -700,6 +658,27 @@
 								HarvestLevel: 2
 								MaxDamage: 383
 								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73F49424FDCF9D57"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 5
+								MaxDamage: 383
 							}
 							HideFlags: 2
 						}

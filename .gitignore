@@ -7,6 +7,8 @@ gtceu/
 
 logs/
 
+*chesttracker/
+
 local/
 
 saves/
@@ -70,3 +72,5 @@ chesttracker/
 
 /config/spark/tmp
 config/aether-client.toml
+/chesttracker
+/chesttracker

@@ -29,22 +29,6 @@ StartupEvents.registry("item", (event) => {
             .tag("kubejs:helpers")
     }
 
-    function register_tiered_helper_item(tier, name) {
-        const formattedName = name.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase())
-        event
-            .create(tier + "_" + name + "_helper")
-            .texture("kubejs:item/helpers/" + tier + "_" + name + "_helper")
-            .maxStackSize(4)
-            .rarity("uncommon")
-            .displayName(tier.toUpperCase() + " " + formattedName + " Helper")
-            .tag("forge:helpers")
-    }
-
-    tiers.forEach((tier) => register_tiered_helper_item(tier, "technician"))
-    tiers.forEach((tier) => register_tiered_helper_item(tier, "ebf"))
-
-    helpers.forEach((name) => register_helper_item(name))
-
     function register_universal_coin(tier) {
         event
             .create(tier + "_universal_coin")
@@ -262,6 +246,7 @@ StartupEvents.registry("item", (event) => {
     event.create("baking_chocolate").texture("kubejs:item/baking_chocolate").displayName("Baking Chocolate")
     event.create("baking_flour").texture("kubejs:item/baking_flour").displayName("Baking Flour")
     event.create("cacao_powder").texture("kubejs:item/cacao_powder").displayName("Cacao Powder")
+    event.create("raw_cacao_powder").texture("kubejs:item/raw_cacao_powder").displayName("Raw Cacao Powder")
     event.create("butter").texture("kubejs:item/butter").displayName("Butter")
     event.create("roasted_cacao_beans").texture("kubejs:item/roasted_cacao_beans").displayName("Roasted Cacao Beans")
     event.create("cookie_dough").texture("kubejs:item/cookie_dough").displayName("Cookie Dough")

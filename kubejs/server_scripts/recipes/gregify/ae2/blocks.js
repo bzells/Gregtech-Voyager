@@ -231,10 +231,21 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:molecular_assembler")
-        .itemInputs("gtceu:ev_assembler", "2x ae2:engineering_processor", "ae2:formation_core", "ae2:annihilation_core")
+        .itemInputs("gtceu:ev_machine_hull", "2x ae2:engineering_processor", "ae2:formation_core", "gtceu:ev_robot_arm")
         .itemOutputs("ae2:molecular_assembler")
         .duration(300)
         .EUt(1980)
+
+    event.shaped(Item.of("ae2:molecular_assembler", 1), 
+    [   "CEC", 
+        "BAB", 
+        "CDC"   ], {
+        A: "gtceu:ev_machine_hull",
+        B: "ae2:engineering_processor",
+        C: "gtceu:laminated_glass",
+        D: "ae2:formation_core",
+        E: "gtceu:ev_robot_arm"
+    })
 
     // @ts-ignore
     event.shaped(Item.of("ae2:crafting_unit", 1), ["ABA", "BCB", "ABA"], {

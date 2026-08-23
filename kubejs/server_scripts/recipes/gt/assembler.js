@@ -33,59 +33,7 @@ ServerEvents.recipes((event) => {
         .EUt(1980)
 
     // diodes
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_fcw_wafer")
-        .itemInputs("4x gtceu:fine_copper_wire", "1x gtceu:silicon_wafer", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("4x gtceu:diode")
-        .inputFluids("#forge:polyethylene 72")
-        .duration(350)
-        .EUt(30)
 
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_fcw_gala")
-        .itemInputs("4x gtceu:fine_copper_wire", "1x gtceu:small_gallium_arsenide_dust", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("2x gtceu:diode")
-        .inputFluids("#forge:glass 72")
-        .duration(350)
-        .EUt(30)
-
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_fcw_galp")
-        .itemInputs("4x gtceu:fine_copper_wire", "1x gtceu:small_gallium_arsenide_dust", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("3x gtceu:diode")
-        .inputFluids("#forge:polyethylene 72")
-        .duration(350)
-        .EUt(30)
-
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_facw_gala_g")
-        .itemInputs("4x gtceu:fine_annealed_copper_wire", "1x gtceu:small_gallium_arsenide_dust", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("3x gtceu:diode")
-        .inputFluids("#forge:glass 72")
-        .duration(350)
-        .EUt(30)
-
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_facw_gala_p")
-        .itemInputs("4x gtceu:fine_annealed_copper_wire", "1x gtceu:small_gallium_arsenide_dust", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("6x gtceu:diode")
-        .inputFluids("#forge:polyethylene 72")
-        .duration(350)
-        .EUt(30)
-
-    event.recipes.gtceu
-        .assembler("kubejs:diode_helper_facw_gala_wafer")
-        .itemInputs("4x gtceu:fine_annealed_copper_wire", "1x gtceu:silicon_wafer", "2x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:lv_technician_helper")
-        .itemOutputs("8x gtceu:diode")
-        .inputFluids("#forge:polyethylene 72")
-        .duration(350)
-        .EUt(30)
 
     event.recipes.gtceu
         .assembler("kubejs:diode_fcw_wafer")
@@ -145,14 +93,6 @@ ServerEvents.recipes((event) => {
         .duration(160)
         .EUt(120)
 
-    event.recipes.gtceu
-        .assembler("kubejs:transistor_helper")
-        .itemInputs("4x gtceu:fine_tin_wire", "1x gtceu:silicon_plate", "4x gtceu:metallic_mica_foil")
-        .notConsumable("kubejs:mv_technician_helper")
-        .itemOutputs("6x gtceu:transistor")
-        .inputFluids("#forge:polyethylene 144")
-        .duration(120)
-        .EUt(80)
 
     // smds
 

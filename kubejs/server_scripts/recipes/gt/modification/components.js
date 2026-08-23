@@ -250,5 +250,8 @@ ServerEvents.recipes((event) => {
 
     components.forEach((component) => event.replaceInput({ output: `gtceu:luv_${component}` }, Fluid.of("gtceu:lubricant"), Fluid.of("voyagercore:high_stress_lubricant")))
 
+    event.replaceInput({output: "gtceu:ev_electric_motor"},
+        "gtceu:kanthal_double_wire", "gtceu:kanthal_quadruple_wire"
+    )
     // tiers.forEach(tier => removeTieredComponents(tier));
 })

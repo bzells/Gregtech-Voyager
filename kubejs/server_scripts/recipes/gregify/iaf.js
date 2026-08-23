@@ -31,6 +31,8 @@ ServerEvents.recipes((event) => {
     event.remove({input: iaf("dragonforge_fire_brick")})
     event.remove({input: iaf("dragonforge_ice_brick")})
 
+    event.remove({output: iaf("dragonbone_arrow")})
+
     const iaf_bricks = [iaf("dragonforge_lightning_brick"), iaf("dragonforge_fire_brick"), iaf("dragonforge_ice_brick")]
 
     const dragon_types = ["ice", "fire", "lightning"]
@@ -65,6 +67,10 @@ ServerEvents.recipes((event) => {
             )
         }
     )
+
+    global.recipe_assembler_with_circuit_num(event, `8x ${iaf("dragonbone_arrow")}`, 
+            [iaf("dragonbone"), iaf("wither_shard"), '1x gtceu:black_steel_rod', '#forge:nuggets/netherite'], [],
+             480, 10, 1)
 
 
 
