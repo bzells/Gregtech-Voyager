@@ -296,6 +296,20 @@
 				"2CB852566D968704"
 			]
 			id: "15CAB95DCB892E5A"
+			rewards: [{
+				id: "12E7DCBF637D92A5"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:space_breathing"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "A good option for flight"
 			tasks: [{
 				id: "5CBB45C688A79DCD"

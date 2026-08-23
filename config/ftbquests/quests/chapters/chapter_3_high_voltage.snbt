@@ -1310,11 +1310,8 @@
 			dependencies: [
 				"67479BD12C126B51"
 				"7A11C3062B307765"
-				"52773A6748E751F1"
-				"2653AEA886B4F3CF"
-				"5AAB10E67B85E3B1"
-				"2D1E5E64951C7EFB"
 			]
+			description: ["You must make a space suit, or a nano suit + Space Breathing enchantment to survive on other planets"]
 			id: "538B8A7C45672E07"
 			rewards: [
 				{
@@ -1365,109 +1362,8 @@
 				item: "ad_astra:launch_pad"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 6.25d
-		}
-		{
-			hide_dependency_lines: true
-			id: "52773A6748E751F1"
-			rewards: [{
-				count: 8
-				id: "24655D5A4AFCF19D"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "You can finally finish your olimar cosplay"
-			tasks: [{
-				id: "03F6C7DC3FC64457"
-				item: {
-					Count: 1
-					id: "ad_astra:space_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 1"
-			x: 0.5d
-			y: 3.5d
-		}
-		{
-			description: [""]
-			hide_dependency_lines: true
-			id: "2653AEA886B4F3CF"
-			rewards: [{
-				count: 8
-				id: "419B5B0DE07DA565"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "No shirt, no shoes, no service"
-			tasks: [{
-				id: "5FB70F4156D51D18"
-				item: {
-					Count: 1
-					id: "ad_astra:space_suit"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 2"
-			x: 0.5d
-			y: 4.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "5AAB10E67B85E3B1"
-			rewards: [{
-				count: 8
-				id: "2C6387CC47E8E815"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "Everyone's laughing until you put pants on"
-			tasks: [{
-				id: "2916E06B75A1F858"
-				item: {
-					Count: 1
-					id: "ad_astra:space_pants"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 3"
-			x: 1.0d
-			y: 5.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "2D1E5E64951C7EFB"
-			rewards: [{
-				count: 8
-				id: "44849FE738A4AF77"
-				item: "kubejs:hv_tech_coin"
-				type: "item"
-			}]
-			subtitle: "-0.5 stars because Omni-Man showed his feet"
-			tasks: [{
-				id: "0EF06A1525418ACF"
-				item: {
-					Count: 1
-					id: "ad_astra:space_boots"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Swagged out 4"
-			x: 2.0d
-			y: 6.0d
+			x: 0.75d
+			y: 5.25d
 		}
 		{
 			dependencies: [
