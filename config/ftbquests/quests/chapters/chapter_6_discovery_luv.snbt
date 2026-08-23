@@ -13,6 +13,7 @@
 			id: "63DB1FDEEDD33BD3"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "Some mice are on this planet"
 			tasks: [{
 				dimension: "ad_astra:venus"
 				icon: "ad_astra:venus_globe"
@@ -112,6 +113,7 @@
 			dependencies: ["26FF13E27F3A8265"]
 			id: "38DA5B714A573E78"
 			size: 1.5d
+			subtitle: "And award to the lamest hull material goes too..."
 			tasks: [{
 				id: "2731C796DF5117A0"
 				item: "gtceu:luv_machine_hull"
@@ -143,6 +145,7 @@
 				"02985E1D7E8A2570"
 			]
 			id: "67F739703BB20F3B"
+			subtitle: "MY EYES"
 			tasks: [{
 				id: "01C39144564C4CE5"
 				item: "voyagercore:nether_star_beam"
@@ -158,6 +161,7 @@
 				"02985E1D7E8A2570"
 			]
 			id: "6A8DF50092428AE0"
+			subtitle: "Don't point this at yourself please"
 			tasks: [{
 				id: "40C6FD89D4448D1A"
 				item: "kubejs:light_refractor"
@@ -198,6 +202,7 @@
 		{
 			dependencies: ["7D121082AC61755B"]
 			id: "02985E1D7E8A2570"
+			subtitle: "om nom nom"
 			tasks: [{
 				id: "50078FDB0BC3EFCA"
 				item: "gtceu:calorite_ingot"
@@ -208,6 +213,7 @@
 		}
 		{
 			id: "7D121082AC61755B"
+			subtitle: "\"processing\" its 1 centrifuge recipe cmon"
 			tasks: [{
 				id: "6F181EACE6567B51"
 				item: "gtceu:venus_sand_dust"
@@ -256,6 +262,7 @@
 			]
 			hide_dependency_lines: true
 			id: "5390BED72C58EECD"
+			subtitle: "make sure you arent sitting in a metal chair"
 			tasks: [{
 				id: "794F94FE39A1F5D5"
 				item: "kubejs:atomic_magnet"
@@ -283,6 +290,7 @@
 			]
 			hide_dependency_lines: true
 			id: "3D9FF11995473371"
+			subtitle: "im pretty sure this laser can cut through like anything"
 			tasks: [{
 				id: "0A1AB9DE4BDE1E98"
 				item: "gtceu:luv_laser_engraver"
@@ -294,6 +302,8 @@
 		{
 			dependencies: ["0D398D8FE47F9B67"]
 			id: "7C26CF7C1A4D467A"
+			size: 1.2d
+			subtitle: "Time for some LuV assembly"
 			tasks: [{
 				id: "6C01DEDD9B802BBE"
 				item: "gtceu:hsss_ingot"
@@ -306,8 +316,10 @@
 			dependencies: [
 				"7C26CF7C1A4D467A"
 				"436220F63DCFFB5D"
+				"02C6DE529687AD0D"
 			]
 			id: "4B6F10C03DB9370B"
+			subtitle: "Requires rounds, rings, and all sorts of things!"
 			tasks: [{
 				id: "09A5B6995D89E46C"
 				item: "gtceu:luv_electric_motor"
@@ -352,6 +364,7 @@
 		{
 			dependencies: ["328C412386210DB5"]
 			id: "4207A8C9C2E62EAA"
+			subtitle: "who uses this again?"
 			tasks: [{
 				id: "2FA46254E4037FBA"
 				item: "gtceu:luv_fluid_regulator"
@@ -479,6 +492,7 @@
 				"4391A585C3AFAE5C"
 			]
 			id: "114B8AE23CC5C757"
+			subtitle: "Hello? Hello, hello?"
 			tasks: [{
 				id: "295C48F73419E976"
 				item: "kubejs:dial_device"
@@ -566,6 +580,7 @@
 		{
 			dependencies: ["34989E9CB01E0E2C"]
 			id: "3E1CAA91D88C6287"
+			subtitle: "we definetly could have figured out a better name"
 			tasks: [{
 				id: "199F71080F331504"
 				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
@@ -579,6 +594,7 @@
 			id: "2EB60C9BC9077678"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "Big kabooms begin"
 			tasks: [{
 				id: "5F1D9E4C870BE962"
 				item: "gtceu:luv_fusion_reactor"
@@ -602,6 +618,7 @@
 		{
 			dependencies: ["36921E139EF0945F"]
 			id: "3249E6B69D7105B9"
+			subtitle: "this recipe is evil"
 			tasks: [{
 				id: "1167D6506226E09B"
 				item: "voyagercore:crystal_calculated_beam"
@@ -624,6 +641,7 @@
 		{
 			dependencies: ["3B52572CC993D5DD"]
 			id: "768AC7BAAF1EBC78"
+			subtitle: "you are the simplest processing \"line\" ever"
 			tasks: [{
 				id: "2EF21228CB5379BD"
 				item: "gtceu:raw_crystal_chip"
@@ -635,6 +653,7 @@
 		{
 			dependencies: ["768AC7BAAF1EBC78"]
 			id: "29F0DAAB23530050"
+			subtitle: "like its just 2 machines what are we doing"
 			tasks: [{
 				id: "5FC0D99BD3BBB8EA"
 				item: "gtceu:raw_crystal_chip_parts"
@@ -646,6 +665,7 @@
 		{
 			dependencies: ["768AC7BAAF1EBC78"]
 			id: "5C2392FBF5A26A24"
+			subtitle: "\"oh wow a new lens\" like it adds anything useful"
 			tasks: [{
 				id: "2D91094A052A44A4"
 				item: "gtceu:crystal_cpu"
@@ -657,6 +677,7 @@
 		{
 			dependencies: ["5C2392FBF5A26A24"]
 			id: "36921E139EF0945F"
+			subtitle: "oh cool now its blue"
 			tasks: [{
 				id: "4187A60E0F2EC290"
 				item: "gtceu:crystal_soc"
@@ -668,6 +689,7 @@
 		{
 			dependencies: ["5C2392FBF5A26A24"]
 			id: "26E20EE18046086C"
+			subtitle: "the most boring circuit line up imo"
 			tasks: [{
 				id: "6B8900E6B0B5D845"
 				item: "gtceu:crystal_processor"
@@ -679,6 +701,7 @@
 		{
 			dependencies: ["26E20EE18046086C"]
 			id: "21BDB88E3DD4D2FF"
+			subtitle: "like whats even unique about it"
 			tasks: [{
 				id: "5181E52E2DF6B92F"
 				item: "gtceu:crystal_processor_assembly"
@@ -690,6 +713,7 @@
 		{
 			dependencies: ["21BDB88E3DD4D2FF"]
 			id: "5E20455E8A5CD0C5"
+			subtitle: "i will keep hating this circuit line forever"
 			tasks: [{
 				id: "0C8FD211CAEF58B9"
 				item: "gtceu:crystal_processor_computer"
@@ -787,8 +811,8 @@
 				item: "kubejs:small_moon_rock"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 15.5d
+			x: 6.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["25E2B996AEED309C"]
@@ -954,6 +978,7 @@
 		{
 			dependencies: ["16CDE6B5FB44B165"]
 			id: "215F3C19BFBA7821"
+			subtitle: "ZPM in my LuV?"
 			tasks: [{
 				id: "17C51FB219D39DCB"
 				item: "voyagercore:zpm_crushing_wheel"
@@ -982,6 +1007,7 @@
 				"215F3C19BFBA7821"
 			]
 			id: "7BDEAC022187B0FA"
+			subtitle: "What is that ore name- why does it have uranium?"
 			tasks: [{
 				id: "52EEAD0C0BC9C72E"
 				item: "gtceu:crushed_xastinite_ore"
@@ -994,6 +1020,7 @@
 			dependencies: ["34A515499C116F07"]
 			id: "76549DE2918527D3"
 			size: 1.5d
+			subtitle: "\"bluponium\" is a crazy name"
 			tasks: [
 				{
 					id: "41690B3FD5D16718"

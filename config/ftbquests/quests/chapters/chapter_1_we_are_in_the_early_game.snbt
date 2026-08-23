@@ -317,7 +317,7 @@
 		}
 		{
 			dependencies: ["2226F7D45DBFEDED"]
-			description: ["Unlinke the &lCRINGE&r, &lSTINKY&r, &lNOT AWESOMESAUCE&r tin cables you are &oprobably &ousing right now, tin-silver wires are a superconductor, and have NO cable loss. Cable loss is when the more blocks away from your power source, the less power the cables actually transmit. The superconductor, however, does not do that, and transmits power at a loss of ZERO."]
+			description: ["Unlinke the &lCRINGE&r, &lSTINKY&r, &lNOT AWESOMESAUCE&r tin cables you are &oprobably &rusing right now, tin-silver wires are a superconductor, and have NO cable loss. Cable loss is when the more blocks away from your power source, the less power the cables actually transmit. The superconductor, however, does not do that, and transmits power at a loss of ZERO."]
 			hide_dependent_lines: true
 			id: "031CF7A7E9C89CD5"
 			rewards: [

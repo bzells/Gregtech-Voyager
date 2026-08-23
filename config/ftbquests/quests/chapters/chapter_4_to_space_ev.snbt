@@ -266,6 +266,7 @@
 				type: "item"
 			}]
 			size: 1.5d
+			subtitle: "Out of early game"
 			tasks: [{
 				id: "1D1DFE37C273C2EB"
 				item: "gtceu:ev_machine_hull"
@@ -711,6 +712,7 @@
 				item: "kubejs:ev_loot_bag"
 				type: "item"
 			}]
+			subtitle: "petrochem check!"
 			tasks: [{
 				id: "071E856D965D1B44"
 				item: "gtceu:epoxy_bucket"
@@ -837,6 +839,7 @@
 				type: "item"
 			}]
 			size: 1.5d
+			subtitle: "Ludioclorously presice"
 			tasks: [{
 				id: "53655FBF94387C7A"
 				item: "gtceu:nano_processor_mainframe"
@@ -1646,6 +1649,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "what is this monstrocity of a chemical line"
 			tasks: [{
 				id: "74711153F1F8D307"
 				item: "gtceu:rad_away_dust"
@@ -1773,6 +1777,7 @@
 			id: "396E16AC6204F73A"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "why are my friends made out of titanium"
 			tasks: [
 				{
 					id: "48D73B44223EF984"
@@ -1982,6 +1987,7 @@
 			id: "0C382CC77CE3E286"
 			shape: "octagon"
 			size: 1.5d
+			subtitle: "best cookies in the solar system"
 			tasks: [
 				{
 					id: "05C78EB5CD87FDD5"
@@ -2163,4 +2169,3 @@
 	]
 	title: "Chapter 4: To Space! (EV)"
 }
-

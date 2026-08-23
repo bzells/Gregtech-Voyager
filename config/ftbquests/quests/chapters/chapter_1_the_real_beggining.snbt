@@ -708,8 +708,8 @@
 				}
 			]
 			title: "Wrought Iron Tools [GT]"
-			x: -21.0d
-			y: 7.5d
+			x: -21.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["241DCDAF1DCCB290"]
@@ -1063,7 +1063,7 @@
 				}
 			]
 			x: -25.5d
-			y: 12.0d
+			y: 11.9d
 		}
 		{
 			dependencies: ["182D72912E295B5F"]
@@ -1085,4 +1085,3 @@
 	]
 	title: "Chapter 0.5: Ultra Low Voltage (Ft. Steam)"
 }
-
