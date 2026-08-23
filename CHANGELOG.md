@@ -15,6 +15,7 @@
 - “Mobs are hard” renamed to “The world vs you”
 - “The world vs you” QB now contains jetpack, and quarktech suit
 - Moon quest no longer needs space suit
+- Can now buy HV and EV bags (temporarily)
  
 ## Additions
 - New IaF related Tinker's Modifiers
