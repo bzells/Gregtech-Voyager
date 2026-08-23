@@ -369,10 +369,31 @@ ServerEvents.recipes((event) => {
         ['gtceu:hydrochloric_acid 8000']
     )
 
+    hungry_module("stomach", 2, "iv",
+        ['4x gtceu:double_tungsten_plate', 'voyagercore:iv_basic_helper_module', 'gtceu:iv_fluid_regulator', 'gtceu:ptfe_pipe_casing', '4x gtceu:tungsten_steel_tiny_fluid_pipe'],
+        ['gtceu:hydrochloric_acid 12000']
+    )
+
+    hungry_module("stomach", 3, "luv",
+        ['4x gtceu:double_naquadah_plate', 'voyagercore:luv_basic_helper_module', 'gtceu:luv_fluid_regulator', 'voyagercore:chemical_plant_casing', '4x gtceu:tungsten_steel_tiny_fluid_pipe'],
+        ['gtceu:fluoroantimonic_acid 16000']
+    )
+
     grandma_module("baking_sheet", 1, "hv", 
         ['4x gtceu:double_desh_plate', 'voyagercore:ev_basic_helper_module', 'kubejs:grandmas_baking_sheet'],
         ['gtceu:rose_gold 576']
     )
+
+    grandma_module("baking_sheet", 2, "ev", 
+        ['4x gtceu:double_tungsten_plate', 'voyagercore:ev_basic_helper_module', 'kubejs:grandmas_baking_sheet'],
+        ['gtceu:refined_fluxed_electrum 1440']
+    )
+
+    grandma_module("baking_sheet", 3, "iv", 
+        ['4x gtceu:double_tungsten_steel_plate', 'voyagercore:iv_basic_helper_module', 'kubejs:grandmas_baking_sheet'],
+        ['gtceu:titanite 1440']
+    )
+
     event.recipes.gtceu.assembler(`kubejs:helper_wheel_recipe_module`)
                 .itemInputs(`voyagercore:hv_helper_module`)
                 .itemInputs('4x gtceu:steel_rotor', '2x gtceu:hv_electric_motor')
