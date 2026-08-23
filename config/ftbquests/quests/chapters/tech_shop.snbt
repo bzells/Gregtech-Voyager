@@ -619,6 +619,25 @@
 			x: 3.5d
 			y: -5.0d
 		}
+		{
+			icon: "kubejs:hv_loot_bag"
+			id: "563A22E7FD74FBE2"
+			rewards: [{
+				id: "099946A8B2D0180F"
+				item: "kubejs:hv_loot_bag"
+				type: "item"
+			}]
+			subtitle: "This quest is temporary, as loot will be reworked"
+			tasks: [{
+				count: 128L
+				id: "481F0CE9DBBF7E58"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
+			title: "HV Bag"
+			x: -1.5d
+			y: 1.0d
+		}
 	]
 	title: "Tech Shop"
 }

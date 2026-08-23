@@ -270,14 +270,7 @@ ServerEvents.recipes((event) => {
         if (extra_inputs) {
             event.recipes.gtceu
                 .assembler(`kubejs:${tier}_parallel_helper_module`)
-                .itemInputs(
-                    `voyagercore:${tier}_helper_module`,
-                    `2x gtceu:${wiremat2}_octal_wire`,
-                    `32x gtceu:fine_${wiremat}_wire`,
-                    `2x #gtceu:circuits/${ctier}`,
-                    `1x gtceu:${tier}_electric_pump`,
-                    `1x gtceu:${tier}_electric_piston`
-                )
+                .itemInputs(`voyagercore:${tier}_helper_module`, `2x gtceu:${wiremat2}_octal_wire`, `32x gtceu:fine_${wiremat}_wire`, `2x #gtceu:circuits/${ctier}`, `1x gtceu:${tier}_emitter`, `1x gtceu:${tier}_sensor`, `4x gtceu:${tier}_robot_arm`, `gtceu:${tier}_transformer_16a`)
                 .itemInputs(extra_inputs)
                 .itemOutputs(`voyagercore:${tier}_parallel_helper_module`)
                 .duration(20 * 30)
@@ -286,7 +279,7 @@ ServerEvents.recipes((event) => {
         else
         {
             event.recipes.gtceu.assembler(`kubejs:${tier}_parallel_helper_module`)
-                .itemInputs(`voyagercore:${tier}_helper_module`, `2x gtceu:${wiremat2}_octal_wire`, `32x gtceu:fine_${wiremat}_wire`, `8x #gtceu:circuits/${ctier}`, `1x gtceu:${tier}_emitter`, `1x gtceu:${tier}_sensor`, `4x gtceu:${tier}_robot_arm`, `gtceu:${tier}_transformer_16a`)
+                .itemInputs(`voyagercore:${tier}_helper_module`, `2x gtceu:${wiremat2}_octal_wire`, `32x gtceu:fine_${wiremat}_wire`, `2x #gtceu:circuits/${ctier}`, `1x gtceu:${tier}_emitter`, `1x gtceu:${tier}_sensor`, `4x gtceu:${tier}_robot_arm`, `gtceu:${tier}_transformer_16a`)
                 .itemOutputs(`voyagercore:${tier}_parallel_helper_module`)
                 .duration(20 * 30)
                 .EUt(tiermap[tier]) // trolol

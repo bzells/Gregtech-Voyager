@@ -996,10 +996,6 @@
 				"2597FEAE670B7E8C"
 				"0BAE4AAE70DB71F2"
 				"0DC7B262CFD55FB5"
-				"4DDA4D6B442E88B9"
-				"7B3081714D2F0978"
-				"49B15AD0941BEE9F"
-				"6A1DDF4D3C428FFD"
 			]
 			description: ["Congratulations! You have reached the end of &d0.4a.pb Gregtech: Voyager!&r Stay updated on future pack updates in the discord!"]
 			id: "57273F946436DC4C"
@@ -1357,70 +1353,6 @@
 			}]
 			x: 1.5d
 			y: 0.5d
-		}
-		{
-			id: "4DDA4D6B442E88B9"
-			tasks: [{
-				id: "412327C7A2F0A7E1"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -11.5d
-			y: 11.5d
-		}
-		{
-			id: "7B3081714D2F0978"
-			tasks: [{
-				id: "43469E44DD919568"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_suit"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -11.0d
-			y: 12.5d
-		}
-		{
-			id: "49B15AD0941BEE9F"
-			tasks: [{
-				id: "40BD0D558050D0FC"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_pants"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -10.0d
-			y: 13.0d
-		}
-		{
-			id: "6A1DDF4D3C428FFD"
-			tasks: [{
-				id: "5CA73673F873E13D"
-				item: {
-					Count: 1
-					id: "ad_astra:space_boots"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -9.0d
-			y: 13.0d
 		}
 		{
 			dependencies: [

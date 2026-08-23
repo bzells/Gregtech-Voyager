@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
 
     global.recipe_distillation(event, "cacao_wood_residue", "kubejs:jungle_wood_vinegar 1000",
         "gtceu:carbon_dust", 
-        ["kubejs:cacao_residue 1000", "gtceu:wood_vinegar 2500", "gtceu:methanol 400", "gtceu:carbon_monoxide 1000"],
+        ["kubejs:cacao_residue 1000", "gtceu:acetone 2000", "gtceu:methanol 400", "gtceu:carbon_monoxide 1000"],
         480, 45
     )
 

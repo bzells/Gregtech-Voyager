@@ -14,9 +14,12 @@
 - Multiblocks have started to move to “Multiblocks” chapter
 - “Mobs are hard” renamed to “The world vs you”
 - “The world vs you” QB now contains jetpack, and quarktech suit
+- Moon quest no longer needs space suit
  
 ## Additions
 - New IaF related Tinker's Modifiers
+  - Dragon Looting: Grants fortune to GT Ores
+  - Dragon Strength: Flat damage multiplier
 - Added Travel Anchors
 - Added FTB Filter System
 - Added Ad Astra: Giselle Addon
@@ -45,6 +48,8 @@
 - Gregified Netherite
 - Cookies are easier to make, and new jungle wood line is added to supplement
 - Inventory pets are now craftable: Anvil Pet, Magma Cube Pet, Squid Pet, Pixie Pet, Loot Pet, Sheep Pet, Silverfish Pet
+- AE2 Processors recipes buffed
+- Molecular Assembler recipe changed (buffed)
 
 ### Mod Updates
 - Updated Voyager Core
@@ -54,4 +59,4 @@
 - Fixed Raw Oil recipes
 - Reduced lag from Tom's Simple Storage (it may still be laggy with Sophisticated Storage still)
 - Ilmenite no longer spawns in the end
-- *many *GitHub Issues
+- *many* GitHub Issues

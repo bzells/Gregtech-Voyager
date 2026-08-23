@@ -40,34 +40,6 @@
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
-			description: ["The &o&l&6large bronze boiler&r is a &lbeast&r when it comes to making steam. The only sad part about it is it &odoes&r need fuel, so try to make a tree farm for charcoal."]
-			id: "2F869DBB6A957477"
-			optional: true
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6294FD333C787981"
-					table_id: 8329633971839592888L
-					type: "choice"
-				}
-				{
-					count: 8
-					id: "3378B936E2008D14"
-					item: "kubejs:lv_tech_coin"
-					type: "item"
-				}
-			]
-			subtitle: "First REAL gregtech multi"
-			tasks: [{
-				id: "0239E463AD4F7137"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0B4A6B9B95DFA2B4"]
 			description: ["Super chests are basically better versions of the drawers you probably are using right now. they allow for you to hold &labsurd&r amounts of items, while having auto-output features along with voiding by default. There &oare&r super tanks, but those take plastics you make in MV."]
 			id: "52E02563BB341FBC"
 			optional: true
@@ -82,8 +54,8 @@
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
@@ -108,7 +80,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
