@@ -996,7 +996,6 @@
 				"2597FEAE670B7E8C"
 				"0BAE4AAE70DB71F2"
 				"0DC7B262CFD55FB5"
-				"4DDA4D6B442E88B9"
 			]
 			description: ["Congratulations! You have reached the end of &d0.4a.pb Gregtech: Voyager!&r Stay updated on future pack updates in the discord!"]
 			id: "57273F946436DC4C"
@@ -1354,22 +1353,6 @@
 			}]
 			x: 1.5d
 			y: 0.5d
-		}
-		{
-			id: "4DDA4D6B442E88B9"
-			tasks: [{
-				id: "412327C7A2F0A7E1"
-				item: {
-					Count: 1
-					id: "ad_astra:netherite_space_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -11.5d
-			y: 11.5d
 		}
 		{
 			dependencies: [
