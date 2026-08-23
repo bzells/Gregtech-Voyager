@@ -213,7 +213,6 @@ LootJS.modifiers((event) => {
             Item.of("bhc:red_heart").withChance(1),
             Item.of("2x toms_storage:ts.inventory_connector").withChance(0.1),
             Item.of("2x minecraft:ender_pearl").withChance(8),
-            Item.of("1x kubejs:track_runner_helper").withChance(0.25)
         ])
 
     event
@@ -282,10 +281,9 @@ LootJS.modifiers((event) => {
             Item.of("8x kubejs:ev_universal_coin").withChance(75),
             Item.of("gtceu:ev_vanadium_battery").withChance((2 / 100) * 100),
             Item.of("1x kubejs:ev_helper_computation_array").withChance((1 / 100) * 100),
-            Item.of("1x kubejs:lcptr_helper").withChance((2 / 100) * 100),
             Item.of("4x gtceu:titanium_carbide_ingot").withChance((3 / 100) * 100),
             Item.of("2x minecraft:nether_star").withChance((6 / 100) * 100),
-            Item.of("1x gtceu:quantum").withChance((2 / 100) * 100),
+            Item.of("1x gtceu:quantum_star").withChance((2 / 100) * 100),
             Item.of({ type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: { StoredEnchantments: [{ id: "minecraft:fortune", lvl: 5 }] } }).withChance(0.25),
             Item.of({ type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: { StoredEnchantments: [{ id: "apotheosis:life_mending", lvl: 3 }] } }).withChance(0.25),
             Item.of({ type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: { StoredEnchantments: [{ id: "minecraft:looting", lvl: 5 }] } }).withChance(0.25),
