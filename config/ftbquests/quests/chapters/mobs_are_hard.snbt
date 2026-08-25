@@ -458,7 +458,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["33C546237694B2C1"]
+			dependencies: ["4ADC887D4291587B"]
 			description: ["Combined with the hang glider, you will be able to explore with ease"]
 			id: "44332F1E57E89B1C"
 			subtitle: "Easy flight"

@@ -426,6 +426,7 @@ register_fluid("lunarium_growth_slurry", "0x1fff1a", ["3x lunarium", "4x chlorin
 // platline
 register_dust("dewatered_iridium_metal_residue", [], "0x094235", no_decomp)
 register_dust("impure_iridium_metal", [], "0x094235", no_decomp)
+register_fluid("acidic_iridium_solution", "0x094235", [], no_decomp)
 
 register_fluid("acidic_shiny_metal_mixture", "0x4f6cab", [], no_decomp)
 register_fluid("impure_shiny_metal_mixture", "0x152536", [], no_decomp)
