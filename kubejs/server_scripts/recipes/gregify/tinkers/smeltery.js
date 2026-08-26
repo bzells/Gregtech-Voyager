@@ -62,6 +62,33 @@ ServerEvents.recipes((event) => {
         })
     }
 
+    function tconstruct_melting(result, input, temp) {
+    event.custom({
+        type: "tconstruct:material_melting",
+        input: input,
+        result: {
+            fluid: result.fluid,
+            amount: result.amount
+        },
+        temperature: temp
+    })
+    }
+
+    function tconstruct_melting_item(input, fluid, amount, temp, time) {
+    event.custom({
+        type: "tconstruct:melting",
+        ingredient: {
+            item: input
+        },
+        result: {
+            fluid: fluid,
+            amount: amount
+        },
+        temperature: temp,
+        time: time
+    })
+    }
+
     /**
      *
      * @param {*} result
@@ -146,10 +173,51 @@ ServerEvents.recipes((event) => {
         }
     }
 
+    /**
+     *
+     * @param {*} fluid
+     * @param {*} output
+     * @param {*} temp
+     */
+    function tconstruct_casting(fluid, output, temp) {
+        event.custom({
+            type: "tconstruct:material_fluid",
+            fluid: {
+                fluid: fluid.fluid,
+                amount: fluid.amount
+            },
+            temperature: temp,
+            output: output
+        })
+    }
+
     casting_table("gtceu:firebrick", { fluid: "kubejs:molten_fireclay", amount: 125 }, 80, "tconstruct:casts/multi_use/ingot")
     casting_table("gtceu:firebrick", { fluid: "kubejs:molten_fireclay", amount: 125 }, 80, "tconstruct:casts/single_use/ingot")
     // @ts-expect-error arghhhhh
     event.remove({ type: "tconstruct:casting_basin", id: /tconstruct:smeltery\/casting\/metal\/.*\/block/ })
+
+    tconstruct_melting(
+    {
+        fluid: "gtceu:carbon",
+        amount: 144
+    },
+        "gm_construct:carbon",
+        1000
+    )
+    tconstruct_melting_item(
+    "gtceu:carbon_ingot",
+    "gtceu:carbon",
+    144,
+    800,  20
+    )
+    tconstruct_casting(
+        {
+            fluid: "gtceu:carbon",
+            amount: 144
+        },
+        "gm_construct:carbon",
+        1000
+    )
 
     // alloys
 

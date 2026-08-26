@@ -288,6 +288,8 @@ event.add(`voyagercore:helper_factory`, [
     ])
     event.add(`gtceu:atmospheric_collector`, "§6Collects gas and dust from the surrounding atmosphere and freezes it§r\n§6Can use parallel hatches§r")
 
+    event.add(`voyagercore:helper_holder`, "§6Can be wall shared§r")
+
     rectangleTooltip("helper_calorie_converter")
 
     addHelperTooltip("hungry", "Can consume a LOT of calories")
