@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "inventory_pets"
+	group: "1A9B1A8107510B65"
+	icon: {
+		Count: 1
+		id: "inventorypets:pet_creeper"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "207F67267DC2D7D9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Inventory Pets"
+}

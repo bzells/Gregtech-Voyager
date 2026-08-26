@@ -173,7 +173,7 @@ global.recipe_teus_laser = function(event, output, inputItems, nonconsumed, inpu
 
 global.recipe_chem_bath = function(event, output, inputItems, inputFluids, eut, duration) {
     event.recipes.gtceu
-        .chemical_bath(`kubejs:${parse_item_with_ns(output)}_chem_bath`)
+        .chemical_bath(`kubejs:${parse_item_with_ns(output)}_chem_bath_${inputFluids.split(":")[1].split(" ")[0]}`)
         .itemInputs(inputItems)
         .inputFluids(inputFluids)
         .itemOutputs(output)

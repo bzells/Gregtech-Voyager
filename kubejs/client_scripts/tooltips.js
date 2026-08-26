@@ -301,8 +301,7 @@ event.add(`voyagercore:helper_factory`, [
   cubeTooltip('thermal_centrifuge')
   cubeTooltip('autoclave')
   cubeTooltip('assembler')
-
-  event.add(/^kubejs:(?!.*computation).*helper.*$/, `${re}Deprecated - Check crafting recipe to swap for new helper`)
+  cubeTooltip('mixer')
 
   event.add(`gtceu:radiation_chamber`, ['§aFocuses radioactive decay particles into a central chamber§r','§6Can only use 4x parallel hatches§r'])
   event.add(`voyagercore:hyper_helper_calorie_converter`, [

@@ -20,14 +20,6 @@ StartupEvents.registry("item", (event) => {
 
     const helpers = ["brick", "track_runner", "farmer", "grandma", "radiation_resistant_grandma", "hungry", "hungry_hungry", "embassy", "basic_chemist", "advanced_chemist"]
 
-    function register_helper_item(name) {
-        event
-            .create(name + "_helper")
-            .texture("kubejs:item/helpers/" + name + "_helper")
-            .maxStackSize(4)
-            .rarity("uncommon")
-            .tag("kubejs:helpers")
-    }
 
     function register_universal_coin(tier) {
         event
@@ -241,6 +233,35 @@ StartupEvents.registry("item", (event) => {
     event.create("heat_sheild").texture("kubejs:item/heat_sheild").displayName("Heat Shield")
     // cookies
 
+    function cookie(name, lang, tt)
+    {
+        event.create(`${name}_cookie_dough`).texture(`kubejs:item/${name}_cookie_dough`).displayName(`${lang} Cookie Dough`)
+
+        event
+        .create(`grandmas_${name}_cookies`)
+        .texture(`kubejs:item/grandmas_${name}_cookies`)
+        .displayName(`Grandma's ${lang} Cookies`)
+        .tooltip(tt)
+        .food((food) => {
+            food.hunger(8)
+                .saturation(6) // This value does not directly translate to saturation points gained
+                // The real value can be assumed to be:
+                // min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+                .effect("minecraft:speed", 600, 0, 1)
+                .alwaysEdible() // Like golden apples
+                .fastToEat() // Like dried kelp
+
+                .eaten((ctx) => {
+                    ctx.player.tell(Text.gold("Grandma thanks you for eating her cookies! She invites you over for more."))
+                })
+        })
+    }
+
+    cookie("source_berry", "§dSource Berry", "§2Contains a magical amount of calories. Optimal for mystical creatures.")
+    cookie("uncanny", "§dUncanny", "§5Contains... some interesting things. Optimal for players who hate hungry helpers.")
+    cookie("double_chocolate", "§eDouble Chocolate", "§eContains DOUBLE the chocolate! Optimal for happiness.")
+    cookie("honey", "§6Honey", "§2Contains sweet sweet honey. Optimal for bees.")
+
     event.create("grandmas_baking_sheet").texture("kubejs:item/grandmas_baking_sheet").maxStackSize(1).displayName("Grandma's Super Durable Baking Sheet")
     event.create("grandmas_tungsten_baking_sheet").texture("kubejs:item/grandmas_tungsten_baking_sheet").maxStackSize(1).displayName("Grandma's Super Durable Radiation Proof Baking Sheet")
     event.create("baking_chocolate").texture("kubejs:item/baking_chocolate").displayName("Baking Chocolate")
@@ -250,6 +271,8 @@ StartupEvents.registry("item", (event) => {
     event.create("butter").texture("kubejs:item/butter").displayName("Butter")
     event.create("roasted_cacao_beans").texture("kubejs:item/roasted_cacao_beans").displayName("Roasted Cacao Beans")
     event.create("cookie_dough").texture("kubejs:item/cookie_dough").displayName("Cookie Dough")
+
+    event.create("mana_infused_cookie_dough").texture("kubejs:item/mana_infused_cookie_dough").displayName("Mana Infused Cookie Dough")
 
     event.create("ev_stomach_unit").texture("kubejs:item/ev_stomach_unit").displayName("EV Stomach Unit")
     event.create("iv_stomach_unit").texture("kubejs:item/iv_stomach_unit").displayName("IV Stomach Unit")
@@ -265,6 +288,25 @@ StartupEvents.registry("item", (event) => {
         .texture("kubejs:item/grandmas_uranium_cookies")
         .displayName("§aGrandma's Ultra-Calorie Dense Uranium Cookies")
         .tooltip("§2Contains millions of calories. Optimal for bulking.")
+        .food((food) => {
+            food.hunger(8)
+                .saturation(6) // This value does not directly translate to saturation points gained
+                // The real value can be assumed to be:
+                // min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+                .effect("minecraft:speed", 600, 0, 1)
+                .alwaysEdible() // Like golden apples
+                .fastToEat() // Like dried kelp
+
+                .eaten((ctx) => {
+                    ctx.player.tell(Text.gold("Grandma thanks you for eating her cookies! She invites you over for more."))
+                })
+        })
+
+    event
+        .create("grandmas_mana_infused_cookies")
+        .texture("kubejs:item/grandmas_mana_infused_cookies")
+        .displayName("§dGrandma's Mana Infused Cookies")
+        .tooltip("§2Contains millions of calories. Optimal for Alfheim visits.")
         .food((food) => {
             food.hunger(8)
                 .saturation(6) // This value does not directly translate to saturation points gained
@@ -298,12 +340,6 @@ StartupEvents.registry("item", (event) => {
                 })
         })
 
-    event
-        .create("lcptr_helper")
-        .texture("kubejs:item/helpers/lcptr_helper")
-        .maxStackSize(1)
-        .displayName("Large Cookie-Powered Track Runner Helper")
-        .tooltip("Has the digestive capacity to consume millions of calories in a short amount of time")
 
     event
         .create("grandmas_cookie")
