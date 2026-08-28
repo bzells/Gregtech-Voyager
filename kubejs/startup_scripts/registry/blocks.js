@@ -3,7 +3,7 @@ StartupEvents.registry("block", (event) => {
      * @param {string} name
      */
     function casing(name) {
-        event.create(`${name}_casing`).textureAll(`kubejs:block/casing/${name}_casing`).hardness(2).resistance(3).lightLevel(0).soundType("metal").requiresTool(true).tagBlock("mineable/wrench")
+        event.create(`${name}_casing`).textureAll(`kubejs:block/casing/${name}_casing`).hardness(2).resistance(3).lightLevel(0).soundType("metal").requiresTool(true).tagBlock("forge:mineable/wrench").tagBlock('minecraft:mineable/pickaxe')
     }
     casing("durable_desh")
     casing("firm_ultimet")

@@ -21,7 +21,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3A557C43CE0F534F"]
+			dependencies: [
+				"3A557C43CE0F534F"
+				"71867DB0E9CD587D"
+			]
 			icon: {
 				Count: 1
 				id: "tconstruct:bow_limb"

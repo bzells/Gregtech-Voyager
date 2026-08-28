@@ -403,7 +403,7 @@
 	#Disable the Silverfish pet (default:false)
 	disableSilverfish = false
 	#Disable the Slime pet (default:false)
-	disableSlime = false
+	disableSlime = true
 	#Disable the Snow Golem pet (default:false)
 	disableSnowGolem = false
 	#Disable the Spider pet (default:false)

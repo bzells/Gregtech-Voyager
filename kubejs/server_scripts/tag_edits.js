@@ -82,6 +82,9 @@ ServerEvents.tags("item", (event) => {
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "max"]
 
     tiers.forEach((tier) => circuit(tier))
+
+    event.add(`forge:fertilizer`,`gtceu:fertilizer`)
+
 })
 
 ServerEvents.tags("fluid", (event) => {

@@ -36,13 +36,6 @@ ServerEvents.recipes((event) => {
     }
 
 
-    event.recipes.gtceu.alloy_smelter("kubejs:coal_nuggets")
-        .itemInputs("#minecraft:coals")
-        .notConsumable("gtceu:nugget_casting_mold")
-        .itemOutputs("9x " + inv_pets("nugget_coal"))
-        .EUt(2)
-        .duration(100)
-
 
         event.recipes.ars_nouveau.enchanting_apparatus(
         ["minecraft:creeper_head", "minecraft:tnt", "minecraft:tnt", "minecraft:tnt", "tconstruct:pig_iron_ingot", "tconstruct:hepatizon_ingot"], // input items
@@ -52,21 +45,21 @@ ServerEvents.recipes((event) => {
         true // keep nbt of reagent, think like a smithing recipe
     )
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:leather", "minecraft:leather", "minecraft:leather", "minecraft:leather", "tconstruct:pig_iron_ingot", "gtceu:source_steel_ingot"], // input items
-        "minecraft:raw_beef", // reagent
-        "inventorypets:pet_cow", // output
-        10000, // source cost
-        true // keep nbt of reagent, think like a smithing recipe
-    )
+    // event.recipes.ars_nouveau.enchanting_apparatus(
+    //     ["minecraft:leather", "minecraft:leather", "minecraft:leather", "minecraft:leather", "tconstruct:pig_iron_ingot", "gtceu:source_steel_ingot"], // input items
+    //     "minecraft:raw_beef", // reagent
+    //     "inventorypets:pet_cow", // output
+    //     10000, // source cost
+    //     true // keep nbt of reagent, think like a smithing recipe
+    // )
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "tconstruct:queens_slime_ingot", "gtceu:source_steel_ingot"], // input items
-        "minecraft:magma_block", // reagent
-        "inventorypets:pet_magma_cube", // output
-        10000, // source cost
-        true // keep nbt of reagent, think like a smithing recipe
-    )
+    // event.recipes.ars_nouveau.enchanting_apparatus(
+    //     ["minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "minecraft:magma_cream", "tconstruct:queens_slime_ingot", "gtceu:source_steel_ingot"], // input items
+    //     "minecraft:magma_block", // reagent
+    //     "inventorypets:pet_magma_cube", // output
+    //     10000, // source cost
+    //     true // keep nbt of reagent, think like a smithing recipe
+    // )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["ars_nouveau:fire_essence", "apotheosis:gem_dust", "gtceu:sculk_dust"], // input items
@@ -76,18 +69,52 @@ ServerEvents.recipes((event) => {
         true // keep nbt of reagent, think like a smithing recipe
     )
     event.recipes.gtceu.compressor("kubejs:anvil_pet")
-    .itemInputs("64x minecraft:anvil")
+    .itemInputs("16x minecraft:anvil")
     .itemOutputs("inventorypets:pet_anvil")
     .EUt(28)
     .duration(360 * 20)
 
-    event.recipes.ars_nouveau.enchanting_apparatus(
-        ["minecraft:ink_sac", "minecraft:ink_sac", "minecraft:ink_sac", "minecraft:ink_sac", "tconstruct:slimesteel_ingot", "gtceu:source_steel_ingot"], // input items
-        "minecraft:water_bucket", // reagent
-        "inventorypets:pet_squid", // output
-        10000, // source cost
-        true // keep nbt of reagent, think like a smithing recipe
+    event.recipes.gtceu.chemical_bath("kubejs:squid_pet")
+    .itemInputs("#inventorypets:all_pets")
+    .inputFluids("minecraft:water 32000")
+    .itemOutputs("inventorypets:pet_squid")
+    .EUt(120)
+    .duration(60 * 20)
+
+    event.recipes.gtceu.chemical_bath("kubejs:pet_magma_cube")
+    .itemInputs("inventorypets:pet_slime")
+    .inputFluids("minecraft:lava 32000")
+    .itemOutputs("inventorypets:pet_magma_cube")
+    .EUt(120)
+    .duration(60 * 20)
+
+    event.recipes.gtceu.chemical_bath("kubejs:pet_enderman")
+    .itemInputs("minecraft:pumpkin")
+    .inputFluids("gtceu:pearlic_steel 1440")
+    .itemOutputs("inventorypets:pet_enderman")
+    .EUt(120)
+    .duration(60 * 20)
+
+    event.shaped(
+        Item.of("inventorypets:pet_slime", 1), // arg 1: output
+        [
+            "CCC",
+            "CAC", // arg 2: the shape (array of strings)
+            "CCC"
+        ],
+        {
+            A: "bhc:red_heart",
+            C: "tconstruct:earth_congealed_slime",
+        }
     )
+
+    // event.recipes.ars_nouveau.enchanting_apparatus(
+    //     ["minecraft:ink_sac", "minecraft:ink_sac", "minecraft:ink_sac", "minecraft:ink_sac", "tconstruct:slimesteel_ingot", "gtceu:source_steel_ingot"], // input items
+    //     "minecraft:water_bucket", // reagent
+    //     "inventorypets:pet_squid", // output
+    //     10000, // source cost
+    //     true // keep nbt of reagent, think like a smithing recipe
+    // )
 
     event.recipes.ars_nouveau.enchanting_apparatus(
         ["apotheosis:rare_material", "minecraft:experience_bottle", "apotheosis:rare_material", "minecraft:experience_bottle", "apotheosis:rare_material", "gtceu:source_steel_ingot"], // input items
@@ -130,6 +157,8 @@ ServerEvents.recipes((event) => {
             C: "gtceu:pearlic_steel_foil",
         }
     )
+
+    event.shapeless(Item.of("inventorypets:pet_cow", 1), ["cookingforblockheads:cow_jar", "#gtceu:circuits/lv"])
 
     
 })

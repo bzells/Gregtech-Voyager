@@ -367,6 +367,9 @@ StartupEvents.registry("item", (event) => {
 
     event.create("dilithium_crystals").texture("kubejs:item/dilithium_crystals").displayName("Dilithium Crystals").tooltip("§7§oEngage")
 
+    event.create("helium_rich_rubble").texture("kubejs:item/helium_rich_rubble").displayName("Helium Rich Rubble")
+    event.create("ore_rich_rubble").texture("kubejs:item/ore_rich_rubble").displayName("Ore Rich Rubble")
+
     // perfect electrum
     event.create("atomic_lattice").texture("kubejs:item/atomic_lattice").displayName("Atomic Lattice").tooltip("§eActs as a mold for atoms to fill")
 
@@ -396,4 +399,9 @@ StartupEvents.registry("item", (event) => {
     rocks("moon")
     rocks("mars")
     rocks("venus")
+
+    event.create("bag_of_cookies").texture("kubejs:item/bag_of_cookies").displayName("Bag of Cookies")
+
+    event.create("bag_of_uranium_cookies").texture("kubejs:item/bag_of_uranium_cookies").displayName("Bag of Uranium Cookies")
+
 })

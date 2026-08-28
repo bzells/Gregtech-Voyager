@@ -207,7 +207,6 @@ ServerEvents.recipes((event) => {
         .itemInputs("2x kubejs:refined_fluxed_electrum_crystal")
         .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
         .inputFluids("kubejs:blasting_gas 100")
-        .circuit(1)
         .duration(20 * 50)
         .EUt(1925)
         .blastFurnaceTemp(3600)

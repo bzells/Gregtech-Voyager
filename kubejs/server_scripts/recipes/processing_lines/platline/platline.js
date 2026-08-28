@@ -13,26 +13,14 @@ ServerEvents.recipes((event) => {
     global.recipe_centrifuge(
         event,
         "pgs",
-        ["6x gtceu:platinum_group_sludge_dust"],
-        ["gtceu:aqua_regia 1200"],
-        ["2x gtceu:rarest_metal_mixture_dust", "2x gtceu:inert_metal_mixture_dust", "2x gtceu:platinum_sludge_residue_dust", "6x gtceu:plat_palladium_metal_residue_dust"],
+        ["10x gtceu:platinum_group_sludge_dust"],
+        ["gtceu:aqua_regia 2000"],
+        ["4x gtceu:rarest_metal_mixture_dust", "3x gtceu:inert_metal_mixture_dust", "3x gtceu:platinum_sludge_residue_dust", "10x gtceu:platinum_group_metal_residue_dust"],
         [],
         30,
         480
     )
 
-    global.recipe_chem_plant(
-        event,
-        "pgs",
-        ["6x gtceu:platinum_group_sludge_dust"],
-        ["gtceu:aqua_regia 1200"],
-        ["3x gtceu:rarest_metal_mixture_dust", "3x gtceu:inert_metal_mixture_dust", "2x gtceu:platinum_sludge_residue_dust", "8x gtceu:plat_palladium_metal_residue_dust"],
-        [],
-        30,
-        480,
-        4500,
-        "plat_line"
-    )
 
     global.recipe_lcr(event,
         "shiny_iridium",
@@ -98,6 +86,7 @@ ServerEvents.recipes((event) => {
     .inputFluids("gtceu:acidic_shiny_metal_mixture 250")
     .outputFluids("gtceu:carbon_dioxide 1000")
     .itemOutputs("4x gtceu:shiny_metallic_residue_dust")
+    .blastFurnaceTemp(1800)
     .EUt(480)
     .duration(10 * 20)
 
@@ -183,9 +172,182 @@ ServerEvents.recipes((event) => {
         1920)
 
     // ruthenium
+    global.recipe_distillation(event,
+        "dry_ruthenium_mixture",
+        "gtceu:acidic_ruthenium_solution 3000",
+        "4x gtceu:dry_ruthenium_mixture_dust",
+        ["gtceu:hydrogen_sulfide 4000", "gtceu:nitric_acid 1000"],
+        120, 15
+    )
 
+    global.recipe_lcr(event,
+        "ruthenium_tetroxide_dust",
+        ["4x gtceu:dry_ruthenium_mixture_dust", "6x gtceu:salt_dust"],
+        ["minecraft:water 3000"],
+        ["20x gtceu:ruthenium_tetroxide_dust", "gtceu:sodium_dust"],
+        ["gtceu:sulfur_trioxide 4000", "gtceu:salt_water 3000"],
+        10,
+        480)
 
 
     // plat and palladium
+
+    global.recipe_lcr(event,
+        "acidic_platinum_group_solution",
+        ["3x gtceu:platinum_group_metal_residue_dust"],
+        ["gtceu:formic_acid 1000"],
+        [],
+        ["gtceu:acidic_platinum_group_solution 2000"],
+        20,
+        1920)
+
+    global.recipe_lcr(event,
+        "salty_platinum_mixture_dust",
+        ["3x gtceu:sodium_bicarbonate_dust"],
+        ["gtceu:acidic_platinum_group_solution 5000"],
+        ["4x gtceu:salty_platinum_mixture_dust"],
+        ["minecraft:water 5000", "gtceu:carbon_dioxide 4000"],
+        32,
+        30)
+
+    global.recipe_centrifuge(event,
+        "dirty_platinum_mixture",
+        ["8x gtceu:salty_platinum_mixture_dust"],
+        [],
+        ["3x gtceu:dirty_platinum_mixture_dust", "3x gtceu:carbon_dust", "2x gtceu:salt_dust"],
+        [],
+        16,
+        120)
+
+    global.recipe_lcr(event,
+        "purified_platinum_metal_dust",
+        ["3x gtceu:dirty_platinum_mixture_dust", "1x gtceu:sodium_dust"],
+        ["gtceu:oxygen 1000"],
+        ["5x gtceu:purified_platinum_metal_dust"],
+        ["gtceu:salt_water 1000"],
+        16,
+        30)
+
+    global.recipe_electrolyzer(event, "plat_palladium",
+        "5x gtceu:purified_platinum_metal_dust",
+        [],
+        ["2x gtceu:platinum_dust", "gtceu:palladium_dust"],
+        ["gtceu:hydrogen 1000", "gtceu:nitrogen 1000"],
+        8,
+        28
+    )
+
+    // plat waste
+    event.remove({input: "gtceu:platinum_sludge_residue_dust"})
+    global.recipe_chem_bath(event,
+        "10x gtceu:washed_platinum_sludge_residue_dust",
+        "10x gtceu:platinum_sludge_residue_dust",
+        "gtceu:distilled_water 1000", 120, 10
+    )
+
+    global.recipe_lcr(event,
+        "purified_platinum_sludge_residue",
+        ["30x gtceu:washed_platinum_sludge_residue_dust", "6x gtceu:sodium_bicarbonate_dust"],
+        [],
+        ["26x gtceu:purified_platinum_sludge_residue_dust", "3x gtceu:sodium_hydroxide_dust"],
+        ["gtceu:carbon_dioxide 1000"],
+        16,
+        30)
+
+    global.recipe_centrifuge(event,
+        "pgwaste",
+        ["25x gtceu:purified_platinum_sludge_residue_dust"],
+        [],
+        ["15x gtceu:platinum_group_waste_dust", "10x gtceu:gold_dust"],
+        [],
+        16,
+        30)
+
+    event.recipes.gtceu.electric_blast_furnace
+    ("platinum_group_waste_ashes_dust")
+    .itemInputs("5x gtceu:platinum_group_waste_dust")
+    .inputFluids("gtceu:oxygen 2000")
+    .outputFluids("gtceu:carbon_dioxide 1000")
+    .itemOutputs("5x gtceu:platinum_group_waste_ashes_dust")
+    .EUt(1920)
+    .blastFurnaceTemp(2400)
+    .duration(10 * 20)
+
+    global.recipe_centrifuge(event,
+        "pgwaste_centrifuge",
+        ["15x gtceu:platinum_group_waste_ashes_dust"],
+        [],
+        ["4x gtceu:silicon_dioxide_dust", "3x gtceu:ash_dust", "3x gtceu:platinum_dust", "3x gtceu:arsenic_dust", "2x gtceu:chromium_dust"],
+        [],
+        40,
+        1920)
+    
+
+        // helper boosts
+    global.recipe_chem_plant(
+        event,
+        "plat_palladium",
+        ["5x gtceu:purified_platinum_metal_dust"],
+        ["gtceu:aqua_regia 200"],
+        ["2x gtceu:platinum_dust", "2x gtceu:palladium_dust"],
+        ["gtceu:hydrogen 400", "gtceu:nitrogen 400"],
+        24,
+        120,
+        3600,
+        "plat_line"
+    )
+
+    global.recipe_chem_plant(
+        event,
+        "ruthenium",
+        ["5x gtceu:ruthenium_tetroxide_dust", "3x gtceu:carbon_dust"],
+        ["gtceu:aqua_regia 200"],
+        ["2x gtceu:ruthenium_dust"],
+        ["gtceu:carbon_dioxide 800"],
+        30,
+        480,
+        3600,
+        "plat_line"
+    )
+
+    global.recipe_chem_plant(
+        event,
+        "rhodium",
+        ["2x gtceu:ammonium_chloride_dust", "2x gtceu:salty_rhodium_dust", "1x gtceu:sodium_dust"],
+        ["gtceu:aqua_regia 200"],
+        ["2x gtceu:rhodium_dust"],
+        ["gtceu:salt_water 400"],
+        30,
+        480,
+        3600,
+        "plat_line"
+    )
+
+    global.recipe_chem_plant(
+        event,
+        "iridium",
+        ["4x gtceu:iridium_chloride_dust"],
+        ["gtceu:aqua_regia 200"],
+        ["2x gtceu:iridium_dust"],
+        ["gtceu:chlorine 1000"],
+        30,
+        480,
+        3600,
+        "plat_line"
+    )
+
+    global.recipe_chem_plant(
+        event,
+        "osmium",
+        ["5x gtceu:osmium_tetroxide_dust"],
+        ["gtceu:aqua_regia 200"],
+        ["2x gtceu:osmium_dust"],
+        ["gtceu:oxygen 1000"],
+        60,
+        7860,
+        4600,
+        "plat_line"
+    )
+
 
 })

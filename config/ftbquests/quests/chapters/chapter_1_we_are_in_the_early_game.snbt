@@ -1247,20 +1247,35 @@
 				title: "Cheaper circuit components"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6471E39226FE3104"]
+			dependencies: [
+				"019DB401BB4B4F46"
+				"09FEF2154F49CB7E"
+			]
 			id: "01C576E6E5C28CDD"
 			tasks: [{
 				count: 16L
 				id: "71143ADE297D8908"
-				item: "gtceu:cupronickel_ingot"
+				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
 			x: -3.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["6471E39226FE3104"]
+			id: "019DB401BB4B4F46"
+			tasks: [{
+				count: 8L
+				id: "38C5E0788736B1A9"
+				item: { Count: 8, id: "gtceu:cupronickel_ingot" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
 		}
 	]
 	title: "Chapter 1: Low Voltage"

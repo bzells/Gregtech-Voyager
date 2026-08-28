@@ -1,20 +1,538 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "lvev"
 	group: "1B8CEC3A96513F94"
+	icon: "gtceu:large_chemical_reactor"
 	id: "0F16A82A62B2D3CE"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "4788C07260629259"
-		tasks: [{
-			id: "5B8CAE607DB824FD"
-			title: "To be added in 0.1b"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["538B8A7C45672E07"]
+			description: [
+				"The moon-sand line is a good way to get passive moon ores such as: Ilmenite, Glunite, and Bastnasite. When you get into &9IV&r, the line is &ocompletely self-sustaining&r, and you no longer need to mine more moon sand from the actual moon. You can also get &bpassive electrotine&r in &9IV&r."
+				""
+				"To make it self sustaining, you will need to use &bspecialized helpers&r to &6output boost&r the recipes with moon sand as the output. This requires a &cchemical plant"
+			]
+			id: "0EEC4802432C5F8A"
+			subtitle: "Worth your time if you hate mining on the moon"
+			tasks: [{
+				id: "3D9EA0015DEF6F82"
+				item: "ad_astra:moon_sand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0EEC4802432C5F8A"]
+			id: "2A70A48BB761239E"
+			tasks: [{
+				id: "7C8141B5A2C241A8"
+				item: "gtceu:moon_sand_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A70A48BB761239E"]
+			id: "11CBC1E58756D231"
+			tasks: [{
+				id: "14BD8BD3D53F79D0"
+				item: "kubejs:helium_rich_rubble"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2A70A48BB761239E"]
+			id: "12AE11EA56517086"
+			tasks: [{
+				id: "15693669A7526D7C"
+				item: "kubejs:ore_rich_rubble"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2A70A48BB761239E"]
+			id: "40308150EDE91B60"
+			tasks: [{
+				id: "7579B1BC53B5E4BF"
+				item: "gtceu:soft_moon_sand_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Very useful for the byproducts. I recommend making this line, even if you don't want the chocolate."
+				""
+				"The Industrial Foregoing farms are great for gathering wood."
+			]
+			id: "44D37940C292A935"
+			tasks: [{
+				id: "7535C0FC817AFDAA"
+				item: "minecraft:jungle_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"44D37940C292A935"
+				"540D3841076D1667"
+			]
+			icon: "kubejs:jungle_wood_vinegar_bucket"
+			id: "2929B903CF71CA00"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "3C4E79BBFDD95631"
+					item: "kubejs:jungle_wood_vinegar_bucket"
+					type: "item"
+				}
+				{
+					id: "37AAF2B399FC5430"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2929B903CF71CA00"
+				"12750FC8B33B77E6"
+			]
+			description: ["This step in the jungle-line gives you very useful byproducts. So even if you aren't doing cookies for power, it is a good idea to make this line to at least this step."]
+			icon: "kubejs:cacao_residue_bucket"
+			id: "353D431F87122F4A"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "0BB4BC34BFD690FD"
+					item: "kubejs:cacao_residue_bucket"
+					type: "item"
+				}
+				{
+					id: "191354731936E578"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["353D431F87122F4A"]
+			icon: "kubejs:dirty_cacao_milk_bucket"
+			id: "58F1E575B7D2A02B"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "280DF4035A2B563F"
+					item: "kubejs:dirty_cacao_milk_bucket"
+					type: "item"
+				}
+				{
+					id: "1B01F4CA22BCD199"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["353D431F87122F4A"]
+			icon: "kubejs:raw_cacao_powder"
+			id: "4AEFD5A60DCD9F69"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "18BC729DC7029DD3"
+					item: "kubejs:raw_cacao_powder"
+					type: "item"
+				}
+				{
+					id: "6C7B22ED9A28ED90"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["58F1E575B7D2A02B"]
+			icon: "kubejs:cacao_milk_bucket"
+			id: "7518446FB2BC5B7E"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "4C502C94FF918FEC"
+					item: "kubejs:cacao_milk_bucket"
+					type: "item"
+				}
+				{
+					id: "49B246D62EA07EBE"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4AEFD5A60DCD9F69"]
+			icon: "kubejs:tempered_cacao_bucket"
+			id: "533304576B578EEE"
+			tasks: [
+				{
+					id: "57C0B0C232C75D98"
+					item: "kubejs:tempered_cacao_bucket"
+					type: "item"
+				}
+				{
+					id: "2F51D9C9D5749359"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"7518446FB2BC5B7E"
+				"533304576B578EEE"
+				"471F5E8E7E0B3065"
+			]
+			id: "425C75F64590B3B0"
+			min_required_tasks: 1
+			rewards: [{
+				id: "11157FA9DECCC99B"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0F1EE4FEA56AD2E5"
+				item: "kubejs:baking_chocolate"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["12EEF6CEEB33CB25"]
+			id: "471F5E8E7E0B3065"
+			tasks: [{
+				id: "231FE7B0CE6647E3"
+				item: "kubejs:cacao_powder"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"12AE11EA56517086"
+				"11CBC1E58756D231"
+				"40308150EDE91B60"
+			]
+			description: [
+				"This line gives you a few moon ores. Very useful, especially when you hit &9IV&r and it becomes self-sustaining with the moon sand dust positive feedback loop."
+				""
+				"&7&lUse helpers. Use the chemical plant. They are overpowered.&r&r"
+			]
+			id: "39D00A9315C9E6D6"
+			rewards: [{
+				id: "69E15967D92823E3"
+				item: "kubejs:iv_loot_bag"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "17043DE168C77B30"
+				title: "Useful Byproducts"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			icon: "minecraft:sugar"
+			id: "781D9644F852C504"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "78262B0A2EE2FBFD"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "163BAB422E876DAB"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			icon: "gtceu:distilled_water_bucket"
+			id: "7D7096B738182981"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "25F3723B5FF08B0E"
+					item: "gtceu:distilled_water_bucket"
+					type: "item"
+				}
+				{
+					id: "23BAB62E72E37CCD"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			icon: "gtceu:potassium_dust"
+			id: "046EC90CF70C22E9"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "23A8124CE8551330"
+					item: "gtceu:potassium_dust"
+					type: "item"
+				}
+				{
+					id: "2CDB797D8C3418FF"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			icon: "gtceu:iodine_dust"
+			id: "2E4AE079E5B6C2C4"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "36EF926A61844C7F"
+					item: "gtceu:iodine_dust"
+					type: "item"
+				}
+				{
+					id: "3E67348DDD9EF461"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"2E4AE079E5B6C2C4"
+				"046EC90CF70C22E9"
+			]
+			icon: "gtceu:potassium_iodide_dust"
+			id: "541963BBDB259841"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "4B0CB2D8AD57E223"
+					item: "gtceu:potassium_iodide_dust"
+					type: "item"
+				}
+				{
+					id: "323375B15F6C37B1"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"7D7096B738182981"
+				"781D9644F852C504"
+			]
+			icon: "gtceu:sugar_water_bucket"
+			id: "05BDE829EBC214BB"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "1ABD6C66A8CCF36A"
+					item: "gtceu:sugar_water_bucket"
+					type: "item"
+				}
+				{
+					id: "545E05B09E330D9A"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"65F79D31E625A80C"
+				"05BDE829EBC214BB"
+			]
+			icon: "gtceu:soda_bucket"
+			id: "0BF04DECF742A0DA"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "778277A57AF65EDB"
+					item: "gtceu:soda_bucket"
+					type: "item"
+				}
+				{
+					id: "2233F4C483C0C2A7"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			icon: "gtceu:carbon_dioxide_bucket"
+			id: "65F79D31E625A80C"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "55344C82DF970FE6"
+					item: "gtceu:carbon_dioxide_bucket"
+					type: "item"
+				}
+				{
+					id: "05A5D00DB011CBBF"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			icon: "gtceu:magnesium_dust"
+			id: "3B485B80784D6974"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "7B17F40196B7F4E9"
+					item: "gtceu:magnesium_dust"
+					type: "item"
+				}
+				{
+					id: "31C3FCB45DAD43DF"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			icon: "gtceu:calcium_dust"
+			id: "6FF011DB5DCA04EE"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "61532993C09D124A"
+					item: "gtceu:calcium_dust"
+					type: "item"
+				}
+				{
+					id: "3EAFFA58F49490EB"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			icon: "gtceu:phosphate_dust"
+			id: "4037EEEA4A8785BC"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "1A7303E92B5B0BD0"
+					item: "gtceu:phosphate_dust"
+					type: "item"
+				}
+				{
+					id: "45199CD6C493FF37"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"3B485B80784D6974"
+				"4037EEEA4A8785BC"
+				"541963BBDB259841"
+				"6FF011DB5DCA04EE"
+			]
+			icon: "gtceu:electrolyte_mixture_dust"
+			id: "6B0561E2CF2710F3"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "34355B34D5CBC98B"
+					item: "gtceu:electrolyte_mixture_dust"
+					type: "item"
+				}
+				{
+					id: "76913B25F7104094"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"6B0561E2CF2710F3"
+				"0BF04DECF742A0DA"
+			]
+			id: "14BB7897ADDB3172"
+			rewards: [{
+				id: "55043BD30659CA9F"
+				item: "kubejs:ev_loot_bag"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0CDD87293541D838"
+				item: "kubejs:helperade_br_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			description: [
+				"If you are looking to contribute to Gregtech: Voyager, this page is a great way to do that. See a processing line missing? Make a PR!"
+				""
+				"https://github.com/bzells/Gregtech-Voyager"
+			]
+			id: "750402679111F550"
+			size: 2.0d
+			tasks: [{
+				id: "4C63E17C962E9389"
+				title: "Want to help?"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+	]
 	title: "LV-EV"
 }

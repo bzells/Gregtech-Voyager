@@ -128,6 +128,64 @@ ServerEvents.recipes((event) => {
         16
     )
 
+    function gma_bake_cookie(name, eut, lvl, time)
+    {
+        event.recipes.gtceu
+        .grandmas_baking(`kubejs:gma_${name}_cookies`)   // recipe ID
+        .itemInputs(`16x kubejs:${name}_cookie_dough`)
+        .itemOutputs(`16x kubejs:grandmas_${name}_cookies`)
+        .addData("paramount", "grandma")
+        .addData("paramount_level", lvl)
+        .duration(time * 20) // in ticks
+        .EUt(eut)
+    }
+
+    function cookie_mix(name, specialinput, eut, time)
+    {
+        global.recipe_mixer(
+        event,
+        `${name}_cookie_dough`,
+        specialinput,
+        [],
+        [`16x kubejs:${name}_cookie_dough`],
+        [],
+        eut,
+        time
+    )
+    }
+
+    gma_bake_cookie("mana_infused", 480, 3, 60)
+    gma_bake_cookie("source_berry", 120, 2, 60)
+    gma_bake_cookie("uncanny", 1920, 5, 360)
+    gma_bake_cookie("double_chocolate", 120, 2, 20)
+    gma_bake_cookie("honey", 120, 2, 60)
+
+    cookie_mix("mana_infused",
+        ["2x minecraft:egg", "2x kubejs:butter", "2x kubejs:baking_chocolate", "kubejs:baking_flour", "2x botania:mana_powder"],
+        480,
+        16
+    )
+    cookie_mix("source_berry",
+        ["2x minecraft:egg", "2x kubejs:butter", "2x ars_nouveau:sourceberry_bush", "kubejs:baking_flour", "2x minecraft:sugar"],
+        120,
+        16
+    )
+    cookie_mix("uncanny",
+        ["2x minecraft:egg", "2x kubejs:butter", "2x minecraft:chorus_fruit", "kubejs:baking_flour", "2x gtceu:ender_pearl_dust"],
+        1920,
+        60
+    )
+    cookie_mix("double_chocolate",
+        ["2x minecraft:egg", "2x kubejs:butter", "8x kubejs:baking_chocolate", "kubejs:cacao_powder", "2x minecraft:sugar"],
+        120,
+        8
+    )
+    cookie_mix("honey",
+        ["2x minecraft:egg", "2x kubejs:butter", "15x minecraft:honeycomb", "kubejs:cacao_powder", "2x minecraft:sugar"],
+        120,
+        16
+    )
+
     event.recipes.gtceu
         .grandmas_baking('kubejs:gmacookies')   // recipe ID
         .itemInputs('16x kubejs:cookie_dough')
@@ -154,4 +212,17 @@ ServerEvents.recipes((event) => {
         .itemOutputs("1x kubejs:baking_flour")
         .duration(100) // in ticks
         .EUt(30)
+
+
+    event.recipes.gtceu.packer("bag_of_cookies")
+    .itemInputs("32x kubejs:grandmas_cookie")
+    .itemOutputs("kubejs:bag_of_cookies")
+    .EUt(28)
+    .duration(20)
+
+    event.recipes.gtceu.packer("bag_of_uranium_cookies")
+    .itemInputs("32x kubejs:grandmas_uranium_cookies")
+    .itemOutputs("kubejs:bag_of_uranium_cookies")
+    .EUt(28)
+    .duration(20)
 })

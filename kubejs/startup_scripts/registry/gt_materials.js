@@ -354,6 +354,18 @@ function register_dust(name, ingredients, color, flags, c2) {
     }
 }
 
+function register_dust_lang(name, ingredients, color, flags, lang, c2) {
+    if (!c2) {
+        GTCEuStartupEvents.registry("gtceu:material", (event) => {
+            const mat = event.create(name).dust().components(ingredients).color(color).iconSet("dull").flags(flags).langValue(lang)
+        })
+    } else {
+        GTCEuStartupEvents.registry("gtceu:material", (event) => {
+            const mat = event.create(name).dust().components(ingredients).color(color).secondaryColor(c2).iconSet("dull").flags(flags).langValue(lang)
+        })
+    }
+}
+
 function register_gem(name, color, ingredients) {
     GTCEuStartupEvents.registry("gtceu:material", (event) => {
         const mat = event.create(name).gem().dust().ore(2, 3).components(ingredients).color(color).iconSet("shiny").flags(foil, long_rod, plates, rod, ring, frame, lens)
@@ -432,6 +444,10 @@ register_fluid("acidic_shiny_metal_mixture", "0x4f6cab", [], no_decomp)
 register_fluid("impure_shiny_metal_mixture", "0x152536", [], no_decomp)
 register_dust("shiny_metallic_residue", [], "0x3b4724", no_decomp)
 
+register_dust("dry_ruthenium_mixture", [], "0x4a4575", no_decomp)
+
+// dry_ruthenium_mixture
+
 register_fluid("sulfuric_rhodium_solution", "0x6c367a", [], no_decomp)
 register_fluid("sulfuric_inert_metal_solution", "0x2b1221", [], no_decomp)
 register_fluid("acidic_ruthenium_solution", "0x3a333d", [], no_decomp)
@@ -439,16 +455,32 @@ register_dust("impure_rhodium_sludge",[],  "0x3a111a", no_decomp)
 register_dust("purified_rhodium_mixture", [],  "0x5c244b", no_decomp)
 register_dust("salty_rhodium", [],  "0x8a5479", no_decomp)
 
-register_dust("plat_palladium_metal_residue", "0x44374a", [], no_decomp)
-register_fluid("sulfuric_plat-palladium_metal_solution", "0x512e52", [], no_decomp)
+register_dust("platinum_group_waste", [],  "0x303026", no_decomp)
 
-register_fluid("sulfuric_kerosene", "0xaaa22f", [], no_decomp)
-register_fluid("kerosene", "0x00000f", ["12x carbon", "26x hydrogen"], electrolyze)
+register_dust("platinum_group_waste_ashes", [],  "0x333333", no_decomp)
+
+register_dust("washed_platinum_sludge_residue", [],  "0x322133", no_decomp)
+
+register_dust("purified_platinum_sludge_residue", [],  "0x344433", no_decomp)
+
+
+register_dust("platinum_group_metal_residue", [], "0x44374a", no_decomp)
+register_dust("salty_platinum_mixture", [], "0xa69a79", no_decomp)
+register_dust("dirty_platinum_mixture", [], "0x4a4129", no_decomp)
+register_dust("purified_platinum_metal", [], "0xe8cd84", no_decomp)
+register_fluid("acidic_platinum_group_solution", "0x512e52", [], no_decomp)
+
+// register_fluid("sulfuric_kerosene", "0xaaa22f", [], no_decomp)
+// register_fluid("kerosene", "0x00000f", ["12x carbon", "26x hydrogen"], electrolyze)
 
 // moon ores
 register_ore_metal("lunite", ["2x desh", "1x tungsten", "2x silicon", "4x oxygen"], "0x5c4e3c", [no_decomp], [])
 register_ore_gem("socochalamite", ["2x amethyst", "1x rutile", "4x glowstone", "6x fluorine", "2x mercury"], "0x7764b0", [electrolyze], [])
 register_ore_gem("glunite", ["1x amethyst", "5x glowstone", "1x hydrogen"], "0xffbf00", [electrolyze], [])
+
+
+register_dust("moon_sand", [], "0x878787", no_decomp)
+register_dust("soft_moon_sand", [], "0xbfbfbf", no_decomp)
 
 // mars ores
 register_ore_gem("titanichite", ["2x titanite", "fluorine"], "0xff0055", [no_decomp], [])
@@ -493,6 +525,11 @@ abs_mat_sec("martian-composite", "0xbd0921", "0xa30054")
 // titanite
 
 // misc
+register_dust_lang("iodized_salt", ["2x salt", "1x potassium_iodide"], "0xf5fffd", no_decomp, "Iodized Salt", "0xe8fffa")
+register_dust_lang("electrolyte_mixture", ["magnesium", "calcium", "potassium"], "0xa1ffea", no_decomp, "Electrolyte Mixture")
+
+register_fluid("sugar_water", "0xebfffa", ["sugar", "water"], [no_decomp])
+register_fluid("soda", "0xebfffa", ["sugar", "water", "carbon_dioxide"], [no_decomp])
 
 // venus
 register_dust("venus_sand", [], "0xb38930", no_decomp)

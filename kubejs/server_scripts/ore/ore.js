@@ -365,7 +365,7 @@ GTCEuServerEvents.oreVeins((event) => {
         { material: "uraninite", weight: 25, density: 0.4, clusterSize: 25, mats: ["uraninite", "pitchblende", "uraninite"], dense: false },
         { material: "plutonium", weight: 10, density: 0.4, clusterSize: 30, mats: ["uraninite", "plutonium", "uraninite"], dense: true },
         { material: "electrotine", weight: 35, density: 0.9, clusterSize: 30, mats: ["electrotine", "gold", "redstone", "silver"], dense: false },
-        { material: "cooperite", weight: 15, density: 0.4, clusterSize: 40, mats: ["cooperite", "cooperite", "platinum", "palladium"], dense: true },
+        { material: "cooperite", weight: 5, density: 0.4, clusterSize: 40, mats: ["platinum", "bornite", "platinum", "cooperite"], dense: false },
         { material: "dalumite", weight: 15, density: 0.3, clusterSize: 45, heightRange: [-64, 100], mats: ["dalumite", "ilmenite", "graphite"], dense: true }
     ]
 
@@ -521,10 +521,10 @@ GTCEuServerEvents.oreVeins((event) => {
             clusterSize: 30,
             heightRange: [0, 200],
             layers: [
-                [3, "gtceu:platinum", [1, 2]],
+                [3, "gtceu:tetrahedrite", [1, 2]],
                 [2, "gtceu:bornite", [1, 1]],
                 [1, "gtceu:bornite", [1, 1]],
-                [2, "gtceu:platinum", [1, 1]]
+                [2, "gtceu:tetrahedrite", [1, 1]]
             ],
             surfaceRock: "gtceu:bornite",
             layer: "moon",

@@ -13,6 +13,265 @@
 	id: "207F67267DC2D7D9"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"&a&lInventory pets!&r&r"
+				""
+				"Inventory pets are QoL items that provide some benefit simply by taking a slot inside of your inventory. Not all of them are craftable, but the ones that are craftable are in this chapter. Some of them can give some very powerful gimmicks if used correctly. It is up to you to find said gimmicks (as the devs aren't aware of all of them)"
+				""
+				"Something to note: inventory pets do &onot need food&r in Gregtech: Voyager"
+				""
+				"A lot of inventory pets require &dArs Nouveau&r enchanting (at least as of 0.4.xa.pb)"
+				""
+				"Most are just a crafting recipe, or require &bMV&r"
+			]
+			icon: {
+				Count: 1
+				id: "inventorypets:pet_creeper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22264D0104660585"
+			size: 1.5d
+			tasks: [{
+				id: "315EF68F506EA54D"
+				title: "Pets... but inventory..."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "7714A6A45C6B7A17"
+			tasks: [{
+				id: "61D132C33DE61ED1"
+				item: "kubejs:explosive_heart"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7714A6A45C6B7A17"
+				"3687F92D5D5F38FF"
+			]
+			id: "7E8E54739F34E3CD"
+			tasks: [{
+				id: "45F2D6501CBED712"
+				item: "kubejs:heart_of_destruction"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7E8E54739F34E3CD"]
+			description: [
+				"The creeper pet creates a giant explosion on right click. Surely you can find a use for this?"
+				""
+				"&7oh yeah, and explosions? You no longer take damage from them. Wonder what that can be used for.."
+			]
+			id: "1C442D0338B84E28"
+			tasks: [{
+				id: "0B8A173DAC148759"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_creeper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3687F92D5D5F38FF"]
+			description: ["This pet gives you looting/fortune (doesnt work on GT ores)."]
+			id: "3F5762C02D2F5A64"
+			tasks: [{
+				id: "5BD35C6A21A75071"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_loot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3687F92D5D5F38FF"]
+			description: ["This pet gives you double XP. Useful for XP farms (duh)"]
+			id: "215737F5952695A8"
+			tasks: [{
+				id: "4A9689240F877A57"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_pixie"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6A066106E82E9C31"]
+			description: ["Similar to the enderman pet, but you can only teleport through walls"]
+			id: "75416A049E4DBDAE"
+			tasks: [{
+				id: "2B4FE1C9A2E6C218"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_silverfish"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: ["Grants slow falling. Great option early game for not taking fall damage"]
+			id: "1EEDDEBD9DE3DEE3"
+			tasks: [{
+				id: "561958E7336CAD9C"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_sheep"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0B4A6B9B95DFA2B4"]
+			description: ["Free milk!"]
+			id: "53FDD2A2B8BB3AA2"
+			tasks: [{
+				id: "521CA3B1D1B9542C"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_cow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			description: ["This pet does nothing. He is just kind of cute. &oKind of&r"]
+			id: "3DB7353DB7C712F0"
+			tasks: [{
+				id: "28559E5F4807D0A6"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_slime"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12EEF6CEEB33CB25"]
+			description: ["Useful for auto-repairing"]
+			id: "51C81BA0F745D610"
+			tasks: [{
+				id: "4FB79AF05E81F6FA"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_anvil"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A066106E82E9C31"]
+			description: [
+				"The enderman pet is a worse staff of travelling. He allows you to teleport on right click. Great as an early game option."
+				""
+				"He also can save you from fall damage/death (if you are above 1/2 heart at the time of damage)"
+			]
+			id: "071B9666958B873D"
+			tasks: [{
+				id: "7430CCD749CF90AF"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_enderman"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["654CD3417DA4DA1D"]
+			description: ["Gives fire resistance. This pet is very useful for nether adventures"]
+			id: "63433162B1A08DD3"
+			tasks: [{
+				id: "40B497818758D0D8"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_magma_cube"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["654CD3417DA4DA1D"]
+			description: ["After &8drowning...?&r any pet, you can now breathe under water! Very useful for exploring across the ocean. Beware of sea serpents and sirens!"]
+			id: "4FE9B5B0A3F73E5B"
+			subtitle: "Don't question the morality of crafting this pet"
+			tasks: [{
+				id: "4FC547844C6F9602"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_squid"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+	]
 	title: "Inventory Pets"
 }

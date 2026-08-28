@@ -33,10 +33,13 @@ ServerEvents.recipes((event) => {
     }
 
     create_mixer_recipe("tin_silver_alloy_mix", ["3x gtceu:silver_dust", "4x gtceu:tin_dust"], [], ["7x gtceu:tin_silver_alloy_dust"], voltTier("lv"), 900)
-    create_mixer_recipe("metallic_mica_oil", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:oil_heavy 400"], ["4x gtceu:metallic_mica_dust"], voltTier("lv"), 600)
+    create_mixer_recipe("metallic_mica_oil", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:lubricant 400"], ["4x gtceu:metallic_mica_dust"], voltTier("lv"), 600)
     create_mixer_recipe("aluminium_lithium_dust_mix", ["1x gtceu:aluminium_dust", "1x gtceu:lithium_dust"], [], ["2x gtceu:aluminium_lithium_compound_dust"], voltTier("lv"), 600)
-    create_mixer_recipe("metallic_mica_fishoil", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:fish_oil 800"], ["4x gtceu:metallic_mica_dust"], voltTier("lv"), 600)
+    create_mixer_recipe("metallic_mica_fishoil", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:fish_oil 300"], ["4x gtceu:metallic_mica_dust"], voltTier("lv"), 600)
     create_mixer_recipe("metallic_mica_seedoil", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:seed_oil 200"], ["4x gtceu:metallic_mica_dust"], voltTier("lv"), 600)
+    create_mixer_recipe("metallic_mica_polymer", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["gtceu:component_polymer 200"], ["8x gtceu:metallic_mica_dust"], voltTier("ev"), 600)
+    create_mixer_recipe("metallic_mica_hsl", ["1x gtceu:silver_dust", "3x gtceu:mica_dust"], ["voyagercore:high_stress_lubricant 100"], ["16x gtceu:metallic_mica_dust"], voltTier("luv"), 600)
+
 
     create_mixer_recipe(
         "industrial_perfected_electrum",
