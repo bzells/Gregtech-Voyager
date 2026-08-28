@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
 
-    event.remove({ output: "framedblocks:framed_cube" })
+    event.remove({ output: "framedblocks:framed_cube", type: "crafting_shaped" })
 
     event.remove({output: "hangglider:glider_wing"})
     event.remove({output: "vinery:straw_hat"})
