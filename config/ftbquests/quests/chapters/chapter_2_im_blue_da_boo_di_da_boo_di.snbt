@@ -837,7 +837,7 @@
 			dependencies: [
 				"654CD3417DA4DA1D"
 				"02F4E464E92B48E2"
-				"31ECA53434A3F674"
+				"6DB5B75DBAD3561B"
 			]
 			id: "4BD922E5CE685F22"
 			rewards: [{
@@ -877,7 +877,7 @@
 			dependencies: [
 				"654CD3417DA4DA1D"
 				"02F4E464E92B48E2"
-				"31ECA53434A3F674"
+				"6DB5B75DBAD3561B"
 			]
 			id: "3778C068660FCD61"
 			rewards: [{
@@ -2090,6 +2090,23 @@
 			}]
 			x: -18.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["31ECA53434A3F674"]
+			id: "6DB5B75DBAD3561B"
+			rewards: [{
+				id: "3AFD344BD8F79B59"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "5379A9168D9A756E"
+				item: { Count: 16, id: "gtceu:kanthal_coil_block" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
 		}
 	]
 	title: "Chapter 2: Medium Voltage"

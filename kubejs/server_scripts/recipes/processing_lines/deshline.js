@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
 
     global.recipe_lcr(event, "desh_group_sludge_desh", ["gtceu:purified_desh_ore"], ["gtceu:formic_acid 100"], ["8x gtceu:desh_group_sludge_dust"], [], 10, 32)
 
-    global.recipe_centrifuge(event, "dsg_processing", ["6x gtceu:desh_group_sludge_dust"], ["gtceu:aqua_regia 800"], ["6x gtceu:lunar_metal_residue_dust", "4x gtceu:dense_metal_mixture_dust"], [], 30, 480)
+    global.recipe_centrifuge(event, "dsg_processing", ["2x gtceu:desh_group_sludge_dust"], ["gtceu:aqua_regia 200"], ["6x gtceu:lunar_metal_residue_dust", "4x gtceu:dense_metal_mixture_dust"], [], 30, 480)
 
     global.recipe_chem_plant(event, "dsg_processing",
         ["6x gtceu:desh_group_sludge_dust"],
@@ -45,8 +45,8 @@ ServerEvents.recipes((event) => {
         ["5x gtceu:lunarium_metal_sludge_dust"], ['gtceu:iron_iii_chloride 250'],
         ["3x gtceu:dewatered_lunarium_metal_mixture_dust"],
         ["minecraft:water 2000"],
-        40,
-        1980
+        20,
+        480
     )
     global.recipe_centrifuge(
         event,

@@ -36,15 +36,27 @@ ServerEvents.recipes((event) => {
             .duration(seconds * 20) // in ticks
             .EUt(eut)
     }
+    function gas_collect(circuit, dimension, gas, eut, time)
+    {
+        event.recipes.gtceu
+        .gas_collector(gas.split(":")[1].split(" ")[0] + "_gas_collection")
+        .outputFluids(gas)
+        .circuit(circuit)
+        .dimension(dimension)
+        .EUt(eut)
+        .duration(time * 20)
+    }
+
+    gas_collect(1, "ad_astra:mars", "gtceu:martian_air 10000", 1920, 5)
 
     freeze("martian_air", "gtceu", 4000, "gtceu:liquid_martian_air 4000", 7680, 4)
     distill(
         "liquid_martian_air",
         "gtceu",
         50000,
-        ["gtceu:carbon_dioxide 95000", "gtceu:nitrogen 30000", "gtceu:argon 10000", "gtceu:oxygen 5000", "gtceu:krypton neon 1000", "gtceu:xenon 250"],
-        "32x gtceu:martian_sand_dust",
-        7680,
+        ["gtceu:carbon_dioxide 95000", "gtceu:nitrogen 12000", "gtceu:argon 10000", "gtceu:oxygen 5000", "gtceu:krypton neon 1000", "gtceu:xenon 250"],
+        "64x gtceu:martian_sand_dust",
+        1920,
         50
     )
 })

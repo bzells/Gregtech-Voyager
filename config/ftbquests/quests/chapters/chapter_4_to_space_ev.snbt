@@ -190,7 +190,7 @@
 		}
 		{
 			id: "34ED22791B767607"
-			subtitle: "Petrochem can help a lot with this"
+			subtitle: "Jungle wood line can help a lot with this"
 			tasks: [{
 				id: "151447FA86736D1B"
 				item: "gtceu:acetone_bucket"
@@ -1465,6 +1465,11 @@
 					item: "gtceu:cube_oven"
 					type: "item"
 				}
+				{
+					id: "4CA51E160300BB7D"
+					item: "gtceu:cube_mixer"
+					type: "item"
+				}
 			]
 			title: "Cube Multis"
 			x: 6.0d
@@ -1873,7 +1878,7 @@
 				"5B6739036C267EC4"
 			]
 			description: [
-				"The &2Hungry Helper&r is &cgrandma's favorite&r. As a consquence, he is always hungry, and only getting &lhungrier&r."
+				"The &2Hungry Helper&r is &cgrandma's favorite&r. As a consequence, he is always hungry, and only getting &lhungrier&r."
 				""
 				"As this helper levels up, he will eat &6grandma's cookies faster and faster&r, but also generate &amore EU/t&r"
 				""

@@ -16,7 +16,7 @@
     "material.gtceu.sulfuric_inert_metal_solution": "Sulfuric Inert Metal Solution",
     "material.gtceu.acidic_ruthenium_solution": "Acidic Ruthenium Solution",
     "material.gtceu.sulfuric_rhodium_solution": "Sulfuric Rhodium Solution",
-    "material.gtceu.impure_rhodium_sludge": "Impure Rhoduim Sludge",
+    "material.gtceu.impure_rhodium_sludge": "Impure Rhodium Sludge",
     "material.gtceu.plat_palladium_metal_residue": "Plat-Palladium Metal Residue",
     "material.gtceu.sulfuric_plat-palladium_metal_solution": "Sulfuric Plat-Palladium Metal Solution",
     "material.gtceu.socochalamite": "Socochalamite",
@@ -41,6 +41,31 @@
     "material.gtceu.fluorite": "Fluorite",
     "material.gtceu.martian-composite": "Martian-Composite",
     "material.gtceu.bluponium": "Bluponium",
+
+    "material.gtceu.purified_rhodium_mixture": "Purified Rhodium Mixture",
+    "material.gtceu.salty_rhodium": "Salty Rhodium",
+
+    "material.gtceu.shiny_metallic_residue": "Shiny Metallic Residue",
+
+    "material.gtceu.acidic_iridium_solution": "Acidic Iridium Solution",
+
+    "material.gtceu.platinum_group_waste": "Platinum Group Waste",
+    "material.gtceu.platinum_group_waste_ashes": "Platinum Group Waste Ashes",
+    "material.gtceu.purified_platinum_group_sludge_residue": "Purified Platinum Group Sludge Residue",
+    "material.gtceu.washed_platinum_group_sludge_residue": "Washed Platinum Group Sludge Residue",
+
+    "material.gtceu.platinum_group_metal_residue": "Platinum Group Metal Residue",
+    "material.gtceu.acidic_platinum_group_solution": "Acidic Platinum Group Solution",
+    "material.gtceu.salty_platinum_mixture": "Salty Platinum Mixture",
+    "material.gtceu.dirty_platinum_mixture": "Dirty Platinum Mixture",
+    "material.gtceu.purified_platinum_metal": "Purified Platinum Metal",
+
+    "material.gtceu.moon_sand": "Lunar Sand",
+    "material.gtceu.soft_moon_sand": "Soft Lunar Sand",
+
+    "material.gtceu.sugar_water": "Sticky Water",
+    "material.gtceu.soda": "Soda",
+    "material.gtceu.electrolyte_mixture": "Electrolyte Mixture",
 
     "material.gtceu.molten_titanex-594-hta": "Molten Titanex 594-HTa",
     "material.gtceu.molten_titanex-879-htb": "MoltenTitanex 879-HTb",

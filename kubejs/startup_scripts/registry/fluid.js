@@ -24,7 +24,6 @@ StartupEvents.registry("fluid", (event) => {
 
     event.create("high_temp_binding_agent_s").thickTexture(0xdbaa40).bucketColor(0xdbaa40).displayName("HT-BA (S)").noBlock()
 
-    event.create("helperade_br").thinTexture(0x00ffff).bucketColor(0x00ffff).displayName("Helperade (Blue Rasberry)").noBlock()
 
     // Highstress lubricant
     event.create("igp_lubricant_base").thinTexture(0x90915d).bucketColor(0x90915d).displayName("IGP Lubricant Base").noBlock()

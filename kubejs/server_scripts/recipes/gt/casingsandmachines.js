@@ -94,9 +94,17 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:platinum_casing")
-        .itemInputs("6x gtceu:platinum_plate", "1x gtceu:titanium_frame", "2x #gtceu:circuits/ev")
+        .itemInputs("6x gtceu:platinum_plate", "1x gtceu:titanium_frame", "1x #gtceu:circuits/hv")
         .circuit(6)
         .itemOutputs("2x voyagercore:platinum_casing")
+        .duration(30)
+        .EUt(16)
+
+    event.recipes.gtceu
+        .assembler("kubejs:energetic_casing")
+        .itemInputs("6x gtceu:energetic_alloy_plate", "1x gtceu:titanium_frame", "1x gtceu:fluxed_electrum_quadruple_wire")
+        .circuit(6)
+        .itemOutputs("2x voyagercore:energetic_casing")
         .duration(30)
         .EUt(16)
 
@@ -211,6 +219,7 @@ ServerEvents.recipes((event) => {
     cube_multi("tungsten", "autoclave")
     cube_multi("refined_fluxed_electrum", "thermal_centrifuge")
     cube_multi("platinum", "assembler")
+    cube_multi("energetic_alloy", "mixer")
 
     event.shaped(
         Item.of("voyagercore:chemical_plant", 1), // arg 1: output

@@ -229,6 +229,9 @@ ServerEvents.recipes((event) => {
         E: "gtceu:ev_robot_arm"
     })
 
+    event.shapeless(Item.of("ae2:cable_pattern_provider", 1), ["ae2:pattern_provider"])
+
+
     event.recipes.gtceu
         .assembler("kubejs:molecular_assembler")
         .itemInputs("gtceu:ev_machine_hull", "2x ae2:engineering_processor", "ae2:formation_core", "gtceu:ev_robot_arm")

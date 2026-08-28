@@ -6,13 +6,13 @@ ServerEvents.recipes((event) => {
 
 
     // @ts-ignore
-    function advanced_calorie_conversion(cookie, helper, output, time, eut, outF, helperLevel)
+    function advanced_calorie_conversion(cookie, output, time, eut, outF, helperLevel)
     {
         if (!outF)
         {
             outF = []
         }
-        event.recipes.gtceu.advanced_calorie_conversion("kubejs:grandmas_" + cookie + "_" + helper)
+        event.recipes.gtceu.advanced_calorie_conversion("kubejs:grandmas_" + cookie + "_" + "calorie_conversions")
                 .itemInputs("kubejs:grandmas_" + cookie)
                 .addData("paramount", "hungry")
                 .addData("paramount_level", helperLevel)
@@ -77,11 +77,19 @@ ServerEvents.recipes((event) => {
     // calorie_conversion("cookie", "hungry", "gtceu:carbon_dust", 3.75, 2048)
     // calorie_conversion("cookie", "lcptr", "gtceu:carbon_dust", 15, 1024)
 
-    advanced_calorie_conversion('uranium_cookies', 'hungry_hungry', 'gtceu:thorium_dust', 10, 16384, 'gtceu:steam 500', 5)
+    advanced_calorie_conversion('uranium_cookies', 'gtceu:thorium_dust', 25, 16384 * 1.5, 'gtceu:steam 500', 5)
 
-    advanced_calorie_conversion('crystal_cookies', 'hungry_hungry', 'gtceu:tiny_uraninite_dust', 10, 16384, 'gtceu:steam 500', 5)
+    advanced_calorie_conversion('crystal_cookies', 'gtceu:tiny_uraninite_dust', 25, 16384 * 2, 'gtceu:steam 1000', 8)
 
-    advanced_calorie_conversion('cookie', 'hungry_hungry', 'gtceu:carbon_dust', 3, 4096, 'gtceu:steam 500', 1)
+    advanced_calorie_conversion('cookie', 'gtceu:carbon_dust', 2, 8192, 'gtceu:steam 500', 1)
+
+    advanced_calorie_conversion('mana_infused_cookies', 'botania:fertilizer', 8, 12000, 'gtceu:steam 500', 3)
+    advanced_calorie_conversion('uncanny_cookies', 'gtceu:small_ender_pearl_dust', 128, 4096, 'gtceu:steam 250', 3)
+    advanced_calorie_conversion('source_berry_cookies', 'gtceu:tiny_source_dust', 24, 8192, 'gtceu:steam 1000', 2)
+
+    advanced_calorie_conversion('double_chocolate_cookies', 'gtceu:carbon_dust', 1, 8192 + 2048, 'gtceu:steam 1000', 1)
+
+    advanced_calorie_conversion('honey_cookies', 'minecraft:honeycomb', 16, 8192, 'gtceu:steam 500', 1)
 
 
     // calorie_conversion('cookie', 'hungry_hungry', 'gtceu:graphite_dust', 3, 4096)

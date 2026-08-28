@@ -91,5 +91,6 @@ GTCEuStartupEvents.registry("gtceu:machine", (event) => {
     cubeMulti("thermal_centrifuge", "heat_resistant_refined_fluxed_electrum")
     cubeVMulti("autoclave", "condensation_resistant_tungsten")
     cubeVMulti("assembler", "platinum")
+    cubeVMulti("mixer", "energetic")
     // cubeMulti('radiation_chamber', 'radiation_proof_lead')
 })

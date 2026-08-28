@@ -903,6 +903,7 @@
 				"5917358374DEB01A"
 			]
 			id: "126E181B4D235782"
+			min_required_tasks: 1
 			subtitle: "big ol name time!!"
 			tasks: [{
 				id: "3651CC654C24A0C3"
@@ -1576,6 +1577,7 @@
 			]
 			icon: "gtceu:hydrofluoric_acid_bucket"
 			id: "5917358374DEB01A"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "62D12D49EAA58054"
@@ -1597,6 +1599,7 @@
 			]
 			icon: "gtceu:chloroform_bucket"
 			id: "4676473909B5BA15"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "59D38403A6E36E80"
@@ -1615,6 +1618,7 @@
 			dependencies: ["5003483C6028EE64"]
 			icon: "gtceu:fluorine_bucket"
 			id: "442D6F25F32AB633"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "3EED63A07B46DC67"
@@ -1633,6 +1637,7 @@
 			dependencies: ["5003483C6028EE64"]
 			icon: "gtceu:hydrogen_bucket"
 			id: "094376C041FA70F8"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "5F4596E5F34EB8BA"
@@ -1651,6 +1656,7 @@
 			dependencies: ["5003483C6028EE64"]
 			icon: "gtceu:chlorine_bucket"
 			id: "0EB5F5040B97198A"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "391CDFEBBF23CC76"
@@ -1669,6 +1675,7 @@
 			dependencies: ["5003483C6028EE64"]
 			icon: "gtceu:methane_bucket"
 			id: "460382625DE530F7"
+			min_required_tasks: 1
 			tasks: [
 				{
 					id: "4BE9B535FE552BAD"

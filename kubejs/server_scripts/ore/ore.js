@@ -200,9 +200,9 @@ GTCEuServerEvents.oreVeins((event) => {
 
         if (dense) {
             addMatVein(`mars/${material}/dense`, {
-                weight: Math.floor(weight / 10),
+                weight: Math.ceil(weight / 10),
                 density: density,
-                clusterSize: Math.floor(clusterSize * 1.75),
+                clusterSize: Math.ceil(clusterSize * 1.75),
                 layer: layer,
                 dimension: dimension,
                 heightRange: heightRange,
@@ -210,6 +210,146 @@ GTCEuServerEvents.oreVeins((event) => {
             })
         }
     }
+
+
+    function addOWVein({ material, weight, density, clusterSize, mats, dense, heightRange }) {
+        if (!heightRange) {
+            heightRange = [-64, 200]
+        }
+        const dimension = "minecraft:overworld"
+        const layer = dimToLayer[dimension]
+        const gt = (/** @type {string} */ m) => `gtceu:${m}`
+        const matIndex = mats.length == 3 ? [0, 1, 2, 0] : [0, 1, 2, 3]
+        const weights = [1, 2, 3, 3]
+        /** @type {[number,number][]}*/
+        const standardSizes =
+            mats.length == 3
+                ? [
+                      [1, 1],
+                      [1, 3],
+                      [1, 1],
+                      [1, 2]
+                  ]
+                : [
+                      [1, 2],
+                      [1, 3],
+                      [1, 2],
+                      [1, 3]
+                  ]
+        /** @type {[number,number][]}*/
+        const denseSizes = [
+            [3, 5],
+            [3, 5],
+            [2, 6],
+            [3, 5]
+        ]
+
+        /** @param {[number, number][]} sizes @returns {LayerTuple[]} */
+        const buildLayers = (sizes) => matIndex.map((mi, i) => [weights[i], gt(mats[mi]), sizes[i]])
+
+        addMatVein(`ow/${material}`, {
+            weight: weight,
+            density: density,
+            clusterSize: clusterSize,
+            layer: layer,
+            dimension: dimension,
+            heightRange: heightRange,
+            layers: buildLayers(standardSizes)
+        })
+
+        if (dense) {
+            addMatVein(`ow/${material}/dense`, {
+                weight: Math.ceil(weight / 10),
+                density: density,
+                clusterSize: Math.ceil(clusterSize * 1.75),
+                layer: layer,
+                dimension: dimension,
+                heightRange: heightRange,
+                layers: buildLayers(denseSizes)
+            })
+        }
+    }
+
+    function addTFVein({ material, weight, density, clusterSize, mats, dense, heightRange }) {
+        if (!heightRange) {
+            heightRange = [-45, 5]
+        }
+        const dimension = "twilightforest:twilight_forest"
+        const layer = dimToLayer[dimension]
+        const gt = (/** @type {string} */ m) => `gtceu:${m}`
+        const matIndex = mats.length == 3 ? [0, 1, 2, 0] : [0, 1, 2, 3]
+        const weights = [1, 2, 3, 3]
+        /** @type {[number,number][]}*/
+        const standardSizes =
+            mats.length == 3
+                ? [
+                      [1, 1],
+                      [1, 3],
+                      [1, 1],
+                      [1, 2]
+                  ]
+                : [
+                      [1, 2],
+                      [1, 3],
+                      [1, 2],
+                      [1, 3]
+                  ]
+        /** @type {[number,number][]}*/
+        const denseSizes = [
+            [3, 5],
+            [3, 5],
+            [2, 6],
+            [3, 5]
+        ]
+
+        /** @param {[number, number][]} sizes @returns {LayerTuple[]} */
+        const buildLayers = (sizes) => matIndex.map((mi, i) => [weights[i], gt(mats[mi]), sizes[i]])
+
+        addMatVein(`twilightforest/${material}`, {
+            weight: weight,
+            density: density,
+            clusterSize: clusterSize,
+            layer: layer,
+            dimension: dimension,
+            heightRange: heightRange,
+            layers: buildLayers(standardSizes)
+        })
+
+        if (dense) {
+            addMatVein(`twilightforest/${material}/dense`, {
+                weight: Math.ceil(weight / 10),
+                density: density,
+                clusterSize: Math.ceil(clusterSize * 1.75),
+                layer: layer,
+                dimension: dimension,
+                heightRange: heightRange,
+                layers: buildLayers(denseSizes)
+            })
+        }
+    }
+    //tf
+
+    const tfOres =
+    [
+        { material: "source", weight: 5, density: 0.3, clusterSize: 25, mats: ["source", "lapis", "amethyst", "lazurite"], dense: true },
+        { material: "nickel", weight: 15, density: 0.3, clusterSize: 25, mats: ["nickel", "garnierite", "cobaltite", "garnierite"], dense: true },
+        { material: "nickel/dense", weight: 1, density: 0.6, clusterSize: 50, mats: ["nickel", "chromite", "nickel", "chromite"], dense: false },
+        { material: "silver", weight: 15, density: 0.3, clusterSize: 25, mats: ["lead", "galena", "silver", "silver"], dense: true },
+        { material: "gem/cool", weight: 10, density: 0.3, clusterSize: 25, mats: ["diamond", "sapphire", "emerald", "opal"], dense: true },
+        { material: "gem/warm", weight: 10, density: 0.3, clusterSize: 25, mats: ["ruby", "realgar", "topaz", "ruby"], dense: true },
+        { material: "red", weight: 15, density: 0.3, clusterSize: 25, mats: ["ruby", "redstone", "cinnabar", "redstone"], dense: true },
+        { material: "blue", weight: 15, density: 0.3, clusterSize: 25, mats: ["lapis", "lazurite", "sapphire", "lapis"], dense: true },
+        { material: "yellow", weight: 15, density: 0.3, clusterSize: 25, mats: ["sphalerite", "topaz", "zinc", "gold"], dense: true },
+        { material: "magnetite", weight: 60, density: 0.3, clusterSize: 30, mats: ["magnetite", "gold", "vanadium_magnetite", "magnetite"], dense: true },
+        { material: "pitchblende", weight: 10, density: 0.3, clusterSize: 25, mats: ["pitchblende", "pitchblende", "pitchblende", "uraninite"], dense: true },
+    ]
+
+    //ow
+
+    const overworldOres = 
+    [
+        { material: "mica", weight: 2, density: 0.3, clusterSize: 45, mats: ["kyanite", "mica", "lepidolite", "mica"], dense: true }
+    ]
 
     // mars ores
 
@@ -225,379 +365,45 @@ GTCEuServerEvents.oreVeins((event) => {
         { material: "uraninite", weight: 25, density: 0.4, clusterSize: 25, mats: ["uraninite", "pitchblende", "uraninite"], dense: false },
         { material: "plutonium", weight: 10, density: 0.4, clusterSize: 30, mats: ["uraninite", "plutonium", "uraninite"], dense: true },
         { material: "electrotine", weight: 35, density: 0.9, clusterSize: 30, mats: ["electrotine", "gold", "redstone", "silver"], dense: false },
-        { material: "cooperite", weight: 15, density: 0.4, clusterSize: 40, mats: ["cooperite", "cooperite", "platinum", "palladium"], dense: true },
+        { material: "cooperite", weight: 5, density: 0.4, clusterSize: 40, mats: ["platinum", "bornite", "platinum", "cooperite"], dense: false },
         { material: "dalumite", weight: 15, density: 0.3, clusterSize: 45, heightRange: [-64, 100], mats: ["dalumite", "ilmenite", "graphite"], dense: true }
     ]
 
     marsOres.forEach(addMarsVein)
+    overworldOres.forEach(addOWVein)
+    tfOres.forEach(addTFVein)
 
     // overworld ores
 
-    addCuboidVein("overworld/mica", {
-        weight: 5,
-        density: 0.3,
-        clusterSize: 45,
-        layer: "stone",
-        dimension: "minecraft:overworld",
-        heightRange: [20, 90],
-        top: { mat: GTMaterials.Kyanite, size: 1 },
-        middle: { mat: GTMaterials.Mica, size: 3 },
-        bottom: { mat: GTMaterials.Lepidolite, size: 2 },
-        spread: { mat: GTMaterials.Mica },
-        surfaceRock: GTMaterials.Mica
-    })
+    // addCuboidVein("overworld/mica", {
+    //     weight: 5,
+    //     density: 0.3,
+    //     clusterSize: 45,
+    //     layer: "stone",
+    //     dimension: "minecraft:overworld",
+    //     heightRange: [20, 90],
+    //     top: { mat: GTMaterials.Kyanite, size: 1 },
+    //     middle: { mat: GTMaterials.Mica, size: 3 },
+    //     bottom: { mat: GTMaterials.Lepidolite, size: 2 },
+    //     spread: { mat: GTMaterials.Mica },
+    //     surfaceRock: GTMaterials.Mica
+    // })
 
-    addBlockVein("overworld/dense/mica", {
-        weight: 2,
-        density: 0.8,
-        clusterSize: 45,
-        layer: "stone",
-        dimension: "minecraft:overworld",
-        heightRange: [-45, 5],
-        layers: [
-            [2, "gtceu:mica_ore", [3, 6]],
-            [2, "gtceu:kyanite_ore", [2, 4]],
-            [1, "gtceu:mica_ore", [2, 4]]
-        ]
-    })
+    // addBlockVein("overworld/dense/mica", {
+    //     weight: 2,
+    //     density: 0.8,
+    //     clusterSize: 45,
+    //     layer: "stone",
+    //     dimension: "minecraft:overworld",
+    //     heightRange: [-45, 5],
+    //     layers: [
+    //         [2, "gtceu:mica_ore", [3, 6]],
+    //         [2, "gtceu:kyanite_ore", [2, 4]],
+    //         [1, "gtceu:mica_ore", [2, 4]]
+    //     ]
+    // })
 
-    // twilight ores
 
-    /** @type {(LayeredVeinConfig & { key: string })[]} */
-    const twilightOres = [
-        {
-            key: "twilight/source",
-            weight: 5,
-            density: 0.3,
-            clusterSize: 40,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:source_ore", [1, 2]],
-                [2, "gtceu:lapis_ore", [1, 2]],
-                [1, "gtceu:lazurite_ore", [1, 2]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/source",
-            weight: 1,
-            density: 0.7,
-            clusterSize: 40,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:source_ore", [3, 6]],
-                [2, "gtceu:lapis_ore", [1, 2]],
-                [1, "gtceu:lazurite_ore", [1, 2]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/nickel",
-            weight: 15,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:nickel_ore", [1, 3]],
-                [2, "gtceu:magnesite_ore", [1, 3]],
-                [1, "gtceu:nickel_ore", [1, 2]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/nickel",
-            weight: 1,
-            density: 0.8,
-            clusterSize: 40,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:nickel_ore", [3, 6]],
-                [2, "gtceu:magnesite_ore", [2, 3]],
-                [2, "gtceu:nickel_ore", [2, 2]],
-                [1, "gtceu:chromite_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/cobalt",
-            weight: 25,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:cobalt_ore", [1, 3]],
-                [2, "gtceu:cobaltite_ore", [1, 2]],
-                [1, "gtceu:garnierite_ore", [1, 2]],
-                [2, "gtceu:cobalt_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/cobalt",
-            weight: 1,
-            density: 0.7,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:cobalt_ore", [2, 4]],
-                [2, "gtceu:cobaltite_ore", [3, 6]],
-                [1, "gtceu:garnierite_ore", [1, 2]],
-                [2, "gtceu:cobalt_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/silver",
-            weight: 30,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:silver_ore", [1, 3]],
-                [2, "gtceu:galena_ore", [1, 2]],
-                [1, "gtceu:lead_ore", [1, 2]],
-                [2, "gtceu:gold_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/silver",
-            weight: 2,
-            density: 0.7,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:silver_ore", [3, 6]],
-                [2, "gtceu:galena_ore", [2, 4]],
-                [1, "gtceu:lead_ore", [1, 2]],
-                [2, "gtceu:gold_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/gem",
-            weight: 15,
-            density: 0.3,
-            clusterSize: 35,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:emerald_ore", [1, 3]],
-                [2, "gtceu:diamond_ore", [1, 2]],
-                [1, "gtceu:ruby_ore", [1, 2]],
-                [2, "gtceu:sapphire_ore", [1, 3]],
-                [2, "gtceu:realgar_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/gem",
-            weight: 1,
-            density: 0.7,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:emerald_ore", [2, 4]],
-                [2, "gtceu:diamond_ore", [2, 4]],
-                [1, "gtceu:ruby_ore", [2, 4]],
-                [2, "gtceu:sapphire_ore", [2, 4]],
-                [2, "gtceu:realgar_ore", [2, 4]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/pitchblende",
-            weight: 15,
-            density: 0.2,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:pitchblende_ore", [1, 2]],
-                [2, "gtceu:pitchblende_ore", [1, 2]],
-                [1, "gtceu:pitchblende_ore", [1, 2]],
-                [2, "gtceu:uraninite_ore", [1, 2]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/pitchblende",
-            weight: 1,
-            density: 0.8,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:pitchblende_ore", [3, 6]],
-                [2, "gtceu:pitchblende_ore", [2, 2]],
-                [1, "gtceu:pitchblende_ore", [2, 2]],
-                [2, "gtceu:uraninite_ore", [3, 6]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/magnetite",
-            weight: 40,
-            density: 0.4,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:magnetite_ore", [2, 3]],
-                [2, "gtceu:vanadium_magnetite_ore", [2, 3]],
-                [1, "gtceu:gold_ore", [1, 2]],
-                [2, "gtceu:magnetite_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/magnetite",
-            weight: 3,
-            density: 1,
-            clusterSize: 40,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:magnetite_ore", [3, 6]],
-                [2, "gtceu:vanadium_magnetite_ore", [2, 2]],
-                [1, "gtceu:gold_ore", [2, 2]],
-                [2, "gtceu:magnetite_ore", [3, 6]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/red",
-            weight: 25,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:ruby_ore", [1, 2]],
-                [2, "gtceu:redstone_ore", [2, 3]],
-                [1, "gtceu:realgar_ore", [1, 2]],
-                [2, "gtceu:redstone_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/red",
-            weight: 1,
-            density: 0.9,
-            clusterSize: 45,
-            heightRange: [-64, 5],
-            layers: [
-                [12, "gtceu:ruby_ore", [2, 3]],
-                [12, "gtceu:redstone_ore", [3, 6]],
-                [8, "gtceu:realgar_ore", [2, 2]],
-                [4, "gtceu:plutonium_ore", [1, 1]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/blue",
-            weight: 25,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:lazurite_ore", [1, 2]],
-                [2, "gtceu:lapis_ore", [2, 3]],
-                [1, "gtceu:sodalite_ore", [1, 2]],
-                [2, "gtceu:sapphire_ore", [1, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/blue",
-            weight: 1,
-            density: 0.9,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:lazurite_ore", [2, 3]],
-                [2, "gtceu:lapis_ore", [3, 6]],
-                [1, "gtceu:sodalite_ore", [2, 2]],
-                [1, "gtceu:sapphire_ore", [3, 6]],
-                [1, "gtceu:tantalite_ore", [2, 4]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/green",
-            weight: 25,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:beryllium_ore", [1, 2]],
-                [2, "gtceu:emerald_ore", [2, 3]],
-                [1, "gtceu:olivine_ore", [1, 2]],
-                [1, "gtceu:thorium_ore", [1, 2]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/green",
-            weight: 1,
-            density: 0.9,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:beryllium_ore", [2, 3]],
-                [2, "gtceu:emerald_ore", [3, 6]],
-                [1, "gtceu:olivine_ore", [2, 2]],
-                [1, "gtceu:thorium_ore", [3, 6]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/yellow",
-            weight: 25,
-            density: 0.3,
-            clusterSize: 45,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:sphalerite_ore", [1, 2]],
-                [2, "gtceu:gold_ore", [2, 3]],
-                [1, "gtceu:topaz_ore", [1, 2]],
-                [1, "gtceu:sulfur_ore", [2, 3]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        },
-        {
-            key: "twilight/dense/yellow",
-            weight: 3,
-            density: 0.9,
-            clusterSize: 40,
-            heightRange: [-45, 5],
-            layers: [
-                [2, "gtceu:sphalerite_ore", [2, 3]],
-                [2, "gtceu:gold_ore", [3, 6]],
-                [1, "gtceu:topaz_ore", [2, 2]],
-                [1, "gtceu:sulfur_ore", [3, 6]]
-            ],
-            layer: "twilightforest",
-            dimension: "twilightforest:twilight_forest"
-        }
-    ]
-
-    twilightOres.forEach((cfg) => addBlockVein(cfg.key, cfg))
 
     // moon ores
 
@@ -715,10 +521,10 @@ GTCEuServerEvents.oreVeins((event) => {
             clusterSize: 30,
             heightRange: [0, 200],
             layers: [
-                [3, "gtceu:platinum", [1, 2]],
+                [3, "gtceu:tetrahedrite", [1, 2]],
                 [2, "gtceu:bornite", [1, 1]],
                 [1, "gtceu:bornite", [1, 1]],
-                [2, "gtceu:platinum", [1, 1]]
+                [2, "gtceu:tetrahedrite", [1, 1]]
             ],
             surfaceRock: "gtceu:bornite",
             layer: "moon",
