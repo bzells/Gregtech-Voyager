@@ -24,6 +24,8 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: "gtceu:chemical_reactor/nitrobenzene" })
     event.remove({ id: "gtceu:large_chemical_reactor/nitrobenzene" })
+
+    event.remove({ id: "gtceu:assembler/flower_pot" })
     // event.remove({type: 'minecraft:crafting_shaped' ,output: ['gtceu:mv_electric_motor', 'gtceu:mv_electric_pump', 'gtceu:mv_conveyor_module', 'gtceu_mv_electric_piston', 'gtceu:mv_robot_arm']})
 
     event.replaceInput(

@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         .duration(time * 20)
     }
 
-    gas_collect(1, "ad_astra:mars", "gtceu:martian_air 10000", 1920, 5)
+    gas_collect(4, "ad_astra:mars", "gtceu:martian_air 10000", 1920, 5)
 
     freeze("martian_air", "gtceu", 4000, "gtceu:liquid_martian_air 4000", 7680, 4)
     distill(
