@@ -144,6 +144,30 @@ ServerEvents.recipes((event) => {
         .duration(30)
         .EUt(16)
 
+    event.recipes.gtceu.assembler('kubejs:aquatic_casing')
+        .itemInputs(
+            '8x gtceu:watertight_casing',
+            `16x gtceu:treated_wood_plate`,
+            '2x gtceu:tungsten_steel_large_fluid_pipe',
+            'gtceu:iv_electric_pump'
+        )
+        .circuit(6)
+        .itemOutputs("8x voyagercore:aquatic_casing")
+        .duration(30)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('kubejs:woodland_casing')
+        .itemInputs(
+            '8x gtceu:corrosion_proof_casing',
+            `16x gtceu:treated_wood_plate`,
+            '2x gtceu:tungsten_steel_large_fluid_pipe',
+            'gtceu:iv_electric_piston'
+        )
+        .circuit(6)
+        .itemOutputs("8x voyagercore:woodland_casing")
+        .duration(30)
+        .EUt(16)
+
     event.recipes.gtceu
         .assembler("kubejs:clean_assembly_casing")
         .itemInputs("1x gtceu:blue_steel_frame", "6x gtceu:double_blue_steel_plate", "3x gtceu:hv_robot_arm", "8x gtceu:nichrome_double_wire")
@@ -406,6 +430,39 @@ ServerEvents.recipes((event) => {
                 F: "gtceu:steam_machine_casing"
             }
         )
+
+    event.shaped(
+            Item.of(`voyagercore:loch_ness_fishing_port`, 1), // arg 1: output
+            [
+                "FEF",
+                "GBG", // arg 2: the shape (array of strings)
+                "HEH"
+            ],
+            {
+                B: `gtceu:ev_fisher`, //arg 3: the mapping object
+                G: `gtceu:watertight_steel_plate`,
+                E: "gtceu:laminated_glass",
+                F: "#gtceu:circuits/iv",
+                H: "gtceu:opal_rod"
+            }
+        )
+
+    event.shaped(
+            Item.of(`voyagercore:forest_regrowth_chamber`, 1), // arg 1: output
+            [
+                "FEF",
+                "GBG", // arg 2: the shape (array of strings)
+                "HEH"
+            ],
+            {
+                B: `gtceu:iv_cutter`, //arg 3: the mapping object
+                G: `gtceu:hastelloy_c_276_plate`,
+                E: "gtceu:laminated_glass",
+                F: "#gtceu:circuits/luv",
+                H: "gtceu:hastelloy_x_rod"
+            }
+        )
+        
 })
 
 

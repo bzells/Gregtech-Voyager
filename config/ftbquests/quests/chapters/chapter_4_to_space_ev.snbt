@@ -2149,6 +2149,17 @@
 			x: 1.0d
 			y: 18.0d
 		}
+		{
+			dependencies: ["1E76B42857AC04C9"]
+			id: "1AB205252A99F47D"
+			tasks: [{
+				id: "265026690CEC3A45"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
 	]
 	title: "Chapter 4: To Space! (EV)"
 }

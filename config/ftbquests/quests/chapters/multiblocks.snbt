@@ -357,7 +357,7 @@
 				"3F19DD981F340045"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Currently &o&7(as of 0.4A/Pre-Beta)&r&r, the &bMV Helpers&r can only be used to help with &eEBF&r recipes. Because of this, you unlock a helper variant of te &eEBF&r."]
+			description: ["Currently &o&7(as of 0.4A/Pre-Beta)&r&r, the &bMV Helpers&r can only be used to help with &eEBF&r recipes. Because of this, you unlock a helper variant of the &eEBF&r."]
 			hide_dependency_lines: true
 			id: "1D8A11D926A71642"
 			rewards: [{
@@ -710,6 +710,7 @@
 				""
 				"These multiblocks can use &lparallel control hatches&r, increasing their speed exponentially"
 			]
+			hide_dependent_lines: true
 			id: "10BB04C7B18C512D"
 			tasks: [{
 				id: "118F36B566F34283"
@@ -760,6 +761,46 @@
 				type: "item"
 			}]
 			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["10BB04C7B18C512D"]
+			description: [
+				"The &2Forest Regrowth Chamber&r is a multiblock designed to simulate a forest based off of the sapling inserted into its item buffer."
+				""
+				"Using nutrients piped in through its pipe casings, it is able to &oquickly&r grow trees, chop them, and repeat."
+				""
+				"The faster axe you put inside of an input bus, the faster it can chop and regrow trees."
+				"Fertilizer and CO2 help as well."
+				""
+				"And of course, if you upgrade the pipe casings, it will create larger trees due to better nutrient throughput."
+				""
+				"This multiblock is a tremendous option if you want to make benzene, or cookies."
+			]
+			id: "54A006E7397F7375"
+			subtitle: "Benzene anyone?"
+			tasks: [{
+				id: "678B098BE2624B88"
+				item: "voyagercore:forest_regrowth_chamber"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10BB04C7B18C512D"]
+			description: [
+				"The &3Loch Ness Fishing Port&r simulates and aquatic environment by flushing water in and out of its internal pool using pipe casings. The better the pipe casing, the faster it is able to do this task."
+				""
+				"To fish with it, you will need to insert a net into any input bus, and also tell it what to fish for using circuit 1 or 2."
+			]
+			id: "4E8EFD168847DDE6"
+			tasks: [{
+				id: "4E4B2A2AF6F9CD9E"
+				item: "voyagercore:loch_ness_fishing_port"
+				type: "item"
+			}]
+			x: 16.0d
 			y: 7.5d
 		}
 	]

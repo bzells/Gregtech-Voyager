@@ -349,5 +349,64 @@ ServerEvents.recipes((event) => {
         "plat_line"
     )
 
+    // harder platinum/palladium
+
+    event.replaceOutput({type: "gtceu:chemical_bath"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+    event.replaceOutput({input: "#forge:ores/nickel"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+    event.replaceOutput({input: "gtceu:refined_nickel_ore"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+
+    event.replaceOutput({input: "gtceu:cooperite_dust"},
+        "gtceu:palladium_dust",
+        "gtceu:palladium_raw_dust"
+    )
+    event.replaceOutput({type: "gtceu:chemical_bath"},
+        "gtceu:palladium_dust",
+        "gtceu:palladium_raw_dust"
+    )
+    event.remove({input: "gtceu:platinum_raw_dust"})
+    event.remove({input: "gtceu:palladium_raw_dust"})
+    event.remove({type: "minecraft:smelting", output: "gtceu:platinum_ingot"})
+    event.remove({type: "minecraft:blasting", output: "gtceu:platinum_ingot"})
+
+    event.recipes.gtceu.electric_blast_furnace("raw_platinum_to_ingot_ebf")
+    .itemInputs("1x gtceu:platinum_raw_dust")
+    .itemOutputs("3x gtceu:platinum_nugget")
+    .EUt(480)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 20)
+
+    // event.recipes.gtceu.electric_blast_furnace("platinum_to_ingot_ebf")
+    // .itemInputs("1x gtceu:platinum_dust")
+    // .itemOutputs("1x gtceu:platinum_ingot")
+    // .EUt(480)
+    // .blastFurnaceTemp(2700)
+    // .duration(20 * 40)
+
+    event.recipes.gtceu.electric_blast_furnace("raw_palladium_to_ingot_ebf")
+    .itemInputs("1x gtceu:palladium_raw_dust")
+    .itemOutputs("3x gtceu:palladium_nugget")
+    .EUt(480)
+    .blastFurnaceTemp(1828)
+    .duration(20 * 45)
+
+    global.recipe_lcr(event,
+        "raw_plat_to_pgs",
+        ["3x gtceu:platinum_raw_dust", "2x gtceu:sodium_dust"],
+        ["gtceu:nitric_acid 100"],
+        ["3x gtceu:platinum_group_sludge_dust", "4x gtceu:salt_dust"],
+        [],
+        2.5,
+        30)
+    
+
 
 })

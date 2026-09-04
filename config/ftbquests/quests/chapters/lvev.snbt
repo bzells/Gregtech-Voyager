@@ -511,8 +511,8 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				id: "0CDD87293541D838"
-				item: "kubejs:helperade_br_bucket"
+				id: "1C13633BEBF663E6"
+				item: "voyagercore:helperade_br_bucket"
 				type: "item"
 			}]
 			x: 3.5d

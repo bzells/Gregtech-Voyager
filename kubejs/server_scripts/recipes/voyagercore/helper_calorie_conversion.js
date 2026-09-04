@@ -83,9 +83,9 @@ ServerEvents.recipes((event) => {
 
     advanced_calorie_conversion('cookie', 'gtceu:carbon_dust', 2, 8192, 'gtceu:steam 500', 1)
 
-    advanced_calorie_conversion('mana_infused_cookies', 'botania:fertilizer', 8, 12000, 'gtceu:steam 500', 3)
+    advanced_calorie_conversion('mana_infused_cookies', 'botania:fertilizer', 16, 12000, 'gtceu:steam 500', 3)
     advanced_calorie_conversion('uncanny_cookies', 'gtceu:small_ender_pearl_dust', 128, 4096, 'gtceu:steam 250', 3)
-    advanced_calorie_conversion('source_berry_cookies', 'gtceu:tiny_source_dust', 24, 8192, 'gtceu:steam 1000', 2)
+    advanced_calorie_conversion('source_berry_cookies', 'gtceu:tiny_source_dust', 12, 8192, 'gtceu:steam 1000', 2)
 
     advanced_calorie_conversion('double_chocolate_cookies', 'gtceu:carbon_dust', 1, 8192 + 2048, 'gtceu:steam 1000', 1)
 

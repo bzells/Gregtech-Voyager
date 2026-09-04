@@ -339,7 +339,7 @@ GTCEuServerEvents.oreVeins((event) => {
         { material: "gem/warm", weight: 10, density: 0.3, clusterSize: 25, mats: ["ruby", "realgar", "topaz", "ruby"], dense: true },
         { material: "red", weight: 15, density: 0.3, clusterSize: 25, mats: ["ruby", "redstone", "cinnabar", "redstone"], dense: true },
         { material: "blue", weight: 15, density: 0.3, clusterSize: 25, mats: ["lapis", "lazurite", "sapphire", "lapis"], dense: true },
-        { material: "yellow", weight: 15, density: 0.3, clusterSize: 25, mats: ["sphalerite", "topaz", "zinc", "gold"], dense: true },
+        { material: "yellow", weight: 15, density: 0.3, clusterSize: 25, mats: ["sphalerite", "topaz", "sphalerite", "gold"], dense: true },
         { material: "magnetite", weight: 60, density: 0.3, clusterSize: 30, mats: ["magnetite", "gold", "vanadium_magnetite", "magnetite"], dense: true },
         { material: "pitchblende", weight: 10, density: 0.3, clusterSize: 25, mats: ["pitchblende", "pitchblende", "pitchblende", "uraninite"], dense: true },
     ]
@@ -348,7 +348,7 @@ GTCEuServerEvents.oreVeins((event) => {
 
     const overworldOres = 
     [
-        { material: "mica", weight: 2, density: 0.3, clusterSize: 45, mats: ["kyanite", "mica", "lepidolite", "mica"], dense: true }
+        { material: "mica", weight: 5, density: 0.3, clusterSize: 45, mats: ["kyanite", "mica", "lepidolite", "mica"], dense: true }
     ]
 
     // mars ores

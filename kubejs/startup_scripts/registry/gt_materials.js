@@ -532,6 +532,8 @@ register_fluid("sugar_water", "0xebfffa", ["sugar", "water"], [no_decomp])
 register_fluid("soda", "0xebfffa", ["sugar", "water", "carbon_dioxide"], [no_decomp])
 
 // venus
+register_dust("raw_platinum", [], "0xe0dca2", no_decomp)
+
 register_dust("venus_sand", [], "0xb38930", no_decomp)
 // register_nosmelt_elem_metal('calorite', [], true, '0xa10030', [3600, 'mid', voltTier('ev'), 20*64], false, voltTier('zpm'));
 register_plasma("degenerate_electrum_light_matter", "0xfffef7", "electrum", no_decomp)
