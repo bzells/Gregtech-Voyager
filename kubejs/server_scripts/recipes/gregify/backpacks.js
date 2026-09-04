@@ -237,4 +237,28 @@ ServerEvents.recipes((event) => {
             E: "sophisticatedbackpacks:upgrade_base"
         }
     )
+
+    // Removes conversion recipes between the chest storage upgrades and the backpack storage upgrades
+
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_starter_tier_from_storage_stack_upgrade_tier_1_plus"
+    })
+
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_tier_1_from_storage_stack_upgrade_tier_2"
+    })
+
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_tier_2_from_storage_stack_upgrade_tier_3"
+    })
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_tier_3_from_storage_stack_upgrade_tier_4"
+    })
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_tier_4_from_storage_stack_upgrade_tier_5"
+    })
+    event.remove({
+        id:"sophisticatedstorage:backpack_stack_upgrade_omega_tier_from_storage_stack_upgrade_omega_tier"
+    })
+    
 })
