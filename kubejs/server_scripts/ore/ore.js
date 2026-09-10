@@ -334,11 +334,11 @@ GTCEuServerEvents.oreVeins((event) => {
         { material: "source", weight: 5, density: 0.3, clusterSize: 25, mats: ["source", "lapis", "amethyst", "lazurite"], dense: true },
         { material: "nickel", weight: 15, density: 0.3, clusterSize: 25, mats: ["nickel", "garnierite", "cobaltite", "garnierite"], dense: true },
         { material: "nickel/dense", weight: 1, density: 0.6, clusterSize: 50, mats: ["nickel", "chromite", "nickel", "chromite"], dense: false },
-        { material: "silver", weight: 15, density: 0.3, clusterSize: 25, mats: ["lead", "galena", "silver", "silver"], dense: true },
-        { material: "gem/cool", weight: 10, density: 0.3, clusterSize: 25, mats: ["diamond", "sapphire", "emerald", "opal"], dense: true },
-        { material: "gem/warm", weight: 10, density: 0.3, clusterSize: 25, mats: ["ruby", "realgar", "topaz", "ruby"], dense: true },
-        { material: "red", weight: 15, density: 0.3, clusterSize: 25, mats: ["ruby", "redstone", "cinnabar", "redstone"], dense: true },
-        { material: "blue", weight: 15, density: 0.3, clusterSize: 25, mats: ["lapis", "lazurite", "sapphire", "lapis"], dense: true },
+        { material: "silver", weight: 20, density: 0.3, clusterSize: 25, mats: ["lead", "galena", "silver", "silver"], dense: true },
+        { material: "gem/cool", weight: 30, density: 0.3, clusterSize: 25, mats: ["diamond", "sapphire", "emerald", "opal"], dense: true },
+        { material: "gem/warm", weight: 30, density: 0.3, clusterSize: 25, mats: ["ruby", "realgar", "topaz", "ruby"], dense: true },
+        { material: "red", weight: 40, density: 0.3, clusterSize: 25, mats: ["ruby", "redstone", "cinnabar", "redstone"], dense: true },
+        { material: "blue", weight: 40, density: 0.3, clusterSize: 25, mats: ["lapis", "lazurite", "sapphire", "lapis"], dense: true },
         { material: "yellow", weight: 15, density: 0.3, clusterSize: 25, mats: ["sphalerite", "topaz", "sphalerite", "gold"], dense: true },
         { material: "magnetite", weight: 60, density: 0.3, clusterSize: 30, mats: ["magnetite", "gold", "vanadium_magnetite", "magnetite"], dense: true },
         { material: "pitchblende", weight: 10, density: 0.3, clusterSize: 25, mats: ["pitchblende", "pitchblende", "pitchblende", "uraninite"], dense: true },
@@ -348,7 +348,7 @@ GTCEuServerEvents.oreVeins((event) => {
 
     const overworldOres = 
     [
-        { material: "mica", weight: 5, density: 0.3, clusterSize: 45, mats: ["kyanite", "mica", "lepidolite", "mica"], dense: true }
+        { material: "mica", weight: 20, density: 0.3, clusterSize: 45, mats: ["kyanite", "mica", "lepidolite", "mica"], dense: true }
     ]
 
     // mars ores

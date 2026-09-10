@@ -448,12 +448,14 @@ register_dust("dry_ruthenium_mixture", [], "0x4a4575", no_decomp)
 
 // dry_ruthenium_mixture
 
-register_fluid("sulfuric_rhodium_solution", "0x6c367a", [], no_decomp)
-register_fluid("sulfuric_inert_metal_solution", "0x2b1221", [], no_decomp)
+register_fluid("impure_rhodium_solution", "0x6c367a", [], no_decomp)
+register_fluid("impure_inert_metal_solution", "0x2b1221", [], no_decomp)
 register_fluid("acidic_ruthenium_solution", "0x3a333d", [], no_decomp)
 register_dust("impure_rhodium_sludge",[],  "0x3a111a", no_decomp)
 register_dust("purified_rhodium_mixture", [],  "0x5c244b", no_decomp)
 register_dust("salty_rhodium", [],  "0x8a5479", no_decomp)
+
+register_fluid("precipitated_inert_metal_solution", "0x2b1221", [], no_decomp)
 
 register_dust("platinum_group_waste", [],  "0x303026", no_decomp)
 
@@ -462,6 +464,8 @@ register_dust("platinum_group_waste_ashes", [],  "0x333333", no_decomp)
 register_dust("washed_platinum_sludge_residue", [],  "0x322133", no_decomp)
 
 register_dust("purified_platinum_sludge_residue", [],  "0x344433", no_decomp)
+
+register_dust("sodium_metabisulfate", ["2x sodium", "2x sulfur", "5x oxygen"], "0xf7fff9", no_decomp)
 
 
 register_dust("platinum_group_metal_residue", [], "0x44374a", no_decomp)

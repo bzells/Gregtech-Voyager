@@ -451,7 +451,7 @@ ServerEvents.recipes((event) => {
 
     speed_module_recipe("ev", "iv", "lunarium", "titanium_carbide")
     efficiency_module_recipe("ev", "ev", "refined_fluxed_electrum", "refined_fluxed_electrum", "gtceu:sodium_potassium 2000")
-    basic_module_recipe("ev", "iv", "niobium_titanium", "desh")
+    basic_module_recipe("ev", "iv", "tungsten_steel", "desh")
     parallel_module_recipe("ev", "luv", "iridium", "uranium_triplatinum")
 
     speed_module_recipe("iv", "luv", "titanex-901-htc", "hsse")
