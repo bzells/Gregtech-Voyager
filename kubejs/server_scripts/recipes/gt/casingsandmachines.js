@@ -462,6 +462,22 @@ ServerEvents.recipes((event) => {
                 H: "gtceu:hastelloy_x_rod"
             }
         )
+
+    event.shaped(
+            Item.of(`voyagercore:homestead_garden`, 1), // arg 1: output
+            [
+                "FEF",
+                "GBG", // arg 2: the shape (array of strings)
+                "HEH"
+            ],
+            {
+                B: `gtceu:ulv_machine_casing`, //arg 3: the mapping object
+                G: `gtceu:rubber_plate`,
+                E: "minecraft:dirt",
+                F: "#gtceu:circuits/ulv",
+                H: "#minecraft:flowers"
+            }
+        )
         
 })
 

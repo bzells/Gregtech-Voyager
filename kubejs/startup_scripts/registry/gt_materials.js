@@ -436,12 +436,14 @@ register_superconductor_sec("perfected_electrum", [], true, "0xfffef7", "0xfcff6
 
 register_fluid("lunarium_growth_slurry", "0x1fff1a", ["3x lunarium", "4x chlorine", "2x fluorine", "1x carbon"], no_decomp)
 // platline
-register_dust("dewatered_iridium_metal_residue", [], "0x094235", no_decomp)
+register_fluid("salty_iridium_metal_brine", "0x094222", [], no_decomp)
 register_dust("impure_iridium_metal", [], "0x094235", no_decomp)
 register_fluid("acidic_iridium_solution", "0x094235", [], no_decomp)
-
+register_fluid("iridium_metal_concentrate", "0x094000", [], no_decomp)
+// 80724e
+register_fluid("salty_calcium_brine_sludge", "0x80724e", [], no_decomp)
 register_fluid("acidic_shiny_metal_mixture", "0x4f6cab", [], no_decomp)
-register_fluid("impure_shiny_metal_mixture", "0x152536", [], no_decomp)
+register_dust("impure_shiny_metal_mixture",  [], "0x152536", no_decomp)
 register_dust("shiny_metallic_residue", [], "0x3b4724", no_decomp)
 
 register_dust("dry_ruthenium_mixture", [], "0x4a4575", no_decomp)
@@ -449,13 +451,11 @@ register_dust("dry_ruthenium_mixture", [], "0x4a4575", no_decomp)
 // dry_ruthenium_mixture
 
 register_fluid("impure_rhodium_solution", "0x6c367a", [], no_decomp)
-register_fluid("impure_inert_metal_solution", "0x2b1221", [], no_decomp)
-register_fluid("acidic_ruthenium_solution", "0x3a333d", [], no_decomp)
+register_dust("precipitated_inert_metal", [], "0x2b1221",  no_decomp)
+register_fluid("impure_ruthenium_solution", "0x3a333d", [], no_decomp)
 register_dust("impure_rhodium_sludge",[],  "0x3a111a", no_decomp)
 register_dust("purified_rhodium_mixture", [],  "0x5c244b", no_decomp)
 register_dust("salty_rhodium", [],  "0x8a5479", no_decomp)
-
-register_fluid("precipitated_inert_metal_solution", "0x2b1221", [], no_decomp)
 
 register_dust("platinum_group_waste", [],  "0x303026", no_decomp)
 

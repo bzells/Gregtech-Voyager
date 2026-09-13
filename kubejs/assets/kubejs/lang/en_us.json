@@ -53,12 +53,19 @@
     "material.gtceu.platinum_group_waste_ashes": "Platinum Group Waste Ashes",
     "material.gtceu.purified_platinum_group_sludge_residue": "Purified Platinum Group Sludge Residue",
     "material.gtceu.washed_platinum_group_sludge_residue": "Washed Platinum Group Sludge Residue",
+    "material.gtceu.washed_platinum_sludge_residue": "Washed Platinum Sludge Residue",
+    "material.gtceu.purified_platinum_sludge_residue": "Purified Platinum Sludge Residue",
 
     "material.gtceu.platinum_group_metal_residue": "Platinum Group Metal Residue",
     "material.gtceu.acidic_platinum_group_solution": "Acidic Platinum Group Solution",
     "material.gtceu.salty_platinum_mixture": "Salty Platinum Mixture",
     "material.gtceu.dirty_platinum_mixture": "Dirty Platinum Mixture",
     "material.gtceu.purified_platinum_metal": "Purified Platinum Metal",
+    "material.gtceu.iridium_metal_concentrate": "Iridium Metal Concentrate",
+
+    "material.gtceu.salty_calcium_brine_sludge": "Salty Calcium Brine Sludge",
+    "material.gtceu.salty_iridium_metal_brine": "Salty Iridium Metal Brine",
+    "material.gtceu.sodium_metabisulfate": "Sodium Metabisulfate",
 
     "material.gtceu.moon_sand": "Lunar Sand",
     "material.gtceu.soft_moon_sand": "Soft Lunar Sand",
