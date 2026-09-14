@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
         .assembler("kubejs:lv_helper_computation_array")
         .itemInputs("3x #gtceu:circuits/lv", "1x #gtceu:circuits/ulv", "1x gtceu:steel_plate", "4x gtceu:steel_bolt", "16x gtceu:fine_tin_silver_alloy_wire")
         .itemOutputs("1x kubejs:lv_helper_computation_array")
-        .inputFluids("gtceu:tin 250")
+        .inputFluids("gtceu:tin 288")
         .duration(1200)
         .EUt(30)
 
@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
         .assembler("kubejs:mv_helper_computation_array")
         .itemInputs("3x #gtceu:circuits/mv", "1x #gtceu:circuits/lv", "1x gtceu:aluminium_plate", "4x gtceu:aluminium_bolt", "16x gtceu:fine_fluxed_electrum_wire")
         .itemOutputs("1x kubejs:mv_helper_computation_array")
-        .inputFluids("gtceu:tin 250")
+        .inputFluids("gtceu:tin 288")
         .duration(1200)
         .EUt(120)
 
@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         .assembler("kubejs:hv_helper_computation_array")
         .itemInputs("3x #gtceu:circuits/hv", "1x #gtceu:circuits/mv", "1x gtceu:stainless_steel_plate", "4x gtceu:stainless_steel_bolt", "16x gtceu:fine_fluxed_cobalt_electrum_wire")
         .itemOutputs("1x kubejs:hv_helper_computation_array")
-        .inputFluids("gtceu:soldering_alloy 1000")
+        .inputFluids("gtceu:soldering_alloy 1440")
         .duration(1200)
         .EUt(480)
 
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
         .assembler("kubejs:ev_helper_computation_array")
         .itemInputs("3x #gtceu:circuits/ev", "1x #gtceu:circuits/hv", "1x gtceu:titanium_plate", "4x gtceu:titanium_bolt", "16x gtceu:fine_refined_fluxed_electrum_wire")
         .itemOutputs("1x kubejs:ev_helper_computation_array")
-        .inputFluids("gtceu:soldering_alloy 1000")
+        .inputFluids("gtceu:soldering_alloy 1440")
         .duration(1200)
         .EUt(1980)
 

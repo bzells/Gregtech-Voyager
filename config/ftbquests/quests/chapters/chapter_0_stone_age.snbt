@@ -321,6 +321,7 @@
 				"26A6C0E4B38F51B3"
 				"08FA16D1594E31A3"
 			]
+			description: ["You will need to make a coke oven out of your coke bricks. Look in the Multiblocks QB chapter for your reward after you make it!"]
 			id: "51EBA3EE740C75FB"
 			rewards: [{
 				id: "48B428DFC7BBA973"

@@ -451,7 +451,7 @@ ServerEvents.recipes((event) => {
 
     speed_module_recipe("ev", "iv", "lunarium", "titanium_carbide")
     efficiency_module_recipe("ev", "ev", "refined_fluxed_electrum", "refined_fluxed_electrum", "gtceu:sodium_potassium 2000")
-    basic_module_recipe("ev", "iv", "niobium_titanium", "desh")
+    basic_module_recipe("ev", "iv", "tungsten_steel", "desh")
     parallel_module_recipe("ev", "luv", "iridium", "uranium_triplatinum")
 
     speed_module_recipe("iv", "luv", "titanex-901-htc", "hsse")
@@ -471,6 +471,7 @@ ServerEvents.recipes((event) => {
     tier_recipe_module_cube("ev", "thermal_centrifuge", "nichrome", "gtceu:ev_electric_motor")
     tier_recipe_module_cube("ev", "macerator", "tungsten", "gtceu:ev_electric_piston")
     tier_recipe_module_cube("ev", "electrolyzer", "platinum", "gtceu:tempered_glass")
+    tier_recipe_module_cube("ev", "mixer", "desh", "gtceu:desh_rotor")
     // tier_recipe_module_cube("luv", "assembler", "industrial_perfected_electrum", "gtceu:luv_field_generator")
     tier_recipe_module_cube("ev", "oven", "nichrome", "gtceu:cupronickel_spring")
 
@@ -565,7 +566,7 @@ ServerEvents.recipes((event) => {
         event,
         "ev_chemist_helper_recipe_module",
         ["1x voyagercore:ev_helper_module", "8x gtceu:laminated_glass", "gtceu:iv_electric_pump"],
-        ["gtceu:component_polymer 2000", "gtceu:high_octane_gasoline 1500", "gtceu:nitrobenzene 1000"],
+        ["gtceu:component_polymer 2000", "gtceu:styrene_butadiene_rubber 1500", "gtceu:polyvinyl_butyral 1000"],
         ["1x voyagercore:ev_chemist_helper_recipe_module"],
         [],
         30,

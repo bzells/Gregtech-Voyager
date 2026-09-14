@@ -1,6 +1,18 @@
 import { recipe_centrifuge, recipe_chem_plant, recipe_lcr } from "../../../00_util/recipeUtils"
 
 ServerEvents.recipes((event) => {
+
+
+    function distill(input, ns, amt, fluidOutputs, itemOutput, eut, seconds) {
+        event.recipes.gtceu
+            .distillation_tower(`kubejs:${input}_distilling`) // recipe ID
+            .inputFluids(`${ns}:${input} ${amt}`)
+            .outputFluids(fluidOutputs)
+            .itemOutputs(itemOutput)
+            .duration(seconds * 20) // in ticks
+            .EUt(eut)
+    }
+
     event.remove({ input: "gtceu:iridium_metal_residue_dust" })
     event.remove({ output: "gtceu:iridium_metal_residue_dust" }) // none of these fucking work and i have no idea why
     event.remove({ input: "gtceu:platinum_group_sludge_dust" })
@@ -18,279 +30,287 @@ ServerEvents.recipes((event) => {
         ["4x gtceu:rarest_metal_mixture_dust", "3x gtceu:inert_metal_mixture_dust", "3x gtceu:platinum_sludge_residue_dust", "10x gtceu:platinum_group_metal_residue_dust"],
         [],
         30,
-        480
+        1920
     )
 
+    //iridium
 
-    global.recipe_lcr(event,
-        "shiny_iridium",
-        ["5x gtceu:rarest_metal_mixture_dust"],
-        ["gtceu:hydrochloric_acid 2000"],
-        ["2x gtceu:iridium_metal_residue_dust"],
-        ["gtceu:acidic_shiny_metal_mixture 250"],
-        20,
-        7860)
-
-    global.recipe_lcr(event,
-        "dewatered_iridium_metal_residue_dust",
-        ["8x gtceu:iridium_metal_residue_dust", "3x gtceu:sodium_hydroxide_dust"],
+    global.recipe_centrifuge(event,
+        "acidic_shiny_mix_and_iridium_concentrate",
+        ["4x gtceu:rarest_metal_mixture_dust"],
+        ["minecraft:water 1000"],
         [],
-        ["4x gtceu:dewatered_iridium_metal_residue_dust"],
-        ["minecraft:water 500"],
-        10,
-        120)
+        ["gtceu:iridium_metal_concentrate 500", "gtceu:acidic_shiny_metal_mixture 500"],
+        30, //time
+        1920) // eut
+
+    global.recipe_lcr(
+        event,
+        "salty_iridium_metal_brine",
+        ["3x gtceu:calcium_chloride_dust"],
+        ["gtceu:iridium_metal_concentrate 500"],
+        [],
+        ["gtceu:salty_iridium_metal_brine 1000"],
+        20, // time
+        120 // eut
+    )
 
     global.recipe_centrifuge(event,
         "impure_iridium_dust",
-        ["4x gtceu:dewatered_iridium_metal_residue_dust"],
         [],
+        ["gtceu:salty_iridium_metal_brine 1000"],
         ["3x gtceu:impure_iridium_metal_dust"],
-        ["minecraft:water 500"],
-        20,
-        480)
+        ["gtceu:salty_calcium_brine_sludge 1000"],
+        20, //time
+        480) // eut
 
-    global.recipe_lcr(event,
+    global.recipe_lcr(
+        event,
         "acidic_iridium_solution",
         ["3x gtceu:impure_iridium_metal_dust"],
-        ["gtceu:nitric_acid 1000"],
+        ["gtceu:hydrochloric_acid 3000"],
         [],
-        ["minecraft:water 2000", "gtceu:nitrogen_dioxide 1500", "gtceu:acidic_iridium_solution 1000"],
-        20,
-        120)
-
-        // event, name, input, itemOutput, fluidOutputs, eut, time
-    global.recipe_distillation(event,
-        "iridium_chloride_dust",
-        "gtceu:acidic_iridium_solution 2000",
-        "8x gtceu:iridium_chloride_dust",
-        ["gtceu:hydrochloric_acid 4000", "gtceu:salt_water 2000"],
-        256, 30
+        ["gtceu:acidic_iridium_solution 1000"],
+        20, // time
+        120 // eut
     )
 
-    //event, name, inputItems, inputFluids, outputItems, outputFluids, duration, eut
-
-    event.remove({input: "gtceu:iridium_chloride_dust"})
-    global.recipe_electrolyzer(event, "iridium_dust",
+    distill(
+        "acidic_iridium_solution",
+        "gtceu", 1000, "gtceu:hydrogen 3000",
         "4x gtceu:iridium_chloride_dust",
-        [],
-        "gtceu:iridium_dust",
-        "gtceu:chlorine 3000",
-        8,
-        28
+        120, 40
     )
 
     // osmium
-    event.recipes.gtceu.electric_blast_furnace
-    ("shiny_metallic_residue_dust")
-    .itemInputs("gtceu:carbon_dust")
-    .inputFluids("gtceu:acidic_shiny_metal_mixture 250")
-    .outputFluids("gtceu:carbon_dioxide 1000")
-    .itemOutputs("4x gtceu:shiny_metallic_residue_dust")
-    .blastFurnaceTemp(1800)
+
+    event.recipes.gtceu.electric_blast_furnace("impure_shiny_metal_mixture_dust")
+    .inputFluids("gtceu:acidic_shiny_metal_mixture 1500")
+    .itemOutputs("3x gtceu:impure_shiny_metal_mixture_dust")
+    .outputFluids("gtceu:nitric_acid 1000")
     .EUt(480)
-    .duration(10 * 20)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 20)
 
-    global.recipe_lcr(event,
+    event.recipes.gtceu.electric_blast_furnace("impure_shiny_metal_mixture_dust_argon_boosted")
+    .inputFluids("gtceu:acidic_shiny_metal_mixture 1500", "gtceu:argon 100")
+    .itemOutputs("3x gtceu:impure_shiny_metal_mixture_dust")
+    .outputFluids("gtceu:nitric_acid 1000")
+    .EUt(480)
+    .circuit(2)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 10)
+
+    // event, name, ingredientsItem, fluidIngredients, itemOutputs, fluidOutputs, eut, time
+    global.recipe_mixer(
+        event,
         "acidic_osmium_solution",
-        ["12x gtceu:sodium_hydroxide_dust", "2x gtceu:shiny_metallic_residue_dust"],
-        ["minecraft:water 1000"],
-        ["4x gtceu:salt_dust"],
-        ["gtceu:nitrous_oxide 500", "gtceu:acidic_osmium_solution 3000"],
-        20,
-        7860)
-
-    event.remove({input: "gtceu:acidic_osmium_solution"})
-    global.recipe_distillation(event,
-        "osmium_tetroxide",
-        "gtceu:acidic_osmium_solution 9600",
-        "5x gtceu:osmium_tetroxide_dust",
-        ["gtceu:hydrochloric_acid 8000", "minecraft:water 1600"],
-        256, 30
+        "1x gtceu:impure_shiny_metal_mixture_dust",
+        "minecraft:water 4000",
+        [],
+        "gtceu:acidic_osmium_solution 1000",
+        1920,
+        60
     )
 
-
-    // ruthenium/rhodium
-
-    global.recipe_lcr(event,
-        "sulfuric_inert_metal_solution",
-        ["5x gtceu:inert_metal_mixture_dust"],
-        ["gtceu:sulfuric_acid 1333"],
-        [],
-        ["gtceu:sulfuric_inert_metal_solution 2000"],
-        20,
-        1920)
-
-    global.recipe_centrifuge(event,
-        "ruth_rhod_line",
-        [],
-        ["gtceu:sulfuric_inert_metal_solution 2000"],
-        [],
-        ["gtceu:sulfuric_rhodium_solution 1000", "gtceu:acidic_ruthenium_solution"],
-        20,
-        480)
-
-    // rhodium
-    global.recipe_lcr(event,
-        "impure_rhodium_sludge_dust",
-        ["6x gtceu:sodium_hydroxide_dust"],
-        ["gtceu:sulfuric_rhodium_solution 3000"],
-        ["2x gtceu:impure_rhodium_sludge_dust"],
-        ["gtceu:sulfur_trioxide 8000", "gtceu:salt_water 2000"],
-        5,
-        480)
-
-        //event, output, inputItems, inputFluids, eut, duration
-
-    global.recipe_chem_bath(event,
-        "2x gtceu:purified_rhodium_mixture_dust",
-        "2x gtceu:impure_rhodium_sludge_dust",
-        "gtceu:distilled_water 1000", 480, 45
+    distill(
+        "acidic_osmium_solution",
+        "gtceu", 3000, ["gtceu:hydrochloric_acid 2000", "minecraft:water 2000"],
+        "15x gtceu:osmium_tetroxide_dust",
+        120, 40
     )
-    global.recipe_chem_bath(event,
-        "2x gtceu:purified_rhodium_mixture_dust",
-        "2x gtceu:impure_rhodium_sludge_dust",
-        "gtceu:sodium_persulfate 100", 120, 10
-    )
-
-    global.recipe_electrolyzer(event, "salty_rhodium_dust",
-        "2x gtceu:purified_rhodium_mixture_dust",
-        [],
-        "gtceu:salty_rhodium_dust",
-        ["gtceu:hydrogen 4500", "minecraft:water 3000", "gtceu:nitrogen_dioxide 1000"],
-        20,
-        7860
-    )
-
-    event.remove({input: "gtceu:rhodium_sulfate"})
-    global.recipe_lcr(event,
-        "rhodium_dust",
-        ["2x gtceu:ammonium_chloride_dust", "2x gtceu:salty_rhodium_dust", "1x gtceu:sodium_dust"],
-        [],
-        ["1x gtceu:rhodium_dust"],
-        ["gtceu:salt_water 1000"],
-        10,
-        1920)
 
     // ruthenium
-    global.recipe_distillation(event,
-        "dry_ruthenium_mixture",
-        "gtceu:acidic_ruthenium_solution 3000",
+
+    event.recipes.gtceu.electric_blast_furnace("precipitated_inert_metal_solution")
+    .itemInputs("9x gtceu:inert_metal_mixture_dust")
+    .itemOutputs("3x gtceu:precipitated_inert_metal_dust")
+    .outputFluids("gtceu:nitric_acid 1000")
+    .EUt(1920)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 20)
+
+    event.recipes.gtceu.electric_blast_furnace("precipitated_inert_metal_solution_argon_boosted")
+    .itemInputs("9x gtceu:inert_metal_mixture_dust")
+    .itemOutputs("4x gtceu:precipitated_inert_metal_dust")
+    .outputFluids("gtceu:nitric_acid 1000")
+    .EUt(1920)
+    .circuit(2)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 10)
+
+    global.recipe_centrifuge(event,
+        "impure_ruth_rhod_solutions",
+        ["4x gtceu:precipitated_inert_metal_dust"],
+        ["gtceu:distilled_water 1000"],
+        [],
+        ["gtceu:impure_ruthenium_solution 1000", "gtceu:impure_rhodium_solution 1000"],
+        20, //time
+        480) // eut
+
+    distill(
+        "impure_ruthenium_solution",
+        "gtceu", 1000, ["gtceu:hydrochloric_acid 2000", "minecraft:water 1000"],
         "4x gtceu:dry_ruthenium_mixture_dust",
-        ["gtceu:hydrogen_sulfide 4000", "gtceu:nitric_acid 1000"],
-        120, 15
+        120, 40
     )
 
-    global.recipe_lcr(event,
+    global.recipe_lcr(
+        event,
         "ruthenium_tetroxide_dust",
-        ["4x gtceu:dry_ruthenium_mixture_dust", "6x gtceu:salt_dust"],
-        ["minecraft:water 3000"],
-        ["20x gtceu:ruthenium_tetroxide_dust", "gtceu:sodium_dust"],
-        ["gtceu:sulfur_trioxide 4000", "gtceu:salt_water 3000"],
-        10,
-        480)
+        ["4x gtceu:dry_ruthenium_mixture_dust"],
+        ["gtceu:sulfuric_acid 1000"],
+        ["5x gtceu:ruthenium_tetroxide_dust"],
+        ["gtceu:hydrogen_sulfide 1000"],
+        10, // time
+        1920 // eut
+    )
+
+    // rhodium
+
+    global.recipe_lcr(
+        event,
+        "impure_rhodium_sludge_dust",
+        ["9x gtceu:sodium_metabisulfate_dust"],
+        ["gtceu:impure_rhodium_solution 1000"],
+        ["2x gtceu:impure_rhodium_sludge_dust"],
+        ["gtceu:sulfur_trioxide 1000", "gtceu:sulfur_dioxide 1000"],
+        15, // time
+        480 // eut
+    )
+
+    // (event, output, inputItems, inputFluids, eut, duration
+    global.recipe_chem_bath(
+        event,
+        "2x gtceu:purified_rhodium_mixture_dust",
+        "2x gtceu:impure_rhodium_sludge_dust",
+        "gtceu:distilled_water 1000", 120, 45
+    )
+    global.recipe_chem_bath(
+        event,
+        "2x gtceu:purified_rhodium_mixture_dust",
+        "2x gtceu:impure_rhodium_sludge_dust",
+        "gtceu:sodium_persulfate 100", 120, 5
+    )
+
+    global.recipe_lcr(
+        event,
+        "rhodium_dust",
+        ["2x gtceu:purified_rhodium_mixture_dust"],
+        ["gtceu:chlorine 2000"],
+        ["2x gtceu:rhodium_dust", "2x gtceu:salt_dust"],
+        [],
+        10, // time
+        1920 // eut
+    )
 
 
-    // plat and palladium
 
-    global.recipe_lcr(event,
-        "acidic_platinum_group_solution",
+    // platinum/palladium
+
+    global.recipe_lcr(
+        event,
+        "acidic_pgs",
         ["3x gtceu:platinum_group_metal_residue_dust"],
         ["gtceu:formic_acid 1000"],
         [],
-        ["gtceu:acidic_platinum_group_solution 2000"],
-        20,
-        1920)
+        ["gtceu:acidic_platinum_group_solution 1000"],
+        10, // time
+        1920 // eut
+    )
 
-    global.recipe_lcr(event,
+    global.recipe_lcr(
+        event,
         "salty_platinum_mixture_dust",
-        ["3x gtceu:sodium_bicarbonate_dust"],
-        ["gtceu:acidic_platinum_group_solution 5000"],
+        ["3x gtceu:calcium_chloride_dust"],
+        ["gtceu:acidic_platinum_group_solution 1000"],
         ["4x gtceu:salty_platinum_mixture_dust"],
-        ["minecraft:water 5000", "gtceu:carbon_dioxide 4000"],
-        32,
-        30)
+        [],
+        20, // time
+        28 // eut
+    )
 
     global.recipe_centrifuge(event,
         "dirty_platinum_mixture",
-        ["8x gtceu:salty_platinum_mixture_dust"],
+        ["4x gtceu:salty_platinum_mixture_dust"],
         [],
-        ["3x gtceu:dirty_platinum_mixture_dust", "3x gtceu:carbon_dust", "2x gtceu:salt_dust"],
-        [],
-        16,
-        120)
+        ["3x gtceu:dirty_platinum_mixture_dust"],
+        ["gtceu:salty_calcium_brine_sludge 1000"],
+        10, //time
+        120) // eut
 
-    global.recipe_lcr(event,
-        "purified_platinum_metal_dust",
-        ["3x gtceu:dirty_platinum_mixture_dust", "1x gtceu:sodium_dust"],
-        ["gtceu:oxygen 1000"],
-        ["5x gtceu:purified_platinum_metal_dust"],
-        ["gtceu:salt_water 1000"],
-        16,
-        30)
+    global.recipe_chem_bath(
+        event,
+        "2x gtceu:purified_platinum_metal_dust",
+        "2x gtceu:dirty_platinum_mixture_dust",
+        "gtceu:distilled_water 1000", 28, 45
+    )
+    global.recipe_chem_bath(
+        event,
+        "2x gtceu:purified_platinum_metal_dust",
+        "2x gtceu:dirty_platinum_mixture_dust",
+        "gtceu:sodium_persulfate 100", 28, 2
+    )
 
-    global.recipe_electrolyzer(event, "plat_palladium",
-        "5x gtceu:purified_platinum_metal_dust",
+    global.recipe_electrolyzer(
+        event,
+        "plat_palladium",
+        "3x gtceu:purified_platinum_metal_dust",
         [],
-        ["2x gtceu:platinum_dust", "gtceu:palladium_dust"],
-        ["gtceu:hydrogen 1000", "gtceu:nitrogen 1000"],
-        8,
-        28
+        ["gtceu:platinum_dust", "gtceu:palladium_dust"],
+        ["gtceu:carbon_monoxide 1000"], 
+        10,
+        120
     )
 
     // plat waste
-    event.remove({input: "gtceu:platinum_sludge_residue_dust"})
-    global.recipe_chem_bath(event,
-        "10x gtceu:washed_platinum_sludge_residue_dust",
-        "10x gtceu:platinum_sludge_residue_dust",
-        "gtceu:distilled_water 1000", 120, 10
+    global.recipe_chem_bath(
+        event,
+        "3x gtceu:washed_platinum_sludge_residue_dust",
+        "3x gtceu:platinum_sludge_residue_dust",
+        "gtceu:distilled_water 1000", 28, 15
     )
-
-    global.recipe_lcr(event,
-        "purified_platinum_sludge_residue",
-        ["30x gtceu:washed_platinum_sludge_residue_dust", "6x gtceu:sodium_bicarbonate_dust"],
-        [],
-        ["26x gtceu:purified_platinum_sludge_residue_dust", "3x gtceu:sodium_hydroxide_dust"],
-        ["gtceu:carbon_dioxide 1000"],
-        16,
-        30)
+    event.recipes.gtceu.electric_blast_furnace("purified_platinum_group_sludge_dust")
+    .itemInputs("6x gtceu:washed_platinum_sludge_residue_dust")
+    .itemOutputs("5x gtceu:purified_platinum_sludge_residue_dust")
+    .EUt(32)
+    .blastFurnaceTemp(1800)
+    .duration(20 * 20)
 
     global.recipe_centrifuge(event,
-        "pgwaste",
-        ["25x gtceu:purified_platinum_sludge_residue_dust"],
+        "pg_waste",
+        ["5x gtceu:purified_platinum_sludge_residue_dust"],
         [],
-        ["15x gtceu:platinum_group_waste_dust", "10x gtceu:gold_dust"],
+        ["3x gtceu:platinum_group_waste_dust", "2x gtceu:gold_dust"],
         [],
-        16,
-        30)
-
-    event.recipes.gtceu.electric_blast_furnace
-    ("platinum_group_waste_ashes_dust")
-    .itemInputs("5x gtceu:platinum_group_waste_dust")
-    .inputFluids("gtceu:oxygen 2000")
-    .outputFluids("gtceu:carbon_dioxide 1000")
-    .itemOutputs("5x gtceu:platinum_group_waste_ashes_dust")
-    .EUt(1920)
-    .blastFurnaceTemp(2400)
-    .duration(10 * 20)
+        10, //time
+        120) // eut
 
     global.recipe_centrifuge(event,
-        "pgwaste_centrifuge",
-        ["15x gtceu:platinum_group_waste_ashes_dust"],
+        "pg_waste_final",
+        ["5x gtceu:platinum_group_waste_dust"],
         [],
-        ["4x gtceu:silicon_dioxide_dust", "3x gtceu:ash_dust", "3x gtceu:platinum_dust", "3x gtceu:arsenic_dust", "2x gtceu:chromium_dust"],
+        ["4x gtceu:silicon_dioxide_dust", "2x gtceu:platinum_dust", "2x gtceu:chromium_dust"],
         [],
-        40,
-        1920)
+        30, //time
+        1280) // eut
+
+
+    event.remove({output: "gtceu:osmium_tetroxide_dust"})
+    
+    event.remove({input: "gtceu:rhodium_sulfate"})
+    
+    event.remove({input: "gtceu:platinum_sludge_residue_dust"})
     
 
         // helper boosts
     global.recipe_chem_plant(
         event,
         "plat_palladium",
-        ["5x gtceu:purified_platinum_metal_dust"],
+        ["4x gtceu:purified_platinum_metal_dust"],
         ["gtceu:aqua_regia 200"],
         ["2x gtceu:platinum_dust", "2x gtceu:palladium_dust"],
-        ["gtceu:hydrogen 400", "gtceu:nitrogen 400"],
+        ["gtceu:oxygen 100"],
         24,
         120,
         3600,
@@ -313,10 +333,10 @@ ServerEvents.recipes((event) => {
     global.recipe_chem_plant(
         event,
         "rhodium",
-        ["2x gtceu:ammonium_chloride_dust", "2x gtceu:salty_rhodium_dust", "1x gtceu:sodium_dust"],
+        ["2x gtceu:purified_rhodium_mixture_dust"],
         ["gtceu:aqua_regia 200"],
-        ["2x gtceu:rhodium_dust"],
-        ["gtceu:salt_water 400"],
+        ["3x gtceu:rhodium_dust"],
+        [],
         30,
         480,
         3600,
@@ -348,6 +368,86 @@ ServerEvents.recipes((event) => {
         4600,
         "plat_line"
     )
+
+    // harder platinum/palladium
+
+    event.replaceOutput({type: "gtceu:chemical_bath"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+    event.replaceOutput({input: "#forge:ores/nickel"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+    event.replaceOutput({input: "gtceu:refined_nickel_ore"},
+        "gtceu:platinum_dust",
+        "gtceu:platinum_raw_dust"
+    )
+
+    event.replaceOutput({input: "gtceu:cooperite_dust"},
+        "gtceu:palladium_dust",
+        "gtceu:palladium_raw_dust"
+    )
+    event.replaceOutput({type: "gtceu:chemical_bath"},
+        "gtceu:palladium_dust",
+        "gtceu:palladium_raw_dust"
+    )
+    event.remove({input: "gtceu:platinum_raw_dust"})
+    event.remove({input: "gtceu:palladium_raw_dust"})
+    event.remove({type: "minecraft:smelting", output: "gtceu:platinum_ingot"})
+    event.remove({type: "minecraft:blasting", output: "gtceu:platinum_ingot"})
+
+    event.recipes.gtceu.electric_blast_furnace("raw_platinum_to_ingot_ebf")
+    .itemInputs("1x gtceu:platinum_raw_dust")
+    .itemOutputs("3x gtceu:platinum_nugget")
+    .EUt(480)
+    .blastFurnaceTemp(2700)
+    .duration(20 * 20)
+
+    // event.recipes.gtceu.electric_blast_furnace("platinum_to_ingot_ebf")
+    // .itemInputs("1x gtceu:platinum_dust")
+    // .itemOutputs("1x gtceu:platinum_ingot")
+    // .EUt(480)
+    // .blastFurnaceTemp(2700)
+    // .duration(20 * 40)
+
+    event.recipes.gtceu.electric_blast_furnace("raw_palladium_to_ingot_ebf")
+    .itemInputs("1x gtceu:palladium_raw_dust")
+    .itemOutputs("3x gtceu:palladium_nugget")
+    .EUt(480)
+    .blastFurnaceTemp(1828)
+    .duration(20 * 45)
+
+    global.recipe_lcr(event,
+        "raw_plat_to_pgs",
+        ["3x gtceu:platinum_raw_dust", "2x gtceu:sodium_dust"],
+        ["gtceu:nitric_acid 100"],
+        ["3x gtceu:platinum_group_sludge_dust", "4x gtceu:salt_dust"],
+        [],
+        2.5,
+        30)
+
+
+
+
+    global.recipe_lcr(
+        event,
+        "smb",
+        ["14x gtceu:sodium_bisulfate_dust"],
+        ["gtceu:hydrogen 4000"],
+        ["9x gtceu:sodium_metabisulfate_dust"],
+        ["minecraft:water 3000"],
+        15, // time
+        120 // eut
+    )
+
+    event.recipes.gtceu.electric_blast_furnace("salty_calcium_brine_sludge_recycle")
+    .inputFluids("gtceu:salty_calcium_brine_sludge 1000")
+    .itemOutputs("3x gtceu:calcium_chloride_dust")
+    .EUt(120)
+    .blastFurnaceTemp(1200)
+    .duration(20 * 15)
+    
 
 
 })

@@ -11,6 +11,9 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(7680)
 
+    event.shapeless(Item.of("expatternprovider:ex_pattern_provider", 1), ["expatternprovider:ex_pattern_provider_part"])
+    event.shapeless(Item.of("expatternprovider:ex_interface", 1), ["expatternprovider:ex_interface_part"])
+
     event.recipes.gtceu
         .assembler("kubejs:ex_pattern_provider")
         .itemInputs("ae2:pattern_provider", "4x gtceu:iridium_plate", "gtceu:iv_conveyor_module", "gtceu:iv_robot_arm", "2x #gtceu:circuits/iv")

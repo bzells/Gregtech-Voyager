@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
     // @ts-ignore
+        event.remove({output: "ae2:controller"})
     event.shaped(Item.of("ae2:controller", 1), ["CDC", "DAD", "CDC"], {
         A: "gtceu:ev_machine_hull",
         C: "gtceu:titanium_plate",
@@ -7,6 +8,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:drive"})
     event.shaped(Item.of("ae2:drive", 1), ["CDC", "BAB", "CDC"], {
         A: "gtceu:titanium_frame",
         B: "ae2:engineering_processor",
@@ -14,13 +16,18 @@ ServerEvents.recipes((event) => {
         D: "ae2:fluix_glass_cable"
     })
 
+    event.remove({output: "ae2:quartz_fiber"})
     event.recipes.gtceu.wiremill("kubejs:quartz_fiber").itemInputs("gtceu:nether_quartz_dust").itemOutputs("1x ae2:quartz_fiber").duration(20).EUt(32)
 
+    event.remove({output: "ae2:cable_anchor"})
     event.recipes.gtceu.wiremill("kubejs:cable_anchor").itemInputs("gtceu:iron_plate").itemOutputs("8x ae2:cable_anchor").duration(20).EUt(32)
 
+    event.remove({output: "ae2:fluix_glass_cable"})
     event.recipes.gtceu.assembler("kubejs:fluix_cable").itemInputs("ae2:quartz_fiber", "2x ae2:fluix_crystal").itemOutputs("2x ae2:fluix_glass_cable").duration(100).EUt(480)
 
+    event.remove({output: "ae2:fluix_covered_cable"})
     event.recipes.gtceu.assembler("kubejs:fluix_covered_cable").itemInputs("ae2:fluix_glass_cable").inputFluids("gtceu:rubber 288").itemOutputs("1x ae2:fluix_covered_cable").duration(50).EUt(480)
+
 
     event.recipes.gtceu
         .assembler("kubejs:fluix_covered_cable_scr")
@@ -30,6 +37,7 @@ ServerEvents.recipes((event) => {
         .duration(50)
         .EUt(480)
 
+
     event.recipes.gtceu
         .assembler("kubejs:fluix_covered_cable_sbr")
         .itemInputs("ae2:fluix_glass_cable")
@@ -38,6 +46,7 @@ ServerEvents.recipes((event) => {
         .duration(50)
         .EUt(480)
 
+    event.remove({output: "ae2:fluix_covered_dense_cable"})
     event.recipes.gtceu
         .assembler("kubejs:fluix_covered_dense_cable")
         .itemInputs("4x ae2:fluix_covered_cable")
@@ -45,6 +54,7 @@ ServerEvents.recipes((event) => {
         .itemOutputs("1x ae2:fluix_covered_dense_cable")
         .duration(50)
         .EUt(480)
+
 
     event.recipes.gtceu
         .assembler("kubejs:fluix_covered_dense_cable_scr")
@@ -54,6 +64,7 @@ ServerEvents.recipes((event) => {
         .duration(50)
         .EUt(480)
 
+
     event.recipes.gtceu
         .assembler("kubejs:fluix_covered_dense_cable_sbr")
         .itemInputs("4x ae2:fluix_covered_cable")
@@ -62,8 +73,10 @@ ServerEvents.recipes((event) => {
         .duration(50)
         .EUt(480)
 
+    event.remove({output: "ae2:fluix_smart_cable"})
     event.recipes.gtceu.assembler("kubejs:fluix_smart_cable").itemInputs("8x ae2:fluix_covered_cable", "#gtceu:circuits/mv").itemOutputs("8x ae2:fluix_smart_cable").duration(200).EUt(480)
 
+    event.remove({output: "ae2:fluix_smart_dense_cable"})
     event.recipes.gtceu
         .assembler("kubejs:fluix_smart_dense_cable")
         .itemInputs("3x ae2:fluix_covered_dense_cable", "2x #gtceu:circuits/hv")
@@ -72,6 +85,7 @@ ServerEvents.recipes((event) => {
         .EUt(480)
 
     // @ts-ignore
+    event.remove({output: "ae2:interface"})
     event.shaped(Item.of("ae2:interface", 1), [" D ", "BAC", " E "], {
         A: "gtceu:titanium_frame",
         B: "ae2:formation_core",
@@ -81,17 +95,21 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:me_p2p_tunnel"})
     event.shaped(Item.of("ae2:me_p2p_tunnel", 2), [" A ", "ABA", "CCC"], {
         A: "gtceu:titanium_plate",
         B: "ae2:engineering_processor",
         C: "ae2:fluix_crystal"
     })
 
+    event.remove({output: "ae2:storage_bus"})
     event.recipes.gtceu.assembler("kubejs:storage_bus").itemInputs("ae2:interface", "gtceu:ev_conveyor_module", "minecraft:chest").itemOutputs("ae2:storage_bus").duration(100).EUt(30)
 
+    event.remove({output: "ae2:quartz_glass"})
     event.recipes.gtceu.alloy_smelter("kubejs:quartz_glass").itemInputs("2x gtceu:glass_dust", "2x gtceu:certus_quartz_dust").itemOutputs("ae2:quartz_glass").duration(100).EUt(30)
 
     // @ts-ignore
+    event.remove({output: "ae2:energy_acceptor"})
     event.shaped(Item.of("ae2:energy_acceptor", 1), [" B ", " A ", " E "], {
         A: "gtceu:ev_machine_hull",
         B: "gtceu:ev_voltage_coil",
@@ -99,6 +117,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:import_bus"})
     event.shaped(Item.of("ae2:import_bus", 1), [" B ", " A ", " E "], {
         A: "ae2:annihilation_core",
         B: "gtceu:ev_electric_piston",
@@ -106,6 +125,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:export_bus"})
     event.shaped(Item.of("ae2:export_bus", 1), [" B ", " A ", " E "], {
         A: "ae2:formation_core",
         B: "gtceu:ev_electric_piston",
@@ -113,28 +133,37 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
-    event.shapeless(Item.of("ae2:cable_interface", 1), ["ae2:interface", "ae2:cable_anchor"])
+    event.remove({output: "ae2:cable_interface"})
+    event.shapeless(Item.of("ae2:cable_interface", 1), ["ae2:interface"])
+    event.shapeless(Item.of("ae2:interface", 1), ["ae2:cable_interface"])
 
     // @ts-ignore
+    event.remove({output: "ae2:toggle_bus"})
     event.shapeless(Item.of("ae2:toggle_bus", 1), ["ae2:cable_anchor", "ae2:level_emitter", "ae2:calculation_processor"])
     // @ts-ignore
+    event.remove({output: "ae2:inverted_toggle_bus"})
     event.shapeless(Item.of("ae2:inverted_toggle_bus", 1), ["ae2:toggle_bus"])
 
     // @ts-ignore
+    event.remove({output: "ae2:level_emitter"})
     event.shapeless(Item.of("ae2:level_emitter", 1), ["minecraft:redstone_torch", "ae2:calculation_processor"])
 
     // @ts-ignore
+    event.remove({output: "ae2:energy_level_emitter"})
     event.shapeless(Item.of("ae2:energy_level_emitter", 1), ["ae2:fluix_crystal", "ae2:level_emitter"])
 
     // @ts-ignore
+    event.remove({output: "ae2:certus_quartz_cutting_knife"})
     event.shapeless(Item.of("ae2:certus_quartz_cutting_knife", 1), ["gtceu:certus_quartz_gem", "minecraft:stick"])
 
     // @ts-ignore
+    event.remove({output: "ae2:nether_quartz_cutting_knife"})
     event.shapeless(Item.of("ae2:nether_quartz_cutting_knife", 1), ["minecraft:quartz", "minecraft:stick"])
 
     const colors = ["white", "light_gray", "gray", "black", "brown", "red", "orange", "yellow", "lime", "green", "cyan", "light_blue", "blue", "purple", "magenta", "pink"]
 
     colors.forEach((color) => {
+        event.remove({output: "ae2:"})
         event.recipes.gtceu
             .chemical_bath("kubejs:cable_" + color)
             .itemInputs("ae2:fluix_glass_cable")
@@ -143,6 +172,7 @@ ServerEvents.recipes((event) => {
             .duration(10)
             .EUt(8)
 
+        event.remove({output: "ae2:"})
         event.recipes.gtceu
             .chemical_bath("kubejs:cable_covered" + color)
             .itemInputs("ae2:fluix_covered_cable")
@@ -151,6 +181,7 @@ ServerEvents.recipes((event) => {
             .duration(10)
             .EUt(8)
 
+        event.remove({output: "ae2:"})
         event.recipes.gtceu
             .chemical_bath("kubejs:cable_smart" + color)
             .itemInputs("ae2:fluix_smart_cable")
@@ -159,6 +190,7 @@ ServerEvents.recipes((event) => {
             .duration(10)
             .EUt(8)
 
+        event.remove({output: "ae2:"})
         event.recipes.gtceu
             .chemical_bath("kubejs:cable_covered_dense" + color)
             .itemInputs("ae2:fluix_covered_dense_cable")
@@ -167,6 +199,7 @@ ServerEvents.recipes((event) => {
             .duration(10)
             .EUt(8)
 
+        event.remove({output: "ae2:"})
         event.recipes.gtceu
             .chemical_bath("kubejs:cable_smart_dense" + color)
             .itemInputs("ae2:fluix_smart_dense_cable")
@@ -177,6 +210,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:terminal"})
     event.shaped(Item.of("ae2:terminal", 1), ["ABA", "CDC", " E "], {
         A: "ae2:quartz_glass",
         B: "ae2:logic_processor",
@@ -186,9 +220,11 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:crafting_terminal"})
     event.shapeless(Item.of("ae2:crafting_terminal", 1), ["ae2:terminal", "ae2:engineering_processor", "#gtceu:circuits/ev"])
 
     // @ts-ignore
+    event.remove({output: "ae2:pattern_encoding_terminal"})
     event.shapeless(Item.of("ae2:pattern_encoding_terminal", 1), ["ae2:terminal", "ae2:engineering_processor", "ae2:formation_core"])
 
     // event.shaped(
@@ -207,6 +243,7 @@ ServerEvents.recipes((event) => {
     // )
 
     // @ts-ignore
+    event.remove({output: "ae2:storage_monitor"})
     event.shaped(Item.of("ae2:storage_monitor", 4), [" A ", " CB", " A "], {
         A: "ae2:fluix_glass_cable",
         B: "ae2:calculation_processor",
@@ -214,6 +251,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:cell_workbench"})
     event.shaped(Item.of("ae2:cell_workbench", 1), ["AAA", "BCB", "AAA"], {
         A: "gtceu:steel_plate",
         B: "ae2:calculation_processor",
@@ -221,6 +259,7 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:pattern_provider"})
     event.shaped(Item.of("ae2:pattern_provider", 1), [" E ", "BAC", " D "], {
         A: "gtceu:titanium_frame",
         B: "ae2:formation_core",
@@ -229,16 +268,11 @@ ServerEvents.recipes((event) => {
         E: "gtceu:ev_robot_arm"
     })
 
+    event.remove({output: "ae2:cable_pattern_provider"})
     event.shapeless(Item.of("ae2:cable_pattern_provider", 1), ["ae2:pattern_provider"])
+    event.shapeless(Item.of("ae2:pattern_provider", 1), ["ae2:cable_pattern_provider"])
 
-
-    event.recipes.gtceu
-        .assembler("kubejs:molecular_assembler")
-        .itemInputs("gtceu:ev_machine_hull", "2x ae2:engineering_processor", "ae2:formation_core", "gtceu:ev_robot_arm")
-        .itemOutputs("ae2:molecular_assembler")
-        .duration(300)
-        .EUt(1980)
-
+    event.remove({output: "ae2:molecular_assembler"})
     event.shaped(Item.of("ae2:molecular_assembler", 1), 
     [   "CEC", 
         "BAB", 
@@ -251,22 +285,29 @@ ServerEvents.recipes((event) => {
     })
 
     // @ts-ignore
+    event.remove({output: "ae2:crafting_unit"})
     event.shaped(Item.of("ae2:crafting_unit", 1), ["ABA", "BCB", "ABA"], {
         A: "gtceu:titanium_plate",
         B: "ae2:fluix_glass_cable",
         C: "gtceu:ev_machine_casing"
     })
 
+    event.remove({output: "ae2:1k_crafting_storage"})
     event.recipes.gtceu.assembler("kubejs:1k_crafting_storage").itemInputs("ae2:crafting_unit", "ae2:cell_component_1k").itemOutputs("ae2:1k_crafting_storage").duration(200).EUt(480)
 
+    event.remove({output: "ae2:4k_crafting_storage"})
     event.recipes.gtceu.assembler("kubejs:4k_crafting_storage").itemInputs("ae2:crafting_unit", "ae2:cell_component_4k").itemOutputs("ae2:4k_crafting_storage").duration(200).EUt(1920)
 
+    event.remove({output: "ae2:16k_crafting_storage"})
     event.recipes.gtceu.assembler("kubejs:16k_crafting_storage").itemInputs("ae2:crafting_unit", "ae2:cell_component_16k").itemOutputs("ae2:16k_crafting_storage").duration(200).EUt(7680)
 
+    event.remove({output: "ae2:64k_crafting_storage"})
     event.recipes.gtceu.assembler("kubejs:64k_crafting_storage").itemInputs("ae2:crafting_unit", "ae2:cell_component_64k").itemOutputs("ae2:64k_crafting_storage").duration(200).EUt(30720)
 
+    event.remove({output: "ae2:256k_crafting_storage"})
     event.recipes.gtceu.assembler("kubejs:256k_crafting_storage").itemInputs("ae2:crafting_unit", "ae2:cell_component_256k").itemOutputs("ae2:256k_crafting_storage").duration(200).EUt(30720)
 
+    event.remove({output: "ae2:crafting_monitor"})
     event.recipes.gtceu
         .assembler("kubejs:crafting_monitor")
         .itemInputs("ae2:crafting_unit", "ae2:logic_processor", "ae2:quartz_glass", "2x gtceu:aluminium_plate")
@@ -274,6 +315,7 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(480)
 
+    event.remove({output: "ae2:crafting_accelerator"})
     event.recipes.gtceu
         .assembler("kubejs:crafting_accelerator")
         .itemInputs("2x ae2:crafting_unit", "ae2:engineering_processor", "2x #gtceu:circuits/ev")
@@ -281,6 +323,7 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(1980)
 
+    event.remove({output: "ae2:chest"})
     event.recipes.gtceu
         .assembler("kubejs:me_chest")
         .itemInputs("gtceu:ev_machine_hull", "ae2:calculation_processor", "4x gtceu:titanium_plate", "minecraft:chest", "#gtceu:circuits/ev")
@@ -288,46 +331,54 @@ ServerEvents.recipes((event) => {
         .duration(200)
         .EUt(480)
 
+    event.remove({output: "ae2:io_port"})
     event.recipes.gtceu
         .assembler("kubejs:io_port")
         .itemInputs("ae2:import_bus", "ae2:export_bus", "ae2:engineering_processor", "gtceu:titanium_frame")
         .itemOutputs("ae2:io_port")
         .duration(200)
         .EUt(1980)
+    event.remove({output: "ae2:spatial_io_port"})
     event.recipes.gtceu
         .assembler("kubejs:spatial_io_port")
         .itemInputs("ae2:io_port", "ae2:engineering_processor", "2x gtceu:small_titanium_gear", "gtceu:double_titanium_plate", "#gtceu:circuits/ev")
         .itemOutputs("ae2:spatial_io_port")
         .duration(200)
         .EUt(1980)
+    event.remove({output: "ae2:condenser"})
     event.recipes.gtceu
         .assembler("kubejs:matter_condenser")
         .itemInputs("gtceu:ev_machine_hull", "2x gtceu:ev_electric_piston", "2x ae2:logic_processor", "#gtceu:circuits/ev", "gtceu:titanium_gear")
         .itemOutputs("ae2:condenser")
         .duration(200)
         .EUt(1980)
+    event.remove({output: "ae2:basic_card"})
     event.recipes.gtceu
         .assembler("kubejs:basic_card")
         .itemInputs("gtceu:double_aluminium_plate", "3x gtceu:aluminium_bolt", "ae2:calculation_processor", "4x gtceu:fine_gold_wire", "2x gtceu:fine_red_alloy_wire")
         .itemOutputs("3x ae2:basic_card")
         .duration(60)
         .EUt(120)
+    event.remove({output: "ae2:advanced_card"})
     event.recipes.gtceu
         .assembler("kubejs:advanced_card")
         .itemInputs("gtceu:double_aluminium_plate", "3x gtceu:aluminium_bolt", "ae2:calculation_processor", "4x gtceu:fine_fluxed_cobalt_electrum_wire", "2x gtceu:fine_red_alloy_wire")
         .itemOutputs("3x ae2:advanced_card")
         .duration(60)
         .EUt(120)
+    event.remove({output: "ae2:quantum_link"})
     event.recipes.gtceu
         .forming_press("kubejs:quantum_link_chamber")
         .itemInputs("7x gtceu:double_iridium_plate", "5x gtceu:double_ruthenium_plate", "gtceu:laminated_glass", "gtceu:quantum_star", "#gtceu:circuits/iv")
         .itemOutputs("ae2:quantum_link")
         .duration(200)
         .EUt(1980)
+    event.remove({output: "ae2:quantum_ring"})
     event.recipes.gtceu
         .forming_press("kubejs:quantum_ring")
         .itemInputs("7x gtceu:double_palladium_plate", "5x gtceu:double_platinum_plate", "gtceu:laminated_glass", "gtceu:desh_frame", "#gtceu:circuits/hv")
         .itemOutputs("ae2:quantum_ring")
         .duration(200)
         .EUt(1980)
+
 })

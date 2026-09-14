@@ -17,6 +17,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: "gtceu:alloy_blast_smelter" })
     event.remove({ output: "gtceu:graphene_dust" })
 
+
     event.remove({ id: /gtceu:.*mining_hammer/ }) // Going with this one since it works. IDFK. Other option is using ==> /.*mining_hammer.*/ <== but has the exact same outcome, even though it *really* shouldn't
 
     event.remove({ type: "minecraft:crafting_shaped", output: "gtceu:phenolic_printed_circuit_board" })
@@ -28,12 +29,12 @@ ServerEvents.recipes((event) => {
     event.remove({ id: "gtceu:assembler/flower_pot" })
     // event.remove({type: 'minecraft:crafting_shaped' ,output: ['gtceu:mv_electric_motor', 'gtceu:mv_electric_pump', 'gtceu:mv_conveyor_module', 'gtceu_mv_electric_piston', 'gtceu:mv_robot_arm']})
 
-    event.replaceInput(
-        { input: "gtceu:annealed_copper_bolt" }, // Arg 1: the filter
-        "gtceu:annealed_copper_bolt", // Arg 2: the item to replace
-        "gtceu:fluxed_electrum_bolt" // Arg 3: the item to replace it with
-        // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
-    )
+    // event.replaceInput(
+    //     { input: "gtceu:annealed_copper_bolt", output: "gtceu:supercom"}, // Arg 1: the filter
+    //     "gtceu:annealed_copper_bolt", // Arg 2: the item to replace
+    //     "gtceu:fluxed_electrum_bolt" // Arg 3: the item to replace it with
+    //     // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+    // )
 
     event.replaceInput(
         { output: "gtceu:iv_parallel_hatch" }, // Arg 1: the filter

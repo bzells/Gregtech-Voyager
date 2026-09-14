@@ -9,6 +9,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(5)
         .soundType("metal")
         .requiresTool(true)
+        .tagBlock("forge:mineable/wrench")
 
     event
         .create("titanite_coil_block", "gtceu:coil")
@@ -20,6 +21,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(5)
         .soundType("metal")
         .requiresTool(true)
+        .tagBlock("forge:mineable/wrench")
 
     event
         .create("industrial_perfected_electrum_coil_block", "gtceu:coil")
@@ -31,4 +33,5 @@ StartupEvents.registry("block", (event) => {
         .hardness(5)
         .soundType("metal")
         .requiresTool(true)
+        .tagBlock("forge:mineable/wrench")
 })
