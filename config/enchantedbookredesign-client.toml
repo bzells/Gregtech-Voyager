@@ -1,5 +1,0 @@
-
-[client]
-	#Which items to override glint for
-	items = ["minecraft:enchanted_book"]
-

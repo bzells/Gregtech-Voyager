@@ -76,14 +76,14 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu.chemical_bath("kubejs:squid_pet")
     .itemInputs("#inventorypets:all_pets")
-    .inputFluids("minecraft:water 32000")
+    .inputFluids("minecraft:water 12000")
     .itemOutputs("inventorypets:pet_squid")
     .EUt(120)
     .duration(60 * 20)
 
     event.recipes.gtceu.chemical_bath("kubejs:pet_magma_cube")
     .itemInputs("inventorypets:pet_slime")
-    .inputFluids("minecraft:lava 32000")
+    .inputFluids("minecraft:lava 12000")
     .itemOutputs("inventorypets:pet_magma_cube")
     .EUt(120)
     .duration(60 * 20)

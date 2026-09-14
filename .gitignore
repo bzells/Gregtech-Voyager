@@ -72,3 +72,4 @@ kubejs/config/probejs.json
 config/aether-client.toml
 /chesttracker
 /chesttracker
+/config
