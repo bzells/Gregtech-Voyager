@@ -355,7 +355,7 @@ GTCEuServerEvents.oreVeins((event) => {
 
     /** @type {MarsOreConfig[]} */
     const marsOres = [
-        { material: "ostrite", weight: 10, density: 0.3, clusterSize: 25, mats: ["ostrite", "scheelite", "amethyst", "palladium"], dense: true },
+        { material: "ostrite", weight: 15, density: 0.6, clusterSize: 50, mats: ["ostrite", "scheelite", "amethyst", "palladium"], dense: true },
         { material: "tungstate", weight: 10, density: 0.4, clusterSize: 30, mats: ["tungstate", "scheelite", "tungstate"], dense: true },
         { material: "bauxite", weight: 35, density: 0.7, clusterSize: 35, mats: ["bauxite", "aluminium", "bauxite"], dense: false },
         { material: "ilmenite", weight: 15, density: 0.3, clusterSize: 35, mats: ["ilmenite", "ilmenite", "ilmenite"], dense: true },

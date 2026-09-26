@@ -340,6 +340,25 @@ ServerEvents.recipes((event) => {
         )
     }
 
+    function tier_recipe_module_cube2(tier, machine, machine2, wiremat, misc)
+    {
+        event.shaped(
+            Item.of(`voyagercore:${tier}_${machine}_helper_recipe_module`, 1), // arg 1: output
+            [
+                'BDB',
+                'ACA', // arg 2: the shape (array of strings)
+                'EAE'
+            ],
+            {
+                A: misc,
+                B: `gtceu:${wiremat}_double_wire`,  //arg 3: the mapping object
+                C: `voyagercore:${tier}_helper_module`,
+                D: `gtceu:cube_${machine2}`,
+                E: `#gtceu:circuits/${tier}`
+            }
+        )
+    }
+
     function grandma_module(id, level, tier, items, fluids)
     {
         assembler_paramount_module_recipe(id, tier, level, "grandma", items, fluids)
@@ -474,6 +493,8 @@ ServerEvents.recipes((event) => {
     tier_recipe_module_cube("ev", "mixer", "desh", "gtceu:desh_rotor")
     // tier_recipe_module_cube("luv", "assembler", "industrial_perfected_electrum", "gtceu:luv_field_generator")
     tier_recipe_module_cube("ev", "oven", "nichrome", "gtceu:cupronickel_spring")
+    tier_recipe_module_cube("ev", "sifter", "tungsten_steel", "gtceu:item_filter")
+    tier_recipe_module_cube2("ev", "chem_bath", "chemical_bath", "vanadium_gallium", "gtceu:ev_electric_pump")
 
     assembler_module_recipe('smd_assembler', 'hv', true,
         ['3x gtceu:hv_robot_arm', 'gtceu:hv_assembler', '#gtceu:circuits/iv', '16x gtceu:smd_diode', '16x gtceu:smd_inductor', '16x gtceu:smd_capacitor', '16x gtceu:fine_energetic_pearlic_alloy_wire'],

@@ -99,6 +99,18 @@ ServerEvents.recipes((event) => {
         5000, "chemist"
     )
 
+    global.recipe_chem_plant(
+        event,
+        "sulfuria_chem_plant",
+        ["2x gtceu:copper_sulfuriate_dust"],
+        [],
+        ["3x gtceu:sulfuria_dust", "gtceu:copper_dust"],
+        [],
+        40,
+        7860,
+        5000, "chemist"
+    )
+
     event.recipes.gtceu
         .canner("kubejs:ht-ba_s")
         .inputFluids("kubejs:high_temp_binding_agent_s 2400")

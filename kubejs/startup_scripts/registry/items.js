@@ -404,4 +404,9 @@ StartupEvents.registry("item", (event) => {
 
     event.create("bag_of_uranium_cookies").texture("kubejs:item/bag_of_uranium_cookies").displayName("Bag of Uranium Cookies")
 
+
+    event.create("dormant_solar_crystal").texture("kubejs:item/dormant_solar_crystal").displayName("Dormant Solar Crystal")
+    event.create("activated_solar_crystal").texture("kubejs:item/activated_solar_crystal").displayName("Activated Solar Crystal")
+    
+
 })
