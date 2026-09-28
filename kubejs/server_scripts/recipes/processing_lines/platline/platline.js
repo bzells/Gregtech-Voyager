@@ -88,6 +88,7 @@ ServerEvents.recipes((event) => {
     .inputFluids("gtceu:acidic_shiny_metal_mixture 1500")
     .itemOutputs("3x gtceu:impure_shiny_metal_mixture_dust")
     .outputFluids("gtceu:nitric_acid 1000")
+    .circuit(1)
     .EUt(480)
     .blastFurnaceTemp(2700)
     .duration(20 * 20)
@@ -95,6 +96,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu.electric_blast_furnace("impure_shiny_metal_mixture_dust_argon_boosted")
     .inputFluids("gtceu:acidic_shiny_metal_mixture 1500", "gtceu:argon 100")
     .itemOutputs("3x gtceu:impure_shiny_metal_mixture_dust")
+    .inputFluids("gtceu:argon 100")
     .outputFluids("gtceu:nitric_acid 1000")
     .EUt(480)
     .circuit(2)
@@ -127,12 +129,14 @@ ServerEvents.recipes((event) => {
     .itemOutputs("3x gtceu:precipitated_inert_metal_dust")
     .outputFluids("gtceu:nitric_acid 1000")
     .EUt(1920)
+    .circuit(1)
     .blastFurnaceTemp(2700)
     .duration(20 * 20)
 
     event.recipes.gtceu.electric_blast_furnace("precipitated_inert_metal_solution_argon_boosted")
     .itemInputs("9x gtceu:inert_metal_mixture_dust")
     .itemOutputs("4x gtceu:precipitated_inert_metal_dust")
+    .inputFluids("gtceu:argon 100")
     .outputFluids("gtceu:nitric_acid 1000")
     .EUt(1920)
     .circuit(2)
@@ -338,7 +342,7 @@ ServerEvents.recipes((event) => {
         ["3x gtceu:rhodium_dust"],
         [],
         30,
-        480,
+        1920,
         3600,
         "plat_line"
     )
@@ -350,9 +354,9 @@ ServerEvents.recipes((event) => {
         ["gtceu:aqua_regia 200"],
         ["2x gtceu:iridium_dust"],
         ["gtceu:chlorine 1000"],
-        30,
-        480,
-        3600,
+        45,
+        7680,
+        4500,
         "plat_line"
     )
 

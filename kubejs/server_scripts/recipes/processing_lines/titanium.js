@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
     event.recipes.gtceu
         .electrolyzer("kubejs:ilm_residue_electrolyze") // recipe ID
         .inputFluids("gtceu:ilmenite_residue 500")
-        .itemOutputs("gtceu:ilmenite_dust", "gtceu:small_desh_dust")
+        .itemOutputs("gtceu:ilmenite_dust", "gtceu:raw_desh_dust")
         .chancedOutput("gtceu:iron_dust", 9000, 500)
         .chancedOutput("gtceu:vanadium_dust", 5000, 500)
         .outputFluids("gtceu:hydrogen_sulfide 1000")

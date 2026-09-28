@@ -244,6 +244,8 @@ ServerEvents.recipes((event) => {
     cube_multi("refined_fluxed_electrum", "thermal_centrifuge")
     cube_multi("platinum", "assembler")
     cube_multi("energetic_alloy", "mixer")
+    cube_multi("tungsten_steel", "sifter")
+    cube_multi("titanium", "chemical_bath")
 
     event.shaped(
         Item.of("voyagercore:chemical_plant", 1), // arg 1: output

@@ -254,7 +254,7 @@ event.add(`voyagercore:helper_factory`, [
     `${gr}Helper Factory`,
     nl,
     `${gre}Uses ${gr}Helper Factory${x} ${gre}recipes`,
-    `${gre}Has ${ye}Non-Perfect Overclocks${x}`,
+    `${gre}Has ${ye}Perfect Overclocks${x}`,
     nl,
     `${gre}Assembles Helper Hulls${x}`,
     `All ${or}Precise robot arm boxes ${x}must be ${ye}at least the tier ${gre}of the recipe${x} for it to run`
@@ -330,6 +330,8 @@ event.add(`voyagercore:helper_factory`, [
   cubeTooltip('autoclave')
   cubeTooltip('assembler')
   cubeTooltip('mixer')
+  cubeTooltip('chemical_bath')
+  cubeTooltip('sifter')
 
   event.add(`gtceu:radiation_chamber`, ['§aFocuses radioactive decay particles into a central chamber§r','§6Can only use 4x parallel hatches§r'])
   event.add(`voyagercore:hyper_helper_calorie_converter`, [

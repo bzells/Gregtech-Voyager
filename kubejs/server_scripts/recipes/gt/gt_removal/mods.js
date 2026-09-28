@@ -1,6 +1,6 @@
 // @ts-nocheck
 ServerEvents.recipes((event) => {
-    event.remove({ mod: "ad_astra" })
+
     event.remove({ mod: "enderio" })
     event.remove({ mod: "hostilenetworks" })
     event.remove({ mod: "artifacts" })
