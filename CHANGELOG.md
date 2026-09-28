@@ -3,6 +3,40 @@
 ## Latest
 
 ## Additions
+- New Cube Chemical Bath
+- New Cube Sifter
+- Chemical Bath and Sifting Helper Recipe Modules
+- New Vacuum freezer helper recipe module
+
+## Balance Changes
+- Desh dust from ilmenite is now “Raw Desh Dust”
+ - One dust -> 3 nuggets in EBF
+ - Can be used for DGS
+- Specialized recipes no longer need the specialization to run.
+- Ostrite veins are larger, and have higher weight (10->15)
+
+## Questbook
+
+
+## Recipe Balance Changes
+- Added chem plant/helper recipe for sulfuria
+
+## Bugfixes/Missing Recipes
+- Ad Astra recipes are un-removed (custom recipes will remain)
+- Fixed bug where helpers couldn’t overclock one tier
+- Fixed bug where you could put paramount modules on the wrong paramount helper
+- Fixed some plat line recipes
+- Fixed Helper Factory Tooltip having incorrect OC Info
+- Steam Ore Washer can now have an input hatch for washing
+- GitHub Issues
+
+## Misc
+- Refactored Desh Line
+
+
+# 0.4.4.pb-testing-patch-5
+
+## Additions
 - Raw Platinum Dust
 	- Can be EBF’d at HV for 3 Platinum Nuggets
 	- Can be used to make PGS
