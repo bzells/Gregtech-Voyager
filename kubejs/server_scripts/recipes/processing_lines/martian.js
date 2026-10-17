@@ -75,7 +75,14 @@ ServerEvents.recipes((event) => {
     )
     global.recipe_radiation_chamber(event, "excited_sulfur", "2x gtceu:inert_sulfur_dust", "uranium", 1, "2x gtceu:excited_sulfur_dust", "gtceu:radon 2000", 7860, 48)
 
-    global.recipe_lcr(event, "carb_tetrach", "gtceu:carbon_dust", "gtceu:chlorine 4000", [], "gtceu:carbon_tetrachloride 1000", 20, 480)
+    event.recipes.gtceu
+        .large_chemical_reactor("kubejs:lcr_carb_tetrach")
+        .itemInputs("gtceu:carbon_dust")
+        .inputFluids("gtceu:chlorine 4000")
+        .outputFluids("gtceu:carbon_tetrachloride 1000")
+        .duration(20 * 20)
+        .EUt(480)
+        .circuit(1)
 
     global.recipe_lcr(event, "sulfuria_sol", ["2x gtceu:excited_sulfur_dust", "gtceu:copper_dust"], "gtceu:carbon_tetrachloride 1000", [], "gtceu:sulfuria_solution 1000", 30, 1920)
 
