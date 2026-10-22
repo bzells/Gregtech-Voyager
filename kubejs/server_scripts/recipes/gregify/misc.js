@@ -38,19 +38,25 @@ ServerEvents.recipes((event) => {
         }
     ).id("kjs:glider_framework");
 
-    event.recipes.gtceu.shaped(
-        Item.of("comforts:sleeping_bag_white"),
-        [
-            "   ",
-            "AAA",
-            "BCB"
-        ],
-        {
-            A: "#minecraft:wool_carpets",
-            B: "gtceu:treated_wood_rod",
-            C: "#forge:tools/screwdrivers"
-        }
-    ).id("kjs:sleeping_bag");
+    let dyes = ["white", "light_gray", "gray", "black", "brown", "red", "orange", "yellow", "lime", "green", "cyan", "light_blue", "blue", "purple", "magenta", "pink"]
+
+    dyes.forEach(color => {
+        event.recipes.gtceu.shaped(
+            Item.of(`comforts:sleeping_bag_${color}`),
+            [
+                "   ",
+                "AAA",
+                "BCB"
+            ],
+            {
+                A: `#chipped:${color}_carpet`,
+                B: "gtceu:treated_wood_rod",
+                C: "#forge:tools/screwdrivers"
+            }
+        ).id(`kjs:sleeping_bag_${color}`);
+
+        event.shapeless(`comforts:sleeping_bag_${color}`, ["#comforts:sleeping_bags", `minecraft:${color}_dye`]).id(`kjs:dyeing_sleeping_bag_${color}`)
+    })
 
 
     event.recipes.gtceu.assembler("kubejs:framed_cube").itemInputs("4x gtceu:wood_screw", "4x minecraft:stick").itemOutputs("16x framedblocks:framed_cube").duration(20).EUt(2)
