@@ -13,13 +13,19 @@ GTCEuStartupEvents.materialModification((_event) => {
     GTMaterials.get("industrial_perfected_electrum").setFormula("(*Au**Ag*)5(C2Rc4)")
     GTMaterials.get("sulfuria").setFormula("*S*")
 
-    // TagPrefix.gem["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem'))
-    // TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('source'), () => Item.getItem('ars_nouveau:source_gem_block'))
-    // TagPrefix.block.modifyMaterialAmount(GTMaterialRegistry.getMaterial('source'),4)
+    let Source = GTMaterials.get("source")
+    let FireSteel = GTMaterials.get("dragonsteel_fire")
+    let IceSteel = GTMaterials.get("dragonsteel_ice")
 
-    // TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_fire'), () => Item.getItem("iceandfire:dragonsteel_fire_block"))
-    // TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_fire'), () => Item.getItem('iceandfire:dragonsteel_fire_ingot'))
 
-    // TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_ice'), () => Item.getItem('iceandfire:dragonsteel_ice_ingot'))
-    // TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](GTMaterialRegistry.getMaterial('dragonsteel_ice'), () => Item.getItem("iceandfire:dragonsteel_ice_block"))
+    
+    TagPrefix.gem["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](Source, () => Item.getItem('ars_nouveau:source_gem'))
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](Source, () => Item.getItem('ars_nouveau:source_gem_block'))
+    TagPrefix.block.modifyMaterialAmount(Source,4)
+
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](FireSteel, () => Item.getItem("iceandfire:dragonsteel_fire_block"))
+    TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](FireSteel, () => Item.getItem('iceandfire:dragonsteel_fire_ingot'))
+
+    TagPrefix.ingot["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](IceSteel, () => Item.getItem('iceandfire:dragonsteel_ice_ingot'))
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](IceSteel, () => Item.getItem("iceandfire:dragonsteel_ice_block"))
 })
