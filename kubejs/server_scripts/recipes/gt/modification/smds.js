@@ -70,8 +70,21 @@ ServerEvents.recipes((event) => {
         .addData("specialized", "smd_assembly")
         .itemOutputs(`${outputCount}x gtceu:smd_${output}`)
         .inputFluids("#forge:polyethylene 216")
-        .duration(20 * 30)
+        .duration(20 * 8)
         .EUt(480);
+    }
+
+    function advanced_smd(output, outputCount, inputItems)
+    {
+        event.recipes.gtceu.smd_assembly(`kubejs:smd_assembler_advanced_smd_${output}`)
+        .itemInputs(
+            inputItems
+        )
+        .addData("specialized", "smd_assembly")
+        .itemOutputs(`${outputCount}x gtceu:advanced_smd_${output}`)
+        .inputFluids("#forge:polybenzimidazole 144")
+        .duration(20 * 8)
+        .EUt(7860);
     }
 
     smd("transistor", 32, ["2x gtceu:gallium_foil", "1x gtceu:kyanite_dust", "2x gtceu:fine_tantalum_wire"])
@@ -79,4 +92,10 @@ ServerEvents.recipes((event) => {
     smd("capacitor", 32, ["1x gtceu:tantalum_foil", "2x gtceu:silicone_rubber_foil", "1x gtceu:kyanite_dust"])
     smd("inductor", 32, ["2x gtceu:nickel_zinc_ferrite_ring", "2x gtceu:fine_tantalum_wire", "1x gtceu:kyanite_dust"])
     smd("diode", 32, ["1x gtceu:gallium_arsenide_dust", "16x gtceu:fine_platinum_wire", "1x gtceu:kyanite_dust"])
+
+    advanced_smd("transistor", 24, ["gtceu:vanadium_gallium_foil", "6x gtceu:fine_hssg_wire"])
+    advanced_smd("resistor", 24, ["gtceu:graphene_plate", "3x gtceu:fine_platinum_wire"])
+    advanced_smd("capacitor", 32, ["2x gtceu:polybenzimidazole_foil", "gtceu:hsss_foil"])
+    advanced_smd("diode", 64, ["gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_niobium_titanium_wire"])
+    advanced_smd("inductor", 24, ["gtceu:hsse_ring", "4x gtceu:fine_palladium_wire"])
 })

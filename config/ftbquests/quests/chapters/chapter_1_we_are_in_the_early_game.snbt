@@ -84,7 +84,7 @@
 		}
 		{
 			dependencies: ["0B4A6B9B95DFA2B4"]
-			description: ["Gregtech requires a lot of 'microparts,' items that don't have a use on their own for anything but craftong other things. This your first, the motor. You need a lot of these, so start with making 4 of them."]
+			description: ["Gregtech requires a lot of 'microparts,' items that don't have a use on their own for anything but crafting other things. This your first, the motor. You need a lot of these, so start with making 4 of them."]
 			id: "5CD3D0225E984D8A"
 			rewards: [{
 				id: "4E02D471E86A4D48"

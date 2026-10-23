@@ -72,7 +72,7 @@ ItemEvents.tooltip((event) => {
   const ye = "§r§e"
   const re = "§r§4"
   const gre = "§r§7"
-  const wh = ""
+  const wh = "§r§f"
   const b = "§r§b"
   const cy = "§r§3"
 
@@ -166,6 +166,32 @@ ItemEvents.tooltip((event) => {
         `${gre}Can only have ${re}one energy hatch`
     ])
 
+    event.add(`voyagercore:loch_ness_fishing_port`, [
+        `${b}Loch Ness Fishing Port`,
+        nl,
+        `${gre}Can fish ${gr}junk items, or fish${x}${gre}`,
+        `${gre}Simulates an active ocean using it's pipe casings, bringing in an active environment of life to gather resources${x}`,
+        nl,
+        `${gre}Speed is equal to ${wh}(2^(pipe casing tier - 2) - 1) * 100%${x} ${gre}`,
+        `${gre}Requires a fishing net in an input bus to run recipes. Net determines ${gr}parallel count${x}`,
+        `${gre}Pipe casing tier must be >= net tier${ye} to fish`,
+        nl,
+        `${gre}Circuit 1: ${wh}Gathers fish${x}`,
+        `${gre}Circuit 2: ${wh}Gathers junk`
+    ])
+
+    event.add(`voyagercore:forest_regrowth_chamber`, [
+        `${or}Forest Regrowth Chamber`,
+        nl,
+        `${gre}Uses ${gr}Forest Regrowth Chamber${x}${gre} recipes`,
+        `${gre}Simulates an active forest using it's pipe casings, bringing in an active environment of life to gather resources${x}`,
+        nl,
+        `${gre}Has base ${gr}9 parallels`,
+        `${gre}Output is ${gr}multiplied${gre} depending on ${wh}pipe casing tier`,
+        `${gre}Output ${gr}multiplier${gre} is equal to ${wh}2^(pipe casing tier)`,
+        `${gre}Requires an ${wh}axe in an input${gre} bus to run recipes. Axe determines ${gr}speed${x} at which logs are harvested`,
+    ])
+
 event.add(`voyagercore:pulverizer`, [
     `${ye}Pulverizer`,
     nl,
@@ -228,7 +254,7 @@ event.add(`voyagercore:helper_factory`, [
     `${gr}Helper Factory`,
     nl,
     `${gre}Uses ${gr}Helper Factory${x} ${gre}recipes`,
-    `${gre}Has ${ye}Non-Perfect Overclocks${x}`,
+    `${gre}Has ${ye}Perfect Overclocks${x}`,
     nl,
     `${gre}Assembles Helper Hulls${x}`,
     `All ${or}Precise robot arm boxes ${x}must be ${ye}at least the tier ${gre}of the recipe${x} for it to run`
@@ -304,6 +330,8 @@ event.add(`voyagercore:helper_factory`, [
   cubeTooltip('autoclave')
   cubeTooltip('assembler')
   cubeTooltip('mixer')
+  cubeTooltip('chemical_bath')
+  cubeTooltip('sifter')
 
   event.add(`gtceu:radiation_chamber`, ['§aFocuses radioactive decay particles into a central chamber§r','§6Can only use 4x parallel hatches§r'])
   event.add(`voyagercore:hyper_helper_calorie_converter`, [

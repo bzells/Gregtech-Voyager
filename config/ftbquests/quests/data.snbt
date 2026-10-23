@@ -11,6 +11,13 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	hide_excluded_quests: false
+icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "kubejs:textures/questimages/icons/icon.png"
+		}
+	}
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -20,5 +27,6 @@
 	pause_game: false
 	progression_mode: "linear"
 	show_lock_icons: false
+title: "&5Gregtech: Voyager&r"
 	version: 13
 }

@@ -1,4 +1,5 @@
 ServerEvents.recipes((event) => {
+    event.remove({ output: "ad_astra:tier_1_rocket" })
     event.custom({
         type: "ad_astra:nasa_workbench",
         ingredients: [
@@ -51,6 +52,7 @@ ServerEvents.recipes((event) => {
         }
     })
 
+    event.remove({ output: "ad_astra:tier_2_rocket" })
     event.custom({
         type: "ad_astra:nasa_workbench",
         ingredients: [
@@ -103,6 +105,7 @@ ServerEvents.recipes((event) => {
         }
     })
 
+    event.remove({ output: "ad_astra:tier_3_rocket" })
     event.custom({
         type: "ad_astra:nasa_workbench",
         ingredients: [
@@ -181,6 +184,7 @@ ServerEvents.recipes((event) => {
             .EUt(eut)
     }
 
+    event.remove({ output: "ad_astra:rocket_fin" })
     event.recipes.gtceu
         .assembler("kubejs:rocket_fin")
         .itemInputs("2x kubejs:rocket_hull_plate", "32x gtceu:double_aluminium_plate", "32x gtceu:aluminium_lithium_compound_foil")
@@ -189,6 +193,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:rocket_nose_cone" })
     event.recipes.gtceu
         .assembler("kubejs:rocket_nose")
         .itemInputs("3x kubejs:rocket_hull_plate", "2x gtceu:hv_sensor", "2x gtceu:hv_field_generator", "4x #gtceu:circuits/iv", "24x gtceu:aluminium_lithium_compound_foil")
@@ -197,6 +202,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:steel_engine" })
     event.recipes.gtceu
         .assembler("kubejs:rocket_steel_engine")
         .itemInputs("3x kubejs:rocket_hull_plate", "32x gtceu:steel_frame", "24x gtceu:aluminium_lithium_compound_foil", "4x gtceu:stainless_steel_fluid_cell", "gtceu:hv_gas_turbine")
@@ -205,6 +211,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 3)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:space_helmet" })
     event.recipes.gtceu
         .assembler("kubejs:space_helmet")
         .itemInputs(
@@ -222,6 +229,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 1)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:space_suit" })
     event.recipes.gtceu
         .assembler("kubejs:space_suit")
         .itemInputs("32x gtceu:carbon_fiber_plate", "24x gtceu:aluminium_lithium_compound_foil", "64x gtceu:polyvinyl_chloride_foil", "gtceu:hazmat_chestpiece")
@@ -231,6 +239,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 1)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:space_pants" })
     event.recipes.gtceu
         .assembler("kubejs:space_pants")
         .itemInputs("24x gtceu:carbon_fiber_plate", "16x gtceu:aluminium_lithium_compound_foil", "48x gtceu:polyvinyl_chloride_foil", "gtceu:hazmat_leggings")
@@ -240,6 +249,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 1)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:space_boots" })
     event.recipes.gtceu
         .assembler("kubejs:space_boots")
         .itemInputs("16x gtceu:carbon_fiber_plate", "gtceu:hazmat_boots", "16x gtceu:polyvinyl_chloride_foil")
@@ -249,6 +259,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 1)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:nasa_workbench" })
     event.recipes.gtceu
         .assembler("kubejs:nasa_workbench")
         .itemInputs(
@@ -267,6 +278,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:launch_pad" })
     event.recipes.gtceu
         .assembler("kubejs:launchpad")
         .itemInputs("32x gtceu:double_stainless_steel_plate", "64x gtceu:double_black_steel_plate", "64x gtceu:steel_frame")
@@ -276,6 +288,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(496)
 
+    event.remove({ output: "kubejs:rocket_hull_plate" })
     event.recipes.gtceu
         .assembler("kubejs:rocket_hull")
         .itemInputs("20x gtceu:double_stainless_steel_plate", "32x gtceu:aluminium_lithium_compound_foil", "32x gtceu:carbon_fiber_mesh", "24x gtceu:steel_bolt")
@@ -285,6 +298,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 90)
         .EUt(496)
 
+    event.remove({ output: "kubejs:desh_rocket_hull_plate" })
     event.recipes.gtceu
         .assembler("kubejs:desh_rocket_hull")
         .itemInputs("20x gtceu:double_desh_plate", "32x gtceu:lunarium_foil", "16x gtceu:ruthenium_foil", "32x gtceu:aluminium_lithium_compound_foil", "24x gtceu:steel_bolt")
@@ -293,6 +307,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 90)
         .EUt(1980)
 
+    event.remove({ output: "kubejs:titanite_rocket_hull_plate" })
     event.recipes.gtceu
         .assembler("kubejs:titanite_rocket_hull")
         .itemInputs(
@@ -309,6 +324,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 90)
         .EUt(7680)
 
+    event.remove({ output: "ad_astra:tier_1_rover" })
     event.recipes.gtceu
         .assembler("kubejs:rover")
         .itemInputs(
@@ -326,6 +342,7 @@ ServerEvents.recipes((event) => {
         // .circuit(3)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:wheel" })
     event.recipes.gtceu
         .assembler("kubejs:wheel")
         .itemInputs("32x gtceu:aluminium_lithium_compound_foil", "32x gtceu:carbon_fiber_mesh", "1x gtceu:steel_frame", "8x gtceu:steel_screw")
@@ -335,6 +352,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 180)
         .EUt(496)
 
+    event.remove({ output: "ad_astra:desh_engine" })
     event.recipes.gtceu
         .assembler("kubejs:desh_rocket_steel_engine")
         .itemInputs("6x kubejs:desh_rocket_hull_plate", "32x gtceu:tungsten_carbide_frame", "24x gtceu:lunarium_foil", "4x gtceu:titanium_fluid_cell", "gtceu:large_combustion_engine")
@@ -343,6 +361,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 3)
         .EUt(1980)
 
+    event.remove({ output: "kubejs:desh_rocket_nose_cone" })
     event.recipes.gtceu
         .assembler("kubejs:desh_rocket_nose")
         .itemInputs("6x kubejs:desh_rocket_hull_plate", "kubejs:desh_interplanetary_coordinatal_calculator", "16x #gtceu:circuits/iv", "24x gtceu:lunarium_foil")
@@ -351,6 +370,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(1980)
 
+    event.remove({ output: "kubejs:desh_rocket_fin" })
     event.recipes.gtceu
         .assembler("kubejs:desh_rocket_fin")
         .itemInputs("4x kubejs:desh_rocket_hull_plate", "32x gtceu:double_iridium_plate", "32x gtceu:lunarium_foil")
@@ -359,6 +379,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(1980)
 
+    event.remove({ output: "ad_astra:desh_tank" })
     event.recipes.gtceu
         .assembler("kubejs:desh_tank")
         .itemInputs("4x kubejs:desh_rocket_hull_plate", "32x gtceu:titanium_fluid_cell", "32x gtceu:lunarium_foil")
@@ -367,6 +388,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(1980)
 
+    event.remove({ output: "kubejs:desh_interplanetary_coordinatal_calculator" })
     event.recipes.gtceu
         .assembler("kubejs:desh_interplanetary_coordinatal_calculator")
         .itemInputs("4x gtceu:iv_sensor", "4x gtceu:iv_emitter", "4x gtceu:ev_field_generator", "4x #gtceu:circuits/iv", "2x gtceu:double_desh_plate", "32x gtceu:fine_refined_fluxed_electrum_wire")
@@ -375,6 +397,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 60 * 5)
         .EUt(1980)
 
+    event.remove({ output: "kubejs:raw_advanced_martian_plating" })
     event.recipes.gtceu
         .forming_press("kubejs:raw_advanced_martian_plate")
         .itemInputs("2x gtceu:martian-composite_ingot", "2x gtceu:hssg_ingot", "2x gtceu:tungsten_steel_ingot")
@@ -382,6 +405,7 @@ ServerEvents.recipes((event) => {
         .duration(20 * 200)
         .EUt(480)
 
+    event.remove({ output: "kubejs:advanced_martian_plating" })
     event.recipes.gtceu
         .electric_blast_furnace("kubejs:advanced_martian_plate")
         .itemInputs("kubejs:raw_advanced_martian_plating", "2x gtceu:aluminex_202_a_plate")

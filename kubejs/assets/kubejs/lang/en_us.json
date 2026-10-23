@@ -53,17 +53,30 @@
     "material.gtceu.platinum_group_waste_ashes": "Platinum Group Waste Ashes",
     "material.gtceu.purified_platinum_group_sludge_residue": "Purified Platinum Group Sludge Residue",
     "material.gtceu.washed_platinum_group_sludge_residue": "Washed Platinum Group Sludge Residue",
+    "material.gtceu.washed_platinum_sludge_residue": "Washed Platinum Sludge Residue",
+    "material.gtceu.purified_platinum_sludge_residue": "Purified Platinum Sludge Residue",
 
     "material.gtceu.platinum_group_metal_residue": "Platinum Group Metal Residue",
     "material.gtceu.acidic_platinum_group_solution": "Acidic Platinum Group Solution",
     "material.gtceu.salty_platinum_mixture": "Salty Platinum Mixture",
     "material.gtceu.dirty_platinum_mixture": "Dirty Platinum Mixture",
     "material.gtceu.purified_platinum_metal": "Purified Platinum Metal",
+    "material.gtceu.iridium_metal_concentrate": "Iridium Metal Concentrate",
+
+    "material.gtceu.dry_ruthenium_mixture": "Dry Ruthenium Mixture",
+    "material.gtceu.impure_ruthenium_solution": "Impure Ruthenium Solution",
+    "material.gtceu.impure_rhodium_solution": "Impure Rhodium Solution",
+    "material.gtceu.precipitated_inert_metal": "Precipitated Inert Metal",
+
+    "material.gtceu.salty_calcium_brine_sludge": "Salty Calcium Brine Sludge",
+    "material.gtceu.salty_iridium_metal_brine": "Salty Iridium Metal Brine",
+    "material.gtceu.sodium_metabisulfate": "Sodium Metabisulfate",
 
     "material.gtceu.moon_sand": "Lunar Sand",
     "material.gtceu.soft_moon_sand": "Soft Lunar Sand",
 
     "material.gtceu.sugar_water": "Sticky Water",
+    "material.gtceu.iodized_salt": "Iodized Salt",
     "material.gtceu.soda": "Soda",
     "material.gtceu.electrolyte_mixture": "Electrolyte Mixture",
 
@@ -73,7 +86,7 @@
     "material.gtceu.molten_martian-composite": "Molten Martian-Composite",
     
     "material.gtceu.dragonsteel_ice":"Ice Dragonsteel",
-    "material.gtceu.fire_dragonsteel":"Fire Dragonsteel",
+    "material.gtceu.dragonsteel_fire":"Fire Dragonsteel",
 
     "material.gtceu.titanex-594-hta": "Titanex 594-HTa",
     "material.gtceu.titanex-879-htb": "Titanex 879-HTb",
@@ -117,10 +130,17 @@
     "block.gtceu.steam_blast_furnace": "Steel Blast Furnace",
     "block.gtceu.large_dehumidifier": "Large Dehumidifier",
     "gtceu.large_dehumidifier": "Large Dehumidifier",
+    "gtceu.chemical_plant": "Chemical Plant",
     "block.gtceu.cube_centrifuge": "Cube Centrifuge",
+    "block.gtceu.cube_thermal_centrifuge": "Cube Thermal Centrifuge",
     "block.gtceu.cube_macerator": "Cube Macerator",
     "block.gtceu.cube_electrolyzer": "Cube Electrolyzer",
+    "block.gtceu.cube_autoclave": "Cube Autoclave",
+    "block.gtceu.cube_assembler": "Cube Assembler",
+    "block.gtceu.cube_mixer": "Cube Mixer",
     "block.gtceu.cube_oven": "Cube Oven",
+    "block.gtceu.cube_sifter": "Cube Sifter",
+    "block.gtceu.cube_chemical_bath": "Cube Chemical Bath",
     "block.gtceu.large_helper_factory": "Large Helper Factory",
     "gtceu.steam_blast_furnace": "Steel Blast Furnace",
     "gtceu.large_helper_factory": "Large Helper Factory",

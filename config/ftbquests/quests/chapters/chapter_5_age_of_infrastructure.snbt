@@ -31,11 +31,12 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0DE67CA0A8DD130A"]
+			dependencies: ["1AB205252A99F47D"]
 			id: "35A76EF5228154C7"
 			tasks: [{
+				count: 16L
 				id: "74E07289626CC79F"
-				item: "gtceu:hssg_ingot"
+				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
 			x: -0.5d
@@ -238,6 +239,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["2AB966A472430D8C"]
 			id: "1D5E8B2CAF0DF4F6"
 			tasks: [
 				{
@@ -543,6 +545,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["6D599070FCBCD71C"]
 			id: "3EB2AED9E53B3F2F"
 			tasks: [{
 				id: "59093C052E082EA8"
@@ -566,6 +569,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["35A76EF5228154C7"]
 			hide_dependency_lines: true
 			id: "082E8F0976BDC50C"
 			tasks: [{
@@ -577,6 +581,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["35A76EF5228154C7"]
 			hide_dependency_lines: true
 			id: "3DD3B066C45A77B5"
 			tasks: [{
@@ -1110,6 +1115,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["231A80D860E922CD"]
 			id: "6302DE04901E29D5"
 			tasks: [{
 				id: "26C842B67B002C46"
@@ -1179,6 +1185,7 @@
 			dependencies: [
 				"6EE539D525D3D685"
 				"10BB04C7B18C512D"
+				"29B74F0029C12D7C"
 			]
 			id: "5417BBFB6E67273E"
 			tasks: [{
@@ -1341,10 +1348,11 @@
 				title: "ABS Alloy Chains"
 				type: "checkmark"
 			}]
-			x: 10.0d
-			y: 11.0d
+			x: 8.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["63F0E8466487E7F8"]
 			id: "185E7D62706F17F6"
 			tasks: [{
 				id: "2CA9EB4D048FE76D"
@@ -1420,6 +1428,18 @@
 			}]
 			x: -3.0d
 			y: 16.5d
+		}
+		{
+			dependencies: ["47732A84A5E27361"]
+			description: ["[ \"Read about this multiblock in the \", { \"text\": \"Multiblocks\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"10BB04C7B18C512D\" } }, \" Chapter\" ]"]
+			id: "29B74F0029C12D7C"
+			tasks: [{
+				id: "0462C39CAEDFC72C"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
 		}
 	]
 	title: "Chapter 5: Age of Infrastructure (IV)"

@@ -93,3 +93,13 @@ ServerEvents.tags("fluid", (event) => {
     event.add("forestry:seed_oil", "gtcey:seed_oil")
 
 })
+
+ServerEvents.tags("block_entity_type", (event) => {
+    // Lets the Tinkers' station/anvil use sophisticated storage chests, barrels, and shulker boxes as side inventories
+    event.add("tconstruct:side_inventories", [
+        "sophisticatedstorage:chest",
+        "sophisticatedstorage:barrel",
+        "sophisticatedstorage:limited_barrel",
+        "sophisticatedstorage:shulker_box"
+    ])
+})

@@ -354,6 +354,18 @@ function register_dust(name, ingredients, color, flags, c2) {
     }
 }
 
+function register_dust_custom(name, ingredients, c1, c2, flags, iconset) {
+    if (!c2) {
+        GTCEuStartupEvents.registry("gtceu:material", (event) => {
+            const mat = event.create(name).dust().components(ingredients).color(c1).iconSet(iconset).flags(flags)
+        })
+    } else {
+        GTCEuStartupEvents.registry("gtceu:material", (event) => {
+            const mat = event.create(name).dust().components(ingredients).color(c1).secondaryColor(c2).iconSet(iconset).flags(flags)
+        })
+    }
+}
+
 function register_dust_lang(name, ingredients, color, flags, lang, c2) {
     if (!c2) {
         GTCEuStartupEvents.registry("gtceu:material", (event) => {
@@ -408,7 +420,6 @@ register_metal("metallic_mica", ["3x mica", "1x silver"], false, "0xaba376", [0,
 
 // register_nosmelt_elem_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
 
-register_dust("desh_dioxide", ["desh", "2x oxygen"], "0xff4000", electrolyze)
 
 register_metal("source_steel", [], false, "0xd745ff", [0, null, voltTier("lv"), 0])
 register_metal("shadow_steel", [], true, "0x10021f", [3600, "mid", voltTier("ev"), 1800])
@@ -436,21 +447,23 @@ register_superconductor_sec("perfected_electrum", [], true, "0xfffef7", "0xfcff6
 
 register_fluid("lunarium_growth_slurry", "0x1fff1a", ["3x lunarium", "4x chlorine", "2x fluorine", "1x carbon"], no_decomp)
 // platline
-register_dust("dewatered_iridium_metal_residue", [], "0x094235", no_decomp)
+register_fluid("salty_iridium_metal_brine", "0x094222", [], no_decomp)
 register_dust("impure_iridium_metal", [], "0x094235", no_decomp)
 register_fluid("acidic_iridium_solution", "0x094235", [], no_decomp)
-
+register_fluid("iridium_metal_concentrate", "0x094000", [], no_decomp)
+// 80724e
+register_fluid("salty_calcium_brine_sludge", "0x80724e", [], no_decomp)
 register_fluid("acidic_shiny_metal_mixture", "0x4f6cab", [], no_decomp)
-register_fluid("impure_shiny_metal_mixture", "0x152536", [], no_decomp)
+register_dust("impure_shiny_metal_mixture",  [], "0x152536", no_decomp)
 register_dust("shiny_metallic_residue", [], "0x3b4724", no_decomp)
 
 register_dust("dry_ruthenium_mixture", [], "0x4a4575", no_decomp)
 
 // dry_ruthenium_mixture
 
-register_fluid("sulfuric_rhodium_solution", "0x6c367a", [], no_decomp)
-register_fluid("sulfuric_inert_metal_solution", "0x2b1221", [], no_decomp)
-register_fluid("acidic_ruthenium_solution", "0x3a333d", [], no_decomp)
+register_fluid("impure_rhodium_solution", "0x6c367a", [], no_decomp)
+register_dust("precipitated_inert_metal", [], "0x2b1221",  no_decomp)
+register_fluid("impure_ruthenium_solution", "0x3a333d", [], no_decomp)
 register_dust("impure_rhodium_sludge",[],  "0x3a111a", no_decomp)
 register_dust("purified_rhodium_mixture", [],  "0x5c244b", no_decomp)
 register_dust("salty_rhodium", [],  "0x8a5479", no_decomp)
@@ -462,6 +475,8 @@ register_dust("platinum_group_waste_ashes", [],  "0x333333", no_decomp)
 register_dust("washed_platinum_sludge_residue", [],  "0x322133", no_decomp)
 
 register_dust("purified_platinum_sludge_residue", [],  "0x344433", no_decomp)
+
+register_dust("sodium_metabisulfate", ["2x sodium", "2x sulfur", "5x oxygen"], "0xf7fff9", no_decomp)
 
 
 register_dust("platinum_group_metal_residue", [], "0x44374a", no_decomp)
@@ -513,12 +528,26 @@ register_dust("desh_group_sludge", [], "0x331305", no_decomp)
 // register_nosmelt_elem_metal("lunarium", [], true, "0x000d61", [4500, "mid", voltTier("iv"), 20 * 64], [200, 500, 1, 100000], voltTier("iv"))
 
 register_dust("lunar_metal_residue", ["desh", "titanium", "3x glowstone", "2x gold"], "0x634d21", no_decomp)
-register_fluid("sulfuric_lunar_metal_residue", "0x634d21", [], no_decomp)
-
+register_fluid("sulfuric_lunar_residue_solution", "0x634d21", [], no_decomp)
+register_fluid("thick_dense_metal_solution", "0x634444", [], no_decomp)
+register_fluid("acidic_lunarium_sludge_solution", "0x49508a", [], no_decomp)
 register_dust("dense_metal_mixture", ["lunarium", "tungsten", "water", "4x oxygen"], "0x200e42", no_decomp)
 register_dust("lunarium_metal_sludge", ["lunarium", "water"], "0x360d1c", no_decomp)
-register_dust("dewatered_lunarium_metal_mixture", ["lunarium", "desh", "titanium", "3x glowstone", "2x gold", "2x carbon", "3x hydrogen", "zinc", "barium"], "0x657e9c", no_decomp)
-register_dust("impure_lunarium", ["lunarium", "desh", "1x carbon", "calcium"], "0x7fa9b0", electrolyze)
+
+register_dust("raw_lunarium", ["lunarium", "2x oxygen"], "0x293175", no_decomp)
+
+register_dust("lunar_metal_blend", [], "0xbd9042", no_decomp)
+
+register_dust("dirty_lunarium", ["lunarium", "2x oxygen"], "0x49508a", no_decomp)
+
+register_dust("dirty_tungsten", ["tungsten", "2x oxygen"], "0x292929", no_decomp)
+
+register_dust("raw_tungsten", ["tungsten", "2x oxygen"], "0x2e2e2e", no_decomp)
+
+register_dust("raw_desh", ["desh", "2x oxygen"], "0xf09e35", no_decomp)
+
+register_dust("solar_metal_mixture", ["3x silicon_dioxide", "helium_3"], "0x666666", no_decomp, "0x292929")
+register_dust_custom("solar_crystal_blend", ["6x silicon_dioxide", "2x helium_3", "fluorine"], "0x666666", "0x292929", no_decomp, "shiny")
 
 abs_mat_sec("martian-composite", "0xbd0921", "0xa30054")
 
@@ -532,6 +561,8 @@ register_fluid("sugar_water", "0xebfffa", ["sugar", "water"], [no_decomp])
 register_fluid("soda", "0xebfffa", ["sugar", "water", "carbon_dioxide"], [no_decomp])
 
 // venus
+
+
 register_dust("venus_sand", [], "0xb38930", no_decomp)
 // register_nosmelt_elem_metal('calorite', [], true, '0xa10030', [3600, 'mid', voltTier('ev'), 20*64], false, voltTier('zpm'));
 register_plasma("degenerate_electrum_light_matter", "0xfffef7", "electrum", no_decomp)

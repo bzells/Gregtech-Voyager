@@ -61,6 +61,7 @@ ServerEvents.recipes((event) => {
         .compressor("kubejs:bricks")
         .itemInputs("4x minecraft:brick")
         .EUt(2)
+        .circuit(6)
         .itemOutputs("minecraft:bricks")
         .duration(10 * 20)
 

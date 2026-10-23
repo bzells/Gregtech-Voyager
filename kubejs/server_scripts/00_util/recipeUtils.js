@@ -16,7 +16,7 @@ global.recipe_lcr = function(event, name, inputItems, inputFluids, outputItems, 
 
 global.recipe_centrifuge = function(event, name, inputItems, inputFluids, outputItems, outputFluids, duration, eut) {
         event.recipes.gtceu
-            .centrifuge("kubejs:centrifuge_helper_" + name)
+            .centrifuge("kubejs:centrifuge_" + name)
             .itemInputs(inputItems)
             .itemOutputs(outputItems)
             .inputFluids(inputFluids)
@@ -29,7 +29,7 @@ global.recipe_centrifuge = function(event, name, inputItems, inputFluids, output
 global.recipe_thermal_centrifuge = function(event, name, inputItems, outputItems, outputFluids, duration, eut) {
 
         event.recipes.gtceu
-            .thermal_centrifuge("kubejs:centrifuge_" + name)
+            .thermal_centrifuge("kubejs:thermal_centrifuge_" + name)
             .itemInputs(inputItems)
             .itemOutputs(outputItems)
             .outputFluids(outputFluids)

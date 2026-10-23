@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
         "kubejs:high_temp_binding_agent_s",
         17 * 33,
         7680,
-        5200,
+        5000,
         "iv",
         0
     )
@@ -107,7 +107,7 @@ ServerEvents.recipes((event) => {
         "kubejs:high_temp_binding_agent_s",
         28 * 22,
         7680 * 4,
-        5200,
+        4900,
         "iv",
         0
     )
@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
         1
     )
     abs_strict('titanex-901-htc', 18 * 144, ['8x gtceu:hsss_dust', '4x gtceu:titanex-594-hta_dust', '3x gtceu:stellite_100_dust', '3x gtceu:titanex-879-htb_dust'], 
-        'gtceu:molten_titanex-901-htc', 'kubejs:high_temp_binding_agent_s', 18 * 50, 7680, 6000, 'ev', 1)
+        'gtceu:molten_titanex-901-htc', 'kubejs:high_temp_binding_agent_s', 18 * 50, 7680, 5100, 'ev', 1)
     
 
 })

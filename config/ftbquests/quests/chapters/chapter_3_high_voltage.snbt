@@ -2272,6 +2272,17 @@
 			x: 7.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["1534FF61E3073987"]
+			id: "051A557925B87F41"
+			tasks: [{
+				id: "08B19A8DA69DB19E"
+				item: "voyagercore:hv_smd_assembler_helper_recipe_module"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
 	]
 	title: "Chapter 3: High Voltage"
 }
