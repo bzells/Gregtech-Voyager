@@ -609,13 +609,17 @@ register_fluid("component_polymer", "0xc9bd9b", ["1x epoxy", "2x carbon", "1x bo
 GTCEuStartupEvents.registry("gtceu:material", (event) => {
     event.create("dragonsteel_fire")
         .ingot()
+        .langValue("Fire Dragonsteel")
         .iconSet("metallic")
         .color("0xf35b75") // "#f35b75"
         .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
-        .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5).build())
+        .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5)
+        
+        .build())
 
     event.create("dragonsteel_ice")
         .ingot()
+        .langValue("Ice Dragonsteel")
         .iconSet("metallic")
         .color("0x5baff3") // "#5baff3"
         .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
