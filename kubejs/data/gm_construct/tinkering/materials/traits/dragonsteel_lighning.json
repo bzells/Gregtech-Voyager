@@ -1,0 +1,12 @@
+{
+    "default": [
+        {
+            "level": 1,
+            "name": "voyagercore:dragon_strength"
+        },
+        {
+            "level": 1,
+            "name": "voyagercore:dragon_looting"
+        }
+    ]
+}
