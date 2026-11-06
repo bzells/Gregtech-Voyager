@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler("kubejs:ostrum_casing")
-        .itemInputs("6x gtceu:ostrum_plate", "1x gtceu:ostrum_frame")
+        .itemInputs("6x #forge:plates/ostrum", "1x gtceu:ostrum_frame")
         .circuit(6)
         .itemOutputs("2x voyagercore:ostrum_casing")
         .duration(30)

@@ -242,7 +242,7 @@ event.recipes.gtceu
 
      event.recipes.gtceu
         .assembler('kubejs:pattern')  
-        .itemInputs('3x ae2:quartz_glass', '16x gtceu:fine_energetic_alloy_wire', '1x gtceu:desh_plate', '#gtceu:circuits/hv')
+        .itemInputs('3x ae2:quartz_glass', '16x gtceu:fine_energetic_alloy_wire', '1x #forge:plates/desh', '#gtceu:circuits/hv')
         .itemOutputs('8x ae2:blank_pattern')
         .duration(100)                                 
         .EUt(1920)

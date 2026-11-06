@@ -1,5 +1,5 @@
 JEIEvents.hideItems((event) => {
-    let adastratiers = ["steel", "desh", "etrium", "calorite", "ostrum", "iron"]
+    let adastratiers = ["steel", "etrium", /* "desh", "calorite", "ostrum", */ "iron"]
 
     for (let i = 0; i < adastratiers.length; i++) {
         event.hide("ad_astra:" + adastratiers[i] + "_plate")

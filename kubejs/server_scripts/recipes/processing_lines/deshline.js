@@ -177,7 +177,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu.electric_blast_furnace("desh_ingot_from_raw")
     .itemInputs("gtceu:raw_desh_dust", "gtceu:carbon_dust")
-    .itemOutputs("3x gtceu:desh_nugget")
+    .itemOutputs("3x #forge:nuggets/desh")
     .outputFluids("gtceu:carbon_dioxide 1000")
     .EUt(7860)
     .circuit(1)

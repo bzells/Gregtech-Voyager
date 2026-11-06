@@ -26,14 +26,14 @@ ServerEvents.tags("item", (event) => {
     {
         event.add("ad_astra:netherite_space_suit_items", `${part}`)
     }
-    function add_iaf_ingot_tag(element)
+    /* function add_iaf_ingot_tag(element)
     {
         event.add(`forge:ingots/dragonsteel_${element}`,`iceandfire:dragonsteel_${element}_ingot`)
         event.remove(`forge:ingots/dragonsteel_${element}`, `gtceu:dragonsteel_${element}_ingot`)
     }
     const iafelements = ['fire', 'ice', 'lightning']
 
-    iafelements.forEach(elem => add_iaf_ingot_tag(elem))
+    iafelements.forEach(elem => add_iaf_ingot_tag(elem)) */
 
     const nanomuscle_suit = ["gtceu:nanomuscle_helmet", "gtceu:nanomuscle_chestplate", "gtceu:advanced_nanomuscle_chestplate", "gtceu:nanomuscle_leggings", "gtceu:nanomuscle_boots",]
     const quark_suit = ["gtceu:quarktech_helmet", "gtceu:quarktech_chestplate", "gtceu:advanced_quarktech_chestplate", "gtceu:quarktech_leggings", "gtceu:quarktech_boots",]
@@ -47,7 +47,7 @@ ServerEvents.tags("item", (event) => {
         }
     )
 
-    const ad_astra_mat_list = ['iron', 'steel', 'desh', 'ostrum', 'calorite']
+    const ad_astra_mat_list = ['iron', 'steel', /* 'desh', 'ostrum', 'calorite' */]
 
     ad_astra_mat_list.forEach(mat =>
         {
