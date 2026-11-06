@@ -624,6 +624,13 @@ GTCEuStartupEvents.registry("gtceu:material", (event) => {
         .color("0x5baff3") // "#5baff3"
         .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
         .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5).build())
+
+    event.create("dragonsteel_lightning")
+        .ingot()
+        .iconSet("metallic")
+        .color("0x977eb1") // "#977eb1"
+        .flags(frame, foil, long_rod, plates, rod, ring, no_smelt, bolt_and_screw)
+        .toolStats(ToolProperty.Builder.of(4, 16, 5000, 5).build())
 })
 
 /*

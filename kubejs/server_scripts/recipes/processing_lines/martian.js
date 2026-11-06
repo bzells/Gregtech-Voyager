@@ -28,8 +28,8 @@ ServerEvents.recipes((event) => {
     // c_postbox_good("martian_shipment_t1", "martian_contract", "64x gtceu:lunarium_ingot", 60 * 10, 13000)
     // c_postbox_good("martian_shipment_t1", "martian_contract", "64x gtceu:lunarium_ingot", 60 * 10, 13000, "embassy")
 
-    // c_postbox_bad("martian_shipment_t1", "martian_contract", "64x gtceu:desh_ingot", 60 * 10, 13000)
-    // c_postbox_bad("martian_shipment_t1", "martian_contract", "64x gtceu:desh_ingot", 60 * 10, 13000, "embassy")
+    // c_postbox_bad("martian_shipment_t1", "martian_contract", "64x #forge:ingots/desh", 60 * 10, 13000)
+    // c_postbox_bad("martian_shipment_t1", "martian_contract", "64x #forge:ingots/desh", 60 * 10, 13000, "embassy")
 
     event.recipes.gtceu.assembler("kubejs:radio")
         .itemInputs('2x gtceu:double_ostrum_plate', '4x gtceu:lunarium_ring', '4x gtceu:uranium_triplatinum_single_wire', '2x gtceu:qbit_cpu_chip', '2x #gtceu:circuits/iv', '1x gtceu:iv_emitter', '1x gtceu:iv_sensor')

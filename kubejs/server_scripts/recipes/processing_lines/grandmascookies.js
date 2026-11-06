@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
 
     event.recipes.gtceu
         .assembler('kubejs:heart_of_gold')   // recipe ID
-        .itemInputs('4x gtceu:desh_plate', '8x gtceu:tungsten_carbide_tiny_fluid_pipe', '2x gtceu:ev_fluid_regulator', '2x gtceu:ev_electric_motor', 'gtceu:ev_super_tank', '8x gtceu:fine_rhodium_wire')
+        .itemInputs('4x #forge:plates/desh', '8x gtceu:tungsten_carbide_tiny_fluid_pipe', '2x gtceu:ev_fluid_regulator', '2x gtceu:ev_electric_motor', 'gtceu:ev_super_tank', '8x gtceu:fine_rhodium_wire')
         .itemOutputs('1x kubejs:heart_of_gold')
         .inputFluids('gtceu:gold 576')
         .duration(20*60)                                 // in ticks

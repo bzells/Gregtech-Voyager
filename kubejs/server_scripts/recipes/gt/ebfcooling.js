@@ -40,14 +40,14 @@ ServerEvents.recipes((event) => {
             event.recipes.gtceu
                 .vacuum_freezer("kubejs:" + input + "_cooling")
                 .itemInputs("gtceu:hot_" + input + "_ingot")
-                .itemOutputs("gtceu:" + input + "_ingot")
+                .itemOutputs('#forge:ingots/'+input)
                 .duration(20 * 6)
                 .EUt(ebfeut / 4)
         } else {
             event.recipes.gtceu
                 .vacuum_freezer("kubejs:" + input + "_cooling")
                 .itemInputs("gtceu:hot_" + input + "_ingot")
-                .itemOutputs("gtceu:" + input + "_ingot")
+                .itemOutputs('#forge:ingots/'+input)
                 .inputFluids("gtceu:liquid_helium 500")
                 .outputFluids("gtceu:helium 250")
                 .duration(ebfduration / 10)
@@ -82,14 +82,14 @@ ServerEvents.recipes((event) => {
             event.recipes.gtceu
                 .vacuum_freezer("kubejs:" + input + "_cooling")
                 .itemInputs("gtceu:hot_" + input + "_ingot")
-                .itemOutputs("gtceu:" + input + "_ingot")
+                .itemOutputs('#forge:ingots/'+input)
                 .duration(20 * 6)
                 .EUt(ebfeut / 4)
         } else {
             event.recipes.gtceu
                 .vacuum_freezer("kubejs:" + input + "_cooling")
                 .itemInputs("gtceu:hot_" + input + "_ingot")
-                .itemOutputs("gtceu:" + input + "_ingot")
+                .itemOutputs('#forge:ingots/'+input)
                 .inputFluids("gtceu:liquid_helium 500")
                 .outputFluids("gtceu:helium 250")
                 .duration(ebfduration / 10)
@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
         event.recipes.gtceu
             .electric_blast_furnace("kubejs:" + input)
             .itemInputs("gtceu:" + input + "_dust")
-            .itemOutputs("gtceu:" + input + "_ingot")
+            .itemOutputs('#forge:ingots/'+input)
             .circuit(1)
             .duration(ebfduration)
             .EUt(ebfeut)
@@ -113,7 +113,7 @@ ServerEvents.recipes((event) => {
             .electric_blast_furnace("kubejs:" + input + "_fluid")
             .itemInputs("gtceu:" + input + "_dust")
             .inputFluids(blastfluid + " 1000")
-            .itemOutputs("gtceu:" + input + "_ingot")
+            .itemOutputs('#forge:ingots/'+input)
             .circuit(2)
             .duration(ebfduration * 0.67)
             .EUt(ebfeut)

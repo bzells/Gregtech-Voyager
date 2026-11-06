@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
                 "AEA"
             ],
             {
-                A: "gtceu:desh_plate",
+                A: "#forge:plates/desh",
                 B: "#gtceu:circuits/ev",
                 C: "gtceu:dense_steel_plate",
                 D: "buildinggadgets2:gadget_building",
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
                 "AEA"
             ],
             {
-                A: "gtceu:ostrum_plate",
+                A: "#forge:plates/ostrum",
                 B: "#gtceu:circuits/luv",
                 C: "gtceu:dense_tungsten_steel_plate",
                 D: "buildinggadgets2:gadget_copy_paste",
