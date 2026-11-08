@@ -19,7 +19,10 @@ GTCEuStartupEvents.materialModification((_event) => {
         });
     }
 
-    set(GTMaterialRegistry.getMaterial('source'), 'ars_nouveau:source', ['gem', 'block'])
+    const Source = GTMaterials.get('source')
+    //set(Source, 'ars:nouveau:source_gem', ['gem', 'block']) // as the item ID of gem block doesn't follow the convention we have top separate it
+    TagPrefix.gem["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](Source, () => Item.getItem('ars_nouveau:source_gem'))
+    TagPrefix.block["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material,java.util.function.Supplier[])"](Source, () => Item.getItem('ars_nouveau:source_gem_block'))
     TagPrefix.block.modifyMaterialAmount(Source,4)
 
     set(GTMaterialRegistry.getMaterial('dragonsteel_fire')     , 'iceandfire:dragonsteel_fire'     , ['ingot', 'block'])
