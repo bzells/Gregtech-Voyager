@@ -1,17 +1,4 @@
 ServerEvents.recipes((event) => {
-    event.replaceInput({input: "minecraft:iron_ingot", output: "iceandfire:dragonsteel_fire_ingot"}
-        , "minecraft:iron_ingot"
-        , "gtceu:source_steel_ingot"
-    )
-    event.replaceInput({input: "minecraft:iron_ingot", output: "iceandfire:dragonsteel_lightning_ingot"}
-        , "minecraft:iron_ingot"
-        , "gtceu:source_steel_ingot"
-    )
-    event.replaceInput({input: "minecraft:iron_ingot", output: "iceandfire:dragonsteel_ice_ingot"}
-        , "minecraft:iron_ingot"
-        , "gtceu:source_steel_ingot"
-    )
-
     function iaf(str)
     {
         return "iceandfire:" + str
@@ -48,9 +35,19 @@ ServerEvents.recipes((event) => {
                 keepNBT // keep nbt of reagent, think like a smithing recipe
             )
     }
-
+    
+    event.remove({type: 'iceandfire:dragonforge'})
     dragon_types.forEach(element =>
         {
+            event.custom({
+                cook_time : 1000,
+                result : {"item":`iceandfire:dragonsteel_${element}_ingot`},
+                input : {'item': "gtceu:source_steel_ingot"},
+                type : "iceandfire:dragonforge",
+                dragon_type : element,
+                blood : {"item":`iceandfire:${element}_dragon_blood`}
+            })
+
             const brick = iaf(`dragonforge_${element}_brick`)
             enchantment_altar_ars(
                 [apotheosis("epic_material"), brick, apotheosis("epic_material"), brick,
