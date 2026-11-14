@@ -1,0 +1,1011 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "foreword_not_a_voltage"
+	group: ""
+	icon: "tconstruct:crafting_station"
+	id: "16BC9D0A4F44C6BD"
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5F92328C48DE0801"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Punching trees is a minecraft classic!"
+			tasks: [{
+				id: "6F761B8D3A949EED"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any log"
+				type: "item"
+			}]
+			title: "Any log"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "1FFA6A39C26D557D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Collecting flint without tools is not."
+			tasks: [{
+				id: "3E862DB281D6BE89"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5F92328C48DE0801"
+				"1FFA6A39C26D557D"
+			]
+			id: "0AB2F08E2158F6DA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "That's why it's the GOAT!!"
+			tasks: [{
+				id: "186688467FFAC9D1"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0AB2F08E2158F6DA"]
+			id: "77AB649049A24E90"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Storing all your stuff"
+			tasks: [{
+				id: "46BDA6931D6EB3EB"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0AB2F08E2158F6DA"]
+			id: "5971934C4D1C1B98"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Crafting table too basic?"
+			tasks: [
+				{
+					id: "2755AC1460132B75"
+					item: "crafting_on_a_stick:crafting_table"
+					type: "item"
+				}
+				{
+					id: "14C49AE322BCC15B"
+					item: "tconstruct:crafting_station"
+					type: "item"
+				}
+			]
+			title: "Crafting table variants"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0AB2F08E2158F6DA"]
+			id: "585BE87763EB9981"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "&ozzz...ah..spaghetti...zzz...ah..ravioli"
+			tasks: [{
+				id: "45F5A1CA0087A9D6"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1FFA6A39C26D557D"]
+			id: "2D6A22A5F92AB678"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "(not ae2)"
+			tasks: [{
+				id: "2FEDF5617EED94F4"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"77AB649049A24E90"
+				"2D6A22A5F92AB678"
+			]
+			id: "74CF7FAEFA1C56F2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Storing all your &mstuff&r patterns"
+			tasks: [{
+				id: "7A42BB44897A9BD2"
+				item: "tconstruct:part_chest"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2D6A22A5F92AB678"]
+			id: "164E0ABBB2BB4A00"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Making the bits"
+			tasks: [{
+				id: "088E75AF6F4C7F93"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D6A22A5F92AB678"]
+			id: "37248AAD1219058A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Putting the bits together"
+			tasks: [{
+				id: "221E60AAD00B8532"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"164E0ABBB2BB4A00"
+				"37248AAD1219058A"
+			]
+			id: "0AFCB00D0137832A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "1A53D3A9A348DA76"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:necrotic_bone"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68D58018AC29323F"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "349D7BA058FF4DB4"
+					table_id: 5207388436579877693L
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "Becuase we're too cool for stone tools"
+			tasks: [
+				{
+					id: "5F6AB2073A069E9C"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71D5F71891D9D4C2"
+					item: {
+						Count: 1
+						id: "tconstruct:small_blade"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "614BEA9A26247EF4"
+					item: {
+						Count: 1
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E66E1B387F20EEA"
+					item: {
+						Count: 1
+						id: "tconstruct:adze_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Flint Tool Parts"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0AFCB00D0137832A"]
+			description: [
+				"This modpack has Tinker's Construct. Basically, instead of making \"stone\" or \"gold\" tools, you make tool &b&lheads, rods, &rand &l&bbindings.&r And these diffrent parts have quite a large effect on the tool itself. They effect &l&4minimg speed, &6mining level &r(i.e. can you mine iron ore? than that's &8stone&r mining level), and even &l&adurability.&rNow, this pack has &o&lGregtech&r, so Tinker's parts will also include materials from &l&oGregtech.&r Do you want a aluminium pickaxe? You can do that! Do you want a tungsten sword? You can do that! (although, I would not reccomend, seeing as tungsten is heavy)"
+				""
+				"And, the best part, you can make Gregtech tools with tinkers parts! No more are the days of making 300 files or 500 hammers, you need to make one, and just repair them with the kits! there &oare&r electric versions of the tools, but those take, y'know, electricity."
+			]
+			id: "1BDA3DA572EE5767"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Tool crafting of the future"
+			tasks: [{
+				id: "339459E2178910C0"
+				type: "checkmark"
+			}]
+			title: "Gregeric Tinkering"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0AB2F08E2158F6DA"]
+			id: "326091E3E83E198F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Cooking at remarkably slow speeds!!"
+			tasks: [{
+				id: "3D2648FA53B8A7D8"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.75d
+		}
+		{
+			id: "40A0107BCA7EE1EC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Prep some shovels."
+			tasks: [
+				{
+					id: "3E9215AE45A75BAF"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "64D573E91D71A373"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "59414371CB8C9BB9"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			title: "Various Sediments"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0FF07498C8E660D6"]
+			description: [""]
+			id: "584AE5EE113492FA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Be grateful it dosen't have durability."
+			tasks: [{
+				id: "2FA83BDC2FC45FC6"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"584AE5EE113492FA"
+				"40A0107BCA7EE1EC"
+			]
+			id: "4251423ADC7A220F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Gregifing ALL bricks!"
+			tasks: [
+				{
+					id: "474B7B70826BFFA7"
+					item: "gtceu:compressed_clay"
+					type: "item"
+				}
+				{
+					id: "09FB34BCC5EE512E"
+					item: "kubejs:compressed_grout"
+					type: "item"
+				}
+				{
+					id: "52092DD8AF21E61D"
+					item: "gtceu:compressed_coke_clay"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"326091E3E83E198F"
+				"4251423ADC7A220F"
+			]
+			id: "5379E27BF0329CAE"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Bricked up"
+			tasks: [
+				{
+					id: "55E4746B0686D159"
+					item: "gtceu:coke_oven_brick"
+					type: "item"
+				}
+				{
+					id: "189D5DC91E53B302"
+					item: "minecraft:brick"
+					type: "item"
+				}
+				{
+					id: "035F510F017D4C32"
+					item: "tconstruct:seared_brick"
+					type: "item"
+				}
+			]
+			title: "Various bricks"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["326091E3E83E198F"]
+			description: [
+				"In a lot of early game, you will need a set of tools for crafting many different components."
+				""
+				"Remember, ALWAYS batch craft. You will save many headaches."
+				""
+				"You will also need a set of tools for maintenance later on."
+			]
+			id: "0FF07498C8E660D6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "3970C9C8CBD57480"
+				item: "travelertoolbelt:belt"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Don't expect to be making these just once"
+			tasks: [
+				{
+					id: "3EBAB9854593CA49"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F8E254A3CD97614"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10A4D3FAF65EEC73"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6517A577AA3D7BDA"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DD094C3D0F6AFA4"
+					item: {
+						Count: 1
+						id: "gtceu:iron_crowbar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BFF9D4DC2897758"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 10
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52CB5BE758FF2208"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26E2ABD8CC155847"
+					item: {
+						Count: 1
+						id: "gtceu:iron_knife"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 2.0f
+								AttackSpeed: 3.0f
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gregtech Tools"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["326091E3E83E198F"]
+			description: ["Using the mortar, you can make dusts a lot easier. You can also crush down gravel into flint."]
+			id: "7665E072946655C0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "I would go with iron, but whatever"
+			tasks: [{
+				id: "11D91E550C79BB3D"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							Enchantability: 5
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5379E27BF0329CAE"]
+			icon: "gtceu:coke_oven"
+			id: "1C739BD965654540"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Your next goal is 576 of them"
+			tasks: [
+				{
+					id: "6C93A8D392659C23"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "34C80972DE1091AF"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1C739BD965654540"]
+			id: "5F43291F4DAF4349"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "DON'T VOID!!!"
+			tasks: [{
+				id: "0E4B5D273DD1C68B"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1C739BD965654540"]
+			id: "0C1F8AC04859A7F6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "The obviously better method of obtaining is burning marshmallows"
+			tasks: [{
+				id: "7864333C05573359"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F43291F4DAF4349"]
+			id: "6B2F4C579ECAAD87"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "More like pampered wood planks"
+			tasks: [{
+				id: "03DE5FD944374029"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6B2F4C579ECAAD87"]
+			id: "43D27D53AF262D96"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Schnoozing on the go"
+			tasks: [{
+				id: "3C1CE81228F076DC"
+				item: "comforts:sleeping_bag_white"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B2F4C579ECAAD87"]
+			id: "7184F7E31631908A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Paraglider? Never heard of it"
+			tasks: [{
+				id: "156593F1AEDF0B53"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["349082BB7A2ED6C3"]
+			description: [
+				"In GT:V There are 3 ways of getting your tinkers anvil:"
+				""
+				"Pig Iron (The funny way)"
+				"Steel (The GT way)"
+				"Steeleaf (The cool way)"
+				""
+				"Any of the three work, and each of the three will take you on a different road of progression."
+				""
+				"For the &6honey&r in &dpig iron&r, plant saplings next to flowers and bee hives can generate with the tree when it grows."
+			]
+			icon: "tconstruct:tinkers_anvil"
+			id: "5E1009CC544F268D"
+			min_required_tasks: 1
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "5DF64FFCCE275E07"
+				item: "kubejs:stone_bag"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Please don't drop this on anyone's head"
+			tasks: [
+				{
+					count: 3L
+					id: "09F9D460B572F837"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "and(item(tconstruct:large_plate)or(nbt(fuzzy:{Material:\"tconstruct:steeleaf\"})nbt(fuzzy:{Material:\"tconstruct:pig_iron\"})nbt(fuzzy:{Material:\"tconstruct:steel\"})))"
+						}
+					}
+					title: "Tinker's Anvil Material"
+					type: "item"
+				}
+				{
+					id: "7F5E8CC43417FB4B"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					id: "4EE5318C71D99D47"
+					item: "tconstruct:tinkers_anvil"
+					type: "item"
+				}
+			]
+			title: "Tinkers Anvil"
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5379E27BF0329CAE"]
+			description: [""]
+			id: "349082BB7A2ED6C3"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The interesting part of tinkers"
+			tasks: [
+				{
+					id: "730FB8EC68BFC268"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "2623829062EF8CD8"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "1CF3B1EC4DC1497A"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "57C59F587443031E"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7665E072946655C0"]
+			id: "6612B23D9417E605"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Making dusts is hard with..."
+			tasks: [{
+				id: "7674C27EF68FFCFA"
+				item: "gtceu:copper_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7665E072946655C0"]
+			id: "6E343DF2CF9E524A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "...out a macerator"
+			tasks: [{
+				id: "3D3C9B455E154444"
+				item: "gtceu:tin_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"6612B23D9417E605"
+				"6E343DF2CF9E524A"
+			]
+			id: "30CA407DEB90A998"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "First alloy in dust form C:"
+			tasks: [{
+				id: "658B60B22A317629"
+				item: "gtceu:bronze_dust"
+				type: "item"
+			}]
+			title: "&6Bronze&r Dust"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["349082BB7A2ED6C3"]
+			description: [
+				"Tinker's construct has one of the best tool crafting systems in all of modded minecraft. You should have already played with this a little bit with the flint tools, but the melter unlocks so much more potential when it comes to making tools for all operations that tools fill. These tools are made by taking those patterns you made, making a tool part out of something cheap, and then you have two options:"
+				""
+				"1: Take some sand, craft it by itself, and you will get sand casts. Place these sand casts onto a casting table. You can then pour molten metal into the cast and you will get a metal tool part. HOWEVER, these sand casts are one time use, making them not very useful for casing lots of something."
+				""
+				"2: Your second option is to take the tool part and put it in the casting table by itself, and then pour molten gold on top of it. This will consume the tool part, but you will get a &lpermanent&r casting mold to use."
+			]
+			id: "7F28FE011A475D2A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "No, molten metal is not drinkable"
+			tasks: [{
+				id: "2D43C1396E9FC5AF"
+				title: "Oh yah this is easy twin"
+				type: "checkmark"
+			}]
+			title: "Basics of Tinker's Metalworking"
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"30CA407DEB90A998"
+				"5AF5ABB5D65A3C3F"
+			]
+			dependency_requirement: "one_completed"
+			description: ["[ \"There are two ways of making &6bronze&r, with one yielding more than the other. The first way is the dust method. This way is cheap and fast to do, although you only get three &6bronze&r ingots instead of the four ingots you would get from the other method. Speaking of the other method, the other method is the tinkers smeltery. If you want more information, read the \", { \"text\": \"Smeltery controller\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5AF5ABB5D65A3C3F\" } }, \" quest.\" ]"]
+			id: "04302C7369DF685E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			subtitle: "First alloy :D"
+			tasks: [{
+				id: "3A411D0AE54EB7BD"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "&6Bronze&r Ingot&6"
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["04302C7369DF685E"]
+			id: "578EAF0F8BC952F9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "Storing fluids in increments of more than 1000mb"
+			tasks: [{
+				id: "77B9242C9D2020F8"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			title: "&6Bronze&r Drum"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["349082BB7A2ED6C3"]
+			description: ["This is the &lSmeltery Controller&r. Obtained by pouring 4 ingots worth of molten copper over a block of seared brick, it is basically a multiblock melter. And one of the best features this multi lets you use is &oAlloying&r. Alloying is when you have two molten metals in a smeltery and they touch. These metals then combine into a lovely little metal baby, otherwise known as an alloy. The main alloy you are going to make at the moment is &6bronze&r. &6Bronze&r being an alloy of three parts copper and one part tin, it is the main material in the &6Steam age&r, but that is explained more in the &6bronze&r quest and the &6Steam age&r quests."]
+			id: "5AF5ABB5D65A3C3F"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "Big boy melter"
+			tasks: [{
+				id: "1519114B0631F828"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5379E27BF0329CAE"]
+			id: "4A017D143FBC3356"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "For building or smth"
+			tasks: [{
+				id: "134051385845412B"
+				item: "minecraft:bricks"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["04302C7369DF685E"]
+			description: [
+				"This is your first &l&oSecret Quest&r. These quests will be placed around the questbook, and will typically be large amounts of materials which will lead to &oBIG&r rewards. Congrats on finding the first one, and happy hunting!"
+				""
+				"Secret quest 1/"
+			]
+			id: "7FE01EFD5651E9FC"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 384
+					id: "7B0F561DB0084F1D"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "6D7FAC3AA56759D2"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6DC61328BBA1EF93"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+			]
+			secret: true
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "What the hay's happening here?"
+			tasks: [{
+				count: 128L
+				id: "2850B0C57F2B0780"
+				item: { Count: 128, id: "gtceu:bronze_ingot" }
+				type: "item"
+			}]
+			title: "128x &6Bronze&r Ingot"
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1C739BD965654540"]
+			description: [
+				"Look at you, doing real b&kullshit&r to get some extra loot! Good job."
+				""
+				"Secret quest 2/"
+			]
+			id: "004BFC9EFEB67553"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 576
+					id: "6F08BC36B49D9DF8"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 576
+					id: "20FEF0E876475578"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0A5A1FCC0078F1C8"
+					item: "kubejs:stone_bag"
+					type: "item"
+				}
+			]
+			secret: true
+			subtitle: "No, it wasn't a joke"
+			tasks: [{
+				count: 576L
+				id: "007400DE4FC67313"
+				item: { Count: 576, id: "gtceu:coke_oven" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.5d
+		}
+	]
+	subtitle: ["Start of an Incredible Voyage"]
+	title: "Foreword: Not a Voltage"
+}
